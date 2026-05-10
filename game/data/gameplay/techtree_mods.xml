@@ -212,8 +212,14 @@
         <effect type="Data" amount="1.00" subtype="CommandRemove" proto="House" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">Unit</target></effect>
 
+        <effect type="Data" action="HandAttack" amount="3.5" subtype="MaximumRange" relativity="BasePercent">
+          <target type="ProtoUnit">TeixiptlaHuitz</target></effect>
+
         <effect type="Data" action="TrackerDeviceAction" amount="1.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit" mergeMode="add">QuimichinSpy</target></effect>
+
+        <effect type="Data" protoaction="GatherBonus" amount="1.00" subtype="ProtoActionAdd" unittype="GatherBonusFishingShipContainer" relativity="Assign">
+          <target type="ProtoUnit">FishingShipAztec</target></effect>
 
         <effect type="TechStatus" status="active" mergeMode="add">WallConnectorToArcher</effect>
         <effect type="TechStatus" status="active" mergeMode="add">WallConnectorToCrusher</effect>
@@ -1083,14 +1089,11 @@
           <target type="ProtoUnit">Peacemaker</target></effect>
         <effect type="Data" amount="1.30" subtype="AdditionalScale" relativity="Absolute">
           <target type="ProtoUnit">Peacemaker</target></effect>
-        <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" 
-          effecttype="Attach" duration="3.00" targettype="HumanSoldier" proto="VFXBleed" relativity="Assign">
+        <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="3.00" targettype="HumanSoldier" proto="VFXBleed" relativity="Assign">
           <target type="ProtoUnit">Peacemaker</target></effect>
-        <effect type="Data" amount="0.25" subtype="OnHitEffect" action="HandAttack" 
-          effecttype="DamageOverTime" duration="3.00" targettype="HumanSoldier" relativity="Assign">
+        <effect type="Data" amount="0.25" subtype="OnHitEffect" action="HandAttack" effecttype="DamageOverTime" duration="3.00" targettype="HumanSoldier" relativity="Assign">
           <target type="ProtoUnit">Peacemaker</target></effect>
-        <effect type="Data" amount="1.00" subtype="OnHitEffectAttachBone" action="HandAttack" 
-          effecttype="Attach" targettype="HumanSoldier" attachbone="spine" relativity="Assign">
+        <effect type="Data" amount="1.00" subtype="OnHitEffectAttachBone" action="HandAttack" effecttype="Attach" targettype="HumanSoldier" attachbone="spine" relativity="Assign">
           <target type="ProtoUnit">Peacemaker</target></effect>      
         
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Voltox</target></effect>		
@@ -9185,6 +9188,13 @@
     <icon mergeMode="add">resources\aztec\static_color\technologies\heavy_great_temple_soldiers_icon.png</icon>
     <effects>
       <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">WarriorPriest</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.10" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">WarriorPriest</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">WarriorPriest</target></effect>
+
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
 				<target type="ProtoUnit">Itzcoatl</target></effect>
 			<effect type="Data" action="HandAttack" amount="1.10" subtype="Damage" relativity="BasePercent" mergeMode="add">
 				<target type="ProtoUnit">Itzcoatl</target></effect>
@@ -9216,10 +9226,17 @@
   <tech name="HeavyGreatTempleSoldiers">
     <effects>
       <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">WarriorPriest</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.15" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">WarriorPriest</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">WarriorPriest</target></effect>
+
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
 				<target type="ProtoUnit">Itzcoatl</target></effect>
 			<effect type="Data" action="HandAttack" amount="1.15" subtype="Damage" relativity="BasePercent" mergeMode="add">
 				<target type="ProtoUnit">Itzcoatl</target></effect>
-			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute">
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">Itzcoatl</target></effect>
 
       <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
@@ -9247,6 +9264,13 @@
   <tech name="ChampionGreatTempleSoldiers">
     <effects>
       <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">WarriorPriest</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">WarriorPriest</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">WarriorPriest</target></effect>
+
+      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
 				<target type="ProtoUnit">Itzcoatl</target></effect>
 			<effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent" mergeMode="add">
 				<target type="ProtoUnit">Itzcoatl</target></effect>
@@ -9273,6 +9297,14 @@
 				<target type="ProtoUnit">Popocatepetl</target></effect>
 			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">Popocatepetl</target></effect>
+    </effects>
+  </tech>
+  <tech name="ObsidianWeapons">
+    <effects>
+      <effect type="Data" allactions="1" amount="1.10" subtype="Damage" relativity="BasePercent">
+				<target type="ProtoUnit">ObsidianButterfly</target></effect>
+      <effect type="Data" allactions="1" amount="1.10" subtype="Damage" relativity="BasePercent">
+				<target type="ProtoUnit">TeixiptlaTezca</target></effect>
     </effects>
   </tech>
   <!-- Aztec Myth Techs-->
@@ -9289,19 +9321,19 @@
       <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DisplayRange" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">InfestedDen</target></effect>
 
-      <effect type="Data" amount="2.00" subtype="OnHitEffect" action="RangedAttack" effecttype="DamageOverTime" duration="6.00" targettype="Unit" relativity="Assign">
+      <effect type="Data" amount="2.00" subtype="OnHitEffect" action="RangedAttack" effecttype="DamageOverTime" duration="6.00" targettype="Unit" relativity="Assign" mergeMode="add">
 				<target type="ProtoUnit">AbstractTower</target></effect>			
-			<effect type="Data" amount="2.00" subtype="OnHitEffect" action="RangedAttack" effecttype="Attach" duration="6.00" targettype="Unit" proto="VFXPoison" relativity="Assign">
+			<effect type="Data" amount="2.00" subtype="OnHitEffect" action="RangedAttack" effecttype="Attach" duration="6.00" targettype="Unit" proto="VFXPoison" relativity="Assign" mergeMode="add">
 				<target type="ProtoUnit">AbstractTower</target></effect>
-			<effect type="Data" amount="2.00" subtype="OnHitEffectAttachBone" action="RangedAttack" effecttype="Attach" targettype="Unit" attachbone="spine" relativity="Assign">
+			<effect type="Data" amount="2.00" subtype="OnHitEffectAttachBone" action="RangedAttack" effecttype="Attach" targettype="Unit" attachbone="spine" relativity="Assign" mergeMode="add">
 				<target type="ProtoUnit">AbstractTower</target></effect>			
     </effects>
   </tech>
   <tech name="ToloacheTrance">
     <effects>
-      <effect type="Data" amount="1.10" subtype="OnHitEffectStatModify" action="HandAttack" effecttype="StatModify" modifytype="ROF" relativity="Absolute">
+      <effect type="Data" amount="1.10" subtype="OnHitEffectStatModify" action="HandAttack" effecttype="StatModify" modifytype="ROF" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">LargeScorpion</target></effect>
-      <effect type="Data" amount="1.20" subtype="OnHitEffectStatModify" action="PoisonousBreath" effecttype="StatModify" modifytype="ROF" relativity="Absolute">
+      <effect type="Data" amount="1.20" subtype="OnHitEffectStatModify" action="PoisonousBreath" effecttype="StatModify" modifytype="ROF" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">Maquizcoatl</target></effect>
     </effects>
   </tech>
@@ -9403,9 +9435,123 @@
   <tech name="OmenOfDeath">
     <effects>        
       <effect type="Data" amount="20" subtype="ShieldPoints" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">ShornOne</target></effect>
+        <target type="ProtoUnit">WarriorPriest</target></effect>
       <effect type="Data" amount="0.5" subtype="UnitShieldRegenRate" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">ShornOne</target></effect>
+        <target type="ProtoUnit">WarriorPriest</target></effect>
+      <effect type="Data" amount="2.50" subtype="Lifespan" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">AbstractTeixiptla</target></effect>
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">Popocatepetl</target></effect>
+    </effects>
+  </tech>
+  <tech name="OmetochtlisRevelry">
+    <effects>
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="3.00" targettype="HumanSoldier" proto="VFXBleed" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">CentzonTotochtin</target></effect>
+      <effect type="Data" amount="0.25" subtype="OnHitEffect" action="HandAttack" effecttype="DamageOverTime" duration="3.00" targettype="HumanSoldier" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">CentzonTotochtin</target></effect>
+      <effect type="Data" amount="1.00" subtype="OnHitEffectAttachBone" action="HandAttack" effecttype="Attach" targettype="HumanSoldier" attachbone="spine" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">CentzonTotochtin</target></effect>   
+    </effects>
+  </tech>
+  <tech name="SerpentSkirt">
+    <effects>
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">Maquizcoatl</target></effect>
+    </effects>
+  </tech>
+  <tech name="CoatepecShrines">
+    <effects>
+      <effect type="Data" protoaction="SelfHeal" amount="1.00" subtype="ProtoActionAdd" unittype="FarmSelfHealContainer" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">AbstractFarm</target></effect>
+    </effects>
+  </tech>
+  <tech name="BurntWater">
+    <effects>
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="3.00" targettype="Unit" proto="VFXFire" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">LogicalTypeBuildingsThatShoot</target></effect>
+      <effect type="Data" amount="0.25" subtype="OnHitEffect" action="HandAttack" effecttype="DamageOverTime" duration="3.00" targettype="Unit" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">LogicalTypeBuildingsThatShoot</target></effect>
+      <effect type="Data" amount="1.00" subtype="OnHitEffectAttachBone" action="HandAttack" effecttype="Attach" targettype="Unit" attachbone="spine" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">LogicalTypeBuildingsThatShoot</target></effect>
+    </effects>
+  </tech>
+  <tech name="FourJars">
+    <effects>
+      <effect type="Data" amount="1.00" subtype="PopulationCapAddition" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">GreatTemple</target></effect>
+      <effect type="Data" amount="4.00" subtype="PopulationCapAddition" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">GreatTemple</target></effect>
+    </effects>
+  </tech>
+  <tech name="PreciousBones">
+    <effects>
+      <effect type="Data" amount="1.25" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">Hero</target></effect>
+    </effects>
+  </tech>
+  <tech name="CuicacalliTraining">
+    <effects>
+      <effect type="Data" amount="-0.05" subtype="ArmorVulnerability" armortype="Pierce" relativity="Percent" mergeMode="add">
+        <target type="ProtoUnit">HumanSoldier</target></effect>
+      <effect type="TechStatus" status="obtainable" mergeMode="add">TelpochcalliTraining</effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="TelpochcalliTraining" row="2" column="1" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Temple</target></effect>	
+    </effects>
+  </tech>
+  <tech name="TelpochcalliTraining" mergeMode="add">
+    <displaynameid>STR_TECH_TELPOCHCALLI_TRAINING_NAME</displaynameid>
+		<rollovertextid>STR_TECH_TELPOCHCALLI_TRAINING_LR</rollovertextid>
+		<cost resourcetype="Wood">150.0000</cost>
+		<cost resourcetype="Favor">12.0000</cost>
+		<researchpoints>20.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+		<icon>resources\aztec\static_color\technologies\cuicacalli_training_icon.png</icon>
+		<flag>CountsTowardMilitaryScore</flag>
+		<flag>MythTech</flag>
+    <prereqs>
+      <techstatus status="Active">CuicacalliTraining</techstatus>
+    </prereqs>
+    <effects>
+      <effect type="Data" amount="1.25" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">HumanSoldier</target></effect>
+    </effects>
+  </tech>
+  <tech name="TeponaztliDrums">
+    <effects>
+      <effect type="Data" amount="0.95" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">HumanSoldier</target></effect>
+      <effect type="Data" action="RangedAttack" amount="0.95" subtype="RateOfFire" relativity="Percent" mergeMode="add">
+        <target type="ProtoUnit">HumanSoldier</target></effect>
+      <effect type="Data" action="HandAttack" amount="0.90" subtype="RateOfFire" relativity="Percent" mergeMode="add">
+        <target type="ProtoUnit">HumanSoldier</target></effect>
+    </effects>    
+  </tech>
+  <tech name="Nahuallatolli">
+    <effects>
+      <effect type="Data" amount="0.80" subtype="cost" resource="Wood" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">AbstractTrap</target></effect>
+			<effect type="Data" amount="0.80" subtype="cost" resource="Gold" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">AbstractTrap</target></effect>
+			<effect type="Data" amount="2.00" subtype="BuildLimit" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">AbstractTrap</target></effect>
+        
+      <effect type="Data" allactions="1" amount="1.00" subtype="Damagebonus" unittype="HumanSoldier" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">WarriorPriest</target></effect>
+      <effect type="Data" allactions="1" amount="1.00" subtype="Damagebonus" unittype="HumanSoldier" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractTeixiptla</target></effect>
+      <effect type="Data" allactions="1" amount="1.00" subtype="Damagebonus" unittype="HumanSoldier" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">OcelotlWarrior</target></effect>
+    </effects>
+  </tech>
+  <tech name="AdvancedTraps">
+    <effects>
+      <effect type="Data" amount="0.80" subtype="cost" resource="Wood" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">AbstractTrap</target></effect>
+			<effect type="Data" amount="0.80" subtype="cost" resource="Gold" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">AbstractTrap</target></effect>
+			<effect type="Data" amount="2.00" subtype="BuildLimit" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractTrap</target></effect>
     </effects>
   </tech>
 

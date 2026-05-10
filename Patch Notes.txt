@@ -872,9 +872,24 @@
 
 * military tech reworks
 - tower upgrade: increase rof of sentrytower
+- GreatTempleTechs: warriorpriest
+- AdvancedTraps: Nahuallatolli trap improvements are moved in
 
 * myth tech reworks
 - StringOfYappan: tower rangedattack, vfxpoison units 6s
+- OmetochtlisRevelry: CentzonTotochtin vfxbleed humansoldier
+- SerpentSkirt: Maquizcoatl maxhitpoints
+- CoatepecShrines: enables SelfHeal Farms
+- BurntWater: LogicalTypeBuildingsThatShoot VFXFire Unit
+- FourJars: GreatTemple PopulationCapAddition 1 to 4
+- OmenOfDeath: Shieldpoints & UnitShieldRegenRate Warrior Priest, Lifespan Teixiptla, hitpoints Popocatepetl
+- ObsidianWeapons: also affects ObsidianButterfly, TeixiptlaTezca
+- PreciousBones: hero hitpoints
+- CuicacalliTraining: HumanSoldier PierceArmor, enables TelpochcalliTraining
+- TelpochcalliTraining: HumanSoldier Hitpoints
+- TeponaztliDrums: HumanSoldier maxvelocity, rof
+- Nahuallatolli: WarriorPriest,AbstractTeixiptla,OcelotlWarrior bonusdamage vs HumanSoldier, no longer affects traps
+
 
 * god power reworks
 - Cost: free
@@ -901,6 +916,11 @@
 * unit reworks
 - PopCost: villager, mythunit and humansoldier
 - Campaign Heroes: access to myth techs, veterancy
+- Heroes: 
+    - TeixiptlaHuitz: handattack maximumrange+
+    - WarriorPriest: paint brush weapon (iztaccihuatl_weapon model), ranged unit, infatrylineupgrade, archerlineupgrade
+        - HandAttack: maximumrange increased to 2
+        - RangedAttack: also targets nonflying units, minrange 4, divine damage
 - QuimichinSpy: 
     - AutoScout disabled
     - TemiminaloyanTrials: maximumrange+, los+, rof-, damagebonus vs humansoldier, directprojectile
@@ -910,6 +930,8 @@
         - SleepDart: blows a special dart that makes target unit fall a sleep, manual ability, targets units
     - HeroicAgeAztec:
         - PoisonDart: blows a special dart that makes unit suffering from toxic spores, manual ability, targets units
+- Naval:
+    - FishingShipAztec: GatherBonus aura for other FishingShipAztec
 
 * building reworks
 - House: removed from builder accels, merged with Calpulli
@@ -935,53 +957,19 @@
 - Display Name: titan, wonders
 - Calpulli, CalpulliLivestock: oversight that displays ranged attack has been fixed
 
-
 * additional tree types
 - HesperidesTree, Goshinboku
-
 
 ==============================================================================
 ==================== PRIORITY-PLANS ==========================================
 ==============================================================================
 
 === AZTEC
-* godpowers
-centzonhuitznahua: Tzitzimitl divinedamage
-    nemontemi: spawn itzpapalotl (hero goddess, decay)
-torchofmisfortune: spawn burn area
-    chargedattack: enemy los-
-eveningstar: bonusdamage myth container 
-feastofsustenance: devote humansoldier return cost 20%
-
-* god boost
-huitzilopochtli: warpriest
-tezcatlipoca: ObsidianButterfly
-quetzalcoatl: mythunit
-
 * myth techs
-ometochtlisreverly: bleed
-serpentskirt: maquizcoatl hitpoints
-coatepecshrines: regeneration farm (DynamicUpdate prevents it)
 wingsofitzpapalotl: enable takeoff
-burntwater: burn
-fourjars: popcap+4
 omenofdeath: 
-    teixiptia lifespan+ & cost gold+
-    also influences itzpapalotl
     enables tnompantli watch tower markfordeath
     enables Tunkuluchu jumpattack (markfordeath, areadamage, throw), taunt for markfordeath
-preciousbones: hero hitpoints+
-CuicacalliTraining: humansoldier piercearmor
-    telpochcallitraining: humansoldier hp
-teponaztlidrums: humansoldier maxvelocity, rof
-nahuallatolli: improve sorcerers
-
-* military techs
-obsidianweapons: ObsidianButterfly handatack+
-AdvancedFortifications,AdvancedFortifications_I,II,III: relocate, enable
-
-* NavalUnit
-fishingshipAztec: area gatherrate bonus
 
 * mythunits
 Tunkuluchu: jumpattack (markfordeath, areadamage, throw), walk anim (nature flying unit)
@@ -1023,6 +1011,14 @@ CuicacalliTraining: coyote hero
 
 * anim
 warriorpriest: spear, maxrange+, rof-, armor+
+
+* godpowers
+centzonhuitznahua: Tzitzimitl divinedamage
+    nemontemi: spawn itzpapalotl (hero goddess, decay)
+torchofmisfortune: spawn burn area
+    chargedattack: enemy los-
+eveningstar: bonusdamage myth container 
+feastofsustenance: devote humansoldier return cost 20%
 
 === refactor
 * additional reworks

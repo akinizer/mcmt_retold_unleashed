@@ -5556,6 +5556,23 @@
     <!-- Japanese Special Buildings--> 
 
 	<!-- Aztec Hero Units -->
+	<unit name="WarriorPriest">
+		<unittype>Ranged</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+		<protoaction>
+			<name>HandAttack</name>
+			<maxrange>2.000000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>RangedAttack</name>
+			<damage type="Pierce" mergeMode="remove">12.000000</damage>
+			<damage type="Divine" mergeMode="add">2.000000</damage>
+			<rate type="LogicalTypeHandUnitsAttack" mergeMode="add">1.0</rate>
+			<minrange>4.000000</minrange>
+		</protoaction>
+	</unit>
+
 	<!-- Aztec Military Units -->
 	<unit name="QuimichinSpy">
 		<train row="0" column="1" mergeMode="remove">SmokeTrap</train>
@@ -7415,6 +7432,16 @@
 		<tech row="3" column="2">MCMT_AdvancedFortifications_III</tech>
 	</unit>
 	<unit name="Castle">
+		<tactics mergeMode="replace">global_building_fortress.tactics</tactics>
+		<unitshieldregen damagetimeout="3.0">1.0000</unitshieldregen>
+		<tech row="1" column="4" mergeMode="remove">AdvancedFortifications</tech>
+		
+		<tech row="3" column="2">AdvancedFortifications</tech>
+		<tech row="3" column="2">MCMT_AdvancedFortifications_I</tech>
+		<tech row="3" column="2">MCMT_AdvancedFortifications_II</tech>
+		<tech row="3" column="2">MCMT_AdvancedFortifications_III</tech>
+	</unit>
+	<unit name="GreatTemple">
 		<tactics mergeMode="replace">global_building_fortress.tactics</tactics>
 		<unitshieldregen damagetimeout="3.0">1.0000</unitshieldregen>
 		<tech row="1" column="4" mergeMode="remove">AdvancedFortifications</tech>
@@ -26551,6 +26578,36 @@
 			<modelattachment>greek_demeter\godpowers\communal_hearth\communal_hearth_buff.xml</modelattachment>
 		</protoaction>
 	</unit>
+	<unit name="GatherBonusFishingShipContainer">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name>GatherBonus</name>
+			<type>AutoRangedModify</type>
+			<persistent>1</persistent>
+			<maxrange>18</maxrange>
+			<modifyunittype>FishingShipAztec</modifyunittype>
+			<modifytype>GatherRate</modifytype>
+			<modifymultiplier>1.50</modifymultiplier>
+			<modelattachment>vfx\glow\hero_glow_extra_large.xml</modelattachment>
+		</protoaction>
+	</unit>
 	<unit name="GatherBonusFarmContainer">
 		<obstructionradiusx>0.1000</obstructionradiusx>
 		<obstructionradiusz>0.1000</obstructionradiusz>
@@ -27095,6 +27152,38 @@
 			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
 			<modifyamount>3</modifyamount>			
 			<maxrange>5	</maxrange>
+		</protoaction>
+	</unit> 
+	<unit name="FarmSelfHealContainer" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name>SelfHeal</name>
+			<type>AutoRangedModify</type>
+			<modifyunittype>Farm</modifyunittype>
+			<persistent>1</persistent>
+			<modifytype>HealRate</modifytype>
+			<includeally>1</includeally>
+			<modelattachment>greek\godpowers\restoration\healing_vfx.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+			<modifyamount>3</modifyamount>			
+			<maxrange>1</maxrange>
 		</protoaction>
 	</unit> 
 	<unit name="AreaInvisibilityContainer" mergeMode="add">

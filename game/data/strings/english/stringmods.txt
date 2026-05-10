@@ -829,6 +829,10 @@ ID = "STR_BLD_AGAVE_DOOMBLOOM_NAME"   ;   Str = "Doom Bloom"
 ID = "STR_BLD_AGAVE_DOOMBLOOM_SR"   ;   Str = "Nature's Vengeance"
 ID = "STR_BLD_AGAVE_DOOMBLOOM_LR"   ;   Str = "Nature gifts Agave Bloom as a gift to heal people. If they get greedy and deplete it, it turns into Doom Bloom and burns the sinners"
 
+// AZTEC SPECIAL TECHS
+ID = "STR_TECH_TELPOCHCALLI_TRAINING_NAME"   ;   Str = "Telpochcalli Training"
+ID = "STR_TECH_TELPOCHCALLI_TRAINING_LR"   ;   Str = "Commando training that enhanches physique of human soldiers"
+
 // REWORKED CHINESE TECHS
 ID = "STR_TECH_ORDER_OF_GOLDEN_KITE_NAME"   ;   Str = "Order of the Golden Kite"
 ID = "STR_TECH_ORDER_OF_GOLDEN_KITE_LR"   ;   Str = "The Order was established by Emperor Meiji and served Empire of Japan until 1947. It is exclusive military award given to soldier for bravery, leadership and commandship. It is followed by Order of the Chrysanthemum "
