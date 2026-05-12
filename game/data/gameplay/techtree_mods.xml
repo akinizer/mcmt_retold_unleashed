@@ -9448,8 +9448,6 @@
 
       <effect type="Data" subtype="ProtoActionAdd" protoaction="TargetMarker" amount="1.00" unittype="TargetMarkerContainer" relativity="Assign">
         <target type="ProtoUnit">SentryTower</target></effect>
-
-      <effects><effect type="SetName" proto="SentryTower" newname="STR_VFX_TOWEROFDEATH"></effect></effects>
     </effects>
   </tech>
   <tech name="OmetochtlisRevelry">

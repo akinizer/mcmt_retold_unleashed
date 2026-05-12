@@ -27622,7 +27622,8 @@
 			<rof>0.01000</rof>			
 			<maxrange>25.000000</maxrange>
 			<damagearea>25.000000</damagearea>
-
+			<damageflags>Nature|Enemy</damageflags>
+			
 			<onhiteffect type="InstantKillablePercentChance" amount="0.10" relativity="set" duration="1.000000" byunittype="MilitaryUnit">
 				<target attacktype="Unit"></target>
 			</onhiteffect>
