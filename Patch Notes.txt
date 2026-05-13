@@ -59,6 +59,7 @@
 * Up-to-Date to Demeter and Japanese
 * Encampments from Kingdom Tech: Amazonians, Spartans, Athenians, Nymphs, Mountain Dwarves, Elves, Nubians & Kingdom Guards
 * Dismount Warfare
+* Type Superiority & Elemental Damage: Elemental Resistances & Vulnerabilities, MythUnit Resistances!
 * Many Many More in Future!
 
 1. Reworking on Demeter's hero units and related techs
