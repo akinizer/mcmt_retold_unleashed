@@ -1,0 +1,7 @@
+<unittypedatamods>
+    <unittypeentry mergeMode="add">
+		<unittype>AbstractSerpent</unittype>
+		<icon>resources/shared/hud/damage_bonuses/damage_bonus_huntable.png</icon>
+		<displaynameid>STR_HUD_UNIT_TYPE_ABSTRACT_SERPENT</displaynameid>
+	</unittypeentry>
+</unittypedatamods>

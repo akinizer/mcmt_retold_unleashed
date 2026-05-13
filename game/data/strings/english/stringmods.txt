@@ -1091,6 +1091,9 @@ ID = "STR_TECH_SPAWN_TACTICS_LR"   ;   Str = "Enable spawn abilities for myth un
 ID = "STR_TECH_DEFENSIVE_TACTICS_NAME"   ;   Str = "Defensive Reinforcement Tactics"
 ID = "STR_TECH_DEFENSIVE_TACTICS_LR"   ;   Str = "Enable reinforcement field that allows military buildings inspire nearby human soldiers"
 
+// ABSTRACT UNIT TYPES
+ID = "STR_HUD_UNIT_TYPE_ABSTRACT_SERPENT"   ;   Str = "Serpentine"
+
 // SUPERWEAPONS
 ID = "STR_POWER_PSIONIC_DECIMATOR"   ;   Str = "Psionic Decimator"
 ID = "STR_POWER_PSIONIC_DECIMATOR_LR"   ;   Str = "Psionic Superweapon Unleashed by Matsuri Yurio"

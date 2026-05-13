@@ -878,7 +878,7 @@
 * myth tech reworks
 - StringOfYappan: tower rangedattack, vfxpoison units 6s
 - OmetochtlisRevelry: CentzonTotochtin vfxbleed humansoldier & economicupgraded, lifesteal humansoldiers & economicupgraded
-- SerpentSkirt: Maquizcoatl maxhitpoints
+- SerpentSkirt: AbstractSerpent maxhitpoints
 - CoatepecShrines: enables SelfHeal Farms
 - BurntWater: LogicalTypeBuildingsThatShoot VFXFire Unit
 - FourJars: GreatTemple PopulationCapAddition 1 to 4
@@ -972,7 +972,10 @@
     - HandAttack: Hack Damage reduced
     - ChargedHandAttack: taunt effect added, damage changed to pierce
     - DeathFromAbove: jumpattack, areadamage, debuff militaryunits markedfordeath, crushdamage
-
+- CentzonTotochtin: 
+    - HandAttack: Hack Damage greatly reduced, bonusdamage vs HumanSoldier & EconomicUpgraded x5
+    - OmetochtlisRevelry:
+        - JumpAttack: short distance, bonusdamage vs humans, building
 * building reworks
 - House: removed from builder accels, merged with Calpulli
 - All Calpulli: populationcapaddition +5, maxcontained 5
@@ -1004,6 +1007,7 @@
 - HesperidesTree, Goshinboku
 
 * additional abstractunittypes
+- AbstractSerpent / Serpentine
 
 ==============================================================================
 ==================== PRIORITY-PLANS ==========================================

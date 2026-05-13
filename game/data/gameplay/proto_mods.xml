@@ -5814,7 +5814,33 @@
 	<unit name="Ayotochtli">
 		<unittype>SiegeLineUpgraded</unittype>
 	</unit>
-
+	<unit name="CentzonTotochtin">
+		<rechargetime>20.0000</rechargetime>
+		<tactics>mcmt_handattack_jumpattack_eat.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<damage type="Hack">3.000000</damage>
+			<damagebonus type="HumanSoldier">5.000000</damagebonus>
+			<damagebonus type="EconomicUpgraded">5.000000</damagebonus>
+		</protoaction>
+		<protoaction>
+			<name>JumpAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Hack">8.000000</damage>
+			<damagearea>2.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<damagebonus type="Building">1.500000</damagebonus>
+			<damagebonus type="HumanSoldier">2.500000</damagebonus>
+			<damagebonus type="EconomicUpgraded">2.500000</damagebonus>
+			<damagebonus type="Hero">0.100000</damagebonus>
+			<minrange>3.000000</minrange>
+			<maxrange>9.000000</maxrange>
+			<perfectaccuracy>1</perfectaccuracy>
+			<homingballistics>1</homingballistics>
+			<onhiteffect type="Snare" duration="2.0" rate="0.85" targetunittype="Unit"></onhiteffect>
+			<active>0</active>
+		</protoaction>
+	</unit>
 	<!-- Aztec Naval Units -->
 	<!-- Aztec Buildings -->
 	<unit name="InfestedDen">

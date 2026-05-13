@@ -1,0 +1,39 @@
+<tactics>
+	<action>
+		<name stringid="STR_ACTION_HAND">HandAttack</name>
+		<type>Attack</type>
+		<rate type="All">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<forceareaattacktarget>1</forceareaattacktarget>
+		<anim>HandAttack</anim>
+		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+		<impacteffect>effects\impacts\hack</impacteffect>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_EAT">Eat</name>
+		<type>Eat</type>
+		<anim>Eat</anim>
+	</action>
+    <action>
+      	<name stringid="STR_ACTION_JUMP">JumpAttack</name>
+		<type>JumpAttack</type>
+		<rate type="LogicalTypeHandUnitsAttack">1.0</rate>
+		<rate type="NavalUnit">0.0</rate>
+		<attackaction>1</attackaction>
+		<onlyattackifpathclear>1</onlyattackifpathclear>
+		<handlogic>1</handlogic>
+		<anim>JumpAttack</anim>
+		<chargeaction>1</chargeaction>
+		<impacteffect>effects\impacts\hack</impacteffect>
+	</action>
+	<tactic>Default
+        <action priority="100">Eat</action>
+        <action priority="90">JumpAttack</action>
+        <action priority="80">HandAttack</action>
+        <attacktype>LogicalTypeHandUnitsAttack</attacktype><autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype></tactic>
+</tactics>
+        
+        
+        
+      

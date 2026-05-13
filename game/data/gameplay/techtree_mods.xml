@@ -496,6 +496,8 @@
         <effect type="TechStatus" status="active" mergeMode="add">CivilianPresets</effect>
         <effect type="TechStatus" status="active" mergeMode="add">BuildingPresets</effect>
         <effect type="TechStatus" status="active" mergeMode="add">NavalPresets</effect>
+
+        <effect type="TechStatus" status="active" mergeMode="add">AbstractTypePresets</effect>
         
         <effect type="TechStatus" status="active" mergeMode="add">NorsePresets</effect>
         <effect type="TechStatus" status="active" mergeMode="add">EgyptianPresets</effect>
@@ -592,6 +594,34 @@
         <effect type="Data" amount="3.00" subtype="AdditionalScale" relativity="Absolute">
           <target type="ProtoUnit">Ship</target>
         </effect>
+      </effects>
+    </tech>
+
+    <tech name="AbstractTypePresets" mergeMode="add">
+      <status>UNOBTAINABLE</status>
+      <!-- Naval Units -->
+      <effects>
+        <!--AbstractSerpent-->
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSerpent" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Maquizcoatl</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSerpent" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Anaconda</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSerpent" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AnacondaCoatlicue</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSerpent" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AnacondaOfSet</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSerpent" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">SeaSnake</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSerpent" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Serpent</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSerpent" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">QuetzalcoatlSnake</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSerpent" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Medusa</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSerpent" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Wadjet</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSerpent" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">JormunElver</target></effect>
       </effects>
     </tech>
     <!-- PRESETS FOR CIVILIZATION UNITS: SPAWN, VISUAL SCALE, POPCOST, HERO -->
@@ -9480,13 +9510,16 @@
       <effect type="Data" amount="0.25" subtype="OnHitEffect" action="HandAttack" effecttype="DamageOverTime" duration="3.00" targettype="EconomicUpgraded" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">CentzonTotochtin</target></effect>
       <effect type="Data" amount="1.00" subtype="OnHitEffectAttachBone" action="HandAttack" effecttype="Attach" targettype="EconomicUpgraded" attachbone="spine" relativity="Assign" mergeMode="add">
-        <target type="ProtoUnit">CentzonTotochtin</target></effect>      
+        <target type="ProtoUnit">CentzonTotochtin</target></effect>
+        
+      <effect type="Data" action="JumpAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">CentzonTotochtin</target></effect>
     </effects>
   </tech>
   <tech name="SerpentSkirt">
     <effects>
-      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
-        <target type="ProtoUnit">Maquizcoatl</target></effect>
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">AbstractSerpent</target></effect>
     </effects>
   </tech>
   <tech name="CoatepecShrines">
