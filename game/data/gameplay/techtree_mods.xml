@@ -498,6 +498,7 @@
         <effect type="TechStatus" status="active" mergeMode="add">NavalPresets</effect>
 
         <effect type="TechStatus" status="active" mergeMode="add">AbstractTypePresets</effect>
+        <effect type="TechStatus" status="active" mergeMode="add">TypeSuperiorityCalculationPresets</effect>
         
         <effect type="TechStatus" status="active" mergeMode="add">NorsePresets</effect>
         <effect type="TechStatus" status="active" mergeMode="add">EgyptianPresets</effect>
@@ -783,6 +784,8 @@
           <target type="ProtoUnit">AbstractPegasus</target></effect>
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractBeast" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">AbstractDragon</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractBeast" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbstractGullinbursti</target></effect>
         <!--AbstractBeastfolk-->
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractBeastfolk" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">Minotaur</target></effect>
@@ -868,6 +871,8 @@
           <target type="ProtoUnit">Centimanus</target></effect>  
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractInfernal" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">TitanCerberus</target></effect>  
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractInfernal" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">TitanAtlantean</target></effect>  
         <!--AbstractSpectral-->        
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSpectral" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">HadesShade</target></effect>    
@@ -895,6 +900,8 @@
           <target type="ProtoUnit">MinionReincarnated</target></effect>
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractUndead" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">Mummy</target></effect>       
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractUndead" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Draugr</target></effect>       
         <!--AbstractValkyrie-->
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractValkyrie" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">Valkyrie</target></effect>
@@ -928,7 +935,22 @@
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHumanoid" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">AbstractSorcerer</target></effect>
         <!--AbstractConstruct-->
-        <!--AbstractTurret-->
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractConstruct" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Promethean</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractConstruct" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">PrometheanOffspring</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractConstruct" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Automaton</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractConstruct" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Chanque</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractConstruct" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">ChanqueIdol</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractConstruct" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Colossus</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractConstruct" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">BattleBoar</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractConstruct" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">RockGiant</target></effect>
         <!--AbstractDemigod-->
         <!--AbstractWolf-->
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractWolf" relativity="Absolute" mergeMode="add">
@@ -994,6 +1016,40 @@
           <target type="ProtoUnit">Wadjet</target></effect>
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSerpent" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">JormunElver</target></effect>    
+        <!--AbstractFireDamageDealer-->
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractFireDamageDealer" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbstractDragon</target></effect> 
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractFireDamageDealer" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbstractInfernal</target></effect> 
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractFireDamageDealer" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">WarriorPriest</target></effect> 
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractFireDamageDealer" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Maquizcoatl</target></effect> 
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractFireDamageDealer" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">TeixiptlaHuitz</target></effect> 
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractFireDamageDealer" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">FireArcher</target></effect> 
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractFireDamageDealer" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">FireShip</target></effect> 
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractFireDamageDealer" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">DragonBoat</target></effect> 
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractFireDamageDealer" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">ZhuQue</target></effect> 
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractFireDamageDealer" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Iolaus</target></effect> 
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractFireDamageDealer" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Phoenix</target></effect> 
+        <!--AbstractLightningDamageDealer-->
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractLightningDamageDealer" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Raiju</target></effect> 
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractLightningDamageDealer" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">YingLong</target></effect> 
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractLightningDamageDealer" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">QingLong</target></effect> 
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractLightningDamageDealer" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbstractShinigami</target></effect> 
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractLightningDamageDealer" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">QiLin</target></effect> 
         <!--AbstractMythResistant-->   
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythResistant" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">Hero</target></effect>    
@@ -1003,12 +1059,67 @@
           <target type="ProtoUnit">Polaris</target></effect>    
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythResistant" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">Jarl</target></effect>    
-        <!--AbstractFireResistant-->   
+        <!--AbstractFireResistant-->  
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractFireResistant" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Ayotochtli</target></effect>     
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractFireResistant" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbstractSerpent</target></effect>     
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractFireResistant" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">LogicalTypeNavalMythUnit</target></effect>     
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractFireResistant" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">SoulGuide</target></effect>     
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractFireResistant" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbstractConstruct</target></effect>     
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractFireResistant" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Scarab</target></effect>     
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractFireResistant" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">ScorpionMan</target></effect>     
         <!--AbstractFireVulnerable-->   
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractFireVulnerable" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbstractAvian</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractFireVulnerable" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbstractInfernal</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractFireVulnerable" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Ship</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractFireVulnerable" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Hamadryad</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractFireVulnerable" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Dryad</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractFireVulnerable" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Draugr</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractFireVulnerable" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">FrostGiant</target></effect>
         <!--AbstractLightningResistant-->   
-        <!--AbstractLightningVulnerable-->   
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractLightningVulnerable" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbstractConstruct</target></effect> 
+        <!--AbstractLightningVulnerable-->  
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractLightningVulnerable" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbstractConstruct</target></effect> 
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractLightningVulnerable" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">NavalUnit</target></effect> 
       </effects>
     </tech>
+
+    <tech name="TypeSuperiorityCalculationPresets" mergeMode="add">
+      <status>UNOBTAINABLE</status>
+      <effects>
+        <effect type="Data" allactions="1" amount="-0.10" subtype="Damagebonus" unittype="AbstractFireResistant" relativity="Absolute">
+          <target type="ProtoUnit">AbstractFireDamageDealer</target></effect>
+
+        <effect type="Data" allactions="1" amount="0.10" subtype="Damagebonus" unittype="AbstractFireVulnerable" relativity="Absolute">
+          <target type="ProtoUnit">AbstractFireDamageDealer</target></effect>
+
+        <effect type="Data" allactions="1" amount="-0.10" subtype="Damagebonus" unittype="AbstractLightningResistant" relativity="Absolute">
+          <target type="ProtoUnit">AbstractLightningDamageDealer</target></effect>
+
+        <effect type="Data" allactions="1" amount="0.10" subtype="Damagebonus" unittype="AbstractLightningVulnerable" relativity="Absolute">
+          <target type="ProtoUnit">AbstractLightningDamageDealer</target></effect>
+
+        <effect type="Data" allactions="1" amount="-0.10" subtype="Damagebonus" unittype="AbstractMythResistant" relativity="Absolute">
+          <target type="ProtoUnit">LogicalTypeMythUnitNotTitan</target></effect>
+      </effects>
+    </tech>
+
     <!-- PRESETS FOR CIVILIZATION UNITS: SPAWN, VISUAL SCALE, POPCOST, HERO -->
     <tech name="NorsePresets" mergeMode="add">
       <status>UNOBTAINABLE</status>

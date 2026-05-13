@@ -25,4 +25,6 @@
     <abstractunittype>AbstractFireVulnerable</abstractunittype>
     <abstractunittype>AbstractLightningResistant</abstractunittype>
     <abstractunittype>AbstractLightningVulnerable</abstractunittype>
+    <abstractunittype>AbstractFireDamageDealer</abstractunittype>
+    <abstractunittype>AbstractLightningDamageDealer</abstractunittype>
 </abstractunittypesmods>
