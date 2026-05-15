@@ -7614,10 +7614,6 @@
 								<position>0.20000</position>
 							</tag>
 							<tag>
-								<type>Attack</type>
-								<position>0.30000</position>
-							</tag>
-							<tag>
 								<type>SpecificSoundSet</type>
 								<position>0.20000</position>
 								<properties>
@@ -7652,10 +7648,6 @@
 							<tag>
 								<type>Attack</type>
 								<position>0.20000</position>
-							</tag>
-							<tag>
-								<type>Attack</type>
-								<position>0.30000</position>
 							</tag>
 							<tag>
 								<type>SpecificSoundSet</type>

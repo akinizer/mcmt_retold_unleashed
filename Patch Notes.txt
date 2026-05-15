@@ -929,7 +929,7 @@
 - ToloacheTrance: affects RangedAttack LogicalTypeBuildingsThatShoot
 - Mictecah: ShornOne VFXLegendAuraStrongerUnit, OnHitEffect Kitsune Ghost Fire
 - StoneskinQuinametzin: damagearea, throw, piercearmor+, hackarmor+
-
+- OcpatliInfusions: villager dropoffheal
 * god power reworks
 - Cost: free
 - Non-Aztec:
@@ -1010,7 +1010,8 @@
 - GreatTemple: unittype abstracttemple
 - TzompantliTower:
     - OmenOfDeath: enables TowerOfDeath action, enables ability on ungarrisoned SentryTower that debuffs all valid units with Mark for Death in an area
-- NoblesHut,WarHut: rangedattack
+- NoblesHut,WarHut:
+    - BunkerTunnelNetworks: enables rangedattack, shared garrison
 
 * special units
 - WanderingTurkey:

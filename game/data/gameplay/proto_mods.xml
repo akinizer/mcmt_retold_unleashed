@@ -6003,48 +6003,40 @@
 			<containscalebasedamage>1</containscalebasedamage>
 		</protoaction>
 	</unit>
-	<unit name="NoblesHut">
-		<unitaitype>RangedCombative</unitaitype>
-
-		<unittype>LogicalTypeBuildingsThatShoot</unittype>
-		<unittype>ArcherLineUpgraded</unittype>
-		<flag>DisplayRange</flag>
-		
-		<maxcontained>5</maxcontained>
-		<contain>ArcherLineUpgraded</contain>
-		<notcontain>AbstractInfantry</notcontain>
+	<unit name="NoblesHut">		
+		<contain>HumanSoldier</contain>
 		
 		<flag mergeMode="remove">InitialGarrisonOnly</flag>
 		<flag mergeMode="remove">NoIdleActions</flag>
 		<tactics>rangedattack.tactics</tactics>
 		<protoaction>
 			<name>RangedAttack</name>
-			<rof>1.000000</rof>
+			<rof>1.500000</rof>
 			<damage type="Pierce">6.000000</damage>
 			<damageflags>Enemy|Nature</damageflags>
-			<damagebonus type="AbstractInfantry">1.250000</damagebonus>
+			<damagebonus type="HumanSoldier">1.250000</damagebonus>
 			<maxrange>15.000000</maxrange>
-			<projectile>ProjectileArrowFlaming</projectile>
+			<numberprojectiles>1</numberprojectiles>
+			<projectile>ProjectileJavelinFlaming</projectile>
+			<active>0</active>
 		</protoaction>
 	</unit>	
 	<unit name="WarHut">
-		<unitaitype>RangedCombative</unitaitype>
-
-		<unittype>LogicalTypeBuildingsThatShoot</unittype>
-		<unittype>ArcherLineUpgraded</unittype>
-		<flag>DisplayRange</flag>
+		<contain>HumanSoldier</contain>
 		
 		<flag mergeMode="remove">InitialGarrisonOnly</flag>
 		<flag mergeMode="remove">NoIdleActions</flag>
 		<tactics>rangedattack.tactics</tactics>
 		<protoaction>
 			<name>RangedAttack</name>
-			<rof>1.000000</rof>
+			<rof>1.500000</rof>
 			<damage type="Pierce">6.000000</damage>
 			<damageflags>Enemy|Nature</damageflags>
-			<damagebonus type="AbstractInfantry">1.250000</damagebonus>
+			<damagebonus type="HumanSoldier">1.250000</damagebonus>
 			<maxrange>15.000000</maxrange>
+			<numberprojectiles>1</numberprojectiles>
 			<projectile>ProjectileArrowFlaming</projectile>
+			<active>0</active>
 		</protoaction>
 	</unit>	
 	<!-- Aztec Special Units -->

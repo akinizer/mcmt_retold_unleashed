@@ -832,6 +832,9 @@ ID = "STR_BLD_AGAVE_DOOMBLOOM_LR"   ;   Str = "Nature gifts Agave Bloom as a gif
 // AZTEC SPECIAL TECHS
 ID = "STR_TECH_TELPOCHCALLI_TRAINING_NAME"   ;   Str = "Telpochcalli Training"
 ID = "STR_TECH_TELPOCHCALLI_TRAINING_LR"   ;   Str = "Commando training that enhanches physique of human soldiers"
+ID = "STR_TECH_BUNKERTUNNELNETWORKS_NAME"   ;   Str = "Bunker Tunnel Networks"
+ID = "STR_TECH_BUNKERTUNNELNETWORKS_NOBLESHUT_LR"   ;   Str = "Gain access to the underground Tezca Sector of Aztec Empire that allows transfer of intellectual armies"
+ID = "STR_TECH_BUNKERTUNNELNETWORKS_WARHUT_LR"   ;   Str = "Gain access to the underground Huitzi Sector of Aztec Empire that allows transfer of warrior armies"
 
 // REWORKED CHINESE TECHS
 ID = "STR_TECH_ORDER_OF_GOLDEN_KITE_NAME"   ;   Str = "Order of the Golden Kite"
@@ -1079,6 +1082,7 @@ ID = "STR_VFX_DEVOTECONTAINERS_NAME"   ;   Str = "Temple Devote"
 ID = "STR_VFX_EVENINGSTARS_NAME"   ;   Str = "Evening Star Spawn"
 ID = "STR_VFX_HACKARMORBOOSTNEARALLYBUILDINGS_NAME"   ;   Str = "Hack Armor Boost Near Fortification"
 ID = "STR_VFX_PIERCEARMORBOOSTNEARALLYBUILDINGS_NAME"   ;   Str = "Pierce Armor Boost Near Fortification"
+ID = "STR_VFX_SPEEDINVERSENEARBUSHES_NAME"   ;   Str = "Movement Speed Boost Near Bushes"
 ID = "STR_VFX_TOWEROFDEATH"   ;   Str = "Tower of Death"
 ID = "STR_VFX_AUTOREPAIR"   ;   Str = "Autorepair"
 ID = "STR_VFX_MYTHDAMAGEBONUS"   ;   Str = "Bonus Damage vs MythUnit"

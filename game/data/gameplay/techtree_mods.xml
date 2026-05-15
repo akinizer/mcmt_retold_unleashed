@@ -224,6 +224,14 @@
         <effect type="TechStatus" status="active" mergeMode="add">WallConnectorToArcher</effect>
         <effect type="TechStatus" status="active" mergeMode="add">WallConnectorToCrusher</effect>
         <effect type="TechStatus" status="active" mergeMode="add">WallConnectorToCharger</effect>
+
+        <effect type="TechStatus" status="obtainable" mergeMode="add">BunkerTunnelNetworksNoblesHut</effect>
+        <effect type="TechStatus" status="obtainable" mergeMode="add">BunkerTunnelNetworksWarHut</effect>
+
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="BunkerTunnelNetworksNoblesHut" row="3" column="4" relativity="Assign" mergeMode="add">
+          <target type="ProtoUnit">NoblesHut</target></effect>	
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="BunkerTunnelNetworksWarHut" row="3" column="4" relativity="Assign" mergeMode="add">
+          <target type="ProtoUnit">WarHut</target></effect>	
       </effects>
     </tech>
     <tech name="ClassicalAgeAztec">
@@ -2519,6 +2527,60 @@
         <target type="ProtoUnit">AgaveBloom</target></effect>	
     </effects>
   </tech>
+   <tech name="BunkerTunnelNetworksNoblesHut" mergeMode="add">
+      <status>UNOBTAINABLE</status>
+      <flag>MythTech</flag>
+      <displaynameid>STR_TECH_BUNKERTUNNELNETWORKS_NAME</displaynameid>
+      <rollovertextid>STR_TECH_BUNKERTUNNELNETWORKS_NOBLESHUT_LR</rollovertextid>
+      <cost resourcetype="Food">400.0000</cost>
+      <cost resourcetype="Gold">1000.0000</cost>
+      <researchpoints>15.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\tech\activate_tech.jpg</icon>
+      <effects>
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="SharedGarrison" relativity="Assign">
+          <target type="ProtoUnit">NoblesHut</target></effect>
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="LogicalTypeBuildingsThatShoot" relativity="Assign">
+          <target type="ProtoUnit">NoblesHut</target></effect>
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="RangedCombative" relativity="Assign">
+          <target type="ProtoUnit">NoblesHut</target></effect>
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="ArcherLineUpgraded" relativity="Assign">
+          <target type="ProtoUnit">NoblesHut</target></effect>
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DisplayRange" relativity="Assign">
+          <target type="ProtoUnit">NoblesHut</target></effect>
+        <effect type="Data" amount="5.00" subtype="MaximumContained" relativity="Assign">
+          <target type="ProtoUnit">NoblesHut</target></effect>
+        <effect type="Data" action="RangedAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute">
+          <target type="ProtoUnit">NoblesHut</target></effect>
+      </effects>
+    </tech>
+   <tech name="BunkerTunnelNetworksWarHut" mergeMode="add">
+      <status>UNOBTAINABLE</status>
+      <flag>MythTech</flag>
+      <displaynameid>STR_TECH_BUNKERTUNNELNETWORKS_NAME</displaynameid>
+      <rollovertextid>STR_TECH_BUNKERTUNNELNETWORKS_WARHUT_LR</rollovertextid>
+      <cost resourcetype="Food">400.0000</cost>
+      <cost resourcetype="Gold">1000.0000</cost>
+      <researchpoints>15.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\tech\activate_tech.jpg</icon>
+      <effects>
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="SharedGarrison" relativity="Assign">
+          <target type="ProtoUnit">WarHut</target></effect>
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="LogicalTypeBuildingsThatShoot" relativity="Assign">
+          <target type="ProtoUnit">WarHut</target></effect>
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="RangedCombative" relativity="Assign">
+          <target type="ProtoUnit">WarHut</target></effect>
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="ArcherLineUpgraded" relativity="Assign">
+          <target type="ProtoUnit">WarHut</target></effect>
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DisplayRange" relativity="Assign">
+          <target type="ProtoUnit">WarHut</target></effect>
+        <effect type="Data" amount="2.00" subtype="MaximumContained" relativity="Assign">
+          <target type="ProtoUnit">WarHut</target></effect>
+        <effect type="Data" action="RangedAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute">
+          <target type="ProtoUnit">WarHut</target></effect>
+      </effects>
+    </tech>
   <!-- Global Techs - Detonators-->
   <tech name="DetonatorsJapanese" mergeMode="add">
     <displaynameid>STR_TECH_DETONATORS_NAME</displaynameid>
@@ -10304,6 +10366,18 @@
       <effect type="Data" protoaction="ThornedWallsAttack" amount="1.00" subtype="ProtoActionAdd" unittype="ReflectAttackContainer" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">AxolotlMutant</target></effect>
     </effects>
+  </tech>
+  <tech name="OcpatliInfusions">
+    <effects>
+      <effect type="Data" amount="2.00" subtype="DropoffHeal" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractVillager</target></effect>
+    </effects>
+  </tech>
+  <tech name="MagueyCultivation">
+    <effects>
+      <effect type="Data" action="Gather" amount="1.15" subtype="WorkRate" unittype="BerryBush" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">AbstractVillager</target></effect>
+    </effects>    
   </tech>
   <!-- Structures of Gods-->
     <!-- Ancient Greek -->
