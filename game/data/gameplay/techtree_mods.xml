@@ -644,41 +644,47 @@
           <target type="ProtoUnit">Icarus</target></effect>
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractGreekHero" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">Midas</target></effect>
-        <!--AbstractSorcerer-->
-        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcerer" relativity="Absolute" mergeMode="add">
+        <!--AbstractSorcererDark-->
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcererDark" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">SoulGuide</target></effect>
-        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcerer" relativity="Absolute" mergeMode="add">
-          <target type="ProtoUnit">WarriorPriest</target></effect>
-        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcerer" relativity="Absolute" mergeMode="add">
-          <target type="ProtoUnit">AbstractTeixiptla</target></effect>
-        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcerer" relativity="Absolute" mergeMode="add">
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcererDark" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">AbstractShinigami</target></effect>
-        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcerer" relativity="Absolute" mergeMode="add">
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcererDark" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">Jorogumo</target></effect>
-        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcerer" relativity="Absolute" mergeMode="add">
-          <target type="ProtoUnit">Miko</target></effect>
-        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcerer" relativity="Absolute" mergeMode="add">
-          <target type="ProtoUnit">Onmyoji</target></effect>
-        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcerer" relativity="Absolute" mergeMode="add">
-          <target type="ProtoUnit">JiangZiya</target></effect>
-        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcerer" relativity="Absolute" mergeMode="add">
-          <target type="ProtoUnit">Orpheus</target></effect>
-        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcerer" relativity="Absolute" mergeMode="add">
-          <target type="ProtoUnit">AbstractEmpowerer</target></effect>
-        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcerer" relativity="Absolute" mergeMode="add">
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcererDark" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">Mummy</target></effect>
-        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcerer" relativity="Absolute" mergeMode="add">
-          <target type="ProtoUnit">AbstractValkyrie</target></effect>
-        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcerer" relativity="Absolute" mergeMode="add">
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcererDark" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">Lampades</target></effect>
-        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcerer" relativity="Absolute" mergeMode="add">
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcererDark" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">Caladria</target></effect>
-        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcerer" relativity="Absolute" mergeMode="add">
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcererDark" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">Servant</target></effect>
-        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcerer" relativity="Absolute" mergeMode="add">
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcererDark" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">Circe</target></effect>
-        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcerer" relativity="Absolute" mergeMode="add">
+          <!--AbstractSorcererLight-->
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcererLight" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">WarriorPriest</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcererLight" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbstractTeixiptla</target></effect>       
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcererLight" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Miko</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcererLight" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Onmyoji</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcererLight" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">JiangZiya</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcererLight" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Orpheus</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcererLight" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbstractEmpowerer</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcererLight" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbstractValkyrie</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcererLight" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">Sage</target></effect>
+          <!--AbstractSorcerer-->
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcerer" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbstractSorcererDark</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSorcerer" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbstractSorcererLight</target></effect>
         <!--AbstractDragon-->
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractDragon" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">YingLong</target></effect>
@@ -881,6 +887,8 @@
           <target type="ProtoUnit">TitanCerberus</target></effect>  
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractInfernal" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">TitanAtlantean</target></effect>  
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractInfernal" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">TitanKronos</target></effect>  
         <!--AbstractSpectral-->        
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSpectral" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">HadesShade</target></effect>    
@@ -1104,7 +1112,19 @@
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractLightningVulnerable" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">AbstractConstruct</target></effect> 
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractLightningVulnerable" relativity="Absolute" mergeMode="add">
-          <target type="ProtoUnit">NavalUnit</target></effect> 
+          <target type="ProtoUnit">NavalUnit</target></effect>
+        <!--AbstractDivineLight-->   
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractDivineLight" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbstractSorcererLight</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractDivineLight" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">TitanBird</target></effect>
+        <!--AbstractEternalShadow-->
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractEternalShadow" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbstractSorcererDark</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractEternalShadow" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbstractUndead</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractEternalShadow" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbstractInfernal</target></effect>
       </effects>
     </tech>
 
@@ -1125,6 +1145,18 @@
 
         <effect type="Data" allactions="1" amount="-0.10" subtype="Damagebonus" unittype="AbstractMythResistant" relativity="Absolute">
           <target type="ProtoUnit">LogicalTypeMythUnitNotTitan</target></effect>
+
+        <effect type="Data" allactions="1" amount="0.10" subtype="Damagebonus" unittype="AbstractEternalShadow" relativity="Absolute">
+          <target type="ProtoUnit">AbstractDivineLight</target></effect>
+
+        <effect type="Data" allactions="1" amount="-0.10" subtype="Damagebonus" unittype="AbstractDivineLight" relativity="Absolute">
+          <target type="ProtoUnit">AbstractEternalShadow</target></effect>
+
+        <effect type="Data" allactions="1" amount="-0.10" subtype="Damagebonus" unittype="MajorHero" relativity="Absolute">
+          <target type="ProtoUnit">AbstractEternalShadow</target></effect>
+
+        <effect type="Data" allactions="1" amount="0.10" subtype="Damagebonus" unittype="LogicalTypeMythUnitNotTitan" relativity="Absolute">
+          <target type="ProtoUnit">AbstractEternalShadow</target></effect>
       </effects>
     </tech>
 

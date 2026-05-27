@@ -1,6 +1,8 @@
 <abstractunittypesmods>
     <abstractunittype>HeroProtagonist</abstractunittype>
     <abstractunittype>AbstractGreekHero</abstractunittype>
+    <abstractunittype>AbstractSorcererDark</abstractunittype>
+    <abstractunittype>AbstractSorcererLight</abstractunittype>
     <abstractunittype>AbstractSorcerer</abstractunittype>
     <abstractunittype>AbstractPegasus</abstractunittype>
     <abstractunittype>AbstractDragon</abstractunittype>
@@ -27,4 +29,6 @@
     <abstractunittype>AbstractLightningVulnerable</abstractunittype>
     <abstractunittype>AbstractFireDamageDealer</abstractunittype>
     <abstractunittype>AbstractLightningDamageDealer</abstractunittype>
+    <abstractunittype>AbstractDivineLight</abstractunittype>
+    <abstractunittype>AbstractEternalShadow</abstractunittype>
 </abstractunittypesmods>

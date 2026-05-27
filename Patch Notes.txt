@@ -1053,20 +1053,55 @@ teixiptla: areaboost humansoldier hitpoints
 
 * displaynames
 temple
-    Altar of Sun
-    Altar of Shadows
-    Altar of Wisdom
-* special tech
-ExplosivesAztec: Buildings, Ships, Chaneque, Tzitzimitl
-    ExplosiveTrap
-    Quinametzin: explosive projectile
-    ObsidianShard
+    Altar of Sun --> <prereq>ArchaicAgeHuitzi</prereq>
+        - Effects:
+        1. OnHitEffect: WarriorPriest & AbstractArcher VFXFire
+        2. BonusDamage Superior: AbstractTypeFireVulnerable
+        3. BonusDamage Inferior: AbstractTypeFireResilient
+        4. HumanSoldier melee MaxHitpoints
+        5. WarriorPriest 
+            MaxHitpoints
+            OnHitEffect VFXFire
+            enableaction RangedAttack ProjectileFireball, castpower ForestFire
+    Altar of Shadows --> <prereq>ArchacAgeTezca</prereq>
+        - Effects
+        1. OnHitEffect: WarriorPriest & AbstractArcher VFXChaos
+        2. BonusDamage Superior: HumanSoldier
+        3. BonusDamage Inferior: AbstractTypeFireResilient
+        4. HumanSoldier StealthRadius, MaxVelocity
+        5. WarriorPriest 
+            PierceArmor
+            OnHitEffect Flee, Blind (SmokeTrap ability)
+            enableaction Stealth, Ambush
+            ondead spawn SmokeTrap
+    Altar of Wisdom --> <prereq>ArchaicAgeQuetzal</prereq>
+        1. OnHitEffect: WarriorPriest & AbstractArcher VFXWindRush
+        2. BonusDamage Superior: AbstractTypeFireResilient, Hero
+        3. BonusDamage Inferior: MythUnit
+        4. CoyotlWarrior, AbstractCavalry, AbstractScout PierceArmor, MaxShieldPoints
+        5. WarriorPriest 
+            MaxVelocity
+            enableaction RangedDeflectContainer, VFXWindRush, IdleSpeedBonus
+            protoactionadd CanDodgeAttacks
+        6. ProjectileArrowFlaming MaxVelocity
 
-SpawnsAztec
-    soulguide: axolotl 
+* special tech
+- ExplosivesAztec: 
+    QuimichinSpy: commandadd protounit ExplosiveTrap
+    Quinametzin: ProjectileExplosiveBarrelMinor
+    Buildings, Ships, Chaneque, Tzitzimitl, ObsidianShard, WarriorPriest: ondead spawn ExplosiveContainerMinor
+- SpawnsAztec:
+    SoulGuide: enableaction DelayedTransform AxolotlMutant
+    AbstractWarship: spawn RaftArcher
 
 * special unit
-OldCoyoteSpirit: coyote warrior, coyote hero
+OldCoyoteSpirit: 
+    enable CoyoteHero, MaxHitpoints, PierceArmor
+        OnHitEffect: StatModify Armor Stackable TargetUnit="AbstractInfantry"
+        BonusDamage: MythUnit, AbstractCavalry, AbstractArcher
+        HandAttack, RangedAttack ProjectileAxeFlaming
+        Respawn: 5 mins
+    CoyoteWarrior: MaxHitpoints, ROF
 
 * godpowers
 centzonhuitznahua: Tzitzimitl divinedamage
@@ -1074,6 +1109,11 @@ centzonhuitznahua: Tzitzimitl divinedamage
 torchofmisfortune: spawn burn area
     chargedattack: enemy los-
 feastofsustenance: devote humansoldier return cost 20%
+
+* fake buildings
+towncenter, temple, military production Building
+
+* notpushable flag ?
 
 === refactor
 * additional reworks
@@ -1096,6 +1136,7 @@ RaftAtlanteanArcher
 RaftChineseArcher
 RaftJapaneseArcher
 RaftGreekArcher, RaftGreekArcherHero
+RaftAztecArcher
 
 Iztaccihuatl
     warrior techs
