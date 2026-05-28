@@ -1047,9 +1047,9 @@
 
 		<movementtype>amphibious</movementtype>
 		<flag>TieToWaterSurface</flag>
-		<tactics mergeMode="replace">mcmt_kitsune.tactics</tactics>
+		<tactics>mcmt_kitsune.tactics</tactics>
 		<protoaction>
-     		<name stringid="STR_ABILITY_ILLUSION_SURPRISE">DelayedHamadryadTransform</name>
+     		<name>DelayedHamadryadTransform</name>
 			<type>DelayedTransform</type>
 			<active>0</active>
 			<modifyprotoid>KitsuneIllusion</modifyprotoid>
@@ -1076,7 +1076,7 @@
 		<rollovertextid>STR_UNIT_KITSUNE_LR</rollovertextid>
 		<shortrollovertextid>STR_UNIT_KITSUNE_SR</shortrollovertextid>
 		<enemyshortrollovertextid>STR_EMB_KITSUNE_ILLUSION_SR</enemyshortrollovertextid>
-		<icon>resources\greek\player_color\units\hamadryad_icon.png</icon>
+		<icon>resources\japanese\player_color\units\kitsune_icon.png</icon>
 		<animfile>spc\units\hallgerd_forkbeard\hallgerd_forkbeard.xml</animfile>
 		<soundsetfile>japanese\female.xml</soundsetfile>
 		<obstructionradiusx>1.2400</obstructionradiusx>
@@ -1147,7 +1147,7 @@
 		<flag>HideMinimapIndicatorFromOpponents</flag>
 		<flag>NotPushable</flag>
 		<flag>FakeAsTreeIfEnemy</flag>
-		<tactics>hamadryad_tree.tactics</tactics>
+		<tactics>mcmt_kitsune_illusion.tactics</tactics>
 		<protoaction>
 			<name>PlaceholderAttackHamadryadTree</name>
 			<rate type="All">1.0</rate>
@@ -5714,9 +5714,10 @@
 		</protoaction>
 	</unit>
 	<unit name="EagleWarrior">
-		<tactics>global_infantry_proximitymodes.tactics</tactics>
+		<tactics>global_infantry_proxmity_rangedanim.tactics</tactics>
 		<protoaction>
 			<name>HandAttack</name>
+			<anim>RangedAttack</anim>
 			<rof>0.800000</rof>
 			<damage type="Hack">8.000000</damage>
 			<damagebonus type="AbstractCavalry">5.000000</damagebonus>
@@ -5725,17 +5726,11 @@
 		</protoaction>
 		<protoaction>
 			<name>RangedAttack</name>
-			<anim>RangedAttack</anim>
 			<rof>1.500000</rof>
 			<damage type="Pierce">10.000000</damage>
 			<damagebonus type="AbstractArcher">1.500000</damagebonus>
 			<minrange>4.000000</minrange>
 			<maxrange>14.000000</maxrange>
-		</protoaction>
-		<protoaction>
-			<name stringid="STR_ACTION_DEVOTE">DevoteMajor</name>
-			<type>DevoteMajor</type>
-			<maxrange>0.2</maxrange>
 		</protoaction>
 	</unit>
 	<unit name="TequihuaArcher">

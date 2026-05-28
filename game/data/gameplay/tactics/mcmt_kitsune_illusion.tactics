@@ -1,0 +1,9 @@
+<tactics>
+	<action>
+		<name stringid="STR_ABILITY_KITSUNE_ILLUSIONATTACK">PlaceholderAttackHamadryadTree</name>
+		<type>Attack</type>
+		<anim>PlaceholderAttack</anim>
+		<attackaction>1</attackaction>
+	</action>
+	<tactic>Default<action priority="100">PlaceholderAttackHamadryadTree</action><attacktype>LogicalTypeRangedUnitsAttack</attacktype></tactic>
+</tactics>

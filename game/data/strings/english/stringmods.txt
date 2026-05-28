@@ -27,6 +27,7 @@ ID = "STR_UNIT_SANDDEVOURER_SR"   ;   Str = "Last Thing Expected to See Moving B
 ID = "STR_UNIT_SANDDEVOURER_LR"   ;   Str = "Oversized worm that moves through sands, hunts down anythng moves and leaves buildings in crumbles"
 
 ID = "STR_EMB_KITSUNE_ILLUSION_SR"   ;   Str = "Just a chilling nice lady"
+ID = "STR_ABILITY_KITSUNE_ILLUSIONATTACK"   ;   Str = "Kitsune Illusion Suprise"
 
 // DEMIGODS
 ID = "STR_UNIT_SON_OF_HORUS_NAME"  ;   Str = "Son of Horus (Hero)"
@@ -625,9 +626,9 @@ ID = "STR_UNIT_CAVALRYARBALEST_NAME"   ;   Str = "Cavalry Arbalest"
 ID = "STR_UNIT_CAVALRYARBALEST_SR"   ;   Str = "Bullet Hell on Wheels"
 ID = "STR_UNIT_CAVALRYARBALEST_LR"   ;   Str = "Amazonian warriors share their teachings with Colosseum Archers and give a birth to an art of war"
 
-ID = "STR_UNIT_AMAZONIAN_HUNTRESS_NAME"   ;   Str = "Cavalry Arbalest"
-ID = "STR_UNIT_AMAZONIAN_HUNTRESS_SR"   ;   Str = "Bullet Hell on Wheels"
-ID = "STR_UNIT_AMAZONIAN_HUNTRESS_LR"   ;   Str = "Amazonian warriors share their teachings with Colosseum Archers and give a birth to an art of war"
+ID = "STR_UNIT_AMAZONIAN_HUNTRESS_NAME"   ;   Str = "Amazonian Huntress"
+ID = "STR_UNIT_AMAZONIAN_HUNTRESS_SR"   ;   Str = "Amazonian Huntress with debatable riding skills"
+ID = "STR_UNIT_AMAZONIAN_HUNTRESS_LR"   ;   Str = "Amazonian warriors excel in various weaponry but only a selective group can ride very fast elite horses"
 
 ID = "STR_UNIT_ENCELADUS_NAME"   ;   Str = "Enceladus (Hero)"
 ID = "STR_UNIT_ENCELADUS_SR"   ;   Str = "Legendary Giant of Greek World"
