@@ -249,6 +249,10 @@ ID = "STR_ABILITY_VOLTOX"    ;   Str = "Sparky the Energy Wolf"
 ID = "STR_ABILITY_VOLTOX_LR"    ;   Str = "Summons the best companion of a cyborg. It zaps to enemies and leaves them electrified"
 
 // HOUSE UNITS
+ID = "STR_TECH_HOUSE_SPECIAL_UNITS_NAME"    ;   Str = "Authorize Galactic Protocol"
+ID = "STR_TECH_HOUSE_SPECIAL_UNITS_NORSE_NAME"    ;   Str = "Authorize Yggdrassil Protocol"
+ID = "STR_TECH_HOUSE_SPECIAL_UNITS_LR"    ;   Str = "Enable access to house special units"
+
 ID = "STR_UNIT_ATTACKWOLF_NAME"    ;   Str = "Attack Wolf"
 ID = "STR_UNIT_ATTACKWOLF_SR"    ;   Str = "Attack Wolf"
 ID = "STR_UNIT_ATTACKWOLF_LR"    ;   Str = "The Best Friend of Scientific Volunteers. Cybernetically Enhanced Wolf"

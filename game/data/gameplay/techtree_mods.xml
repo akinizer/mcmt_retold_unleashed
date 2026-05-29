@@ -36,6 +36,8 @@
 
         <effect type="TechStatus" status="active" mergeMode="add">WallConnectorToCrusher</effect>
         <effect type="TechStatus" status="active" mergeMode="add">WallConnectorToCharger</effect>
+        <!--House-->
+        <effect type="TechStatus" status="obtainable">HouseSpecialUnitsActivator_Atlantean</effect>
       </effects>
     </tech>
 
@@ -113,6 +115,8 @@
         <effect type="TechStatus" status="active" mergeMode="add">WallConnectorToArcher</effect>
         <effect type="TechStatus" status="active" mergeMode="add">WallConnectorToCrusher</effect>
         <effect type="TechStatus" status="active" mergeMode="add">WallConnectorToCharger</effect>
+        <!--House-->
+        <effect type="TechStatus" status="obtainable">HouseSpecialUnitsActivator_Norse</effect>
       </effects>
     </tech>
     <tech name="ArchaicAgeJapanese">
@@ -1485,14 +1489,6 @@
         
       <effects>
         <!-- General Special Units -->
-        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">AttackWolf</target></effect>
-        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">KingLycaon</target></effect>
-        <effect type="Data" amount="1.60" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">KingLycaon</target></effect>
-        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Asurendra</target></effect>
-        <effect type="Data" amount="1.30" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">Asurendra</target></effect>
-        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">MasterKensei</target></effect>
-        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">CaptainEureka</target></effect>
-
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">PansChosen</target></effect>        
         <!-- Greek Special Units -->
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">PegasusGroundedMessenger</target></effect>
@@ -1502,8 +1498,6 @@
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">StellarGateway</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">MummyFallen</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Chariot_Pharaoh</target></effect>
-        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">SandDevourer</target></effect>
-        <effect type="Data" amount="4.00" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">SandDevourer</target></effect>
 
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">ScarabBurrowed</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">ScarabMini</target></effect>
@@ -1816,53 +1810,71 @@
     </tech> 
 
      <!-- MCMT SECTION FOR KINGDOM TECH CIVILIZATION SPECIAL UNITS -->
-
-    <tech name="ArchaicAgeNorse" mergeMode="add">
+    <tech name="ArchaicAgeGeneral" mergeMode="add">
+      <status>ACTIVE</status>
+      <delay>0.5000</delay>
+      <flag>Volatile</flag>
+      <flag>Persistent</flag>
+      <flag>HideAllNotifications</flag>
+      <flag>HideFromDialogs</flag>
       <effects>
-        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Hobbit</target></effect>
-        <effect type="Data" amount="0.60" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">Hobbit</target></effect>
-        <effect type="Data" action="Gather" amount="1.50" subtype="WorkRate" unittype="FoodResource" relativity="BasePercent"><target type="ProtoUnit">Hobbit</target></effect>
-        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Moradin</target></effect>
-        <effect type="Data" amount="2.25" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">Moradin</target></effect>
-        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Loki</target></effect>
-        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">TreebeardOfFangorn</target></effect>
-        <effect type="Data" amount="1.60" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">TreebeardOfFangorn</target></effect>
+        <effect type="TechStatus" status="obtainable">HouseSpecialUnitsActivator_Shared</effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="HouseSpecialUnitsActivator_Shared" row="3" column="4" relativity="Assign">
+          <target type="ProtoUnit">House</target></effect>	
       </effects>
     </tech>
 
-    <tech name="ArchaicAgeEgyptian" mergeMode="add">		
+    <tech name="ArchaicAgeNorse">
+      <effects>
+        <!--House-->
+        <effect type="Data" amount="1.00" subtype="CommandRemove" tech="HouseSpecialUnitsActivator_Shared" relativity="Assign" mergeMode="add">
+          <target type="ProtoUnit">House</target></effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="HouseSpecialUnitsActivator_Norse" row="3" column="4" relativity="Assign" mergeMode="add">
+          <target type="ProtoUnit">House</target></effect>
+      </effects>
+    </tech>
+
+    <tech name="ArchaicAgeAtlantean">
+      <effects>
+        <!--House-->
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="HouseSpecialUnitsActivator_Atlantean" row="3" column="4" relativity="Assign" mergeMode="add">
+          <target type="ProtoUnit">Manor</target></effect>
+      </effects>
+    </tech>
+
+    <tech name="ArchaicAgeEgyptian">		
 	  	<effects>
         <!--Noah-->
-        <effect type="TechStatus" status="obtainable">MCMT_EgyptianRenovation</effect>
+        <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_EgyptianRenovation</effect>
         <!--Son of Osiris / Horus-->
-        <effect type="Data" action="Empower" amount="1.25" subtype="EmpowerModify" empowertype="self" unittype="logicaltypebuildingthatcanbeempowered" modifytype="FavorGatherRate" relativity="BasePercent"><target type="ProtoUnit">SonOfOsiris</target></effect>
-        <effect type="Data" action="Empower" amount="1.25" subtype="EmpowerModify" empowertype="self" unittype="logicaltypebuildingthatcanbeempowered" modifytype="DropsiteRate" relativity="BasePercent"><target type="ProtoUnit">SonOfOsiris</target></effect>
+        <effect type="Data" action="Empower" amount="1.25" subtype="EmpowerModify" empowertype="self" unittype="logicaltypebuildingthatcanbeempowered" modifytype="FavorGatherRate" relativity="BasePercent" mergeMode="add"><target type="ProtoUnit">SonOfOsiris</target></effect>
+        <effect type="Data" action="Empower" amount="1.25" subtype="EmpowerModify" empowertype="self" unittype="logicaltypebuildingthatcanbeempowered" modifytype="DropsiteRate" relativity="BasePercent" mergeMode="add"><target type="ProtoUnit">SonOfOsiris</target></effect>
         
-        <effect type="Data" action="Empower" amount="1.25" subtype="EmpowerModify" empowertype="self" unittype="logicaltypebuildingempoweredforlos" modifytype="BuildRate" relativity="BasePercent"><target type="ProtoUnit">SonOfOsiris</target></effect>
-        <effect type="Data" action="Empower" amount="1.25" subtype="EmpowerModify" empowertype="self" unittype="logicaltypeaffectedbyvalleyofthekings" modifytype="BuildRate" relativity="BasePercent"><target type="ProtoUnit">SonOfOsiris</target></effect>
-        <effect type="Data" action="Empower" amount="1.25" subtype="EmpowerModify" empowertype="self" unittype="logicaltypebuildingthatcanbeempowered" modifytype="BuildRate" relativity="BasePercent"><target type="ProtoUnit">SonOfOsiris</target></effect>
+        <effect type="Data" action="Empower" amount="1.25" subtype="EmpowerModify" empowertype="self" unittype="logicaltypebuildingempoweredforlos" modifytype="BuildRate" relativity="BasePercent" mergeMode="add"><target type="ProtoUnit">SonOfOsiris</target></effect>
+        <effect type="Data" action="Empower" amount="1.25" subtype="EmpowerModify" empowertype="self" unittype="logicaltypeaffectedbyvalleyofthekings" modifytype="BuildRate" relativity="BasePercent" mergeMode="add"><target type="ProtoUnit">SonOfOsiris</target></effect>
+        <effect type="Data" action="Empower" amount="1.25" subtype="EmpowerModify" empowertype="self" unittype="logicaltypebuildingthatcanbeempowered" modifytype="BuildRate" relativity="BasePercent" mergeMode="add"><target type="ProtoUnit">SonOfOsiris</target></effect>
             
-        <effect type="Data" action="Empower" amount="1.15" subtype="EmpowerModify" empowertype="self" unittype="logicaltypeaffectedbyvalleyofthekings" modifytype="MilitaryTrainingRate" relativity="BasePercent"><target type="ProtoUnit">SonOfOsiris</target></effect>
-        <effect type="Data" action="Empower" amount="1.15" subtype="EmpowerModify" empowertype="self" unittype="logicaltypebuildingthatcanbeempowered" modifytype="MilitaryTrainingRate" relativity="BasePercent"><target type="ProtoUnit">SonOfOsiris</target></effect>
+        <effect type="Data" action="Empower" amount="1.15" subtype="EmpowerModify" empowertype="self" unittype="logicaltypeaffectedbyvalleyofthekings" modifytype="MilitaryTrainingRate" relativity="BasePercent" mergeMode="add"><target type="ProtoUnit">SonOfOsiris</target></effect>
+        <effect type="Data" action="Empower" amount="1.15" subtype="EmpowerModify" empowertype="self" unittype="logicaltypebuildingthatcanbeempowered" modifytype="MilitaryTrainingRate" relativity="BasePercent" mergeMode="add"><target type="ProtoUnit">SonOfOsiris</target></effect>
       
-        <effect type="Data" action="Empower" amount="1.15" subtype="EmpowerModify" empowertype="self" unittype="logicaltypebuildingempoweredforlos" modifytype="ResearchRate" relativity="BasePercent"><target type="ProtoUnit">SonOfOsiris</target></effect>
-        <effect type="Data" action="Empower" amount="1.15" subtype="EmpowerModify" empowertype="self" unittype="logicaltypeaffectedbyvalleyofthekings" modifytype="ResearchRate" relativity="BasePercent"><target type="ProtoUnit">SonOfOsiris</target></effect>
-        <effect type="Data" action="Empower" amount="1.15" subtype="EmpowerModify" empowertype="self" unittype="logicaltypebuildingthatcanbeempowered" modifytype="ResearchRate" relativity="BasePercent"><target type="ProtoUnit">SonOfOsiris</target></effect>
+        <effect type="Data" action="Empower" amount="1.15" subtype="EmpowerModify" empowertype="self" unittype="logicaltypebuildingempoweredforlos" modifytype="ResearchRate" relativity="BasePercent" mergeMode="add"><target type="ProtoUnit">SonOfOsiris</target></effect>
+        <effect type="Data" action="Empower" amount="1.15" subtype="EmpowerModify" empowertype="self" unittype="logicaltypeaffectedbyvalleyofthekings" modifytype="ResearchRate" relativity="BasePercent" mergeMode="add"><target type="ProtoUnit">SonOfOsiris</target></effect>
+        <effect type="Data" action="Empower" amount="1.15" subtype="EmpowerModify" empowertype="self" unittype="logicaltypebuildingthatcanbeempowered" modifytype="ResearchRate" relativity="BasePercent" mergeMode="add"><target type="ProtoUnit">SonOfOsiris</target></effect>
 
-        <effect type="Data" action="Empower" amount="0.75" subtype="EmpowerModify" empowertype="self" unittype="logicaltypeaffectedbyvalleyofthekings" modifytype="ROF" relativity="BasePercent"><target type="ProtoUnit">SonOfOsiris</target></effect>
-        <effect type="Data" action="Empower" amount="0.75" subtype="EmpowerModify" empowertype="self" unittype="logicaltypebuildingthatcanbeempowered" modifytype="ROF" relativity="BasePercent"><target type="ProtoUnit">SonOfOsiris</target></effect>
+        <effect type="Data" action="Empower" amount="0.75" subtype="EmpowerModify" empowertype="self" unittype="logicaltypeaffectedbyvalleyofthekings" modifytype="ROF" relativity="BasePercent" mergeMode="add"><target type="ProtoUnit">SonOfOsiris</target></effect>
+        <effect type="Data" action="Empower" amount="0.75" subtype="EmpowerModify" empowertype="self" unittype="logicaltypebuildingthatcanbeempowered" modifytype="ROF" relativity="BasePercent" mergeMode="add"><target type="ProtoUnit">SonOfOsiris</target></effect>
 
-        <effect type="Data" amount="5" subtype="OnHitEffect" action="LightningAttack" effecttype="DamageOverTime" duration="10.00" targettype="Building" relativity="Assign">
+        <effect type="Data" amount="5" subtype="OnHitEffect" action="LightningAttack" effecttype="DamageOverTime" duration="10.00" targettype="Building" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">SonOfOsiris</target></effect>
 
-        <effect type="Data" amount="0.7" subtype="OnHitEffect" action="LightningAttack" effecttype="Stun" duration="1.00" targettype="NavalUnit" relativity="Assign">
+        <effect type="Data" amount="0.7" subtype="OnHitEffect" action="LightningAttack" effecttype="Stun" duration="1.00" targettype="NavalUnit" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">SonOfOsiris</target></effect>
-        <effect type="Data" amount="0.7" subtype="OnHitEffect" action="LightningAttack" effecttype="Stun" duration="1.00" targettype="HumanSoldier" relativity="Assign">
+        <effect type="Data" amount="0.7" subtype="OnHitEffect" action="LightningAttack" effecttype="Stun" duration="1.00" targettype="HumanSoldier" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">SonOfOsiris</target></effect>
-        <effect type="Data" amount="0.7" subtype="OnHitEffect" action="LightningAttack" effecttype="Stun" duration="6.00" targettype="Civilian" relativity="Assign">
+        <effect type="Data" amount="0.7" subtype="OnHitEffect" action="LightningAttack" effecttype="Stun" duration="6.00" targettype="Civilian" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">SonOfOsiris</target></effect>
         
-        <effect type="SetName" proto="SonOfOsiris" newname="STR_UNIT_SON_OF_HORUS_NAME"></effect>
+        <effect type="SetName" proto="SonOfOsiris" newname="STR_UNIT_SON_OF_HORUS_NAME" mergeMode="add"></effect>
       </effects>
     </tech>
 
@@ -1954,6 +1966,8 @@
             <effect type="TechStatus" status="obtainable">MCMT_FinancialDevelopmentUpgradeI</effect>
             <effect type="TechStatus" status="obtainable">MCMT_FinancialDevelopmentUpgradeII</effect>
             <effect type="TechStatus" status="obtainable">MCMT_FinancialDevelopmentUpgradeIII</effect>
+            <!--House Techs: Special Unit Activators-->
+            <effect type="TechStatus" status="obtainable">HouseSpecialUnitsActivator_Shared</effect>
       </effects>
     </tech>
 
@@ -2083,6 +2097,119 @@
     </tech>
     
     <!-- SPECIAL TECHS -->
+    <!-- House Special Units - General -->
+    <tech name="HouseSpecialUnitsActivator_Shared" mergeMode="add">
+      <displaynameid>STR_TECH_HOUSE_SPECIAL_UNITS_NAME</displaynameid>
+      <rollovertextid>STR_TECH_HOUSE_SPECIAL_UNITS_LR</rollovertextid>
+      <researchpoints>20.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\tech\activate_tech.jpg</icon>
+      <flag>NoTextMessage</flag>
+      <flag>HideFromDialogs</flag>
+      <cost resourcetype="Food">2000.0000</cost>
+      <cost resourcetype="Gold">5000.0000</cost>
+      <cost resourcetype="Favor">10.0000</cost>
+      <prereqs>
+        <typecount unit="House" count="0.00" state="aliveState" operator="gt"></typecount>
+      </prereqs>
+      <effects>			
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">KingLycaon</target></effect>
+        <effect type="Data" amount="1.60" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">KingLycaon</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Asurendra</target></effect>
+        <effect type="Data" amount="1.30" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">Asurendra</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">MasterKensei</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">CaptainEureka</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">AttackWolf</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">SandDevourer</target></effect>
+        <effect type="Data" amount="4.00" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">SandDevourer</target></effect>
+
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="KingLycaon" row="1" column="0" relativity="Assign">
+          <target type="ProtoUnit">House</target></effect>	
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Asurendra" row="1" column="1" relativity="Assign">
+          <target type="ProtoUnit">House</target></effect>	
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="MasterKensei" row="1" column="2" relativity="Assign">
+          <target type="ProtoUnit">House</target></effect>	
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="CaptainEureka" row="1" column="3" relativity="Assign">
+          <target type="ProtoUnit">House</target></effect>	
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="AttackWolf" row="1" column="4" relativity="Assign">
+          <target type="ProtoUnit">House</target></effect>	
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="SandDevourer" row="1" column="5" relativity="Assign">
+          <target type="ProtoUnit">House</target></effect>	      	
+      </effects>
+    </tech>
+    <tech name="HouseSpecialUnitsActivator_Atlantean" mergeMode="add">
+      <displaynameid>STR_TECH_HOUSE_SPECIAL_UNITS_NAME</displaynameid>
+      <rollovertextid>STR_TECH_HOUSE_SPECIAL_UNITS_LR</rollovertextid>
+      <researchpoints>20.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\tech\activate_tech.jpg</icon>
+      <flag>NoTextMessage</flag>
+      <flag>HideFromDialogs</flag>
+      <cost resourcetype="Wood">2000.0000</cost>
+      <cost resourcetype="Gold">5000.0000</cost>
+      <cost resourcetype="Favor">10.0000</cost>
+      <prereqs>
+        <typecount unit="Manor" count="0.00" state="aliveState" operator="gt"></typecount>
+      </prereqs>
+      <effects>			
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">KingLycaon</target></effect>
+        <effect type="Data" amount="1.60" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">KingLycaon</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Asurendra</target></effect>
+        <effect type="Data" amount="1.30" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">Asurendra</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">MasterKensei</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">CaptainEureka</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">AttackWolf</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">SandDevourer</target></effect>
+        <effect type="Data" amount="4.00" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">SandDevourer</target></effect>
+
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="KingLycaon" row="1" column="0" relativity="Assign">
+          <target type="ProtoUnit">Manor</target></effect>	
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Asurendra" row="1" column="1" relativity="Assign">
+          <target type="ProtoUnit">Manor</target></effect>	
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="MasterKensei" row="1" column="2" relativity="Assign">
+          <target type="ProtoUnit">Manor</target></effect>	
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="CaptainEureka" row="1" column="3" relativity="Assign">
+          <target type="ProtoUnit">Manor</target></effect>	
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="AttackWolf" row="1" column="4" relativity="Assign">
+          <target type="ProtoUnit">Manor</target></effect>	
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="SandDevourer" row="1" column="5" relativity="Assign">
+          <target type="ProtoUnit">Manor</target></effect>	      	
+      </effects>
+    </tech>
+    <tech name="HouseSpecialUnitsActivator_Norse" mergeMode="add">
+      <displaynameid>STR_TECH_HOUSE_SPECIAL_UNITS_NORSE_NAME</displaynameid>
+      <rollovertextid>STR_TECH_HOUSE_SPECIAL_UNITS_LR</rollovertextid>
+      <researchpoints>20.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\tech\activate_tech.jpg</icon>
+      <flag>NoTextMessage</flag>
+      <flag>HideFromDialogs</flag>
+      <cost resourcetype="Wood">2000.0000</cost>
+      <cost resourcetype="Favor">10.0000</cost>
+      <prereqs>
+        <typecount unit="House" count="0.00" state="aliveState" operator="gt"></typecount>
+      </prereqs>
+      <effects>			
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Hobbit</target></effect>
+        <effect type="Data" amount="0.60" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">Hobbit</target></effect>
+        <effect type="Data" action="Gather" amount="1.50" subtype="WorkRate" unittype="FoodResource" relativity="BasePercent"><target type="ProtoUnit">Hobbit</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Moradin</target></effect>
+        <effect type="Data" amount="2.25" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">Moradin</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Loki</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">TreebeardOfFangorn</target></effect>
+        <effect type="Data" amount="1.60" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">TreebeardOfFangorn</target></effect>
+
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Hobbit" row="0" column="0" relativity="Assign">
+          <target type="ProtoUnit">House</target></effect>	   
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="TreebeardOfFangorn" row="0" column="3" relativity="Assign">
+          <target type="ProtoUnit">House</target></effect>	   
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Loki" row="0" column="4" relativity="Assign">
+          <target type="ProtoUnit">House</target></effect>	   
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Moradin" row="0" column="5" relativity="Assign">
+          <target type="ProtoUnit">House</target></effect>	   
+      </effects>
+    </tech>
+
     <!-- Greek Special Techs -->
     <tech name="ParthenonGuards" mergeMode="add">
       <status>UNOBTAINABLE</status>

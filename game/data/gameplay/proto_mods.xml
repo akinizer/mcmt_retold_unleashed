@@ -1359,19 +1359,6 @@
 
     <!-- GENERAL SECTION -->
     <unit name="House">	
-        <train row="1" column="0">KingLycaon</train>
-        <train row="1" column="1">Asurendra</train>    
-		<train row="1" column="2">MasterKensei</train>    
-		<train row="1" column="3">CaptainEureka</train> 
-		<train row="1" column="4">AttackWolf</train>
-		<train row="1" column="5">SandDevourer</train>
-
-		<hotkeycontext>BuildNorseAccel</hotkeycontext>		
-		<train row="0" column="0">Hobbit</train>
-		<train row="0" column="3">TreebeardOfFangorn</train>
-		<train row="0" column="4">Loki</train>
-		<train row="0" column="5">Moradin</train>
-
 		<maxcontained>5</maxcontained>
 		<contain>AttackWolf</contain>
         <contain>AbstractVillager</contain>
@@ -1382,11 +1369,6 @@
     </unit>
 	<unit name="Manor">
         <maxcontained>15</maxcontained>
-        <tech row="0" column="0">VibrantLand</tech>
-        <train row="1" column="0">KingLycaon</train>
-        <train row="1" column="1">Asurendra</train>    
-		<train row="1" column="2">MasterKensei</train>
-		<train row="1" column="3">CaptainEureka</train>   
         <command row="1" column="1">CancelBuilding</command>
     </unit>   
 	<unit name="Market">
