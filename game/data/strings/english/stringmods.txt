@@ -913,7 +913,7 @@ ID = "STR_TECH_AMAZONTRAINING_I_LR"   ;   Str = "First upgrade for Amazon warrio
 ID = "STR_TECH_AMAZONTRAINING_II_NAME"   ;   Str = "Amazon Training II"
 ID = "STR_TECH_AMAZONTRAINING_II_LR"   ;   Str = "Second upgrade for Amazon warriors"
 
-ID = "STR_TECH_AMAZONTRAINING_III_NAME"   ;   Str = "Amazon Training I"
+ID = "STR_TECH_AMAZONTRAINING_III_NAME"   ;   Str = "Amazon Training III"
 ID = "STR_TECH_AMAZONTRAINING_III_LR"   ;   Str = "Final upgrade for Amazon warriors"
 
 ID = "STR_TECH_SPARTAN_TRAINING_NAME"   ;   Str = "Spartan Training"
@@ -949,10 +949,10 @@ ID = "STR_TECH_DIVINE_NATURE_SPIRITS_LR"   ;   Str = "Nymphs are female faes who
 ID = "STR_TECH_DIVINE_NATURE_SPIRITS_I_NAME"   ;   Str = "Divine Nature Spirits I"
 ID = "STR_TECH_DIVINE_NATURE_SPIRITS_I_LR"   ;   Str = "First of Nymph upgrade techs that improves divinity as well as value"
 
-ID = "STR_TECH_DIVINE_NATURE_SPIRITS_II_NAME"   ;   Str = "Divine Nature Spirits I"
+ID = "STR_TECH_DIVINE_NATURE_SPIRITS_II_NAME"   ;   Str = "Divine Nature Spirits II"
 ID = "STR_TECH_DIVINE_NATURE_SPIRITS_II_LR"   ;   Str = "Second of Nymph upgrade techs that improves divinity as well as value"
 
-ID = "STR_TECH_DIVINE_NATURE_SPIRITS_III_NAME"   ;   Str = "Divine Nature Spirits I"
+ID = "STR_TECH_DIVINE_NATURE_SPIRITS_III_NAME"   ;   Str = "Divine Nature Spirits III"
 ID = "STR_TECH_DIVINE_NATURE_SPIRITS_III_LR"   ;   Str = "Third of Nymph upgrade techs that improves divinity as well as value"
 
 ID = "STR_TECH_DIVINEARMAMENTS_NAME"   ;   Str = "Divine Armaments"

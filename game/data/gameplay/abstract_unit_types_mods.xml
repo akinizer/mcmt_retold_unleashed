@@ -1,4 +1,5 @@
 <abstractunittypesmods>
+    <!--Unit Types-->
     <abstractunittype>HeroProtagonist</abstractunittype>
     <abstractunittype>AbstractGreekHero</abstractunittype>
     <abstractunittype>AbstractSorcererDark</abstractunittype>
@@ -22,13 +23,21 @@
     <abstractunittype>AbstractOni</abstractunittype>
     <abstractunittype>AbstractGiant</abstractunittype>
     <abstractunittype>AbstractSerpent</abstractunittype>
+    <abstractunittype>AbstractNymph</abstractunittype>
+    <abstractunittype>AbstractWoodland</abstractunittype>
+    <abstractunittype>AbstractAmazon</abstractunittype>
+    <abstractunittype>AbstractNubian</abstractunittype>
+    <!--Type Superiority & Vulnerability-->
     <abstractunittype>AbstractMythResistant</abstractunittype>
     <abstractunittype>AbstractFireResistant</abstractunittype>
     <abstractunittype>AbstractFireVulnerable</abstractunittype>
     <abstractunittype>AbstractLightningResistant</abstractunittype>
     <abstractunittype>AbstractLightningVulnerable</abstractunittype>
+    <!--Elemental Damage Dealers-->
     <abstractunittype>AbstractFireDamageDealer</abstractunittype>
     <abstractunittype>AbstractLightningDamageDealer</abstractunittype>
     <abstractunittype>AbstractDivineLight</abstractunittype>
     <abstractunittype>AbstractEternalShadow</abstractunittype>
+    <!--Civilization Specific-->    
+    <abstractunittype>AbstractEgyptianArcher</abstractunittype>
 </abstractunittypesmods>

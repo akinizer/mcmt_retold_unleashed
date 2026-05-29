@@ -1129,6 +1129,93 @@
           <target type="ProtoUnit">AbstractUndead</target></effect>
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractEternalShadow" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">AbstractInfernal</target></effect>
+        <!--AbstractAmazon-->
+         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractAmazon" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AmazonArcher</target></effect>
+         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractAmazon" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Hippolyta</target></effect>
+         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractAmazon" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AmazonMarksman</target></effect>
+         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractAmazon" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">CavalryArbalest</target></effect>
+         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractAmazon" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AmazonianHuntress</target></effect>
+         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractAmazon" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Enceladus</target></effect>
+         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractAmazon" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Atalanta</target></effect>
+        <!--AbstractNubian-->
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractNubian" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Mercenary</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractNubian" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">MercenaryCavalry</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractNubian" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">NubianMercenary</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractNubian" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">NubianHunter</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractNubian" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">NubianCharger</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractNubian" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">NubianCavalry</target></effect>
+        <!--AbstractNymph-->
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractNymph" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Dryad</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractNymph" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Hamadryad</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractNymph" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">HamadryadTree</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractNymph" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Nymph</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractNymph" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Nereid</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractNymph" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">TreebeardOfFangorn</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractNymph" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Hesperides</target></effect>
+        <!--AbstractWoodland-->
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractWoodland" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbstractNymph</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractWoodland" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Hobbit</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractWoodland" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Centaur</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractWoodland" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Chiron</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractWoodland" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">ChironSPC</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractWoodland" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Satyr</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractWoodland" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">PansChosen</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractWoodland" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">RangerElf</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractWoodland" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">RoyalElf</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractWoodland" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">QuimichinSpy</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractWoodland" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">StymphalianBird</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractWoodland" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Roc</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractWoodland" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Jorogumo</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractWoodland" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">QiongQi</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractWoodland" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">BaiHu</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractWoodland" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">FenrisWolfBrood</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractWoodland" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Troll</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractWoodland" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbstractAmazon</target></effect>
+        <!--AbstractEgyptianArcher-->
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractEgyptianArcher" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">ChariotArcher</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractEgyptianArcher" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">BowmanArcher</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractEgyptianArcher" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">WarElephantArcher</target></effect>
       </effects>
     </tech>
 
@@ -2957,7 +3044,7 @@
     <status>UNOBTAINABLE</status>
     <icon>resources\tech\activate_tech.jpg</icon>
     <researchpoints>1.0000</researchpoints>
-    <cost resourcetype="Favor">15.0000</cost>
+    <cost resourcetype="Favor">815.0000</cost>
     <flag>CountsTowardMilitaryScore</flag>
     <flag>MythTech</flag>
     <prereqs><techstatus status="Active">ArchaicAgeEgyptian</techstatus></prereqs>
@@ -3710,9 +3797,6 @@
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">100</cost>
 		<cost resourcetype="Gold">50</cost>
-    <prereqs>
-      <techstatus status="Active">MCMT_AmazonTraining</techstatus>
-    </prereqs>
     <effects>
 		  <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
         <target type="ProtoUnit">AmazonMarksman</target></effect>        
@@ -3740,9 +3824,6 @@
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">100</cost>
 		<cost resourcetype="Gold">50</cost>
-    <prereqs>
-      <techstatus status="Active">MCMT_AmazonTraining_I</techstatus>
-    </prereqs>
     <effects>
 		  <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
         <target type="ProtoUnit">AmazonMarksman</target></effect>
@@ -3777,9 +3858,6 @@
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">100</cost>
 		<cost resourcetype="Gold">50</cost>
-    <prereqs>
-      <techstatus status="Active">MCMT_AmazonTraining_II</techstatus>
-    </prereqs>
     <effects>
       <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
         <target type="ProtoUnit">AmazonMarksman</target></effect>
@@ -3880,9 +3958,6 @@
 		<flag>CountsTowardMilitaryScore</flag>
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">150</cost> 
-    <prereqs>
-      <techstatus status="Active">MCMT_DivineNatureSpirits</techstatus>
-    </prereqs>
 		<effects>      
       <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
         <target type="ProtoUnit">Nereid</target></effect>
@@ -3905,9 +3980,6 @@
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">250</cost>
 		<cost resourcetype="Wood">150</cost>    
-     <prereqs>
-      <techstatus status="Active">MCMT_DivineNatureSpirits_I</techstatus>
-    </prereqs>
 		<effects>     
       <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
         <target type="ProtoUnit">Nereid</target></effect>
@@ -3930,9 +4002,6 @@
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">250</cost>
 		<cost resourcetype="Wood">150</cost>    
-    <prereqs>
-      <techstatus status="Active">MCMT_DivineNatureSpirits_II</techstatus>
-    </prereqs>
 		<effects>      
       <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
         <target type="ProtoUnit">Nereid</target></effect>
@@ -3952,9 +4021,6 @@
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">250</cost>
 		<cost resourcetype="Wood">150</cost>    
-    <prereqs>
-      <techstatus status="Active">MCMT_DivineNatureSpirits</techstatus>
-    </prereqs>
 		<effects>      
       <effect type="Data" action="Heal" amount="1.00" subtype="ActionEnable" relativity="Absolute">
         <target type="ProtoUnit">Nymph</target></effect>
@@ -3982,9 +4048,6 @@
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">250</cost>
 		<cost resourcetype="Wood">150</cost>    
-    <prereqs>
-      <techstatus status="Active">MCMT_DivineNatureSpirits</techstatus>
-    </prereqs>
 		<effects>      
       <effect type="Data" action="Convert" amount="1.00" subtype="ActionEnable" relativity="Absolute">
         <target type="ProtoUnit">Nymph</target></effect>
@@ -4012,9 +4075,6 @@
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">250</cost>
 		<cost resourcetype="Wood">150</cost>    
-    <prereqs>
-      <techstatus status="Active">MCMT_DivineNatureSpirits</techstatus>
-    </prereqs>
 		<effects>      
       <effect type="Data" action="Empower" amount="1.00" subtype="ActionEnable" relativity="Absolute">
         <target type="ProtoUnit">Nymph</target></effect>
@@ -4059,9 +4119,7 @@
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">100</cost>
 		<cost resourcetype="Wood">150</cost>
-    <prereqs>
-      <techstatus status="Active">MCMT_ElvenTraining</techstatus>
-    </prereqs>
+   
     <effects>
 		  <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
         <target type="ProtoUnit">RangerElf</target></effect>        
@@ -4089,9 +4147,7 @@
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">100</cost>
 		<cost resourcetype="Wood">150</cost>
-    <prereqs>
-      <techstatus status="Active">MCMT_ElvenTraining_I</techstatus>
-    </prereqs>
+   
     <effects>
 		  <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
         <target type="ProtoUnit">RangerElf</target></effect>
@@ -4124,9 +4180,7 @@
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">100</cost>
 		<cost resourcetype="Wood">150</cost>
-    <prereqs>
-      <techstatus status="Active">MCMT_ElvenTraining_II</techstatus>
-    </prereqs>
+   
     <effects>
       <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
         <target type="ProtoUnit">RangerElf</target></effect>
@@ -4227,9 +4281,7 @@
 		<flag>CountsTowardMilitaryScore</flag>
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">150</cost> 
-    <prereqs>
-      <techstatus status="Active">MCMT_NubianTraining</techstatus>
-    </prereqs>
+    
 		<effects>      
       <effect type="Data" amount="0.2" subtype="MaximumVelocity" relativity="Absolute">
         <target type="ProtoUnit">NubianMercenary</target></effect>
@@ -4266,9 +4318,7 @@
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">250</cost>
 		<cost resourcetype="Wood">150</cost>    
-     <prereqs>
-      <techstatus status="Active">MCMT_NubianTraining_I</techstatus>
-    </prereqs>
+   
 		<effects>     
       <effect type="Data" amount="0.2" subtype="MaximumVelocity" relativity="Absolute">
         <target type="ProtoUnit">NubianMercenary</target></effect>
@@ -4308,9 +4358,7 @@
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">250</cost>
 		<cost resourcetype="Wood">150</cost>    
-    <prereqs>
-      <techstatus status="Active">MCMT_NubianTraining_II</techstatus>
-    </prereqs>
+   
 		<effects>      
       <effect type="Data" amount="0.2" subtype="MaximumVelocity" relativity="Absolute">
         <target type="ProtoUnit">NubianMercenary</target></effect>
@@ -4359,9 +4407,7 @@
 		<flag>CountsTowardMilitaryScore</flag>
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">150</cost> 
-    <prereqs>
-      <techstatus status="Active">MCMT_NubianTraining</techstatus>
-    </prereqs>
+   
 		<effects>            
       <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
         <target type="ProtoUnit">BowmanArcher</target></effect>
@@ -4395,9 +4441,7 @@
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">250</cost>
 		<cost resourcetype="Wood">150</cost>    
-     <prereqs>
-      <techstatus status="Active">MCMT_KingdomGuardTraining_I</techstatus>
-    </prereqs>
+   
 		<effects>     
         <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
         <target type="ProtoUnit">BowmanArcher</target></effect>
@@ -4431,9 +4475,7 @@
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">250</cost>
 		<cost resourcetype="Wood">150</cost>    
-    <prereqs>
-      <techstatus status="Active">MCMT_KingdomGuardTraining_II</techstatus>
-    </prereqs>
+   
 		<effects>      
         <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
         <target type="ProtoUnit">BowmanArcher</target></effect>
@@ -6661,6 +6703,16 @@
         <target type="ProtoUnit">EconomicUpgraded</target></effect>
     </effects>
   </tech>
+  <tech name="AegisShield">
+    <effects>
+      <effect type="Data" protoaction="RockSolidReflectAttack" amount="1.00" subtype="ProtoActionAdd" unittype="ReflectAttackContainer" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">InfantryLineUpgraded</target></effect>
+      <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="HasReflectAttack" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">InfantryLineUpgraded</target></effect>
+      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Hack" action="RockSolidReflectAttack" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">InfantryLineUpgraded</target></effect>
+    </effects>
+  </tech>
   <tech name="HuntingEquipment">
     <effects>
       <effect type="Data" allactions="1" amount="1.5" subtype="Damagebonus" unittype="Huntable" relativity="Absolute" mergeMode="add">
@@ -6840,63 +6892,17 @@
     <cost resourcetype="Wood">300.0000</cost>
     <effects>
       <effect type="Data" action="RangedAttack" amount="3.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">ChironSPC</target></effect>
+        <target type="ProtoUnit">AbstractWoodland</target></effect>
       <effect type="Data" action="ChargedRangedAttack" amount="3.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">ChironSPC</target></effect>
-      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">ChironSPC</target></effect>
-      <effect type="Data" amount="1.35" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
-        <target type="ProtoUnit">ChironSPC</target></effect>
-
-      <effect type="Data" action="RangedAttack" amount="3.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">Chiron</target></effect>
-      <effect type="Data" action="RangedAttackFlying" amount="3.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">Chiron</target></effect>
-      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">Chiron</target></effect>
-      <effect type="Data" amount="1.35" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
-        <target type="ProtoUnit">Chiron</target></effect>
-
-      <effect type="Data" action="RangedAttack" amount="3.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">Satyr</target></effect>
-      <effect type="Data" action="RangedAttackFlying" amount="3.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">Satyr</target></effect>
-      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">Satyr</target></effect>
-      <effect type="Data" amount="1.35" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
-        <target type="ProtoUnit">Satyr</target></effect>
-
-      <effect type="Data" action="RangedAttack" amount="3.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">Satyr</target></effect>
-      <effect type="Data" action="ChargedRangedAttack" amount="3.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">Satyr</target></effect>
-      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">Satyr</target></effect>
-      <effect type="Data" amount="1.35" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
-        <target type="ProtoUnit">Satyr</target></effect>
-
-      <effect type="Data" action="RangedAttack" amount="3.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">PansChosen</target></effect>
-      <effect type="Data" action="ChargedRangedAttack" amount="3.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">PansChosen</target></effect>
-      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">PansChosen</target></effect>
-      <effect type="Data" amount="1.35" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
-        <target type="ProtoUnit">PansChosen</target></effect>
-
+        <target type="ProtoUnit">AbstractWoodland</target></effect>
       <effect type="Data" action="HandAttack" amount="0.50" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">Dryad</target></effect>
+        <target type="ProtoUnit">AbstractWoodland</target></effect>
+      <effect type="Data" action="ChargedHandAttack" amount="0.50" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">AbstractWoodland</target></effect>
       <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">Dryad</target></effect>
+        <target type="ProtoUnit">AbstractWoodland</target></effect>
       <effect type="Data" amount="1.35" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
-        <target type="ProtoUnit">Dryad</target></effect>
-
-      <effect type="Data" action="HandAttack" amount="0.50" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">Hamadryad</target></effect>
-      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">Hamadryad</target></effect>
-      <effect type="Data" amount="1.35" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
-        <target type="ProtoUnit">Hamadryad</target></effect>
+        <target type="ProtoUnit">AbstractWoodland</target></effect>
     </effects>
   </tech>
   <tech name="WingedMessenger">
