@@ -485,6 +485,8 @@
 - general
     - BurningPitch -> bonusdamage-, vfxfire, affected(abstractarcher->archerlineupgrade)
 - greek
+    - SylvanLore: effect expanded to AbstractWoodland
+    - AegisShield: reflects handattack, bonusdamage vs MythUnit, MythResistant
 - atlantean
     - ArchaicAgeAtlantean:
         - MilitaryBarracks: Murmillo, Fanatic, Destroyer +
@@ -501,6 +503,12 @@
         - TownCenter: HeroOfRagnarok+
     - ArchaicAgeThor: EconomicUpgraded,DwarvenArmory,Hersir,Jarl,HeroOfRagnarok,HeroOfRagnarokDwarf,HumanSoldier+
     - ArchaicAgeFreyr: BattleBoar,HillFort,VillagerNorse,VillagerDwarf,Farm,EconomicUpgraded+
+    - HallOfThanes: InfantryLineUpgrades Hitpoints+, bonusdamage vs HumanSoldier, MythResistant
+        - SpeedContainerNearWonder, SpeedContainerNearTownCenter
+    - Sessrumnir: Hero build workrate+, bountyreward Favor
+    - Safeguard: Hirdman build SentryTower workrate+ 
+    - SonsOfSlepnir: AbstractCavalry Hitpoints+, damagebonus vws AbstractCavalry, MaximumVelocity+
+    - HammerOfThunder: Hersir VFXThunderCharge
 - egyptian
     - Chariot Archer Upgrades: Pharaoh, PharohNewKingdom (hp,speed,hackarmor)
     - DesertWinds: Pharaoh, PharohNewKingdom (hp,speed,piercearmor)

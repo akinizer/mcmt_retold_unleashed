@@ -6705,12 +6705,12 @@
   </tech>
   <tech name="AegisShield">
     <effects>
-      <effect type="Data" protoaction="RockSolidReflectAttack" amount="1.00" subtype="ProtoActionAdd" unittype="ReflectAttackContainer" relativity="Assign" mergeMode="add">
+      <effect type="Data" protoaction="AegisShieldReflectAttack" amount="1.00" subtype="ProtoActionAdd" unittype="ReflectAttackDivineContainer" relativity="Assign" mergeMode="add">
 				<target type="ProtoUnit">InfantryLineUpgraded</target></effect>
       <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="HasReflectAttack" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">InfantryLineUpgraded</target></effect>
-      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Hack" action="RockSolidReflectAttack" relativity="Absolute" mergeMode="add">
-				<target type="ProtoUnit">InfantryLineUpgraded</target></effect>
+      <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythResistant" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">InfantryLineUpgraded</target></effect>    
     </effects>
   </tech>
   <tech name="HuntingEquipment">
@@ -6891,6 +6891,15 @@
    <tech name="SylvanLore">
     <cost resourcetype="Wood">300.0000</cost>
     <effects>
+      <effect type="Data" action="RangedAttack" amount="3.00" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">Centaur</target></effect>
+			<effect type="Data" action="ChargedRangedAttack" amount="3.00" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">Centaur</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">Centaur</target></effect>
+			<effect type="Data" amount="1.35" subtype="Hitpoints" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">Centaur</target></effect>
+      <!---->
       <effect type="Data" action="RangedAttack" amount="3.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">AbstractWoodland</target></effect>
       <effect type="Data" action="ChargedRangedAttack" amount="3.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
@@ -8358,14 +8367,19 @@
       </effect>
     </effects>
   </tech>
-  <tech name="SonsOfSleipnir" mergeMode="add">
+  <tech name="SonsOfSleipnir">
     <effects>
-      <effect type="Data" amount="1.10" subtype="Damage" action="HandAttack" relativity="BasePercent">
-        <target type="ProtoUnit">AbstractCavalry</target>
-      </effect>
-      <effect type="Data" action="HandAttack" amount="1.00" subtype="Damagebonus" unittype="AbstractArcher" relativity="Absolute">
-        <target type="ProtoUnit">AbstractCavalry</target>
-      </effect>
+      <effect type="Data" amount="1.10" subtype="Damage" action="HandAttack" relativity="BasePercent" mergeMode="remove">
+        <target type="ProtoUnit">AbstractCavalry</target></effect>
+      <effect type="Data" action="HandAttack" amount="1.00" subtype="Damagebonus" unittype="AbstractArcher" relativity="Absolute" mergeMode="remove">
+        <target type="ProtoUnit">AbstractCavalry</target></effect>
+      <!---->
+      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">AbstractCavalry</target></effect>
+      <effect type="Data" action="HandAttack" amount="0.75" subtype="Damagebonus" unittype="AbstractCavalry" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">AbstractCavalry</target></effect>
+      <effect type="Data" amount="0.5" subtype="MaximumVelocity" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractCavalry</target></effect>
     </effects>
   </tech>
   <tech name="Hamask" mergeMode="add">
@@ -8547,7 +8561,7 @@
       <effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Pierce" relativity="Percent"><target type="ProtoUnit">AbstractDwarf</target></effect>
     </effects>
   </tech>
-  <tech name="HammerOfThunder" mergeMode="add">
+  <tech name="HammerOfThunder">
     <displaynameid>STR_TECH_HAMMER_OF_THUNDER_NAME</displaynameid>
     <rollovertextid>STR_TECH_HAMMER_OF_THUNDER_LR</rollovertextid>
     <cost resourcetype="Gold">125.0000</cost>
@@ -8560,18 +8574,40 @@
     <techtype>ArmoryTechnology</techtype>
     <techage>HeroicAge</techage>
     <effects>
-	  <effect type="Data" amount="1.15" subtype="Damage" action="HandAttack" relativity="BasePercent"><target type="ProtoUnit">AbstractDwarf</target></effect>
-      <effect type="Data" amount="1.15" subtype="Damage" action="HandAttack" relativity="BasePercent"><target type="ProtoUnit">Hersir</target></effect>
-      <effect type="Data" action="AutoGather" amount="2.00" subtype="WorkRate" unittype="Favor" relativity="BasePercent"><target type="ProtoUnit">Hersir</target></effect>
+      <effect type="Data" action="AutoGather" amount="1.5" subtype="WorkRate" unittype="Favor" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">Hersir</target></effect>
+      <!---->
+	    <effect type="Data" amount="1.15" subtype="Damage" action="HandAttack" relativity="BasePercent" mergeMode="add"><target type="ProtoUnit">AbstractDwarf</target></effect>
+      <effect type="Data" amount="1.15" subtype="Damage" action="HandAttack" relativity="BasePercent" mergeMode="add"><target type="ProtoUnit">Hersir</target></effect>
+      <effect type="Data" action="AutoGather" amount="2.00" subtype="WorkRate" unittype="Favor" relativity="BasePercent" mergeMode="add"><target type="ProtoUnit">Hersir</target></effect>
       <effect type="TechStatus" status="active">LightningWeaponsActive</effect>
-      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="6.00" targettype="Unit" proto="VFXLightningWeaponsUnitImpact" attachbone="spine" relativity="Assign">
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="6.00" targettype="Unit" proto="VFXLightningWeaponsUnitImpact" attachbone="spine" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="6.00" targettype="Unit" proto="VFXLightningWeaponsUnitImpact" attachbone="spine" relativity="Assign">
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="6.00" targettype="Unit" proto="VFXLightningWeaponsUnitImpact" attachbone="spine" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">Hero</target></effect>
-      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="RangedAttack" effecttype="Attach" duration="6.00" targettype="Unit" proto="VFXLightningWeaponsUnitImpact" attachbone="spine" relativity="Assign">
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="RangedAttack" effecttype="Attach" duration="6.00" targettype="Unit" proto="VFXLightningWeaponsUnitImpact" attachbone="spine" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">SentryTower</target></effect>
-      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="6.00" targettype="Unit" proto="VFXLightningWeaponsUnitImpact" attachbone="spine" relativity="Assign">
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="6.00" targettype="Unit" proto="VFXLightningWeaponsUnitImpact" attachbone="spine" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">AbstractWarship</target></effect>
+      <effect type="Data" subtype="ProtoActionAdd" protoaction="VFXThunderchargeAura" amount="1.00" unittype="VFXGlowContainer" relativity="Assign" hidetooltip="" mergeMode="add">
+        <target type="ProtoUnit">Hersir</target></effect>
+    </effects>
+  </tech>
+  <tech name="Sessrumnir">
+		<effects>
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">Hero</target></effect>
+      <!---->
+      <effect type="Data" action="Build" amount="1.10" subtype="WorkRate" unittype="Building" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Hero</target> </effect>
+      <effect type="Data" subtype="BountyResourceEarningReward" condition="Damage" unittype="Hero" resourcetype="Favor" amount="5.0" relativity="Absolute" mergeMode="add">
+				<target type="Player"></target></effect>
+		</effects>
+	</tech>
+  <tech name="Safeguard">
+    <effects>
+      <effect type="Data" action="Build" amount="1.30" subtype="WorkRate" unittype="SentryTower" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Hirdman</target> </effect>
     </effects>
   </tech>
   <tech name="DwarvenBreastplate" mergeMode="add">
@@ -8591,7 +8627,20 @@
       <effect type="Data" amount="-0.20" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent"><target type="ProtoUnit">AbstractDwarf</target></effect>
     </effects>
   </tech>
-
+  <tech name="HallOfThanes">
+    <effects>
+      <effect type="Data" amount="1.60" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">InfantryLineUpgraded</target></effect>
+      <effect type="Data" action="HandAttack" amount="0.50" subtype="Damagebonus" unittype="HumanSoldier" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">InfantryLineUpgraded</target></effect>
+      <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythResistant" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">InfantryLineUpgraded</target></effect>    
+      <effect type="Data" protoaction="WonderSpeedInverseAura" amount="1.00" subtype="ProtoActionAdd" unittype="SpeedInverseNearContainer" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">InfantryLineUpgraded</target></effect>
+      <effect type="Data" protoaction="NationCenterSpeedInverseAura" amount="1.00" subtype="ProtoActionAdd" unittype="SpeedInverseNearContainer" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">InfantryLineUpgraded</target></effect>
+    </effects>
+  </tech>
   <!-- Atlantean Techs -->
   <tech name="VolcanicForge" mergeMode="add">
     <displaynameid>STR_TECH_VOLCANIC_FORGE_NAME</displaynameid>
@@ -10536,7 +10585,7 @@
     <effects>
       <effect type="Data" amount="2.00" subtype="DropoffHeal" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">AbstractVillager</target></effect>
-      <effect type="Data" protoaction="SpeedInverseAura" amount="1.00" subtype="ProtoActionAdd" unittype="SpeedInverseNearBushContainer" relativity="Assign" mergeMode="add">
+      <effect type="Data" protoaction="SpeedInverseAura" amount="1.00" subtype="ProtoActionAdd" unittype="SpeedInverseNearContainer" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">AbstractVillager</target></effect>
     </effects>
   </tech>

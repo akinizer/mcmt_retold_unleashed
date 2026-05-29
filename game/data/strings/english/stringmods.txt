@@ -1088,6 +1088,8 @@ ID = "STR_VFX_EVENINGSTARS_NAME"   ;   Str = "Evening Star Spawn"
 ID = "STR_VFX_HACKARMORBOOSTNEARALLYBUILDINGS_NAME"   ;   Str = "Hack Armor Boost Near Fortification"
 ID = "STR_VFX_PIERCEARMORBOOSTNEARALLYBUILDINGS_NAME"   ;   Str = "Pierce Armor Boost Near Fortification"
 ID = "STR_VFX_SPEEDINVERSENEARBUSHES_NAME"   ;   Str = "Speed Boost Near Bushes"
+ID = "STR_VFX_SPEEDINVERSENEARWONDER_NAME"   ;   Str = "Speed Boost Near Wonder"
+ID = "STR_VFX_SPEEDINVERSENEARNATIONCENTER_NAME"   ;   Str = "Speed Boost Near Nation Center"
 ID = "STR_VFX_TOWEROFDEATH"   ;   Str = "Tower of Death"
 ID = "STR_VFX_AUTOREPAIR"   ;   Str = "Autorepair"
 ID = "STR_VFX_MYTHDAMAGEBONUS"   ;   Str = "Bonus Damage vs MythUnit"
@@ -1104,7 +1106,8 @@ ID = "STR_TECH_DEFENSIVE_TACTICS_NAME"   ;   Str = "Defensive Reinforcement Tact
 ID = "STR_TECH_DEFENSIVE_TACTICS_LR"   ;   Str = "Enable reinforcement field that allows military buildings inspire nearby human soldiers"
 
 // ABSTRACT UNIT TYPES
-ID = "STR_HUD_UNIT_TYPE_ABSTRACT_SERPENT"   ;   Str = "Serpentine"
+ID = "STR_HUD_UNIT_TYPE_ABSTRACT_SERPENT"   ;   Str = "Serpentine Type"
+ID = "STR_HUD_UNIT_TYPE_ABSTRACT_WOODLAND"   ;   Str = "Woodland Type"
 
 // SUPERWEAPONS
 ID = "STR_POWER_PSIONIC_DECIMATOR"   ;   Str = "Psionic Decimator"

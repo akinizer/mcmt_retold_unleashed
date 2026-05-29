@@ -27615,7 +27615,7 @@
 			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
 		</protoaction>
 	</unit> 
-	<unit name="SpeedInverseNearBushContainer" mergeMode="add">
+	<unit name="SpeedInverseNearContainer" mergeMode="add">
 		<displaynameid>STR_VFX_SPEEDINVERSENEARBUSHES_NAME</displaynameid>
 		<obstructionradiusx>0.1000</obstructionradiusx>
 		<obstructionradiusz>0.1000</obstructionradiusz>
@@ -27636,7 +27636,7 @@
 		<flag>NotDeathTracked</flag>
 		<tactics>container.tactics</tactics>
 		<protoaction>
-			<name stringid="STR_VFX_SPEEDINVERSENEARBUSHES_NAME">SpeedInverseAura</name>
+			<name stringid="STR_VFX_SPEEDINVERSENEARBUSHES_NAME">BushSpeedInverseAura</name>
 			<type>LikeBonus</type>
 			<modifyratecap>1.300000</modifyratecap>
 			<modifybase>1.000000</modifybase>
@@ -27646,6 +27646,36 @@
 			<nostack>1</nostack>
 			<rate type="BerryBush">0.02</rate>
 			<targetenemy>1</targetenemy>
+			<persistent>1</persistent>
+			<modifytype>Speed</modifytype>
+			<modelattachment>vfx\cold\cold_dense.xml</modelattachment>
+			<modelattachmentbone>Spine</modelattachmentbone>
+		</protoaction>
+		<protoaction>
+			<name stringid="STR_VFX_SPEEDINVERSENEARWONDER_NAME">WonderSpeedInverseAura</name>
+			<type>LikeBonus</type>
+			<modifyratecap>1.300000</modifyratecap>
+			<modifybase>1.000000</modifybase>
+			<maxrange>8</maxrange>
+			<modifyratebytype>1</modifyratebytype>
+			<modifyunittype>Wonder</modifyunittype>
+			<nostack>1</nostack>
+			<rate type="Wonder">0.1</rate>
+			<persistent>1</persistent>
+			<modifytype>Speed</modifytype>
+			<modelattachment>vfx\cold\cold_dense.xml</modelattachment>
+			<modelattachmentbone>Spine</modelattachmentbone>
+		</protoaction>
+		<protoaction>
+			<name stringid="STR_VFX_SPEEDINVERSENEARNATIONCENTER_NAME">NationCenterSpeedInverseAura</name>
+			<type>LikeBonus</type>
+			<modifyratecap>1.300000</modifyratecap>
+			<modifybase>1.000000</modifybase>
+			<maxrange>12</maxrange>
+			<modifyratebytype>1</modifyratebytype>
+			<modifyunittype>TownCenter</modifyunittype>
+			<nostack>1</nostack>
+			<rate type="TownCenter">0.1</rate>
 			<persistent>1</persistent>
 			<modifytype>Speed</modifytype>
 			<modelattachment>vfx\cold\cold_dense.xml</modelattachment>
@@ -27870,6 +27900,15 @@
 			<name stringid="STR_ACTION_REFLECT_ATTACK">ThornedWallsAttack</name>
 			<type>ReflectAttack</type>
 			<damage type="Divine">1.000000</damage>
+			<reflecthandattacks>1</reflecthandattacks>
+			<attackaction>1</attackaction>
+			<impacteffect>effects\impacts\hack</impacteffect>
+		</protoaction>
+		<protoaction>
+			<name stringid="STR_ACTION_REFLECT_ATTACK">AegisShieldReflectAttack</name>
+			<type>ReflectAttack</type>
+			<damage type="Divine">1.000000</damage>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
 			<reflecthandattacks>1</reflecthandattacks>
 			<attackaction>1</attackaction>
 			<impacteffect>effects\impacts\hack</impacteffect>
@@ -28115,6 +28154,17 @@
 			<name>VFXLegendAuraStrongerUnit</name>
 			<type>AutoRangedModify</type>
 			<modelattachment>vfx\glow\legend_glow_strong.xml</modelattachment>
+			<modelattachmentbone>spine</modelattachmentbone>
+			<modifyabstracttype>Unit</modifyabstracttype>
+			<modifyself>1</modifyself>
+			<maxrange>1</maxrange>
+			<persistent>1</persistent>
+			<nostack>1</nostack>
+		</protoaction>
+		<protoaction>
+			<name>VFXThunderchargeAura</name>
+			<type>AutoRangedModify</type>
+			<modelattachment>vfx\glow\thundercharge_glow.xml</modelattachment>
 			<modelattachmentbone>spine</modelattachmentbone>
 			<modifyabstracttype>Unit</modifyabstracttype>
 			<modifyself>1</modifyself>

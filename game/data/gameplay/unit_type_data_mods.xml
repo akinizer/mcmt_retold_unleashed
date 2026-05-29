@@ -4,4 +4,8 @@
 		<icon>resources/shared/hud/damage_bonuses/damage_bonus_huntable.png</icon>
 		<displaynameid>STR_HUD_UNIT_TYPE_ABSTRACT_SERPENT</displaynameid>
 	</unittypeentry>
+    <unittypeentry mergeMode="add">
+		<unittype>AbstractWoodland</unittype>
+		<displaynameid>STR_HUD_UNIT_TYPE_ABSTRACT_WOODLAND</displaynameid>
+	</unittypeentry>
 </unittypedatamods>
