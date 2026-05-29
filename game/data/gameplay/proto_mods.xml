@@ -25994,10 +25994,10 @@
 			<damageflags>Nature|Enemy</damageflags>
 			<damagearea>2.000000</damagearea>	
 
-			<projectile>ProjectileArrowFlamingSlow</projectile>
+			<projectile>ProjectileArrowExplosiveSlow</projectile>
 			<numberprojectiles>20</numberprojectiles>
 			<displayednumberprojectiles>20</displayednumberprojectiles>
-			<impacteffect mergeMode="replace">effects\impacts\asura_fire_ball</impacteffect>
+			<impacteffect>effects\impacts\crush</impacteffect>
 			<maxspread>30.0</maxspread>
 			<volleymode></volleymode>
 			<autoretarget>1</autoretarget>
@@ -26011,13 +26011,10 @@
 -->
 
 <!-- chinese ballistic tech units TODO
-	<unit name="Hwacha" mergeMode="add"></unit> ballistic, long spread, 200 arrows, upgrade rocket-powered, iron-headed, gun barrels
 	<unit name="TeslaBoat" mergeMode="add"></unit>
 	<unit name="TeslaInfantry" mergeMode="add"></unit> 
 	<unit name="FlameInfantry" mergeMode="add"></unit> 
 	<unit name="FlameTank" mergeMode="add"></unit> 
-	<unit name="NapalmAvian" mergeMode="add"></unit> roc that drops bomb
-
 	<unit name="BallisticCart" mergeMode="add"></unit> 
 	spc\units\thor_hammer_head\thor_hammer_head_cart
 	norse\units\economic\ox_cart\ox_cart
@@ -26646,6 +26643,35 @@
 		<animfile>vfx\projectiles\arrow\arrow_flaming.xml</animfile>
 		<obstructionradiusx>0.2000</obstructionradiusx>
 		<obstructionradiusz>0.2000</obstructionradiusz>
+		<lifespan>2.0000</lifespan>
+		<decay delay="20.0000" duration="0.1000"></decay>
+		<movementtype>air</movementtype>
+		<maxvelocity>4.0000</maxvelocity>
+		<unittype>Projectile</unittype>
+		<unittype>LogicalTypeSunRayProjectile</unittype>
+		<flag>NoIdleActions</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>Projectile</flag>
+		<flag>NoTieToGround</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>AdjustPositionOnTerrainCollision</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>HasContinuousParticles</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+	</unit>
+	<unit name="ProjectileArrowExplosiveSlow">
+		<displaynameid>STR_UNIT_PROJECTILE_FLAMING_NAME</displaynameid>
+		<animfile>vfx\projectiles\satyr_spear\satyr_spear.xml</animfile>
+		<obstructionradiusx>0.2000</obstructionradiusx>
+		<obstructionradiusz>0.2000</obstructionradiusz>
+		<spawn type="Hit" count="1" skipplacementcheck="" checkterrain="">SelfDestructSpawn</spawn>
 		<lifespan>2.0000</lifespan>
 		<decay delay="20.0000" duration="0.1000"></decay>
 		<movementtype>air</movementtype>
