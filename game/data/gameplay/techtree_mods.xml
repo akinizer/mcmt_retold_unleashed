@@ -495,7 +495,29 @@
       </effects>
     </tech>
 
-    
+    <tech name="MythicAgeIsis">
+      <effects>
+        <effect type="Data" action="RangedAttackAquatic" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Priest</target></effect>
+        <effect type="SetName" proto="Priest" newname="STR_UNIT_PRIEST_OF_FERTILITY_NAME" mergeMode="add"></effect>
+      </effects>
+    </tech>
+
+    <tech name="MythicAgeRa">
+      <effects>
+        <effect type="Data" action="RangedAttackSolar" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Priest</target></effect>
+        <effect type="SetName" proto="Priest" newname="STR_UNIT_PRIEST_OF_HOLYFIRE_NAME" mergeMode="add"></effect>
+      </effects>
+    </tech>
+
+    <tech name="MythicAgeSet">
+      <effects>
+        <effect type="Data" action="RangedAttackCorruption" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Priest</target></effect>
+        <effect type="SetName" proto="Priest" newname="STR_UNIT_PRIEST_OF_MANIA_NAME" mergeMode="add"></effect>
+      </effects>
+    </tech>    
     
     <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <tech name="MCMT_Techs" mergeMode="add">
@@ -8074,10 +8096,17 @@
         <effect type="TechStatus" status="active">LightningWeaponsActive</effect>
     </effects>	
   </tech>
-  <tech name="SkinOfTheRhino" mergeMode="add">
+  <tech name="SkinOfTheRhino">
 	  <effects>
-      <effect type="Data" amount="-0.25" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent"><target type="ProtoUnit">AnimalOfSet</target></effect>
-      <effect type="Data" amount="-0.25" subtype="ArmorVulnerability" armortype="Pierce" relativity="Percent"><target type="ProtoUnit">AnimalOfSet</target></effect>
+      <effect type="Data" amount="0.003" subtype="OnDamageModify" modifytype="ArmorSpecific" damagetype="Hack" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">AbstractVillager</target></effect>
+      <effect type="Data" amount="-0.1" subtype="OnDamageModify" modifytype="Speed" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractVillager</target></effect>
+
+      <effect type="Data" amount="-0.25" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent" mergeMode="add">
+        <target type="ProtoUnit">AnimalOfSet</target></effect>
+      <effect type="Data" amount="-0.25" subtype="ArmorVulnerability" armortype="Pierce" relativity="Percent" mergeMode="add">
+        <target type="ProtoUnit">AnimalOfSet</target></effect>      
   	</effects>
   </tech>
   <tech name="TusksOfApedemak" mergeMode="add">

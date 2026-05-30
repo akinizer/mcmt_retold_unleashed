@@ -33,6 +33,7 @@
     <abstractunittype>AbstractFireVulnerable</abstractunittype>
     <abstractunittype>AbstractLightningResistant</abstractunittype>
     <abstractunittype>AbstractLightningVulnerable</abstractunittype>
+    <abstractunittype>AbstractRadiationResistant</abstractunittype>
     <!--Elemental Damage Dealers-->
     <abstractunittype>AbstractFireDamageDealer</abstractunittype>
     <abstractunittype>AbstractLightningDamageDealer</abstractunittype>

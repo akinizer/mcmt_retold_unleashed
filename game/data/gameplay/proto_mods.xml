@@ -3119,6 +3119,43 @@
 		<unittype>AbstractArcher</unittype>
 		<unittype>ArcherLineUpgraded</unittype>
 		<unitregen>1.0000</unitregen>
+		<tactics>mcmt_priest.tactics</tactics>
+		<protoaction>
+			<name>RangedAttackSolar</name>
+			<rof>1.200000</rof>
+			<damage type="Divine">2.00000</damage>
+			<damagebonus type="MythUnit">5.000000</damagebonus>
+			<maxrange>18.000000</maxrange>
+			<projectile>ProjectilePriestPharaohSolar</projectile>
+			<defaultattack>1</defaultattack>
+			<rate type="All">1.0</rate>
+
+			<active>0</active>
+		</protoaction>
+		<protoaction>
+			<name>RangedAttackAquatic</name>
+			<rof>1.200000</rof>
+			<damage type="Divine">2.00000</damage>
+			<damagebonus type="MythUnit">5.000000</damagebonus>
+			<maxrange>18.000000</maxrange>
+			<projectile>ProjectilePriestPharaohAquatic</projectile>
+			<defaultattack>1</defaultattack>
+			<rate type="Unit">1.0</rate>
+			
+			<active>0</active>
+		</protoaction>
+		<protoaction>
+			<name>RangedAttackCorruption</name>
+			<rof>1.200000</rof>
+			<damage type="Divine">2.00000</damage>
+			<damagebonus type="MythUnit">5.000000</damagebonus>
+			<maxrange>18.000000</maxrange>
+			<projectile>ProjectilePriestPharaohCorruption</projectile>
+			<defaultattack>1</defaultattack>
+			<rate type="Unit">1.0</rate>
+
+			<active>0</active>
+		</protoaction>
 	</unit>
 
     <!-- Egyptian Myth Units-->
@@ -3126,6 +3163,22 @@
         <movementtype>amphibious</movementtype>		
 		<flag>TieToWaterSurface</flag>
 		<flag>AmphibiousBirth</flag>
+		<protoaction>
+			<name>RangedAttack</name>
+			<damage type="Pierce" mergeMode="remove">12.000000</damage>
+			<damage type="Divine" mergeMode="add">2.000000</damage>
+			<onhiteffect type="DamageOverTime" duration="5.000000">
+				<damage type="Divine">6.00000</damage>
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+				<target ignoretype="Hero"></target>
+			</onhiteffect>
+			<onhiteffect type="Attach" proto="VFXPoison" attachbone="spine" duration="5.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+				<target ignoretype="Hero"></target>
+			</onhiteffect>
+		</protoaction>
 	</unit>
 	
 	<unit name="Leviathan">
@@ -18434,7 +18487,6 @@
 			<damagebonus type="HumanSoldier">1.200000</damagebonus>
 			<damagebonus type="Building">1.500000</damagebonus>
 			<maxrange>15.000000</maxrange>
-			<onhiteffect type="Spawn" proto="MCMT_Maelstrom" amount="1"></onhiteffect>
 		</protoaction>		
 		<protoaction>
 			<name>HeroRingOnSelf</name>
@@ -26723,6 +26775,97 @@
 		<flag>NotKBTracked</flag>
 		<flag>NotDeathTracked</flag>
 	</unit>
+	<unit name="ProjectilePriestPharaohSolar">
+		<animfile>vfx\projectiles\icarus_bomb\icarus_bomb.xml</animfile>
+		<obstructionradiusx>0.2000</obstructionradiusx>
+		<obstructionradiusz>0.2000</obstructionradiusz>
+		<lifespan>2.0000</lifespan>
+		<spawn type="hit" count="1">PriestAreaDamageSolarGrenadeContainer</spawn>
+		<decay delay="4.0000" duration="0.1000"></decay>
+		<movementtype>air</movementtype>
+		<maxvelocity>40.0000</maxvelocity>
+		<unittype>Projectile</unittype>
+		<unittype>LogicalTypeSunRayProjectile</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NoUnitAI</flag>
+		<flag>NoIdleActions</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>Projectile</flag>
+		<flag>NoTieToGround</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>AdjustPositionOnTerrainCollision</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>HasContinuousParticles</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+	</unit>
+	<unit name="ProjectilePriestPharaohAquatic">
+		<animfile>vfx\projectiles\onmoraki\onmoraki_spawn.xml</animfile>
+		<obstructionradiusx>0.2000</obstructionradiusx>
+		<obstructionradiusz>0.2000</obstructionradiusz>
+		<lifespan>2.0000</lifespan>
+		<decay delay="4.0000" duration="0.1000"></decay>
+		<spawn type="hit" count="1">PriestAreaDamageAquaticMinor</spawn>
+		<movementtype>air</movementtype>
+		<maxvelocity>40.0000</maxvelocity>
+		<unittype>Projectile</unittype>
+		<unittype>LogicalTypeSunRayProjectile</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NoUnitAI</flag>
+		<flag>NoIdleActions</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>Projectile</flag>
+		<flag>NoTieToGround</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>AdjustPositionOnTerrainCollision</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>HasContinuousParticles</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+	</unit>
+	<unit name="ProjectilePriestPharaohCorruption">
+		<animfile>vfx\projectiles\mummy_flies\mummy_flies.xml</animfile>
+		<obstructionradiusx>0.2000</obstructionradiusx>
+		<obstructionradiusz>0.2000</obstructionradiusz>
+		<lifespan>2.0000</lifespan>
+		<decay delay="4.0000" duration="0.1000"></decay>
+		<spawn type="hit" count="1">PriestAreaDamageCorruptionAreaContainer</spawn>
+		<movementtype>air</movementtype>
+		<maxvelocity>40.0000</maxvelocity>
+		<unittype>Projectile</unittype>
+		<unittype>LogicalTypeSunRayProjectile</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NoUnitAI</flag>
+		<flag>NoIdleActions</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>Projectile</flag>
+		<flag>NoTieToGround</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>AdjustPositionOnTerrainCollision</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>HasContinuousParticles</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+	</unit>
+	
 	<!-- /// SPECIAL TRAIL UNITS /// -->
 	<unit name="TrailOfFire">
 		<displaynameid>STR_VFX_NEZHA_FIRE_AREA_NAME</displaynameid>
@@ -28315,6 +28458,127 @@
 			<targetenemyincludenature>1</targetenemyincludenature>
 		</protoaction>
 	</unit>	
+
+	<unit name="PriestAreaDamageSolarGrenadeContainer" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name>AreaDamage</name>
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>Unit</modifyabstracttype>
+			<modifyabstracttype>Building</modifyabstracttype>
+			<persistent>1</persistent>
+			<modifytype>HealRate</modifytype>
+			<nostack>1</nostack>
+
+		  	<modifydamagetype>Divine</modifydamagetype>
+			
+			<modelattachment>vfx\fire\fire_on_hit_effect.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+			<modifyamount>-0.1</modifyamount>			
+			<maxrange>2</maxrange>
+			<damagebonus type="AbstractSiegeWeapon">3.0000</damagebonus>
+			<damagebonus type="Building">3.0000</damagebonus>
+
+			<targetenemyincludenature>1</targetenemyincludenature>
+		</protoaction>
+	</unit>	
+	<unit name="PriestAreaDamageCorruptionAreaContainer" mergeMode="add">
+		<displaynameid>STR_VFX_MAELSTROM_NAME</displaynameid>
+		<animfile>aztec\godpowers\corrupted_ground\corrupted_ground_corruption.xml</animfile>
+		<obstructionradiusx>0.2000</obstructionradiusx>
+		<obstructionradiusz>0.2000</obstructionradiusz>
+		<lifespan>10.0000</lifespan>
+		<decay delay="4.0000" duration="5.0000"></decay>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>air</movementtype>
+		<unittype>Unit</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NonCollideable</flag>
+		<flag>DestroyProjectile</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name>AreaDamage</name>
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>Unit</modifyabstracttype>
+			<persistent>1</persistent>
+			<modifytype>HealRate</modifytype>
+			<nostack>1</nostack>
+
+		  	<modifydamagetype>Divine</modifydamagetype>
+			
+			<modelattachment>vfx\fire\fire_on_hit_effect.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+			<modifyamount>-0.1</modifyamount>			
+			<maxrange>2</maxrange>
+			<damagebonus type="MythUnit">2.00000</damagebonus>
+
+			<targetenemyincludenature>1</targetenemyincludenature>
+		</protoaction>
+	</unit>
+	<unit name="PriestAreaDamageAquaticMinor">
+		<displaynameid>STR_VFX_MAELSTROM_NAME</displaynameid>
+		<animfile>vfx\water\maelstrom\maelstrom.xml</animfile>
+		<soundsetfile>chinese\sfx\god_tech\maelstrom.xml</soundsetfile>
+		<obstructionradiusx>0.2000</obstructionradiusx>
+		<obstructionradiusz>0.2000</obstructionradiusz>
+		<lifespan>10.0000</lifespan>
+		<decay delay="0.1000" duration="0.1000"></decay>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>air</movementtype>
+		<unittype>Unit</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NonCollideable</flag>
+		<flag>DestroyProjectile</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name>AreaDamage</name>
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>Unit</modifyabstracttype>
+			<persistent>1</persistent>
+			<modifytype>HealRate</modifytype>
+			<targetenemy>1</targetenemy>
+			<nostack>1</nostack>
+			<modifyupdateinterval>1750</modifyupdateinterval>
+			<modifyamount>-0.1</modifyamount>
+			<modifydamagetype>Divine</modifydamagetype>
+			<damagebonus type="NavalUnit">2.000000</damagebonus>
+			<maxrange>2</maxrange>
+			<modelattachment>egyptian\godpowers\meteor\meteor_impact_water_vfx.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		</protoaction>
+	</unit>
+
 	<unit name="AreaDamageCorruptionAreaContainer" mergeMode="add">
 		<displaynameid>STR_VFX_MAELSTROM_NAME</displaynameid>
 		<animfile>aztec\godpowers\corrupted_ground\corrupted_ground_corruption.xml</animfile>
@@ -28353,6 +28617,47 @@
 			<damagebonus type="Hero">0.40000</damagebonus>
 
 			<targetenemyincludenature>1</targetenemyincludenature>
+		</protoaction>
+	</unit>
+	
+	<unit name="AreaDamageAquaticMinor">
+		<displaynameid>STR_VFX_MAELSTROM_NAME</displaynameid>
+		<animfile>vfx\water\maelstrom\maelstrom.xml</animfile>
+		<soundsetfile>chinese\sfx\god_tech\maelstrom.xml</soundsetfile>
+		<obstructionradiusx>0.2000</obstructionradiusx>
+		<obstructionradiusz>0.2000</obstructionradiusz>
+		<lifespan>10.0000</lifespan>
+		<decay delay="0.1000" duration="0.1000"></decay>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>air</movementtype>
+		<unittype>Unit</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NonCollideable</flag>
+		<flag>DestroyProjectile</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name>AreaDamage</name>
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>Unit</modifyabstracttype>
+			<persistent>1</persistent>
+			<modifytype>HealRate</modifytype>
+			<targetenemy>1</targetenemy>
+			<nostack>1</nostack>
+			<modifyupdateinterval>1750</modifyupdateinterval>
+			<modifyamount>-1</modifyamount>
+			<modifydamagetype>Divine</modifydamagetype>
+			<damagebonus type="NavalUnit">2.000000</damagebonus>
+			<damagebonus type="HumanSoldier">2.100000</damagebonus>
+			<maxrange>5</maxrange>
+			<modelattachment>egyptian\godpowers\meteor\meteor_impact_water_vfx.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
 		</protoaction>
 	</unit>
 

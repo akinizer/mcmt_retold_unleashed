@@ -257,21 +257,17 @@
             - shading: gold
             - Burrow: tech-enabled (crimsonlinen), manual ability, submerges into ground and undetectable by enemies
             - Ambush: tech-enabled (crimsonlinen), detection-based, conditional transform (ambush, moved, delayedtransform)            
-    - ranged: Wadjet+, Petsuchos+, Mummy+
-    - naval: 
-        - Leviathan+: no longer amphibious (repurposed into a new unit)
-        - WarTurtle+
-
-    - Mummy:
-        - OnDeath: MummyFallen+
-        - pierce-, bonusdamage+ (mythunit,humansoldier,villager)
-
-    - Tutenkhamun (primary): proximity-based attack modes, more durable 
-        - melee: vfxbleed, stronger vs humansoldier, melee
-        - range: weaker version of melee, yet effective to cheese in
-    - NewKingdom (secondary): target based attack modes
-        - ranged: mythunit,ship,building, vfxpoison
-        - melee: non-mythunit, stronger vs building, range
+    - ranged: 
+        - Wadjet:
+            - vfxpoison dot+ non-siege unit, minimized base divinedamage, amphibious
+        - Petsuchos
+            - ufolazer, rof+, amphibious
+        - Mummy:
+            - OnDeath: MummyFallen, HandAttack
+            - pierce-, bonusdamage+ (mythunit,humansoldier,villager)    - naval: 
+        - Leviathan: garrison reworks
+        - WarTurtle: miniturtle, visualscale-damage-hp via veterancy
+    
 - siege weapon:
     - SiegeTower:
         - Entrench: SiegeTurret
@@ -280,14 +276,23 @@
 - archer:
     - ChariotArcher: ArcherLineUpgrade
     - Slinger: ArcherLineUpgrade
-- naval:
+- warship:
     - warbarge: progfreeze
 - hero:
     - popcost 1 or 2
     - General Reworks: Priest+, Pharaoh+, PharaohNewKingdom+, SonOfOsiris (Son of Horus)+
     - Pharaoh: VisualScale+, attack type
-    - PharaohNewKingdom: Siegelineupgrade
     - Pharaoh Tactics: attack type (RangedAttackMyth->RangedAttack)
+    - Tutenkhamun (primary): proximity-based attack modes, more durable, Siegelineupgrade
+        - melee: vfxbleed, stronger vs humansoldier, melee
+        - range: weaker version of melee, yet effective to cheese in
+    - NewKingdom (secondary): target based attack modes
+        - ranged: mythunit,ship,building, vfxpoison
+        - melee: non-mythunit, stronger vs building, range
+    - Priest
+        - Priest of Holy Fire: Holy Grenade Attack (MythicAgeRa)
+        - Priest of Fertility: Hydro Mine Attack (MythicAgeIsis)
+        - Priest of Mania: Miasma Bomb Attack (MythicAgeSet)
 - SiegeWorks:
     - MechanizedMammothUnit+
 - Nubians
@@ -529,7 +534,8 @@
     - spearofhorus: (spearman  div shieldpoints)
     - dark water: abyss related enchancements (animals, cavalry, naval beasts)
     - desert winds: caravan speed
-- chinese
+    - SkinOfTheRhino: villager ondamagemodigy armor+ & speed-, animalofset armor+
+- chinese, japanese, aztec, demeter
 - wonder names
 - temple names
 

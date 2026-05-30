@@ -619,6 +619,10 @@ ID = "STR_UNIT_MEDUSA_NAME"   ;   Str = "Gorgon"
 ID = "STR_UNIT_MEDUSA_MATRIARCH_NAME"   ;   Str = "Gorgon Matriarch"
 
 ID = "STR_UNIT_SHRINE_PRIEST_NAME"   ;   Str = "Shrine Priest (Hero)"
+ID = "STR_UNIT_PRIEST_OF_HOLYFIRE_NAME"   ;   Str = "Priest of Holy Fire (Hero)"
+ID = "STR_UNIT_PRIEST_OF_FERTILITY_NAME"   ;   Str = "Priest of Fertility (Hero)"
+ID = "STR_UNIT_PRIEST_OF_MANIA_NAME"   ;   Str = "Priest of Mania (Hero)"
+
 ID = "STR_UNIT_RAIJU_TEMPEST_NAME"   ;   Str = "Raiju Tempest"
 
 // ENCAMPMENT SPECIAL UNITS
@@ -1125,6 +1129,10 @@ ID = "STR_POWER_TSUNAMI_GENERATOR_LR"   ;   Str = "Seismic Wave Superweapon Unle
 ID = "STR_ACTION_TRANSFORM"   ;   Str = "Transform"
 ID = "STR_ACTION_DEPLOY"   ;   Str = "Deploy"
 ID = "STR_ACTION_UNDEPLOY"   ;   Str = "Undeploy"
+
+ID = "STR_ACTION_RANGEDATTACKSOLAR"   ;   Str = "Holy Grenade Attack"
+ID = "STR_ACTION_RANGEDATTACKAQUATIC"   ;   Str = "Hydro Mine Attack"
+ID = "STR_ACTION_RANGEDATTACKCORRUPTION"   ;   Str = "Miasma Bomb Attack"
 
 ID = "STR_ACTION_DEMOLITION_ATTACK"   ;   Str = "Demolition Attack"
 

@@ -1,0 +1,123 @@
+<tactics>
+	<action>
+		<name stringid="STR_ACTION_BUILD">Build</name>
+		<type>Build</type>
+		<anim>Build</anim>
+		<maxrange>0.2</maxrange>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_EMPOWER">Empower</name>
+		<active>0</active>
+		<type>Empower</type>
+		<anim>Empower</anim>
+		<empowerdata>
+			<logicaltypebuildingempoweredforlos>
+				<empowerrate modifytype="BuildRate">1.45</empowerrate>
+				<empowerrate modifytype="ResearchRate">1.45</empowerrate>
+				<empowerrate modifytype="LOSFactor">1.45</empowerrate>
+			</logicaltypebuildingempoweredforlos>
+			<logicaltypebuildingthatcanbeempowered>
+				<empowerrate modifytype="BuildRate">1.45</empowerrate>
+				<empowerrate modifytype="ResearchRate">1.45</empowerrate>
+				<empowerrate modifytype="MilitaryTrainingRate">1.45</empowerrate>
+				<empowerrate modifytype="ROF">0.85</empowerrate>
+				<empowerrate modifytype="FavorGatherRate">1.12</empowerrate>
+				<empowerrate modifytype="DropsiteRate">1.12</empowerrate>
+				<modelattachment>vfx\glow\empower_priest.xml</modelattachment>
+				<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+			</logicaltypebuildingthatcanbeempowered>
+		</empowerdata>
+		<natureempowerdata>
+			<abstractsettlement>
+				<empowerrate modifytype="BuildRate">1.45</empowerrate>
+				<modelattachment>vfx\glow\empower_priest.xml</modelattachment>
+				<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+			</abstractsettlement>
+		</natureempowerdata>
+		<maxrange>3</maxrange>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_CONVERT">Convert</name>
+		<active>0</active>
+		<type>Convert</type>
+		<anim>Convert</anim>
+		<attackaction>1</attackaction>
+		<modelattachment>vfx\conversion\conversion_vfx.xml</modelattachment>
+		<modelattachmentbone>vfx_top</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_HEAL">Heal</name>
+		<type>Heal</type>
+		<anim>Heal</anim>
+		<modelattachment>greek\godpowers\restoration\healing_vfx.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_RANGED">RangedAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttack</anim>
+		<accuracy>0.8</accuracy>
+		<maxspread>5.0</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>99.0</trackrating>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+		<rate type="All">1.0</rate>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_RANGED">RangedAttackMyth</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttack</anim>
+		<accuracy>0.8</accuracy>
+		<maxspread>5.0</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>99.0</trackrating>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+		<rate type="MythUnit">1.0</rate>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_RANGEDATTACKSOLAR">RangedAttackSolar</name>
+        <type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttack</anim>
+		<accuracy>0.8</accuracy>
+		<maxspread>5.0</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>99.0</trackrating>
+		<impacteffect>effects\impacts\fireball</impacteffect>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_RANGEDATTACKAQUATIC">RangedAttackAquatic</name>
+        <type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttack</anim>
+		<accuracy>0.8</accuracy>
+		<maxspread>5.0</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>99.0</trackrating>
+		<impacteffect>effects\impacts\crush</impacteffect>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_RANGEDATTACKCORRUPTION">RangedAttackCorruption</name>
+        <type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttack</anim>
+		<accuracy>0.8</accuracy>
+		<maxspread>5.0</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>99.0</trackrating>
+		<impacteffect>effects\impacts\crush</impacteffect>
+	</action>
+	<tactic>Default<action priority="100">Convert</action>
+    <action priority="90">RangedAttackSolar</action>
+    <action priority="90">RangedAttackAquatic</action>
+    <action priority="90">RangedAttackCorruption</action>
+    <action priority="80">RangedAttackMyth</action>
+    <action priority="70">RangedAttack</action><action>Heal</action><action>Empower</action><action>Build</action><attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype></tactic>
+</tactics>
