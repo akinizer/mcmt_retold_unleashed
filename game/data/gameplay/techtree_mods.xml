@@ -7915,11 +7915,16 @@
         <target type="ProtoUnit">PharaohNewKingdom</target></effect>
     </effects>
   </tech>
-  <tech name="BoneBow" mergeMode="add">
+  <tech name="BoneBow">
     <effects>
-      <effect type="Data" action="RangedAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute">
+      <effect type="Data" action="RangedAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">ChariotArcher</target></effect>
+			<effect type="Data" amount="4.00" subtype="LOS" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">ChariotArcher</target></effect>
+      <!---->
+      <effect type="Data" action="RangedAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">AbstractEgyptianArcher</target></effect>
-      <effect type="Data" action="RangedAttack" amount="99.0" subtype="Trackrating" relativity="Assign">
+      <effect type="Data" action="RangedAttack" amount="99.0" subtype="Trackrating" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">AbstractEgyptianArcher</target></effect>
     </effects>
   </tech>
