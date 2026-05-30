@@ -1110,6 +1110,7 @@ ID = "STR_TECH_DEFENSIVE_TACTICS_NAME"   ;   Str = "Defensive Reinforcement Tact
 ID = "STR_TECH_DEFENSIVE_TACTICS_LR"   ;   Str = "Enable reinforcement field that allows military buildings inspire nearby human soldiers"
 
 // ABSTRACT UNIT TYPES
+ID = "STR_HUD_UNIT_TYPE_HERO_PROTAGONIST"   ;   Str = "Hero Protagonist"
 ID = "STR_HUD_UNIT_TYPE_ABSTRACT_SERPENT"   ;   Str = "Serpentine Type"
 ID = "STR_HUD_UNIT_TYPE_ABSTRACT_WOODLAND"   ;   Str = "Woodland Type"
 ID = "STR_HUD_UNIT_TYPE_ABSTRACT_MYTHSOLDIER"   ;   Str = "Myth Soldier"

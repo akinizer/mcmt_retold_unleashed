@@ -1346,6 +1346,7 @@ Gods
         TeixiptlaHuitz, TeixiptlaTezca, TeixiptlaQuetz / SuperTeixiptlaHuitz, CheatSuperTeixiptlaHuitz, SuperTeixiptlaTezca, CheatSuperTeixiptlaTezca, SuperTeixiptlaQuetz, CheatSuperTeixiptlaQuetz
     Huitzilopochtli 
     Tezcatlilopa
+Copil, Kamina
 
 === CROSSOVER
 * luffy: militia / prodromos_rider -> promethean_attack_a, promethean_attack_b, shinobi_wan_kenobi_attack_b, avenger_whirlwindattack_a 

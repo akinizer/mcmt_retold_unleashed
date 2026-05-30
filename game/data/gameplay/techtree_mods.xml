@@ -262,7 +262,26 @@
         <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_AthenianTraining</effect>       
       </effects>      
     </tech>
-
+    
+    <!-- General Age Up Improvements -->
+    <tech name="ClassicalAgeGeneral">
+      <effects>        
+        <effect type="Data" allactions="1" amount="1.0" subtype="DamageBonus" unittype="MythUnit" relativity="Absolute">
+				  <target type="ProtoUnit">HeroProtagonist</target></effect>
+      </effects>      
+    </tech>
+    <tech name="HeroicAgeGeneral">
+      <effects>        
+        <effect type="Data" allactions="1" amount="1.0" subtype="DamageBonus" unittype="MythUnit" relativity="Absolute">
+				  <target type="ProtoUnit">HeroProtagonist</target></effect>
+      </effects>      
+    </tech>
+    <tech name="MythicAgeGeneral">
+      <effects>        
+        <effect type="Data" allactions="1" amount="1.0" subtype="DamageBonus" unittype="MythUnit" relativity="Absolute">
+				  <target type="ProtoUnit">HeroProtagonist</target></effect>
+      </effects>      
+    </tech>
     <!-- UPSTART GOD BOOSTS -->
     <tech name="UpstartBoost_Tsukuyomi" mergeMode="add">
       <displaynameid>STR_TECH_UPSTARTBOOST_NAME</displaynameid>
@@ -637,6 +656,104 @@
       <!-- Naval Units -->
       <effects>
         <!--HeroProtagonist-->
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">OdysseusSPC</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AjaxSPC</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AjaxOlder</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">ChironSPC</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Agamemnon</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Arkantos</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Amanra</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AmanraOlder</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">KingFolstag</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Brokk</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Eitri</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">EitriSneak</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">EitriHammer</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Reginleif</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Kastor</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">KastorYoung</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">KastorWithStaff</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Athena</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Setna</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Skult</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">ArkantosBoar</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AjaxBoar</target></effect>
+
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Houyi</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">HouyiRider</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">YanFeifeng</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">YanFeifengRider</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">CangJie</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">CangJieRider</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">CangJieKnife</target></effect>
+
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Yasuko</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Akari</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AkariSpear</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbeNoSeimei</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Sojobo</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Harumoto</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">HarumotoBlessed</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Tatsuro</target></effect>
+
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Tlacaelel</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Popocatepetl</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">PopocatepetlSnakeless</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Iztaccihuatl</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">IztaccihuatlDismounted</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">IztaccihuatlJaguar</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Itzcoatl</target></effect>
+
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Huitzilopochtli</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Quetzalcoatl</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Mictlantecuhtli</target></effect>
         <!--AbstractGreekHero-->
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractGreekHero" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">Jason</target></effect>
