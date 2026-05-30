@@ -8,4 +8,16 @@
 		<unittype>AbstractWoodland</unittype>
 		<displaynameid>STR_HUD_UNIT_TYPE_ABSTRACT_WOODLAND</displaynameid>
 	</unittypeentry>
+    <unittypeentry mergeMode="add">
+		<unittype>AbstractMythSoldier</unittype>
+		<displaynameid>STR_HUD_UNIT_TYPE_ABSTRACT_MYTHSOLDIER</displaynameid>
+	</unittypeentry>
+    <unittypeentry mergeMode="add">
+		<unittype>AbstractEgyptianArcher</unittype>
+		<displaynameid>STR_HUD_UNIT_TYPE_ABSTRACT_EGYPTIAN_ARCHER</displaynameid>
+	</unittypeentry>
+    <unittypeentry mergeMode="add">
+		<unittype>AnimalOfSet</unittype>
+		<displaynameid>STR_HUD_UNIT_TYPE_ANIMAL_OF_SET</displaynameid>
+	</unittypeentry>
 </unittypedatamods>

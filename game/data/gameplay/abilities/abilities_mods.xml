@@ -202,6 +202,10 @@
 	<PansChosen>
     	<ability>AbilitySatyr<chargetimeasrof>1</chargetimeasrof></ability>
  	</PansChosen>
+	<Minotaur>
+		<ability>AbilityMinotaur<auxchargetimeasrof>1</auxchargetimeasrof></ability>
+		<ability>AbilityTaoWu<chargetimeasrof>1</chargetimeasrof><castonself>true</castonself><donotforcestop>true</donotforcestop></ability>
+	</Minotaur>
 		<!--Chinese-Hero-->	
 	<Nezha>
 		<ability>PassiveDivineImmunity<alwaysdisabledingrid>1</alwaysdisabledingrid></ability>

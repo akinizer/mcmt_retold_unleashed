@@ -40,4 +40,5 @@
     <abstractunittype>AbstractEternalShadow</abstractunittype>
     <!--Civilization Specific-->    
     <abstractunittype>AbstractEgyptianArcher</abstractunittype>
+    <abstractunittype>AbstractMythSoldier</abstractunittype>
 </abstractunittypesmods>

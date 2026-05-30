@@ -1108,6 +1108,9 @@ ID = "STR_TECH_DEFENSIVE_TACTICS_LR"   ;   Str = "Enable reinforcement field tha
 // ABSTRACT UNIT TYPES
 ID = "STR_HUD_UNIT_TYPE_ABSTRACT_SERPENT"   ;   Str = "Serpentine Type"
 ID = "STR_HUD_UNIT_TYPE_ABSTRACT_WOODLAND"   ;   Str = "Woodland Type"
+ID = "STR_HUD_UNIT_TYPE_ABSTRACT_MYTHSOLDIER"   ;   Str = "Myth Soldier"
+ID = "STR_HUD_UNIT_TYPE_ABSTRACT_EGYPTIAN_ARCHER"   ;   Str = "Egyptian Archer"
+ID = "STR_HUD_UNIT_TYPE_ANIMAL_OF_SET"   ;   Str = "Animal of Set"
 
 // SUPERWEAPONS
 ID = "STR_POWER_PSIONIC_DECIMATOR"   ;   Str = "Psionic Decimator"
@@ -1159,6 +1162,7 @@ ID = "STR_ABILITY_BASH_ATTACK"   ;   Str = "Bash Attack"
 ID = "STR_ABILITY_DEADLY_CHARM"   ;   Str = "Deadly Charm"
 ID = "STR_ABILITY_SNOW_BLAST"   ;   Str = "Snow Blast"
 ID = "STR_ABILITY_DASH_ATTACK"   ;   Str = "Dash Attack"
+ID = "STR_ABILITY_BULLRUSH_ATTACK"   ;   Str = "Bull Rush"
 ID = "STR_ABILITY_ILLUSION_SURPRISE"   ;   Str = "Illusion Surprise"
 
 ID = "STR_ABILITY_BURROW"   ;   Str = "Burrow"

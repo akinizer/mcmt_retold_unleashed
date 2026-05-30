@@ -2252,7 +2252,7 @@
         <tactics>trade.tactics</tactics>
 		<protoaction>
 			<name>Trade</name>
-			<modifyamount>0.01</modifyamount>
+			<modifyamount>0.01</modifyamount>	
 			<maxrange>1.5</maxrange>
 			<rate type="AbstractTownCenter">0.630000</rate>
 			<rate type="Market">0.001000</rate>
@@ -2260,6 +2260,34 @@
 	</unit>			
 	<unit name="Minotaur">
         <unittype>InfantryLineUpgraded</unittype>
+		<maxrunvelocity>15.0000</maxrunvelocity>
+		<rechargetime>22.0000</rechargetime>
+		<auxrechargetime>15.0000</auxrechargetime>
+		<flag>CastAbilitySelf</flag>
+		<tactics>mcmt_minotaur.tactics</tactics>
+		<protoaction>
+			<name stringid="STR_ABILITY_BULLRUSH_ATTACK">Charge</name>
+			<type>Rampage</type>
+			<damage type="Crush">150.0</damage>
+			<damage type="Hack">10.0</damage>
+			<damagearea>3.0</damagearea>
+			<rate type="AbstractFarm">0.0</rate>
+			<rate type="HumanSoldier">1.0</rate>
+			<rate type="MythUnit">1.0</rate>
+			<rate type="LogicalTypeVillagerNotHero">1.0</rate>
+			<rate type="TradeUnit">1.0</rate>
+			<rate type="Building">1.0</rate>
+			<charged>
+				<chargedmodify modifytype="Speed" applytype="Multiply">4.0</chargedmodify>
+				<duration>3.0</duration>
+			</charged>
+			<projectile>VFXRampage</projectile>
+			<chargeaction>1</chargeaction>
+			<modifyduration>3000</modifyduration>
+			<maxsizeclass>6</maxsizeclass>
+			<autocastbyself>1</autocastbyself>
+			<autocastdistance>15.000000</autocastdistance>
+		</protoaction>
 	</unit>
 	<unit name="Centaur">
 		<unittype>ArcherLineUpgraded</unittype>		

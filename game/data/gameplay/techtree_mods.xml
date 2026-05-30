@@ -1216,6 +1216,47 @@
           <target type="ProtoUnit">BowmanArcher</target></effect>
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractEgyptianArcher" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">WarElephantArcher</target></effect>
+        <!--AbstractMythSoldier-->
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">ObsidianButterfly</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">SoulGuide</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Quinametzin</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Tengu</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Oni</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">YaZi</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Minotaur</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Centaur</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Medusa</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Cyclops</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Avenger</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Anubite</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Valkyrie</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Einheri</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Draugr</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Automaton</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Satyr</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Caladria</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Lampades</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Nereid</target></effect>
       </effects>
     </tech>
 
@@ -1595,6 +1636,8 @@
 
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">MCMT_DwarvenForge</target></effect>	
         <!-- Atlantean Special Units -->
+        <effect type="Data" amount="0.50" subtype="AdditionalScale" relativity="Absolute">
+          <target type="ProtoUnit">Hesperides</target></effect>
         <!-- Chinese Special Units -->
         <!-- Japanese Special Units -->
         <!-- LandLord Special Units -->
@@ -2388,9 +2431,7 @@
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
           <target type="ProtoUnit">Hamadryad</target></effect>        
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
-          <target type="ProtoUnit">Hesperides</target></effect>        
-        <effect type="Data" amount="0.50" subtype="AdditionalScale" relativity="Absolute">
-          <target type="ProtoUnit">Hesperides</target></effect>       
+          <target type="ProtoUnit">Hesperides</target></effect>           
         
         <effect type="Data" amount="1.00" subtype="CommandRemove" proto="Hamadryad" relativity="Assign">
           <target type="ProtoUnit">Temple</target></effect>	
@@ -6496,6 +6537,61 @@
         <target type="ProtoUnit">LogicalTypeMythUnitNotTitan</target></effect>
     </effects>
   </tech>
+    <!-- General Armory Techs -->
+  <tech name="CopperWeapons">
+    <effects>
+      <effect type="Data" allactions="1" amount="1.10" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">AbstractMythSoldier</target></effect>
+    </effects>
+  </tech>
+  <tech name="BronzeWeapons">
+    <effects>
+      <effect type="Data" allactions="1" amount="1.10" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">AbstractMythSoldier</target></effect>
+    </effects>
+  </tech>
+  <tech name="IronWeapons">
+    <effects>
+      <effect type="Data" allactions="1" amount="1.10" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">AbstractMythSoldier</target></effect>
+    </effects>
+  </tech>
+  <tech name="CopperArmor">
+    <effects>
+      <effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent" mergeMode="add">
+				<target type="ProtoUnit">AbstractMythSoldier</target></effect>
+    </effects>
+  </tech>
+  <tech name="BronzeArmor">
+    <effects>
+      <effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent" mergeMode="add">
+				<target type="ProtoUnit">AbstractMythSoldier</target></effect>
+    </effects>
+  </tech>
+  <tech name="IronArmor">
+    <effects>
+      <effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent" mergeMode="add">
+				<target type="ProtoUnit">AbstractMythSoldier</target></effect>
+    </effects>
+  </tech>
+  <tech name="CopperShields">
+    <effects>
+      <effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Pierce" relativity="Percent" mergeMode="add">
+				<target type="ProtoUnit">AbstractMythSoldier</target></effect>
+    </effects>
+  </tech>
+  <tech name="BronzeShields">
+    <effects>
+      <effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Pierce" relativity="Percent" mergeMode="add">
+				<target type="ProtoUnit">AbstractMythSoldier</target></effect>
+    </effects>
+  </tech>
+  <tech name="IronShields">
+    <effects>
+      <effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Pierce" relativity="Percent" mergeMode="add">
+				<target type="ProtoUnit">AbstractMythSoldier</target></effect>
+    </effects>
+  </tech>
   <tech name="BurningPitch">
     <cost resourcetype="Wood">1000.0000</cost>
 		<cost resourcetype="Gold">1000.0000</cost>
@@ -7822,9 +7918,9 @@
   <tech name="BoneBow" mergeMode="add">
     <effects>
       <effect type="Data" action="RangedAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute">
-        <target type="ProtoUnit">ChariotArcher</target></effect>
+        <target type="ProtoUnit">AbstractEgyptianArcher</target></effect>
       <effect type="Data" action="RangedAttack" amount="99.0" subtype="Trackrating" relativity="Assign">
-        <target type="ProtoUnit">ChariotArcher</target></effect>
+        <target type="ProtoUnit">AbstractEgyptianArcher</target></effect>
     </effects>
   </tech>
   <tech name="FloodOfTheNile">

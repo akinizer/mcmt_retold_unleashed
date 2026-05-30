@@ -51,16 +51,17 @@
 * Larger Ships, Temples, Town Centers, Military Production Buildings
 * Towers Reworked: Slower but Stronger
 * Houses Reworked: Garrisonable by Civilians
-* Colossal Maps
 * Names for Wonders and Titans, including Chinese, Japanese and Demeter DLC
 * More Challenging Battles
 * Compatibility with Campaign
-* Exotic Lore and References, Sci-Fi, Science, Mythology, History, Cyborgs and Plent of Surprises!
+* Exotic Lore and References, Sci-Fi, Science, Mythology, History, Cyborgs and Plenty of Surprises!
 * Up-to-Date to Demeter and Japanese
 * Encampments from Kingdom Tech: Amazonians, Spartans, Athenians, Nymphs, Mountain Dwarves, Elves, Nubians & Kingdom Guards
 * Dismount Warfare
 * Type Superiority & Elemental Damage: Elemental Resistances & Vulnerabilities, MythUnit Resistances!
-* Many Many More in Future!
+* Myth Soldier unit type that enables certain Myth Units to benefit from Armory Techs
+* Minotaur gets Bull Rush!
+* Many Many More in Future!!!
 
 1. Reworking on Demeter's hero units and related techs
 - hero:
@@ -484,6 +485,9 @@
 15. Tech reworks from mcmt mod and new reworks
 - general
     - BurningPitch -> bonusdamage-, vfxfire, affected(abstractarcher->archerlineupgrade)
+    - Bronze-Silver-Iron Weapons: also affects AbstractMythSoldier
+    - Bronze-Silver-Iron Armor: also affects AbstractMythSoldier
+    - Bronze-Silver-Iron Shields: also affects AbstractMythSoldier
 - greek
     - SylvanLore: effect expanded to AbstractWoodland
     - AegisShield: reflects handattack, bonusdamage vs MythUnit, MythResistant
@@ -491,8 +495,7 @@
     - ArchaicAgeAtlantean:
         - MilitaryBarracks: Murmillo, Fanatic, Destroyer +
         - CounterBarracks: Arcus, Turma, Cheiroballista +
-        - Palace: Katapeltes, Contarius, Fire Siphon +
-    
+        - Palace: Katapeltes, Contarius, Fire Siphon +    
     - HumanSoldier:
         - Katapeltes: crush damage, abstractsiegeweapon, siegelineupgrade
 - norse
@@ -518,7 +521,7 @@
     - electrumbullets: (slinger, rangedattack, div, rof, range)
     - slingsofthesun: (burn)
     - shaduf: (farm cost workrate, dropsite buildpoints, siegeweapo trainpoints, siegeweapon chariotarcher pharaoh pharaohnewkingdom speed)
-    - bonebow: (chariotarcher range trackrating)
+    - bonebow: (AbstractEgyptianArcher range & trackrating)
     - floodofthenile: (farm workrate, petsuchos hp speed)
     - clairvoyance: (priest pharaoh los)
     - solarbarque: (warbarge projectileballoffire div)
