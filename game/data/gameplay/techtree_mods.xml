@@ -2896,7 +2896,7 @@
     <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>
     <cost resourcetype="Gold">300.0000</cost>
     <cost resourcetype="Wood">100.0000</cost>
-    <cost resourcetype="Favor">5.0000</cost>
+    <cost resourcetype="Favor">1250.0000</cost>
     <researchpoints>30.0000</researchpoints>
     <status>UNOBTAINABLE</status>
     <icon>resources\tech\explosives.jpg</icon>
@@ -2925,7 +2925,7 @@
     <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>
     <cost resourcetype="Gold">300.0000</cost>
     <cost resourcetype="Wood">100.0000</cost>
-    <cost resourcetype="Favor">5.0000</cost>
+    <cost resourcetype="Favor">1250.0000</cost>
     <researchpoints>30.0000</researchpoints>
     <status>UNOBTAINABLE</status>
     <icon>resources\tech\explosives.jpg</icon>
@@ -2952,7 +2952,7 @@
     <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>
     <cost resourcetype="Gold">300.0000</cost>
     <cost resourcetype="Wood">100.0000</cost>
-    <cost resourcetype="Favor">5.0000</cost>
+    <cost resourcetype="Favor">1250.0000</cost>
     <researchpoints>30.0000</researchpoints>
     <status>UNOBTAINABLE</status>
     <icon>resources\tech\explosives.jpg</icon>
@@ -2983,7 +2983,7 @@
     <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>
     <cost resourcetype="Gold">300.0000</cost>
     <cost resourcetype="Wood">100.0000</cost>
-    <cost resourcetype="Favor">5.0000</cost>
+    <cost resourcetype="Favor">1250.0000</cost>
     <researchpoints>30.0000</researchpoints>
     <status>UNOBTAINABLE</status>
     <icon>resources\tech\explosives.jpg</icon>
@@ -3014,7 +3014,7 @@
     <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>
     <cost resourcetype="Gold">300.0000</cost>
     <cost resourcetype="Wood">100.0000</cost>
-    <cost resourcetype="Favor">5.0000</cost>
+    <cost resourcetype="Favor">1250.0000</cost>
     <researchpoints>30.0000</researchpoints>
     <status>UNOBTAINABLE</status>
     <icon>resources\tech\explosives.jpg</icon>
@@ -3043,7 +3043,7 @@
     <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>
     <cost resourcetype="Gold">300.0000</cost>
     <cost resourcetype="Wood">100.0000</cost>
-    <cost resourcetype="Favor">5.0000</cost>
+    <cost resourcetype="Favor">1250.0000</cost>
     <researchpoints>30.0000</researchpoints>
     <status>UNOBTAINABLE</status>
     <icon>resources\tech\explosives.jpg</icon>
