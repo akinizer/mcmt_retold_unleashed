@@ -20,4 +20,8 @@
 		<unittype>AnimalOfSet</unittype>
 		<displaynameid>STR_HUD_UNIT_TYPE_ANIMAL_OF_SET</displaynameid>
 	</unittypeentry>
+    <unittypeentry mergeMode="add">
+		<unittype>AbstractScout</unittype>
+		<displaynameid>STR_HUD_UNIT_TYPE_ABSTRACT_SCOUT</displaynameid>
+	</unittypeentry>
 </unittypedatamods>

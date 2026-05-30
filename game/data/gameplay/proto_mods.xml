@@ -3315,6 +3315,11 @@
 			<attachprotounit>SunRayRevealer</attachprotounit>
 		</protoaction>
 	</unit>
+	<unit name="CrocodileOfSet">
+		<flag>TieToWaterSurface</flag>
+		<flag>AmphibiousBirth</flag>
+		<movementtype>amphibious</movementtype>
+	</unit>
 	
 	<unit name="Mummy">
         <spawn type="dead" count="1" delay="1500" controlgroup="">MummyFallen</spawn>
@@ -3549,7 +3554,7 @@
 		   </onhiteffect>
 		</protoaction>
 		<protoaction>
-			<name>Burrow</name>
+			<name stringid="STR_UNIT_BURROW_ACTION">Burrow</name>
 			<type>DelayedTransform</type>
 			<modifyprotoid>ScarabBurrowed</modifyprotoid>
 			<modifyduration>2000</modifyduration>

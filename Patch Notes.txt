@@ -267,6 +267,9 @@
             - pierce-, bonusdamage+ (mythunit,humansoldier,villager)    - naval: 
         - Leviathan: garrison reworks
         - WarTurtle: miniturtle, visualscale-damage-hp via veterancy
+
+    - animalofset:
+        - CrocodileOfSet: amphibious
     
 - siege weapon:
     - SiegeTower:
@@ -528,13 +531,16 @@
     - shaduf: (farm cost workrate, dropsite buildpoints, siegeweapo trainpoints, siegeweapon chariotarcher pharaoh pharaohnewkingdom speed)
     - bonebow: (AbstractEgyptianArcher range & trackrating)
     - floodofthenile: (farm workrate, petsuchos hp speed)
-    - clairvoyance: (priest pharaoh los)
     - solarbarque: (warbarge projectileballoffire div)
     - funeralbarge: (priest speed, warbarge projectileonmyojiattack burn progfreeze)
     - spearofhorus: (spearman  div shieldpoints)
     - dark water: abyss related enchancements (animals, cavalry, naval beasts)
     - desert winds: caravan speed
-    - SkinOfTheRhino: villager ondamagemodigy armor+ & speed-, animalofset armor+
+
+    - SkinOfTheRhino: villager & rhinocerosofset ondamagemodify armor+ & reflectattack, animalofset armor+, spawn 1 rhinoceros at towncenter
+    - FloodOfTheNile: spawn 1 CrocodileOfSet at towncenter, CrocodileOfSet hitpoints+, maximumvelocity+, bonusdamage vs ship
+    - Clairvoyance: Priest & Pharaoh LOS+, spawn 10 BaboonOfSet at towncenter, BaboonOfSet LOS+, bonusdamage vs AbstractScout
+
 - chinese, japanese, aztec, demeter
 - wonder names
 - temple names

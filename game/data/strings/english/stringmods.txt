@@ -1114,6 +1114,7 @@ ID = "STR_HUD_UNIT_TYPE_ABSTRACT_SERPENT"   ;   Str = "Serpentine Type"
 ID = "STR_HUD_UNIT_TYPE_ABSTRACT_WOODLAND"   ;   Str = "Woodland Type"
 ID = "STR_HUD_UNIT_TYPE_ABSTRACT_MYTHSOLDIER"   ;   Str = "Myth Soldier"
 ID = "STR_HUD_UNIT_TYPE_ABSTRACT_EGYPTIAN_ARCHER"   ;   Str = "Egyptian Archer"
+ID = "STR_HUD_UNIT_TYPE_ABSTRACT_SCOUT"   ;   Str = "Scout Type"
 ID = "STR_HUD_UNIT_TYPE_ANIMAL_OF_SET"   ;   Str = "Animal of Set"
 
 // SUPERWEAPONS
@@ -1175,6 +1176,7 @@ ID = "STR_ABILITY_ILLUSION_SURPRISE"   ;   Str = "Illusion Surprise"
 
 ID = "STR_ABILITY_BURROW"   ;   Str = "Burrow"
 ID = "STR_ABILITY_EMERGE"   ;   Str = "Emerge"
+ID = "STR_UNIT_BURROW_ACTION"   ;   Str = "Burrow"
 
 ID = "STR_ABILITY_SPECIALATTACK"   ;   Str = "Special Attack"
 ID = "STR_ABILITY_SPECIALATTACK_LR"   ;   Str = "This unit has a special ability that recharges"

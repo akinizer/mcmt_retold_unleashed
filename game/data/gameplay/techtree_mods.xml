@@ -7958,19 +7958,41 @@
       <effect type="Data" amount="1.5" subtype="ResourceTrickleRate" resource="Food" relativity="Absolute" mergeMode="add">
         <target type="Player"></target></effect>
       <effect type="Data" action="Gather" amount="1.05" subtype="WorkRate" unittype="AbstractFarm" relativity="BasePercent" mergeMode="add">
-        <target type="ProtoUnit">EconomicUpgraded</target>
+        <target type="ProtoUnit">EconomicUpgraded</target></effect>
+
       <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
-        <target type="ProtoUnit">Petsuchos</target></effect></effect>
+        <target type="ProtoUnit">Petsuchos</target></effect>
       <effect type="Data" amount="0.5" subtype="MaximumVelocity" relativity="Absolute" mergeMode="add">
-          <target type="ProtoUnit">Petsuchos</target></effect>
+        <target type="ProtoUnit">Petsuchos</target></effect>
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">CrocodileOfSet</target></effect>
+      <effect type="Data" amount="0.5" subtype="MaximumVelocity" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">CrocodileOfSet</target></effect>
+
+      <effect type="Data" action="HandAttack" amount="2.00" subtype="Damagebonus" unittype="Ship" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">CrocodileOfSet</target></effect>
+      
+      <effect type="CreateUnit" unit="CrocodileOfSet" generator="Dock" mergeMode="add">
+				<pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+					<offset x="-5.00" y="0.00" z="0.00"></offset></pattern></effect>
     </effects>
   </tech>
-  <tech name="Clairvoyance" mergeMode="add">
+  <tech name="Clairvoyance">
     <effects>
-      <effect type="Data" amount="1.25" subtype="LOS" relativity="BasePercentage">
-          <target type="ProtoUnit">Priest</target></effect>
-      <effect type="Data" amount="1.50" subtype="LOS" relativity="BasePercentage">
-          <target type="ProtoUnit">AbstractPharaoh</target></effect>
+      <effect type="Data" amount="1.25" subtype="LOS" relativity="BasePercentage" mergeMode="add">
+        <target type="ProtoUnit">Priest</target></effect>
+      <effect type="Data" amount="1.50" subtype="LOS" relativity="BasePercentage" mergeMode="add">
+        <target type="ProtoUnit">AbstractPharaoh</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">BaboonOfSet</target></effect>
+      <effect type="Data" action="HandAttack" amount="4.00" subtype="Damagebonus" unittype="AbstractScout" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">BaboonOfSet</target></effect>
+      <effect type="CreateUnit" unit="BaboonOfSet" generator="TownCenter" mergeMode="add">
+				<pattern type="Leaving" speed="0.00" radius="0.00" quantity="10.00" minradius="0.00">
+					<offset x="-5.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
     </effects>
   </tech>
   <!-- Egyptian Naval Techs -->
@@ -8100,13 +8122,32 @@
 	  <effects>
       <effect type="Data" amount="0.003" subtype="OnDamageModify" modifytype="ArmorSpecific" damagetype="Hack" relativity="Assign" mergeMode="add">
 				<target type="ProtoUnit">AbstractVillager</target></effect>
-      <effect type="Data" amount="-0.1" subtype="OnDamageModify" modifytype="Speed" relativity="Absolute" mergeMode="add">
-				<target type="ProtoUnit">AbstractVillager</target></effect>
+      <effect type="Data" protoaction="ThornedWallsAttack" amount="1.00" subtype="ProtoActionAdd" unittype="ReflectAttackContainer" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">AbstractVillager</target></effect>
+      <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="HasReflectAttack" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">AbstractVillager</target></effect>
+      <effect type="Data" amount="1.00" subtype="Damage" damagetype="Hack" action="ThornedWallsAttack" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">AbstractVillager</target></effect>
+
+      <effect type="Data" amount="0.033" subtype="OnDamageModify" modifytype="ArmorSpecific" damagetype="Hack" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">RhinocerosOfSet</target></effect>
+      <effect type="Data" protoaction="ThornedWallsAttack" amount="1.00" subtype="ProtoActionAdd" unittype="ReflectAttackContainer" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">RhinocerosOfSet</target></effect>
+      <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="HasReflectAttack" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">RhinocerosOfSet</target></effect>
+      <effect type="Data" amount="3.00" subtype="Damage" damagetype="Hack" action="ThornedWallsAttack" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">RhinocerosOfSet</target></effect>
 
       <effect type="Data" amount="-0.25" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent" mergeMode="add">
         <target type="ProtoUnit">AnimalOfSet</target></effect>
       <effect type="Data" amount="-0.25" subtype="ArmorVulnerability" armortype="Pierce" relativity="Percent" mergeMode="add">
-        <target type="ProtoUnit">AnimalOfSet</target></effect>      
+        <target type="ProtoUnit">AnimalOfSet</target></effect>    
+        
+      <effect type="CreateUnit" unit="RhinocerosOfSet" generator="TownCenter" mergeMode="add">
+				<pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+					<offset x="-5.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
   	</effects>
   </tech>
   <tech name="TusksOfApedemak" mergeMode="add">
