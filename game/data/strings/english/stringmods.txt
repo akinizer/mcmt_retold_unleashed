@@ -387,6 +387,14 @@ ID = "STR_UNIT_MECHANIZED_MAMMOTH_UNIT_NAME"   ;   Str = "Mechanized Mammoth Uni
 ID = "STR_UNIT_MECHANIZED_MAMMOTH_UNIT_SR"   ;   Str = "Mechanized Mammoth Unit"
 ID = "STR_UNIT_MECHANIZED_MAMMOTH_UNIT_LR"   ;   Str = "CyberTech Super Unit Unexpectedly Possessed By Set"
 
+ID = "STR_UNIT_RHINOCEROS_OF_RA_NAME"   ;   Str = "Rhinoceros of Ra"
+ID = "STR_UNIT_RHINOCEROS_OF_RA_SR"   ;   Str = "Sun-Blessed Rhinoceros"
+ID = "STR_UNIT_RHINOCEROS_OF_RA_LR"   ;   Str = "Ancient Egyptian Rhinoceros blessed by Ra"
+
+ID = "STR_UNIT_CROCODILE_OF_ISIS_NAME"   ;   Str = "Crocodile of Isis"
+ID = "STR_UNIT_CROCODILE_OF_ISIS_SR"   ;   Str = "Flood-Blessed Crocodile"
+ID = "STR_UNIT_CROCODILE_OF_ISIS_LR"   ;   Str = "Ancient Egyptian Crocodile blessed by Isis"
+
 // BASTION UNITS
 ID = "STR_UNIT_MULTIGUNNER_UNIT_NAME"   ;   Str = "Multigunner"
 ID = "STR_UNIT_MULTIGUNNER_UNIT_SR"   ;   Str = "Multigunner Super Infantry"

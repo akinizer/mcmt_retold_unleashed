@@ -439,7 +439,9 @@
 - Manor
 - SiegeWorks
 - TownCenter:
-    - Noah,StellarGateway (A.R.K)+
+    - Noah
+        - Respawn: 5 minutes
+        - StellarGateway (A.R.K): mobile armored transport, only accepts Noah as passenger
 - Garrison:
     - SentryTowwe: arrow (ProjectileArrowFlaming), rangedattack (activeifcontainsunits), contain (ArcherLineUpgrade), notcontain (AbstractInfantry)
     - WatchTower: flyingunitattack (only one enabled), arrow (ProjectileBallistaShot)
@@ -537,10 +539,12 @@
     - dark water: abyss related enchancements (animals, cavalry, naval beasts)
     - desert winds: caravan speed
 
-    - SkinOfTheRhino: villager & rhinocerosofset ondamagemodify armor+ & reflectattack, animalofset armor+, spawn 1 rhinoceros at towncenter
-    - FloodOfTheNile: spawn 1 CrocodileOfSet at towncenter, CrocodileOfSet hitpoints+, maximumvelocity+, bonusdamage vs ship
+    - SkinOfTheRhino: villager & RhinocerosOfRa ondamagemodify armor+ & reflectattack, animalofset armor+, spawn 1 rhinoceros at towncenter
+        - RhinocerosOfRa: early base defensive unit, mythunit minorhero, reflective solarshield, gold resource
+    - FloodOfTheNile: spawn 1 CrocodileOfIsis at towncenter, CrocodileOfSet hitpoints+, maximumvelocity+, bonusdamage vs ship
+        - CrocodileOfIsis: early naval defensive unit, mythunit minorhero, thundercharge shield, wood source
     - Clairvoyance: Priest & Pharaoh LOS+, spawn 10 BaboonOfSet at towncenter, BaboonOfSet LOS+, bonusdamage vs AbstractScout
-
+        - BaboonOfSet: anti-scout & exploration, food source
 - chinese, japanese, aztec, demeter
 - wonder names
 - temple names

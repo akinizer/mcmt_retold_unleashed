@@ -22781,7 +22781,8 @@
 		<buildlimit>1</buildlimit>
 		<trainpoints>10</trainpoints>
 		<maxcontained>1</maxcontained>
-		<maxvelocity>10</maxvelocity>
+		<maxvelocity>0.0100</maxvelocity>
+        <containedspeedbonus>10.0000</containedspeedbonus>
 
 		<los>12.0000</los>
 		<cost resourcetype="Favor">200.0000</cost>
@@ -22849,8 +22850,7 @@
 		<flag>AutoCommandSingleUnit</flag>
 		<flag>AutoCommandStartDisabled</flag>
 
-		<contain>LogicalTypeGarrisonInShips</contain>
-		<notcontain>AbstractTransportShip</notcontain>
+		<contain>Noah</contain>
 	</unit>
 	<unit name="MechanizedMammothUnit">
 		<displaynameid>STR_UNIT_MECHANIZED_MAMMOTH_UNIT_NAME</displaynameid>
@@ -22949,6 +22949,221 @@
 			<volleymode>1</volleymode>
 		</protoaction>
 	</unit>
+	<unit name="RhinocerosOfRa">
+		<displaynameid>STR_UNIT_RHINOCEROS_OF_RA_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_RHINOCEROS_OF_RA_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_RHINOCEROS_OF_RA_SR</shortrollovertextid>
+		<icon>resources\egyptian\player_color\units\rhinoceros_of_set_icon.png</icon>
+		<animfile>egyptian\units\animals_of_set\rhinoceros_of_set\rhinoceros_of_set.xml</animfile>
+		<soundsetfile>nature\animals\rhinoceros\rhinoceros.xml</soundsetfile>
+		<obstructionradiusx>1.2400</obstructionradiusx>
+		<obstructionradiusz>1.2400</obstructionradiusz>
+		<selectionradiusx>1.2500</selectionradiusx>
+		<selectionradiusz>1.5000</selectionradiusz>
+		<impacttype>Metal</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>180.0000</initialhitpoints>
+		<maxhitpoints>180.0000</maxhitpoints>
+		<trainpoints>6.0000</trainpoints>
+		<weightclass>8</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>4.0000</maxvelocity>
+		<los>14.0000</los>
+		<cost resourcetype="Favor">15.0000</cost>
+		<initialresource resourcetype="Gold">200.0000</initialresource>
+		<resourcedecay>0.2000</resourcedecay>
+		<resourcedecay>0.2000</resourcedecay>
+		<resourcepriority>50.0000</resourcepriority>
+		<armor type="Hack" value="0.4000"></armor>
+		<armor type="Pierce" value="0.4000"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>Huntable</unittype>
+		<unittype>HuntedResource</unittype>
+		<unittype>AnimalPrey</unittype>
+		<unittype>Resource</unittype>
+		<unittype>Unit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>MythUnit</unittype>
+		<unittype>MythUnitMelee</unittype>
+		<unittype>Hero</unittype>
+		<unittype>MinorHero</unittype>
+		<unittype>HeroShadowUpgraded</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>AnimalOfSet</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeVillagersAttackResponse</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>GoldResource</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>DieAtZeroResources</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>DoNotValidateResourceInventory</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>PreferSkeletonAsBonePile</flag>
+		<command row="0" column="0">SetVillagerToGather</command>
+		<command row="0" column="1">ResourceUnitConstructGranary</command>
+		<command row="0" column="1">ResourceUnitConstructSilo</command>
+		<command row="0" column="1">ResourceUnitConstructWatermill</command>
+		<command row="0" column="1">ResourceUnitConstructCalpulli</command>
+		<command row="0" column="4">FlareAtUnit</command>
+		<command row="3" column="0">SetRallyPointOfNearbyEconUnitsToUnitPos</command>
+		<command row="3" column="1">SetRallyPointOfNearbyMilitaryUnitsToUnitPos</command>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.100000</rof>
+			<damage type="Hack">8.00000</damage>
+			<damage type="Crush">1.00000</damage>
+			<damagebonus type="HumanSoldier">2.500000</damagebonus>
+			<maxrange>0.500000</maxrange>
+		</protoaction>		
+		<protoaction>
+			<name>HeroGlowOnSelf</name>
+			<type>Modify</type>
+			<modifyselfonly>1</modifyselfonly>
+			<persistent>1</persistent>
+			<modelattachment>japanese\godpowers\solar_shield\solar_shield.xml</modelattachment>
+			<modelattachmentbone>spine</modelattachmentbone>
+		</protoaction>
+	</unit>
+	<unit name="CrocodileOfIsis">
+		<displaynameid>STR_UNIT_CROCODILE_OF_ISIS_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_CROCODILE_OF_ISIS_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_CROCODILE_OF_ISIS_SR</shortrollovertextid>
+		<icon>resources\egyptian\player_color\units\crocodile_of_set_icon.png</icon>
+		<animfile>egyptian\units\animals_of_set\crocodile_of_set\crocodile_of_set.xml</animfile>
+		<soundsetfile>nature\animals\crocodile\crocodile.xml</soundsetfile>
+		<obstructionradiusx>0.7400</obstructionradiusx>
+		<obstructionradiusz>0.7400</obstructionradiusz>
+		<selectionradiusx>0.7500</selectionradiusx>
+		<selectionradiusz>1.5000</selectionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+
+		<flag>TieToWaterSurface</flag>
+		<flag>AmphibiousBirth</flag>
+		<movementtype>amphibious</movementtype>
+
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>160.0000</initialhitpoints>
+		<maxhitpoints>160.0000</maxhitpoints>
+		<trainpoints>4.0000</trainpoints>
+		<weightclass>6</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>3.3000</maxvelocity>
+		<los>14.0000</los>
+		<cost resourcetype="Favor">6.0000</cost>
+		<initialresource resourcetype="Wood">180.0000</initialresource>
+		<resourcedecay>0.2000</resourcedecay>
+		<resourcepriority>50.0000</resourcepriority>
+		<armor type="Hack" value="0.3000"></armor>
+		<armor type="Pierce" value="0.3000"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<maxshieldpoints>140</maxshieldpoints>	
+		<unitshieldregen damagetimeout="5.0">1.0000</unitshieldregen>
+
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>Huntable</unittype>
+		<unittype>HuntedResource</unittype>
+		<unittype>AnimalPrey</unittype>
+		<unittype>Resource</unittype>
+		<unittype>Unit</unittype>
+		<unittype>Hero</unittype>
+		<unittype>MinorHero</unittype>
+		<unittype>HeroShadowUpgraded</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>AnimalOfSet</unittype>
+		<unittype>MythUnitMelee</unittype>
+		<unittype>MythUnit</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeVillagersAttackResponse</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>WoodResource</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>DieAtZeroResources</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>DoNotValidateResourceInventory</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>PreferSkeletonAsBonePile</flag>
+		<command row="0" column="0">SetVillagerToGather</command>
+		<command row="0" column="1">ResourceUnitConstructGranary</command>
+		<command row="0" column="1">ResourceUnitConstructSilo</command>
+		<command row="0" column="1">ResourceUnitConstructWatermill</command>
+		<command row="0" column="1">ResourceUnitConstructCalpulli</command>
+		<command row="0" column="4">FlareAtUnit</command>
+		<command row="3" column="0">SetRallyPointOfNearbyEconUnitsToUnitPos</command>
+		<command row="3" column="1">SetRallyPointOfNearbyMilitaryUnitsToUnitPos</command>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.300000</rof>
+			<damage type="Hack">9.000000</damage>
+			<damagebonus type="Building">0.500000</damagebonus>
+			<maxrange>0.500000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>HeroGlowOnSelf</name>
+			<type>Modify</type>
+			<modifyselfonly>1</modifyselfonly>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\thundercharge_glow.xml</modelattachment>
+			<modelattachmentbone>spine</modelattachmentbone>
+		</protoaction>
+	</unit>
+
 	<unit name="SandDevourer">
         <displaynameid>STR_UNIT_SANDDEVOURER_NAME</displaynameid>
         <rollovertextid>STR_UNIT_SANDDEVOURER_LR</rollovertextid>

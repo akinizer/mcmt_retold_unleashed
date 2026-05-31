@@ -3254,7 +3254,7 @@
 
   <tech name="MCMT_Noah_Respawn">
     <status>UNOBTAINABLE</status>
-    <delay>2.0000</delay>
+    <delay>300.0000</delay>
     <flag>Volatile</flag>
     <flag>Persistent</flag>
     <flag>HideFromDialogs</flag>
@@ -8146,14 +8146,14 @@
       <effect type="Data" amount="0.5" subtype="MaximumVelocity" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">Petsuchos</target></effect>
       <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
-        <target type="ProtoUnit">CrocodileOfSet</target></effect>
+        <target type="ProtoUnit">CrocodileOfIsis</target></effect>
       <effect type="Data" amount="0.5" subtype="MaximumVelocity" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">CrocodileOfSet</target></effect>
+        <target type="ProtoUnit">CrocodileOfIsis</target></effect>
 
       <effect type="Data" action="HandAttack" amount="2.00" subtype="Damagebonus" unittype="Ship" relativity="Absolute" mergeMode="add">
-				<target type="ProtoUnit">CrocodileOfSet</target></effect>
+				<target type="ProtoUnit">CrocodileOfIsis</target></effect>
       
-      <effect type="CreateUnit" unit="CrocodileOfSet" generator="Dock" mergeMode="add">
+      <effect type="CreateUnit" unit="CrocodileOfIsis" generator="Dock" mergeMode="add">
 				<pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
 					<offset x="-5.00" y="0.00" z="0.00"></offset></pattern></effect>
     </effects>
@@ -8311,20 +8311,20 @@
         <target type="ProtoUnit">AbstractVillager</target></effect>
 
       <effect type="Data" amount="0.033" subtype="OnDamageModify" modifytype="ArmorSpecific" damagetype="Hack" relativity="Assign" mergeMode="add">
-				<target type="ProtoUnit">RhinocerosOfSet</target></effect>
+				<target type="ProtoUnit">RhinocerosOfRa</target></effect>
       <effect type="Data" protoaction="ThornedWallsAttack" amount="1.00" subtype="ProtoActionAdd" unittype="ReflectAttackContainer" relativity="Assign" mergeMode="add">
-        <target type="ProtoUnit">RhinocerosOfSet</target></effect>
+        <target type="ProtoUnit">RhinocerosOfRa</target></effect>
       <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="HasReflectAttack" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">RhinocerosOfSet</target></effect>
+        <target type="ProtoUnit">RhinocerosOfRa</target></effect>
       <effect type="Data" amount="3.00" subtype="Damage" damagetype="Hack" action="ThornedWallsAttack" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">RhinocerosOfSet</target></effect>
+        <target type="ProtoUnit">RhinocerosOfRa</target></effect>
 
       <effect type="Data" amount="-0.25" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent" mergeMode="add">
         <target type="ProtoUnit">AnimalOfSet</target></effect>
       <effect type="Data" amount="-0.25" subtype="ArmorVulnerability" armortype="Pierce" relativity="Percent" mergeMode="add">
         <target type="ProtoUnit">AnimalOfSet</target></effect>    
         
-      <effect type="CreateUnit" unit="RhinocerosOfSet" generator="TownCenter" mergeMode="add">
+      <effect type="CreateUnit" unit="RhinocerosOfRa" generator="TownCenter" mergeMode="add">
 				<pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
 					<offset x="-5.00" y="0.00" z="0.00"></offset>
 				</pattern>
@@ -10595,25 +10595,24 @@
       <effect type="Data" amount="28.00" subtype="LOS" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">QuimichinSpy</target></effect>
 
-      <effect type="Data" action="RangedAttack" amount="3.0" subtype="RateOfFire" relativity="BasePercent" mergeMode="add">
+      <effect type="Data" action="RangedAttack" amount="5.0" subtype="RateOfFire" relativity="BasePercent" mergeMode="add">
         <target type="ProtoUnit">QuimichinSpy</target></effect>
 
-      <effect type="Data" allactions="1" amount="10.0" subtype="DamageBonus" unittype="HumanSoldier" relativity="Absolute" mergeMode="add">
+      <effect type="Data" allactions="1" amount="99.0" subtype="DamageBonus" unittype="Hero" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">QuimichinSpy</target></effect>
-      <effect type="Data" allactions="1" amount="10.0" subtype="DamageBonus" unittype="AbstractVillager" relativity="Absolute" mergeMode="add">
+      <effect type="Data" allactions="1" amount="50.0" subtype="DamageBonus" unittype="HumanSoldier" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">QuimichinSpy</target></effect>
-      <effect type="Data" allactions="1" amount="10.0" subtype="DamageBonus" unittype="Priest" relativity="Absolute" mergeMode="add">
+      <effect type="Data" allactions="1" amount="19.0" subtype="DamageBonus" unittype="AbstractVillager" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">QuimichinSpy</target></effect>
-      <effect type="Data" allactions="1" amount="10.0" subtype="DamageBonus" unittype="AbstractInfantry" relativity="Absolute" mergeMode="add">
+      <effect type="Data" allactions="1" amount="19.0" subtype="DamageBonus" unittype="TradeUnit" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">QuimichinSpy</target></effect>
-      <effect type="Data" allactions="1" amount="10.0" subtype="DamageBonus" unittype="AbstractArcher" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">QuimichinSpy</target></effect>
-      <effect type="Data" allactions="1" amount="10.0" subtype="DamageBonus" unittype="AbstractCavalry" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">QuimichinSpy</target></effect>
-      <effect type="Data" allactions="1" amount="10.0" subtype="DamageBonus" unittype="WarriorPriest" relativity="Absolute" mergeMode="add">
+      <effect type="Data" allactions="1" amount="19.0" subtype="DamageBonus" unittype="AbstractFlyingUnit" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">QuimichinSpy</target></effect>
 
       <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DirectProjectile" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">QuimichinSpy</target></effect>
+
+      <effect type="Data" amount="1.50" subtype="TrainPoints" relativity="Percent">
         <target type="ProtoUnit">QuimichinSpy</target></effect>
 
       <effect type="SetName" proto="QuimichinSpy" newname="STR_UNIT_QUIMICHIN_SNIPER" mergeMode="add"></effect>
