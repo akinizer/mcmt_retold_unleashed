@@ -1080,6 +1080,20 @@
 ==================== PRIORITY-PLANS ==========================================
 ==============================================================================
 
+=== FORBIDDEN TECHS
+* Pyramid Wonder:
+- Button: Transform Pyramid to Pyramid (Unleashed)
+- Pyramid (Unleashed): Laser Cannon slow rof areadamage large vfximpact, Laser Blasters dependant x4 anti-unit, Laser x2 anti-abstractflying 
+* Huitzi Wonder:
+- Button: summon D347H-X
+    - D347H-X: Very High Armor, decay, summon SoulTaker
+    - SoulTaker: Large HadesShade, HandAttack low rof areadamage vfxdeathmark, LightingAttack low rof
+* Other Pantheon Major Wonder:
+- Button: summon L0S7-1
+    - D347H-X: Very High Armor, decay, summon SoulTaker
+    - BirthAttack: castpower (corruption summon godpower)
+    - BeastBerny: Large Taotie, Devour + Bash + AreaCorruptionContainer (onhiteffects)
+
 === AZTEC
 * hero
 teixiptla: areaboost humansoldier hitpoints
