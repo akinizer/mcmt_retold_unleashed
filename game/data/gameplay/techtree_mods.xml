@@ -10532,15 +10532,32 @@
   </tech>
   <tech name="TemiminaloyanTrials">
     <effects>
-      <effect type="Data" action="RangedAttack" amount="12.0" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+      <effect type="Data" action="RangedAttack" amount="28.0" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">QuimichinSpy</target></effect>
+      <effect type="Data" action="RangedAttack" amount="4.0" subtype="MinimumRange" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">QuimichinSpy</target></effect>
       <effect type="Data" amount="12.00" subtype="LOS" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">QuimichinSpy</target></effect>
+
       <effect type="Data" action="RangedAttack" amount="3.0" subtype="RateOfFire" relativity="BasePercent" mergeMode="add">
         <target type="ProtoUnit">QuimichinSpy</target></effect>
+
       <effect type="Data" allactions="1" amount="10.0" subtype="DamageBonus" unittype="HumanSoldier" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">QuimichinSpy</target></effect>
-      <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DirectProjectile" relativity="Assign">
+      <effect type="Data" allactions="1" amount="10.0" subtype="DamageBonus" unittype="AbstractVillager" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">QuimichinSpy</target></effect>
+      <effect type="Data" allactions="1" amount="10.0" subtype="DamageBonus" unittype="Priest" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">QuimichinSpy</target></effect>
+      <effect type="Data" allactions="1" amount="10.0" subtype="DamageBonus" unittype="AbstractInfantry" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">QuimichinSpy</target></effect>
+      <effect type="Data" allactions="1" amount="10.0" subtype="DamageBonus" unittype="AbstractArcher" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">QuimichinSpy</target></effect>
+      <effect type="Data" allactions="1" amount="10.0" subtype="DamageBonus" unittype="AbstractCavalry" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">QuimichinSpy</target></effect>
+      <effect type="Data" allactions="1" amount="10.0" subtype="DamageBonus" unittype="WarriorPriest" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">QuimichinSpy</target></effect>
+        
+      <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DirectProjectile" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">QuimichinSpy</target></effect>
     </effects>
   </tech>

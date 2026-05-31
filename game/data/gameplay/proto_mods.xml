@@ -5647,6 +5647,7 @@
 
 	<!-- Aztec Military Units -->
 	<unit name="QuimichinSpy">
+		<buildlimit>3</buildlimit>
 		<train row="0" column="1" mergeMode="remove">SmokeTrap</train>
 		<train row="0" column="2" mergeMode="remove">SpikeTrap</train>
 		<train row="0" column="4" mergeMode="add">SmokeTrap</train>
