@@ -30,7 +30,7 @@ ID = "STR_EMB_KITSUNE_ILLUSION_SR"   ;   Str = "Just a chilling nice lady"
 ID = "STR_ABILITY_KITSUNE_ILLUSIONATTACK"   ;   Str = "Kitsune Illusion Suprise"
 
 ID = "STR_ABILITY_COSMICSHIMMER"   ;   Str = "Cosmic Shimmer"
-ID = "STR_ABILITY_COSMICSHIMMER_LR"   ;   Str = "Umibozu takes utilizes teleportation ability and travels between land, sea and stars"
+ID = "STR_ABILITY_COSMICSHIMMER_LR"   ;   Str = "Umibozu utilizes its teleportation ability and travels between land, sea and stars"
 
 // DEMIGODS
 ID = "STR_UNIT_SON_OF_HORUS_NAME"  ;   Str = "Son of Horus (Hero)"

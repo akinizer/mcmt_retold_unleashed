@@ -1204,6 +1204,8 @@
 			<modifyduration>1500</modifyduration>
 			<restricttowater>1</restricttowater>
 			<onhiteffect type="Throw" targetunittype="AbstractFishingShip"></onhiteffect>
+			<onhiteffect type="Spawn" proto="AreaDamageCorruptionAreaContainer" amount="1">
+				<target attacktype="Unit"></target></onhiteffect>
 			<throw>1</throw>
 		</protoaction>		
 	</unit>
