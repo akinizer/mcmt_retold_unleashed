@@ -660,7 +660,9 @@
 - Kitsune: amphibious
     - FieryFireAttack: tech-enabled, ranged attack, divine damage, projectile (fireball), impact (asuraballoffire)
 - Wanyudo: amphibious
-- Umibozu: teleport attack throws FishingShip
+- Umibozu: 
+    - TeleportAttack: throws FishingShip, restictowater, attackaction
+    - CosmicShimmer: manual teleport, land-sea
 - Asura: SiegeLineUpgrade
 - Oni: SiegeLineUpgrade, InfantryLineUpgrade
 

@@ -1645,8 +1645,19 @@
 		<unitaction>PoisonDartAction</unitaction>
 	</power>
 	<power name="AbilityUmibozu" type="UnitAction">
+		<displaynameid>STR_ABILITY_COSMICSHIMMER</displaynameid>
+		<rolloverid>STR_ABILITY_COSMICSHIMMER_LR</rolloverid>
 		<placement enemy="" allowgroundtarget="" disallowlandcast="" mergeMode="remove">Unit</placement>
 		<placement enemy="" allowgroundtarget=""  mergeMode="add">Unit</placement>
 		<placement enemy="" allowgroundtarget=""  mergeMode="add">Building</placement>
+	</power>
+	<power name="AbilityUmibozuAttack" type="UnitAction">
+		<displaynameid>STR_ABILITY_UMIBOZU</displaynameid>
+		<rolloverid>STR_ABILITY_UMIBOZU_LR</rolloverid>
+		<icon>japanese\static_color\abilities\sudden_appearance_icon.png</icon>
+		<placement enemy="" allowgroundtarget="" disallowlandcast="">Unit</placement>
+		<abstractplacementtargettype>All</abstractplacementtargettype>
+		<rangeindicator range="4.0" speed="0.2">Circle</rangeindicator>
+		<unitaction>TeleportAttack</unitaction>
 	</power>
 </powersmod>
