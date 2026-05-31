@@ -27,14 +27,13 @@
 		<name>TeleportAttack</name>
 		<type>TeleportAttack</type>
 		<targetground>1</targetground>
+		<attackaction>1</attackaction>
 		<rangedlogic>1</rangedlogic>
 		<anim>TeleportStart</anim>
 		<reloadanim>TeleportEnd</reloadanim>
 		<accuracy>1.0</accuracy>
 		<chargeaction>1</chargeaction>
 		<rate type="Unit">1.0</rate>
-		<rate type="Building">1.0</rate>
-		<facetoafterteleport>1</facetoafterteleport>
 	</action>
 	<tactic>Default
 	<action priority="100">TeleportAttack</action>

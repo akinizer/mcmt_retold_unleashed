@@ -1190,6 +1190,7 @@
 		<protoaction>
 			<name>Teleport</name>
 			<restricttowater mergeMode="remove">1</restricttowater>
+			<maxrange>28.000000</maxrange>
 		</protoaction>
 		<protoaction>
 			<name>TeleportAttack</name>
