@@ -8132,6 +8132,9 @@
     </effects>
   </tech>
   <tech name="FloodOfTheNile">
+     <prereqs>
+        <typecount unit="Dock" count="0.00" state="aliveState" operator="gt" mergeMode="add"></typecount>
+      </prereqs>
     <effects>
       <effect type="Data" amount="1.0" subtype="ResourceTrickleRate" resource="Food" relativity="Absolute" mergeMode="remove">
 				<target type="Player"></target></effect>
@@ -8331,12 +8334,14 @@
 			</effect>
   	</effects>
   </tech>
-  <tech name="TusksOfApedemak" mergeMode="add">
+  <tech name="TusksOfApedemak">
     <effects>
-        <effect type="Data" amount="1.10" subtype="Damage" action="HandAttack" relativity="BasePercent"><target type="ProtoUnit">AnimalOfSet</target></effect>
-        <effect type="Data" amount="0.90" subtype="cost" resource="Food" relativity="BasePercent"><target type="ProtoUnit">AnimalOfSet</target></effect>
-        <effect type="Data" amount="0.90" subtype="cost" resource="Gold" relativity="BasePercent"><target type="ProtoUnit">AnimalOfSet</target></effect>
-        <effect type="Data" amount="-1.00" subtype="PopulationCount" relativity="Absolute"><target type="ProtoUnit">AnimalOfSet</target></effect>
+        <effect type="Data" amount="1.10" subtype="Damage" action="HandAttack" relativity="BasePercent" mergeMode="add">
+          <target type="ProtoUnit">AnimalOfSet</target></effect>
+        <effect type="Data" amount="0.90" subtype="cost" resource="Favor" relativity="BasePercent" mergeMode="add">
+          <target type="ProtoUnit">AnimalOfSet</target></effect>
+        <effect type="Data" amount="-1.00" subtype="PopulationCount" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AnimalOfSet</target></effect>
     </effects>
   </tech>
   <tech name="DesertWind" mergeMode="add">
@@ -8433,6 +8438,16 @@
         </effect>
     </effects>
   </tech>  
+  <tech name="Crocodilopolis">
+		<effects>
+			<effect type="Data" amount="1.60" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">CrocodileOfIsis</target></effect>
+			<effect type="Data" amount="6.00" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">CrocodileOfIsis</target></effect>
+      <effect type="Data" protoaction="HackArmorInverseAura" amount="1.00" subtype="ProtoActionAdd" unittype="HackArmorInverseAllyBuildingDockContainer" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">CrocodileOfIsis</target></effect>
+		</effects>
+	</tech>
   <tech name="DarkWater">
     <effects>
       <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent" mergeMode="remove">

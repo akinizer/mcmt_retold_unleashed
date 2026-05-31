@@ -27971,6 +27971,42 @@
 			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
 		</protoaction>
 	</unit> 
+	<unit name="HackArmorInverseAllyBuildingDockContainer" mergeMode="add">
+		<displaynameid>STR_VFX_HACKARMORBOOSTNEARALLYBUILDINGS_NAME</displaynameid>
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name stringid="STR_VFX_HACKARMORBOOSTNEARALLYBUILDINGSDOCK_NAME">HackArmorInverseAura</name>
+			<type>LikeBonus</type>
+			<modifydamagetype>Hack</modifydamagetype>
+			<modifyratecap>1.300000</modifyratecap>
+			<modifybase>1.000000</modifybase>
+			<maxrange>5</maxrange>
+			<modifyratebytype>1</modifyratebytype>
+			<modifyunittype>Dock</modifyunittype>
+			<rate type="Dock">1.3</rate>
+			<persistent>1</persistent>
+			<modifytype>ArmorSpecific</modifytype>
+			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		</protoaction>
+	</unit> 
 	<unit name="PierceArmorInverseAllyBuildingContainer" mergeMode="add">
 		<displaynameid>STR_VFX_PIERCEARMORBOOSTNEARALLYBUILDINGS_NAME</displaynameid>
 		<obstructionradiusx>0.1000</obstructionradiusx>
