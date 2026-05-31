@@ -313,6 +313,7 @@
 	<lykaonwolf>
 		<ability>AbilityMummy<chargetimeasrof>1</chargetimeasrof></ability>
 	</lykaonwolf>
+		<!--Japanese-Myth-->
 		<!--Japanese-HumanSoldier-->
 	<OnnaMusha>
 		<ability>AbilityOni<tech>DeadlyRage</tech><auxchargetimeasrof>1</auxchargetimeasrof><castonself>true</castonself></ability>

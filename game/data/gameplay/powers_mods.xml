@@ -1644,4 +1644,9 @@
 		<abstractplacementtargettype>Unit</abstractplacementtargettype>
 		<unitaction>PoisonDartAction</unitaction>
 	</power>
+	<power name="AbilityUmibozu" type="UnitAction">
+		<placement enemy="" allowgroundtarget="" disallowlandcast="" mergeMode="remove">Unit</placement>
+		<placement enemy="" allowgroundtarget=""  mergeMode="add">Unit</placement>
+		<placement enemy="" allowgroundtarget=""  mergeMode="add">Building</placement>
+	</power>
 </powersmod>

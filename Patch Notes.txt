@@ -1348,6 +1348,7 @@ Spider, StymphalianBird, Quetzal
 PantherWarrior: tezca model, siegeunit
 BullWarrior: Kamina model, Kamos model
 CentonTotochin (Hero): AbilityShogun (spawn phoenix egg while fighting, decay and explode)
+Imp -> Inkman (Umibozu) -> Inkbeast (Taotie)
 
 * Campaign-Exclusive Units
 Jokul: Ability Gust, Ability Tempest, hackarmor+

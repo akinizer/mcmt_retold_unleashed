@@ -1185,20 +1185,11 @@
 		</protoaction>
 	</unit>
 	<unit name="Umibozu">
-		<movementtype>amphibious</movementtype>
+		<auxrechargetime>5.0000</auxrechargetime>
+		<tactics>mcmt_umibozu.tactics</tactics>
 		<protoaction>
 			<name>Teleport</name>
-			<rof>1.500000</rof>
-			<damage type="Divine">40.000000</damage>
-			<damagearea>5.000000</damagearea>
-			<damageflags>Enemy</damageflags>
-			<damagebonus type="MythUnit">2.0000000</damagebonus>
-			<damagebonus type="Hero">0.250000</damagebonus>
-			<maxrange>999.000000</maxrange>
-			<modifyduration>1500</modifyduration>
-			<restricttowater>1</restricttowater>
-			<onhiteffect type="Throw" targetunittype="AbstractFishingShip"></onhiteffect>
-			<throw>1</throw>
+			<restricttowater mergeMode="remove">1</restricttowater>
 		</protoaction>
 	</unit>
 
