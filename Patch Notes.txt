@@ -815,7 +815,7 @@
     - Norse: RaidingCavalry, Jarl, PortableRam
     - Atlantean: Turma, Contarius
     - Chinese: WhiteHorseCavalry
-    - JapaneseÇ Miko, Bushi, Daimyo, Shogun, YumiHorseArcher, NaginataRider
+    - Japanese: Miko, Bushi, Daimyo, Shogun, YumiHorseArcher, NaginataRider
 - SpawnTactics: spawn tech
     - Greek: Warship, WarshipHero
     - Egyptian:
