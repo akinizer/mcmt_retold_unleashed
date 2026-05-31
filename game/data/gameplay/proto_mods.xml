@@ -27972,7 +27972,7 @@
 		</protoaction>
 	</unit> 
 	<unit name="HackArmorInverseAllyBuildingDockContainer" mergeMode="add">
-		<displaynameid>STR_VFX_HACKARMORBOOSTNEARALLYBUILDINGS_NAME</displaynameid>
+		<displaynameid>STR_VFX_HACKARMORBOOSTNEARALLYBUILDINGSDOCK_NAME</displaynameid>
 		<obstructionradiusx>0.1000</obstructionradiusx>
 		<obstructionradiusz>0.1000</obstructionradiusz>
 		<movementtype>air</movementtype>
