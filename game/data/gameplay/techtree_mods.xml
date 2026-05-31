@@ -3019,6 +3019,9 @@
     <icon>resources\tech\explosives.jpg</icon>
     <flag>CountsTowardMilitaryScore</flag>
     <flag>MythTech</flag>
+    <prereqs>
+      <typecount unit="AbstractFortress" count="0.00" state="aliveState" operator="gt"></typecount>
+    </prereqs>
     <effects>
       <!-- ultimate -->        
       <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
@@ -3048,6 +3051,9 @@
     <icon>resources\tech\explosives.jpg</icon>
     <flag>CountsTowardMilitaryScore</flag>
     <flag>MythTech</flag>
+    <prereqs>
+      <typecount unit="AbstractFortress" count="0.00" state="aliveState" operator="gt"></typecount>
+    </prereqs>
     <effects>
       <!-- ultimate -->        
       <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
@@ -3075,6 +3081,9 @@
     <icon>resources\tech\explosives.jpg</icon>
     <flag>CountsTowardMilitaryScore</flag>
     <flag>MythTech</flag>
+    <prereqs>
+      <typecount unit="AbstractFortress" count="0.00" state="aliveState" operator="gt"></typecount>
+    </prereqs>
     <effects>
       <!-- ultimate -->        
       <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
@@ -3106,6 +3115,9 @@
     <icon>resources\tech\explosives.jpg</icon>
     <flag>CountsTowardMilitaryScore</flag>
     <flag>MythTech</flag>
+    <prereqs>
+      <typecount unit="AbstractFortress" count="0.00" state="aliveState" operator="gt"></typecount>
+    </prereqs>
     <effects>
       <!-- ultimate -->        
       <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
@@ -3137,6 +3149,9 @@
     <icon>resources\tech\explosives.jpg</icon>
     <flag>CountsTowardMilitaryScore</flag>
     <flag>MythTech</flag>
+    <prereqs>
+      <typecount unit="AbstractFortress" count="0.00" state="aliveState" operator="gt"></typecount>
+    </prereqs>
     <effects>
       <!-- ultimate -->        
       <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
@@ -3166,6 +3181,9 @@
     <icon>resources\tech\explosives.jpg</icon>
     <flag>CountsTowardMilitaryScore</flag>
     <flag>MythTech</flag>
+    <prereqs>
+      <typecount unit="AbstractFortress" count="0.00" state="aliveState" operator="gt"></typecount>
+    </prereqs>
     <effects>
       <!-- ultimate -->        
       <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="SelfDestructSpawn" relativity="Absolute">
@@ -6550,6 +6568,29 @@
         <target type="ProtoUnit">AbstractTownCenter</target></effect>
     </effects>
   </tech>
+  <tech name="CrenellationsAztec">
+    <effects>
+      <effect type="Data" allactions="1" amount="0.25" subtype="Damagebonus" unittype="AbstractCavalry" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">Building</target></effect>			
+      <!---->
+      <effect type="Data" allactions="1" amount="0.50" subtype="Damagebonus" unittype="AbstractCavalry" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">AbstractTower</target></effect>
+	  
+	    <effect type="Data" allactions="1" amount="0.25" subtype="Damagebonus" unittype="AbstractCavalry" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">AbstractFortress</target></effect>
+      <effect type="Data" action="RangedAttack" amount="2.0" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">AbstractFortress</target></effect>
+      <effect type="Data" action="RangedAttack" amount="99.0" subtype="Trackrating" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">AbstractFortress</target></effect>
+	  
+	    <effect type="Data" allactions="1" amount="0.25" subtype="Damagebonus" unittype="AbstractCavalry" relativity="Absolute" mergeMode="add"> 
+        <target type="ProtoUnit">AbstractTownCenter</target></effect>
+      <effect type="Data" action="RangedAttack" amount="2.0" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">AbstractTownCenter</target></effect>
+      <effect type="Data" action="RangedAttack" amount="99.0" subtype="Trackrating" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">AbstractTownCenter</target></effect>
+    </effects>
+  </tech>
   <tech name="Ballistics">
     <effects>      
       <effect type="Data" action="RangedAttack" amount="3.0" subtype="Trackrating" relativity="Absolute" mergeMode="remove">
@@ -6729,6 +6770,29 @@
     <effects>
       <effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Pierce" relativity="Percent" mergeMode="add">
 				<target type="ProtoUnit">AbstractMythSoldier</target></effect>
+    </effects>
+  </tech>
+  <tech name="FlintWeapons">
+    <effects>
+      <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">QuimichinSpy</target></effect>
+    </effects>
+  </tech>
+  <tech name="JadeWeapons">
+    <effects>
+      <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">QuimichinSpy</target></effect>
+    </effects>
+  </tech>
+  <tech name="ObsidianWeapons">
+    <effects>
+      <effect type="Data" allactions="1" amount="1.10" subtype="Damage" relativity="BasePercent" mergeMode="add">
+          <target type="ProtoUnit">ObsidianButterfly</target></effect>
+        <effect type="Data" allactions="1" amount="1.10" subtype="Damage" relativity="BasePercent" mergeMode="add">
+          <target type="ProtoUnit">TeixiptlaTezca</target></effect>
+
+      <effect type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">QuimichinSpy</target></effect>
     </effects>
   </tech>
   <tech name="BurningPitch">
@@ -10427,14 +10491,6 @@
         <target type="ProtoUnit">Otontin</target></effect>
     </effects>
   </tech>
-  <tech name="ObsidianWeapons">
-    <effects>
-      <effect type="Data" allactions="1" amount="1.10" subtype="Damage" relativity="BasePercent" mergeMode="add">
-				<target type="ProtoUnit">ObsidianButterfly</target></effect>
-      <effect type="Data" allactions="1" amount="1.10" subtype="Damage" relativity="BasePercent" mergeMode="add">
-				<target type="ProtoUnit">TeixiptlaTezca</target></effect>
-    </effects>
-  </tech>
   <tech name="StoneskinQuinametzin">
     <effects>
       <effect type="Data" action="RangedAttack" amount="2.00" subtype="DamageArea" relativity="Absolute" mergeMode="add">
@@ -10559,6 +10615,8 @@
 
       <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DirectProjectile" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">QuimichinSpy</target></effect>
+
+      <effect type="SetName" proto="QuimichinSpy" newname="STR_UNIT_QUIMICHIN_SNIPER" mergeMode="add"></effect>
     </effects>
   </tech>
   <tech name="NecklaceOfEyeballs">

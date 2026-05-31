@@ -805,7 +805,9 @@
 - wisdomofnine: rof increase, enables kitsune to transform into a lady while idling
     
 * Special Techs
-- DetonatorsJapanese: explosive tech researchable in Armory, releases explosion on destruction (building, ship) or death (infrenal mythunit, shinobi), deals area damage and sends humansoldiers and villagers flying
+- DetonatorsJapanese: 
+    - prereq AbstractFortress
+    - explosive tech researchable in Armory, releases explosion on destruction (building, ship) or death (infrenal mythunit, shinobi), deals area damage and sends humansoldiers and villagers flying
     - Norse,Greek,Atlantean,Chinese,Egyptian: variants added, enabled for [mechanical, building, warship, explosive users, infernals]
 - DismountTactics:
     - Greek: Hippeus, Prodromos, Hetairos
@@ -901,6 +903,14 @@
     - Quinametzin included, Otontin visualscale+, piercearmor-, Otontin bonusdamage vs building scaling
 - AdvancedTraps: Nahuallatolli trap improvements are moved in
 
+* armory rech reworks
+- CrenellationsAztec: same changes applied as Crenallations
+- FlintWeapons: QuimichinSpy maximumrange+
+- JadeWeapons: QuimichinSpy maximumrange+
+- ObsidianWeapons: 
+    - also affects ObsidianButterfly, TeixiptlaTezca
+    - QuimichinSpy maximumrange+
+
 * myth tech reworks
 - StringOfYappan: tower rangedattack, vfxpoison units 6s
 - OmetochtlisRevelry: CentzonTotochtin vfxbleed humansoldier & economicupgraded, lifesteal humansoldiers & economicupgraded
@@ -916,7 +926,7 @@
     - Shieldpoints & UnitShieldRegenRate Warrior Priest, Lifespan Teixiptla, hitpoints Popocatepetl
     - VFXOniBerserkFlameUnit: Oni Flame Area glow effect for QuimichinSpy, spawn SelfDestruct on death
     - VFXOniBerserkFlameBuilding: Oni Flame Area glow effect for Sentry Tower, spawn SelfDestruct on death
-- ObsidianWeapons: also affects ObsidianButterfly, TeixiptlaTezca
+
 - PreciousBones: hero hitpoints
 - CuicacalliTraining: HumanSoldier PierceArmor, enables TelpochcalliTraining
 - TelpochcalliTraining: HumanSoldier Hitpoints
@@ -990,7 +1000,7 @@
         - RangedAttack: also targets nonflying units, minrange 4, divine damage, throw humansoldier
 - QuimichinSpy: 
     - AutoScout disabled
-    - TemiminaloyanTrials: maximumrange+, los+, rof-, damagebonus vs humansoldier, directprojectile
+    - TemiminaloyanTrials: maximumrange+, los+, rof-, damagebonus vs human types, directprojectile, setname "Quimichin Sniper"
     - ArchaicAgeAztec:
         - TrackingDevice: launches a device that casts spy at a unit, manual ability, targets logicaltypespytarget
     - ClassicalAgeAztec:
