@@ -1080,7 +1080,15 @@
 ==================== PRIORITY-PLANS ==========================================
 ==============================================================================
 
+=== MINOR CHANGES
+atlantean: rename "survival equipment" for citizens as "advanced gathering tools", increased effects and survivability
+
 === FORBIDDEN TECHS
+1. add activation techs
+2. spawn units
+3. create simdata, tactics, add rangedattack to protoactions, projectiles, stats
+4. lostone, monitor, deathx, pyramidunleashed, mictlan
+
 * Pyramid Wonder:
 - Button: Transform Pyramid to Pyramid (Unleashed)
 - Pyramid (Unleashed): Laser Cannon slow rof areadamage large vfximpact, Laser Blasters dependant x4 anti-unit, Laser x2 anti-abstractflying 

@@ -2065,7 +2065,7 @@
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">FireArcherSandbag</target></effect>					
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">ChuKoNuSandbag</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">WuzuJavelineerSandbag</target></effect>
-        <!-- Atlantea Captain Special Units -->
+        <!-- Atlantean Captain Special Units -->
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">ArcusCaptain</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">ContariusCaptain</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">MurmilloCaptain</target></effect>
@@ -2075,6 +2075,9 @@
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">FanaticCaptain</target></effect>		
         <!-- Mage Tower Special Units -->
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Maiar</target></effect>
+        <!-- Forbidden Tech Units -->
+        <effect type="Data" amount="0.60" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">M0N17-R</target></effect>
+        <effect type="Data" amount="0.60" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">D347H-X</target></effect>
       </effects>
     </tech> 
 
@@ -2237,6 +2240,12 @@
             <effect type="TechStatus" status="obtainable">MCMT_FinancialDevelopmentUpgradeIII</effect>
             <!--House Techs: Special Unit Activators-->
             <effect type="TechStatus" status="obtainable">HouseSpecialUnitsActivator_Shared</effect>
+            <!--Forbidden Techs-->
+            <effect type="TechStatus" status="obtainable">ForbiddenTechMonitors</effect>
+            <effect type="TechStatus" status="obtainable">ForbiddenTechBerny</effect>
+            <effect type="TechStatus" status="obtainable">ForbiddenTechUnleashed</effect>
+            <effect type="TechStatus" status="obtainable">ForbiddenTechDeathseeker</effect>
+            <effect type="TechStatus" status="obtainable">ForbiddenTechMictlan</effect>
       </effects>
     </tech>
 
@@ -8749,6 +8758,16 @@
 				<target type="ProtoUnit">AbstractCavalry</target></effect>
     </effects>
   </tech>
+  <tech name="DwarvenAuger">
+		<effects>
+      <effect type="Data" amount="0.00" subtype="cost" resource="Food" relativity="Assign" mergeMode="add">
+				<target type="Tech">Pickaxe</target></effect>
+      <effect type="Data" amount="0.00" subtype="cost" resource="Food" relativity="Assign" mergeMode="add">
+				<target type="Tech">ShaftMine</target></effect>
+      <effect type="Data" amount="0.00" subtype="cost" resource="Food" relativity="Assign" mergeMode="add">
+				<target type="Tech">Quarry</target></effect>
+		</effects>
+	</tech>
   <tech name="Hamask" mergeMode="add">
     <effects>
       <effect type="Data" amount="0.0025" subtype="OnDamageModify" modifytype="Speed" relativity="Assign">
@@ -10972,6 +10991,88 @@
 				<target type="ProtoUnit">AbstractVillager</target></effect>
     </effects>    
   </tech>
+  <!--Forbidden Techs-->
+  <tech name="ForbiddenTechMonitors" mergeMode="add">
+    <displaynameid>STR_TECH_ACTIVATE_TECH</displaynameid>
+		<status>UNOBTAINABLE</status>
+    <icon>resources\tech\activate_tech.jpg</icon>
+    <flag>NoTextMessage</flag>
+    <flag>HideFromDialogs</flag>
+    <flag>MythTech</flag>
+    <researchpoints>200.0000</researchpoints>
+		<effects>			
+      <effect type="CreateUnit" unit="M0N17-R" generator="Wonder">
+          <pattern type="Leaving" speed="0.00" radius="0.00" quantity="5.00" minradius="0.00">
+            <offset x="-5.00" y="0.00" z="0.00"></offset>
+          </pattern>
+        </effect>
+    </effects>
+	</tech>
+  <tech name="ForbiddenTechBerny" mergeMode="add">
+    <displaynameid>STR_TECH_ACTIVATE_TECH</displaynameid>
+		<status>UNOBTAINABLE</status>
+    <icon>resources\tech\activate_tech.jpg</icon>
+    <flag>NoTextMessage</flag>
+    <flag>HideFromDialogs</flag>
+    <flag>MythTech</flag>
+    <researchpoints>200.0000</researchpoints>
+		<effects>			
+      <effect type="CreateUnit" unit="L0S7-1" generator="Wonder">
+          <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+            <offset x="-5.00" y="0.00" z="0.00"></offset>
+          </pattern>
+        </effect>
+    </effects>
+	</tech>
+  <tech name="ForbiddenTechUnleashed" mergeMode="add">
+    <displaynameid>STR_TECH_ACTIVATE_TECH</displaynameid>
+    <researchpoints>10.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+    <icon>resources\tech\activate_tech.jpg</icon>
+    <flag>NoTextMessage</flag>
+    <flag>HideFromDialogs</flag>
+    <flag>MythTech</flag>
+    <researchpoints>200.0000</researchpoints>
+		<effects>			
+       <effect type="CreateUnit" unit="PyramidUnleashed" generator="Wonder">
+          <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+            <offset x="-5.00" y="0.00" z="0.00"></offset>
+          </pattern>
+        </effect>
+    </effects>
+	</tech>
+  <tech name="ForbiddenTechDeathseeker" mergeMode="add">
+    <displaynameid>STR_TECH_ACTIVATE_TECH</displaynameid>
+		<status>UNOBTAINABLE</status>
+    <icon>resources\tech\activate_tech.jpg</icon>
+    <flag>NoTextMessage</flag>
+    <flag>HideFromDialogs</flag>
+    <flag>MythTech</flag>
+    <researchpoints>200.0000</researchpoints>
+		<effects>			
+      <effect type="CreateUnit" unit="D347H-X" generator="Wonder">
+          <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+            <offset x="-5.00" y="0.00" z="0.00"></offset>
+          </pattern>
+        </effect>
+    </effects>
+	</tech>
+  <tech name="ForbiddenTechMictlan" mergeMode="add">
+    <displaynameid>STR_TECH_ACTIVATE_TECH</displaynameid>
+		<status>UNOBTAINABLE</status>
+    <icon>resources\tech\activate_tech.jpg</icon>
+    <flag>NoTextMessage</flag>
+    <flag>HideFromDialogs</flag>
+    <flag>MythTech</flag>
+    <researchpoints>200.0000</researchpoints>
+		<effects>			
+      <effect type="CreateUnit" unit="Mictlantecuhtli" generator="Wonder">
+          <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+            <offset x="-5.00" y="0.00" z="0.00"></offset>
+          </pattern>
+        </effect>
+    </effects>
+	</tech>
   <!-- Structures of Gods-->
     <!-- Ancient Greek -->
   <tech name="HeroicAgeDionysus" mergeMode="add">
@@ -11057,11 +11158,17 @@
     </effects>    
   </tech> 
     <!-- Egyptian Wonders of Art-->
-  <tech name="MythicAgeRa" mergeMode="add">
-    <effects><effect type="SetName" proto="Wonder" newname="STR_BLD_GREATPYRAMIDOFGIZA_NAME"></effect></effects>
+  <tech name="MythicAgeRa">
+    <effects>
+      <effect type="SetName" proto="Wonder" newname="STR_BLD_GREATPYRAMIDOFGIZA_NAME" mergeMode="add"></effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ForbiddenTechUnleashed" row="1" column="5" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Wonder</target></effect>	
+    </effects>
   </tech> 
-  <tech name="MythicAgeIsis" mergeMode="add">
-    <effects><effect type="SetName" proto="Wonder" newname="STR_BLD_GREATSPHINXOFGIZA_NAME"></effect></effects>
+  <tech name="MythicAgeIsis">
+    <effects>
+      <effect type="SetName" proto="Wonder" newname="STR_BLD_GREATSPHINXOFGIZA_NAME" mergeMode="add"></effect>
+    </effects>
   </tech> 
   <tech name="MythicAgeSet" mergeMode="add">
     <effects><effect type="SetName" proto="Wonder" newname="STR_BLD_TEMPLEOFHATHORNEFERTARI_NAME"></effect></effects>
@@ -11081,7 +11188,11 @@
   </tech> 
     <!-- Atlantean Wonders of Art-->
   <tech name="MythicAgeOranos" mergeMode="add">
-    <effects><effect type="SetName" proto="Wonder" newname="STR_BLD_ORANOSPALACE_NAME"></effect></effects>
+    <effects>
+      <effect type="SetName" proto="Wonder" newname="STR_BLD_ORANOSPALACE_NAME"></effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ForbiddenTechMonitors" row="1" column="5" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Wonder</target></effect>	
+    </effects>
   </tech> 
   <tech name="MythicAgeGaia" mergeMode="add">
     <effects><effect type="SetName" proto="Wonder" newname="STR_BLD_AQUEDUCTFOUNTAIN_NAME"></effect></effects>
@@ -11119,7 +11230,7 @@
   <tech name="MythicAgeQuetzalcoatl" mergeMode="add">
     <effects><effect type="SetName" proto="Wonder" newname="STR_BLD_TEMPLEOFKUKULKAN_NAME"></effect></effects>
   </tech> 
-
+fo
   <!-- RESEARCHABLE COMMANDS-->
   <tech name="WallConnectorToArcher" type="Normal">
 		<cost resourcetype="Wood">150.0000</cost>

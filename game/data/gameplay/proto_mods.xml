@@ -5637,6 +5637,7 @@
 		<unittype>Ranged</unittype>
 		<unittype>ArcherLineUpgraded</unittype>
 		<unittype>InfantryLineUpgraded</unittype>
+		<bloodgroupoverride>mythbloodhorserainbow</bloodgroupoverride>
 		<tactics>aztec_hero_proximity.tactics</tactics>
 		<protoaction>
 			<name stringid="STR_ACTION_WARBRUSHATTACK">HandAttack</name>
@@ -26858,6 +26859,307 @@
 	<unit name="DaimyoGeneral" mergeMode="add"></unit>
 
 -->
+	<!-- FORBIDDEN UNITS -->
+	 <unit name="D347H-X">
+		<displaynameid>STR_UNIT_UMIBOZU_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_UMIBOZU_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_UMIBOZU_SR</shortrollovertextid>
+		<icon>resources\japanese\player_color\units\umibozu_icon.png</icon>
+		<animfile>japanese\units\myth\umibozu\umibozu.xml</animfile>
+		<soundsetfile>japanese\vo\umibozu\umibozu.xml</soundsetfile>
+		<obstructionradiusx>0.9900</obstructionradiusx>
+		<obstructionradiusz>0.9900</obstructionradiusz>
+		<impacttype>Metal</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>amphibious</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>5000.0000</initialhitpoints>
+		<maxhitpoints>5000.0000</maxhitpoints>
+		<trainpoints>300.0000</trainpoints>
+		<weightclass>12</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>2.8000</maxvelocity>
+		<los>10.0000</los>
+		<bloodgroupoverride>mythbloodgreennoskeleton</bloodgroupoverride>
+		<cost resourcetype="Favor">5000.0000</cost>
+		<armor type="Hack" value="0.96000"></armor>
+		<armor type="Pierce" value="0.96000"></armor>
+		<armor type="Crush" value="0.96000"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeMythUnitNotTitan</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>ConstrainOrientation</flag>
+		<flag>OrientUnitWithGround</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>DecalStickToWaterSurface</flag>
+		<flag>NotDeleteable</flag>
+		<command row="3" column="0">Stop</command>
+		<command row="3" column="4">AttackMove</command>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>3.000000</rof>
+			<damage type="Hack">2.000000</damage>
+			<maxrange>1.000000</maxrange>
+			<impacteffect>effects\impacts\hack</impacteffect>
+		</protoaction>
+	</unit>
+	 <unit name="L0S7-1">
+		<displaynameid>STR_UNIT_UMIBOZU_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_UMIBOZU_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_UMIBOZU_SR</shortrollovertextid>
+		<icon>resources\japanese\player_color\units\umibozu_icon.png</icon>
+		<animfile>japanese\units\myth\umibozu\umibozu.xml</animfile>
+		<soundsetfile>japanese\vo\umibozu\umibozu.xml</soundsetfile>
+		<obstructionradiusx>0.9900</obstructionradiusx>
+		<obstructionradiusz>0.9900</obstructionradiusz>
+		<impacttype>Metal</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>amphibious</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>5000.0000</initialhitpoints>
+		<maxhitpoints>5000.0000</maxhitpoints>
+		<trainpoints>300.0000</trainpoints>
+		<weightclass>12</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>2.8000</maxvelocity>
+		<los>10.0000</los>
+		<bloodgroupoverride>mythbloodgreennoskeleton</bloodgroupoverride>
+		<cost resourcetype="Favor">5000.0000</cost>
+		<armor type="Hack" value="0.96000"></armor>
+		<armor type="Pierce" value="0.96000"></armor>
+		<armor type="Crush" value="0.96000"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeMythUnitNotTitan</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>ConstrainOrientation</flag>
+		<flag>OrientUnitWithGround</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>DecalStickToWaterSurface</flag>
+		<flag>NotDeleteable</flag>
+		<command row="3" column="0">Stop</command>
+		<command row="3" column="4">AttackMove</command>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>3.000000</rof>
+			<damage type="Hack">2.000000</damage>
+			<maxrange>1.000000</maxrange>
+			<impacteffect>effects\impacts\hack</impacteffect>
+		</protoaction>
+	</unit>
+	 <unit name="M0N17-R">
+		<displaynameid>STR_UNIT_UMIBOZU_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_UMIBOZU_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_UMIBOZU_SR</shortrollovertextid>
+		<icon>resources\japanese\player_color\units\umibozu_icon.png</icon>
+		<animfile>mcmt\units\forbidden\monitor.xml</animfile>
+		<soundsetfile>japanese\vo\umibozu\umibozu.xml</soundsetfile>
+		<obstructionradiusx>0.9900</obstructionradiusx>
+		<obstructionradiusz>0.9900</obstructionradiusz>
+		<impacttype>Metal</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>amphibious</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>2000.0000</initialhitpoints>
+		<maxhitpoints>2000.0000</maxhitpoints>
+		<trainpoints>300.0000</trainpoints>
+		<weightclass>12</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>2.8000</maxvelocity>
+		<los>10.0000</los>
+		<bloodgroupoverride>mythbloodgreennoskeleton</bloodgroupoverride>
+		<cost resourcetype="Favor">5000.0000</cost>
+		<armor type="Hack" value="0.96000"></armor>
+		<armor type="Pierce" value="0.96000"></armor>
+		<armor type="Crush" value="0.96000"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeMythUnitNotTitan</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>ConstrainOrientation</flag>
+		<flag>OrientUnitWithGround</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>DecalStickToWaterSurface</flag>
+		<flag>NotDeleteable</flag>
+		<command row="3" column="0">Stop</command>
+		<command row="3" column="4">AttackMove</command>
+		<tactics>mcmt_forbidden_monitor.tactics</tactics>
+		<protoaction>
+			<name>LightningAttack</name>
+			<rof>5.000000</rof>
+			<damage type="Divine">20.00000</damage>
+			<damagebonus type="MythUnit">10.000000</damagebonus>
+			<damagebonus type="Building">8.000000</damagebonus>
+			<maxrange>60.000000</maxrange>
+			<projectile>ProjectileSoulGuideLightning</projectile>
+		</protoaction>
+	</unit>
+	<unit name="PyramidUnleashed">
+		<displaynameid>STR_BLD_OSIRIS_PYRAMID_NAME</displaynameid>
+		<rollovertextid>STR_BLD_OSIRIS_PYRAMID_LR</rollovertextid>
+		<icon>resources\spc\static_color\buildings\osiris_pyramid_icon.png</icon>
+		<animfile>spc\buildings\osiris_pyramid\osiris_pyramid.xml</animfile>
+		<soundsetfile>spc\sfx\buildings\osiris_pyramid.xml</soundsetfile>
+		<obstructionradiusx>15.0000</obstructionradiusx>
+		<obstructionradiusz>15.0000</obstructionradiusz>
+		<selectionradiusx>2.5000</selectionradiusx>
+		<selectionradiusz>2.5000</selectionradiusz>
+		<impacttype>Metal</impacttype>
+
+		<unitaitype>RangedCombative</unitaitype>
+		<formationorder>5</formationorder>
+		<turnrate>3.0000</turnrate>
+		<trainpoints>15.0000</trainpoints>
+		<weightclass>12</weightclass>
+		<populationcount>10</populationcount>
+		<maxvelocity>2.5000</maxvelocity>
+		<los>80.0000</los>
+		<autoattackrange>80.0000</autoattackrange>
+
+		<bloodgroupoverride>noblood</bloodgroupoverride>
+
+		<spawn type="dead" count="1" skipplacementcheck="">OsirisPyramidDead</spawn>
+		<movementtype>Amphibious</movementtype>
+		<initialshieldpoints>1000.0000</initialshieldpoints>
+		<maxshieldpoints>1000.0000</maxshieldpoints>
+		<initialhitpoints>20000.0000</initialhitpoints>
+		<maxhitpoints>20000.0000</maxhitpoints>
+		<cost resourcetype="Food">1000.0000</cost>
+		<cost resourcetype="Wood">1000.0000</cost>
+		<cost resourcetype="Gold">1000.0000</cost>
+		<cost resourcetype="Favor">1000.0000</cost>
+		<armor type="Hack" value="0.8900"></armor>
+		<armor type="Pierce" value="0.9900"></armor>
+		<armor type="Crush" value="0.8900"></armor>
+
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeAutoAttackFocusBuildings</unittype>
+
+		<unittype>Ranged</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>Unit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>AbstractSiegeWeapon</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuresUnits</flag>
+		<flag>RotateInPlace</flag>
+		<flag>OrientUnitWithGround</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>ConstrainOrientation</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		
+		<flag>VisibleUnderFog</flag>
+		<flag>NoIdleActions</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>SelectWithObstruction</flag>
+		<flag>NotDeleteable</flag>
+		<tactics>statue_of_lightning.tactics</tactics>
+		<protoaction>
+			<name>LightningAttack</name>
+			<rof>3.000000</rof>
+			<damage type="Divine">100.00000</damage>
+			<damagebonus type="Building">3.000000</damagebonus>
+			<maxrange>60.000000</maxrange>
+		</protoaction>
+	</unit>
 	<!-- /// SPECIAL PROJECTILES /// -->
 	<unit name="ProjectileDisintegrationBolt">
 		<animfile>vfx\projectiles\priest_pharaoh\priest_pharaoh.xml</animfile>
