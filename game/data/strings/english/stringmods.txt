@@ -638,6 +638,11 @@ ID = "STR_UNIT_RAIJU_TEMPEST_NAME"   ;   Str = "Raiju Tempest"
 
 ID = "STR_UNIT_QUIMICHIN_SNIPER"   ;   Str = "Quimichin Sniper"
 
+// FORBIDDEN TECH SPECIAL UNITS
+ID = "STR_FORBIDDEN_PYRAMID_UNLEASHED_NAME"   ;   Str = "Forbidden Pyramid (Unleashed)"
+ID = "STR_FORBIDDEN_PYRAMID_UNLEASHED_SR"   ;   Str = "Sealed Power that has never been meant to be unleashed"
+ID = "STR_FORBIDDEN_PYRAMID_UNLEASHED_LR"   ;   Str = "A long resting and sealed power of the Forbidden Pyramid is finally unleashed"
+
 // ENCAMPMENT SPECIAL UNITS
 ID = "STR_UNIT_AMAZON_MARKSMAN_NAME"   ;   Str = "Amazon Marksman"
 ID = "STR_UNIT_AMAZON_MARKSMAN_SR"   ;   Str = "Elite Amazon Archer"

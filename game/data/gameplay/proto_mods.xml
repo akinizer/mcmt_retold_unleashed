@@ -26919,6 +26919,7 @@
 		<flag>CreateUnitGroupAutomatically</flag>
 		<flag>DecalStickToWaterSurface</flag>
 		<flag>NotDeleteable</flag>
+		<flag>NotPushable</flag>
 		<command row="3" column="0">Stop</command>
 		<command row="3" column="4">AttackMove</command>
 		<tactics>handattack.tactics</tactics>
@@ -26989,6 +26990,7 @@
 		<flag>CreateUnitGroupAutomatically</flag>
 		<flag>DecalStickToWaterSurface</flag>
 		<flag>NotDeleteable</flag>
+		<flag>NotPushable</flag>
 		<command row="3" column="0">Stop</command>
 		<command row="3" column="4">AttackMove</command>
 		<tactics>handattack.tactics</tactics>
@@ -27060,6 +27062,7 @@
 		<flag>CreateUnitGroupAutomatically</flag>
 		<flag>DecalStickToWaterSurface</flag>
 		<flag>NotDeleteable</flag>
+		<flag>NotPushable</flag>
 		<command row="3" column="0">Stop</command>
 		<command row="3" column="4">AttackMove</command>
 		<tactics>mcmt_forbidden_monitor.tactics</tactics>
@@ -27074,11 +27077,12 @@
 		</protoaction>
 	</unit>
 	<unit name="PyramidUnleashed">
-		<displaynameid>STR_BLD_OSIRIS_PYRAMID_NAME</displaynameid>
-		<rollovertextid>STR_BLD_OSIRIS_PYRAMID_LR</rollovertextid>
+		<displaynameid>STR_FORBIDDEN_PYRAMID_UNLEASHED_NAME</displaynameid>
+		<shortrollovertextid>STR_FORBIDDEN_PYRAMID_UNLEASHED_SR</shortrollovertextid>
+		<rollovertextid>STR_FORBIDDEN_PYRAMID_UNLEASHED_LR</rollovertextid>
 		<icon>resources\spc\static_color\buildings\osiris_pyramid_icon.png</icon>
-		<animfile>spc\buildings\osiris_pyramid\osiris_pyramid.xml</animfile>
-		<soundsetfile>spc\sfx\buildings\osiris_pyramid.xml</soundsetfile>
+		<animfile>mcmt\units\forbidden\pyramidunleashed.xml</animfile>
+		<soundsetfile>shared\vo\cheat\ufo\ufo.xml</soundsetfile>
 		<obstructionradiusx>15.0000</obstructionradiusx>
 		<obstructionradiusz>15.0000</obstructionradiusz>
 		<selectionradiusx>2.5000</selectionradiusx>
@@ -27092,12 +27096,12 @@
 		<weightclass>12</weightclass>
 		<populationcount>10</populationcount>
 		<maxvelocity>2.5000</maxvelocity>
-		<los>80.0000</los>
-		<autoattackrange>80.0000</autoattackrange>
+		<los>60.0000</los>
+		<autoattackrange>90.0000</autoattackrange>
+		<rechargetime>200</rechargetime>
 
 		<bloodgroupoverride>noblood</bloodgroupoverride>
 
-		<spawn type="dead" count="1" skipplacementcheck="">OsirisPyramidDead</spawn>
 		<movementtype>Amphibious</movementtype>
 		<initialshieldpoints>1000.0000</initialshieldpoints>
 		<maxshieldpoints>1000.0000</maxshieldpoints>
@@ -27151,13 +27155,35 @@
 		<flag>NonAutoFormedUnit</flag>
 		<flag>SelectWithObstruction</flag>
 		<flag>NotDeleteable</flag>
-		<tactics>statue_of_lightning.tactics</tactics>
+		<flag>NotPushable</flag>
+
+		<dependentunit>CustomDependantUnit_ForbiddenLaserBlaster_AntiBuilding</dependentunit>
+		<dependentunit>CustomDependantUnit_ForbiddenLaserBlaster_AntiBuilding</dependentunit>
+		<dependentunit>CustomDependantUnit_ForbiddenLaserBlaster_AntiUnit</dependentunit>
+		<dependentunit>CustomDependantUnit_ForbiddenLaserBlaster_AntiUnit</dependentunit>
+		<dependentunit>CustomDependantUnit_ForbiddenLaserBlaster_AntiUnit</dependentunit>
+		<dependentunit>CustomDependantUnit_ForbiddenLaserBlaster_AntiUnit</dependentunit>
+		<dependentunit>CustomDependantUnit_ForbiddenLaserBlaster_AntiAir</dependentunit>
+		<dependentunit>CustomDependantUnit_ForbiddenLaserBlaster_AntiAir</dependentunit>
+		<dependentunit>CustomDependantUnit_ForbiddenLaserBlaster_AntiAir</dependentunit>
+		<tactics>mcmt_forbidden_pyramidunleashed.tactics</tactics>
 		<protoaction>
 			<name>LightningAttack</name>
-			<rof>3.000000</rof>
+			<rof>10.000000</rof>
 			<damage type="Divine">100.00000</damage>
 			<damagebonus type="Building">3.000000</damagebonus>
-			<maxrange>60.000000</maxrange>
+			<damagearea>5.00000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<projectile>ProjectileChanequeLazer</projectile>
+			<maxrange>80.000000</maxrange>
+			<onhiteffect type="Spawn" proto="VFXExplosionLarge" amount="1"></onhiteffect>
+			<onhiteffect type="TreeFlatten" targetunittype="Tree"></onhiteffect>
+		</protoaction>
+		<protoaction>
+			<name>Teleport</name>
+			<rof>1.500000</rof>
+			<maxrange>99.000000</maxrange>
+			<modifyduration>1500</modifyduration>
 		</protoaction>
 	</unit>
 	<!-- /// SPECIAL PROJECTILES /// -->
@@ -30007,6 +30033,154 @@
 			<projectile>ProjectileIcarusBomb</projectile>
 			<numberprojectiles>1</numberprojectiles>
 			<impacteffect>effects\impacts\crush_medium</impacteffect>
+		</protoaction>
+		<protoaction>
+			<name>Drone</name>
+			<type>Drone</type>
+			<persistent>1</persistent>
+		</protoaction>
+	</unit>
+
+	<unit name="CustomDependantUnit_ForbiddenLaserBlaster_AntiUnit">
+		<animfile>mcmt\units\dependants\chargedattack_dependant.xml</animfile>
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>air</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>100.0000</initialhitpoints>
+		<maxhitpoints>100.0000</maxhitpoints>
+		<maxvelocity>0</maxvelocity>
+		<los>18.0000</los>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>LogicalTypeMythicMythUnit</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>NonCollideable</flag>
+		<flag>NoHPBar</flag>
+		<flag>Invulnerable</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>DependentAttach</flag>
+		<flag>NoTieToGround</flag>
+		<tactics>global_rangedattack_antiiunit.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.200000</rof>
+			<damage type="Divine">16.00000</damage>
+			<projectile>ProjectileLightningLazer</projectile>
+			<maxrange>80.000000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>Drone</name>
+			<type>Drone</type>
+			<persistent>1</persistent>
+		</protoaction>
+	</unit>
+	<unit name="CustomDependantUnit_ForbiddenLaserBlaster_AntiBuilding">
+		<animfile>mcmt\units\dependants\chargedattack_dependant.xml</animfile>
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>air</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>100.0000</initialhitpoints>
+		<maxhitpoints>100.0000</maxhitpoints>
+		<maxvelocity>0</maxvelocity>
+		<los>18.0000</los>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>LogicalTypeMythicMythUnit</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>NonCollideable</flag>
+		<flag>NoHPBar</flag>
+		<flag>Invulnerable</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>DependentAttach</flag>
+		<flag>NoTieToGround</flag>
+		<tactics>global_rangedattack_antibuilding.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Divine">20.00000</damage>
+			<projectile>ProjectileUFOLazer</projectile>
+			<maxrange>60.000000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>Drone</name>
+			<type>Drone</type>
+			<persistent>1</persistent>
+		</protoaction>
+	</unit>
+	<unit name="CustomDependantUnit_ForbiddenLaserBlaster_AntiAir">
+		<animfile>mcmt\units\dependants\chargedattack_dependant.xml</animfile>
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>air</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>100.0000</initialhitpoints>
+		<maxhitpoints>100.0000</maxhitpoints>
+		<maxvelocity>0</maxvelocity>
+		<los>18.0000</los>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>LogicalTypeMythicMythUnit</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>NonCollideable</flag>
+		<flag>NoHPBar</flag>
+		<flag>Invulnerable</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>DependentAttach</flag>
+		<flag>NoTieToGround</flag>
+		<tactics>global_rangedattack_antiair.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>0.800000</rof>
+			<damage type="Divine">40.00000</damage>
+			<projectile>ProjectileMirrorTowerLazer</projectile>
+			<maxrange>60.000000</maxrange>
 		</protoaction>
 		<protoaction>
 			<name>Drone</name>

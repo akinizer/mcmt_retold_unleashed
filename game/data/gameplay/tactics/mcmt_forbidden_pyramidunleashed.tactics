@@ -1,0 +1,30 @@
+<tactics>
+	<action>
+		<name stringid="STR_ACTION_LIGHTNING">LightningAttack</name>
+		<type>ChainAttack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>LightningAttack</anim>
+		<accuracy>1.0</accuracy>
+		<projectile>ProjectileChainLightning</projectile>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+		<rate type="All">1.0</rate>
+	</action>
+	<action>
+		<name>Teleport</name>
+		<type>TeleportAttack</type>
+		<targetground>1</targetground>
+		<rangedlogic>1</rangedlogic>
+		<anim>TeleportStart</anim>
+		<reloadanim>TeleportEnd</reloadanim>
+		<accuracy>1.0</accuracy>
+		<chargeaction>1</chargeaction>
+		<rate type="Unit">1.0</rate>
+		<rate type="Building">1.0</rate>
+		<facetoafterteleport>1</facetoafterteleport>
+	</action>
+	<tactic>Default
+        <action priority="100">Teleport</action>
+        <action priority="90">LightningAttack</action>
+        <attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype></tactic>
+</tactics>

@@ -1076,12 +1076,36 @@
 - abstractunittypes
 - type resistance and vulnerability: myth, fire, lightning
 
+27. Forbidden Techs Patch
+
+* Wonder of Ra: Pyramid
+- Forbidden Tech:
+    - PyramidUnleashed: slow, very high durability, annihilation super unit
+        - main cannon: ProjectileChanequeLazer, onhiteffect explosion, areadamage, bonusdamage vs building
+        - antinunit dependants: ProjectileLightningLazer, medium rof
+        - antibuilding dependants: ProjectileUFOLazer, low rof
+        - antiair dependants: ProjectileMirrorTowerLazer, high rof
+        - CosmicTeleport: teleport to the map, long cooldown
+
+* Wonder of Oracle:
+- Forbidden Tech: train 5 units, very high durability, annihilation squad
+    - M0N17-R
+        - laser attack: ProjectileSoulGuide
+* Existing but not Trained:
+- Forbidden Tech:
+    - L0S7-1: durable spawn unit, transforms into Beast Berny (Taotie with devour, bash, areacorruptioncontainer)
+    - D347H-X: durable spawn unit, trainsforms into SoulTaker (HadesShade with handattack, lightingattack, summon)
+    - Mictlantecuhtli: aztec god of underworld
+
 ==============================================================================
 ==================== PRIORITY-PLANS ==========================================
 ==============================================================================
 
 === MINOR CHANGES
 atlantean: rename "survival equipment" for citizens as "advanced gathering tools", increased effects and survivability
+lighthouse: castpower forestfire / wrath_of_rahorakthy
+mobileorbitalarray: castpower forestfire_minor / orbitalstrike
+conan:remove orbital strike
 
 === FORBIDDEN TECHS
 1. add activation techs

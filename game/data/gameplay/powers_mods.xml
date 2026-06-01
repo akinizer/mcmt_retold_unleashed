@@ -1660,4 +1660,14 @@
 		<rangeindicator range="4.0" speed="0.2">Circle</rangeindicator>
 		<unitaction>TeleportAttack</unitaction>
 	</power>
+	<power name="AbilityCosmicTeleport" type="UnitAction">
+		<displaynameid>STR_ABILITY_COSMICSHIMMER</displaynameid>
+		<rolloverid>STR_ABILITY_COSMICSHIMMER_LR</rolloverid>
+		<icon>japanese\static_color\abilities\sudden_appearance_icon.png</icon>
+		<placement enemy="" allowgroundtarget="">Unit</placement>
+		<placement enemy="" allowgroundtarget="">Building</placement>
+		<abstractplacementtargettype>All</abstractplacementtargettype>
+		<rangeindicator range="4.0" speed="0.2">Circle</rangeindicator>
+		<unitaction>Teleport</unitaction>
+	</power>
 </powersmod>

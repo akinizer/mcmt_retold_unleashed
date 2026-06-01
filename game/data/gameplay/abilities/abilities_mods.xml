@@ -397,4 +397,8 @@
 	<Ayotochtli>
 		<ability>ZhuQueFieryDeflector<auxchargetimeasrof>1</auxchargetimeasrof><castonself>true</castonself></ability>
 	</Ayotochtli>	
+		<!--Forbidden Tech Units-->
+	<PyramidUnleashed>
+		<ability>AbilityCosmicTeleport<chargetimeasrof>1</chargetimeasrof></ability>
+	</PyramidUnleashed>
 </abilitiesmods>
