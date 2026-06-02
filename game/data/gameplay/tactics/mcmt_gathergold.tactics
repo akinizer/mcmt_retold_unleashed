@@ -1,0 +1,28 @@
+<tactics>
+	<action>
+		<name stringid="STR_ACTION_LOAD_MINERALS">Gather</name>
+		<type>Gather</type>
+		<maxrange>0.5</maxrange>
+		<rate type="GoldResource">1.0</rate>
+		<rate type="Dropsite">1.0</rate>
+		<typedmaxrange type="GoldResource">0.1</typedmaxrange>
+		<typedmaxrange type="Dropsite">1.0</typedmaxrange>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_NO_WORK">NoWork</name>
+		<type>NoWork</type>
+		<maxrange>10</maxrange>
+		<rate type="GoldResource">1.0</rate>
+		<typedmaxrange type="GoldResource">1</typedmaxrange>
+	</action>
+	<action>
+		<name>SmartDropsite</name>
+		<type>SmartDropsite</type>
+		<maxrange>2</maxrange>
+		<rate type="Dropsite">1.0</rate>
+	</action>
+	<tactic>Default
+    <action>Gather</action><action>NoWork</action>
+    <action>SmartDropsite</action>
+    <attackresponsetype>LogicalTypeVillagersAttackResponse</attackresponsetype><attacktype>LogicalTypeVillagersAttack</attacktype><attackmovetype>LogicalTypeHandUnitsAutoAttack</attackmovetype></tactic>
+</tactics>

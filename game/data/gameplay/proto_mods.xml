@@ -25824,6 +25824,92 @@
 	 <unit name="ContariusKnight" mergeMode="add"></unit>
 	 <unit name="ContariusHero" mergeMode="add"></unit>
 -->
+	 <unit name="MineralLoader">	
+		<displaynameid>STR_UNIT_MININGLOADER_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_MININGLOADER_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_MININGLOADER_SR</shortrollovertextid>	
+		<icon>resources\chinese\player_color\units\caravan_chinese_icon.png</icon>
+		<animfile>chinese\units\economic\caravan_chinese\caravan_chinese.xml</animfile>
+		<soundsetfile>chinese\vo\caravan_chinese\caravan_chinese.xml</soundsetfile>
+		
+		<obstructionradiusx>0.7400</obstructionradiusx>
+		<obstructionradiusz>0.7400</obstructionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>Civilian</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>600.0000</initialhitpoints>
+		<maxhitpoints>600.0000</maxhitpoints>
+
+		<trainpoints>15</trainpoints>
+		<weightclass>12</weightclass>
+		<populationcount>2</populationcount>
+		<maxvelocity>2.0000</maxvelocity>
+		<los>18.0000</los>
+
+		<cost resourcetype="Gold">2000.0000</cost>
+		<armor type="Hack" value="0.6000"></armor>
+		<armor type="Pierce" value="0.9600"></armor>
+		<armor type="Crush" value="0.5000"></armor>
+		<carrycapacity resourcetype="Gold">50.0000</carrycapacity>
+
+		<unittype>LogicalTypeMinimapFilterEconomic</unittype>
+		<unittype>LogicalTypeEasySelectAvoid</unittype>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>EconomicUnit</unittype>
+		<unittype>CountsTowardEconomicScore</unittype>
+		<unittype>ValidIdleVillager</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>EconomicUpgraded</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+				
+		<flag>ForceSecondPage</flag>
+
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>AutoTrainable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>NonAutoFormedUnit</flag>
+
+		<dependentunit>WarLoader_DefensiveTurret</dependentunit>
+		
+		<tactics>mcmt_gathergold.tactics</tactics>
+		<protoaction>
+			<name>Gather</name>
+			<dropsitegathering>1</dropsitegathering>
+			<rate type="GoldResource">0.800000</rate>
+			<maxrange>1.5</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>HeroGlowOnSelf</name>
+			<type>Modify</type>
+			<modifyselfonly>1</modifyselfonly>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\hero_glow_large.xml</modelattachment>
+			<modelattachmentbone>Spine</modelattachmentbone>
+		</protoaction>
+	</unit>
 	<!-- Atlantean Special Naval Units -->
 	<unit name="RaftAtlanteanArcher">
 		<displaynameid>STR_UNIT_RAFTARCHER_NAME</displaynameid>
@@ -29385,6 +29471,33 @@
 			<throw>1</throw>
    		</protoaction>
   	</unit>	
+
+	<unit name="VFXSpawnSmoke" mergeMode="add">
+		<displaynameid>STR_VFX_DETONATORS_NAME</displaynameid>
+		<animfile>vfx\smoke\shinobi_smoke_bomb.xml</animfile>
+		<obstructionradiusx>0.4000</obstructionradiusx>
+		<obstructionradiusz>0.4000</obstructionradiusz>
+		<lifespan>0.1000</lifespan>
+		<decay delay="0.0000" duration="0.5000"></decay>
+		<movementtype>land</movementtype>
+		<unittype>Unit</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NoIdleActions</flag>
+		<flag>AreaDamageConstant</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<flag>BallisticTrackSource</flag>
+		<selfdestructprotoaction>SelfDestructAttack</selfdestructprotoaction>
+		<tactics>container.tactics</tactics>
+  	</unit>	
 	
 	<unit name="DevoteMinorSacrificeWarriorContainer" mergeMode="add">
 		<displaynameid>STR_VFX_DEVOTECONTAINERS_NAME</displaynameid>
@@ -29926,6 +30039,63 @@
 			<displayednumberprojectiles>3</displayednumberprojectiles>
 			<autoretarget>1</autoretarget>
 			<canattackground>1</canattackground>
+		</protoaction>
+		<protoaction>
+			<name>Drone</name>
+			<type>Drone</type>
+			<persistent>1</persistent>
+		</protoaction>
+	</unit>
+
+	<unit name="WarLoader_DefensiveTurret">
+		<displaynameid>STR_WARLOADER_DEFENSIVETURRET</displaynameid>
+		<animfile>vfx\projectiles\asura\fire_ball_left.xml</animfile>
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>air</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>100.0000</initialhitpoints>
+		<maxhitpoints>100.0000</maxhitpoints>
+		<maxvelocity>0</maxvelocity>
+		<los>18.0000</los>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>LogicalTypeMythicMythUnit</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>NonCollideable</flag>
+		<flag>NoHPBar</flag>
+		<flag>Invulnerable</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>DependentAttach</flag>
+		<flag>NoTieToGround</flag>
+		<flag>DirectProjectile</flag>
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>0.800000</rof>
+			<damage type="Pierce">20.000000</damage>
+			<maxrange>16.000000</maxrange>
+			<projectile>ProjectilePriestPharaoh</projectile>
+			<numberprojectiles>1</numberprojectiles>
+			<displayednumberprojectiles>1</displayednumberprojectiles>
+			<autoretarget>1</autoretarget>
+			<canattackground>1</canattackground>
+			<active>0</active>
 		</protoaction>
 		<protoaction>
 			<name>Drone</name>

@@ -37,7 +37,11 @@
         <effect type="TechStatus" status="active" mergeMode="add">WallConnectorToCrusher</effect>
         <effect type="TechStatus" status="active" mergeMode="add">WallConnectorToCharger</effect>
         <!--House-->
-        <effect type="TechStatus" status="obtainable">HouseSpecialUnitsActivator_Atlantean</effect>
+        <effect type="TechStatus" status="obtainable" mergeMode="add">HouseSpecialUnitsActivator_Atlantean</effect>
+        <!--Town Center-->
+        <effect type="TechStatus" status="obtainable" mergeMode="add">ToolsOfTheTrade</effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ToolsOfTheTrade" row="0" column="2" relativity="Assign" mergeMode="add">
+          <target type="ProtoUnit">EconomicGuild</target></effect>	
       </effects>
     </tech>
 
@@ -7033,6 +7037,68 @@
         <target type="ProtoUnit">AbstractVillager</target></effect>
     </effects>
   </tech>
+ <tech name="ToolsOfTheTrade">
+		<displaynameid>STR_TECH_TOOLS_OF_THE_TRADE_NAME</displaynameid>
+		<rollovertextid>STR_TECH_TOOLS_OF_THE_TRADE_LR</rollovertextid>
+		<cost resourcetype="Wood">150.0000</cost>
+		<cost resourcetype="Gold">250.0000</cost>
+		<researchpoints>20.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+		<icon>resources\shared\static_color\technologies\hunting_equipment_icon.png</icon>
+		<flag>CountsTowardEconomicScore</flag>
+		<effects>
+			<effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+				<target type="ProtoUnit">MineralLoader</target></effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" proto="MineralLoader" row="0" column="2" relativity="Assign">
+        <target type="ProtoUnit">EconomicGuild</target></effect>
+      
+      <effect type="TechStatus" status="obtainable">WarLoader</effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="WarLoader" row="1" column="2" relativity="Assign">
+          <target type="ProtoUnit">EconomicGuild</target></effect>	
+		</effects>
+	</tech>
+ <tech name="WarLoader">
+		<displaynameid>STR_TECH_WAR_LOADER_NAME</displaynameid>
+		<rollovertextid>STR_TECH_WAR_LOADER_LR</rollovertextid>
+		<cost resourcetype="Favor">15.0000</cost>
+		<cost resourcetype="Gold">250.0000</cost>
+		<researchpoints>20.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+		<icon>resources\shared\static_color\technologies\hunting_equipment_icon.png</icon>
+		<flag>CountsTowardEconomicScore</flag>
+		<effects>
+			 <effect type="Data" action="RangedAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute">
+          <target type="ProtoUnit">WarLoader_DefensiveTurret</target></effect>	
+        <effect type="SetName" proto="MineralLoader" newname="STR_WARLOADER_NAME"></effect>  
+
+        <effect type="TechStatus" status="obtainable">WarLoader</effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="WarLoaderII" row="1" column="2" relativity="Assign">
+          <target type="ProtoUnit">EconomicGuild</target></effect>
+		</effects>
+	</tech>
+ <tech name="WarLoaderII">
+		<displaynameid>STR_TECH_WAR_LOADER_II_NAME</displaynameid>
+		<rollovertextid>STR_TECH_WAR_LOADER_II_LR</rollovertextid>
+		<cost resourcetype="Favor">15.0000</cost>
+		<cost resourcetype="Gold">250.0000</cost>
+		<researchpoints>20.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+		<icon>resources\shared\static_color\technologies\hunting_equipment_icon.png</icon>
+		<flag>CountsTowardEconomicScore</flag>
+		<effects>
+			 <effect type="Data" action="RangedAttack" amount="1.0" subtype="Projectile" unittype="ProjectileIcarusBomb" relativity="Assign">
+          <target type="ProtoUnit">WarLoader_DefensiveTurret</target></effect>
+        <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="AbstractSiegeWeapon" relativity="Absolute">
+          <target type="ProtoUnit">WarLoader_DefensiveTurret</target></effect>
+        <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="Building" relativity="Absolute">
+          <target type="ProtoUnit">WarLoader_DefensiveTurret</target></effect>
+        <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="Ship" relativity="Absolute">
+          <target type="ProtoUnit">WarLoader_DefensiveTurret</target></effect>
+        <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Hit" proto="VFXSpawnSmoke" relativity="Absolute">
+          <target type="ProtoUnit">WarLoader_DefensiveTurret</target></effect>
+		</effects>
+	</tech>
+
   <tech name="OlympianParentage">
     <effects>
       <effect type="Data" amount="0.020" subtype="OnDamageModify" modifytype="Speed" relativity="Assign" mergeMode="add">
