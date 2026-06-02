@@ -7071,7 +7071,7 @@
           <target type="ProtoUnit">WarLoader_DefensiveTurret</target></effect>	
         <effect type="SetName" proto="MineralLoader" newname="STR_WARLOADER_NAME"></effect>  
 
-        <effect type="TechStatus" status="obtainable">WarLoader</effect>
+        <effect type="TechStatus" status="obtainable">WarLoaderII</effect>
         <effect type="Data" amount="1.00" subtype="CommandAdd" tech="WarLoaderII" row="1" column="2" relativity="Assign">
           <target type="ProtoUnit">EconomicGuild</target></effect>
 		</effects>
