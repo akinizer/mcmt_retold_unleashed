@@ -7053,8 +7053,11 @@
         <target type="ProtoUnit">EconomicGuild</target></effect>
       
       <effect type="TechStatus" status="obtainable">WarLoader</effect>
-        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="WarLoader" row="1" column="2" relativity="Assign">
-          <target type="ProtoUnit">EconomicGuild</target></effect>	
+      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="WarLoader" row="1" column="2" relativity="Assign">
+        <target type="ProtoUnit">EconomicGuild</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="HasGatherPoint" relativity="Absolute">
+        <target type="ProtoUnit">EconomicGuild</target></effect>
 		</effects>
 	</tech>
  <tech name="WarLoader">
@@ -7074,6 +7077,9 @@
         <effect type="TechStatus" status="obtainable">WarLoaderII</effect>
         <effect type="Data" amount="1.00" subtype="CommandAdd" tech="WarLoaderII" row="1" column="2" relativity="Assign">
           <target type="ProtoUnit">EconomicGuild</target></effect>
+
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DisplayRange" relativity="Absolute">
+          <target type="ProtoUnit">MineralLoader</target></effect>
 		</effects>
 	</tech>
  <tech name="WarLoaderII">
@@ -7094,6 +7100,10 @@
           <target type="ProtoUnit">WarLoader_DefensiveTurret</target></effect>
         <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="Ship" relativity="Absolute">
           <target type="ProtoUnit">WarLoader_DefensiveTurret</target></effect>
+        
+        <effect type="Data" action="RangedAttack" amount="1.25" subtype="RateOfFire" relativity="Percent">
+				  <target type="ProtoUnit">WarLoader_DefensiveTurret</target></effect>
+
         <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Hit" proto="VFXSpawnSmoke" relativity="Absolute">
           <target type="ProtoUnit">WarLoader_DefensiveTurret</target></effect>
 		</effects>
