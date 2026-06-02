@@ -1,0 +1,8 @@
+<animfile validation="strict">
+	<attachment>VFX<component>VFXComp<assetreference type="TMComposite"><file>atlantean\units\myth\spider\spider_vfx</file></assetreference></component><anim>Idle<component>VFXComp</component></anim></attachment>
+	<component>ModelComp<assetreference type="TMModel"><file>atlantean\units\myth\spider\spider</file></assetreference></component>
+	<anim>Idle<assetreference type="TMAnimation"><file>egyptian\units\myth\scorpion_man\anim\scorpion_man_idle_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Walk<assetreference type="TMAnimation"><file>atlantean\units\myth\spider\anim\igc\sam_spider_04a_walk</file></assetreference><component>ModelComp</component></anim>
+    <anim>HandAttack<assetreference type="TMAnimation"><file>nature\animals\land\monkey\anim\monkey_attack_a</file><tag type="Attack">0.5</tag></assetreference><component>ModelComp</component></anim>
+    <anim>JumpFly<assetreference type="TMAnimation"><file>atlantean\units\myth\tartarian_spawn\anim\tartarian_spawn_jumptakeoff_a</file></assetreference><assetreference type="TMAnimation"><file>atlantean\units\myth\tartarian_spawn\anim\tartarian_spawn_jumpfly_a</file></assetreference><assetreference type="TMAnimation"><file>atlantean\units\myth\tartarian_spawn\anim\tartarian_spawn_jumpland_a</file></assetreference><component>ModelComp</component></anim>
+</animfile>

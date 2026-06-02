@@ -3771,6 +3771,190 @@
             <impacteffect>effects\impacts\hack</impacteffect>
         </protoaction>
 	</unit>
+
+	<unit name="ArachneGolem">
+		<displaynameid>STR_UNIT_SPIDER_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_SPIDER_LR</rollovertextid>
+		<animfile>mcmt\units\beast\arachne.xml</animfile>
+		<icon>resources\tech\arachne.jpg</icon>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<selectionradiusx>0.4900</selectionradiusx>
+		<selectionradiusz>0.4900</selectionradiusz>
+		<impacttype>Unarmoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<autoattackrange>25</autoattackrange>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>350.0000</initialhitpoints>
+		<maxhitpoints>350.0000</maxhitpoints>
+		<trainpoints>20.0000</trainpoints>
+		<weightclass>9</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>3.7500</maxvelocity>
+		<rechargetime>16.0000</rechargetime>
+		<los>25.0000</los>
+
+		<armor type="Hack" value="0.4600"></armor>
+		<armor type="Pierce" value="0.7000"></armor>
+		<armor type="Crush" value="0.6000"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeMythicMythUnit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>MythUnit</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeMythUnitNotTitan</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeFreezableMythUnit</unittype>
+		<unittype>LogicalTypeAgressiveNatureUnit</unittype>
+		<unittype>LogicalTypeMythUnitNotFlying</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>PreferSkeletonAsBonePile</flag>
+
+		<initialshading type="stone" factor="1"></initialshading>
+		<tactics>mcmt_arachne.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Hack">20.000000</damage>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<damagebonus type="HumanSoldier">1.500000</damagebonus>
+			<maxrange>0.500000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>ChargedHandAttack</name>
+			<rof>2.00000</rof>
+			<damage type="Hack">45.000000</damage>
+			<damagearea>2.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">0.250000</damagebonus>
+			<maxrange>1.000000</maxrange>
+			<rate type="Unit">1.0</rate>
+		  
+			<onhiteffect type="ProgFreeze" duration="8.2" rate="0.15" freezetype="StoneDamage" freezeduration="20.0" targetunittype="Ship"></onhiteffect>
+			<active>1</active>
+		</protoaction>
+	</unit>
+	<unit name="ArachneLeaper">
+		<displaynameid>STR_UNIT_SPIDER_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_SPIDER_LR</rollovertextid>
+		<animfile>mcmt\units\beast\arachne.xml</animfile>
+		<icon>resources\tech\arachne.jpg</icon>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<selectionradiusx>0.4900</selectionradiusx>
+		<selectionradiusz>0.4900</selectionradiusz>
+		<impacttype>Unarmoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<autoattackrange>25</autoattackrange>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>350.0000</initialhitpoints>
+		<maxhitpoints>350.0000</maxhitpoints>
+		<trainpoints>20.0000</trainpoints>
+		<weightclass>9</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>3.7500</maxvelocity>
+		<rechargetime>8.0000</rechargetime>
+		<los>25.0000</los>
+
+		<armor type="Hack" value="0.4700"></armor>
+		<armor type="Pierce" value="0.7000"></armor>
+		<armor type="Crush" value="0.6000"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeMythicMythUnit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>MythUnit</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeMythUnitNotTitan</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeFreezableMythUnit</unittype>
+		<unittype>LogicalTypeAgressiveNatureUnit</unittype>
+		<unittype>LogicalTypeMythUnitNotFlying</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>PreferSkeletonAsBonePile</flag>
+		<tactics>mcmt_arachne.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Hack">20.000000</damage>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<damagebonus type="HumanSoldier">1.500000</damagebonus>
+			<maxrange>0.500000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>JumpAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Hack">30.000000</damage>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<damagebonus type="HumanSoldier">2.000000</damagebonus>
+			<minrange>4.000000</minrange>
+			<maxrange>14.000000</maxrange>
+			<damagearea>5.000000</damagearea>
+			<damageflags>Enemy</damageflags>
+			<onhiteffect type="Snare" duration="2.0" rate="0.85" targetunittype="Unit"></onhiteffect>
+			<active>1</active>
+		</protoaction>
+	</unit>
 	
 	<unit name="Sphinx">
         <impacttype>Stone</impacttype>

@@ -5891,6 +5891,71 @@
 			</animinfo>
 		</animations>
 	</animxml>
+	<animxml file="mcmt\units\beast\arachne.xml">
+		<visuallogics>
+			<visualmap>
+				<visualnode>
+					<model>atlantean\units\myth\spider\spider</model>
+				</visualnode>
+			</visualmap>
+		</visuallogics>
+		<animations>
+			<animinfo>
+				<name>Idle</name>
+				<versioncount>1</versioncount>
+				<versions>
+					<version>
+						<file>atlantean\units\myth\spider\anim\spider_idle_a</file>
+						<duration>0.03333</duration>
+					</version>
+				</versions>
+			</animinfo>
+			<animinfo>
+				<name>Walk</name>
+				<versioncount>1</versioncount>
+				<versions>
+					<version>
+						<file>atlantean\units\myth\spider\anim\igc\sam_spider_04a_walk</file>
+						<duration>11.96667</duration>
+					</version>
+				</versions>
+			</animinfo>
+			<animinfo>
+				<name>HandAttack</name>
+				<versioncount>1</versioncount>
+				<versions>
+					<version>
+						<file>nature\animals\land\monkey\anim\monkey_attack_a</file>
+						<duration>1.00000</duration>
+						<tags>
+							<tag>
+								<type>Attack</type>
+								<position>0.50000</position>
+							</tag>
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+			<animinfo>
+				<name>JumpFly</name>
+				<versioncount>3</versioncount>
+				<versions>
+					<version>
+						<file>atlantean\units\myth\tartarian_spawn\anim\tartarian_spawn_jumptakeoff_a</file>
+						<duration>0.53333</duration>
+					</version>
+					<version>
+						<file>atlantean\units\myth\tartarian_spawn\anim\tartarian_spawn_jumpfly_a</file>
+						<duration>0.40000</duration>
+					</version>
+					<version>
+						<file>atlantean\units\myth\tartarian_spawn\anim\tartarian_spawn_jumpland_a</file>
+						<duration>0.66667</duration>
+					</version>
+				</versions>
+			</animinfo>
+		</animations>
+	</animxml>
 
 	<animxml file="mcmt\units\nubian\bowman_archer.xml">
 		<visuallogics>
