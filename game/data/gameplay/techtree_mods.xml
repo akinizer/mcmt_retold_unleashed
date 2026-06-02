@@ -7080,8 +7080,12 @@
 
         <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DisplayRange" relativity="Absolute">
           <target type="ProtoUnit">MineralLoader</target></effect>
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DisplayRangeOverride" relativity="Absolute">
+          <target type="ProtoUnit">MineralLoader</target></effect>
 
         <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DisplayRange" relativity="Absolute">
+          <target type="ProtoUnit">WarLoader_DefensiveTurret</target></effect>
+        <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DisplayRangeOverride" relativity="Absolute">
           <target type="ProtoUnit">WarLoader_DefensiveTurret</target></effect>
 		</effects>
 	</tech>
