@@ -4553,7 +4553,6 @@
 	
 	<unit name="Troll">
 		<unittype>MilitaryUnit</unittype>
-		<unittype>AbstractArcher</unittype>
 		<unittype>ArcherLineUpgraded</unittype>
 		<initialhitpoints>325.0000</initialhitpoints>
 		<maxhitpoints>325.0000</maxhitpoints>
