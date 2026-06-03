@@ -1106,8 +1106,23 @@
 ==================== PRIORITY-PLANS ==========================================
 ==============================================================================
 
-=== MINOR CHANGES
-atlantean: rename "survival equipment" for citizens as "advanced gathering tools", increased effects and survivability
+=== PLANNED: MINOR CHANGES
+greek: templar, replace oracle summoned by olympic games
+    path1: healer, mace weapon model
+        handattack: snare on hit
+        chargedhandattack: 
+    path2: debuffer, staff weapon model, fire damage on hit
+    <protoaction>
+        <name>Pacify</name>
+        <rof>3.5</rof>
+        <maxrange>18.000000</maxrange>
+        <onhiteffect type="StatModify" duration="5.000000">
+            <modify type="ROF">3.000000</modify>
+            <modify type="Speed">0.670000</modify>
+        </onhiteffect>
+        <onhiteffect type="Attach" proto="VFXCaladriaPacify" attachbone="spine" duration="5.000000"></onhiteffect>
+        <exclusive>1</exclusive>
+    </protoaction>
 lighthouse: castpower forestfire / wrath_of_rahorakthy
 mobileorbitalarray: castpower forestfire_minor / orbitalstrike
 conan:remove orbital strike

@@ -2161,8 +2161,14 @@
       <effects>
         <!-- Unit Testing :D
             <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
-              <target type="ProtoUnit">ArachneLeaper</target></effect>
-            <effect type="CreateUnit" unit="ArachneLeaper" generator="TownCenter">
+              <target type="ProtoUnit">ArachneLeaperSuspender</target></effect>
+            <effect type="CreateUnit" unit="ArachneLeaperSuspender" generator="TownCenter">
+              <pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+                <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>       
+
+            <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+              <target type="ProtoUnit">ArachneLeaperVenomous</target></effect>
+            <effect type="CreateUnit" unit="ArachneLeaperVenomous" generator="TownCenter">
               <pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
                 <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>       
 
@@ -2171,7 +2177,6 @@
             <effect type="CreateUnit" unit="ArachneGolem" generator="TownCenter">
               <pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
                 <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>       
-
         -->
             <!--Founders-->            
             <effect type="TechStatus" status="obtainable">MCMT_SpecialService</effect>       
@@ -9074,6 +9079,14 @@
         <target type="ProtoUnit">AbstractWarship</target></effect>
       <effect type="Data" subtype="ProtoActionAdd" protoaction="VFXThunderchargeAura" amount="1.00" unittype="VFXGlowContainer" relativity="Assign" hidetooltip="" mergeMode="add">
         <target type="ProtoUnit">Hersir</target></effect>
+    </effects>
+  </tech>
+  <tech name="CaveTroll">
+    <effects>
+      <effect type="Data" action="RangedAttack" amount="3.0" subtype="NumberProjectiles" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Troll</target></effect>
+      <effect type="Data" amount="3.0" action="HandAttack" subtype="Damage" damagetype="Crush" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Troll</target></effect>
     </effects>
   </tech>
   <tech name="Sessrumnir">

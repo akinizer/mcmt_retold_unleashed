@@ -5701,6 +5701,29 @@
 			</animinfo>
 		</animations>
 	</animxml>
+	<animxml file="norse\units\myth\troll\troll.xml">
+		<animations>
+			<animinfo mergeMode="add">
+				<name>HandAttack</name>
+				<visualindex>1</visualindex>
+				<versioncount>1</versioncount>
+				<versions>
+					<version>
+						<file>norse\units\economic\villager_norse\anim\villager_norse_male_handattack_a</file>
+						<duration>1.00000</duration>
+						<tags>
+							<tag>
+								<type>Attack</type>
+								<position>0.50000</position>
+							</tag>
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+		</animations>
+	</animxml>
+
+	<!-- Egyptian Special Units -->
 
 	<animxml file="mcmt\units\nubian\warelephant_ballista.xml">
 		<visuallogics>

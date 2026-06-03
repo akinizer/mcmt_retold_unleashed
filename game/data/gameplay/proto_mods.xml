@@ -3861,11 +3861,12 @@
 			<maxrange>1.000000</maxrange>
 			<rate type="Unit">1.0</rate>
 		  
-			<onhiteffect type="ProgFreeze" duration="8.2" rate="0.15" freezetype="StoneDamage" freezeduration="20.0" targetunittype="Ship"></onhiteffect>
+			<onhiteffect type="ProgFreeze" duration="8.2" rate="0.15" freezetype="StoneDamage" freezeduration="20.0" targetunittype="HumanSoldier"></onhiteffect>
+			<onhiteffect type="ProgFreeze" duration="8.2" rate="0.15" freezetype="StoneDamage" freezeduration="20.0" targetunittype="AbstractVillager"></onhiteffect>
 			<active>1</active>
 		</protoaction>
 	</unit>
-	<unit name="ArachneLeaper">
+	<unit name="ArachneLeaperSuspender">
 		<displaynameid>STR_UNIT_SPIDER_NAME</displaynameid>
 		<rollovertextid>STR_UNIT_SPIDER_LR</rollovertextid>
 		<animfile>mcmt\units\beast\arachne.xml</animfile>
@@ -3952,6 +3953,105 @@
 			<damagearea>5.000000</damagearea>
 			<damageflags>Enemy</damageflags>
 			<onhiteffect type="Snare" duration="2.0" rate="0.85" targetunittype="Unit"></onhiteffect>
+			<active>1</active>
+		</protoaction>
+	</unit>
+
+	<unit name="ArachneLeaperVenomous">
+		<displaynameid>STR_UNIT_SPIDER_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_SPIDER_LR</rollovertextid>
+		<animfile>mcmt\units\beast\arachne.xml</animfile>
+		<icon>resources\tech\arachne.jpg</icon>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<selectionradiusx>0.4900</selectionradiusx>
+		<selectionradiusz>0.4900</selectionradiusz>
+		<impacttype>Unarmoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<autoattackrange>25</autoattackrange>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>350.0000</initialhitpoints>
+		<maxhitpoints>350.0000</maxhitpoints>
+		<trainpoints>20.0000</trainpoints>
+		<weightclass>9</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>3.7500</maxvelocity>
+		<rechargetime>8.0000</rechargetime>
+		<los>25.0000</los>
+
+		<armor type="Hack" value="0.4700"></armor>
+		<armor type="Pierce" value="0.7000"></armor>
+		<armor type="Crush" value="0.6000"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeMythicMythUnit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>MythUnit</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeMythUnitNotTitan</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeFreezableMythUnit</unittype>
+		<unittype>LogicalTypeAgressiveNatureUnit</unittype>
+		<unittype>LogicalTypeMythUnitNotFlying</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>PreferSkeletonAsBonePile</flag>
+		<tactics>mcmt_arachne.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Hack">20.000000</damage>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<damagebonus type="HumanSoldier">1.500000</damagebonus>
+			<maxrange>0.500000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>JumpAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Hack">30.000000</damage>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<damagebonus type="HumanSoldier">2.000000</damagebonus>
+			<minrange>4.000000</minrange>
+			<maxrange>14.000000</maxrange>
+			<damagearea>5.000000</damagearea>
+			<damageflags>Enemy</damageflags>
+			<onhiteffect type="DamageOverTime" duration="6.000000">
+				<damage type="Divine">0.2500000</damage>
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+			<onhiteffect type="Attach" proto="VFXPoison" attachbone="spine" duration="6.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
 			<active>1</active>
 		</protoaction>
 	</unit>
@@ -4457,14 +4557,29 @@
 		<unittype>ArcherLineUpgraded</unittype>
 		<initialhitpoints>325.0000</initialhitpoints>
 		<maxhitpoints>325.0000</maxhitpoints>
+
+		<flag>HasDefaultAttack</flag>
+		<tactics>mcmt_troll.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.200000</rof>
+			<damage type="Hack">12.000000</damage>
+			<damagebonus type="Building">1.500000</damagebonus>
+			<damagebonus type="Hero">0.250000</damagebonus>
+			<maxrange>0.600000</maxrange>
+		</protoaction>
 		<protoaction>
 			<name>RangedAttack</name>
 			<rof>1.500000</rof>
-			<damage type="Pierce">18.000000</damage>
+			<damage type="Pierce">9.000000</damage>
 			<damagebonus type="MythUnit">2.000000</damagebonus>
 			<damagebonus type="Hero">0.250000</damagebonus>
+			<minrange>3.000000</minrange>
 			<maxrange>14.000000</maxrange>
-			<projectile>ProjectileBoulder</projectile>
+			<projectile>ProjectileKuafuStone</projectile>
+			<numberprojectiles>3</numberprojectiles>
+			<volleymode>1</volleymode>
+			<defaultattack>1</defaultattack>
 		</protoaction>
 		<protoaction>
 			<name>ChargedRangedAttack</name>
@@ -8568,7 +8683,6 @@
 			<damageflags>Nature|Enemy</damageflags>
 			<maxrange>20.000000</maxrange>
 			<projectile>ProjectileFireSiphonFire</projectile>
-			<numberprojectiles>2</numberprojectiles>
 			<numberprojectiles>4</numberprojectiles>
 			<impacteffect>effects\impacts\fireball</impacteffect>
 		</protoaction>
