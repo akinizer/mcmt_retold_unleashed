@@ -227,7 +227,14 @@
 
     - flying: Nidhogg+, Raven+
     - melee: RockGiant+, MountainGiant+, FrostGiant+, FenrisWolfBrood+, Valkyrie+, Einheri+, Battleboar+
-    - ranged: Draugr+, Troll+, FireGiant+, Fafnir+
+    - ranged: Draugr+, FireGiant+, Fafnir+
+        - Troll+:
+            - handattack: bonusdamage vs building
+            - rangedattack: unit, danage distributed to multiple projectiles, projectilekuafustone
+            - chargedrangedattack: militaryunit, economicunit
+            - CaveTroll: 
+                - rangedattack: numberprojectiles +3
+                - handattack: crush damage +3
     - naval: Kraken+, JormunElver+
 - hero:    
     - GullinburstiArchaic+, GullinburstiClassical+, GullinburstiHeroic+, GullinburstiMythic+
