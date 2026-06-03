@@ -5188,13 +5188,8 @@
 		</protoaction>
         <protoaction>
 			<name>RangedAttack</name>
-			<rof>1.500000</rof>
-			<damage type="Hack">6.000000</damage>
-			<damagebonus type="AbstractInfantry">3.000000</damagebonus>
 			<minrange>2.000000</minrange>
-			<maxrange>10.000000</maxrange>
 			<projectile>ProjectileAxeFlaming</projectile>
-			<impacteffect>effects\impacts\pierce_medium</impacteffect>
 			<onhiteffect active="0" type="ProgFreeze" duration="8.2" rate="0.15" freezeduration="20.0" targetunittype="Unit"></onhiteffect>
 		</protoaction>
         <protoaction>
