@@ -1263,10 +1263,11 @@
 		<displaynameid>STR_POWER_FOREST_FIRE</displaynameid>
 		<rolloverid>STR_POWER_FOREST_FIRE_LR</rolloverid>
 		<icon>norse\static_color\god_powers\forest_fire_icon.png</icon>
-		<placement natureonly="">Unit</placement>
+		<placement allowdeadtarget="" allownature="" enemy="">Unit</placement>
 		<abstractplacementtargettype>MilitaryUnit</abstractplacementtargettype>
 		<abstractplacementtargettype>Building</abstractplacementtargettype>
 		<abstractplacementtargettype>Tree</abstractplacementtargettype>
+		<abstractplacementtargettype>Unit</abstractplacementtargettype>
 		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
 		<soundset type="StartSound" listenertype="IfOnScreenAll">ForestFireBirth</soundset>
 		<soundset type="ExistSound" listenertype="IfOnScreenAll" loop="1" positional="1">ForestFireExists</soundset>
