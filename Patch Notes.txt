@@ -529,6 +529,9 @@
     - Safeguard: Hirdman build SentryTower workrate+ 
     - SonsOfSlepnir: AbstractCavalry Hitpoints+, damagebonus vws AbstractCavalry, MaximumVelocity+
     - HammerOfThunder: Hersir VFXThunderCharge
+    - HuntressAxe: 
+        - [throwingaxeman, berserk, raidingcalavry, einheri] progfreeze units
+        - throwingaxeman hackarmor
 - egyptian
     - Chariot Archer Upgrades: Pharaoh, PharohNewKingdom (hp,speed,hackarmor)
     - DesertWinds: Pharaoh, PharohNewKingdom (hp,speed,piercearmor)

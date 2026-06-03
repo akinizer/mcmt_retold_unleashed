@@ -29,4 +29,8 @@
 		<unittype>AbstractScout</unittype>
 		<displaynameid>STR_HUD_UNIT_TYPE_ABSTRACT_SCOUT</displaynameid>
 	</unittypeentry>
+    <unittypeentry mergeMode="add">
+		<unittype>AbstractDwarf</unittype>
+		<displaynameid>STR_HUD_UNIT_TYPE_ABSTRACT_DWARF</displaynameid>
+	</unittypeentry>
 </unittypedatamods>

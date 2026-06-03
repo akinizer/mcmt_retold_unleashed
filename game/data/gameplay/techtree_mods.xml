@@ -8966,12 +8966,19 @@
       <effect type="Data" action="RangedAttack" amount="1.0" subtype="Accuracy" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">ThrowingAxeman</target></effect>
 
-      <effect type="Data" amount="1.00" subtype="OnHitEffectActive" action="RangedAttack" effecttype="ProgFreeze" targettype="HumanSoldier" relativity="Absolute" mergeMode="add">
+      <effect type="Data" amount="1.00" subtype="OnHitEffectActive" action="HandAttack" effecttype="ProgFreeze" targettype="Unit" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">ThrowingAxeman</target></effect>
+      <effect type="Data" amount="1.00" subtype="OnHitEffectActive" action="RangedAttack" effecttype="ProgFreeze" targettype="Unit" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">ThrowingAxeman</target></effect>
+      <effect type="Data" amount="1.00" subtype="OnHitEffectActive" action="HandAttack" effecttype="ProgFreeze" targettype="Unit" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Berserk</target></effect>
+      <effect type="Data" amount="1.00" subtype="OnHitEffectActive" action="HandAttack" effecttype="ProgFreeze" targettype="Unit" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">RaidingCavalry</target></effect>
+      <effect type="Data" amount="1.00" subtype="OnHitEffectActive" action="HandAttack" effecttype="ProgFreeze" targettype="Unit" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Einheri</target></effect>
+
+      <effect type="Data" amount="-0.20" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent" mergeMode="add">
         <target type="ProtoUnit">ThrowingAxeman</target></effect>
-      <effect type="Data" amount="1.00" subtype="OnHitEffectActive" action="AxeSwingAttack" effecttype="ProgFreeze" targettype="HumanSoldier" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">ThrowingAxeman</target></effect>
-      <effect type="Data" amount="1.00" subtype="OnHitEffectActive" action="HandAttack" effecttype="ProgFreeze" targettype="HumanSoldier" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">Berserk</target></effect>
     </effects>
   </tech>
 
@@ -9106,7 +9113,7 @@
 				<target type="ProtoUnit">Hirdman</target> </effect>
     </effects>
   </tech>
-  <tech name="DwarvenBreastplate" mergeMode="add">
+  <tech name="DwarvenBreastplate">
     <displaynameid>STR_TECH_DWARVEN_BREASTPLATE_NAME</displaynameid>
     <rollovertextid>STR_TECH_DWARVEN_BREASTPLATE_LR</rollovertextid>
     <cost resourcetype="Gold">150.0000</cost>
@@ -9118,9 +9125,14 @@
     <flag>CountsTowardMilitaryScore</flag>
     <flag>MythTech</flag>
     <effects>
-      <effect type="Data" amount="-0.20" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent"><target type="ProtoUnit">Hirdman</target></effect>
-      <effect type="Data" amount="-0.20" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent"><target type="ProtoUnit">Berserk</target></effect>
-      <effect type="Data" amount="-0.20" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent"><target type="ProtoUnit">AbstractDwarf</target></effect>
+      <effect type="Data" amount="-0.15" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent" mergeMode="remove">
+				<target type="ProtoUnit">Hirdman</target></effect>
+			<effect type="Data" amount="-0.15" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent" mergeMode="remove">
+				<target type="ProtoUnit">Berserk</target></effect>
+      <!---->
+      <effect type="Data" amount="-0.20" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent" mergeMode="add"><target type="ProtoUnit">Hirdman</target></effect>
+      <effect type="Data" amount="-0.20" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent" mergeMode="add"><target type="ProtoUnit">Berserk</target></effect>
+      <effect type="Data" amount="-0.20" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent" mergeMode="add"><target type="ProtoUnit">AbstractDwarf</target></effect>
     </effects>
   </tech>
   <tech name="HallOfThanes">

@@ -4405,6 +4405,12 @@
 			<modelattachmentbone>Spine</modelattachmentbone>
 		</protoaction>		
 	</unit>
+	<unit name="RaidingCavalry">
+		<protoaction>
+			<name>HandAttack</name>
+			<onhiteffect active="0" type="ProgFreeze" duration="8.2" rate="0.15" freezeduration="20.0" targetunittype="Unit"></onhiteffect>
+		</protoaction>
+	</unit>
     
     <!-- Norse Myth Units-->
     <unit name="GullinburstiArchaic">
@@ -4966,6 +4972,7 @@
 			<damagebonus type="MythUnit">6.000000</damagebonus>
 			<damagebonus type="Hero">0.500000</damagebonus>
 			<maxrange>0.500000</maxrange>
+			<onhiteffect active="0" type="ProgFreeze" duration="8.2" rate="0.15" freezeduration="20.0" targetunittype="Unit"></onhiteffect>
 		</protoaction>
 		<protoaction>
 			<name>AutoBoost</name>
@@ -5157,7 +5164,7 @@
 			<rof>0.700000</rof>
 			<damage type="Hack">6.50000</damage>
 			<maxrange>0.500000</maxrange>
-			<onhiteffect active="0" type="ProgFreeze" duration="5.0" rate="0.10" freezeduration="2.0" targetunittype="HumanSoldier"></onhiteffect>
+			<onhiteffect active="0" type="ProgFreeze" duration="8.2" rate="0.15" freezeduration="20.0" targetunittype="Unit"></onhiteffect>
 		</protoaction>
 		<protoaction>
 			<name>Repair</name>
@@ -5177,7 +5184,7 @@
 			<rof>0.700000</rof>
 			<damage type="Hack">6.50000</damage>
 			<maxrange>0.500000</maxrange>
-			<onhiteffect active="0" type="ProgFreeze" duration="5.0" rate="0.10" freezeduration="2.0" targetunittype="HumanSoldier"></onhiteffect>
+			<onhiteffect active="0" type="ProgFreeze" duration="8.2" rate="0.15" freezeduration="20.0" targetunittype="Unit"></onhiteffect>
 		</protoaction>
         <protoaction>
 			<name>RangedAttack</name>
@@ -5188,7 +5195,7 @@
 			<maxrange>10.000000</maxrange>
 			<projectile>ProjectileAxeFlaming</projectile>
 			<impacteffect>effects\impacts\pierce_medium</impacteffect>
-			<onhiteffect active="0" type="ProgFreeze" duration="5.0" rate="0.10" freezeduration="2.0" targetunittype="HumanSoldier"></onhiteffect>
+			<onhiteffect active="0" type="ProgFreeze" duration="8.2" rate="0.15" freezeduration="20.0" targetunittype="Unit"></onhiteffect>
 		</protoaction>
         <protoaction>
 			<name>Build</name>

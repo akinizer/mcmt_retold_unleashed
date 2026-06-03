@@ -1150,6 +1150,7 @@ ID = "STR_HUD_UNIT_TYPE_ABSTRACT_MYTHSOLDIER"   ;   Str = "Myth Soldier"
 ID = "STR_HUD_UNIT_TYPE_ABSTRACT_EGYPTIAN_ARCHER"   ;   Str = "Egyptian Archer"
 ID = "STR_HUD_UNIT_TYPE_ABSTRACT_SCOUT"   ;   Str = "Scout Type"
 ID = "STR_HUD_UNIT_TYPE_ANIMAL_OF_SET"   ;   Str = "Animal of Set"
+ID = "STR_HUD_UNIT_TYPE_ABSTRACT_DWARF"   ;   Str = "Dwarven Race"
 
 // SUPERWEAPONS
 ID = "STR_POWER_PSIONIC_DECIMATOR"   ;   Str = "Psionic Decimator"
