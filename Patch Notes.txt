@@ -433,6 +433,8 @@
         - logicaltypebuildingsthatshoot added, enabled at archaicage
     - MirrorTower+
         - enable attack if garrisoned by 1 oracle / oraclehero
+    - Lighthouse+
+        - BeamAttack: ProjectileMirrorTowerLazer
 - CitadelCenter+
 - Dock+
     - AreaHeal: NavalUnit -> (Ship,SiegeWeapon)

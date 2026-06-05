@@ -2267,6 +2267,7 @@
             <effect type="TechStatus" status="obtainable">ForbiddenTechMonitors</effect>
             <effect type="TechStatus" status="obtainable">ForbiddenTechBerny</effect>
             <effect type="TechStatus" status="obtainable">ForbiddenTechUnleashed</effect>
+            <effect type="TechStatus" status="obtainable">ForbiddenTechWrathOfRaHorakthy</effect>
             <effect type="TechStatus" status="obtainable">ForbiddenTechDeathseeker</effect>
             <effect type="TechStatus" status="obtainable">ForbiddenTechMictlan</effect>
       </effects>
@@ -3959,6 +3960,8 @@
 				<target type="ProtoUnit">Lighthouse</target>
 				<target type="ProtoUnit">AirCommand</target>
 			</effect>
+      <effect type="Data" subtype="ProtoActionAdd" protoaction="TargetMarker" amount="1.00" unittype="OrbitalMarkerContainer" relativity="Assign">
+        <target type="ProtoUnit">Lighthouse</target></effect>
 		</effects>		
 	</tech>
 	<tech name="MCMT_AmazonVanguards" mergeMode="add">
@@ -11163,6 +11166,26 @@
         </effect>
     </effects>
 	</tech>
+  <tech name="ForbiddenTechWrathOfRaHorakthy" mergeMode="add">
+    <displaynameid>STR_TECH_ACTIVATE_TECH</displaynameid>
+    <researchpoints>10.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+    <icon>resources\tech\activate_tech.jpg</icon>
+    <flag>NoTextMessage</flag>
+    <flag>HideFromDialogs</flag>
+    <flag>MythTech</flag>
+    <researchpoints>200.0000</researchpoints>
+		<effects>			
+      <!-- TODO: castpower forestfire
+      <effect type="Data" action="AbilityWrathOfRaHorakthy" amount="1.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">LightHouse</target></effect>-->
+      <effect type="Data" action="BeamAttack" amount="1.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">LightHouse</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractTower" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">LightHouse</target></effect>
+    </effects>
+	</tech>
   <tech name="ForbiddenTechDeathseeker" mergeMode="add">
     <displaynameid>STR_TECH_ACTIVATE_TECH</displaynameid>
 		<status>UNOBTAINABLE</status>
@@ -11286,6 +11309,8 @@
     <effects>
       <effect type="SetName" proto="Wonder" newname="STR_BLD_GREATPYRAMIDOFGIZA_NAME" mergeMode="add"></effect>
       <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ForbiddenTechUnleashed" row="1" column="5" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Wonder</target></effect>	
+      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ForbiddenTechWrathOfRaHorakthy" row="1" column="0" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">Wonder</target></effect>	
     </effects>
   </tech> 

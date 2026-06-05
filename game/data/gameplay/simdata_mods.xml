@@ -5723,6 +5723,28 @@
 		</animations>
 	</animxml>
 
+	<!-- Egyptian Buildings -->
+	<animxml file="egyptian\buildings\lighthouse\lighthouse.xml">
+		<animations>
+			<animinfo mergeMode="add">
+				<name>RangedAttack</name>
+				<versioncount>1</versioncount>
+				<versions>
+					<version>
+						<file>misc\dummy\dummy_animation</file>
+						<duration>1.20833</duration>
+						<tags>
+							<tag>
+								<type>Attack</type>
+								<position>0.20000</position>
+							</tag>
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+		</animations>
+	 </animxml>
+
 	<!-- Egyptian Special Units -->
 
 	<animxml file="mcmt\units\nubian\warelephant_ballista.xml">
@@ -5829,8 +5851,6 @@
 			</animinfo>
 		</animations>
 	</animxml>
-
-	<!-- Egyptian Special Units -->
 
 	<animxml file="mcmt\units\beast\burrower.xml">
 		<visuallogics>

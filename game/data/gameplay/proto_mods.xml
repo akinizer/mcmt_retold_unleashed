@@ -4274,6 +4274,19 @@
 		<tech row="0" column="5">MCMT_NubianTraining</tech>
 		<train row="0" column="5">NubianCamp</train>
 	</unit>
+    <unit name="Lighthouse">
+		<tactics>chainattack_beam.tactics</tactics>
+		<protoaction>
+			<name>BeamAttack</name>
+			<anim>RangedAttack</anim>
+			<rof>3.000000</rof>
+			<damage type="Pierce">70.000000</damage>
+			<damagebonus type="Ship">3.000000</damagebonus>
+			<maxrange>22.000000</maxrange>
+			<projectile>ProjectileMirrorTowerLazer</projectile>
+			<active>0</active>
+		</protoaction>
+	</unit>
     <!-- Norse Hero Units-->
     <unit name="Godi">
 		<populationcount>1</populationcount>
@@ -29243,6 +29256,50 @@
 				<target ignoretype="LogicalTypeDivineImmunity"></target>
 			</onhiteffect>
 			<attachvalidtargetonly>1</attachvalidtargetonly>
+		</protoaction>
+	</unit>
+	<unit name="OrbitalMarkerContainer" mergeMode="add">
+		<displaynameid>STR_VFX_TOWEROFDEATH</displaynameid>
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+
+		<rechargetime>20</rechargetime>
+		<tactics>container.tactics</tactics>		
+		<protoaction>
+			<name>TargetMarker</name>
+			<type>Attack</type>
+			<rate type="Unit">1.0</rate>
+			<attackaction>1</attackaction>
+			<handlogic>1</handlogic>
+			<anim>RangedAttack</anim>
+			<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+			<impacteffect>effects\impacts\pierce</impacteffect>
+			
+			<rof>0.01000</rof>			
+			<maxrange>25.000000</maxrange>
+			
+			<attackaction>1</attackaction>
+			<chargeaction>1</chargeaction>
+			<handlogic>1</handlogic>
+			<anim>ChargedHandAttack</anim>
+			<impacteffect>effects\impacts\crush</impacteffect>
+			<castpower>AbilityGuardianBolt</castpower>
+			<castpowertargettype>Unit</castpowertargettype>
 		</protoaction>
 	</unit>
 
