@@ -11118,7 +11118,7 @@
   </tech>
   <!--Forbidden Techs-->
   <tech name="ForbiddenTechMonitors" mergeMode="add">
-    <displaynameid>STR_TECH_ACTIVATE_TECH</displaynameid>
+    <displaynameid>STR_TECH_ACTIVATE_FORBIDDEN_MONITORS_TECH</displaynameid>
 		<status>UNOBTAINABLE</status>
     <icon>resources\tech\activate_tech.jpg</icon>
     <flag>NoTextMessage</flag>
@@ -11134,7 +11134,7 @@
     </effects>
 	</tech>
   <tech name="ForbiddenTechBerny" mergeMode="add">
-    <displaynameid>STR_TECH_ACTIVATE_TECH</displaynameid>
+    <displaynameid>STR_TECH_ACTIVATE_FORBIDDEN_BERNY_TECH</displaynameid>
 		<status>UNOBTAINABLE</status>
     <icon>resources\tech\activate_tech.jpg</icon>
     <flag>NoTextMessage</flag>
@@ -11150,7 +11150,7 @@
     </effects>
 	</tech>
   <tech name="ForbiddenTechUnleashed" mergeMode="add">
-    <displaynameid>STR_TECH_ACTIVATE_TECH</displaynameid>
+    <displaynameid>STR_TECH_ACTIVATE_FORBIDDEN_UNEASHED_TECH</displaynameid>
     <researchpoints>10.0000</researchpoints>
 		<status>UNOBTAINABLE</status>
     <icon>resources\tech\activate_tech.jpg</icon>
@@ -11167,7 +11167,7 @@
     </effects>
 	</tech>
   <tech name="ForbiddenTechWrathOfRaHorakthy" mergeMode="add">
-    <displaynameid>STR_TECH_ACTIVATE_TECH</displaynameid>
+    <displaynameid>STR_TECH_ACTIVATE_FORBIDDEN_WRATHOFRAHORAKTHY_TECH</displaynameid>
     <researchpoints>10.0000</researchpoints>
 		<status>UNOBTAINABLE</status>
     <icon>resources\tech\activate_tech.jpg</icon>
@@ -11175,19 +11175,22 @@
     <flag>HideFromDialogs</flag>
     <flag>MythTech</flag>
     <researchpoints>200.0000</researchpoints>
-		<effects>			
-      <!-- TODO: castpower forestfire
-      <effect type="Data" action="AbilityWrathOfRaHorakthy" amount="1.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">
-        <target type="ProtoUnit">LightHouse</target></effect>-->
-      <effect type="Data" action="BeamAttack" amount="1.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">
+		<effects>
+      <effect type="Data" action="RangedAttack" amount="1.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">LightHouse</target></effect>
+      <effect type="Data" subtype="RechargeTime" amount="20.00" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">LightHouse</target></effect>
 
+      <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="LogicalTypeBuildingsThatShoot" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">LightHouse</target></effect>
+      <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DisplayRangeOverride" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">LightHouse</target></effect>
       <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractTower" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">LightHouse</target></effect>
     </effects>
 	</tech>
   <tech name="ForbiddenTechDeathseeker" mergeMode="add">
-    <displaynameid>STR_TECH_ACTIVATE_TECH</displaynameid>
+    <displaynameid>STR_TECH_ACTIVATE_FORBIDDEN_DEATHSEEKER_TECH</displaynameid>
 		<status>UNOBTAINABLE</status>
     <icon>resources\tech\activate_tech.jpg</icon>
     <flag>NoTextMessage</flag>
@@ -11203,7 +11206,7 @@
     </effects>
 	</tech>
   <tech name="ForbiddenTechMictlan" mergeMode="add">
-    <displaynameid>STR_TECH_ACTIVATE_TECH</displaynameid>
+    <displaynameid>STR_TECH_ACTIVATE_FORBIDDEN_MICTLAN_TECH</displaynameid>
 		<status>UNOBTAINABLE</status>
     <icon>resources\tech\activate_tech.jpg</icon>
     <flag>NoTextMessage</flag>

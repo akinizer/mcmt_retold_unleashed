@@ -4275,18 +4275,21 @@
 		<train row="0" column="5">NubianCamp</train>
 	</unit>
     <unit name="Lighthouse">
-		<tactics>chainattack_beam.tactics</tactics>
+		<unitaitype>RangedCombative</unitaitype>
+		<tactics>mcmt_lighthouse.tactics</tactics>
 		<protoaction>
-			<name>BeamAttack</name>
-			<anim>RangedAttack</anim>
-			<rof>3.000000</rof>
-			<damage type="Pierce">70.000000</damage>
-			<damagebonus type="Ship">3.000000</damagebonus>
-			<maxrange>22.000000</maxrange>
-			<projectile>ProjectileMirrorTowerLazer</projectile>
-			<active>0</active>
+			<name>RangedAttack</name>
+			<rof>15.000000</rof>
+			<damage type="Crush">1.000000</damage>
+			<maxrange>28.000000</maxrange>
+			<perfectaccuracy>1</perfectaccuracy>
+			<instantballistics>1</instantballistics>
+
+			<castpower>MCMT_OrbitalStrike</castpower>
+			<castpowertargettype>Unit</castpowertargettype>			
 		</protoaction>
 	</unit>
+	
     <!-- Norse Hero Units-->
     <unit name="Godi">
 		<populationcount>1</populationcount>
@@ -27567,13 +27570,10 @@
 		<protoaction>
 			<name>LightningAttack</name>
 			<rof>10.000000</rof>
-			<damage type="Divine">100.00000</damage>
-			<damagebonus type="Building">3.000000</damagebonus>
-			<damagearea>5.00000</damagearea>
-			<damageflags>Nature|Enemy</damageflags>
+			<damage type="Divine">1.00000</damage>
 			<projectile>ProjectileChanequeLazer</projectile>
 			<maxrange>80.000000</maxrange>
-			<onhiteffect type="Spawn" proto="VFXExplosionLarge" amount="1"></onhiteffect>
+			<onhiteffect type="Spawn" proto="SelfDestructSpawnAntiBuilding" amount="1"></onhiteffect>
 			<onhiteffect type="TreeFlatten" targetunittype="Tree"></onhiteffect>
 		</protoaction>
 		<protoaction>
@@ -29780,6 +29780,46 @@
 			<onhiteffect type="Throw" targetunittype="AbstractVillager"></onhiteffect>
 			<throwmaxheight>4.0</throwmaxheight>
 			<throw>1</throw>
+   		</protoaction>
+  	</unit>	
+	<unit name="SelfDestructSpawnAntiBuilding" mergeMode="add">
+		<displaynameid>STR_VFX_DETONATORS_NAME</displaynameid>
+		<animfile>vfx\fire\explosion.xml</animfile>
+		<obstructionradiusx>0.4000</obstructionradiusx>
+		<obstructionradiusz>0.4000</obstructionradiusz>
+		<lifespan>0.1000</lifespan>
+		<decay delay="0.0000" duration="0.5000"></decay>
+		<movementtype>land</movementtype>
+		<unittype>Unit</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NoIdleActions</flag>
+		<flag>AreaDamageConstant</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<flag>BallisticTrackSource</flag>
+		<selfdestructprotoaction>SelfDestructAttack</selfdestructprotoaction>
+		<tactics>area_damage.tactics</tactics>
+		<protoaction>
+			<name>SelfDestructAttack</name>
+			<type>Attack</type>
+			<anim>HandAttack</anim>
+			<rate type="All">1.0</rate>
+			<attackaction>1</attackaction>
+			<areasortmode>Radial</areasortmode>
+			<impacteffect>effects\impacts\pierce</impacteffect>
+
+			<damage type="Divine">100.000000</damage>
+			<damagearea>5.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<damagebonus type="Building">3.0</damagebonus>
    		</protoaction>
   	</unit>	
 

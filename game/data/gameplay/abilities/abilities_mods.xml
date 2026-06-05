@@ -380,6 +380,10 @@
 	<NubianHunter>
 		<ability>AbilitySpecialHandAttack<tech>MCMT_KingdomGuardTraining_III</tech><chargetimeasrof>1</chargetimeasrof></ability>
 	</NubianHunter>
+		<!--Egyptian-Building-->
+	<Lighthouse>
+		<ability>AbilitySpecialRangedAttack<tech>ForbiddenTechWrathOfRaHorakthy</tech><chargetimeasrof>1</chargetimeasrof></ability>
+	</Lighthouse>
 		<!--Aztec-Military-->
 	<QuimichinSpy>
 		<ability>AbilityTrackerDevice<tech>ArchaicAgeAztec</tech><chargetimeasrof>1</chargetimeasrof><noautocast>true</noautocast></ability>

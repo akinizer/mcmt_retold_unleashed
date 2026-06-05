@@ -916,6 +916,12 @@ ID = "STR_TECH_ACTIVATE_TECH_GODSBEASTS"   ;   Str = "Activate Tech: Gods and Be
 ID = "STR_TECH_ACTIVATE_TECH_PRIMEVALS"   ;   Str = "Activate Tech: Primevals"
 ID = "STR_TECH_ACTIVATE_TECH_LEGENDS"   ;   Str = "Activate Tech: Legends"
 ID = "STR_TECH_ACTIVATE_TECH_SUPERWEAPONS"   ;   Str = "Activate Tech: Superweapons"
+ID = "STR_TECH_ACTIVATE_FORBIDDEN_UNEASHED_TECH"   ;   Str = "Activate Forbidden Tech: Protocol Unleashed"
+ID = "STR_TECH_ACTIVATE_FORBIDDEN_MONITORS_TECH"   ;   Str = "Activate Forbidden Tech: Protocol Monitors"
+ID = "STR_TECH_ACTIVATE_FORBIDDEN_BERNY_TECH"   ;   Str = "Activate Forbidden Tech: Protocol Berny"
+ID = "STR_TECH_ACTIVATE_FORBIDDEN_DEATHSEEKER_TECH"   ;   Str = "Activate Forbidden Tech: Protocol Deathseeker"
+ID = "STR_TECH_ACTIVATE_FORBIDDEN_MICTLAN_TECH"   ;   Str = "Activate Forbidden Tech: Protocol Mictlan"
+ID = "STR_TECH_ACTIVATE_FORBIDDEN_WRATHOFRAHORAKTHY_TECH"   ;   Str = "Activate Forbidden Tech: Wrath of Ra-Horakthy"
 
 ID = "STR_TECH_RECRUITING_MOUNTAINDWARVES_NAME"   ;   Str = "Recruiting Mountain Dwarves"
 ID = "STR_TECH_RECRUITING_MOUNTAINDWARVES_LR"    ;   Str = "Work Force now becomes Dwarf Force"
@@ -1234,6 +1240,9 @@ ID = "STR_ACTION_SHIMMERINGCHAINSAW"   ;   Str = "Shimmering Chainsaw"
 ID = "STR_TEST_HAND"   ;   Str = "Melee Attack (TEST)"
 
 ID = "STR_ABILITY_DEATHFROMABOVE"   ;   Str = "Death from Above"
+
+ID = "STR_ACTION_SOLAR_BEAM"   ;   Str = "Solar Beam"
+ID = "STR_ABILITY_ORBITAL_STRIKE"   ;   Str = "Orbital Strike"
 
 // COMMAND TECHS
 ID = "STR_BLD_FIREWALL_NAME"   ;   Str = "Fire Wall"

@@ -434,7 +434,10 @@
     - MirrorTower+
         - enable attack if garrisoned by 1 oracle / oraclehero
     - Lighthouse+
-        - BeamAttack: ProjectileMirrorTowerLazer
+        - ForbiddenTechWrathOfRaHorakthy:
+            - SetUnitType: AbstractTower
+            - BeamAttack: ProjectileMirrorTowerLazer
+            - ChargedRangedAttack: MCMT_OrbitalStrike
 - CitadelCenter+
 - Dock+
     - AreaHeal: NavalUnit -> (Ship,SiegeWeapon)
@@ -1089,6 +1092,8 @@
 - type resistance and vulnerability: myth, fire, lightning
 
 27. Forbidden Techs Patch
+
+* Protocol Names: Protocol Unleashed, Protocol Monitors, Protocol Berny, Protocol Deathseeker, Protocol Mictlan, Wrath of Ra-Horakth
 
 * Wonder of Ra: Pyramid
 - Forbidden Tech:
