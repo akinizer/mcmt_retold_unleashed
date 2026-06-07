@@ -1,0 +1,25 @@
+<tactics>
+	<action>
+		<name>Takeoff</name>
+		<type>DelayedTransform</type>
+		<anim>Takeoff</anim>
+	</action>
+	<action>
+		<name>Land</name>
+		<type>DelayedTransform</type>
+		<anim>Land</anim>
+	</action>
+
+	<tactic>Water
+        <action>TakeOff</action>
+        <action>Land</action>
+		<walkanim>WaterWalk</walkanim>
+		<idleanim>WaterIdle</idleanim>
+    </tactic>
+	<tactic>Ground
+		<action>TakeOff</action>
+        <action>Land</action>
+		<walkanim>Walk</walkanim>
+		<idleanim>Idle</idleanim>
+	</tactic>
+</tactics>

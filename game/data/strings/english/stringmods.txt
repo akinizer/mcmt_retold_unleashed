@@ -1244,6 +1244,12 @@ ID = "STR_ABILITY_DEATHFROMABOVE"   ;   Str = "Death from Above"
 ID = "STR_ACTION_SOLAR_BEAM"   ;   Str = "Solar Beam"
 ID = "STR_ABILITY_ORBITAL_STRIKE"   ;   Str = "Orbital Strike"
 
+ID = "STR_ABILITY_TAKEOFF"   ;   Str = "Take Off"
+ID = "STR_ABILITY_TAKEOFF_LR"   ;   Str = "The unit ascends to the skies taking a mighty gust beneath wings or hooves"
+
+ID = "STR_ABILITY_LAND"   ;   Str = "Descend"
+ID = "STR_ABILITY_LAND_LR"   ;   Str = "The unit descends from skies to somewhere available and landable"
+
 // COMMAND TECHS
 ID = "STR_BLD_FIREWALL_NAME"   ;   Str = "Fire Wall"
 

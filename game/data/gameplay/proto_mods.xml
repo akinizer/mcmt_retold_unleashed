@@ -2246,9 +2246,9 @@
     <!-- Greek Myth Units-->
     <unit name="Pegasus">   		
 		<unittype>CavalryLineUpgraded</unittype>
-        <tactics>delayed_transform.tactics</tactics>
+        <tactics>mcmt_pegasus_delayedtransform_air.tactics</tactics>
 		<protoaction>
-			<name>DelayedTransform</name>
+			<name>Land</name>
 			<modifyduration>2500</modifyduration>
 			<modifyprotoid>PegasusGroundedMessenger</modifyprotoid>
 		</protoaction>
@@ -20142,16 +20142,34 @@
 		<contain>AbstractInfantry</contain>
 		<notcontain>MythUnit</notcontain>
 		<notcontain>AbstractCavalry</notcontain>
-		<notcontain>MythUnit</notcontain>
 		<notcontain>AbstractSiegeWeapon</notcontain>
 		<notcontain>Ship</notcontain>
 		<notcontain>Resource</notcontain>
 		
-		<tactics>delayed_transform.tactics</tactics>
+		<tactics>mcmt_pegasus_delayedtransform_ground.tactics</tactics>
 		<protoaction>
-			<name>DelayedTransform</name>
+			<name>Takeoff</name>
 			<modifyduration>2500</modifyduration>
 			<modifyprotoid>Pegasus</modifyprotoid>
+		</protoaction>
+		<protoaction>
+			<name>ChargedModify</name>
+			<type>ChargedModify</type>
+			<persistent>1</persistent>
+			<charged>
+				<activationtype>TerrainType</activationtype>
+				<terraintype>Water</terraintype>
+				<settactic>Water</settactic>
+				<duration>1.0</duration>
+				<cooldown>0.01</cooldown>
+			</charged>
+			<charged>
+				<activationtype>TerrainType</activationtype>
+				<terraintype>Land</terraintype>
+				<settactic>Ground</settactic>
+				<duration>1.0</duration>
+				<cooldown>0.01</cooldown>
+			</charged>
 		</protoaction>
     </unit>
 

@@ -187,10 +187,10 @@
 	
 		<!--Greek Special Units -->
 	<Pegasus>
-		<ability>MCMT_AbstractUnitTransform<rof>5</rof><castonself>true</castonself><noautocast>true</noautocast></ability>
+		<ability>MCMT_Descend<rof>5</rof><castonself>true</castonself><noautocast>true</noautocast></ability>
 	</Pegasus>
 	<PegasusGroundedMessenger>
-		<ability>MCMT_AbstractUnitTransform<rof>5</rof><castonself>true</castonself><noautocast>true</noautocast></ability>
+		<ability>MCMT_Takeoff<rof>5</rof><castonself>true</castonself><noautocast>true</noautocast></ability>
 	</PegasusGroundedMessenger>
 		<!--Greek-MythUnit-->
 	<MirageTank>

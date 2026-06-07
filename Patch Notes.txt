@@ -1408,7 +1408,6 @@ TreeBender (wind.tactics): LightWindSmallArea,LightWindAllTrees,ModerateWindSmal
 ==============================================================================
 ==================== REWORK-PLANS ============================================
 ==============================================================================
-* warbear -> lykaon transform ability, lazerbear
 * hobbit hero -> nezha ring projectile
 * avenger -> anubite jump anim
 

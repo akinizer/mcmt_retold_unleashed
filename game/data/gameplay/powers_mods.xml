@@ -310,6 +310,28 @@
 		<unitaction>DelayedTransform</unitaction>
 		<allowduringnorush>1</allowduringnorush>
 	</power>
+	<power name="MCMT_Descend" type="UnitAction" mergeMode="add">
+		<displaynameid>STR_ABILITY_LAND</displaynameid>
+		<rolloverid>STR_ABILITY_LAND_LR</rolloverid>
+		<icon>egyptian\static_color\abilities\roc_ability_icon.png</icon>
+		<activetime>4</activetime>
+		<radius>5.0</radius>
+		<placement ally="">Unit</placement>
+		<abstractplacementtargettype>Unit</abstractplacementtargettype>
+		<unitaction>Land</unitaction>
+		<allowduringnorush>1</allowduringnorush>
+	</power>
+	<power name="MCMT_Takeoff" type="UnitAction" mergeMode="add">
+		<displaynameid>STR_ABILITY_TAKEOFF</displaynameid>
+		<rolloverid>STR_ABILITY_TAKEOFF_LR</rolloverid>
+		<icon>egyptian\static_color\abilities\roc_ability_icon.png</icon>
+		<activetime>4</activetime>
+		<radius>5.0</radius>
+		<placement ally="">Unit</placement>
+		<abstractplacementtargettype>Unit</abstractplacementtargettype>
+		<unitaction>Takeoff</unitaction>
+		<allowduringnorush>1</allowduringnorush>
+	</power>
 	<power name="MCMT_SpeedIncrease" type="GeneralEffect" mergeMode="add">
 		<displaynameid>STR_ABILITY_MCMT_SPEED_INCREASE_NAME</displaynameid>
 		<rolloverid>STR_ABILITY_MCMT_SPEED_INCREASE_LR</rolloverid>

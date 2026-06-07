@@ -1,0 +1,12 @@
+<tactics>
+	<action>
+		<name>Land</name>
+		<type>DelayedTransform</type>
+		<anim>Land</anim>
+	</action>
+	
+	<tactic>Default
+        <action>Land</action>
+		<walkanim>WaterWalk</walkanim><idleanim>WaterIdle</idleanim>
+	</tactic>
+</tactics>
