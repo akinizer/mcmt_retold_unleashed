@@ -136,7 +136,12 @@
 - myth unit: 
     - popcosts
 
-    - flying: Pegasus+, PegasusWingedMessenger+
+    - flying: 
+        - PegasusWingedMessenger+: airborne trade unit
+        - Pegasus+: 
+            - chargedmodify: walk, idle, waterwalk, wateridle anim
+            - takeoff & descend: delayedtransform, transition anim
+            - PehasusGroundedMessenger+: passenger 1 AbstractInfantry
     - melee: Minotaur+, Colossus+, Hydra+, NemeanLion+, Cyclops+, HadesShade+
     - ranged: Medusa+, Sentinel+
         - Centaur+:
@@ -165,8 +170,6 @@
 - military units:
     - popcosts: humansoldier 1 or 2
     - Kataskopos+
-- special unit:
-    - PegasusGroundedMessenger+
 - Spartans
     - Prereq: ClassicAgeAres
     - SpartanTraining: enables Spartan building, techs and units
@@ -1414,7 +1417,6 @@ TreeBender (wind.tactics): LightWindSmallArea,LightWindAllTrees,ModerateWindSmal
 * nitroglicerine -> vfxcold variant of detonators
 * hunts of artemis tech
 * caladrialanded -> icarus & servant of kronos anim, handattack
-* pegasus -> pegasus anim, bellerophon_horse anim
 
 === AZTEC
 * Bunnies: 
