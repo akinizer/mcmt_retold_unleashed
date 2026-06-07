@@ -1321,6 +1321,8 @@
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractWoodland" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">Hobbit</target></effect>
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractWoodland" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">HobbitHero</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractWoodland" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">Centaur</target></effect>
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractWoodland" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">Chiron</target></effect>
@@ -2494,14 +2496,19 @@
       <effects>			
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Hobbit</target></effect>
         <effect type="Data" amount="0.60" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">Hobbit</target></effect>
-        <effect type="Data" action="Gather" amount="1.50" subtype="WorkRate" unittype="FoodResource" relativity="BasePercent"><target type="ProtoUnit">Hobbit</target></effect>
-        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Moradin</target></effect>
+        <effect type="Data" action="Gather" amount="1.80" subtype="WorkRate" unittype="FoodResource" relativity="BasePercent"><target type="ProtoUnit">Hobbit</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">HobbitHero</target></effect>
+        <effect type="Data" amount="0.60" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">HobbitHero</target></effect>
+        <effect type="Data" action="Gather" amount="2.00" subtype="WorkRate" unittype="FoodResource" relativity="BasePercent"><target type="ProtoUnit">HobbitHero</target></effect>
+        
         <effect type="Data" amount="2.25" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">Moradin</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Loki</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">TreebeardOfFangorn</target></effect>
         <effect type="Data" amount="1.60" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">TreebeardOfFangorn</target></effect>
 
         <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Hobbit" row="0" column="0" relativity="Assign">
+          <target type="ProtoUnit">House</target></effect>	   
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="HobbitHero" row="0" column="1" relativity="Assign">
           <target type="ProtoUnit">House</target></effect>	   
         <effect type="Data" amount="1.00" subtype="CommandAdd" proto="TreebeardOfFangorn" row="0" column="3" relativity="Assign">
           <target type="ProtoUnit">House</target></effect>	   
@@ -3800,6 +3807,11 @@
 			<effect type="Data" amount="1.00" subtype="CommandRemove" proto="VillagerNorse" relativity="Assign"><target type="ProtoUnit">TownCenter</target></effect>
 			<effect type="TransformUnit" toprotoid="VillagerDwarf" fromprotoid="VillagerNorse" includequeued="true"></effect>
 			<effect type="SetName" proto="VillagerDwarf" newname="STR_UNIT_MOUNTAINDWARF_NAME"></effect>
+
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Moradin</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractDwarf" relativity="Absolute">
+        <target type="ProtoUnit">Berserk</target></effect>
 		</effects>		
 	</tech>
 	<tech name="MCMT_ArchitectsOfMarley" mergeMode="add">
@@ -9089,6 +9101,9 @@
         <target type="ProtoUnit">AbstractWarship</target></effect>
       <effect type="Data" subtype="ProtoActionAdd" protoaction="VFXThunderchargeAura" amount="1.00" unittype="VFXGlowContainer" relativity="Assign" hidetooltip="" mergeMode="add">
         <target type="ProtoUnit">Hersir</target></effect>
+
+      <effect type="Data" action="ChargedHandAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Moradin</target></effect>
     </effects>
   </tech>
   <tech name="CaveTroll">

@@ -1,0 +1,53 @@
+<animfile validation="strict">
+	<attachment>sowSeeds<component>VFXComp<assetreference type="PopcornFx"><file>objects\villager\sow_seeds.pkfx</file></assetreference></component><anim>Idle<component>VFXComp</component></anim></attachment>
+	<attachment>Arrow<include>shared\units\attachments\arrow\arrow.xml</include></attachment>
+	<attachment>RangedWeapon<include>shared\units\attachments\bow\bow.xml</include></attachment>
+	<attachment>Axe<include>shared\units\attachments\axe\axe.xml</include></attachment>
+	<attachment>Pickaxe<include>shared\units\attachments\tool\tool_pickaxe.xml</include></attachment>
+	<attachment>Knife<include>shared\units\attachments\knife\knife.xml</include></attachment>
+	<attachment>Hammer<include>shared\units\attachments\tool\tool_hammer.xml</include></attachment>
+	<attachment>Weapon
+        <attachment>Flaming
+            <component>VFXComp
+                <logic type="Tech">
+                    <none><nullvisual></nullvisual></none>
+                    <flamingweaponsactive><assetreference type="TMComposite"><file>vfx\weapons\flaming_weapons\hammers\hammer_flame_small_vfx</file></assetreference></flamingweaponsactive>
+                </logic>
+            </component
+            ><anim>Idle<component>VFXComp</component></anim>
+        </attachment>
+        <attachment>VFXGlow<component>VFXComp<assetreference type="PopcornFx"><file>spc/aztec/eitri_thor_hammer_glow.pkfx</file></assetreference></component><anim>Idle<component>VFXComp</component></anim></attachment>
+        <attachment>VFXAxe<component>ModelComp<assetreference type="PopcornFx"><file>units\einhari\einhari_axe.pkfx</file></assetreference></component><anim>Idle<component>ModelComp</component></anim></attachment>
+        <component>WeaponComp<assetreference type="TMModel"><file>atlantean\units\myth\automaton\automaton_upgrade_sword</file></assetreference><attach name="VFXAxe" attachpoint="vfx_hammer"></attach><attach name="VFXGlow" attachpoint="vfx_hammer_head"></attach></component><anim>Idle<component>WeaponComp</component></anim></attachment>
+	<attachment>Hoe<include>shared\units\attachments\tool\tool_hoe.xml</include></attachment>
+	<attachment>Relic<include>shared\buildings\props\relic\relic.xml</include></attachment>
+	<attachment>ResourceBasket<include>shared\units\attachments\resource_basket\resource_basket.xml</include></attachment>
+	<attachment>Resource<include>shared\units\attachments\resource\resource.xml</include></attachment>
+	<attachment>HeroGlow<include>vfx\glow\hero_glow.xml</include></attachment>
+	<attachment>HeroGlowRing<include>vfx\glow\hero_glow_ring.xml</include></attachment>
+	<attachment>HeroBirth<include>vfx\glow\hero_birth.xml</include></attachment>
+	<attachment>HeroDeath<include>vfx\glow\hero_death.xml</include></attachment>
+	<attachment>StoneGlow<component>VFXComp<assetreference type="PopcornFx"><file>spc\arkantos\arkantos_god.pkfx</file></assetreference></component><anim>Idle<component>VFXComp</component></anim></attachment>
+	<component>ModelComp<logic type="Cinematic"><normal><assetreference type="TMModel"><file>spc\units\eitri\eitri_spc</file></assetreference><attach name="HeroGlow" attachpoint="hero_glow"></attach><attach name="StoneGlow" attachpoint="hero_glow"></attach><attach name="HeroGlowRing" attachpoint="bonethatdoesntexist"></attach></normal><cinematic><assetreference type="TMModel"><file>spc\units\eitri\eitri_spc</file></assetreference></cinematic></logic></component>
+	<anim>Bored<assetreference type="TMAnimation"><file>spc\units\eitri\anim\eitri_bored_a</file></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="thors_hammer"></attach></anim>
+	<anim>Build<assetreference type="TMAnimation"><file>spc\units\eitri\anim\eitri_build_a</file><tag type="SpecificSoundSet" checkvisible="1" set="Build">0.99</tag></assetreference><assetreference type="TMAnimation"><file>spc\units\eitri\anim\eitri_build_b</file><tag type="SpecificSoundSet" checkvisible="1" set="Build">0.99</tag></assetreference><component>ModelComp</component><attach name="Hammer" attachpoint="hammer"></attach></anim>
+	<anim>Carry<assetreference type="TMAnimation"><file>spc\units\eitri\anim\eitri_carry_a</file></assetreference><component>ModelComp</component><attach name="Resource" attachpoint="resource"></attach></anim>
+	<anim>CarryBored<assetreference type="TMAnimation"><file>spc\units\eitri\anim\eitri_carrybored_a</file></assetreference><component>ModelComp</component><attach name="Resource" attachpoint="resource"></attach></anim>
+	<anim>CarryIdle<assetreference type="TMAnimation"><file>spc\units\eitri\anim\eitri_carryidle_a</file></assetreference><component>ModelComp</component><attach name="Resource" attachpoint="resource"></attach></anim>
+	<anim>GatherChop<assetreference type="TMAnimation"><file>spc\units\eitri\anim\eitri_chop_a</file><tag type="SpecificSoundSet" checkvisible="1" set="GatherChop">0.90</tag></assetreference><component>ModelComp</component><attach name="Axe" attachpoint="axe"></attach></anim>
+	<anim>ChopDownTree<assetreference type="TMAnimation"><file>spc\units\eitri\anim\eitri_chop_a</file><tag type="Attack">0.5</tag></assetreference><component>ModelComp</component><attach name="Axe" attachpoint="axe"></attach></anim>
+	<anim>Death<assetreference type="TMAnimation"><file>spc\units\eitri\anim\eitri_death_a</file><tag type="SpecificSoundSet" checkowner="1" set="DeathHeroSpc">0.10</tag></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="thors_hammer"></attach><attach name="HeroDeath" attachpoint="bonethatdoesntexist"></attach></anim>
+	<anim>KnockoutRecover<assetreference type="TMAnimation"><file>spc\units\eitri\anim\eitri_recover_a</file><tag type="SpecificSoundSet" checkowner="1" set="HeroRevive">0.99</tag><tag type="particles" popcornfxname="glow\hero_recover.pkfx" bone="vfx_recover" movewithbone="false" stopwithanim="false" adjustduration="false">0.02</tag></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="thors_hammer"></attach></anim>
+	<anim>GatherFarm<assetreference type="TMAnimation"><file>spc\units\eitri\anim\eitri_farm_a</file><tag type="SpecificSoundSet" checkvisible="1" set="GatherFarm">0.80</tag></assetreference><component>ModelComp</component><attach name="Hoe" attachpoint="hoe"></attach></anim>
+	<anim>HandAttack<assetreference type="TMAnimation"><file>spc\units\eitri\anim\eitri_attack_a</file><tag type="Attack">0.5</tag><tag type="particles" popcornfxname="spc\aztec\eitri_thor_hammer_trail.pkfx" bone="vfx_hammer_head" movewithbone="true" stopwithanim="false" adjustduration="false">0.336</tag></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="thors_hammer"></attach></anim>
+	<anim>ChargedHandAttack<assetreference type="TMAnimation"><file>norse\units\hero\hersir\anim\hersir_attack_a</file><tag type="Attack">0.45</tag><tag type="SpecificSoundSet" checkvisible="1" set="SwooshSword">0.38</tag></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="thors_hammer"></attach></anim>
+	<anim>GatherBush<assetreference type="TMAnimation"><file>spc\units\eitri\anim\eitri_harvest_a</file><tag type="SpecificSoundSet" checkvisible="1" set="GatherForage">0.60</tag></assetreference><component>ModelComp</component><attach name="ResourceBasket" attachpoint="basket"></attach></anim>
+	<anim>Idle<assetreference type="TMAnimation"><file>spc\units\eitri\anim\eitri_idle_a</file></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="thors_hammer"></attach></anim>
+	<anim>Birth<assetreference type="TMAnimation"><file>spc\units\eitri\anim\eitri_idle_a</file></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="thors_hammer"></attach><attach name="HeroBirth" attachpoint="bonethatdoesntexist"></attach></anim>
+	<anim>GatherMine<assetreference type="TMAnimation"><file>spc\units\eitri\anim\eitri_mine_a</file><tag type="SpecificSoundSet" checkvisible="1" set="GatherMine">0.90</tag></assetreference><component>ModelComp</component><attach name="Pickaxe" attachpoint="pickaxe"></attach></anim>
+	<anim>RangedAttack<assetreference type="TMAnimation"><file>spc\units\eitri\anim\eitri_rangedattack_a</file><tag type="Attack">0.5</tag><tag type="particles" popcornfxname="objects\weapon_fx\bow_release_hero.pkfx" bone="rangedweapon" movewithbone="false" stopwithanim="false" adjustduration="false">0.3</tag></assetreference><component>ModelComp</component><attach name="Arrow" attachpoint="arrow"></attach><attach name="RangedWeapon" attachpoint="rangedweapon"></attach></anim>
+	<anim>GatherHunt<assetreference type="TMAnimation"><file>spc\units\eitri\anim\eitri_slice_a</file><tag type="SpecificSoundSet" checkvisible="1" set="GatherMeat">0.50</tag></assetreference><component>ModelComp</component><attach name="Knife" attachpoint="meleeweapon"></attach></anim>
+	<anim>Sow<assetreference type="TMAnimation"><file>spc\units\eitri\anim\eitri_sow_a</file></assetreference><component>ModelComp</component><attach name="sowSeeds" attachpoint="rangedweapon"></attach><attach name="ResourceBasket" attachpoint="basket"></attach></anim>
+	<anim>Flail<assetreference type="TMAnimation"><file>spc\units\eitri\anim\eitri_flail_a</file></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="thors_hammer"></attach></anim>
+	<anim>Walk<assetreference type="TMAnimation"><file>spc\units\eitri\anim\eitri_run_a</file></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="thors_hammer"></attach></anim>
+</animfile>

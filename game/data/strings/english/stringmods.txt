@@ -353,6 +353,7 @@ ID = "STR_UNIT_MAIAR_LR"   ;   Str = "Primordial Spirits that Shaped the World w
 
 // KINGDOM UNITS
 ID = "STR_UNIT_HOBBIT_NAME"   ;   Str = "Halfling"
+ID = "STR_UNIT_HOBBIT_HERO_NAME"   ;   Str = "Samodor (Hero)"
 ID = "STR_UNIT_HOBBIT_SR"   ;   Str = "Halfling"
 ID = "STR_UNIT_HOBBIT_LR"   ;   Str = "Small People with Large Hearts"
 

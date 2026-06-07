@@ -22033,7 +22033,7 @@
 	<unit name="JarlRider" mergeMode="add"></unit>
 	-->
 
-	 <unit name="Hobbit">
+	<unit name="Hobbit">
 		<displaynameid>STR_UNIT_HOBBIT_NAME</displaynameid>
 		<rollovertextid>STR_UNIT_HOBBIT_LR</rollovertextid>
 		<shortrollovertextid>STR_UNIT_HOBBIT_SR</shortrollovertextid>
@@ -22139,6 +22139,7 @@
 		<damage type="Pierce">12.000000</damage>
 		<maxrange>12.000000</maxrange>
 		<projectile>ProjectileArrowNotFlaming</projectile>
+		<defaultattack>1</defaultattack>
 		</protoaction>
 		<protoaction>
 		<name>Build</name>
@@ -22152,12 +22153,12 @@
 		<protoaction>
 		<name>Gather</name>
 		<dropsitegathering>1</dropsitegathering>
-		<rate type="WoodResource">1.0000</rate>
-		<rate type="GoldResource">1.0000</rate>
-		<rate type="Herdable">0.60000</rate>
-		<rate type="Huntable">0.60000</rate>
-		<rate type="NonConvertableHerdable">0.60000</rate>
-		<rate type="BerryBush">0.660000</rate>
+		<rate type="WoodResource">0.8000</rate>
+		<rate type="GoldResource">0.8000</rate>
+		<rate type="Herdable">1.60000</rate>
+		<rate type="Huntable">1.60000</rate>
+		<rate type="NonConvertableHerdable">1.60000</rate>
+		<rate type="BerryBush">1.660000</rate>
 		<rate type="ThePeachBlossomSpring" resource="Food">0.800000</rate>
 		</protoaction>
 		<protoaction>
@@ -22165,8 +22166,165 @@
 			<rof>1.000000</rof>
 			<damage type="Pierce">6.000000</damage>
 			<maxrange>12.000000</maxrange>
-			<defaultattack>1</defaultattack>
 			<anim>RangedAttack</anim>
+		</protoaction>
+	</unit>
+	<unit name="HobbitHero">
+		<displaynameid>STR_UNIT_HOBBIT_HERO_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_HOBBIT_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_HOBBIT_SR</shortrollovertextid>
+		<editornameid>STR_UNIT_GATHERER_EDT_NAME</editornameid>
+		<icon>resources\norse\player_color\units\villager_norse_icon.png</icon>
+		<animfile>norse\units\economic\villager_norse\villager_norse.xml</animfile>
+		<soundsetfile>norse\vo\villager_norse\villager_norse.xml</soundsetfile>
+		<culture>Norse</culture>
+
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Unarmoured</impacttype>
+		<unitaitype>Civilian</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>55.0000</initialhitpoints>
+		<maxhitpoints>55.0000</maxhitpoints>
+		<trainpoints>15.0000</trainpoints>
+		<buildlimit>60</buildlimit>
+		<sharedbuildlimitunit>VillagerNorse</sharedbuildlimitunit>
+		<sharedbuildlimitunittypes>
+		<unittype>BuildLimitSharedNorse</unittype>
+		</sharedbuildlimitunittypes>
+		<weightclass>4</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>4.8000</maxvelocity>
+		<stealthdetectionradius>8.0000</stealthdetectionradius>
+		<los>14.0000</los>
+		<cost resourcetype="Food">35.0000</cost>
+		<carrycapacity resourcetype="Food">16.0000</carrycapacity>
+		<carrycapacity resourcetype="Wood">10.0000</carrycapacity>
+		<carrycapacity resourcetype="Gold">10.0000</carrycapacity>
+		<armor type="Hack" value="0.2500"></armor>
+		<armor type="Pierce" value="0.7500"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeMinimapFilterEconomic</unittype>
+		<unittype>LogicalTypeEasySelectAvoid</unittype>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>BuildLimitSharedNorse</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>EconomicUnit</unittype>
+		<unittype>AbstractVillager</unittype>
+		<unittype>Hero</unittype>
+		<unittype>MinorHero</unittype>
+		<unittype>HeroShadowUpgraded</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+		<unittype>CountsTowardEconomicScore</unittype>
+		<unittype>ValidIdleVillager</unittype>
+		<unittype>AffectedByTownBell</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeVillagerNotHero</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>EconomicUpgraded</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<hotkeycontext>BuildNorseAccel</hotkeycontext>
+
+		<train row="0" column="0">House</train>
+
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>AutoTrainable</flag>
+		<flag>UseSharedBuildLimit</flag>
+		<flag>HasDefaultAttack</flag>
+		<flag>NoIdleActions</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>ForceSecondPage</flag>			
+		<tactics>villager_norse.tactics</tactics>
+
+		<protoaction>
+			<name>Hunting</name>
+			<rate type="Herdable">1.000000</rate>
+			<rate type="Huntable">1.000000</rate>
+			<rate type="Unit">1.000000</rate>
+			<rate type="Building">1.000000</rate>
+			<rate type="Tree">1.000000</rate>
+			<rate type="NonConvertableHerdable">1.000000</rate>
+		</protoaction>
+			<protoaction>
+			<name>ChopAttack</name>
+			<damage type="Hack">8.000000</damage>
+			<rof>0.800000</rof>
+		</protoaction>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Pierce">16.000000</damage>
+			<damagebonus type="AnimalOfSet">1.500000</damagebonus>
+			<damagebonus type="MythUnit">2.500000</damagebonus>
+			<rate type="Unit">1.0</rate>
+			<maxrange>12.000000</maxrange>
+			<projectile>ProjectileNeZhaRingUpgrade</projectile>
+			<defaultattack>1</defaultattack>
+		</protoaction>
+		<protoaction>
+			<name>Build</name>
+			<rate type="House">0.800000</rate>
+			</protoaction>
+		<protoaction>
+			<name>Repair</name>
+			<maxrange>0.2</maxrange>
+			<rate type="House">0.3000</rate>
+		</protoaction>
+		<protoaction>
+			<name>Gather</name>
+			<dropsitegathering>1</dropsitegathering>
+			<rate type="WoodResource">1.0000</rate>
+			<rate type="GoldResource">0.8000</rate>
+			<rate type="Herdable">2.60000</rate>
+			<rate type="Huntable">2.60000</rate>
+			<rate type="NonConvertableHerdable">2.60000</rate>
+			<rate type="BerryBush">2.660000</rate>
+			<rate type="ThePeachBlossomSpring" resource="Food">2.800000</rate>
+		</protoaction>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Pierce">6.000000</damage>
+			<maxrange>12.000000</maxrange>
+			<anim>RangedAttack</anim>
+		</protoaction>
+		<protoaction>
+			<name stringid="STR_ACTION_STEALTH">Stealth</name>
+			<type>Stealth</type>
+			<maxrange>25.0</maxrange>
+			<autocastbyself>1</autocastbyself>
+			<autocastdistance>2.250000</autocastdistance>
+			<persistent>1</persistent>
+			<activevfxproto>VFXStealthEye</activevfxproto>
+			<revealarearadius>2.0</revealarearadius>
+			<revealareachain>1.0</revealareachain>
+			<soundsetenter>StealthBirth</soundsetenter>
+			<soundsetupdate>StealthAcknowledge</soundsetupdate>
+			<soundsetexit>StealthExists</soundsetexit>
 		</protoaction>
 	</unit>
 	<unit name="RangerElf">		
@@ -22189,6 +22347,7 @@
 		<weightclass>5</weightclass>
 		<populationcount>1</populationcount>
 		<maxvelocity>4.3000</maxvelocity>
+		<stealthdetectionradius>8.0000</stealthdetectionradius>
 		<los>32.0000</los>
 		<cost resourcetype="Wood">85.0000</cost>
 		<armor type="Hack" value="0.1500"></armor>
@@ -22384,7 +22543,7 @@
 		<rollovertextid>STR_UNIT_MORADIN_ENT_LR</rollovertextid>
 		<icon>resources\tech\king_dwarf.jpg</icon>
 		<minimapicon>ui\minimap\minimap_hero_spc</minimapicon>
-		<animfile>spc\units\eitri\eitri.xml</animfile>
+		<animfile>mcmt\units\viking\moradin.xml</animfile>
 		<soundsetfile>spc\vo\eitri\eitri.xml</soundsetfile>
 		<obstructionradiusx>0.4900</obstructionradiusx>
 		<obstructionradiusz>0.4900</obstructionradiusz>
@@ -22398,7 +22557,7 @@
 		<maxhitpoints>280.0000</maxhitpoints>
 		<unitregen>1.0000</unitregen>
 
-		<cost resourcetype="Gold">350</cost>
+		<cost resourcetype="Gold">1350</cost>
 
 		<weightclass>5</weightclass>
 		<maxcontained>1.0000</maxcontained>
@@ -22461,6 +22620,8 @@
 		<flag>ForceSecondPage</flag>
 		<contain external="1">LogicalTypePickable</contain>
 
+		<rechargetime>25.0</rechargetime>
+
 		<tactics>mcmt_moradin.tactics</tactics>
 		<protoaction>
 			<name>Gather</name>
@@ -22473,8 +22634,17 @@
 			<damage type="Hack">15.000000</damage>
 			<damage type="Divine">5.000000</damage>
 			<damagebonus type="MythUnit">5.00000</damagebonus>
-			<maxrange>0.750000</maxrange>
+			<maxrange>1.750000</maxrange>
 		</protoaction>
+		<protoaction>
+			<name>ChargedHandAttack</name>
+			<rof>3.000000</rof>
+			<damage type="Hack">15.000000</damage>
+			<maxrange>1.750000</maxrange>
+			<onhiteffect type="Spawn" proto="SelfDestructSpawnThunderblast" amount="1"></onhiteffect>
+			<active>0</active>
+		</protoaction>
+		
 		<protoaction>
 			<name>Pickup</name>
 			<type>Pickup</type>
@@ -29838,6 +30008,94 @@
 			<damagearea>5.000000</damagearea>
 			<damageflags>Nature|Enemy</damageflags>
 			<damagebonus type="Building">3.0</damagebonus>
+   		</protoaction>
+  	</unit>	
+	<unit name="SelfDestructSpawnThundersphere" mergeMode="add">
+		<displaynameid>STR_VFX_DETONATORS_NAME</displaynameid>
+		<animfile>vfx\glow\transform_glow.xml</animfile>
+		<obstructionradiusx>0.4000</obstructionradiusx>
+		<obstructionradiusz>0.4000</obstructionradiusz>
+		<lifespan>0.1000</lifespan>
+		<decay delay="0.0000" duration="0.5000"></decay>
+		<movementtype>land</movementtype>
+		<unittype>Unit</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NoIdleActions</flag>
+		<flag>AreaDamageConstant</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<flag>BallisticTrackSource</flag>
+		<selfdestructprotoaction>SelfDestructAttack</selfdestructprotoaction>
+		<tactics>area_damage.tactics</tactics>
+		<protoaction>
+			<name>SelfDestructAttack</name>
+			<type>Attack</type>
+			<anim>HandAttack</anim>
+			<rate type="All">1.0</rate>
+			<attackaction>1</attackaction>
+			<areasortmode>Radial</areasortmode>
+			<impacteffect>effects\impacts\hack</impacteffect>
+
+			<damage type="Divine">25.000000</damage>
+			<damagebonus type="MythUnit">5.000000</damagebonus>
+			<damagearea>5.000000</damagearea>
+			<damageflags>Enemy</damageflags>
+
+			<onhiteffect type="Throw" targetunittype="HumanSoldier"></onhiteffect>
+			<onhiteffect type="Throw" targetunittype="EconomicUnit"></onhiteffect>
+			<throw>1</throw>
+   		</protoaction>
+  	</unit>	
+	<unit name="SelfDestructSpawnThunderblast" mergeMode="add">
+		<displaynameid>STR_VFX_DETONATORS_NAME</displaynameid>
+		<animfile>greek\godpowers\shared\ui_range_indicator_greek_vfx.xml</animfile>
+		<obstructionradiusx>0.4000</obstructionradiusx>
+		<obstructionradiusz>0.4000</obstructionradiusz>
+		<lifespan>0.1000</lifespan>
+		<decay delay="0.0000" duration="0.5000"></decay>
+		<movementtype>land</movementtype>
+		<unittype>Unit</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NoIdleActions</flag>
+		<flag>AreaDamageConstant</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<flag>BallisticTrackSource</flag>
+		<selfdestructprotoaction>SelfDestructAttack</selfdestructprotoaction>
+		<tactics>area_damage.tactics</tactics>
+		<protoaction>
+			<name>SelfDestructAttack</name>
+			<type>Attack</type>
+			<anim>HandAttack</anim>
+			<rate type="All">1.0</rate>
+			<attackaction>1</attackaction>
+			<areasortmode>Radial</areasortmode>
+			<impacteffect>effects\impacts\hack</impacteffect>
+
+			<damage type="Divine">25.000000</damage>
+			<damagebonus type="MythUnit">5.000000</damagebonus>
+			<damagearea>2.000000</damagearea>
+			<damageflags>Enemy</damageflags>
+
+			<onhiteffect type="Throw" targetunittype="HumanSoldier"></onhiteffect>
+			<onhiteffect type="Throw" targetunittype="EconomicUnit"></onhiteffect>
+			<throw>1</throw>
    		</protoaction>
   	</unit>	
 

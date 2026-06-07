@@ -446,11 +446,22 @@
     - AreaHeal: NavalUnit -> (Ship,SiegeWeapon)
 - Farm+
 - DwarvenArmory (MCMT tech will be added)
+    - RecruitingMountainDwarves: 
+        - removes villagernorse and replaces with dwarves, dwarves get larger and more efficient
+        - King Moradin is obtainable
+        - setunittype Berserk AbstractDwarf
 - GreatHall (unit train order)+
 - WallConnector (hp fix)+
 - House:
     - Global: AttackWolf+
-    - Norse: Hobbit (renamed to "Halfling" to avoid issues), Moradin, Loki, TreebeardOfFangorn+
+    - Norse: 
+        - Hobbit (renamed to "Halfling" to avoid issues)
+        - Moradin: oversized dwarf model, sword weapon model, armor glow, no-dropsite gold gathering
+            - ChargedHandAttack (HammerOfThunder): Thunderblast, throw HumanSoldier & EconomicUnit
+        - Loki: greta model, ranged attack, supereffective vs humans, amphibious
+        - TreebeardOfFangorn: dryad model, no-dropsite wood gathering, wood absorption, ent unit
+        - Samodor / Halfling Hero: superior version of Halfling, ProjectileNezhaRing, gathers faster, stealth, stealthdetection, infantrylineupgrade, bonusdamage vs MythUnit, AnimalOfSet
+            - Rngedattack: anti-unit 
 - Manor
 - SiegeWorks
 - TownCenter:
@@ -1143,9 +1154,7 @@ greek: templar, replace oracle summoned by olympic games
         <onhiteffect type="Attach" proto="VFXCaladriaPacify" attachbone="spine" duration="5.000000"></onhiteffect>
         <exclusive>1</exclusive>
     </protoaction>
-lighthouse: castpower forestfire / wrath_of_rahorakthy
 mobileorbitalarray: castpower forestfire_minor / orbitalstrike
-conan:remove orbital strike
 
 prodromoshorse + hadeshade = horseman of death, poison trail, high leech, pierce 99%
 
@@ -1411,7 +1420,6 @@ TreeBender (wind.tactics): LightWindSmallArea,LightWindAllTrees,ModerateWindSmal
 ==============================================================================
 ==================== REWORK-PLANS ============================================
 ==============================================================================
-* hobbit hero -> nezha ring projectile
 * avenger -> anubite jump anim
 
 * nitroglicerine -> vfxcold variant of detonators
