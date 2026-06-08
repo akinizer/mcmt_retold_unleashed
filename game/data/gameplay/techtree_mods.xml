@@ -7402,7 +7402,7 @@
       <effect type="Data" amount="2.0" subtype="ResearchRate" relativity="BasePercent" mergeMode="remove">
 				<target type="ProtoUnit">Armory</target></effect>
       <!---->
-      <effect type="Data" amount="0.00" subtype="ResearchRate" relativity="Assign" mergeMode="add">
+      <effect type="Data" amount="100.00" subtype="ResearchRate" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">Armory</target></effect>
 
       <effect type="Data" amount="100" subtype="ShieldPoints" relativity="Absolute" mergeMode="add">
