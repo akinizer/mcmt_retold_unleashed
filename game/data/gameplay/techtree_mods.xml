@@ -520,7 +520,7 @@
     
     <tech name="ArchaicAgePoseidon">
       <effects>
-        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Hetairos" row="0" column="3" relativity="Assign" mergeMode="add">
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Hetairos" row="0" column="2" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">Stable</target></effect>
       </effects>
     </tech>
