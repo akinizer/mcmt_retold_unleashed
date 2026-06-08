@@ -143,6 +143,10 @@
             - takeoff & descend: delayedtransform, transition anim
             - PehasusGroundedMessenger+: passenger 1 AbstractInfantry
     - melee: Minotaur+, Colossus+, Hydra+, NemeanLion+, Cyclops+, HadesShade+
+        - PaleRider:
+            - Hades cavalry, counter-hero, AbstractMythSoldier
+            - Trail: counter-army, effective in crowds
+            - Trainable at Stable
     - ranged: Medusa+, Sentinel+
         - Centaur+:
             - RangedAttack: bonusdamage abstractcavalry, NumberProjectiles 1
@@ -845,7 +849,8 @@
     - explosive tech researchable in Armory, releases explosion on destruction (building, ship) or death (infrenal mythunit, shinobi), deals area damage and sends humansoldiers and villagers flying
     - Norse,Greek,Atlantean,Chinese,Egyptian: variants added, enabled for [mechanical, building, warship, explosive users, infernals]
 - DismountTactics:
-    - Greek: Hippeus, Prodromos, Hetairos
+    - Greek: Hippeus, Prodromos
+        - Hetairos: also trainable at Stable
     - Egyptian: MercenaryCavalry, ChariotArcher, CamelRider, WarElephant
     - Norse: RaidingCavalry, Jarl, PortableRam
     - Atlantean: Turma, Contarius
@@ -1121,7 +1126,7 @@
 * Wonder of Oracle:
 - Forbidden Tech: train 5 units, very high durability, annihilation squad
     - M0N17-R
-        - laser attack: ProjectileSoulGuide
+        - laser attack: ProjectileSoulGuide 
 * Existing but not Trained:
 - Forbidden Tech:
     - L0S7-1: durable spawn unit, transforms into Beast Berny (Taotie with devour, bash, areacorruptioncontainer)
@@ -1155,8 +1160,6 @@ greek: templar, replace oracle summoned by olympic games
         <exclusive>1</exclusive>
     </protoaction>
 mobileorbitalarray: castpower forestfire_minor / orbitalstrike
-
-prodromoshorse + hadeshade = horseman of death, poison trail, high leech, pierce 99%
 
 === FORBIDDEN TECHS
 1. add activation techs

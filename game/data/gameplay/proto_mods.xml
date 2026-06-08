@@ -19715,7 +19715,7 @@
 	<!-- dismount units knights TODO
 	<unit name="HippeusKnight" mergeMode="add"></unit>
 	<unit name="ProdromosKnight" mergeMode="add"></unit>
-	<unit name="HetaroiKnight" mergeMode="add"></unit>
+	<unit name="HetairosKnight" mergeMode="add"></unit>
 	<unit name="AchillesKnight" mergeMode="add"></unit>
 	<unit name="GreekSpy" mergeMode="add"></unit>
 	-->
@@ -20552,6 +20552,94 @@
 			<persistent>1</persistent>
 			<modelattachment>vfx\glow\hero_glow.xml</modelattachment>
 			<modelattachmentbone>Spine</modelattachmentbone>
+		</protoaction>
+	</unit>
+
+	<unit name="PaleRider">
+		<displaynameid>STR_UNIT_PALERIDER_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_PALERIDER_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_PALERIDER_SR</shortrollovertextid>
+		<icon>resources\greek\player_color\units\hades_shade_icon.png</icon>
+		<animfile>mcmt\units\spectral\palerider.xml</animfile>
+		<soundsetfile>greek\vo\hades_shade\hades_shade.xml</soundsetfile>
+		<obstructionradiusx>0.7400</obstructionradiusx>
+		<obstructionradiusz>0.7400</obstructionradiusz>
+		<selectionradiusx>0.7500</selectionradiusx>
+		<selectionradiusz>1.1500</selectionradiusz>
+		<impacttype>Unrmoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>145.0000</initialhitpoints>
+		<maxhitpoints>145.0000</maxhitpoints>
+		<trainpoints>12.0000</trainpoints>
+		<buildlimit>15</buildlimit>
+		<weightclass>6</weightclass>
+		<populationcount>2</populationcount>
+		<maxvelocity>6.0000</maxvelocity>
+		<los>16.0000</los>
+		<bloodgroupoverride>noblood</bloodgroupoverride>
+		<cost resourcetype="Favor">5.0000</cost>
+		<cost resourcetype="Gold">200.0000</cost>
+		<armor type="Hack" value="0.46000"></armor>
+		<armor type="Pierce" value="0.68000"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>Unit</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>MythUnit</unittype>
+		<unittype>LogicalTypeMythUnitNotTitan</unittype>		
+		<unittype>LogicalTypeMythUnitNotFlying</unittype>
+		<unittype>AbstractMythSoldier</unittype>
+		<unittype>CavalryLineUpgraded</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<unittype>LogicalTypeMeleeCavalry</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Hack">20.00000</damage>
+			<damagebonus type="Hero">2.000000</damagebonus>
+			<maxrange>1.000000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>Trail</name>
+			<type>Trail</type>
+			<persistent>1</persistent>
+			<trailprotounit frequency="0.25">FeiTrail</trailprotounit>
 		</protoaction>
 	</unit>
 	<!-- Greek Special Naval Units -->

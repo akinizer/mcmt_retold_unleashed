@@ -747,6 +747,11 @@ ID = "STR_UNIT_HESPERIDES_NAME"   ;   Str = "Hesperides"
 ID = "STR_UNIT_HESPERIDES_SR"   ;   Str = "Tree Nymphs that live inside the legendary tree"
 ID = "STR_UNIT_HESPERIDES_LR"   ;   Str = "The legendary tree inhabits Golden Apples and Nymphs and stands at the western edge of the world in presence of Atlas condemned to lift up Celestial Heavens"
 
+// GREEK SPECIAL UNITS
+ID = "STR_UNIT_PALERIDER_NAME"   ;   Str = "Pale Rider"
+ID = "STR_UNIT_PALERIDER_SR"   ;   Str = "Death's Charger"
+ID = "STR_UNIT_PALERIDER_LR"   ;   Str = "As the royal servants of Hades, Pale Riders chase whoever flees from Underworld's domain or the Death's very self"
+
 // NORSE SPECIAL UNITS
 ID = "STR_UNIT_RANGER_ELF_NAME"   ;   Str = "Ranger Elf"
 ID = "STR_UNIT_RANGER_ELF_SR"   ;   Str = "Effective at both melee and range"

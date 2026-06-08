@@ -517,6 +517,22 @@
         <effect type="Data" amount="0.01" subtype="BuildPoints" relativity="Percent"><target type="ProtoUnit">AbstractFarm</target></effect>
       </effects>
     </tech>
+    
+    <tech name="ArchaicAgePoseidon">
+      <effects>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Hetairos" row="0" column="3" relativity="Assign" mergeMode="add">
+          <target type="ProtoUnit">Stable</target></effect>
+      </effects>
+    </tech>
+
+    <tech name="HeroicAgeHades">
+      <effects>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">PaleRider</target></effect> 
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="PaleRider" row="0" column="5" relativity="Assign" mergeMode="add">
+          <target type="ProtoUnit">Stable</target></effect>
+      </effects>
+    </tech>
 
     <tech name="MythicAgeIsis">
       <effects>
@@ -1039,6 +1055,8 @@
         <!--AbstractSpectral-->        
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSpectral" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">HadesShade</target></effect>    
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSpectral" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">PaleRider</target></effect>    
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSpectral" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">AbstractShinigami</target></effect>  
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSpectral" relativity="Absolute" mergeMode="add">
@@ -4788,7 +4806,7 @@
 
       <unit name="HippeusKnight" mergeMode="add"></unit>
       <unit name="ProdromosKnight" mergeMode="add"></unit>
-      <unit name="HetaroiKnight" mergeMode="add"></unit>
+      <unit name="HetairosKnight" mergeMode="add"></unit>
       <unit name="AchillesKnight" mergeMode="add"></unit>
       <unit name="GreekSpy" mergeMode="add"></unit>
 
@@ -4889,14 +4907,14 @@
         kataskopos - barbarian
         hippeus rider
         prodromos rider
-        hetaroi rider
+        Hetairos rider
         scylla - bewitched girl
         warshipnothero - toxotes / gastraphetoros / amazon raft
         argo - jason raft
 
         <unit name="HippeusKnight" mergeMode="add"></unit>
 	<unit name="ProdromosKnight" mergeMode="add"></unit>
-	<unit name="HetaroiKnight" mergeMode="add"></unit>
+	<unit name="HetairosKnight" mergeMode="add"></unit>
 	<unit name="AchillesKnight" mergeMode="add"></unit>
 	<unit name="GreekSpy" mergeMode="add"></unit>
       -->
