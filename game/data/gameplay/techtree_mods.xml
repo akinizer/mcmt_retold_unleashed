@@ -1278,6 +1278,18 @@
           <target type="ProtoUnit">AbstractConstruct</target></effect> 
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractLightningVulnerable" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">NavalUnit</target></effect>
+        <!--AbstractAquaticDealer-->
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractAquaticDealer" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">LogicalTypeNavalMythUnit</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractAquaticDealer" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">QingLong</target></effect>
+        <!--AbstractDissolvable-->
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractDissolvable" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">RockGiant</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractDissolvable" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">VillagerChineseClay</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractDissolvable" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">TerracottaRider</target></effect>
         <!--AbstractDivineLight-->   
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractDivineLight" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">AbstractSorcererLight</target></effect>
@@ -1440,6 +1452,12 @@
 
         <effect type="Data" allactions="1" amount="-0.10" subtype="Damagebonus" unittype="AbstractMythResistant" relativity="Absolute">
           <target type="ProtoUnit">LogicalTypeMythUnitNotTitan</target></effect>
+
+        <effect type="Data" allactions="1" amount="0.10" subtype="Damagebonus" unittype="AbstractDissolvable" relativity="Absolute">
+          <target type="ProtoUnit">AbstractAquaticDealer</target></effect>
+
+        <effect type="Data" allactions="1" amount="-0.10" subtype="Damagebonus" unittype="AbstractNymph" relativity="Absolute">
+          <target type="ProtoUnit">AbstractAquaticDealer</target></effect>
 
         <effect type="Data" allactions="1" amount="0.10" subtype="Damagebonus" unittype="AbstractEternalShadow" relativity="Absolute">
           <target type="ProtoUnit">AbstractDivineLight</target></effect>
