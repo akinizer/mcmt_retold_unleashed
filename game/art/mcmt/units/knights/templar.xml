@@ -1,0 +1,19 @@
+<animfile validation="strict">
+	<attachment>Staff<component>ModelComp<assetreference type="TMModel"><file>atlantean\units\myth\automaton\automaton_upgrade_sword</file></assetreference></component><anim>Idle<component>ModelComp</component></anim></attachment>
+	<attachment>HeroGlow<include>vfx\godtechs\flaming_blood_target.xml</include></attachment>
+	<attachment>HeroBirth<include>vfx\glow\hero_birth.xml</include></attachment>
+	<attachment>HeroDeath<include>vfx\glow\lesser_hero_death.xml</include></attachment>
+	<component>ModelComp<assetreference type="TMModel"><file>atlantean\units\infantry\oracle\oracle_hero</file></assetreference><attach name="HeroGlow" attachpoint="hero_glow"></attach></component>
+	<anim>HandAttack<assetreference type="TMAnimation"><file>atlantean\units\infantry\oracle\anim\oracle_attack_a</file><tag type="Attack">0.5</tag></assetreference><component>ModelComp</component><attach name="Staff" attachpoint="weapon"></attach></anim>
+	<anim>Bored<assetreference type="TMAnimation"><file>atlantean\units\infantry\oracle\anim\oracle_bored_a</file></assetreference><component>ModelComp</component><attach name="Staff" attachpoint="weapon"></attach></anim>
+	<anim>Death<assetreference type="TMAnimation"><file>atlantean\units\infantry\oracle\anim\oracle_death_a</file></assetreference><component>ModelComp</component><attach name="Staff" attachpoint="weapon"></attach><attach name="HeroDeath" attachpoint="bonethatdoesntexist"></attach></anim>
+	<anim>Flail<assetreference type="TMAnimation"><file>atlantean\units\infantry\oracle\anim\oracle_flail_a</file></assetreference><component>ModelComp</component><attach name="Staff" attachpoint="weapon"></attach></anim>
+	<anim>Idle<assetreference type="TMAnimation"><file>atlantean\units\infantry\oracle\anim\oracle_idle_a</file></assetreference><component>ModelComp</component><attach name="Staff" attachpoint="weapon"></attach></anim>
+    <anim>Build<assetreference type="TMAnimation"><file>atlantean\units\infantry\oracle\anim\oracle_maxlos_a</file><tag type="particles" popcornfxname="objects\oracle\oracle_maxlos.pkfx" bone="vfx_staff" movewithbone="true" stopwithanim="false" adjustduration="false">0.40</tag><tag type="particles" popcornfxname="objects\oracle\oracle_los.pkfx" bone="vfx_staff" movewithbone="true" stopwithanim="false" adjustduration="false">0.120</tag></assetreference><component>ModelComp</component><attach name="Staff" attachpoint="weapon"></attach></anim>
+	<anim>Walk<assetreference type="TMAnimation"><file>atlantean\units\infantry\oracle\anim\oracle_walk_a</file></assetreference><component>ModelComp</component><attach name="Staff" attachpoint="weapon"></attach></anim>
+	<anim>Birth<assetreference type="TMAnimation"><file>atlantean\units\infantry\oracle\anim\oracle_hero_birth_a</file></assetreference><component>ModelComp</component><attach name="Staff" attachpoint="weapon"></attach><attach name="HeroBirth" attachpoint="bonethatdoesntexist"></attach></anim>
+	<anim>Carry<assetreference type="TMAnimation"><file>atlantean\units\infantry\oracle\anim\oracle_hero_carry_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>CarryBored<assetreference type="TMAnimation"><file>atlantean\units\infantry\oracle\anim\oracle_hero_carrybored_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>CarryIdle<assetreference type="TMAnimation"><file>atlantean\units\infantry\oracle\anim\oracle_hero_carryidle_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Recover<assetreference type="TMAnimation"><file>atlantean\units\infantry\oracle\anim\oracle_hero_recover_a</file><tag type="particles" popcornfxname="glow\hero_recover.pkfx" bone="vfx_recover" movewithbone="false" stopwithanim="false" adjustduration="false">0.02</tag></assetreference><component>ModelComp</component><attach name="Staff" attachpoint="weapon"></attach></anim>
+</animfile>

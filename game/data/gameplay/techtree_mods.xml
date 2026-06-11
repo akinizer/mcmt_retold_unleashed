@@ -2216,6 +2216,7 @@
               <pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
                 <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>       
         -->
+              
             <!--Founders-->            
             <effect type="TechStatus" status="obtainable">MCMT_SpecialService</effect>       
           	<!--Structure Improvements-->
@@ -7219,10 +7220,28 @@
 
       <effect type="Data" action="RangedAttack" amount="10.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">Hero</target></effect>
-
-      <effect type="CreateUnit" unit="OracleHero" generator="AbstractTemple" mergeMode="add">
-        <pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
-          <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
+      
+      <effect type="TechStatus" status="obtainable" mergeMode="add">TempleOfSolaris</effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="TempleOfSolaris" row="2" column="2" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Temple</target></effect>	
+    </effects>
+  </tech>
+  <tech name="TempleOfSolaris" mergeMode="add">
+    <displaynameid>STR_TECH_TEMPLEOFSOLARIS_NAME</displaynameid>
+    <rollovertextid>STR_TECH_TEMPLEOFSOLARIS_LR</rollovertextid>
+    <cost resourcetype="Food">750.0000</cost>
+    <cost resourcetype="Gold">750.0000</cost>
+    <cost resourcetype="Favor">15.0000</cost>
+    <researchpoints>40.0000</researchpoints>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\tech\templeofsolaris.jpg</icon>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <flag>InfiniteTech</flag>
+    <effects>
+      <effect type="CreateUnit" unit="Templar" generator="Temple">
+        <pattern type="Scatter" speed="0.00" radius="0.00" quantity="5.00" minradius="0.00">
+        <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
     </effects>
   </tech>
   <tech name="SpiritedCharge">

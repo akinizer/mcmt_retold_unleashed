@@ -158,7 +158,6 @@
         - Medusa: renamed to "gorgon"
             - faceofthegorgon: sets name to "gorgon matriarch"
     - naval: Carcinos+
-
     
 - hero:
     - favor costs removed, pop 1 or 2
@@ -195,7 +194,10 @@
             - model: murmillo helm, fanatic body
         - AthenianAxeman: bash ability, slower rof, melee range
         - AthenianHalberdier: highest melee range, slower rof
-
+- Knights
+    - OlympicGames
+        - Temple of Solaris: infinite tech, train Templar x5
+            - Templar: hero infantry, anti-economic, anti-healer, builder [temple, fortress]
 4. Atlanean reworks from mcmt mod and new changes
 - myth unit:
     - popcosts
@@ -1143,22 +1145,6 @@
 ==============================================================================
 
 === PLANNED: MINOR CHANGES
-greek: templar, replace oracle summoned by olympic games
-    path1: healer, mace weapon model
-        handattack: snare on hit
-        chargedhandattack: 
-    path2: debuffer, staff weapon model, fire damage on hit
-    <protoaction>
-        <name>Pacify</name>
-        <rof>3.5</rof>
-        <maxrange>18.000000</maxrange>
-        <onhiteffect type="StatModify" duration="5.000000">
-            <modify type="ROF">3.000000</modify>
-            <modify type="Speed">0.670000</modify>
-        </onhiteffect>
-        <onhiteffect type="Attach" proto="VFXCaladriaPacify" attachbone="spine" duration="5.000000"></onhiteffect>
-        <exclusive>1</exclusive>
-    </protoaction>
 mobileorbitalarray: castpower forestfire_minor / orbitalstrike
 
 === FORBIDDEN TECHS

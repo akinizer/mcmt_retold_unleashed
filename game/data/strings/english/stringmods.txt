@@ -752,6 +752,13 @@ ID = "STR_UNIT_PALERIDER_NAME"   ;   Str = "Pale Rider"
 ID = "STR_UNIT_PALERIDER_SR"   ;   Str = "Death's Charger"
 ID = "STR_UNIT_PALERIDER_LR"   ;   Str = "As the royal servants of Hades, Pale Riders chase whoever flees from Underworld's domain or the Death's very self"
 
+ID = "STR_UNIT_TEMPLAR_NAME"   ;   Str = "Templar (Hero Knight)"
+ID = "STR_UNIT_TEMPLAR_SR"   ;   Str = "Elite Knights of Knight Order"
+ID = "STR_UNIT_TEMPLAR_LR"   ;   Str = "Elite Infantries that train in Temple of Solaris and form army to spread wisdom by any means necessary. Effective against Economic Units and Healers"
+
+ID = "STR_TECH_TEMPLEOFSOLARIS_NAME"   ;   Str = "Temple of Solaris"
+ID = "STR_TECH_TEMPLEOFSOLARIS_LR"   ;   Str = "Beacon of the Knight Order that praises the sun"
+
 // NORSE SPECIAL UNITS
 ID = "STR_UNIT_RANGER_ELF_NAME"   ;   Str = "Ranger Elf"
 ID = "STR_UNIT_RANGER_ELF_SR"   ;   Str = "Effective at both melee and range"

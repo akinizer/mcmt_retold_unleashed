@@ -13,13 +13,13 @@
 	<tactic>Water
         <action>TakeOff</action>
         <action>Land</action>
-		<walkanim>WaterWalk</walkanim>
-		<idleanim>WaterIdle</idleanim>
+		<walkanim>Walk</walkanim>
+		<idleanim>Idle</idleanim>
     </tactic>
 	<tactic>Ground
 		<action>TakeOff</action>
         <action>Land</action>
-		<walkanim>Walk</walkanim>
-		<idleanim>Idle</idleanim>
+		<walkanim>WalkLand</walkanim>
+		<idleanim>IdleLand</idleanim>
 	</tactic>
 </tactics>

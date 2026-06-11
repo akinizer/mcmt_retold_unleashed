@@ -19712,6 +19712,117 @@
 			<modelattachmentbone>Spine</modelattachmentbone>
 		</protoaction>
 	</unit>
+	<unit name="Templar">
+		<displaynameid>STR_UNIT_TEMPLAR_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_TEMPLAR_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_TEMPLAR_SR</shortrollovertextid>
+		<icon>resources\tech\templar.jpg</icon>
+		<minimapicon>ui\minimap\minimap_oracle</minimapicon>
+		<animfile>mcmt\units\knights\templar.xml</animfile>
+		<soundsetfile>atlantean\vo\oracle_hero\oracle_hero.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>105.0000</initialhitpoints>
+		<maxhitpoints>105.0000</maxhitpoints>
+		<trainpoints>11.0000</trainpoints>
+		<weightclass>5</weightclass>
+		<maxcontained>1</maxcontained>
+		<populationcount>1</populationcount>
+		<maxvelocity>4.3000</maxvelocity>
+		<stealthdetectionradius>5.000000</stealthdetectionradius>
+		<los>5.0000</los>
+		<cost resourcetype="Food">35.0000</cost>
+		<cost resourcetype="Gold">65.0000</cost>
+		<armor type="Hack" value="0.4000"></armor>
+		<armor type="Pierce" value="0.4500"></armor>
+		<armor type="Crush" value="0.6900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>Unit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>AbstractInfantry</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+		<unittype>Hero</unittype>
+		<unittype>MinorHero</unittype>
+		<unittype>HeroInfantry</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>		
+		<unittype>LogicalTypeFindMilitaryHero</unittype>		
+		<unittype>LogicalTypeHealableHero</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<unittype>LogicalTypeMeleeInfantry</unittype>
+		
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>UnitTransformFree</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>HideGarrisonFlag</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+
+		<train row="0" column="4">Temple</train>
+		<train row="0" column="5">Fortress</train>
+
+		<contain external="1">LogicalTypePickable</contain>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Hack">12.000000</damage>
+			<damagebonus type="EconomicUnit">8.000000</damagebonus>
+			<damagebonus type="AbstractHealer">6.000000</damagebonus>
+			<maxrange>0.500000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>Pickup</name>
+			<type>Pickup</type>
+			<maxrange>1</maxrange>
+			<rate type="LogicalTypePickable">1.00000</rate>
+		</protoaction>
+		<protoaction>
+			<name>DropOff</name>
+			<type>DropOff</type>
+			<maxrange>1</maxrange>
+			<rate type="AbstractTemple">1.00000</rate>
+		</protoaction>
+		<protoaction>
+			<name>Build</name>
+			<type>Build</type>
+			<maxrange>0.2</maxrange>
+			<anim>Build</anim>
+			<rate type="Temple">1.000000</rate>
+			<rate type="Fortress">1.000000</rate>
+			<typedmaxrange type="Temple">2.0</typedmaxrange>
+			<typedmaxrange type="Fortress">2.0</typedmaxrange>
+		</protoaction>
+	</unit>
 	<!-- dismount units knights TODO
 	<unit name="HippeusKnight" mergeMode="add"></unit>
 	<unit name="ProdromosKnight" mergeMode="add"></unit>
