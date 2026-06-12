@@ -308,6 +308,24 @@
 		</protoaction>
     </unit>
 
+	<unit name="AmazonArcher">
+		<unittype>InfantryLineUpgraded</unittype>
+		<tactics>global_infantry_proximitymodes.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<damage type="Divine" mergeMode="remove">1.000000</damage>
+			<minrange>4.000000</minrange>
+		</protoaction>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.200000</rof>
+			<damage type="Hack">8.000000</damage>
+			<damagebonus type="MythUnit">1.750000</damagebonus>
+			<damagebonus type="AbstractInfantry">1.250000</damagebonus>
+			<maxrange>0.500000</maxrange>
+		</protoaction>
+	</unit>
+
     <!-- Greek Myth Units: Demeter -->
     <unit name="HarpyMyth">
         <initialhitpoints>200.0000</initialhitpoints>
@@ -2207,14 +2225,10 @@
 	</unit>
 	
 	<unit name="Myrmidon">
-		<initialshieldpoints>20</initialshieldpoints>
-		<maxshieldpoints>20</maxshieldpoints>
-		
+		<buildlimit>15</buildlimit>
 		<unittype>Hero</unittype>
 		<unittype>MinorHero</unittype>
 		<unittype>HeroShadowUpgraded</unittype>
-		
-		<buildlimit>15</buildlimit>
 		
 		<armor type="Hack" value="0.4000"></armor>
 		<armor type="Pierce" value="0.4000"></armor>
@@ -2223,8 +2237,8 @@
 		<protoaction>
 			<name>HandAttack</name>
 			<rof>1.400000</rof>
-			<damage type="Divine">9.000000</damage>
-			<damage type="Hack">3.000000</damage>
+			<damage type="Hack">6.000000</damage>
+			<damage type="Divine" mergeMode="remove">11.000000</damage>
 			<maxrange>0.500000</maxrange>
 		</protoaction>
 		<protoaction>
@@ -2452,7 +2466,7 @@
 		<unittype>AbstractInfantry</unittype>
 		<unittype>InfantryLineUpgraded</unittype>
 		
-		<movementtype>amphibious</movementtype>
+		<movementtype>air</movementtype>
 		<flag>TieToWaterSurface</flag>
 		
 		<armor type="Hack" value="0.9900"></armor>
@@ -2606,6 +2620,28 @@
 
     <!-- Greek Military Units-->
     <!-- Greek Naval Units-->
+	<unit name="Pentekonter">
+		<directionalarmor angle="1.0472" value="0.5000"></directionalarmor>
+		<flag>AreaDamageConstant</flag>
+		<protoaction>
+			<name>HandAttack</name>
+			<maxrange>5.0</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>ChargedHandAttack</name>
+			<damage type="Crush">75.000000</damage>
+			<damagearea>5.000000</damagearea>
+			<damageflags>Enemy|Nature</damageflags>
+			<maxrange>5.0</maxrange>
+			<onhiteffect type="Throw" targetunittype="HumanSoldier"></onhiteffect>
+			<onhiteffect type="Throw" targetunittype="LogicalTypeVillagerNotHero"></onhiteffect>
+			<throw>1</throw>
+			<impactforcemin>300.0f</impactforcemin>
+			<impactforcemax>600.0f</impactforcemax>
+			<impactlaunchangle>10.0</impactlaunchangle>
+			<areasortmode>Directional</areasortmode>
+		</protoaction>
+	</unit>
     <!-- Greek Buildings-->
 	<unit name="CommunalHearth" orderhint="3">
 		<unittype>FoodDropsite</unittype>
@@ -2698,6 +2734,7 @@
 		<unittype>MilitaryUnit</unittype>
 		<unittype>AbstractCavalry</unittype>
 		<unittype>CavalryLineUpgraded</unittype>
+		<tactics>mcmt_nereid.tactics</tactics>
 		<protoaction>
 		  <name>ChargedHandAttack</name>
 		  <rof>3.000000</rof>
@@ -2715,6 +2752,14 @@
       	  </onhiteffect> 
 		  <onhiteffect type="Attach" targetunittype="HumanSoldier" proto="VFXBleed" attachbone="spine" duration="3.000000"></onhiteffect>
 		</protoaction>		
+		<protoaction>
+			<name>JumpAttack</name>
+			<rof>0.010000</rof>
+			<damage type="Hack">60.000000</damage>
+			<damagebonus type="MythUnit">4.500000</damagebonus>
+			<minrange>4.000000</minrange>
+			<maxrange>30.000000</maxrange>
+		</protoaction>
 	</unit>
 	<unit name="Automaton">
 		<unittype>InfantryLineUpgraded</unittype>
@@ -20714,7 +20759,6 @@
 		<unittype>MythUnit</unittype>
 		<unittype>LogicalTypeMythUnitNotTitan</unittype>		
 		<unittype>LogicalTypeMythUnitNotFlying</unittype>
-		<unittype>AbstractMythSoldier</unittype>
 		<unittype>CavalryLineUpgraded</unittype>
 		<unittype>LogicalTypeConvertsHerds</unittype>
 		<unittype>LogicalTypeEarthquakeAttack</unittype>
@@ -20743,6 +20787,7 @@
 			<rof>2.000000</rof>
 			<damage type="Hack">20.00000</damage>
 			<damagebonus type="Hero">2.000000</damagebonus>
+			<damagebonus type="MythUnit">0.800000</damagebonus>
 			<maxrange>1.000000</maxrange>
 		</protoaction>
 		<protoaction>

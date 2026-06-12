@@ -184,7 +184,10 @@
 	<SandDevourer>
 		<ability>AbilityMountainGiantBludgeon<chargetimeasrof>1</chargetimeasrof></ability>
 	</SandDevourer>
-	
+		<!--Atlantean-MythUnit-->
+	<Nereid>
+		<ability>AbilityFlyingShark<chargetimeasrof>1</chargetimeasrof></ability>
+	</Nereid>
 		<!--Greek Special Units -->
 	<Pegasus>
 		<ability>MCMT_Descend<rof>5</rof><castonself>true</castonself><noautocast>true</noautocast></ability>

@@ -913,6 +913,13 @@ ID = "STR_TECH_DARK_WATER_LR"   ;   Str = "Nun who has been ruling Cosmos and th
 ID = "STR_TECH_THRACIAN_HORSES_LR"   ;   Str = "Thracian Mares of Diomedes"
 ID = "STR_TECH_GOLDEN_APPLES_LR" ;   Str = "During the journey to Eleventh Labor, Zeus gives Heracles permission to free Prometheus from his eternal punishment. In return Prometheus advises Heracles whereabouts of Atlas. Heracles finds Atlas lifting the Celestial Heavens upon his shoulders. As one of Titan faction members during Titanomachy, Atlas is condemned to hold up the sky on the western edge of the Earth whereas many Titans are imprisoned in Tartarus beneath Hades' Underworld. He makes a deal and Atlas gives Heracles the Golden Apples that grow on Tree of Hesperides and can be picked up only by divine beings. Atlast lets Heracles take over the sky with no intention to give it back. Heracles out smarts Atlas and tells him to lift it for a moment and finishes his task"
 
+ID = "STR_TECH_ARGIVE_BLESSING_ZEUS_NAME" ;   Str = "Argive Blessing (Zeus)"
+ID = "STR_TECH_ARGIVE_BLESSING_ZEUS_LR" ;   Str = "Zeus grants his divine blessing upon the chosen infantries"
+
+ID = "STR_TECH_ARGIVE_BLESSING_DEMETER_NAME" ;   Str = "Argive Blessing (Demeter)"
+ID = "STR_TECH_ARGIVE_BLESSING_DEMETER_LR" ;   Str = "Demeter grants her divine blessing upon the chosen archers"
+
+
 // REWORKED AZTEC TECHS
 ID = "STR_TECH_NAHUALLATOLLI_LR"   ;   Str = "Nahuallatolli spell mastery improves capabilities of sorcerers"
 
@@ -1134,6 +1141,7 @@ ID = "STR_TECH_URBAN_FESTIVAL_SR"   ;   Str = "Urban Dionysian Festival where ci
 ID = "STR_TECH_MADNESSOFDIONYSUS_NAME"   ;   Str = "Madness of Dionysus"
 ID = "STR_TECH_MADNESSOFDIONYSUS_LR"   ;   Str = "Dionysus goes through madness phase that leaves festive ego behind and embraces bloodthirsty personality. As he turns into Bull God, his followers orchestrate murders "
 ID = "STR_TECH_ELDRITCHSECTS_NAME"   ;   Str = "Eldritch Sects"
+ID = "STR_TECH_ELDRITCHSECTS_LR"   ;   Str = "Rituals that bring the awakening of Eldritch Terrors, Chthulhu Worshippers and Eater of World within the both mortal and cosmic realms"
 
 ID = "STR_TECH_DETONATORS_NAME"   ;   Str = "Detonators"
 ID = "STR_TECH_DETONATORS_LR"   ;   Str = "Explosive breakthrough of the technology that can be used both offensively and defensively"
@@ -1196,6 +1204,7 @@ ID = "STR_ACTION_RANGEDATTACKAQUATIC"   ;   Str = "Hydro Mine Attack"
 ID = "STR_ACTION_RANGEDATTACKCORRUPTION"   ;   Str = "Miasma Bomb Attack"
 
 ID = "STR_ACTION_DEMOLITION_ATTACK"   ;   Str = "Demolition Attack"
+ID = "STR_ACTION_DEFLECT_ATTACK"   ;   Str = "Deflect Attack"
 
 ID = "STR_ACTION_SLASHATTACK"   ;   Str = "Slash Attack"
 ID = "STR_ACTION_SPEARTHRUSTATTACK"   ;   Str = "Spear Thrust Attack"
@@ -1226,6 +1235,8 @@ ID = "STR_ACTION_SONICBLASTATTACKFLYING"   ;   Str = "Sonic Blast Attack (Air)"
 ID = "STR_ABILITY_ABARDSTALE"   ;   Str = "A Bard's Tale"
 
 ID = "STR_ABILITY_BARRAGE_ATTACK"   ;   Str = "Barrage Attack"
+ID = "STR_ABILITY_FLYINGSHARK"   ;   Str = "Flying Shark"
+ID = "STR_ABILITY_FLYINGSHARK_LR"   ;   Str = "Nereid Shark bursts out of water and dives on the target"
 
 ID = "STR_ABILITY_BASH_ATTACK"   ;   Str = "Bash Attack"
 ID = "STR_ABILITY_DEADLY_CHARM"   ;   Str = "Deadly Charm"

@@ -1693,4 +1693,12 @@
 		<rangeindicator range="4.0" speed="0.2">Circle</rangeindicator>
 		<unitaction>Teleport</unitaction>
 	</power>
+	<power name="AbilityFlyingShark" type="UnitAction">
+		<displaynameid>STR_ABILITY_FLYINGSHARK</displaynameid>
+		<rolloverid>STR_ABILITY_FLYINGSHARK_LR</rolloverid>
+		<icon>greek\static_color\abilities\bellerophon_ability_icon.png</icon>
+		<placement enemy="" allowgroundtarget="">Unit</placement>
+		<abstractplacementtargettype>Unit</abstractplacementtargettype>
+		<unitaction>JumpAttack</unitaction>
+	</power>
 </powersmod>

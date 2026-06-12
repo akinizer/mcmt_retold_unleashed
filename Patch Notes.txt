@@ -119,6 +119,10 @@
             - spawn on kill: lykaonvillager 
     - Hamadryad: proximity attack mode, damage rework, bonus (humansoldier)
     - Siren: chargedmodify (water,speed+)
+- humansoldier:
+    - AmazonArcher:
+        - RangedAttack (default): Bow attachment
+        - HandAttack: Blade attachment, Destroyer anim 
 - tech:
     - FatedArrows: NumberBounces myth +3, hero +8
     - ThornedWalls: regen Walls 1.0, Hamadryad 0.8
@@ -126,9 +130,13 @@
     - PansPioneers: spawn (PansChosen x1,TownCenter VillageCenter)
     - SacredLand: ThornAttack (Farm)
     - EnchantedHymn: AbilityOrpheus Range+
-    - HymnOfTheWildwood: affects on AbstractWoodland
+    - HymnOfTheWildwood: affects on AbstractNymph
     - GuidingFlame: Dock LOS+, Dock StealthDetectionRadius+
     - HarvestOfSouls: AbstractInfantry bonusdamage vs AbstractSpectral
+    - ArgivePatronageZeus:
+        - ArgiveBlessingZeus: myrmidon divine damage enabled, regenerative shield
+    - ArgivePatronageDemeter:
+        - ArgiveBlessingDemeter: amazonarcher divinedamage enabled
 - godpower:
     - cost zero
     - CommuneHearth: dropsite (food,wood)
@@ -145,12 +153,15 @@
             - chargedmodify: walk, idle, waterwalk, wateridle anim
             - takeoff & descend: delayedtransform, transition anim
             - PehasusGroundedMessenger+: passenger 1 AbstractInfantry
-    - melee: Colossus+, Hydra+, NemeanLion+, Cyclops+, HadesShade+
+    - melee: Colossus+, Hydra+, NemeanLion+, Cyclops+
+        - HadesShade+:
+            - movementtype: air
         - Minotaur+:
             - BullRush: Dash Attack, throw units, anti-building, anti-army
             - Gore (LabyrnthOfMinos): changed to auxchargedattack
         - PaleRider:
             - Hades cavalry, counter-hero, AbstractMythSoldier
+            - Weak vs MythUnit
             - Trail: counter-army, effective in crowds
             - Trainable at Stable
     - ranged: Medusa+, Sentinel+
@@ -179,6 +190,10 @@
 - military units:
     - popcosts: humansoldier 1 or 2
     - Kataskopos+
+- naval
+    - Pentekonter: 
+        - DirectionalArmor
+        - ChargedRangedAttack: areadamage, crushdamage, throw humansoldier & villager
 - Spartans
     - Prereq: ClassicAgeAres
     - SpartanTraining: enables Spartan building, techs and units
@@ -211,7 +226,9 @@
     - flying: Caladria+
     - melee: Centimanus+, Automaton+, Behemoth+, Argus+, Promethean+
     - ranged: Satyr+, Lampades+
-    - naval: Nereid+, Manowar+, Servant+
+    - naval: Manowar+, Servant+ 
+        - Nereid+: JumpAttack
+
 - oracle:
     - popcosts: 1
 - humansoldier:
@@ -541,9 +558,10 @@
     - AegisShield: reflects handattack, bonusdamage vs MythUnit, MythResistant
     - FlamesOfTyphon: affects on AbstractInfernal, AbstractChthonic, Chimera ChargedRangedAttack dot+
     - BeastSlayer: affects on AbstractBeast and AbstractBeastFolk
-    - PhobosSpearOfPanic: bonusdamage vs hero
+    - PhobosSpearOfPanic: bonusdamage vs hero, also affects Peltast
     - EnyosBowOfHorror: affects on Gastraphetoros, AmazonArcher, bonusdamage vs hero
     - DeimosSwordOfDread: affects on Hetairos, bonusdamage vs hero
+    - Anastrophe: Pentekonter HackArmor+
 - atlantean
     - ArchaicAgeAtlantean:
         - MilitaryBarracks: Murmillo, Fanatic, Destroyer +
@@ -678,7 +696,6 @@
         - FinancialDevelopmentUpgradeI: boosts resource contained by nearby entities (food,wood,gold,InverseAura), renames market
         - FinancialDevelopmentUpgradeII: enables construction vehicles, renames market
         - FinancialDevelopmentUpgradeIII: improves workrates (construction vehicles), enables CyberTechWorldFinancialCenter
-
 
 17. Art Model Reworks
 - Pharaoh: chariot (tech model, gold), pharaoh (passenger attachment), sword (weapon attachment)

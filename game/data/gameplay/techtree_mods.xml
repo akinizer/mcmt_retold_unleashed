@@ -1439,6 +1439,10 @@
           <target type="ProtoUnit">Lampades</target></effect>
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">Nereid</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">HadesShade</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">PaleRider</target></effect>
       </effects>
     </tech>
 
@@ -6628,6 +6632,18 @@
   <!-- TECH REWORKS -->
 
   <!-- General - Techs -->
+  <tech name="HeroicFleet">
+    <effects>
+      <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythResistant" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">AbstractArcherShip</target></effect> 
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">AbstractArcherShip</target></effect>
+      <effect type="Data" action="RangedAttack" amount="3.0" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">AbstractArcherShip</target></effect>
+      <effect type="Data" subtype="LOS" amount="3.00" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractArcherShip</target></effect>
+    </effects>
+  </tech>
   <tech name="Omniscience">
     <effects>
       <effect type="Data" amount="1.00" subtype="RevealEnemyUI" relativity="Absolute" mergeMode="add">
@@ -6957,6 +6973,13 @@
     </effects>
   </tech>  
 
+  <!-- Greek - Naval Techs -->
+  <tech name="Anastrophe">
+    <effects>
+      <effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent">
+				<target type="ProtoUnit">Pentekonter</target></effect>
+    </effects>
+  </tech>
   <!-- Greek - Demeter Techs -->
   <tech name="PredatoryInstinct">
     <effects>
@@ -7080,7 +7103,7 @@
 				<target type="ProtoUnit">Hero</target></effect>
       <!---->
       <effect type="Data" protoaction="AreaHeal" amount="1.00" subtype="ProtoActionAdd" unittype="AreaHealContainer" relativity="Assign" mergeMode="add">
-				<target type="ProtoUnit">AbstractWoodland</target></effect>
+				<target type="ProtoUnit">AbstractNymph</target></effect>
     </effects>
   </tech>
   <tech name="GuidingFlame">
@@ -7100,6 +7123,56 @@
         <target type="ProtoUnit">AbstractInfantry</target></effect>
     </effects>
   </tech>
+  <tech name="ArgivePatronageDemeter">
+    <effects>
+      <effect type="TechStatus" status="obtainable">ArgiveBlessingDemeter</effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ArgiveBlessingDemeter" row="2" column="3" relativity="Assign">
+        <target type="ProtoUnit">Fortress</target></effect>
+    </effects>
+  </tech>
+  <tech name="ArgivePatronageZeus">
+    <effects>
+      <effect type="TechStatus" status="obtainable">ArgiveBlessingZeus</effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ArgiveBlessingZeus" row="2" column="3" relativity="Assign">
+        <target type="ProtoUnit">Fortress</target></effect>
+    </effects>
+  </tech>
+  <tech name="ArgiveBlessingZeus">
+		<displaynameid>STR_TECH_ARGIVE_BLESSING_ZEUS_NAME</displaynameid>
+		<rollovertextid>STR_TECH_ARGIVE_BLESSING_ZEUS_LR</rollovertextid>
+		<cost resourcetype="Food">200.0000</cost>
+		<cost resourcetype="Gold">300.0000</cost>
+		<cost resourcetype="Favor">30.0000</cost>
+		<researchpoints>40.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+		<icon>resources\greek\static_color\technologies\argive_patronage_icon.png</icon>
+		<flag>CountsTowardMilitaryScore</flag>
+		<flag>MythTech</flag>
+		<effects>
+		  <effect type="Data" amount="11.00" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute">
+				<target type="ProtoUnit">Myrmidon</target></effect>
+      <effect type="Data" amount="100" subtype="ShieldPoints" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Myrmidon</target></effect>
+      <effect type="Data" amount="1.0" subtype="UnitShieldRegenRate" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Myrmidon</target></effect>
+		</effects>
+	</tech>
+  <tech name="ArgiveBlessingDemeter">
+		<displaynameid>STR_TECH_ARGIVE_BLESSING_DEMETER_NAME</displaynameid>
+		<rollovertextid>STR_TECH_ARGIVE_BLESSING_DEMETER_LR</rollovertextid>
+		<cost resourcetype="Food">200.0000</cost>
+		<cost resourcetype="Gold">300.0000</cost>
+		<cost resourcetype="Favor">30.0000</cost>
+		<researchpoints>40.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+		<icon>resources\greek\static_color\technologies\argive_patronage_demeter_icon.png</icon>
+		<flag>CountsTowardMilitaryScore</flag>
+		<flag>MythTech</flag>
+		<effects>
+			<effect type="Data" amount="1.00" subtype="Damage" damagetype="Divine" action="RangedAttack" relativity="Absolute">
+				<target type="ProtoUnit">AmazonArcher</target></effect>
+		</effects>
+	</tech>
 
   <!-- Greek - Legacy Techs -->
   <tech name="MonstrousRage">
@@ -7486,9 +7559,7 @@
   <tech name="PhobosSpearOfPanic">
     <effects>
       <effect type="Data" amount="1.10" subtype="Damage" action="RangedAttack" relativity="BasePercent" mergeMode="add">
-				<target type="ProtoUnit">Gastraphetoros</target></effect>
-      <effect type="Data" amount="1.10" subtype="Damage" action="RangedAttack" relativity="BasePercent" mergeMode="add">
-				<target type="ProtoUnit">AmazonArcher</target></effect>
+				<target type="ProtoUnit">Peltast</target></effect>
 
       <effect type="Data" action="HandAttack" amount="1.0" subtype="DamageBonus" unittype="Hero" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">Hoplite</target></effect>
@@ -7496,6 +7567,8 @@
         <target type="ProtoUnit">Militia</target></effect>
       <effect type="Data" action="HandAttack" amount="1.0" subtype="DamageBonus" unittype="Hero" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">Prodromos</target></effect>
+      <effect type="Data" action="RangedAttack" amount="1.0" subtype="DamageBonus" unittype="Hero" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Peltast</target></effect>
     </effects>
   </tech>
   <tech name="EnyosBowOfHorror">
@@ -7751,7 +7824,7 @@
         <target type="ProtoUnit">HumanSoldier</target></effect>
 
       <effect type="TechStatus" status="obtainable">EldritchSects</effect>
-      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="EldritchSects" row="1" column="2" relativity="Assign" hidetooltip=""><target type="ProtoUnit">Temple</target></effect>	
+      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="EldritchSects" row="1" column="2" relativity="Assign"><target type="ProtoUnit">Temple</target></effect>	
     </effects>
   </tech>
   <tech name="EldritchSects" mergeMode="add">

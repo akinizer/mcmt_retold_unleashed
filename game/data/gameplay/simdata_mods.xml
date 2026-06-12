@@ -5781,6 +5781,97 @@
 		</animations>
 	</animxml>
 
+	<!-- atlantean unit rework -->
+	<animxml file="atlantean\units\myth\nereid\nereid.xml">
+		<animations>
+			<animinfo mergeMode="add">
+				<name>JumpFly</name>
+				<versioncount>3</versioncount>
+				<versions>
+					<version>
+						<file>greek\units\hero\bellerophon\anim\bellerophon_horse_jumptakeoff_a</file>
+						<duration>0.56667</duration>
+						<tags>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.01000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>SwooshSword</set>
+								</properties>
+							</tag>
+						</tags>
+					</version>
+					<version>
+						<file>greek\units\hero\bellerophon\anim\bellerophon_horse_jumpattack_a</file>
+						<duration>0.56667</duration>
+					</version>
+					<version>
+						<file>greek\units\hero\bellerophon\anim\bellerophon_horse_jumpland_a</file>
+						<duration>1.00000</duration>
+						<tags>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.10000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>HeavyFall</set>
+								</properties>
+							</tag>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.10000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>SwooshSword</set>
+								</properties>
+							</tag>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.10000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>GruntMaleCavalry</set>
+								</properties>
+							</tag>
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+		</animations>
+	</animxml>
+
+	<!-- greek unit reworks demeter -->
+	<animxml file="greek_demeter\units\archery\amazonarcher\amazonarcher.xml">
+		<animations>
+			<animinfo mergeMode="add">
+				<name>HandAttack</name>
+				<versioncount>2</versioncount>
+				<versions>
+					<version>
+						<file>atlantean\units\infantry\destroyer\anim\destroyer_attack_a</file>
+						<duration>1.33333</duration>
+						<tags>
+							<tag>
+								<type>Attack</type>
+								<position>0.50000</position>
+							</tag>
+						</tags>
+					</version>
+					<version>
+						<file>atlantean\units\infantry\destroyer\anim\destroyer_attack_b</file>
+						<duration>1.33333</duration>
+						<tags>
+							<tag>
+								<type>Attack</type>
+								<position>0.50000</position>
+							</tag>
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+		</animations>
+	</animxml>
 	<!-- greek unit reworks -->
 	<animxml file="greek\units\myth\pegasus\pegasus.xml">
 		<animations>
