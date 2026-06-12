@@ -2804,15 +2804,17 @@
 		<flag>TieToWaterSurface</flag>
 	</unit>
 	<unit name="ManOWar">
+		<armor type="Pierce" value="0.0300"></armor>
 		<protoaction>
 			<name>LightningAttack</name>
-			<rof>1.000000</rof>
-			<damage type="Divine">35.00000</damage>
+			<rof>0.800000</rof>
+			<damage type="Divine">9.60000</damage>
+			<damagebonus type="AbstractFlyingUnit">5.000000</damagebonus>
 			<damagebonus type="MythUnit">3.000000</damagebonus>
 			<damagebonus type="Hero">0.250000</damagebonus>
 			<maxrange>20.000000</maxrange>
 			<numberbounces>3</numberbounces>
-			<onhiteffect type="Stun" duration="1.00"></onhiteffect>
+			<onhiteffect type="Stun" duration="1.00" rate="0.80"></onhiteffect>
 		</protoaction>	
 	</unit>
 	<unit name="Caladria">
