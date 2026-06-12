@@ -22,6 +22,7 @@
 		<anim>Gore</anim>
 		<auxchargeaction>1</auxchargeaction>
 		<impacteffect>effects\impacts\hack</impacteffect>
+		<active>0</active>
 	</action>
     <action>
 		<name stringid="STR_ABILITY_BULLRUSH_ATTACK">Charge</name>

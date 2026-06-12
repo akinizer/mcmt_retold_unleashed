@@ -1052,6 +1052,13 @@
           <target type="ProtoUnit">TitanAtlantean</target></effect>  
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractInfernal" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">TitanKronos</target></effect>  
+        <!--AbstractChthonic-->     
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractChthonic" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Chimera</target></effect>  
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractChthonic" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Hydra</target></effect>  
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractChthonic" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">BullOfHeaven</target></effect>  
         <!--AbstractSpectral-->        
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSpectral" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">HadesShade</target></effect>    
@@ -7067,6 +7074,33 @@
     </effects>
   </tech>
 
+  <tech name="HymnOfTheWildwood">
+    <effects>
+      <effect type="Data" action="AreaHeal" amount="1.00" subtype="ActionEnable" relativity="Absolute" tooltipid="STR_TECH_HYMN_OF_THE_WILDWOOD_OVERRIDE" mergeMode="remove">
+				<target type="ProtoUnit">Hero</target></effect>
+      <!---->
+      <effect type="Data" protoaction="AreaHeal" amount="1.00" subtype="ProtoActionAdd" unittype="AreaHealContainer" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">AbstractWoodland</target></effect>
+    </effects>
+  </tech>
+  <tech name="GuidingFlame">
+    <effects>
+      <effect type="Data" amount="4" subtype="LOS" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">Ship</target></effect>
+      <!---->
+      <effect type="Data" amount="5.00" subtype="LOS" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Dock</target></effect>
+      <effect type="Data" amount="5" subtype="StealthDetectionRadius" relativity="Absolute">
+				<target type="ProtoUnit">Dock</target></effect>
+    </effects>
+  </tech>
+  <tech name="HarvestOfSouls">
+    <effects>
+       <effect type="Data" allactions="1" amount="4.0" subtype="Damagebonus" unittype="AbstractSpectral" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">AbstractInfantry</target></effect>
+    </effects>
+  </tech>
+
   <!-- Greek - Legacy Techs -->
   <tech name="MonstrousRage">
     <effects>
@@ -7084,6 +7118,11 @@
         <target type="ProtoUnit">Cow</target></effect>	
       <effect type="Data" amount="15.00" subtype="CarryCapacity" resource="Food" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">EconomicUpgraded</target></effect>
+
+      <effect type="Data" action="Gore" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Minotaur</target></effect>
+      <effect type="Data" amount="15.0" subtype="AuxRechargeTime" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Minotaur</target>	</effect>
     </effects>
   </tech>
   <tech name="AegisShield">
@@ -7141,7 +7180,7 @@
 		<icon>resources\shared\static_color\technologies\hunting_equipment_icon.png</icon>
 		<flag>CountsTowardEconomicScore</flag>
 		<effects>
-			 <effect type="Data" action="RangedAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute">
+			  <effect type="Data" action="RangedAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute">
           <target type="ProtoUnit">WarLoader_DefensiveTurret</target></effect>	
         <effect type="SetName" proto="MineralLoader" newname="STR_WARLOADER_NAME"></effect>  
 
@@ -7259,46 +7298,9 @@
     <effects>
       <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="MythUnit" relativity="Absolute" mergeMode="remove">
 				<target type="ProtoUnit">Hero</target></effect>
-      <!--Greek Beasts-->
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="Minotaur" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="Manticore" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="Hydra" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="Scylla" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="Carcinos" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="NemeanLion" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="Chimera" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="Chimera" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <!--Norse Beasts-->
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="FenrisWolfBrood" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="Kraken" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="JormunElver" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="Raven" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="Fafnir" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="Nidhogg" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <!--Egyptian Beasts-->
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="Wadjet" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="Roc" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="Scarab" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="WarTurtle" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="Petsuchos" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="Phoenix" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <!--Atlantean Beasts-->
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="Behemoth" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="ManOWar" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="SymphalianBird" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <!--Chinese Beasts-->
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="QiLin" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="YaZi" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="TaoWu" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="TaoTie" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="QingLong" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="YingLong" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="HunDun" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="ChiWen" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="XuanWu" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="QionQi" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="BaiHu" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="ZhuQue" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
+      <!--AbstractBeasts-->
+      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="AbstractBeast" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
+      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="AbstractBeastfolk" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
     </effects>
   </tech>
   <tech name="HandOfTalos">
@@ -7412,7 +7414,10 @@
   </tech>
   <tech name="FlamesOfTyphon">
     <effects>      
-      <effect type="Data" amount="0.20" subtype="OnHitEffect" action="ChargedRangedAttack" effecttype="DamageOverTime" duration="6.00" targettype="Unit" dmgtype="Divine" relativity="Assign" mergeMode="add">
+      <effect type="Data" amount="1.40" subtype="Damage" action="HandAttack" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">Chimera</target></effect>
+      <!---->
+      <effect type="Data" amount="0.40" subtype="OnHitEffect" action="ChargedRangedAttack" effecttype="DamageOverTime" duration="6.00" targettype="Unit" dmgtype="Divine" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">Chimera</target></effect>
       <effect type="Data" amount="1.00" subtype="OnHitEffect" action="ChargedRangedAttack" effecttype="Attach" duration="6.00" targettype="Unit" proto="VFXFire" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">Chimera</target></effect>
@@ -7420,18 +7425,18 @@
         <target type="ProtoUnit">Chimera</target></effect>
 
       <effect type="Data" amount="0.20" subtype="OnHitEffect" action="HandAttack" effecttype="DamageOverTime" duration="6.00" targettype="Unit" dmgtype="Divine" relativity="Assign" mergeMode="add">
-        <target type="ProtoUnit">Hydra</target></effect>
+        <target type="ProtoUnit">AbstractChthonic</target></effect>
       <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="6.00" targettype="Unit" proto="VFXFire" relativity="Assign" mergeMode="add">
-        <target type="ProtoUnit">Hydra</target></effect>
+        <target type="ProtoUnit">AbstractChthonic</target></effect>
       <effect type="Data" amount="1.00" subtype="OnHitEffectAttachBone" action="HandAttack" effecttype="Attach" targettype="Unit" attachbone="spine" relativity="Assign" mergeMode="add">
-        <target type="ProtoUnit">Hydra</target></effect>
+        <target type="ProtoUnit">AbstractChthonic</target></effect>
 
       <effect type="Data" amount="0.20" subtype="OnHitEffect" action="HandAttack" effecttype="DamageOverTime" duration="6.00" targettype="Unit" dmgtype="Divine" relativity="Assign" mergeMode="add">
-        <target type="ProtoUnit">TitanCerberus</target></effect>
+        <target type="ProtoUnit">AbstractInfernal</target></effect>
       <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="6.00" targettype="Unit" proto="VFXFire" relativity="Assign" mergeMode="add">
-        <target type="ProtoUnit">TitanCerberus</target></effect>
+        <target type="ProtoUnit">AbstractInfernal</target></effect>
       <effect type="Data" amount="1.00" subtype="OnHitEffectAttachBone" action="HandAttack" effecttype="Attach" targettype="Unit" attachbone="spine" relativity="Assign" mergeMode="add">
-        <target type="ProtoUnit">TitanCerberus</target></effect>
+        <target type="ProtoUnit">AbstractInfernal</target></effect>
     </effects>
   </tech>
   <tech name="ForgeOfOlympus">
@@ -7476,6 +7481,47 @@
         <target type="ProtoUnit">Hero</target></effect>
 
       <effect type="TechStatus" status="active" mergeMode="add">LightningWeaponsActive</effect>
+    </effects>
+  </tech>
+  <tech name="PhobosSpearOfPanic">
+    <effects>
+      <effect type="Data" amount="1.10" subtype="Damage" action="RangedAttack" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Gastraphetoros</target></effect>
+      <effect type="Data" amount="1.10" subtype="Damage" action="RangedAttack" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">AmazonArcher</target></effect>
+
+      <effect type="Data" action="HandAttack" amount="1.0" subtype="DamageBonus" unittype="Hero" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Hoplite</target></effect>
+      <effect type="Data" action="HandAttack" amount="1.0" subtype="DamageBonus" unittype="Hero" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Militia</target></effect>
+      <effect type="Data" action="HandAttack" amount="1.0" subtype="DamageBonus" unittype="Hero" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Prodromos</target></effect>
+    </effects>
+  </tech>
+  <tech name="EnyosBowOfHorror">
+    <effects>
+      <effect type="Data" amount="1.10" subtype="Damage" action="RangedAttack" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Gastraphetoros</target></effect>
+      <effect type="Data" amount="1.10" subtype="Damage" action="RangedAttack" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">AmazonArcher</target></effect>
+
+      <effect type="Data" action="RangedAttack" amount="1.0" subtype="DamageBonus" unittype="Hero" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Toxotes</target></effect>
+      <effect type="Data" action="RangedAttack" amount="1.0" subtype="DamageBonus" unittype="Hero" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Gastraphetoros</target></effect>
+      <effect type="Data" action="RangedAttack" amount="1.0" subtype="DamageBonus" unittype="Hero" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">AmazonArcher</target></effect>
+    </effects>
+  </tech>
+  <tech name="DeimosSwordOfDread">
+    <effects>
+      <effect type="Data" amount="1.10" subtype="Damage" action="RangedAttack" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Hetairos</target></effect>
+
+      <effect type="Data" action="HandAttack" amount="1.0" subtype="DamageBonus" unittype="Hero" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Hypaspist</target></effect>
+      <effect type="Data" action="HandAttack" amount="1.0" subtype="DamageBonus" unittype="Hero" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Hetairos</target></effect>
     </effects>
   </tech>
   <tech name="TempleOfHealing">

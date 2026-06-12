@@ -1170,6 +1170,12 @@ ID = "STR_HUD_UNIT_TYPE_ABSTRACT_EGYPTIAN_ARCHER"   ;   Str = "Egyptian Archer"
 ID = "STR_HUD_UNIT_TYPE_ABSTRACT_SCOUT"   ;   Str = "Scout Type"
 ID = "STR_HUD_UNIT_TYPE_ANIMAL_OF_SET"   ;   Str = "Animal of Set"
 ID = "STR_HUD_UNIT_TYPE_ABSTRACT_DWARF"   ;   Str = "Dwarven Race"
+ID = "STR_HUD_UNIT_TYPE_ABSTRACT_BEAST"   ;   Str = "Mythic Beast"
+ID = "STR_HUD_UNIT_TYPE_ABSTRACT_BEASTFOLK"   ;   Str = "Beastfolk"
+ID = "STR_HUD_UNIT_TYPE_ABSTRACT_INFERNAL"   ;   Str = "Infernals"
+ID = "STR_HUD_UNIT_TYPE_ABSTRACT_CHTHONIC"   ;   Str = "Chthonic Entities"
+ID = "STR_HUD_UNIT_TYPE_ABSTRACT_WOODLAND"   ;   Str = "Woodland Inhabitants"
+ID = "STR_HUD_UNIT_TYPE_ABSTRACT_SPECTRAL"   ;   Str = "Spectrals"
 
 // SUPERWEAPONS
 ID = "STR_POWER_PSIONIC_DECIMATOR"   ;   Str = "Psionic Decimator"

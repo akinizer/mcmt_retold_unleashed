@@ -126,6 +126,9 @@
     - PansPioneers: spawn (PansChosen x1,TownCenter VillageCenter)
     - SacredLand: ThornAttack (Farm)
     - EnchantedHymn: AbilityOrpheus Range+
+    - HymnOfTheWildwood: affects on AbstractWoodland
+    - GuidingFlame: Dock LOS+, Dock StealthDetectionRadius+
+    - HarvestOfSouls: AbstractInfantry bonusdamage vs AbstractSpectral
 - godpower:
     - cost zero
     - CommuneHearth: dropsite (food,wood)
@@ -142,7 +145,10 @@
             - chargedmodify: walk, idle, waterwalk, wateridle anim
             - takeoff & descend: delayedtransform, transition anim
             - PehasusGroundedMessenger+: passenger 1 AbstractInfantry
-    - melee: Minotaur+, Colossus+, Hydra+, NemeanLion+, Cyclops+, HadesShade+
+    - melee: Colossus+, Hydra+, NemeanLion+, Cyclops+, HadesShade+
+        - Minotaur+:
+            - BullRush: Dash Attack, throw units, anti-building, anti-army
+            - Gore (LabyrnthOfMinos): changed to auxchargedattack
         - PaleRider:
             - Hades cavalry, counter-hero, AbstractMythSoldier
             - Trail: counter-army, effective in crowds
@@ -153,7 +159,7 @@
             - ChargedRangedAttack: onhiteffect spawn centaurareadamage
         - Manticore:
             - rangedattacK: default, effective to counter ranged units, usable for kiting units to flee or get closer
-            - handattacK: effective to counter humansoldiers that get too close
+            - handattack: effective to counter humansoldiers that get too close
             - chargedrangedattack / barrage attack: effective for crowds in further distance and units that flee
         - Medusa: renamed to "gorgon"
             - faceofthegorgon: sets name to "gorgon matriarch"
@@ -533,6 +539,11 @@
 - greek
     - SylvanLore: effect expanded to AbstractWoodland
     - AegisShield: reflects handattack, bonusdamage vs MythUnit, MythResistant
+    - FlamesOfTyphon: affects on AbstractInfernal, AbstractChthonic, Chimera ChargedRangedAttack dot+
+    - BeastSlayer: affects on AbstractBeast and AbstractBeastFolk
+    - PhobosSpearOfPanic: bonusdamage vs hero
+    - EnyosBowOfHorror: affects on Gastraphetoros, AmazonArcher, bonusdamage vs hero
+    - DeimosSwordOfDread: affects on Hetairos, bonusdamage vs hero
 - atlantean
     - ArchaicAgeAtlantean:
         - MilitaryBarracks: Murmillo, Fanatic, Destroyer +

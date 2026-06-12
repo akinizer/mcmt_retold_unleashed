@@ -33,4 +33,28 @@
 		<unittype>AbstractDwarf</unittype>
 		<displaynameid>STR_HUD_UNIT_TYPE_ABSTRACT_DWARF</displaynameid>
 	</unittypeentry>
+    <unittypeentry mergeMode="add">
+		<unittype>AbstractBeast</unittype>
+		<displaynameid>STR_HUD_UNIT_TYPE_ABSTRACT_BEAST</displaynameid>
+	</unittypeentry>
+    <unittypeentry mergeMode="add">
+		<unittype>AbstractBeastfolk</unittype>
+		<displaynameid>STR_HUD_UNIT_TYPE_ABSTRACT_BEASTFOLK</displaynameid>
+	</unittypeentry>
+    <unittypeentry mergeMode="add">
+		<unittype>AbstractInfernal</unittype>
+		<displaynameid>STR_HUD_UNIT_TYPE_ABSTRACT_INFERNAL</displaynameid>
+	</unittypeentry>
+    <unittypeentry mergeMode="add">
+		<unittype>AbstractChthonic</unittype>
+		<displaynameid>STR_HUD_UNIT_TYPE_ABSTRACT_CHTHONIC</displaynameid>
+	</unittypeentry>
+    <unittypeentry mergeMode="add">
+		<unittype>AbstractWoodland</unittype>
+		<displaynameid>STR_HUD_UNIT_TYPE_ABSTRACT_WOODLAND</displaynameid>
+	</unittypeentry>
+    <unittypeentry mergeMode="add">
+		<unittype>AbstractSpectral</unittype>
+		<displaynameid>STR_HUD_UNIT_TYPE_ABSTRACT_SPECTRAL</displaynameid>
+	</unittypeentry>
 </unittypedatamods>

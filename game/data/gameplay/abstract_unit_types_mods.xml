@@ -11,6 +11,7 @@
     <abstractunittype>AbstractBeastfolk</abstractunittype>
     <abstractunittype>AbstractAvian</abstractunittype>
     <abstractunittype>AbstractInfernal</abstractunittype>
+    <abstractunittype>AbstractChthonic</abstractunittype>
     <abstractunittype>AbstractSpectral</abstractunittype>
     <abstractunittype>AbstractShinigami</abstractunittype>
     <abstractunittype>AbstractUndead</abstractunittype>

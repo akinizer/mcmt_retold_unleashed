@@ -2270,13 +2270,12 @@
         <unittype>InfantryLineUpgraded</unittype>
 		<maxrunvelocity>15.0000</maxrunvelocity>
 		<rechargetime>22.0000</rechargetime>
-		<auxrechargetime>15.0000</auxrechargetime>
 		<flag>CastAbilitySelf</flag>
 		<tactics>mcmt_minotaur.tactics</tactics>
 		<protoaction>
 			<name stringid="STR_ABILITY_BULLRUSH_ATTACK">Charge</name>
 			<type>Rampage</type>
-			<damage type="Crush">150.0</damage>
+			<damage type="Crush">100.0</damage>
 			<damage type="Hack">10.0</damage>
 			<damagearea>3.0</damagearea>
 			<rate type="AbstractFarm">0.0</rate>
@@ -29251,7 +29250,7 @@
 		<flag>NotDeathTracked</flag>
 		<tactics>container.tactics</tactics>
 		<protoaction>
-			<name>AreaHeal</name>
+			<name stringid="STR_VFX_AUTOREPAIR">AreaHeal</name>
 			<type>AutoRangedModify</type>
 			<modifyabstracttype>LogicalTypeHealed</modifyabstracttype>
 			<persistent>1</persistent>
