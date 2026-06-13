@@ -61,6 +61,7 @@
 * Type Superiority & Elemental Damage: Elemental Resistances & Vulnerabilities, MythUnit Resistances!
 * Myth Soldier unit type that enables certain Myth Units to benefit from Armory Techs
 * Minotaur gets Bull Rush!
+* Forbidden Age Units!
 * Many Many More in Future!!!
 
 1. Reworking on Demeter's hero units and related techs

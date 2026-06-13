@@ -28332,6 +28332,9 @@
 			<onhiteffect type="InstantKillablePercentChance" amount="0.25" relativity="set" duration="8.000000" byunittype="Hero">
 				<target attacktype="LogicalTypeMythUnitNotTitan"></target>
 			</onhiteffect>
+			<onhiteffect type="Attach" proto="VFXMarkOfDeath" attachbone="vfx_top" duration="1.000000">
+				<target attacktype="LogicalTypeMythUnitNotTitan"></target>
+			</onhiteffect>
 			<throw>1</throw>
 		</protoaction>
 		<protoaction>
