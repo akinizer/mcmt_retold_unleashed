@@ -10924,6 +10924,9 @@
 
       <effect type="Data" action="JumpAttack" amount="0.75" subtype="DamageArea" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">HumanSoldier</target></effect>
+      
+      <effect type="Data" action="JumpAttack" amount="1.50" subtype="DamageArea" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">HumanSoldier</target></effect>
     </effects>
   </tech>
   <tech name="TepeyollotlsReach">
