@@ -658,6 +658,26 @@ ID = "STR_FORBIDDEN_PYRAMID_UNLEASHED_NAME"   ;   Str = "Forbidden Pyramid (Unle
 ID = "STR_FORBIDDEN_PYRAMID_UNLEASHED_SR"   ;   Str = "Sealed Power that has never been meant to be unleashed"
 ID = "STR_FORBIDDEN_PYRAMID_UNLEASHED_LR"   ;   Str = "A long resting and sealed power of the Forbidden Pyramid is finally unleashed"
 
+ID = "STR_UNIT_D347H_X_NAME"   ;   Str = "D347H-X"
+ID = "STR_UNIT_D347H_X_SR"   ;   Str = "D347H-X"
+ID = "STR_UNIT_D347H_X_LR"   ;   Str = "Protocol Soul Taker is in progress. Please wait patiently."
+
+ID = "STR_UNIT_SOULTAKER_NAME"   ;   Str = "Soul Taker"
+ID = "STR_UNIT_SOULTAKER_SR"   ;   Str = "Soul Taker"
+ID = "STR_UNIT_SOULTAKER_LR"   ;   Str = "The reaper of essences"
+
+ID = "STR_UNIT_L0S7_1_NAME"   ;   Str = "L0S7-1"
+ID = "STR_UNIT_L0S7_1_SR"   ;   Str = "L0S7-1"
+ID = "STR_UNIT_L0S7_1_LR"   ;   Str = "Protocol Beast Berny is in progress. Please wait patiently."
+
+ID = "STR_UNIT_BEAST_BERNY_NAME"   ;   Str = "Beast Berny"
+ID = "STR_UNIT_BEAST_BERNY_SR"   ;   Str = "Beast Berny"
+ID = "STR_UNIT_BEAST_BERNY_LR"   ;   Str = "Ultimate Ruler of Corruption Machine"
+
+ID = "STR_UNIT_BEAST_M0N17_R_NAME"   ;   Str = "M0N17-R"
+ID = "STR_UNIT_BEAST_M0N17_R_SR"   ;   Str = "M0N17-R"
+ID = "STR_UNIT_BEAST_M0N17_R_LR"   ;   Str = "Android Squad designed for annihilation"
+
 // ENCAMPMENT SPECIAL UNITS
 ID = "STR_UNIT_AMAZON_MARKSMAN_NAME"   ;   Str = "Amazon Marksman"
 ID = "STR_UNIT_AMAZON_MARKSMAN_SR"   ;   Str = "Elite Amazon Archer"

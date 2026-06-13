@@ -1153,46 +1153,43 @@
         - antiair dependants: ProjectileMirrorTowerLazer, high rof
         - CosmicTeleport: teleport to the map, long cooldown
 
-* Wonder of Oracle:
-- Forbidden Tech: train 5 units, very high durability, annihilation squad
-    - M0N17-R
+* Wonder of Oranos, Tsukuyomi, Odin:
+- Forbidden Tech: 
+    - ForbiddenTechMonitors: train 5 units
+    - M0N17-R: umibozu android model, very high durability, annihilation squad
         - laser attack: ProjectileSoulGuide 
-* Existing but not Trained:
-- Forbidden Tech:
-    - L0S7-1: durable spawn unit, transforms into Beast Berny (Taotie with devour, bash, areacorruptioncontainer)
-    - D347H-X: durable spawn unit, trainsforms into SoulTaker (HadesShade with handattack, lightingattack, summon)
-    - Mictlantecuhtli: aztec god of underworld
+
+* Wonder of FuXi:
+- Forbidden Tech: 
+    - ForbiddenTechBerny: train L0S7-1
+    - L0S7-1: Very High Armor, decay, summon BeastBerny
+    - BeastBerny
+        - BirthAttack: castpower (corruption summon godpower)
+        - BeastBerny: Large Taotie, Devour, BirthAttack Corruption
+
+* Wonder of Hades:
+- Forbidden Tech: 
+    - ForbiddenTechDeathseeker: D347H-X
+        - D347H-X: very high durability, lifespawn, trainsforms into SoulTaker
+        - SoulTaker: Oversized Shade, Titan
+
+* Wonder of Tezca, Huitzi, Quetzal:
+- Forbidden Tech: 
+    - ForbiddenTechMictlan: Mictlantecuhtli
+        - Mictlantecuhtli: Aztec God of Underworld
 
 * Civilization Improvement Special Techs
 - Atlantean:
     - ToolsOfTheTrade: enables MineralLoader at EconomicGuild, gathers gold and durable but slow, ensuring employment is at lower risks
     - WarLoader: enables autotargeting turret system, setname War Loader, fires at enemies that approaches the unit
     - WarLoaderII: enables autotargeting turret system, upgrades anti-unit turret to anti-armor grenade launcher
+    
 ==============================================================================
 ==================== PRIORITY-PLANS ==========================================
 ==============================================================================
 
-=== PLANNED: MINOR CHANGES
-mobileorbitalarray: castpower forestfire_minor / orbitalstrike
-
-=== FORBIDDEN TECHS
-1. add activation techs
-2. spawn units
-3. create simdata, tactics, add rangedattack to protoactions, projectiles, stats
-4. lostone, monitor, deathx, pyramidunleashed, mictlan
-
-* Pyramid Wonder:
-- Button: Transform Pyramid to Pyramid (Unleashed)
-- Pyramid (Unleashed): Laser Cannon slow rof areadamage large vfximpact, Laser Blasters dependant x4 anti-unit, Laser x2 anti-abstractflying 
-* Huitzi Wonder:
-- Button: summon D347H-X
-    - D347H-X: Very High Armor, decay, summon SoulTaker
-    - SoulTaker: Large HadesShade, HandAttack low rof areadamage vfxdeathmark, LightingAttack low rof
-* Other Pantheon Major Wonder:
-- Button: summon L0S7-1
-    - D347H-X: Very High Armor, decay, summon SoulTaker
-    - BirthAttack: castpower (corruption summon godpower)
-    - BeastBerny: Large Taotie, Devour + Bash + AreaCorruptionContainer (onhiteffects)
+FIX: BeastBerny BirthAttack CorruptedGround
+ADD: MictlaAwakened AbilityShogun Owl
 
 === AZTEC
 * hero

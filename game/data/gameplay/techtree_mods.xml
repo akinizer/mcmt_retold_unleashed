@@ -774,6 +774,8 @@
           <target type="ProtoUnit">Quetzalcoatl</target></effect>
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">Mictlantecuhtli</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">MictlaAwakened</target></effect>
         <!--AbstractGreekHero-->
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractGreekHero" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">Jason</target></effect>
@@ -2131,6 +2133,9 @@
         <!-- Forbidden Tech Units -->
         <effect type="Data" amount="0.60" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">M0N17-R</target></effect>
         <effect type="Data" amount="0.60" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">D347H-X</target></effect>
+        <effect type="Data" amount="0.60" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">L0S7-1</target></effect>
+        <effect type="Data" amount="8.00" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">SoulTaker</target></effect>
+        <effect type="Data" amount="8.00" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">BeastBerny</target></effect>
       </effects>
     </tech> 
 
@@ -11403,7 +11408,7 @@
     <flag>MythTech</flag>
     <researchpoints>200.0000</researchpoints>
 		<effects>			
-      <effect type="CreateUnit" unit="Mictlantecuhtli" generator="Wonder">
+      <effect type="CreateUnit" unit="MictlaAwakened" generator="Wonder">
           <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
             <offset x="-5.00" y="0.00" z="0.00"></offset>
           </pattern>
@@ -11489,7 +11494,11 @@
     <effects><effect type="SetName" proto="Wonder" newname="STR_BLD_THEATREOFDIONYSUS_NAME"></effect></effects>
   </tech> 
   <tech name="MythicAgeHades" mergeMode="add">
-    <effects><effect type="SetName" proto="Wonder" newname="STR_BLD_MAUSOLEUM_NAME"></effect></effects>
+    <effects>
+      <effect type="SetName" proto="Wonder" newname="STR_BLD_MAUSOLEUM_NAME"></effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ForbiddenTechDeathseeker" row="1" column="5" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Wonder</target></effect>
+    </effects>
   </tech> 
   <tech name="MythicAgeDemeter" mergeMode="add">
     <effects>
@@ -11516,7 +11525,11 @@
   </tech> 
     <!-- Norse Wonders of Art-->
   <tech name="MythicAgeOdin" mergeMode="add">
-    <effects><effect type="SetName" proto="Wonder" newname="STR_BLD_ODINSTOWER_NAME"></effect></effects>
+    <effects>
+      <effect type="SetName" proto="Wonder" newname="STR_BLD_ODINSTOWER_NAME"></effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ForbiddenTechMonitors" row="1" column="5" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Wonder</target></effect>	
+    </effects>
   </tech> 
   <tech name="MythicAgeThor" mergeMode="add">
     <effects><effect type="SetName" proto="Wonder" newname="STR_BLD_DONARSOAK_NAME"></effect></effects>
@@ -11543,7 +11556,11 @@
   </tech> 
     <!-- Chinese Wonders of Art-->
   <tech name="MythicAgeFuxi" mergeMode="add">
-    <effects><effect type="SetName" proto="Wonder" newname="STR_BLD_AOGUANGPALACE_NAME"></effect></effects>
+    <effects>
+      <effect type="SetName" proto="Wonder" newname="STR_BLD_AOGUANGPALACE_NAME"></effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ForbiddenTechBerny" row="1" column="5" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Wonder</target></effect>	
+    </effects>
   </tech> 
   <tech name="MythicAgeNuwa" mergeMode="add">
     <effects><effect type="SetName" proto="Wonder" newname="STR_BLD_MOUNTPENGLAI_NAME"></effect></effects>
@@ -11556,20 +11573,36 @@
     <effects><effect type="SetName" proto="Wonder" newname="STR_BLD_HIMEJICASTLE_NAME"></effect></effects>
   </tech> 
   <tech name="MythicAgeTsukuyomi" mergeMode="add">
-    <effects><effect type="SetName" proto="Wonder" newname="STR_BLD_TAKEONOOKUSU_NAME"></effect></effects>
+    <effects>
+      <effect type="SetName" proto="Wonder" newname="STR_BLD_TAKEONOOKUSU_NAME"></effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ForbiddenTechMonitors" row="1" column="5" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Wonder</target></effect>	
+    </effects>
   </tech> 
   <tech name="MythicAgeSusanoo" mergeMode="add">
     <effects><effect type="SetName" proto="Wonder" newname="STR_BLD_ITSUKUSHIMASHRINE_NAME"></effect></effects>
   </tech> 
     <!-- Aztec Wonders of Art-->
   <tech name="MythicAgeHuitzilopochtli" mergeMode="add">
-    <effects><effect type="SetName" proto="Wonder" newname="STR_BLD_TEMPLOMAYOR_NAME"></effect></effects>
+    <effects>
+      <effect type="SetName" proto="Wonder" newname="STR_BLD_TEMPLOMAYOR_NAME"></effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ForbiddenTechMictlan" row="1" column="5" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Wonder</target></effect>
+    </effects>
   </tech> 
   <tech name="MythicAgeTezcatlipoca" mergeMode="add">
-    <effects><effect type="SetName" proto="Wonder" newname="STR_BLD_TEMPLEOFEHECATL_NAME"></effect></effects>
+    <effects>
+      <effect type="SetName" proto="Wonder" newname="STR_BLD_TEMPLEOFEHECATL_NAME"></effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ForbiddenTechMictlan" row="1" column="5" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Wonder</target></effect>
+    </effects>
   </tech> 
   <tech name="MythicAgeQuetzalcoatl" mergeMode="add">
-    <effects><effect type="SetName" proto="Wonder" newname="STR_BLD_TEMPLEOFKUKULKAN_NAME"></effect></effects>
+    <effects>
+      <effect type="SetName" proto="Wonder" newname="STR_BLD_TEMPLEOFKUKULKAN_NAME"></effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ForbiddenTechMictlan" row="1" column="5" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Wonder</target></effect>
+    </effects>
   </tech> 
 fo
   <!-- RESEARCHABLE COMMANDS-->

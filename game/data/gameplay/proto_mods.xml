@@ -27693,13 +27693,13 @@
 
 -->
 	<!-- FORBIDDEN UNITS -->
-	 <unit name="D347H-X">
-		<displaynameid>STR_UNIT_UMIBOZU_NAME</displaynameid>
-		<rollovertextid>STR_UNIT_UMIBOZU_LR</rollovertextid>
-		<shortrollovertextid>STR_UNIT_UMIBOZU_SR</shortrollovertextid>
+	<unit name="D347H-X">
+		<displaynameid>STR_UNIT_D347H_X_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_D347H_X_SR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_D347H_X_LR</shortrollovertextid>
 		<icon>resources\japanese\player_color\units\umibozu_icon.png</icon>
 		<animfile>japanese\units\myth\umibozu\umibozu.xml</animfile>
-		<soundsetfile>japanese\vo\umibozu\umibozu.xml</soundsetfile>
+		<soundsetfile>atlantean\vo\automaton\automaton.xml</soundsetfile>
 		<obstructionradiusx>0.9900</obstructionradiusx>
 		<obstructionradiusz>0.9900</obstructionradiusz>
 		<impacttype>Metal</impacttype>
@@ -27708,6 +27708,9 @@
 		<turnrate>18.0000</turnrate>
 		<initialhitpoints>5000.0000</initialhitpoints>
 		<maxhitpoints>5000.0000</maxhitpoints>
+		<lifespan>300.0000</lifespan>
+		<spawn type="dead" delay="1" count="1">SoulTaker</spawn>
+
 		<trainpoints>300.0000</trainpoints>
 		<weightclass>12</weightclass>
 		<populationcount>1</populationcount>
@@ -27764,13 +27767,90 @@
 			<impacteffect>effects\impacts\hack</impacteffect>
 		</protoaction>
 	</unit>
+	<unit name="SoulTaker">
+		<displaynameid>STR_UNIT_SOULTAKER_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_SOULTAKER_SR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_SOULTAKER_LR</shortrollovertextid>
+		<icon>resources\greek\player_color\units\hades_shade_icon.png</icon>
+		<animfile>greek\units\myth\hades_shade\hades_shade.xml</animfile>
+		<soundsetfile>greek\vo\hades_shade\hades_shade.xml</soundsetfile>
+		<obstructionradiusx>2.9900</obstructionradiusx>
+		<obstructionradiusz>2.9900</obstructionradiusz>
+		<selectionradiusx>2.7500</selectionradiusx>
+		<selectionradiusz>2.7500</selectionradiusz>
+		<impacttype>Titan</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<autoattackrange>25.0000</autoattackrange>
+		<movementtype>titan</movementtype>
+		<turnrate>4.0000</turnrate>
+		<initialhitpoints>15000.0000</initialhitpoints>
+		<maxhitpoints>15000.0000</maxhitpoints>
+		<weightclass>255</weightclass>
+		<populationcount>10</populationcount>
+		<maxvelocity>3.7500</maxvelocity>
+		<rechargetime>8.0000</rechargetime>
+		<los>25.0000</los>
+		<bloodgroupoverride>noblood</bloodgroupoverride>
+		<cost resourcetype="Gold">1000.0000</cost>
+		<cost resourcetype="Favor">55.0000</cost>
+		<armor type="Hack" value="0.9000"></armor>
+		<armor type="Pierce" value="0.8900"></armor>
+		<armor type="Crush" value="0.8800"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>MythUnit</unittype>
+		<unittype>AbstractTitan</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeMythUnitNotFlying</unittype>
+		<unittype>LogicalTypeDivineImmunity</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>GivesLOSToAll</flag>
+		<flag>BattleMusicTrigger</flag>
+		<flag>DeleteConfirmation</flag>
+		<flag>HasContinuousParticles</flag>
+		<flag>MinimapDisplayOnTop</flag>
+		<flag>CannotSnare</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>handattack.tactics</tactics>
+			<protoaction>
+			<name>HandAttack</name>
+			<rof>3.500000</rof>
+			<damage type="Hack">80.000000</damage>
+			<damage type="Crush">40.000000</damage>
+			<damagearea>5.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<damagebonus type="AbstractTitan">20.000000</damagebonus>
+			<maxrange>2.000000</maxrange>
+			<impacteffect>effects\impacts\titan</impacteffect>
+		</protoaction>
+	</unit>
+
 	 <unit name="L0S7-1">
-		<displaynameid>STR_UNIT_UMIBOZU_NAME</displaynameid>
-		<rollovertextid>STR_UNIT_UMIBOZU_LR</rollovertextid>
-		<shortrollovertextid>STR_UNIT_UMIBOZU_SR</shortrollovertextid>
+		<displaynameid>STR_UNIT_L0S7_1_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_L0S7_1_SR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_L0S7_1_LR</shortrollovertextid>
 		<icon>resources\japanese\player_color\units\umibozu_icon.png</icon>
 		<animfile>japanese\units\myth\umibozu\umibozu.xml</animfile>
-		<soundsetfile>japanese\vo\umibozu\umibozu.xml</soundsetfile>
+		<soundsetfile>atlantean\vo\automaton\automaton.xml</soundsetfile>
 		<obstructionradiusx>0.9900</obstructionradiusx>
 		<obstructionradiusz>0.9900</obstructionradiusz>
 		<impacttype>Metal</impacttype>
@@ -27780,6 +27860,9 @@
 		<initialhitpoints>5000.0000</initialhitpoints>
 		<maxhitpoints>5000.0000</maxhitpoints>
 		<trainpoints>300.0000</trainpoints>
+		<spawn type="dead" delay="1" count="1">BeastBerny</spawn>
+		<lifespan>300.0000</lifespan>
+
 		<weightclass>12</weightclass>
 		<populationcount>1</populationcount>
 		<maxvelocity>2.8000</maxvelocity>
@@ -27835,13 +27918,144 @@
 			<impacteffect>effects\impacts\hack</impacteffect>
 		</protoaction>
 	</unit>
+	<unit name="BeastBerny">
+		<displaynameid>STR_UNIT_BEAST_BERNY_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_BEAST_BERNY_SR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_BEAST_BERNY_LR</shortrollovertextid>
+		<icon>resources\chinese\player_color\units\taotie_icon.png</icon>
+		<animfile>chinese\units\myth\tao_tie\tao_tie.xml</animfile>
+		<soundsetfile>chinese\vo\tao_tie\tao_tie.xml</soundsetfile>
+
+		<obstructionradiusx>2.9900</obstructionradiusx>
+		<obstructionradiusz>2.9900</obstructionradiusz>
+		<selectionradiusx>2.7500</selectionradiusx>
+		<selectionradiusz>2.7500</selectionradiusz>
+		<impacttype>Titan</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<autoattackrange>25.0000</autoattackrange>
+		<movementtype>titan</movementtype>
+		<turnrate>4.0000</turnrate>
+		<initialhitpoints>35000.0000</initialhitpoints>
+		<maxhitpoints>35000.0000</maxhitpoints>
+		<weightclass>255</weightclass>
+		<populationcount>10</populationcount>
+		<maxvelocity>3.7500</maxvelocity>
+		<rechargetime>8.0000</rechargetime>
+		<los>25.0000</los>
+		<armor type="Hack" value="0.8800"></armor>
+		<armor type="Pierce" value="0.7000"></armor>
+		<armor type="Crush" value="0.8000"></armor>
+		
+		<rechargetime>15.0000</rechargetime>
+		<auxrechargetime>1.0000</auxrechargetime>
+
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>MythUnit</unittype>
+		<unittype>AbstractTitan</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeMythUnitNotFlying</unittype>
+		<unittype>LogicalTypeDivineImmunity</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>GivesLOSToAll</flag>
+		<flag>BattleMusicTrigger</flag>
+		<flag>DeleteConfirmation</flag>
+		<flag>HasContinuousParticles</flag>
+		<flag>MinimapDisplayOnTop</flag>
+		<flag>CannotSnare</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+
+		<flag>RangeIndicatorForAbilityCasting</flag>
+		<flag>KillsTargetAfterPickupAction</flag>		
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>AuxAutoAbilityStartDisabled</flag>
+		<flag>PreferSkeletonAsBonePile</flag>
+		<tactics>taotie.tactics</tactics>
+		<stackprotoaction>StackControl</stackprotoaction>
+		<birthprotoaction>BirthAttack</birthprotoaction>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>3.500000</rof>
+			<damage type="Hack">60.000000</damage>
+			<damage type="Crush">100.000000</damage>
+			<damagearea>8.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Building">6.000000</damagebonus>
+			<damagebonus type="AbstractTitan">20.000000</damagebonus>
+			<damagebonus type="HumanSoldier">2.000000</damagebonus>
+			<maxrange>2.000000</maxrange>
+			<impacteffect>effects\impacts\titan</impacteffect>
+		</protoaction>
+		<protoaction>
+			<name>Devour</name>
+			<rof>3.000000</rof>
+			<damage type="Divine">1000.000000</damage>
+			<maxrange>0.500000</maxrange>
+			<workonfrozenunits>0</workonfrozenunits>
+		</protoaction>
+		<protoaction>
+			<name>ChargedRangedAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Divine">25.000000</damage>
+			<damagearea>4.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<maxrange>30.000000</maxrange>
+			<projectile>ProjectileBallOfFireTaotie</projectile>
+			<numberprojectiles>1</numberprojectiles>
+
+			<onhiteffect type="Throw" targetunittype="HumanSoldier"></onhiteffect>
+			<onhiteffect type="Throw" targetunittype="LogicalTypeVillagerNotHero"></onhiteffect>
+			<onhiteffect type="Throw" targetunittype="LogicalTypeMythUnitNotTitan"></onhiteffect>
+			<throw>1</throw>
+			<impactforcemin>300.0f</impactforcemin>
+			<impactforcemax>600.0f</impactforcemax>
+			<impactlaunchangle>10.0</impactlaunchangle>
+			<areasortmode>Directional</areasortmode>
+		</protoaction>
+		<protoaction>
+			<name notactics="">BirthAttack</name>
+			<type>Attack</type>
+			<damage type="Divine">25.000000</damage>
+			<damagearea>7.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<attackaction>1</attackaction>
+			<rate type="Unit">1.0</rate>
+			<rate type="Building">1.0</rate>
+			<onhiteffect type="Flee" targetunittype="Unit" duration="5.000000"></onhiteffect>
+			<modelattachment>vfx\glow\hun_dun\hun_dun_taunt_target_vfx.xml</modelattachment>
+			<castpower>CorruptedGround</castpower>
+		</protoaction>
+	 </unit>
 	 <unit name="M0N17-R">
-		<displaynameid>STR_UNIT_UMIBOZU_NAME</displaynameid>
-		<rollovertextid>STR_UNIT_UMIBOZU_LR</rollovertextid>
-		<shortrollovertextid>STR_UNIT_UMIBOZU_SR</shortrollovertextid>
+		<displaynameid>STR_UNIT_BEAST_M0N17_R_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_BEAST_M0N17_R_SR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_BEAST_M0N17_R_LR</shortrollovertextid>
 		<icon>resources\japanese\player_color\units\umibozu_icon.png</icon>
 		<animfile>mcmt\units\forbidden\monitor.xml</animfile>
-		<soundsetfile>japanese\vo\umibozu\umibozu.xml</soundsetfile>
+		<soundsetfile>atlantean\vo\automaton\automaton.xml</soundsetfile>
 		<obstructionradiusx>0.9900</obstructionradiusx>
 		<obstructionradiusz>0.9900</obstructionradiusz>
 		<impacttype>Metal</impacttype>
@@ -27905,7 +28119,7 @@
 			<damage type="Divine">20.00000</damage>
 			<damagebonus type="MythUnit">10.000000</damagebonus>
 			<damagebonus type="Building">8.000000</damagebonus>
-			<maxrange>60.000000</maxrange>
+			<maxrange>15.000000</maxrange>
 			<projectile>ProjectileSoulGuideLightning</projectile>
 		</protoaction>
 	</unit>
@@ -28014,6 +28228,109 @@
 			<rof>1.500000</rof>
 			<maxrange>99.000000</maxrange>
 			<modifyduration>1500</modifyduration>
+		</protoaction>
+	</unit>
+	<unit name="MictlaAwakened">
+		<displaynameid>STR_UNIT_MICTLANTECUHTLI_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_MICTLANTECUHTLI_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_MICTLANTECUHTLI_SR</shortrollovertextid>
+		<icon>resources\spc\player_color\units\mictlantecuhtli_icon.png</icon>
+		<animfile>aztec\units\spc\mictlantecuhtli\mictlantecuhtli.xml</animfile>
+		<soundsetfile>aztec\vo\mictlantecuhtli\mictlantecuhtli.xml</soundsetfile>
+		<obstructionradiusx>0.9900</obstructionradiusx>
+		<obstructionradiusz>0.9900</obstructionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<autoattackrange>16.0000</autoattackrange>
+		<movementtype>Titan</movementtype>
+		<turnrate>20.0000</turnrate>
+		<initialhitpoints>1250.0000</initialhitpoints>
+		<maxhitpoints>1250.0000</maxhitpoints>
+		<unitregen>2.0000</unitregen>
+		<initialshieldpoints>1000.0000</initialshieldpoints>
+		<maxshieldpoints>1000.0000</maxshieldpoints>
+		<unitshieldregen>5.0000</unitshieldregen>
+
+		<weightclass>255</weightclass>
+		<maxcontained>1.0000</maxcontained>
+		<populationcount>1</populationcount>
+		<maxvelocity>3.8000</maxvelocity>
+		<los>25.0000</los>
+		<armor type="Hack" value="0.8000"></armor>
+		<armor type="Pierce" value="0.8000"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeSharedHeroSelection</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>Hero</unittype>
+		<unittype>MajorHero</unittype>
+		<unittype>HeroShadowUpgraded</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeFindMilitaryHero</unittype>
+		<unittype>LogicalTypeDivineImmunity</unittype>
+		<unittype>LogicalTypeHealableHero</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>NotDeleteable</flag>
+		<flag>KnockoutDeath</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>HideGarrisonFlag</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<contain external="1">LogicalTypePickable</contain>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>3.000000</rof>
+			<damage type="Pierce">20.000000</damage>
+			<damage type="Divine">40.000000</damage>
+			<damagebonus type="MythUnit">10.000000</damagebonus>
+			<damagebonus type="AbstractSpectral">100.000000</damagebonus>
+			<maxrange>5.000000</maxrange>
+
+			<damagearea>3.000000</damagearea>
+			<damageflags>Enemy|Nature</damageflags>
+
+			<onhiteffect type="Throw" targetunittype="HumanSoldier"></onhiteffect>
+			<onhiteffect type="Throw" targetunittype="LogicalTypeVillagerNotHero"></onhiteffect>
+			<throw>1</throw>
+		</protoaction>
+		<protoaction>
+			<name>Pickup</name>
+			<type>Pickup</type>
+			<maxrange>1</maxrange>
+			<rate type="LogicalTypePickable">1.00000</rate>
+		</protoaction>
+		<protoaction>
+			<name>DropOff</name>
+			<type>DropOff</type>
+			<maxrange>1</maxrange>
+			<rate type="AbstractTemple">1.00000</rate>
 		</protoaction>
 	</unit>
 	<!-- /// SPECIAL PROJECTILES /// -->
