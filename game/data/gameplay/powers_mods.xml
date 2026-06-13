@@ -1704,6 +1704,6 @@
 	<power name="AbilityChargedSpawnMictla" type="GeneralEffect">
 		<displaynameid>STR_ABILITY_MICTLA_CHARGEDSPAWN</displaynameid>
 		<rolloverid>STR_ABILITY_MICTLA_CHARGEDSPAWN_LR</rolloverid>
-		<icon>resources\aztec\player_color\units\tunkuluchu_icon.png</icon>
+		<icon>aztec\player_color\units\tunkuluchu_icon.png</icon>
 	</power>
 </powersmod>
