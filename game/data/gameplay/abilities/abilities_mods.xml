@@ -408,4 +408,7 @@
 	<PyramidUnleashed>
 		<ability>AbilityCosmicTeleport<chargetimeasrof>1</chargetimeasrof></ability>
 	</PyramidUnleashed>
+	<MictlaAwakened>
+		<ability>AbilityChargedSpawnMictla<notcastable>true</notcastable><noautocast>true</noautocast><bindtochargeaction>true</bindtochargeaction></ability>
+	</MictlaAwakened>
 </abilitiesmods>

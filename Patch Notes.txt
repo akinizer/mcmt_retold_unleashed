@@ -1165,7 +1165,7 @@
     - L0S7-1: Very High Armor, decay, summon BeastBerny
     - BeastBerny
         - BirthAttack: castpower (corruption summon godpower)
-        - BeastBerny: Large Taotie, Devour, BirthAttack Corruption
+        - BeastBerny: Large Taotie, Devour, BirthAttack castpower CorruptedArea
 
 * Wonder of Hades:
 - Forbidden Tech: 
@@ -1175,8 +1175,10 @@
 
 * Wonder of Tezca, Huitzi, Quetzal:
 - Forbidden Tech: 
-    - ForbiddenTechMictlan: Mictlantecuhtli
-        - Mictlantecuhtli: Aztec God of Underworld, throw HumanSoldier & Villager, InstantKillablePercentChance MythUnit
+    - ForbiddenTechMictlan: MictlaAwakened
+        - MictlaAwakened: Aztec God of Underworld
+            - HandAttack: throw HumanSoldier & Villager, MythUnit InstantKillablePercentChance by Hero
+            - ChargedSpawn: Tunkuluchu
 
 * Civilization Improvement Special Techs
 - Atlantean:

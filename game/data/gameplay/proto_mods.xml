@@ -27923,7 +27923,7 @@
 		<rollovertextid>STR_UNIT_BEAST_BERNY_SR</rollovertextid>
 		<shortrollovertextid>STR_UNIT_BEAST_BERNY_LR</shortrollovertextid>
 		<icon>resources\chinese\player_color\units\taotie_icon.png</icon>
-		<animfile>chinese\units\myth\tao_tie\tao_tie.xml</animfile>
+		<animfile>mcmt\units\forbidden\bernie.xml</animfile>
 		<soundsetfile>chinese\vo\tao_tie\tao_tie.xml</soundsetfile>
 
 		<obstructionradiusx>2.9900</obstructionradiusx>
@@ -28013,6 +28013,8 @@
 			<damage type="Divine">1000.000000</damage>
 			<maxrange>0.500000</maxrange>
 			<workonfrozenunits>0</workonfrozenunits>
+			<rate type="NavalUnit">1.0</rate>
+			<rate type="AbstractFlyingUnit">1.0</rate>
 		</protoaction>
 		<protoaction>
 			<name>ChargedRangedAttack</name>
@@ -28024,7 +28026,7 @@
 			<damagebonus type="Hero">0.500000</damagebonus>
 			<maxrange>30.000000</maxrange>
 			<projectile>ProjectileBallOfFireTaotie</projectile>
-			<numberprojectiles>1</numberprojectiles>
+			<numberprojectiles>1</numberprojectiles>			
 
 			<onhiteffect type="Throw" targetunittype="HumanSoldier"></onhiteffect>
 			<onhiteffect type="Throw" targetunittype="LogicalTypeVillagerNotHero"></onhiteffect>
@@ -28041,7 +28043,6 @@
 			<damage type="Divine">25.000000</damage>
 			<damagearea>7.000000</damagearea>
 			<damageflags>Nature|Enemy</damageflags>
-			<attackaction>1</attackaction>
 			<rate type="Unit">1.0</rate>
 			<rate type="Building">1.0</rate>
 			<onhiteffect type="Flee" targetunittype="Unit" duration="5.000000"></onhiteffect>
@@ -28292,6 +28293,15 @@
 		<unittype>LogicalTypeDivineImmunity</unittype>
 		<unittype>LogicalTypeHealableHero</unittype>
 		<unittype>LogicalTypeDroppedFavorCollector</unittype>
+
+		<recharge type="attacks" init="0">6.000000</recharge>
+		<rechargeincludetypes>
+			<unittype>Unit</unittype>
+		</rechargeincludetypes>
+		<rechargeexcludetypes>
+			<unittype>Resource</unittype>
+		</rechargeexcludetypes>
+
 		<flag>CollidesWithProjectiles</flag>
 		<flag>CorpseDecays</flag>
 		<flag>ShowGarrisonButton</flag>
@@ -28315,6 +28325,7 @@
 
 			<damagearea>3.000000</damagearea>
 			<damageflags>Enemy|Nature</damageflags>
+			<impacteffect>effects\impacts\onmyoji</impacteffect>
 
 			<onhiteffect type="Throw" targetunittype="HumanSoldier"></onhiteffect>
 			<onhiteffect type="Throw" targetunittype="LogicalTypeVillagerNotHero"></onhiteffect>
@@ -28334,6 +28345,17 @@
 			<type>DropOff</type>
 			<maxrange>1</maxrange>
 			<rate type="AbstractTemple">1.00000</rate>
+		</protoaction>
+		<protoaction>
+			<name stringid="STR_ACTION_CHARGE_SPAWN">ChargedSpawn</name>
+			<type>Spawn</type>
+			<rate type="Tunkuluchu">1.000000</rate>
+			<minrate type="Unit">1.000000</minrate>
+			<anim>Birth</anim>
+			<persistent>1</persistent>
+			<animationrate>1</animationrate>
+			<chargeaction>1</chargeaction>
+			<forcespawn>1</forcespawn>
 		</protoaction>
 	</unit>
 	<!-- /// SPECIAL PROJECTILES /// -->

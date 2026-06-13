@@ -11325,6 +11325,7 @@
             <offset x="-5.00" y="0.00" z="0.00"></offset>
           </pattern>
         </effect>
+        <effect type="TextOutput">STR_MSG_FORBIDDEN_AGE</effect>
     </effects>
 	</tech>
   <tech name="ForbiddenTechBerny" mergeMode="add">
@@ -11341,6 +11342,7 @@
             <offset x="-5.00" y="0.00" z="0.00"></offset>
           </pattern>
         </effect>
+        <effect type="TextOutput">STR_MSG_FORBIDDEN_AGE</effect>
     </effects>
 	</tech>
   <tech name="ForbiddenTechUnleashed" mergeMode="add">
@@ -11358,6 +11360,7 @@
             <offset x="-5.00" y="0.00" z="0.00"></offset>
           </pattern>
         </effect>
+        <effect type="TextOutput">STR_MSG_FORBIDDEN_AGE</effect>
     </effects>
 	</tech>
   <tech name="ForbiddenTechWrathOfRaHorakthy" mergeMode="add">
@@ -11397,6 +11400,7 @@
             <offset x="-5.00" y="0.00" z="0.00"></offset>
           </pattern>
         </effect>
+        <effect type="TextOutput">STR_MSG_FORBIDDEN_AGE</effect>
     </effects>
 	</tech>
   <tech name="ForbiddenTechMictlan" mergeMode="add">
@@ -11413,6 +11417,7 @@
             <offset x="-5.00" y="0.00" z="0.00"></offset>
           </pattern>
         </effect>
+        <effect type="TextOutput">STR_MSG_FORBIDDEN_AGE</effect>
     </effects>
 	</tech>
   <!-- Structures of Gods-->
