@@ -28232,9 +28232,9 @@
 	</unit>
 	<unit name="MictlaAwakened">
 		<displaynameid>STR_UNIT_MICTLANTECUHTLI_NAME</displaynameid>
-		<rollovertextid>STR_UNIT_MICTLANTECUHTLI_LR</rollovertextid>
-		<shortrollovertextid>STR_UNIT_MICTLANTECUHTLI_SR</shortrollovertextid>
-		<icon>resources\spc\player_color\units\mictlantecuhtli_icon.png</icon>
+		<rollovertextid>STR_UNIT_MICTLANTECUHTLI_AWAKENED_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_MICTLANTECUHTLI_AWAKENED_SR</shortrollovertextid>
+		<icon>resources\aztec\static_color\minor_gods\Mictlantecutli_portrait.png</icon>
 		<animfile>aztec\units\spc\mictlantecuhtli\mictlantecuhtli.xml</animfile>
 		<soundsetfile>aztec\vo\mictlantecuhtli\mictlantecuhtli.xml</soundsetfile>
 		<obstructionradiusx>0.9900</obstructionradiusx>
@@ -28318,6 +28318,9 @@
 
 			<onhiteffect type="Throw" targetunittype="HumanSoldier"></onhiteffect>
 			<onhiteffect type="Throw" targetunittype="LogicalTypeVillagerNotHero"></onhiteffect>
+			<onhiteffect type="InstantKillablePercentChance" amount="0.25" relativity="set" duration="8.000000" byunittype="Hero">
+				<target attacktype="LogicalTypeMythUnitNotTitan"></target>
+			</onhiteffect>
 			<throw>1</throw>
 		</protoaction>
 		<protoaction>

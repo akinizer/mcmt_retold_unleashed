@@ -678,6 +678,9 @@ ID = "STR_UNIT_BEAST_M0N17_R_NAME"   ;   Str = "M0N17-R"
 ID = "STR_UNIT_BEAST_M0N17_R_SR"   ;   Str = "M0N17-R"
 ID = "STR_UNIT_BEAST_M0N17_R_LR"   ;   Str = "Android Squad designed for annihilation"
 
+ID = "STR_UNIT_MICTLANTECUHTLI_AWAKENED_LR"   ;   Str = "Mictlan has gained power to transcend into Overworld as he captured Hades' Vault"
+ID = "STR_UNIT_MICTLANTECUHTLI_AWAKENED_SR"   ;   Str = "Underworld Deity of Aztec Empire"
+
 // ENCAMPMENT SPECIAL UNITS
 ID = "STR_UNIT_AMAZON_MARKSMAN_NAME"   ;   Str = "Amazon Marksman"
 ID = "STR_UNIT_AMAZON_MARKSMAN_SR"   ;   Str = "Elite Amazon Archer"

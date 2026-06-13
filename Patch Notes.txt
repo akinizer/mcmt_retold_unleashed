@@ -1171,12 +1171,12 @@
 - Forbidden Tech: 
     - ForbiddenTechDeathseeker: D347H-X
         - D347H-X: very high durability, lifespawn, trainsforms into SoulTaker
-        - SoulTaker: Oversized Shade, Titan
+        - SoulTaker: HadesShade model, Bringer of End, Titan
 
 * Wonder of Tezca, Huitzi, Quetzal:
 - Forbidden Tech: 
     - ForbiddenTechMictlan: Mictlantecuhtli
-        - Mictlantecuhtli: Aztec God of Underworld
+        - Mictlantecuhtli: Aztec God of Underworld, throw HumanSoldier & Villager, InstantKillablePercentChance MythUnit
 
 * Civilization Improvement Special Techs
 - Atlantean:
