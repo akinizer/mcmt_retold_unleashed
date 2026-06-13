@@ -22677,6 +22677,20 @@
 			<modelattachment>vfx\objects\flower_petals.xml</modelattachment>
 			<modelattachmentbone>Spine</modelattachmentbone>
 		</protoaction>
+		<protoaction>
+			<name stringid="STR_ACTION_STEALTH">Stealth</name>
+			<type>Stealth</type>
+			<maxrange>25.0</maxrange>
+			<autocastbyself>1</autocastbyself>
+			<autocastdistance>2.250000</autocastdistance>
+			<persistent>1</persistent>
+			<activevfxproto>VFXStealthEye</activevfxproto>
+			<revealarearadius>2.0</revealarearadius>
+			<revealareachain>1.0</revealareachain>
+			<soundsetenter>StealthBirth</soundsetenter>
+			<soundsetupdate>StealthAcknowledge</soundsetupdate>
+			<soundsetexit>StealthExists</soundsetexit>
+		</protoaction>
 	</unit>
 	<unit name="RoyalElf">		
 		<displaynameid>STR_UNIT_ROYAL_ELF_NAME</displaynameid>

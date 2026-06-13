@@ -1,0 +1,41 @@
+* Campaign-Exclusive Units
+Jokul: Ability Gust, Ability Tempest, hackarmor+
+Eitri:
+    EitriHammer: raiju special attack
+Gods
+    Quetzalcoatl (flying), Quetzalcoatl (hero), Quetzal
+    Teixiptla / Incarnate: 
+        TeixiptlaHuitz, TeixiptlaTezca, TeixiptlaQuetz / SuperTeixiptlaHuitz, CheatSuperTeixiptlaHuitz, SuperTeixiptlaTezca, CheatSuperTeixiptlaTezca, SuperTeixiptlaQuetz, CheatSuperTeixiptlaQuetz
+    Huitzilopochtli 
+    Tezcatlilopa
+MythSoldier
+    Panther: tezca model
+    Bull: Kamina model, Kamos model
+Infantry:
+    Copil, Joku
+===
+    * Villager: YasukoUnarmed, TatsuroUnarmed
+    * Leader: Theocrat, Krios
+    * Infantry: Tatsuro, CangjieKnife, Kagemasa, GeneralMelagius, Akari
+    * Cavalry: YanFeifengRider, CangjieRider, HouyiRider, QingRider, Harumoto
+    * MythUnit: Theris (vfxfire), Magumo, Kamos, Chiyou, Tanuki, Kappa
+    * Priest: Azusa, AbeNoSeimei
+
+=== ART MODELS FOR WEAPONS
+    * material variant (gold=3)
+        (<file>chinese\units\attachments\sword\sword_c_b_upgrade3</file><materialvariant index="3"></materialvariant>)
+
+    * Golden Needle Sword: 
+        YanFeifeng (chinese\units\attachments\sword\sword_c_b_upgrade3): golden sword
+    * Golden Katana: 
+        Shogun (japanese\units\hero\shogun\shogun_katana): golden katana
+    * Golden Spear: 
+        Chiyou (chinese\units\hero\yang_jian\yang_jian_halberd): chinese 3-fang royal spear +
+        Ajax (greek\units\hero\ajax\ajax_spear): half gold metal spear +
+        Iolaus (chinese\units\attachments\spear\spear_c_b_upgrade3): chinese golden-tip javelin
+        Circe (spc\units\circe\circe_staff): gold rod            
+    * Golden Fork: 
+        NeZha (chinese\units\hero\ne_zha\ne_zha_spear_upgrade2): chinese sharp-edge majestic golden spear +
+        Yasuko (japanese\spc\units\attachments\heavenly_jeweled_spear\heavenly_jeweled_spear): golden fork, held in wrong direction LOLZ +
+        LivingPoseidonStatue (spc\units\gargarensis\gargarensis_trident_cine): oversized iron spear LOLZ +
+        DestroyerHero (atlantean\units\attachments\trident\trident_hero): iron trident with tiny gold tips

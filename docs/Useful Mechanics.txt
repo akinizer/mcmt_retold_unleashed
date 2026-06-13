@@ -1,0 +1,138 @@
+   
+* mechanics applicable
+- veterancy container
+Unit Veterancy: Spawns container 
+<spawn type="veterancyRankUp" count="1" param="1" skipplacementcheck="" swapkilledunit="" shadingtype="gold">VeterancySpawnedContainer</spawn>
+
+Tech: activates if "VeterancySpawnedContainer" is alive
+<prereqs> <typecount unit="VeterancySpawnedContainer" count="0.00" state="aliveState" operator="gt"></typecount> </prereqs>
+
+- Proximity Abilities
+HandAttack,RangedAttack,RangedAttackMyth,FlyingUnitAttack,AntiWallAttack,BuildingAttack
+- Switch Abilities
+WhiteHorseCavalry,NezhaChild
+- Offensive Abilities
+Throw (Cyclops,Kraken,Carnivora,Jorogumo,Kappa,Kraken,), TrapThrow (Kusanagi), Devour (TaoTie), Abduct, DrainResurrection (HuangZhao)
+JumpAttack (CoyotlWarrior,JaguarRider,Bellerophon,Amanra) + AbilityTunkuluchu (mark for death)
+BeamAttack (Chanque,Yasuko)
+LightningAttack,ChainOfCorruption
+BirthAttack (Volcano,Gullinbursti)
+WreckingBall (AyotochtliAyotochtli)
+FreezeAttack (FrostGiant,KingFolstag,Midas,Perseus), ColdTouch (YukiOnna), ChaoticFear (HunDun), Banish (HunDun), ChaosAttack (Lampades)
+ReincarnationAttack (Mummy),MictlansHowl
+TauntAttack (RockGiant),Lure (Siren)
+- Chainhit Offensive Abilities
+AoEAttack
+- Sacrifice Abilities
+SelfDestructAttack (FishingShipChinese, Lampades, Scarab, LargeScorpion, Maquizcoatl)
+DevoteMinor,DevoteMajor (aztec, temple returns favor)
+- Status Effect Abilities
+Heal,BurstHeal,HealUnitArea,HealTitanGateSPC,Empower,Gather(Worker,OxCart),Pray,GatherShrine
+Convert (CommunalHearth,Sage,WenZhong,Priest),TransfigurationAttack (Lampades)
+Eat
+- OnHitEffect Abilities
+LifeDrain
+Pacify (Caladria)
+AbilitySoulGuide (infection)
+<onhiteffect type="InstantKillablePercentChance" amount="0.25" relativity="set" duration="8.000000" byunittype="Tunkuluchu">
+    <target attacktype="HumanSoldier"></target></onhiteffect>
+<onhiteffect type="StatModify" duration="8.000000">
+    <modify type="MaxHP" stack="">0.750000</modify>
+    <target attacktype="Unit"></target><target ignoretype="Hero"></target><target ignoretype="LogicalTypeDivineImmunity"></target></onhiteffect>
+- Terrain Abilities
+Stealth (Ahuizotl), JumpAttackStealth
+- Defensive Abilities
+ConditionalShield
+- Mobility Abilities
+FlashStrike (YaZiDash), TeleportAttack (Umibozu)
+TorpedoAttack (Honengyo)
+Maul (BaiHu)
+- Transform Abilities (Roc,QiongQi,VillagerNorse,VillagerDwarf)
+DelayedTransform (Command, Ability): ZhuQue (HealingDescend), TenguAir, QiongQi (Takeoff), QiongQiAir (Land), RocLanded (TakeOff), Roc (Land), LykaonVillager & LykaonWolf, Chaneque & ChanequeIdol
+ConditionalTransformDamageTaken: LykaonVillager
+ConditionalTransformDamageDealt: LykaonVillager
+DelayedHamadryadTransform: Hamadryad, HamadryadTree
+ConditionalTransformMoved: HamadryadTree
+ConditionalTransformAmbush: HamadryadTree
+TransformCommand Unit: VillagerNorse, VillagerDwarf, Atlantean Human Units, WarriorPriestToTeixiptla, AxolotlToMutantAxolotl
+TransformCommand Building: WalltoGate, WallCornertoTower, Calpulli
+- Spawn Abilities
+CreateGodPower: Gust,ZeusBolt,Rain,Tempest,VolcanoMeteor (MonolithStrike),PillarOfTlaloc (MonolithStrike)
+Maintain: ArgivePatronageMyrmidon (Fortress), ArgivePatronageAmazonArcher (Fortress), ScorpionSpawn (InfestedDen), CherrySpawn (ShrineJapanese), MaintainTrain
+Charged: AssistAttack, SpawnAssistUnit (YangJian), ReleaseSkyLantern, AbilityTitanPrometheus, AbilityOnmyokii Calpulli (Turkey)
+Combat-Charged: AbilityDaimyo (samurai), AlphaWolf (fimbulwinterwolf,fenriswolfbrood)
+Command: Bodyguards
+OnDeath: Partisans, PrometheanOffspring, TigerCavalryDismounted
+Collect: EveningStarSoulGuide (aztec resource)
+-  Spawnable / Attached Containers
+SmokeTrapAura: AreaLOSReduction, AreaSpeedReduction
+SpikeTrapAura
+ReflectAttackContainer
+ChargedModifyContainer,ChargedModifyVFXContainer
+DemeterBonusContainer
+AttackSpeedBuffContainer
+ResourceSightContainer
+VFXForestProtectionArea
+YingLongDeluge
+RockSolid
+- Container Effects
+IdleStatBonus
+    RockSolidHackBonus,RockSolidPierceBonus,PetrificationBonus
+    IdleDamageBonus
+    LonghouseSpeedBonus
+    AutoLOS
+ChargedModify
+    BuildingDropsiteRateModify
+    MilitaryMaxShieldPointModify
+    MilitaryUnitDamageModify
+    MilitaryUnitROFModify
+    MilitaryBuildingTrainCostModify
+    FragmentOfTheKillingStoneAura
+    ChargedModifyAutumnOfAbundance
+    <charged>
+        Lifesteal: KillEnemy (YaZi)
+        Speed: TaoWu
+        TerrainType: Speed & Duration (Ahuizotl, Siren, XuanWu, Kappa, AxolotlMutant), Damage (Kappa, AxolotlMutant), ROF (Kappa, AxolotlMutant)
+        ChargedModifyVFX: VFXAutumnOfAbundance (PiXiu AutumnOfAbundance), VFXSageConvertSuccess & VFXSageConvertFail (Sage, CangJie, WenZhong)
+        ArmorSpecific: Pierce,Hack,Crush (ChiWen Bolster)
+AutoRangedModify
+    BirthHackArmor & BirthPierceArmor (LykaonWolf)
+    AreaDamage (FlamingBloodAreaDamage,BillowingSmog,Maelstrom,Earthquake,TaoTieFireArea,ChimeraFireArea,SpikeTrapAura),Trail (AreaInfect),FoundationDamageAura (Titan)
+    Damage (BerserkDamageBoost,WeaponSmithing,CharismaAttack),DamageBonus (MythUnitAura,Orpheus DamageBonusVsMyth),ProgressiveDamageLight,ProgressiveDamageHeavy
+    HP (Seidr),Armor (ArmorSmithing),ROF (CharismaSpeed, AttackSpeedBuff),MaxVelocity (Kitsune SpeedBoost,AOTGKronosUniqueAura,AreaSlow,Puddles EnemySpeedModify,YingLongDeluge EnemySpeedModify,Trap AreaSpeedReduction)
+    ResourceTiedHeal (AgaveBloom),AreaHeal (Monument,TownCenter,Fortress,Dock,Healer,Pharaoh,Tanuki,QiLin,ToriiGate,HesperidesTree),BlessingAreaHeal (Temple),FavorStashMassHeal,AllyHealModify (vfx_heal),FarmHealBonus
+    AreaLOSReduction (SmokeTrapAura),AreaInvisibility,AreaRestrict (LiJing Pagoda)
+    GatherBonus (CommunalHearth,ShrineJapanese),AreaHarvest (YingLong),GatherAura (Calpulli,ShrineJapanese,YingLong),ResourceInventoryAura (ShrineJapanese),ResourceInventoryCapAura (ShrineJapanese),TempleFavorBonus,FarmPopCapBonus
+    ProximityBuildBonus (MineGoldLarge,MineGoldMedium,MineGoldSmall,MineGoldMidas049,MineGoldMidas099,MineGoldMidas149,MineGoldMidas199,MineDwarvenLarge,MineDwarvenMedium,MineDwarvenSmall)
+    TemporalScaffoldingSmall(Manor),TemporalScaffoldingSmall(Manor)
+    <modifytype>RevealUI</modifytype>: OracleRevealEnemyUI
+    <restrictifempowered>: MonumentEmpowerAura,DevoteesMedium,DevoteesLarge
+LikeBonus
+    DeathBoostDamageBonus
+    IncreaseDamageWithLikeUnits (Wasen,FenrisWolfBrood),IncreaseSpeedWithLikeUnits (FenrisWolfBrood)
+    ShrineGatherRateBoost
+    HackArmorInverseAura & PierceArmorInverseAura (QiongQi, QiongQiAir)
+SelfModify
+    DynamicLOS
+    <onhiteffect> ROF,Damage,ArmorSpecific (Hack,Pierce,Crush),Speed,DamageSpecific(Hack,Pierce,Crush,Divine)
+AutoBoost
+    AutoBoost (): Armor Barrier (Yasuko, ZhuQue), MaxShieldPoints Barrier (YanFeiFeng), Self ROF & Damage & Armor (Shinobi, Oni, ShutenDoji), Speed & Damage (Einheri, Arkantos, GeneralMelagius, SuperTeixiptla, Huitzilopochtli)        
+    BoostOnDeath: (Athena)
+StatModify
+    Enemy: MaxHP, ForcedTarget, Chaos, LifeSteal, Speed, ROF (Aztec), Armor (VFXScorchingFeathers, FishingShipChinese, Maquizcoatl)
+InstantKillablePercentChance: Tunkuluchu
+Freeze
+    Freeze, StoneDamage, Sand, Gold, ProgFreeze
+Gather
+    AutoGather (norseinfantry,japaneseinfantry,japanesemythunit,peachblossom,tradingpost,plentyvault,towncenter,villagecenter,citdadelcenter,hillfort,asgardianhillfort,wonder,monument,qinghailakeshrine,templechinesespc): 
+        AutoGatherFavor,AutoGatherFood,AutoGatherWood,AutoGatherGold
+    ModifyGather (PeachBlossom): ModifyGatherFood,ModifyGatherWood,ModifyGatherGold
+    Trade (caravan)
+AreaMutate (ShrineJapanese,ShrineOfTheHunt)
+ResourceDecay (Tonalli, huntable, herdable)
+Attach (Projectile, VFX)
+    Attaching (SunRayRevealer,OranosRevealer) -> ActionAddAttachingUnit (tech)
+    AutoRangedAttach
+        LOSWithResources
+    VFX (VFXMarkOfDeath,VFXFire,VFXPoison,VFXChaos,VFXNezhaFire,VFXCaladriaPacify etc.)
+TreeBender (wind.tactics): LightWindSmallArea,LightWindAllTrees,ModerateWindSmallArea,ModerateWindAllTrees,StrongWindSmallArea,StrongWindAllTrees

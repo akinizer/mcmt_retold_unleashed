@@ -499,6 +499,9 @@ ID = "STR_BLD_TEMPLEOFFIRE_NAME" ;   Str = "Temple of Fire"
 ID = "STR_BLD_TEMPLEOFDIVINESUN_NAME" ;   Str = "Temple of Divine Sun"
 ID = "STR_BLD_TEMPLEOFETERNALMOON_NAME" ;   Str = "Temple of Eternal Moon"
 ID = "STR_BLD_TEMPLEOFSTORMS_NAME" ;   Str = "Temple of Storm"
+ID = "STR_BLD_ALTAROFSUN_NAME" ;   Str = "Altar of Sun"
+ID = "STR_BLD_ALTAROFSHADOWS_NAME" ;   Str = "Altar of Shadows"
+ID = "STR_BLD_ALTAROFWISDOM_NAME" ;   Str = "Altar of Wisdom"
 
 ID = "STR_BLD_FORGE_OF_HEPHAESTOS_NAME" ;   Str = "Forge of Hephaestos"
 

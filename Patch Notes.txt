@@ -282,6 +282,7 @@
 - Elven Specialists:
     - rangerelf: rangedattack, handattack, rangedattackflying, long range, effective at infantry at close range, effective at mythunit at distance
         - modelattachment: flower petals
+        - stealth
     - royalelf: rangedattack, handatack, rangedattackflying, medium range, stronger variant of rangerelf
         - modelattachment: hero glow 
     - elventraining: enables elf units and elventent at greathall
@@ -1131,7 +1132,7 @@
     - displayname: Fire Wall
 
 * structure reworks
-- Display Name: titan, wonders
+- Display Name: titan, wonders, temples
 - Calpulli, CalpulliLivestock: oversight that displays ranged attack has been fixed
 
 * additional tree types

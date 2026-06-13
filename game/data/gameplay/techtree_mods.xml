@@ -11489,6 +11489,16 @@
   <tech name="ArchaicAgeSusanoo">
     <effects><effect type="SetName" proto="Temple" newname="STR_BLD_TEMPLEOFSTORMS_NAME" mergeMode="add"></effect></effects>
   </tech> 
+    <!-- Aztec Community -->
+  <tech name="ArchaicAgeTezcatlipoca">
+    <effects><effect type="SetName" proto="Temple" newname="STR_BLD_ALTAROFSHADOWS_NAME" mergeMode="add"></effect></effects>
+  </tech> 
+  <tech name="ArchaicAgeHuitzilopochtli">
+    <effects><effect type="SetName" proto="Temple" newname="STR_BLD_ALTAROFSUN_NAME" mergeMode="add"></effect></effects>
+  </tech> 
+  <tech name="ArchaicAgeQuetzalcoatl">
+    <effects><effect type="SetName" proto="Temple" newname="STR_BLD_ALTAROFWISDOM_NAME" mergeMode="add"></effect></effects>
+  </tech> 
 
   <!-- Wonders of World-->
     <!-- Greek Wonders of Art-->
