@@ -28291,13 +28291,13 @@
 		<unittype>LogicalTypeFindMilitaryHero</unittype>
 		<unittype>LogicalTypeDivineImmunity</unittype>
 		<unittype>LogicalTypeHealableHero</unittype>
+		<unittype>LogicalTypeDroppedFavorCollector</unittype>
 		<flag>CollidesWithProjectiles</flag>
 		<flag>CorpseDecays</flag>
 		<flag>ShowGarrisonButton</flag>
 		<flag>DontRotateObstruction</flag>
 		<flag>ObscuredByUnits</flag>
 		<flag>NotDeleteable</flag>
-		<flag>KnockoutDeath</flag>
 		<flag>CommonCommands</flag>
 		<flag>MilitaryCommands</flag>
 		<flag>HideGarrisonFlag</flag>
