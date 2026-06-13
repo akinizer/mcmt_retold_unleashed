@@ -10922,10 +10922,7 @@
       <effect type="Data" action="JumpAttack" amount="2.0" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">MajorHero</target></effect>
 
-      <effect type="Data" action="JumpAttack" amount="0.75" subtype="DamageArea" relativity="Absolute" mergeMode="add">
-				<target type="ProtoUnit">HumanSoldier</target></effect>
-      
-      <effect type="Data" action="JumpAttack" amount="1.50" subtype="DamageArea" relativity="Absolute" mergeMode="add">
+      <effect type="Data" action="JumpAttack" amount="1.00" subtype="DamageArea" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">HumanSoldier</target></effect>
     </effects>
   </tech>
