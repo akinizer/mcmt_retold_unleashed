@@ -7569,6 +7569,15 @@
       <effect type="Data" amount="1.00" subtype="OnHitEffectActive" action="SlashAttack" effecttype="ProgFreeze" targettype="LogicalTypeMythUnitNotTitan" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">Perseus</target></effect>
 
+      <effect type="Data" action="SlashAttack" amount="0.5" subtype="DamageBonus" unittype="Hero" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Perseus</target></effect>
+
+      <effect type="Data" action="Stealth" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Perseus</target></effect>
+
+
+      <effect type="TransformUnit" toprotoid="Perseus" fromprotoid="Perseus" includequeued="true" mergeMode="add"></effect>
+
       <effect type="TechStatus" status="active" mergeMode="add">LightningWeaponsActive</effect>
     </effects>
   </tech>

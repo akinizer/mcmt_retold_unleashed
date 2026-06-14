@@ -1888,6 +1888,9 @@
 	
 		<unittype>InfantryLineUpgraded</unittype>	
 		<unittype>ArcherLineUpgraded</unittype>	
+
+		<stealthrevealselfradius>2.0000</stealthrevealselfradius>
+		<stealthshowsilhouetteradius>11.0</stealthshowsilhouetteradius>
 	
 		<tactics>greek_hero_proximitymodes_freeze_perseus.tactics</tactics>
 		<protoaction>
@@ -6066,7 +6069,7 @@
 			<onhiteffect type="Attach" targetunittype="Unit" proto="VFXPoison" attachbone="spine" duration="3.000000"></onhiteffect>
 			<maxrange>16.000000</maxrange>
 			<projectile>ProjectileWadjetSpit</projectile>
-		</protoaction>
+		</protoaction>		
 	</unit>
 	<unit name="WanderingTurkey" orderhint="5">
 		<displaynameid>STR_EMB_WANDERING_TURKEY_NAME</displaynameid>

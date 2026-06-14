@@ -185,7 +185,7 @@
     - Jason+, Heracles+ Odysseus+, Bellerophon+
     - Ajax+, Chiron+, 
         - Perseus+:
-            - Stealth
+            - Stealth (OlympianWeapons): tech-enabled
             - GorgonsGazeAttack (BeastSlayer): tech-enabled
             - HandAttack OnhitEffectActive (OlympianWeapons): ProgFreeze StoneDamage on HumanSoldier & MythUnit
     - Achilles+, 
@@ -568,6 +568,7 @@
     - EnyosBowOfHorror: affects on Gastraphetoros, AmazonArcher, bonusdamage vs hero
     - DeimosSwordOfDread: affects on Hetairos, bonusdamage vs hero
     - Anastrophe: Pentekonter HackArmor+
+    - OlympianWeapons: Perseus bonusdamage vs Hero
 - atlantean
     - ArchaicAgeAtlantean:
         - MilitaryBarracks: Murmillo, Fanatic, Destroyer +
