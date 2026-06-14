@@ -183,7 +183,11 @@
     - VisualScale: TheArgo+, Polyphemus+
 
     - Jason+, Heracles+ Odysseus+, Bellerophon+
-    - Ajax+, Chiron+, Perseus+
+    - Ajax+, Chiron+, 
+        - Perseus+:
+            - Stealth
+            - GorgonsGazeAttack (BeastSlayer): tech-enabled
+            - HandAttack OnhitEffectActive (OlympianWeapons): ProgFreeze StoneDamage on HumanSoldier & MythUnit
     - Achilles+, 
         - OnDeath: AchillesDismounted+
     - Atalanta+, Hippolyta+, Theseus+, Polyphemus+

@@ -1851,11 +1851,10 @@
 		<populationcount>1</populationcount>
 		<initialshieldpoints>100</initialshieldpoints>
 		<maxshieldpoints>100</maxshieldpoints>
+		<maxvelocity>5.8</maxvelocity>
 		
 		<unittype>CavalryLineUpgraded</unittype>
 		<unittype>ArcherLineUpgraded</unittype>		
-		<unittype>MythUnitCavalry</unittype>		
-		<unittype>MythUnitRanged</unittype>		
 		
 		<protoaction>
 			<name>RangedAttack</name>
@@ -1899,6 +1898,8 @@
 			<damagebonus type="MythUnit">7.000000</damagebonus>
 			<maxrange>0.750000</maxrange>
 			<defaultattack>1</defaultattack>
+			<onhiteffect active="0" type="ProgFreeze" duration="3.0" rate="0.15" freezetype="StoneDamage" freezeduration="3.0" targetunittype="HumanSoldier"></onhiteffect>
+			<onhiteffect active="0" type="ProgFreeze" duration="3.0" rate="0.15" freezetype="StoneDamage" freezeduration="3.0" targetunittype="LogicalTypeMythUnitNotTitan"></onhiteffect>
 		</protoaction>
 		<protoaction>
 			<name>RangedAttack</name>
@@ -1942,8 +1943,24 @@
 				<modify type="ArmorSpecific" dmgtype="Crush">0.700000</modify>
 			</onhiteffect>
 			<onhiteffect type="Spawn" proto="VFXAsh" amount="1"></onhiteffect>
-		<workonfrozenunits>0</workonfrozenunits>
+			<workonfrozenunits>0</workonfrozenunits>
+			<active>0</active>
 		</protoaction>		
+		<protoaction>
+			<name stringid="STR_ACTION_STEALTH">Stealth</name>
+			<type>Stealth</type>
+			<maxrange>25.0</maxrange>
+			<autocastbyself>1</autocastbyself>
+			<autocastdistance>2.250000</autocastdistance>
+			<persistent>1</persistent>
+			<activevfxproto>VFXStealthEye</activevfxproto>
+			<revealarearadius>2.0</revealarearadius>
+			<revealareachain>1.0</revealareachain>
+			<soundsetenter>StealthBirth</soundsetenter>
+			<soundsetupdate>StealthAcknowledge</soundsetupdate>
+			<soundsetexit>StealthExists</soundsetexit>
+			<active>0</active>
+		</protoaction>
 	</unit>
 	<unit name="TheArgo">
 		<populationcount>2</populationcount>

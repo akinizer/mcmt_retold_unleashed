@@ -556,7 +556,7 @@
           <target type="ProtoUnit">Priest</target></effect>
         <effect type="SetName" proto="Priest" newname="STR_UNIT_PRIEST_OF_MANIA_NAME" mergeMode="add"></effect>
       </effects>
-    </tech>    
+    </tech>
     
     <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <tech name="MCMT_Techs" mergeMode="add">
@@ -7376,9 +7376,15 @@
     <effects>
       <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="MythUnit" relativity="Absolute" mergeMode="remove">
 				<target type="ProtoUnit">Hero</target></effect>
+      <!--Perseus-->
+      <effect type="Data" action="GorgonsGazeAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Perseus</target>
+      </effect>	  
       <!--AbstractBeasts-->
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="AbstractBeast" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
-      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="AbstractBeastfolk" relativity="Absolute" mergeMode="add"><target type="ProtoUnit">HumanSoldier</target></effect>
+      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="AbstractBeast" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">HumanSoldier</target></effect>
+      <effect type="Data" allactions="1" amount="2.0" subtype="DamageBonus" unittype="AbstractBeastfolk" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">HumanSoldier</target></effect>
     </effects>
   </tech>
   <tech name="HandOfTalos">
@@ -7557,6 +7563,11 @@
         <target type="ProtoUnit">Hero</target></effect>
       <effect type="Data" action="RangedAttack" amount="1.0" subtype="DamageBonus" unittype="MythUnit" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">Hero</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="OnHitEffectActive" action="SlashAttack" effecttype="ProgFreeze" targettype="HumanSoldier" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Perseus</target></effect>
+      <effect type="Data" amount="1.00" subtype="OnHitEffectActive" action="SlashAttack" effecttype="ProgFreeze" targettype="LogicalTypeMythUnitNotTitan" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Perseus</target></effect>
 
       <effect type="TechStatus" status="active" mergeMode="add">LightningWeaponsActive</effect>
     </effects>

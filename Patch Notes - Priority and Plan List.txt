@@ -6,9 +6,6 @@
 Jokul, Copil, Kamina
 
 === MILITARY TECHS FOR UNITS ===
-- Helm of Darkness: Perseus gains infiltration
-- Gaze of Medusa: Perseus gains petrification
-
 - huntsofartemis: female units HarvestOfSouls vs mythbeast
 - Vikings (Norse): RaiderCavalry -> HumanSoldier, reward Food and Wood, name change (Viking Ideology)
 - SpoilsOfWar -> archaicage tech

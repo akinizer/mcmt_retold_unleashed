@@ -292,7 +292,7 @@
 		<ability>PassiveSolarFlare<tech>SunRay</tech><alwaysdisabledingrid>1</alwaysdisabledingrid></ability>
 	</Chiron>
 	<Perseus>
-		<ability>AbilityPerseus<chargetimeasrof>1</chargetimeasrof></ability>
+		<ability>AbilityPerseus<tech>BeastSlayer</tech><chargetimeasrof>1</chargetimeasrof></ability>
 		<ability>PassiveSacredHands<alwaysdisabledingrid>1</alwaysdisabledingrid></ability>
 		<ability>PassiveScourgeOfTheSkies<alwaysdisabledingrid>1</alwaysdisabledingrid></ability>
 	</Perseus>
