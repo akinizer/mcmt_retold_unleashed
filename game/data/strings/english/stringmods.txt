@@ -914,6 +914,15 @@ ID = "STR_BLD_AGAVE_DOOMBLOOM_NAME"   ;   Str = "Doom Bloom"
 ID = "STR_BLD_AGAVE_DOOMBLOOM_SR"   ;   Str = "Nature's Vengeance"
 ID = "STR_BLD_AGAVE_DOOMBLOOM_LR"   ;   Str = "Nature gifts Agave Bloom as a gift to heal people. If they get greedy and deplete it, it turns into Doom Bloom and burns the sinners"
 
+ID = "STR_BLD_BATTLEMASTER_NAME"   ;   Str = "Battlemaster"
+ID = "STR_BLD_BATTLEMASTER_SR"   ;   Str = "Champions of Flower Wars"
+ID = "STR_BLD_BATTLEMASTER_LR"   ;   Str = "Durable unit that is resilient to Myth Units and effective against Heroes"
+ID = "STR_BLD_BATTLEMASTER_ABILITY"   ;   Str = "Hire Buddy: Makina"
+
+ID = "STR_UNIT_MAKINA_NAME"   ;   Str = "Makina (Hero)"
+ID = "STR_UNIT_MAKINA_SR"   ;   Str = "Adventurer from Distant Lands"
+ID = "STR_UNIT_MAKINA_LR"   ;   Str = "Battlemaster's fate crosses path with a traveler and hires it for stun and gore attacks in a short duration"
+
 // AZTEC SPECIAL TECHS
 ID = "STR_TECH_TELPOCHCALLI_TRAINING_NAME"   ;   Str = "Telpochcalli Training"
 ID = "STR_TECH_TELPOCHCALLI_TRAINING_LR"   ;   Str = "Commando training that enhanches physique of human soldiers"

@@ -6494,6 +6494,226 @@
 		</protoaction>
 	</unit>	
 	<!-- Aztec Special Units -->
+	<unit name="BattleMaster">
+		<displaynameid>STR_BLD_BATTLEMASTER_NAME</displaynameid>
+		<rollovertextid>STR_BLD_BATTLEMASTER_LR</rollovertextid>
+		<shortrollovertextid>STR_BLD_BATTLEMASTER_SR</shortrollovertextid>
+		<icon>resources\spc\player_color\units\copil_icon.png</icon>
+		<animfile>aztec\units\spc\copil\copil.xml</animfile>
+		<soundsetfile>aztec\vo\copil\copil.xml</soundsetfile>
+		<obstructionradiusx>0.7400</obstructionradiusx>
+		<obstructionradiusz>0.7400</obstructionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<trainpoints>30.0000</trainpoints>
+		<buildlimit>3</buildlimit>
+		<cost resourcetype="Gold">135.0000</cost>
+        <cost resourcetype="Food">65.0000</cost>
+
+		<recharge type="attacks" init="0">6.000000</recharge>
+		<rechargeincludetypes>
+			<unittype>Unit</unittype>
+		</rechargeincludetypes>
+		<rechargeexcludetypes>
+			<unittype>Resource</unittype>
+		</rechargeexcludetypes>
+
+		<autoattackrange>16.0000</autoattackrange>
+		<movementtype>land</movementtype>
+		<turnrate>20.0000</turnrate>
+		<initialhitpoints>450.0000</initialhitpoints>
+		<maxhitpoints>450.0000</maxhitpoints>
+		<weightclass>6</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>4.6000</maxvelocity>
+		
+		<los>17.0000</los>
+		<armor type="Hack" value="0.6500"></armor>
+		<armor type="Pierce" value="0.5000"></armor>
+		<armor type="Crush" value="0.8600"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeSharedHeroSelection</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>HumanSoldier</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+		<unittype>SiegeLineUpgraded</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>HideGarrisonFlag</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Hack">15.000000</damage>
+			<maxrange>2.000000</maxrange>
+			<onhiteffect type="Lifesteal" rate="0.25" targetunittype="HumanSoldier"></onhiteffect>
+			<onhiteffect type="Lifesteal" rate="0.25" targetunittype="Hero"></onhiteffect>
+		</protoaction>
+		<protoaction>
+			<name>HarvestOfSouls</name>
+			<type>ChargedModify</type>
+			<persistent>1</persistent>
+			<charged>
+				<chargedmodify modifytype="Damage" applytype="Multiply">1.15</chargedmodify>
+				<duration>3</duration>
+				<cooldown>0</cooldown>
+				<activationtype>KillEnemy</activationtype>
+			</charged>
+			<charged>
+				<chargedmodify modifytype="ROF" applytype="Multiply">0.8</chargedmodify>
+				<duration>3</duration>
+				<cooldown>0</cooldown>
+				<activationtype>KillEnemy</activationtype>
+			</charged>
+		</protoaction>
+		<protoaction>
+			<name stringid="STR_ACTION_CHARGE_SPAWN">ChargedSpawn</name>
+			<type>Spawn</type>
+			<rate type="Makina">1.000000</rate>
+			<minrate type="Unit">1.000000</minrate>
+			<anim>Birth</anim>
+			<persistent>1</persistent>
+			<animationrate>1</animationrate>
+			<chargeaction>1</chargeaction>
+			<forcespawn>1</forcespawn>
+		</protoaction>
+	</unit>
+
+	<unit name="Makina">
+		<displaynameid>STR_UNIT_MAKINA_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_MAKINA_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_MAKINA_SR</shortrollovertextid>
+		<icon>resources\spc\player_color\units\kamina_icon.png</icon>
+		<minimapicon>ui\minimap\minimap_hero_spc</minimapicon>
+		<animfile>mcmt\units\aztec\makina.xml</animfile>
+		<soundsetfile>aztec\vo\kamina\kamina.xml</soundsetfile>
+		<obstructionradiusx>0.7400</obstructionradiusx>
+		<obstructionradiusz>0.7400</obstructionradiusz>
+		<selectionradiusx>1.0000</selectionradiusx>
+		<selectionradiusz>1.0000</selectionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<autoattackrange>16.0000</autoattackrange>
+		<movementtype>land</movementtype>
+		<turnrate>15.0000</turnrate>
+		<initialhitpoints>425.0000</initialhitpoints>
+		<maxhitpoints>425.0000</maxhitpoints>
+		<unitregen>1.0000</unitregen>
+		<weightclass>7</weightclass>
+		<maxcontained>1.0000</maxcontained>
+		<populationcount>4</populationcount>
+		<maxvelocity>3.7000</maxvelocity>
+		<rechargetime>10.0000</rechargetime>
+		<los>17.0000</los>
+
+		<lifespan>3.0000</lifespan>
+
+		<armor type="Hack" value="0.6000"></armor>
+		<armor type="Pierce" value="0.6000"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>Hero</unittype>
+		<unittype>HeroShadowUpgraded</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>MajorHero</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>NotDeleteable</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>HideGarrisonFlag</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>VariationLocked</flag>
+
+		<flag>NotSelectable</flag>
+		<flag>Invulnerable</flag>
+		<flag>NoHPBar</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+
+		<contain external="1">LogicalTypePickable</contain>
+		<birthprotoaction>BirthAttack</birthprotoaction>
+		<selfdestructprotoaction>BirthAttack</selfdestructprotoaction>
+		<tactics>handattack_gore.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Hack">10.000000</damage>
+			<damagebonus type="HumanSoldier">2.000000</damagebonus>
+			<maxrange>0.750000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>Gore</name>
+			<rof>1.000000</rof>
+			<damage type="Hack">80.000000</damage>
+			<damagearea>8.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<damagebonus type="MythUnit">3.000000</damagebonus>
+			<maxrange>1.000000</maxrange>
+			<coneareaangle>90.000000</coneareaangle>
+			<maxsizeclass>4</maxsizeclass>
+		</protoaction>
+		<protoaction>
+			<name>Pickup</name>
+			<type>Pickup</type>
+			<maxrange>1</maxrange>
+			<rate type="LogicalTypePickable">1.00000</rate>
+		</protoaction>
+		<protoaction>
+			<name>DropOff</name>
+			<type>DropOff</type>
+			<maxrange>1</maxrange>
+			<rate type="AbstractTemple">1.00000</rate>
+		</protoaction>
+		<protoaction>
+			<name notactics="">BirthAttack</name>
+			<type>Attack</type>
+			<damage type="Divine">25.000000</damage>
+			<damagearea>5.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<rate type="HumanSoldier">1.0</rate>
+			<rate type="EconomicUnit">1.0</rate>
+			<rate type="Hero">1.0</rate>
+			<onhiteffect type="Stun" duration="5.00"></onhiteffect>
+			<onhiteffect type="Attach" targetunittype="Unit" proto="VFXStun" attachbone="vfx_top" duration="5.000000"></onhiteffect>
+		</protoaction>
+		
+	</unit>
 	<!-- Aztec Special Buildings -->
 	
 	<!-- CAMPAIGN HEROES REWORK -->

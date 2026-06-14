@@ -1249,6 +1249,8 @@
           <target type="ProtoUnit">Polaris</target></effect>    
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythResistant" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">Jarl</target></effect>    
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythResistant" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">BattleMaster</target></effect>    
         <!--AbstractFireResistant-->  
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractFireResistant" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">Ayotochtli</target></effect>     
@@ -10711,6 +10713,65 @@
     </effects>
   </tech>
   <!-- Aztec Military Techs -->
+
+  <tech name="MediumNoblesHutSoldiers">
+		<effects>
+			<effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">BattleMaster</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.15" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">BattleMaster</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">BattleMaster</target></effect>
+
+      <effect type="Data" allactions="1" amount="1" subtype="DamageBonus" unittype="Hero" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">BattleMaster</target></effect>
+      <effect type="Data" allactions="1" amount="2" subtype="DamageBonus" unittype="HumanSoldier" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">BattleMaster</target></effect>
+		</effects>
+	</tech>
+	<tech name="HeavyNoblesHutSoldiers">
+	<effects>
+			<effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">BattleMaster</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">BattleMaster</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">BattleMaster</target></effect>
+
+      <effect type="Data" allactions="1" amount="2" subtype="DamageBonus" unittype="Hero" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">BattleMaster</target></effect>
+      <effect type="Data" allactions="1" amount="4" subtype="DamageBonus" unittype="HumanSoldier" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">BattleMaster</target></effect>
+		</effects>
+	</tech>
+	<tech name="ChampionNoblesHutSoldiers">
+	<effects>
+			<effect type="Data" amount="1.25" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">BattleMaster</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.25" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">BattleMaster</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">BattleMaster</target></effect>
+
+      <effect type="Data" allactions="1" amount="3" subtype="DamageBonus" unittype="Hero" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">BattleMaster</target></effect>
+      <effect type="Data" allactions="1" amount="6" subtype="DamageBonus" unittype="HumanSoldier" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">BattleMaster</target></effect>
+		</effects>
+	</tech>
+	<tech name="LevyNoblesHutSoldiers">
+		<effects>
+			<effect type="Data" amount="0.80" subtype="TrainPoints" relativity="Percent" mergeMode="add">
+				<target type="ProtoUnit">BattleMaster</target></effect>
+		</effects>
+	</tech>
+	<tech name="ConscriptNoblesHutSoldiers">
+		<effects>
+			<effect type="Data" amount="0.80" subtype="TrainPoints" relativity="Percent" mergeMode="add">
+				<target type="ProtoUnit">BattleMaster</target></effect>
+		</effects>
+	</tech>
+
   <tech name="MediumGreatTempleSoldiers">
     <icon mergeMode="remove">resources\aztec\static_color\technologies\medium_great_temple_soldiers_icon.png</icon>
     <!---->
@@ -11618,24 +11679,29 @@
     <effects><effect type="SetName" proto="Wonder" newname="STR_BLD_ITSUKUSHIMASHRINE_NAME"></effect></effects>
   </tech> 
     <!-- Aztec Wonders of Art-->
-  <tech name="MythicAgeHuitzilopochtli" mergeMode="add">
+  <tech name="MythicAgeHuitzilopochtli">
     <effects>
-      <effect type="SetName" proto="Wonder" newname="STR_BLD_TEMPLOMAYOR_NAME"></effect>
+      <effect type="SetName" proto="Wonder" newname="STR_BLD_TEMPLOMAYOR_NAME" mergeMode="add"></effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ForbiddenTechMictlan" row="1" column="5" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Wonder</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">BattleMaster</target></effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" proto="BattleMaster" row="0" column="5" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">NoblesHut</target></effect>
+    </effects>
+  </tech> 
+  <tech name="MythicAgeTezcatlipoca">
+    <effects>
+      <effect type="SetName" proto="Wonder" newname="STR_BLD_TEMPLEOFEHECATL_NAME" mergeMode="add"></effect>
       <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ForbiddenTechMictlan" row="1" column="5" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">Wonder</target></effect>
     </effects>
   </tech> 
-  <tech name="MythicAgeTezcatlipoca" mergeMode="add">
+  <tech name="MythicAgeQuetzalcoatl">
     <effects>
-      <effect type="SetName" proto="Wonder" newname="STR_BLD_TEMPLEOFEHECATL_NAME"></effect>
-      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ForbiddenTechMictlan" row="1" column="5" relativity="Assign" mergeMode="add">
-        <target type="ProtoUnit">Wonder</target></effect>
-    </effects>
-  </tech> 
-  <tech name="MythicAgeQuetzalcoatl" mergeMode="add">
-    <effects>
-      <effect type="SetName" proto="Wonder" newname="STR_BLD_TEMPLEOFKUKULKAN_NAME"></effect>
-      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ForbiddenTechMictlan" row="1" column="5" relativity="Assign" mergeMode="add">
+      <effect type="SetName" proto="Wonder" newname="STR_BLD_TEMPLEOFKUKULKAN_NAME" mergeMode="add"></effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" proto="ForbiddenTechMictlan" row="1" column="5" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">Wonder</target></effect>
     </effects>
   </tech> 

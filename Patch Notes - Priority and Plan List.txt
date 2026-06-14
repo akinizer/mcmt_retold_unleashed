@@ -2,9 +2,6 @@
 ==================== PRIORITY-PLANS ==========================================
 ==============================================================================
 
-=== NEW UNIT ===
-Jokul, Copil, Kamina
-
 === MILITARY TECHS FOR UNITS ===
 - huntsofartemis: female units HarvestOfSouls vs mythbeast
 - Vikings (Norse): RaiderCavalry -> HumanSoldier, reward Food and Wood, name change (Viking Ideology)

@@ -1,5 +1,7 @@
 * Campaign-Exclusive Units
 Jokul: Ability Gust, Ability Tempest, hackarmor+
+    - FrostGiantBossTempest
+    - FrostGiantBossFrost
 Eitri:
     EitriHammer: raiju special attack
 Gods

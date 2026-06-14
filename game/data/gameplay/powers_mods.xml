@@ -1706,4 +1706,9 @@
 		<rolloverid>STR_ABILITY_MICTLA_CHARGEDSPAWN_LR</rolloverid>
 		<icon>aztec\player_color\units\tunkuluchu_icon.png</icon>
 	</power>
+	<power name="AbilityChargedSpawnBattlemaster" type="GeneralEffect">
+		<displaynameid>STR_BLD_BATTLEMASTER_ABILITY</displaynameid>
+		<rolloverid>STR_UNIT_MAKINA_LR</rolloverid>
+		<icon>spc\player_color\units\kamina_icon.png</icon>
+	</power>
 </powersmod>

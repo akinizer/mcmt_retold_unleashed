@@ -387,6 +387,10 @@
 	<Lighthouse>
 		<ability>AbilitySpecialRangedAttack<tech>ForbiddenTechWrathOfRaHorakthy</tech><chargetimeasrof>1</chargetimeasrof></ability>
 	</Lighthouse>
+		<!--Aztec-Special-Military-->
+	<BattleMaster>
+		<ability>AbilityChargedSpawnBattlemaster<notcastable>true</notcastable><noautocast>true</noautocast><bindtochargeaction>true</bindtochargeaction></ability>
+	</BattleMaster>
 		<!--Aztec-Military-->
 	<QuimichinSpy>
 		<ability>AbilityTrackerDevice<tech>ArchaicAgeAztec</tech><chargetimeasrof>1</chargetimeasrof><noautocast>true</noautocast></ability>

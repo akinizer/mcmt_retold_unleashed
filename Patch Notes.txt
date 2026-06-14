@@ -1130,6 +1130,9 @@
     - replaces Turkey in CalpulliLiveStockPen
     - autoconvert disabled
     - autoscout added
+- BattleMaster: Elite HumanSoldier, Enabled in MythicAge, Trained at NoblesHut, Available to MythicAgeHuitzi
+    - Counter-Hero, Counter-HumanSoldier, Lifesteal, HarvestOfSouls, Buildlimit 3
+    - HireBuddyMakina: Makina, AoE Stun, Gore, Lifespan 5s
 
 * special buildings
 - WallConnectorArcher,WallConnectorCrusher,WallConnectorCharger:
