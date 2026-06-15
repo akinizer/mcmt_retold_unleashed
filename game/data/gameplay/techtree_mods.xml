@@ -266,6 +266,13 @@
         <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_AthenianTraining</effect>       
       </effects>      
     </tech>
+    <tech name="MythicAgeArtemis">
+      <effects>      
+        <effect type="TechStatus" status="obtainable" mergeMode="add">HuntsOfArtemis</effect>       
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="HuntsOfArtemis" row="2" column="3" relativity="Assign" mergeMode="add" hidetooltip="">
+          <target type="ProtoUnit">Fortress</target></effect>	
+      </effects>      
+    </tech>
     
     <!-- General Age Up Improvements -->
     <tech name="ClassicalAgeGeneral">
@@ -1099,6 +1106,8 @@
           <target type="ProtoUnit">ValkyrieWarrior</target></effect>
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractValkyrie" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">Reginleif</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractValkyrie" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Brunhild</target></effect>
         <!--AbstractHumanoid-->
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHumanoid" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">HumanSoldier</target></effect>
@@ -1447,6 +1456,53 @@
           <target type="ProtoUnit">HadesShade</target></effect>
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">PaleRider</target></effect>
+        <!--AbstractHuntress-->        
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHuntress" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AmazonArcher</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHuntress" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Hippolyta</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHuntress" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AmazonMarksman</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHuntress" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AmazonianHuntress</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHuntress" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Atalanta</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHuntress" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Amanra</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHuntress" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AmanraOld</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHuntress" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbstractValkyrie</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHuntress" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">ChampionOfFreyr</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHuntress" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Akari</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHuntress" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">ObsidianButterfly</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHuntress" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">OnnaMusha</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHuntress" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Yasuko</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHuntress" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">VillagerNorse</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHuntress" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">VillagerGreek</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHuntress" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">VillagerEgyptian</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHuntress" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">VillagerAtlantean</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHuntress" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">VillagerAztec</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHuntress" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">VillagerChinese</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHuntress" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">VillagerJapanese</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHuntress" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Iztaccihuatl</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHuntress" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">IztaccihuatlDismounted</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHuntress" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">JaguarRider</target></effect>
       </effects>
     </tech>
 
@@ -7389,6 +7445,26 @@
         <target type="ProtoUnit">HumanSoldier</target></effect>
     </effects>
   </tech>
+  <tech name="HuntsOfArtemis" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_HUNTSOFARTEMIS_NAME</displaynameid>
+		<rollovertextid>STR_TECH_HUNTSOFARTEMIS_LR</rollovertextid>
+		<icon>resources\tech\huntsofartemis.jpeg</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Food">350</cost>
+		<cost resourcetype="Wood">150</cost>    
+		<effects>      
+        <effect type="Data" protoaction="HarvestOfHunts" amount="1.00" subtype="ProtoActionAdd" unittype="HarvestOfHuntsContainer" relativity="Assign">
+				  <target type="ProtoUnit">AbstractHuntress</target></effect>
+        <effect type="Data" action="RangedAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute">
+          <target type="ProtoUnit">AbstractHuntress</target></effect>
+        <effect type="Data" action="RangedAttack" amount="4.00" subtype="Damagebonus" unittype="Hunted" relativity="Absolute">
+				  <target type="ProtoUnit">AbstractHuntress</target></effect>
+		</effects>		
+	</tech>
+  
   <tech name="HandOfTalos">
     <effects>
       <effect type="Data" amount="1.25" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">

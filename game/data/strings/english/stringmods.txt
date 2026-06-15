@@ -1057,6 +1057,9 @@ ID = "STR_TECH_DIVINE_NATURE_SPIRITS_II_LR"   ;   Str = "Second of Nymph upgrade
 ID = "STR_TECH_DIVINE_NATURE_SPIRITS_III_NAME"   ;   Str = "Divine Nature Spirits III"
 ID = "STR_TECH_DIVINE_NATURE_SPIRITS_III_LR"   ;   Str = "Third of Nymph upgrade techs that improves divinity as well as value"
 
+ID = "STR_TECH_HUNTSOFARTEMIS_NAME"   ;   Str = "Hunts of Artemis"
+ID = "STR_TECH_HUNTSOFARTEMIS_LR"   ;   Str = "Worshippers of Artemis excel their physical training and participate in myhtical hunts"
+
 ID = "STR_TECH_DIVINEARMAMENTS_NAME"   ;   Str = "Divine Armaments"
 ID = "STR_TECH_DIVINEARMAMENTS_LR"   ;   Str = "Improves Offensive Capabilities of Military Units, Heroes and Hunters with Divine Weaponry"
 
@@ -1199,6 +1202,7 @@ ID = "STR_VFX_AUTOREPAIR"   ;   Str = "Autorepair"
 ID = "STR_VFX_MYTHDAMAGEBONUS"   ;   Str = "Bonus Damage vs MythUnit"
 ID = "STR_VFX_BUILDRATEBONUS"   ;   Str = "Build Rate Bonus"
 ID = "STR_VFX_ROFBONUS"   ;   Str = "Attack Speed Rate Bonus"
+ID = "STR_VFX_HARVESTOFHUNTS_NAME"   ;   Str = "Harvest of Hunts Bonus"
 
 ID = "STR_TECH_DISMOUNT_TACTICS_NAME"   ;   Str = "Dismount Tactics"
 ID = "STR_TECH_DISMOUNT_TACTICS_LR"   ;   Str = "Enable dismount capability for mounted units"
@@ -1224,6 +1228,7 @@ ID = "STR_HUD_UNIT_TYPE_ABSTRACT_INFERNAL"   ;   Str = "Infernals"
 ID = "STR_HUD_UNIT_TYPE_ABSTRACT_CHTHONIC"   ;   Str = "Chthonic Entities"
 ID = "STR_HUD_UNIT_TYPE_ABSTRACT_WOODLAND"   ;   Str = "Woodland Inhabitants"
 ID = "STR_HUD_UNIT_TYPE_ABSTRACT_SPECTRAL"   ;   Str = "Spectrals"
+ID = "STR_HUD_UNIT_TYPE_ABSTRACT_HUNTRESS"   ;   Str = "Huntress Warriors"
 
 // SUPERWEAPONS
 ID = "STR_POWER_PSIONIC_DECIMATOR"   ;   Str = "Psionic Decimator"

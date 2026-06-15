@@ -224,6 +224,9 @@
     - OlympicGames
         - Temple of Solaris: infinite tech, train Templar x5
             - Templar: hero infantry, anti-economic, anti-healer, builder [temple, fortress]
+
+
+
 4. Atlanean reworks from mcmt mod and new changes
 - myth unit:
     - popcosts
@@ -1105,7 +1108,7 @@
     - HandAttack: Hack Damage greatly reduced, bonusdamage vs HumanSoldier & EconomicUpgraded x5
     - OmetochtlisRevelry:
         - JumpAttack: short distance, bonusdamage vs humans, building
-- Ayotochtli: 
+- Ayotoctli: 
     - HandAttack: crush damage removed, hack damage increased, weaker vs building
     - AutoBoost: self-boost hackarmor for a duration
 - Tlacanexquimilli: inferior Corruption debuff
@@ -1195,3 +1198,6 @@
     - ToolsOfTheTrade: enables MineralLoader at EconomicGuild, gathers gold and durable but slow, ensuring employment is at lower risks
     - WarLoader: enables autotargeting turret system, setname War Loader, fires at enemies that approaches the unit
     - WarLoaderII: enables autotargeting turret system, upgrades anti-unit turret to anti-armor grenade launcher
+
+- Artemis:
+    - HuntsOfArtemis: AbstractHuntress, HarvestOfSouls container, maximumrange+, bonusdamage vs Hunted

@@ -28,6 +28,8 @@
     <abstractunittype>AbstractWoodland</abstractunittype>
     <abstractunittype>AbstractAmazon</abstractunittype>
     <abstractunittype>AbstractNubian</abstractunittype>
+    <abstractunittype>AbstractHuntress</abstractunittype>
+    <abstractunittype>AbstractMythSoldier</abstractunittype>
     <!--Type Superiority & Vulnerability-->
     <abstractunittype>AbstractMythResistant</abstractunittype>
     <abstractunittype>AbstractFireResistant</abstractunittype>
@@ -44,5 +46,4 @@
     <abstractunittype>AbstractEternalShadow</abstractunittype>
     <!--Civilization Specific-->    
     <abstractunittype>AbstractEgyptianArcher</abstractunittype>
-    <abstractunittype>AbstractMythSoldier</abstractunittype>
 </abstractunittypesmods>

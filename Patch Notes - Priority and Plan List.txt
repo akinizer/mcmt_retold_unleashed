@@ -3,18 +3,17 @@
 ==============================================================================
 
 === MILITARY TECHS FOR UNITS ===
-- huntsofartemis: female units HarvestOfSouls vs mythbeast
+
 - Vikings (Norse): RaiderCavalry -> HumanSoldier, reward Food and Wood, name change (Viking Ideology)
 - SpoilsOfWar -> archaicage tech
 
-Iztaccihuatl
-    warrior techs
-Tlacaelel
-    warrior tech, warriorpriest
-Itzcoatl
-    jaguar techs
-Popocatepetl
-    scout techs
+Iztaccihuatl,IztaccihuatlDismounted,IztaccihuatlJaguar -> female,jaguar rider,spear -> techs
+Popocatepetl -> scout,coyotl,axe -> techs
+Itzcoatl  -> great temple soldier,sword -> techs
+Tlacaelel -> warrior,warriorpriest,great temple soldier -> techs,weapon model
+Quetzalcoatl -> summon,transform -> QuetzalcoatlSnake
+
+PirateCyclops + ScarletMacaw
 
 === DISMOUNT TECHS
     * chinese soldier (tactical advance)
@@ -22,7 +21,6 @@ Popocatepetl
     - XuanWu: spawn serpent / serpentsea x1
     * greek soldier (footsoldier superiority)
     - Kataskopos: spawn VillagerGreek x1 / barbarian
-
 
 === MODEL UPDATE ===
 RaftEgyptianArcher

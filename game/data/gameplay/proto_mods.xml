@@ -30205,6 +30205,44 @@
 			<rate type="EconomicUnit">1.0</rate>			
 		</protoaction>
 	</unit>
+	<unit name="HarvestOfHuntsContainer" mergeMode="add">
+		<displaynameid>STR_VFX_HARVESTOFHUNTS_NAME</displaynameid>
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name stringid="STR_VFX_HARVESTOFHUNTS_NAME">HarvestOfHunts</name>
+			<type>ChargedModify</type>
+			<persistent>1</persistent>
+			<charged>
+				<chargedmodify modifytype="Damage" applytype="Multiply">1.15</chargedmodify>
+				<duration>3</duration>
+				<cooldown>0</cooldown>
+				<activationtype>KillEnemy</activationtype>
+			</charged>
+			<charged>
+				<chargedmodify modifytype="ROF" applytype="Multiply">0.8</chargedmodify>
+				<duration>3</duration>
+				<cooldown>0</cooldown>
+				<activationtype>KillEnemy</activationtype>
+			</charged>
+		</protoaction>
+	</unit>
 	<unit name="TargetConvertContainer" mergeMode="add">
 		<obstructionradiusx>0.1000</obstructionradiusx>
 		<obstructionradiusz>0.1000</obstructionradiusz>
