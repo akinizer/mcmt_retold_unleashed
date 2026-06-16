@@ -286,15 +286,21 @@
     - Berserk+, 
         - OnDeath: WarBear+
     - ThrowingAxeman+
-- Elven Specialists:
-    - rangerelf: rangedattack, handattack, rangedattackflying, long range, effective at infantry at close range, effective at mythunit at distance
-        - modelattachment: flower petals
-        - stealth
-    - royalelf: rangedattack, handatack, rangedattackflying, medium range, stronger variant of rangerelf
-        - modelattachment: hero glow 
-    - elventraining: enables elf units and elventent at greathall
-    - elventraining I-II-III: improves maxrange and armor of elven units
-        - final upgrade improves enables direct damage for all, provides divine damage on rangedattack of royalelf and rangedattackflying of rangerelf
+- norse special units:
+    - Vikings:
+        - RaiderInfantry:
+            - berserk variant
+            - raidercavalryrider variant
+            - bonusdamage vs building & economicunit
+    - Elven Encampment Specialists:
+        - rangerelf: rangedattack, handattack, rangedattackflying, long range, effective at infantry at close range, effective at mythunit at distance
+            - modelattachment: flower petals
+            - stealth
+        - royalelf: rangedattack, handatack, rangedattackflying, medium range, stronger variant of rangerelf
+            - modelattachment: hero glow 
+        - elventraining: enables elf units and elventent at greathall
+        - elventraining I-II-III: improves maxrange and armor of elven units
+            - final upgrade improves enables direct damage for all, provides divine damage on rangedattack of royalelf and rangedattackflying of rangerelf
 
 6. Egyptian reworks from mcmt mod and additional reworks
 - myth unit:
@@ -596,6 +602,9 @@
     - HuntressAxe: 
         - [throwingaxeman, berserk, raidingcalavry, einheri] progfreeze units
         - throwingaxeman hackarmor
+    - Vikings: 
+        - display name changed to "Viking Ideology"
+        - raider cavalry bounty added food & wood for upon destruction
 - egyptian
     - Chariot Archer Upgrades: Pharaoh, PharohNewKingdom (hp,speed,hackarmor)
     - DesertWinds: Pharaoh, PharohNewKingdom (hp,speed,piercearmor)

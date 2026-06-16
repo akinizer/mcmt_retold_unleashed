@@ -4940,7 +4940,7 @@
         <unit name="Raider" mergeMode="add"></unit>
 	<unit name="JarlRider" mergeMode="add"></unit>
       -->
-			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Huskarl" relativity="Assign">
+			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="RaiderInfantry" relativity="Assign">
         <target type="ProtoUnit">RaidingCavalry</target></effect>
 			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Hersir" relativity="Assign">
         <target type="ProtoUnit">Jarl</target></effect>
@@ -8922,7 +8922,7 @@
     </effects>
   </tech>
 
-  <!-- Norse - Techs-->
+  <!-- Norse Techs-->
   <tech name="ThorDwarfSpawn">
     <effects>
       <effect type="CreateUnit" unit="VillagerDwarf" generator="DwarvenArmory" mergeMode="remove">
@@ -8938,6 +8938,22 @@
         <target type="ProtoUnit">VillagerDwarf</target></effect>
       <effect type="Data" action="Repair" amount="0.75" subtype="WorkRate" unittype="Buiiding" relativity="BasePercent" hidetooltip="" mergeMode="add">
         <target type="ProtoUnit">VillagerDwarf</target></effect>
+    </effects>
+  </tech>
+  <tech name="Vikings" mergeMode="add">
+    <effects>
+      <effect type="Data" amount="1.5" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">RaidingCavalry</target></effect>
+      <!---->
+      <effect type="Data" subtype="BountyResourceEarningReward" condition="Destroy" unittype="RaidingCavalry" resourcetype="Food" amount="10.0" relativity="Absolute" mergeMode="add">
+				<target type="Player"></target></effect>
+      <effect type="Data" subtype="BountyResourceEarningReward" condition="Destroy" unittype="RaidingCavalry" resourcetype="Wood" amount="10.0" relativity="Absolute" mergeMode="add">
+				<target type="Player"></target></effect>
+
+      <effect type="Data" protoaction="HarvestOfRaids" amount="1.00" subtype="ProtoActionAdd" unittype="HarvestOfHuntsContainer" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">RaidingCavalry</target></effect>
+      <effect type="Data" protoaction="HarvestOfRaids" amount="1.00" subtype="ProtoActionAdd" unittype="HarvestOfHuntsContainer" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">RaiderInfantry</target></effect>
     </effects>
   </tech>
   <tech name="EyesInTheForest" mergeMode="add">

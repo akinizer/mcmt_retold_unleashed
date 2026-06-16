@@ -3,8 +3,7 @@
 ==============================================================================
 
 === MILITARY TECHS FOR UNITS ===
-
-- Vikings (Norse): RaiderCavalry -> HumanSoldier, reward Food and Wood, name change (Viking Ideology)
+Raider Infantry: helm upgrade tech change to Infantry Line Upgrade from Cavalry
 - SpoilsOfWar -> archaicage tech
 
 Iztaccihuatl,IztaccihuatlDismounted,IztaccihuatlJaguar -> female,jaguar rider,spear -> techs

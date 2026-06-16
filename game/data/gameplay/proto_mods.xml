@@ -22319,6 +22319,83 @@
 	</unit>
 
 	<!-- Norse Special Units -->
+	<unit name="RaiderInfantry">
+		<displaynameid>STR_UNIT_RAIDERINFANTRY_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_RAIDERINFANTRY_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_RAIDERINFANTRY_SR</shortrollovertextid>
+		<icon>resources\norse\player_color\units\berserk_icon.png</icon>
+		<animfile>mcmt\units\viking\raiderinfantry.xml</animfile>
+		<soundsetfile>norse\vo\raiding_cavalry\raiding_cavalry.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>110.0000</initialhitpoints>
+		<maxhitpoints>110.0000</maxhitpoints>
+		<trainpoints>10.0000</trainpoints>
+		<weightclass>5</weightclass>
+		<populationcount>2</populationcount>
+		<maxvelocity>4.0000</maxvelocity>
+		<los>15.0000</los>
+		<cost resourcetype="Food">60.0000</cost>
+		<cost resourcetype="Gold">45.0000</cost>
+		<armor type="Hack" value="0.4000"></armor>
+		<armor type="Pierce" value="0.0500"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>HumanSoldier</unittype>
+		<unittype>AbstractInfantry</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeNorseSoldierThatBuilds</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<unittype>LogicalTypeMeleeInfantry</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>UnitTransformFree</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CommonCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.500000</rof>
+			<damage type="Hack">12.00000</damage>
+			<damagebonus type="Building">2.000000</damagebonus>
+			<damagebonus type="EconomicUnit">2.000000</damagebonus>
+			<maxrange>0.500000</maxrange>
+		</protoaction>
+	</unit>
+
 	 <unit name="ValkyrieWarrior" mergeMode="add">
 		<displaynameid>STR_UNIT_VALKYRIE_WARRIOR_NAME</displaynameid>
 		<rollovertextid>STR_UNIT_VALKYRIE_WARRIOR_LR</rollovertextid>
@@ -30225,6 +30302,29 @@
 		<flag>NotKBTracked</flag>
 		<flag>NotDeathTracked</flag>
 		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name stringid="STR_VFX_HARVESTOFRAIDS_NAME">HarvestOfRaids</name>
+			<type>ChargedModify</type>
+			<persistent>1</persistent>
+			<charged>
+				<chargedmodify modifytype="ROF" applytype="Multiply">0.5</chargedmodify>
+				<duration>3</duration>
+				<cooldown>0</cooldown>
+				<activationtype>KillEnemy</activationtype>
+			</charged>
+			<charged>
+				<chargedmodify modifytype="LifeSteal" applytype="Set">0.8</chargedmodify>
+				<duration>3</duration>
+				<cooldown>0</cooldown>
+				<activationtype>KillEnemy</activationtype>
+			</charged>
+			<charged>
+				<chargedmodify modifytype="Speed" applytype="Multiply">1.1</chargedmodify>
+				<duration>3</duration>
+				<cooldown>0</cooldown>
+				<activationtype>KillEnemy</activationtype>
+			</charged>
+		</protoaction>
 		<protoaction>
 			<name stringid="STR_VFX_HARVESTOFHUNTS_NAME">HarvestOfHunts</name>
 			<type>ChargedModify</type>

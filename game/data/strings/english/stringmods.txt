@@ -807,6 +807,10 @@ ID = "STR_UNIT_BLACKSMITH_DWARF_NAME"   ;   Str = "Blackmith Dwarf"
 ID = "STR_UNIT_BLACKSMITH_DWARF_SR"   ;   Str = "Makers of the Battle Boar"
 ID = "STR_UNIT_BLACKSMITH_DWARF_LR"   ;   Str = "Dwarves are talented at mining as well as forging armaments, armors and constructs. Some dwarves are gifted by gods and gain legendary skills to return as offerings. The most popular among these are Eitri and Brokk"
 
+ID = "STR_UNIT_RAIDERINFANTRY_NAME"   ;   Str = "Raider Infantry"
+ID = "STR_UNIT_RAIDERINFANTRY_SR"   ;   Str = "Lives for Plundering, Conquest and Population"
+ID = "STR_UNIT_RAIDERINFANTRY_LR"   ;   Str = "Vikings have been famous with their raids in nearby villages, expansion of their territories and search for people to join in their cause"
+
 // EGYPTIAN SPECIAL UNITS
 ID = "STR_UNIT_NUBIANMERCENARY_NAME"   ;   Str = "Nubian Mercenary"
 ID = "STR_UNIT_NUBIANMERCENARY_SR"   ;   Str = "Nubian Mercenary"
@@ -959,6 +963,8 @@ ID = "STR_TECH_ARGIVE_BLESSING_ZEUS_LR" ;   Str = "Zeus grants his divine blessi
 ID = "STR_TECH_ARGIVE_BLESSING_DEMETER_NAME" ;   Str = "Argive Blessing (Demeter)"
 ID = "STR_TECH_ARGIVE_BLESSING_DEMETER_LR" ;   Str = "Demeter grants her divine blessing upon the chosen archers"
 
+// REWORKED NORSE TECHS
+ID = "STR_TECH_VIKINGS_NAME" ;   Str = "Viking Ideology"
 
 // REWORKED AZTEC TECHS
 ID = "STR_TECH_NAHUALLATOLLI_LR"   ;   Str = "Nahuallatolli spell mastery improves capabilities of sorcerers"
@@ -1203,6 +1209,7 @@ ID = "STR_VFX_MYTHDAMAGEBONUS"   ;   Str = "Bonus Damage vs MythUnit"
 ID = "STR_VFX_BUILDRATEBONUS"   ;   Str = "Build Rate Bonus"
 ID = "STR_VFX_ROFBONUS"   ;   Str = "Attack Speed Rate Bonus"
 ID = "STR_VFX_HARVESTOFHUNTS_NAME"   ;   Str = "Harvest of Hunts Bonus"
+ID = "STR_VFX_HARVESTOFRAIDS_NAME"   ;   Str = "Harvest of Raids Bonus"
 
 ID = "STR_TECH_DISMOUNT_TACTICS_NAME"   ;   Str = "Dismount Tactics"
 ID = "STR_TECH_DISMOUNT_TACTICS_LR"   ;   Str = "Enable dismount capability for mounted units"
