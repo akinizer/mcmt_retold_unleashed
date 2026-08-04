@@ -7449,7 +7449,7 @@
 		<flag>NeverAutoResearch</flag>
 		<displaynameid>STR_TECH_HUNTSOFARTEMIS_NAME</displaynameid>
 		<rollovertextid>STR_TECH_HUNTSOFARTEMIS_LR</rollovertextid>
-		<icon>resources\tech\huntsofartemis.jpeg</icon>
+		<icon>resources\tech\huntsofartemis.png</icon>
 		<status>UNOBTAINABLE</status>
 		<flag>CountsTowardMilitaryScore</flag>
 		<researchpoints>5.0000</researchpoints>
@@ -8950,8 +8950,18 @@
       <effect type="Data" subtype="BountyResourceEarningReward" condition="Destroy" unittype="RaidingCavalry" resourcetype="Wood" amount="10.0" relativity="Absolute" mergeMode="add">
 				<target type="Player"></target></effect>
 
+      <effect type="Data" subtype="BountyResourceEarningReward" condition="Destroy" unittype="RaiderInfantry" resourcetype="Food" amount="10.0" relativity="Absolute" mergeMode="add">
+				<target type="Player"></target></effect>
+      <effect type="Data" subtype="BountyResourceEarningReward" condition="Destroy" unittype="RaiderInfantry" resourcetype="Wood" amount="10.0" relativity="Absolute" mergeMode="add">
+				<target type="Player"></target></effect>
+
       <effect type="Data" protoaction="HarvestOfRaids" amount="1.00" subtype="ProtoActionAdd" unittype="HarvestOfHuntsContainer" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">RaidingCavalry</target></effect>
+      <effect type="Data" protoaction="HarvestOfRaids" amount="1.00" subtype="ProtoActionAdd" unittype="HarvestOfHuntsContainer" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">RaiderInfantry</target></effect>
+
+      <effect type="Data" protoaction="HarvestOfRaids" amount="1.00" subtype="ProtoActionAdd" unittype="HarvestOfHuntsContainer" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">RaiderInfantry</target></effect>
       <effect type="Data" protoaction="HarvestOfRaids" amount="1.00" subtype="ProtoActionAdd" unittype="HarvestOfHuntsContainer" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">RaiderInfantry</target></effect>
     </effects>

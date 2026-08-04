@@ -1,0 +1,13 @@
+<animfile validation="strict">
+    <attachment>Flaming<component>VFXComp<logic type="Tech"><none><nullvisual></nullvisual></none><flamingweaponsactive><logic type="Tech"><none><assetreference type="TMComposite"><file>vfx\weapons\flaming_weapons\axes\axe_norse_2handed_flame_small_vfx</file></assetreference></none><copperweapons><assetreference type="TMComposite"><file>vfx\weapons\flaming_weapons\axes\axe_norse_2handed_flame_medium_vfx</file></assetreference></copperweapons><bronzeweapons><assetreference type="TMComposite"><file>vfx\weapons\flaming_weapons\axes\axe_norse_2handed_flame_large_vfx</file></assetreference></bronzeweapons><ironweapons><assetreference type="TMComposite"><file>vfx\weapons\flaming_weapons\axes\axe_norse_2handed_flame_double_vfx</file></assetreference></ironweapons></logic></flamingweaponsactive></logic></component><anim>Idle<component>VFXComp</component></anim></attachment>
+    <attachment>VFX_Axe<component>ModelComp<assetreference type="PopcornFx"><file>units\einhari\einhari_axe.pkfx</file></assetreference></component><anim>Idle<component>ModelComp</component></anim></attachment>
+    <component>ModelComp
+        <logic type="Tech">
+            <none><assetreference type="TMModel"><file>norse\units\attachments\axe\axe_n_2handed_baseline</file><materialvariant index="0"></materialvariant></assetreference><attach name="Flaming" attachpoint="vfx_flame"></attach></none>
+            <mediuminfantry><assetreference type="TMModel"><file>norse\units\attachments\axe\axe_n_2handed_baseline</file><materialvariant index="2"></materialvariant></assetreference><attach name="Flaming" attachpoint="vfx_flame"></attach></mediuminfantry>
+            <heavyinfantry><assetreference type="TMModel"><file>norse\units\myth\einheri\einheri_axe_upgrade</file></assetreference><attach name="Flaming" attachpoint="vfx_flame"></attach></heavyinfantry>
+            <championinfantry><assetreference type="TMModel"><file>norse\units\myth\einheri\einheri_axe_upgrade</file></assetreference><attach name="VFX_Axe" attachpoint="vfx_effect"></attach></championinfantry>
+        </logic>
+    </component>
+	<anim>Idle<component>ModelComp</component></anim>
+</animfile>

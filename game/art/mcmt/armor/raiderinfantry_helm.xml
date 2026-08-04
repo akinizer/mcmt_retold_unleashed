@@ -1,0 +1,9 @@
+<animfile validation="strict">
+	<component>ModelComp<logic type="Tech">
+        <none><nullvisual></nullvisual></none>
+        <mediuminfantry><assetreference type="TMModel"><file>norse\units\cavalry\raiding_cavalry\raiding_cavalry_helm_upgrade1</file><materialvariant index="1"></materialvariant></assetreference></mediuminfantry>
+        <heavyinfantry><assetreference type="TMModel"><file>norse\units\cavalry\raiding_cavalry\raiding_cavalry_helm_upgrade2</file><materialvariant index="2"></materialvariant></assetreference></heavyinfantry>
+        <championinfantry><assetreference type="TMModel"><file>norse\units\cavalry\raiding_cavalry\raiding_cavalry_helm_upgrade3</file><materialvariant index="3"></materialvariant></assetreference></championinfantry>
+    </logic></component>
+	<anim>Idle<component>ModelComp</component></anim>
+</animfile>

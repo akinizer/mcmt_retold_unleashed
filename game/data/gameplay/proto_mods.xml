@@ -4367,14 +4367,26 @@
 		<unittype>ArcherLineUpgraded</unittype>
 		<unittype>AbstractInfantry</unittype>
 		<unittype>InfantryLineUpgraded</unittype>
+		<flag>HasDefaultAttack</flag>
+		<tactics>global_infantry_proximitymodes.tactics</tactics>
 		<protoaction>
 			<name>RangedAttack</name>
 			<rof>1.500000</rof>
 			<damage type="Pierce">6.500000</damage>
 			<damagebonus type="MythUnit">6.000000</damagebonus>
+			<minxrange>4.000000</minxrange>
 			<maxrange>18.000000</maxrange>
 			<projectile>ProjectileJavelinFlaming</projectile>
 			<impacteffect>effects\impacts\pierce_medium</impacteffect>
+		</protoaction>
+		<protoaction>
+			<name>HandAttack</name>
+			<anim>HandAttack</anim>
+			<rof>3.000000</rof>
+			<damage type="Hack">15.00000</damage>
+			<damagebonus type="MythUnit">5.500000</damagebonus>
+			<maxrange>1.00000</maxrange>
+			<defaultattack>1</defaultattack>
 		</protoaction>
 	</unit>
 	<unit name="Hersir">
@@ -30499,7 +30511,7 @@
 			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
 			<modifyabstracttype>Unit</modifyabstracttype>
 			<modifyself>1</modifyself>
-			<maxrange>1</maxrange>
+			<maxrange>0.1</maxrange>
 			<persistent>1</persistent>
 			<nostack>1</nostack>
 		</protoaction>
@@ -30510,7 +30522,7 @@
 			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
 			<modifyabstracttype>Building</modifyabstracttype>
 			<modifyself>1</modifyself>
-			<maxrange>1</maxrange>
+			<maxrange>0.1</maxrange>
 			<persistent>1</persistent>
 			<nostack>1</nostack>
 		</protoaction>
@@ -30521,7 +30533,7 @@
 			<modelattachmentbone>spine</modelattachmentbone>
 			<modifyabstracttype>Unit</modifyabstracttype>
 			<modifyself>1</modifyself>
-			<maxrange>1</maxrange>
+			<maxrange>0.1</maxrange>
 			<persistent>1</persistent>
 			<nostack>1</nostack>
 		</protoaction>
@@ -30532,7 +30544,7 @@
 			<modelattachmentbone>spine</modelattachmentbone>
 			<modifyabstracttype>Unit</modifyabstracttype>
 			<modifyself>1</modifyself>
-			<maxrange>1</maxrange>
+			<maxrange>0.1</maxrange>
 			<persistent>1</persistent>
 			<nostack>1</nostack>
 		</protoaction>
@@ -30543,7 +30555,7 @@
 			<modelattachmentbone>spine</modelattachmentbone>
 			<modifyabstracttype>Unit</modifyabstracttype>
 			<modifyself>1</modifyself>
-			<maxrange>1</maxrange>
+			<maxrange>0.1</maxrange>
 			<persistent>1</persistent>
 			<nostack>1</nostack>
 		</protoaction>

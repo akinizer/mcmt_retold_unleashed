@@ -6787,7 +6787,36 @@
 	</animxml>
 
 	<!-- Norse Reworked Units -->
-	 
+	<animxml file="norse\units\hero\godi\godi.xml">
+		<animations>
+			<animinfo mergeMode="add">
+				<name>HandAttack</name>
+				<versioncount>2</versioncount>
+				<versions>
+					<version>
+						<file>norse\units\infantry\throwing_axeman\anim\throwing_axeman_rangedattack_a</file>
+						<duration>1.33333</duration>
+						<tags>
+							<tag>
+								<type>Attack</type>
+								<position>0.45000</position>
+							</tag>
+						</tags>
+					</version>
+					<version>
+						<file>norse\units\myth\mountain_giant\anim\mountain_giant_gore_a</file>
+						<duration>1.33333</duration>
+						<tags>
+							<tag>
+								<type>Attack</type>
+								<position>0.45000</position>
+							</tag>							
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+		</animations>
+	</animxml>
 	<animxml file="norse\units\siege\ballista\ballista_weapon.xml">
 		<visuallogics>
 			<visualmap>

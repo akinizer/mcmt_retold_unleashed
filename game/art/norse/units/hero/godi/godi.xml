@@ -1,0 +1,26 @@
+<animfile validation="strict">
+	<attachment>Shield<component>ModelComp<assetreference type="TMModel"><file>norse\units\attachments\shield\shield_n_a_upgrade1</file><materialvariant index="2"></materialvariant></assetreference></component><anim>Idle<component>ModelComp</component></anim></attachment>
+	<attachment>Weapon<include>shared\units\attachments\javelin\javelin.xml</include></attachment>
+	<attachment>Hammer<include>shared\units\attachments\tool\tool_hammer.xml</include></attachment>
+	<attachment>HeroGlow<include>vfx\glow\hero_glow.xml</include></attachment>
+	<attachment>HeroBirth<include>vfx\glow\hero_birth.xml</include></attachment>
+	<attachment>HeroDeath<include>vfx\glow\lesser_hero_death.xml</include></attachment>
+	<component>ModelComp<assetreference type="TMModel"><file>norse\units\hero\godi\godi</file></assetreference><attach name="HeroGlow" attachpoint="hero_glow"></attach></component>
+	<anim>Death<assetreference type="TMAnimation"><file>greek\units\archery\peltast\anim\peltast_death_a</file></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach><attach name="Shield" attachpoint="shield"></attach><attach name="HeroDeath" attachpoint="bonethatdoesntexist"></attach></anim>
+	<anim>RangedAttack<assetreference type="TMAnimation"><file>greek\units\archery\peltast\anim\peltast_attack_a</file><tag type="Attack">0.5</tag><tag type="SpecificSoundSet" checkvisible="1" set="SwooshArrow">0.5</tag></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach><attach name="Shield" attachpoint="shield"></attach></anim>
+    <anim>HandAttack
+		<assetreference type="TMAnimation"><file>greek\units\archery\peltast\anim\peltast_attack_a</file><tag type="Attack">0.45</tag></assetreference>
+		<assetreference type="TMAnimation"><file>norse\units\myth\mountain_giant\anim\mountain_giant_gore_a</file><tag type="Attack">0.45</tag></assetreference>
+		<component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach><attach name="Shield" attachpoint="shield"></attach>
+	</anim>
+    
+    <anim>Idle<assetreference type="TMAnimation"><file>greek\units\archery\peltast\anim\peltast_idle_a</file></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach><attach name="Shield" attachpoint="shield"></attach></anim>
+	<anim>Birth<assetreference type="TMAnimation"><file>norse\units\hero\godi\anim\godi_birth_a</file></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach><attach name="Shield" attachpoint="shield"></attach><attach name="HeroBirth" attachpoint="bonethatdoesntexist"></attach></anim>
+	<anim>Bored<assetreference type="TMAnimation"><file>greek\units\archery\peltast\anim\peltast_bored_a</file></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach><attach name="Shield" attachpoint="shield"></attach></anim>
+	<anim>Build<assetreference type="TMAnimation"><file>norse\units\infantry\huskarl\anim\huskarl_build_a</file><tag type="SpecificSoundSet" checkvisible="1" set="Build">0.99</tag></assetreference><component>ModelComp</component><attach name="Hammer" attachpoint="hammer"></attach></anim>
+	<anim>Walk<assetreference type="TMAnimation"><file>greek\units\archery\peltast\anim\peltast_walk_a</file></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach><attach name="Shield" attachpoint="shield"></attach></anim>
+	<anim>Flail<assetreference type="TMAnimation"><file>greek\units\archery\peltast\anim\peltast_flail_a</file></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach><attach name="Shield" attachpoint="shield"></attach></anim>
+	<anim>Carry<assetreference type="TMAnimation"><file>norse\units\hero\godi\anim\godi_carry_a</file></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach><attach name="Shield" attachpoint="shield"></attach></anim>
+	<anim>CarryIdle<assetreference type="TMAnimation"><file>norse\units\hero\godi\anim\godi_carryidle_a</file></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach></anim>
+	<anim>CarryBored<assetreference type="TMAnimation"><file>norse\units\hero\godi\anim\godi_carrybored_a</file></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach><attach name="Shield" attachpoint="shield"></attach></anim>
+</animfile>
