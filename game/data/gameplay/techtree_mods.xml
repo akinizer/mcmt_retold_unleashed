@@ -10640,9 +10640,11 @@
 	</tech>
   <tech name="IvoryNetsuke">
 		<effects>
-      <effect type="Data" subtype="BountyResourceEarningReward" condition="Damage" unittype="LogicalTypeMythUnitNotTitan" resourcetype="Gold" amount="0.4" relativity="Absolute" mergeMode="remove">
+      <effect type="Data" subtype="BountyResourceEarningReward" condition="Damage" unittype="LogicalTypeMythUnitNotTitan" resourcetype="Gold" amount="0.3" relativity="Absolute" mergeMode="remove">
 				<target type="Player"></target></effect>
-			<effect type="Data" subtype="BountyResourceEarningReward" condition="Damage" unittype="AbstractTitan" resourcetype="Gold" amount="0.04" relativity="Absolute" mergeMode="remove">
+			<effect type="Data" subtype="BountyResourceEarningReward" condition="Damage" unittype="LogicalTypeDependentMyth" resourcetype="Gold" amount="0.3" relativity="Absolute" mergeMode="remove">
+				<target type="Player"></target></effect>
+			<effect type="Data" subtype="BountyResourceEarningReward" condition="Damage" unittype="AbstractTitan" resourcetype="Gold" amount="0.03" relativity="Absolute" mergeMode="remove">
 				<target type="Player"></target></effect>
       <!---->
 		  <effect type="Data" amount="25.00" subtype="ShieldPoints" relativity="Absolute" mergeMode="add">
