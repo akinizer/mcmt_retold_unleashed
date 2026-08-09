@@ -9892,10 +9892,8 @@
         <target type="ProtoUnit">AbstractVillager</target></effect>
       <effect type="Data" action="Build" amount="1.25" subtype="WorkRate" unittype="AbstractTownCenter" relativity="BasePercent" mergeMode="add">
         <target type="ProtoUnit">AbstractVillager</target></effect>
-      <effect type="Data" amount="1.25" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
-        <target type="ProtoUnit">Kuafu</target></effect>
-      <effect type="Data" amount="1.50" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
-        <target type="ProtoUnit">KuafuHero</target></effect>
+      <effect type="Data" amount="1.40" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">AbstractKuafu</target></effect>
     </effects>
   </tech>
   <tech name="MountainousMight">

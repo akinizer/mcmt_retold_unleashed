@@ -65,4 +65,8 @@
 		<unittype>AbstractNymph</unittype>
 		<displaynameid>STR_HUD_UNIT_TYPE_ABSTRACT_NYMPH</displaynameid>
 	</unittypeentry>
+	<unittypeentry mergeMode="add">
+		<unittype>AbstractKuafu</unittype>
+		<displaynameid>STR_HUD_UNIT_TYPE_ABSTRACT_KUAFU</displaynameid>
+	</unittypeentry>
 </unittypedatamods>

@@ -8434,6 +8434,8 @@
 		<cost resourcetype="Gold">50.0000</cost>
 		<cost resourcetype="Favor">1.0000</cost>
 
+		<autoattackrange>20.0000</autoattackrange>
+
 		<armor type="Hack" value="0.4000"></armor>
 		<armor type="Pierce" value="0.4000"></armor>
 		<armor type="Crush" value="0.9900"></armor>

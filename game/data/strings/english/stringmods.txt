@@ -1248,6 +1248,7 @@ ID = "STR_HUD_UNIT_TYPE_ABSTRACT_WOODLAND"   ;   Str = "Woodland Inhabitants"
 ID = "STR_HUD_UNIT_TYPE_ABSTRACT_SPECTRAL"   ;   Str = "Spectrals"
 ID = "STR_HUD_UNIT_TYPE_ABSTRACT_HUNTRESS"   ;   Str = "Huntress Warriors"
 ID = "STR_HUD_UNIT_TYPE_ABSTRACT_NYMPH"   ;   Str = "Nymph Faes"
+ID = "STR_HUD_UNIT_TYPE_ABSTRACT_KUAFU"   ;   Str = "Kuafu Tribefolk"
 
 // SUPERWEAPONS
 ID = "STR_POWER_PSIONIC_DECIMATOR"   ;   Str = "Psionic Decimator"
