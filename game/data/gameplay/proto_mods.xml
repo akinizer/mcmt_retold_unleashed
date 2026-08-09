@@ -598,13 +598,45 @@
 	</unit>
 	
 	<unit name="ChiWen">
+		<tactics>mcmt_chiwen.tactics</tactics>
+		<protoaction>
+			<name>LightningAttack</name>
+			<rof>3.000000</rof>
+			<damage type="Divine">15.00000</damage>
+			<damagebonus type="MythUnit">3.000000</damagebonus>
+			<minrange>4.000000</minrange>
+			<maxrange>18.000000</maxrange>
+		</protoaction>
 		<protoaction>
 			<name>Bolster</name>
+			<rate type="Building" mergeMode="remove">1.0</rate>
+			<rate type="Dock" mergeMode="add">1.0</rate>
+		</protoaction>
+		<protoaction>
+			<name>BolsterDefensive</name>
+			<type>Bolster</type>
+			<modifyamount>2.0</modifyamount>
+			<maxrange>20.0</maxrange>			
+			<rate type="AbstractTower">1.0</rate>
+			<rate type="AbstractFortress">1.0</rate>
+			<anim>Bolster</anim>
+			<attackaction>1</attackaction>
+			<projectile>ProjectileChiwenLaser</projectile>
+			<modelattachment>vfx\water\chi_wen_bolster_target.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+			<charged>
+				<chargedmodify modifytype="ROF" applytype="Multiply">0.75</chargedmodify>
+			</charged>
+			<charged>
+				<chargedmodify modifytype="NumProjectiles" applytype="Multiply">2.0</chargedmodify>
+			</charged>
+		</protoaction>
+		<protoaction>
+			<name>BolsterMythUnit</name>
 			<type>Bolster</type>
 			<modifyamount>2.0</modifyamount>
 			<maxrange>20.0</maxrange>
-			<rate type="MilitaryUnit">1.0</rate>
-			<rate type="MilitaryBuilding">1.0</rate>
+			<rate type="LogicalTypeMythUnitNotTitan">1.0</rate>
 			<rate type="ChiWen">0.0</rate>
 			<anim>Bolster</anim>
 			<attackaction>1</attackaction>
@@ -612,20 +644,17 @@
 			<modelattachment>vfx\water\chi_wen_bolster_target.xml</modelattachment>
 			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
 			<charged>
-				<chargedmodify modifytype="ArmorSpecific" param="Pierce" applytype="Add">0.7500</chargedmodify>
+				<chargedmodify modifytype="ROF" applytype="Multiply">0.75</chargedmodify>
 			</charged>
 			<charged>
-				<chargedmodify modifytype="ArmorSpecific" param="Hack" applytype="Add">0.7500</chargedmodify>
-			</charged>
-			<charged>
-				<chargedmodify modifytype="ArmorSpecific" param="Crush" applytype="Add">0.7500</chargedmodify>
+				<chargedmodify modifytype="Damage" applytype="Multiply">1.25</chargedmodify>
 			</charged>
 		</protoaction>
 		<protoaction>
 			<name>Invisibility</name>
 			<type>AreaStealth</type>
 			<maxrange>20.0</maxrange>
-      		<rate type="unit">1.0</rate>
+      		<rate type="NavalUnit">1.0</rate>
 			<persistent>1</persistent>
 		</protoaction>
 	</unit>
@@ -695,6 +724,7 @@
 			<name>ChainAttack</name>
 			<rof>2.00000</rof>
 			<damage type="Divine">80.000000</damage>
+			<damage type="Crush">40.000000</damage>
 			<damagearea>3.000000</damagearea>
 			<damageflags>Nature|Enemy</damageflags>
 			<damagebonus type="MythUnit">2.000000</damagebonus>
@@ -722,21 +752,13 @@
 			<damagebonus type="MythUnit">2.000000</damagebonus>
 			<damagebonus type="Hero">0.10000</damagebonus>
 			<maxrange>10.000000</maxrange>
+			<numberbounces>3</numberbounces>
 			<projectile>ProjectileLightningchargedLazer</projectile>
 			<canattackground>1</canattackground>
 			<displayednumberprojectiles>2</displayednumberprojectiles>
 			<autoretarget>1</autoretarget>
 			<canattackground>1</canattackground>
-		</protoaction>
-		<protoaction>
-			<name>DelugeAttack</name>
-			<rof>3.00000</rof>
-			<damageflags>Nature|Enemy</damageflags>
-			<maxrange>10.000000</maxrange>
-			<onhiteffect type="Spawn" proto="YingLongDeluge" amount="1">
-			</onhiteffect>
-			<autoretarget>1</autoretarget>
-			<canattackground>1</canattackground>
+			<onhiteffect type="Spawn" proto="MCMT_BoltStrikeMinor" amount="1"></onhiteffect>
 		</protoaction>
 	</unit>
 	
@@ -4188,22 +4210,12 @@
         
 		<protoaction>
 		  <name>ChargedHandAttack</name>
-		  <rof>2.00000</rof>
-		  <damage type="Divine">4.000000</damage>
-		  <damagearea>2.000000</damagearea>
-		  <damageflags>Nature|Enemy</damageflags>
-		  <damagebonus type="MythUnit">2.000000</damagebonus>
-		  <damagebonus type="Hero">0.250000</damagebonus>
-		  <maxrange>1.000000</maxrange>
-		  <rate type="Unit">1.0</rate>
-		  <onhiteffect type="DamageOverTime" duration="6.000000" targetunittype="Unit">
+	
+		  <onhiteffect type="DamageOverTime" duration="6.000000" stacklimit="99">
 			<damage type="Divine">1.500000</damage>
+			<target attacktype="Unit"></target>
+			<target ignoretype="AbstractSiegeWeapon"></target>
 		  </onhiteffect>
-		  <onhiteffect type="Attach" targetunittype="Unit" proto="VFXPoison" attachbone="spine" duration="6.000000"></onhiteffect>
-		  <attachvalidtargetonly>1</attachvalidtargetonly>
-		  <displayednumberprojectiles>3</displayednumberprojectiles>
-		  <autoretarget>1</autoretarget>
-		  <canattackground>1</canattackground>
 		  
 		  <onhiteffect type="Throw">
 			<target attacktype="HumanSoldier"></target>
@@ -5374,7 +5386,6 @@
 		</protoaction>
 	</unit>
 	<unit name="Nezha">
-		<unittype>AbstractInfantry</unittype>
 		<unittype>InfantryLineUpgraded</unittype>
 		<unitregen>0.45</unitregen>
 		<armor type="Hack" value="0.4000"></armor>
@@ -5385,8 +5396,6 @@
 		
 		<rechargetime>100.0000</rechargetime>
 		<cost resourcetype="Food">400.0000</cost>
-		<cost resourcetype="Gold">450.0000</cost>
-		<cost resourcetype="Wood">0.0000</cost>
 		
 		<protoaction>
 			<name>HandAttack</name>
@@ -8753,6 +8762,9 @@
 
 		<flag>DisplayRange</flag>
 		<dependentunit>CustomDependantUnit_WallCharger</dependentunit>
+	</unit>
+	<unit name="EarthWall">
+		<unitshieldregen damagetimeout="5.0">1.0000</unitshieldregen>
 	</unit>
 
 	<!-- General Unit Improvements -->
@@ -32052,6 +32064,34 @@
 			<rof>1.0</rof>
 			<damage type="Divine">100.0000</damage>
 			<damagebonus type="AbstractTitan">0.250000</damagebonus>
+			<maxrange>0.300000</maxrange>
+		</protoaction>
+	</unit>
+	<unit name="MCMT_BoltStrikeMinor">
+		<animfile>greek\godpowers\bolt\bolt.xml</animfile>
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<lifespan>6.0000</lifespan>
+		<decay delay="0.0000" duration="0.0100"></decay>
+		<movementtype>air</movementtype>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotYawDuringMovement</flag>
+		<flag>NonCollideable</flag>
+		<flag>GivesLOSToAll</flag>
+		<flag>NoHPBar</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>HasContinuousParticles</flag>
+		<flag>NoIdleActions</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.0</rof>
+			<damage type="Divine">20.0000</damage>
+			<damagebonus type="Hero">0.250000</damagebonus>
 			<maxrange>0.300000</maxrange>
 		</protoaction>
 	</unit>

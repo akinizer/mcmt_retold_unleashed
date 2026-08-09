@@ -1456,6 +1456,8 @@
           <target type="ProtoUnit">HadesShade</target></effect>
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">PaleRider</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbstractKuafu</target></effect>
         <!--AbstractHuntress-->        
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHuntress" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">AmazonArcher</target></effect>
@@ -4316,11 +4318,7 @@
 		<cost resourcetype="Food">150</cost> 
 		<effects>      
       <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
-        <target type="ProtoUnit">Nereid</target></effect>
-      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
-        <target type="ProtoUnit">Dryad</target></effect>
-      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
-        <target type="ProtoUnit">Hamadryad</target></effect>
+        <target type="ProtoUnit">AbstractNymph</target></effect>
       
       <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
         <target type="ProtoUnit">Scylla</target></effect>
@@ -4338,11 +4336,7 @@
 		<cost resourcetype="Wood">150</cost>    
 		<effects>     
       <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
-        <target type="ProtoUnit">Nereid</target></effect>
-      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
-        <target type="ProtoUnit">Dryad</target></effect>
-      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
-        <target type="ProtoUnit">Hamadryad</target></effect>
+        <target type="ProtoUnit">AbstractNymph</target></effect>
 
       <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent">
         <target type="ProtoUnit">Scylla</target></effect>
@@ -4360,11 +4354,7 @@
 		<cost resourcetype="Wood">150</cost>    
 		<effects>      
       <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
-        <target type="ProtoUnit">Nereid</target></effect>
-      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
-        <target type="ProtoUnit">Dryad</target></effect>
-      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent">
-        <target type="ProtoUnit">Hamadryad</target></effect>
+        <target type="ProtoUnit">AbstractNymph</target></effect>
 		</effects>		
 	</tech>
   <tech name="MCMT_NymphMender" mergeMode="add">

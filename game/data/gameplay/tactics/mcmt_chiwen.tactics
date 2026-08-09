@@ -1,0 +1,27 @@
+<tactics>
+	<action>
+		<name stringid="STR_ACTION_HAND">HandAttack</name>
+		<type>Attack</type>
+		<rate type="All">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<forceareaattacktarget>1</forceareaattacktarget>
+		<anim>HandAttack</anim>
+		<impacteffect>effects\impacts\hack</impacteffect>
+	</action>
+   	<action>
+		<name stringid="STR_ACTION_RANGED">LightningAttack</name>
+		<type>ChainAttack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>HandAttack</anim>
+		<accuracy>1.0</accuracy>
+		<projectile>ProjectileChainLightning</projectile>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+		<rate type="All">1.0</rate>
+	</action>
+	<tactic>Default
+    <action priority="100">LightningAttack</action>
+    <action priority="90">HandAttack</action>
+    <attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype></tactic>
+</tactics>

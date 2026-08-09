@@ -61,4 +61,8 @@
 		<unittype>AbstractHuntress</unittype>
 		<displaynameid>STR_HUD_UNIT_TYPE_ABSTRACT_HUNTRESS</displaynameid>
 	</unittypeentry>
+	<unittypeentry mergeMode="add">
+		<unittype>AbstractNymph</unittype>
+		<displaynameid>STR_HUD_UNIT_TYPE_ABSTRACT_NYMPH</displaynameid>
+	</unittypeentry>
 </unittypedatamods>

@@ -248,7 +248,7 @@
     - MCMT_DivineNatureSpirits (activate): enables Nymph builder unit
         - nymph: general builder, enableaction [heal, empower, convert], infantry, handattack [punch, kick]
         - sound set: japanese\female.xml
-    - MCMT_DivineNatureSpirits (I,II,III): divinity upgrades for nymphs, improves other nymphs [dryad, hamadryad, nereid], increases Nymph costs (favor, food)
+    - MCMT_DivineNatureSpirits (I,II,III): divinity upgrades for nymphs, improves all nymphs, increases Nymph costs (favor, food)
     - NymphMender: ascension path, enables heal ability and updates name to Nymph (Mender), hp increases
     - NymphCharmer: ascension path, enables convert ability [huntable, abstractvillager] and updates name to Nymph (Charmer), hackarmor increases
     - NymphOracle: ascension path, enables empower ability and updates name to Nymph (Oracle), LOS increase
@@ -382,15 +382,29 @@
     - KingdomGuardsTraining I,II,III: increases hitpoints of KingdmGuards units, maxrange of WarElephantArcher, handattack of Amanra variants
         - KingdomGuardsTraining III: increases handattack range of Amanra variants, decreases trainpoints of Nubian units
 6. Chinese reworks from mcmt mod and extra changes
+- building:
+    - earthwall: unit regen
 - myth unit:
     - popcosts
     - VisualScale: HunDun
     
     - trade: PiXiu+
-    - flying: QingLong+, YingLong+
+    - flying: QingLong+
         - ZhuQueLanded: area damage, range indicator red
+        - YingLong+:
+            - chainattack: gains crushdamage
+            - chargedchainattack bounce, lightningbolt onhit
     - melee: QiLin+, YaZi+, TaoWu+, HunDun+, QionQi+, BaiHu+, TerracottaRider+
-    - naval: ChiWen+, XuanWu+
+    - naval: XuanWu+
+        - ChiWen+:
+            - handattack: close range
+            - chargedrangedattack: distance divinedamage low rof
+            - bolster: 
+                - bolster (dock armor)
+                - bolsterdefensivetower (tower-fortress maxrange)
+                - bolstermythunit (rof, damage, non-titan)
+    - worker:
+        - Kuafu: mythsoldier
 
 - humansoldier:
     - popcosts 1 or 2
