@@ -459,6 +459,10 @@ ID = "STR_BLD_HALLOFHEROES_NAME"   ;   Str = "Hall of Heroes"
 ID = "STR_BLD_HALLOFHEROES_LR"   ;   Str = "Elite Soldiers armed with FutureTech arsenal and laser tank technology provided by Cosmic Forces. Captains get stronger as they get more head count (5,12,18,24,30)"
 ID = "STR_BLD_HALLOFHEROES_SR"   ;   Str = "FutureTech Base of Operations"
 
+ID = "STR_EMB_PIONEERCAMPFIRE_NAME"   ;   Str = "Pioneer Campfire"
+ID = "STR_EMB_PIONEERCAMPFIRE_LR"   ;   Str = "Even Heroes need to catch a breath during adventrous quests. Campires supply both recovery and boost that accelerate thoughts"
+ID = "STR_EMB_PIONEERCAMPFIRE_SR"   ;   Str = "Regeneration and Rate of Fire Boost Area for a duration"
+
 // SPECIAL UTILITY STRUCTURES
 ID = "STR_BLD_SONICDISRUPTORARRAY_NAME"   ;   Str = "Sonic Disruptor Array"
 ID = "STR_BLD_SONICDISRUPTORARRAY_SR"   ;   Str = "S.D.A"

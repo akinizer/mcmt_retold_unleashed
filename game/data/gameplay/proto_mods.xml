@@ -5412,9 +5412,9 @@
 		</protoaction>
 	</unit>
 	<unit name="PioneerCampfire">
-		<displaynameid>STR_EMB_CAMPFIRE_NAME</displaynameid>
-		<rollovertextid>STR_EMB_CAMPFIRE_NAME</rollovertextid>
-		<shortrollovertextid>STR_EMB_CAMPFIRE_NAME</shortrollovertextid>
+		<displaynameid>STR_EMB_PIONEERCAMPFIRE_NAME</displaynameid>
+		<rollovertextid>STR_EMB_PIONEERCAMPFIRE_LR</rollovertextid>
+		<shortrollovertextid>STR_EMB_PIONEERCAMPFIRE_SR</shortrollovertextid>
 		<icon>resources\shared\static_color\technologies\signal_fires_icon.png</icon>
 		<animfile>shared\buildings\props\campfire\campfire.xml</animfile>
 		<soundsetfile>shared\sfx\buildings\granary.xml</soundsetfile>

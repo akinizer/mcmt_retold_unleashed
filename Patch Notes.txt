@@ -383,7 +383,7 @@
         - KingdomGuardsTraining III: increases handattack range of Amanra variants, decreases trainpoints of Nubian units
 6. Chinese reworks from mcmt mod and extra changes
 - building:
-    - earthwall: unit regen"
+    - earthwall: unit regen
 - myth unit:
     - popcosts
     - VisualScale: HunDun
@@ -419,7 +419,9 @@
     - popcosts 
     - VisualScale: NeZha (adult)+
 
-    - Pioneer+, Sage+
+    - Pioneer+
+        - PioneerCampfire: hero regen & rof, lifespan
+    - Sage+
     - NeZha+, Jiangziya+, YangJian+
     - LiJing+, JiangZiya+
     - WenZhong+
