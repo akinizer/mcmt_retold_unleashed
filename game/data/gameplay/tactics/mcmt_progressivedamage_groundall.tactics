@@ -1,0 +1,28 @@
+<tactics>
+	<action>
+		<name>ProgressiveDamageLight</name>
+		<type>AutoRangedModify</type>
+		<modifyabstracttype>LogicalTypeRangedUnitsAttack</modifyabstracttype>
+		<persistent>1</persistent>
+		<modifytype>HealRate</modifytype>
+		<modifyduration>3000</modifyduration>
+		<targetenemy>1</targetenemy>
+		<showbloodhitvfx>1</showbloodhitvfx>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+		<modifyupdateinterval>1750</modifyupdateinterval>
+	</action>
+	<action>
+		<name>ProgressiveDamageHigh</name>
+		<type>AutoRangedModify</type>
+		<modifyabstracttype>LogicalTypeRangedUnitsAttack</modifyabstracttype>
+		<persistent>1</persistent>
+		<modifytype>HealRate</modifytype>
+		<timer>3000</timer>
+		<modifyduration>2000</modifyduration>
+		<targetenemy>1</targetenemy>
+		<showbloodhitvfx>1</showbloodhitvfx>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+		<modifyupdateinterval>1750</modifyupdateinterval>
+	</action>
+	<tactic>Normal<action>ProgressiveDamageLight</action><action>ProgressiveDamageHigh</action></tactic>
+</tactics>

@@ -778,6 +778,10 @@ ID = "STR_UNIT_HESPERIDES_NAME"   ;   Str = "Hesperides"
 ID = "STR_UNIT_HESPERIDES_SR"   ;   Str = "Tree Nymphs that live inside the legendary tree"
 ID = "STR_UNIT_HESPERIDES_LR"   ;   Str = "The legendary tree inhabits Golden Apples and Nymphs and stands at the western edge of the world in presence of Atlas condemned to lift up Celestial Heavens"
 
+ID = "STR_UNIT_KUAFUWARRIOR_NAME"   ;   Str = "Kuafu (Warrior)"
+ID = "STR_UNIT_KUAFUWARRIOR_LR"   ;   Str = "Kuafu tribesfolk armed to defend their homeland and the sacred tree. They are known for their endurance and resilience in battle"
+ID = "STR_UNIT_KUAFUWARRIOR_SR"   ;   Str = "Kuafu with a boulder stronger than a will"
+
 // GREEK SPECIAL UNITS
 ID = "STR_UNIT_PALERIDER_NAME"   ;   Str = "Pale Rider"
 ID = "STR_UNIT_PALERIDER_SR"   ;   Str = "Death's Charger"
@@ -1063,6 +1067,12 @@ ID = "STR_TECH_DIVINE_NATURE_SPIRITS_II_LR"   ;   Str = "Second of Nymph upgrade
 ID = "STR_TECH_DIVINE_NATURE_SPIRITS_III_NAME"   ;   Str = "Divine Nature Spirits III"
 ID = "STR_TECH_DIVINE_NATURE_SPIRITS_III_LR"   ;   Str = "Third of Nymph upgrade techs that improves divinity as well as value"
 
+ID = "STR_TECH_ARTILLERYTRAINING_NAME"   ;   Str = "Artillery Training"
+ID = "STR_TECH_ARTILLERYTRAINING_LR"   ;   Str = "Chinese military adapts to imported ballistic weapons"
+
+ID = "STR_TECH_WARRIORTRIBE_NAME"   ;   Str = "Warrior Tribe"
+ID = "STR_TECH_WARRIORTRIBE_LR"   ;   Str = "Kuafu state builders drop their tools and pick up weapons to defend their lands"
+
 ID = "STR_TECH_HUNTSOFARTEMIS_NAME"   ;   Str = "Hunts of Artemis"
 ID = "STR_TECH_HUNTSOFARTEMIS_LR"   ;   Str = "Worshippers of Artemis excel their physical training and participate in myhtical hunts"
 
@@ -1210,6 +1220,7 @@ ID = "STR_VFX_BUILDRATEBONUS"   ;   Str = "Build Rate Bonus"
 ID = "STR_VFX_ROFBONUS"   ;   Str = "Attack Speed Rate Bonus"
 ID = "STR_VFX_HARVESTOFHUNTS_NAME"   ;   Str = "Harvest of Hunts Bonus"
 ID = "STR_VFX_HARVESTOFRAIDS_NAME"   ;   Str = "Harvest of Raids Bonus"
+ID = "STR_ACTION_GOLD_GATHER_RATE_BOOST"   ;   Str = "Gold Gather Rate Boost"
 
 ID = "STR_TECH_DISMOUNT_TACTICS_NAME"   ;   Str = "Dismount Tactics"
 ID = "STR_TECH_DISMOUNT_TACTICS_LR"   ;   Str = "Enable dismount capability for mounted units"
@@ -1288,6 +1299,8 @@ ID = "STR_ACTION_SONICBLASTATTACKFLYING"   ;   Str = "Sonic Blast Attack (Air)"
 ID = "STR_ABILITY_ABARDSTALE"   ;   Str = "A Bard's Tale"
 
 ID = "STR_ABILITY_BARRAGE_ATTACK"   ;   Str = "Barrage Attack"
+ID = "STR_ABILITY_FOCUS_SHOT_ATTACK"   ;   Str = "Focus Shot Attack"
+ID = "STR_ABILITY_PIERCING_SHOT_ATTACK"   ;   Str = "Piercing Shot Attack"
 ID = "STR_ABILITY_FLYINGSHARK"   ;   Str = "Flying Shark"
 ID = "STR_ABILITY_FLYINGSHARK_LR"   ;   Str = "Nereid Shark bursts out of water and dives on the target"
 

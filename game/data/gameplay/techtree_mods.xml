@@ -190,6 +190,25 @@
           <target type="ProtoUnit">Armory</target></effect>	
       </effects>
     </tech>
+    <tech name="ClassicalAgeChinese">
+      <effects>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="MCMT_WarriorTribe" row="3" column="0" relativity="Assign" mergeMode="add">
+          <target type="ProtoUnit">Armory</target></effect>	
+      </effects>    
+    </tech>
+    <tech name="HeroicAgeChinese">
+      <effects>
+        <effect type="Data" action="ChargedRangedAttack" amount="1.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">
+          <target type="ProtoUnit" mergeMode="add">Pioneer</target></effect>
+      </effects>    
+    </tech>
+    <tech name="MythicAgeChinese">
+      <effects>
+        <effect type="Data" action="ChargedRangedAttackMyth" amount="1.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">
+          <target type="ProtoUnit" mergeMode="add">Pioneer</target></effect>
+      </effects>    
+    </tech>
+
     <tech name="ArchaicAgeEgyptian">
       <effects>        
         <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="NonSolid" relativity="Assign" mergeMode="add">
@@ -1878,6 +1897,7 @@
         <!-- Egyptian Special Units -->
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">ReinforcementTentROF</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">StellarGateway</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">PioneerCampfire</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">MummyFallen</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Chariot_Pharaoh</target></effect>
 
@@ -2329,7 +2349,8 @@
             <effect type="TechStatus" status="obtainable">MCMT_KingdomGuardTraining_II</effect>
             <effect type="TechStatus" status="obtainable">MCMT_KingdomGuardTraining_III</effect>
 
-            <effect type="TechStatus" status="obtainable">MCMT_ArtilleryTraining</effect>            
+            <effect type="TechStatus" status="obtainable">MCMT_ArtilleryTraining</effect>   
+            <effect type="TechStatus" status="obtainable">MCMT_WarriorTribe</effect>           
             <!--TechBuilding FutureTech-->
             <effect type="TechStatus" status="obtainable">MCMT_DivineArmaments</effect>
             <effect type="TechStatus" status="obtainable">MCMT_NanofiberPlatings</effect>
@@ -4570,8 +4591,8 @@
 
   <tech name="MCMT_ArtilleryTraining" mergeMode="add">
 		<flag>NeverAutoResearch</flag>
-		<displaynameid>STR_TECH_NUBIANTRAINING_NAME</displaynameid>
-		<rollovertextid>STR_TECH_NUBIANTRAINING_LR</rollovertextid>
+		<displaynameid>STR_TECH_ARTILLERYTRAINING_NAME</displaynameid>
+		<rollovertextid>STR_TECH_ARTILLERYTRAINING_LR</rollovertextid>
 		<icon>resources\tech\nubianlogo.png</icon>
 		<status>UNOBTAINABLE</status>
 		<flag>CountsTowardMilitaryScore</flag>
@@ -4581,6 +4602,28 @@
 		<effects>      
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
           <target type="ProtoUnit">Hwacha</target></effect>
+		</effects>		
+	</tech>
+  <tech name="MCMT_WarriorTribe" mergeMode="add">
+		<displaynameid>STR_TECH_WARRIORTRIBE_NAME</displaynameid>
+		<rollovertextid>STR_TECH_WARRIORTRIBE_LR</rollovertextid>
+		<icon>resources\tech\kingdom_dwarf.jpg</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardEconomicScore</flag>
+		<flag>MythTech</flag>
+		<prereqs><typecount unit="Armory" count="0.00" state="aliveState" operator="gt"></typecount></prereqs>
+		<researchpoints>30.0000</researchpoints>
+		<cost resourcetype="Food">500.0000</cost>
+		<effects>
+			<!-- Kuafu is removed. All Kuafu becomes KuafuWarrior -->
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">KuafuWarrior</target></effect>
+
+			<effect type="Data" amount="1.00" subtype="CommandRemove" proto="Kuafu" relativity="Assign">
+        <target type="ProtoUnit">TownCenter</target></effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="KuafuWarrior" row="0" column="1" relativity="Assign">
+        <target type="ProtoUnit">TownCenter</target></effect>	
+			<effect type="TransformUnit" toprotoid="KuafuWarrior" fromprotoid="Kuafu" includequeued="true"></effect>
 		</effects>		
 	</tech>
   

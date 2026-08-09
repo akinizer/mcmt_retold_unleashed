@@ -5840,6 +5840,33 @@
 			</animinfo>
 		</animations>
 	</animxml>
+	<!-- greek unit reworks demeter -->
+	<animxml file="chinese\units\hero\pioneer\pioneer.xml">
+		<animations>
+			<animinfo mergeMode="add">
+				<name>Build</name>
+				<visualindex>1</visualindex>
+				<versioncount>1</versioncount>
+				<versions>
+					<version>
+						<file>chinese\units\economic\villager_chinese\anim\villager_chinese_female_build_a</file>
+						<duration>0.60000</duration>
+						<tags>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.99000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>Build</set>
+								</properties>
+							</tag>
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+		</animations>
+	</animxml>
+
 
 	<!-- greek unit reworks demeter -->
 	<animxml file="greek_demeter\units\archery\amazonarcher\amazonarcher.xml">

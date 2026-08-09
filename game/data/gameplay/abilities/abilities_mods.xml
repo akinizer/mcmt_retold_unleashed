@@ -216,6 +216,10 @@
 	<LiJing>
 		<ability>PassiveDivineImmunity<alwaysdisabledingrid>1</alwaysdisabledingrid></ability>
 	</LiJing>
+	<Pioneer>
+		<ability>AbilityCentaur<tech>HeroicAgeChinese</tech><auxchargetimeasrof>1</auxchargetimeasrof></ability>
+		<ability>AbilityOdysseusSPC<tech>MythicAgeChinese</tech><auxchargetimeasrof>1</auxchargetimeasrof></ability>
+	</Pioneer>
 
 		<!--Chinese-HumanSoldier-->	
 
