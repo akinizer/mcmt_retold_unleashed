@@ -503,7 +503,7 @@
 - Dock+
     - AreaHeal: NavalUnit -> (Ship,SiegeWeapon)
 - Farm+
-- DwarvenArmory (MCMT tech will be added)
+- DwarvenArmory
     - RecruitingMountainDwarves: 
         - removes villagernorse and replaces with dwarves, dwarves get larger and more efficient
         - King Moradin is obtainable
@@ -525,7 +525,10 @@
 - TownCenter:
     - Noah
         - Respawn: 5 minutes
-        - StellarGateway (A.R.K): mobile armored transport, only accepts Noah as passenger
+        - StellarGateway (A.R.K): mobile armored transport, mobilizes when Noah is garrisoned
+    - WarriorTribe
+        - replaces kuafu with kuafuwarrior in towncenter accel and on the field
+        - KuafuWarrior: stronger variant of kuafu, mythunit, melee and ranged attacks, charges at towers head on, effective vs cavalry and flyingunit
 - Garrison:
     - SentryTowwe: arrow (ProjectileArrowFlaming), rangedattack (activeifcontainsunits), contain (ArcherLineUpgrade), notcontain (AbstractInfantry)
     - WatchTower: flyingunitattack (only one enabled), arrow (ProjectileBallistaShot)

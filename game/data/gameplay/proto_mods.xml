@@ -8497,7 +8497,7 @@
 		</protoaction>
 		<protoaction>
 			<name>HandAttack</name>
-			<rof>2.500000</rof>
+			<rof>1.90000</rof>
 			<damage type="Hack">11.000000</damage>
 			<damage type="Crush">5.000000</damage>
 			<damagebonus type="AbstractTower">4.00000</damagebonus>

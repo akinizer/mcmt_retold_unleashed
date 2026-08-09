@@ -1476,7 +1476,8 @@
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">PaleRider</target></effect>
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
-          <target type="ProtoUnit">AbstractKuafu</target></effect>
+          <target type="ProtoUnit">KuafuWarrior</target></effect>
+        
         <!--AbstractHuntress-->        
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHuntress" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">AmazonArcher</target></effect>
@@ -4621,7 +4622,7 @@
 
 			<effect type="Data" amount="1.00" subtype="CommandRemove" proto="Kuafu" relativity="Assign">
         <target type="ProtoUnit">TownCenter</target></effect>
-      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="KuafuWarrior" row="0" column="1" relativity="Assign">
+      <effect type="Data" amount="1.00" subtype="CommandAdd" proto="KuafuWarrior" row="0" column="1" relativity="Assign">
         <target type="ProtoUnit">TownCenter</target></effect>	
 			<effect type="TransformUnit" toprotoid="KuafuWarrior" fromprotoid="Kuafu" includequeued="true"></effect>
 		</effects>		
