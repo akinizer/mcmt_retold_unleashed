@@ -8463,6 +8463,8 @@
 		<unittype>MilitaryUnit</unittype>
 		<unittype>Ranged</unittype>
 		<unittype>MythUnit</unittype>		
+		<unittype>MythUnitMelee</unittype>
+		<unittype>MythUnitRanged</unittype>
 		<unittype>ArcherLineUpgraded</unittype>
 		<unittype>AbstractKuafu</unittype>
 		<unittype>LogicalTypeLandMilitary</unittype>
@@ -8471,7 +8473,10 @@
 		<unittype>LogicalTypeValidShockwaveTarget</unittype>
 		<unittype>LogicalTypeValidEidolon</unittype>
 		<unittype>LogicalTypeValidBloodPactTarget</unittype>
-		<unittype>LogicalTypeMeleeInfantry</unittype>
+		<unittype>LogicalTypeTrainableMythUnit</unittype>
+		<unittype>LogicalTypeMythUnitNotFlying</unittype>
+		<unittype>LogicalTypeMythUnitNotTitan</unittype>		
+		<unittype>LogicalTypeRangedMythUnit</unittype>
 		<flag>CollidesWithProjectiles</flag>
 		<flag>CorpseDecays</flag>
 		<flag>ShowGarrisonButton</flag>

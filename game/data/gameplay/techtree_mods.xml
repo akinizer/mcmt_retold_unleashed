@@ -9898,6 +9898,36 @@
         <target type="ProtoUnit">KuafuHero</target></effect>
     </effects>
   </tech>
+  <tech name="MountainousMight">
+    <effects>
+      <!-- removed -->
+      <effect type="Data" allactions="1" amount="1.5" subtype="Damage" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">Kuafu</target></effect>
+			<effect type="Data" allactions="1" amount="1.5" subtype="Damage" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">KuafuHero</target></effect>
+			<effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">Kuafu</target></effect>
+			<effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">KuafuHero</target></effect>
+			<effect type="Data" amount="10.00" subtype="LOS" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">Kuafu</target></effect>
+			<effect type="Data" amount="10.00" subtype="LOS" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">KuafuHero</target></effect>
+			<effect type="Data" action="RangedAttack" amount="10.00" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">Kuafu</target></effect>
+			<effect type="Data" action="RangedAttack" amount="10.00" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">KuafuHero</target></effect>
+      <!-- added -->
+      <effect type="Data" allactions="1" amount="1.5" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">AbstractKuafu</target></effect>
+      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">AbstractKuafu</target></effect>
+      <effect type="Data" amount="10.00" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractKuafu</target></effect>
+      <effect type="Data" action="RangedAttack" amount="10.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractKuafu</target></effect>
+    </effects>
+  </tech>
   <tech name="DivineBooks">
     <effects>
       <effect type="Data" amount="0.75" subtype="cost" resource="Food" relativity="BasePercent" mergeMode="remove">
