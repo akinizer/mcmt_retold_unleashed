@@ -8462,7 +8462,6 @@
 		<unittype>UnitClass</unittype>
 		<unittype>MilitaryUnit</unittype>
 		<unittype>MythUnit</unittype>		
-		<unittype>AbstractArcher</unittype>
 		<unittype>ArcherLineUpgraded</unittype>
 		<unittype>AbstractKuafu</unittype>
 		<unittype>LogicalTypeLandMilitary</unittype>
