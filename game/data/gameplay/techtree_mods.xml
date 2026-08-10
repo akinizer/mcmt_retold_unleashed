@@ -1914,6 +1914,7 @@
         <effect type="Data" amount="0.50" subtype="AdditionalScale" relativity="Absolute">
           <target type="ProtoUnit">Hesperides</target></effect>
         <!-- Chinese Special Units -->
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">TerracottaInfantry</target></effect>	
         <!-- Japanese Special Units -->
         <!-- LandLord Special Units -->
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Bastion</target></effect>
@@ -5084,6 +5085,9 @@
       -->
 			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="GeHalberdier" relativity="Assign">
         <target type="ProtoUnit">WhiteHorseCavalry</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="TerracottaInfantry" relativity="Assign">
+        <target type="ProtoUnit">TerracottaRider</target></effect>
 
       <effect type="TechStatus" status="obtainable" mergeMode="add">SpawnTacticsChinese</effect>
       <effect type="Data" amount="1.00" subtype="CommandAdd" tech="SpawnTacticsChinese" row="3" column="3" relativity="Assign">

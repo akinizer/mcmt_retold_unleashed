@@ -27731,6 +27731,94 @@
 			<canattackground>1</canattackground>
 		</protoaction>
 	</unit>
+
+	<unit name="TerracottaInfantry">
+		<displaynameid>STR_UNIT_DAO_SWORDSMAN_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_DAO_SWORDSMAN_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_DAO_SWORDSMAN_SR</shortrollovertextid>
+		<icon>resources\chinese\player_color\units\dao_swordsman_icon.png</icon>
+		<animfile>mcmt\units\imperial\terracotta_infantry.xml</animfile>
+		<soundsetfile>chinese\vo\dao_swordsman\dao_swordsman.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>80.0000</initialhitpoints>
+		<maxhitpoints>80.0000</maxhitpoints>
+		<trainpoints>14.0000</trainpoints>
+		<weightclass>5</weightclass>
+		<populationcount>2</populationcount>
+		<maxvelocity>4.0000</maxvelocity>
+		<maxrunvelocity>4.3000</maxrunvelocity>
+		<los>16.0000</los>
+		<cost resourcetype="Gold">55.0000</cost>
+		<armor type="Hack" value="0.1500"></armor>
+		<armor type="Pierce" value="0.8000"></armor>
+		<armor type="Crush" value="0.2000"></armor>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>AbstractInfantry</unittype>
+		<unittype>HumanSoldier</unittype>
+		<unittype>CavalryLineUpgraded</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<unittype>LogicalTypeMeleeInfantry</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<selfdestructprotoaction>SelfDestructAttack</selfdestructprotoaction>
+		<tactics>handattack_selfdestruct.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.200000</rof>
+			<damage type="Hack">9.000000</damage>
+			<maxrange>0.500000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>SelfDestructAttack</name>
+			<damage type="Hack">0.000000</damage>
+			<damagearea>10.000000</damagearea>
+			<damageflags>Self|Ally</damageflags>
+			<active>0</active>
+			<onhiteffect type="StatModify" targetunittype="AbstractInfantry" duration="3.000000">
+				<modify type="Damage">1.250000</modify>
+				<modify type="LifeSteal" applytype="Set">0.250000</modify>
+			</onhiteffect>
+			<onhiteffect type="Attach" targetunittype="AbstractInfantry" proto="VFXXuanyuansBloodline" duration="3.000000"></onhiteffect>
+		</protoaction>
+	</unit>
 <!-- dismount units knights TODO
 	<unit name="WhiteHorseKnight" mergeMode="add"></unit>
 	<unit name="QingQiKnight" mergeMode="add"></unit>

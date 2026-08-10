@@ -1609,6 +1609,81 @@
 		<effect type="TechActivate">
 			<target type="Tech">EclipseActive</target></effect>
 	</power>
+	<!-- New Sentinel God Powers -->
+	<power name="MCMT_Sentinels_of_Tlalocan" type="TempUnit" godpower="">
+		<displaynameid>STR_POWER_SENTINEL</displaynameid>
+		<rolloverid>STR_POWER_SENTINEL</rolloverid>
+		<icon>greek\static_color\god_powers\sentinel_icon.png</icon>
+		<placement ally="" allownature="" usetargetunitpositionforplacement="" fullybuiltonly="">Unit</placement>
+		<abstractplacementtargettype>LogicalTypeValidSentinelTarget</abstractplacementtargettype>
+		<minimapeventtime sendalertto="Ally">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAlly">SentinelBirth</soundset>
+		<activetime>3.0</activetime>
+		<powerplayerrelation>Ally</powerplayerrelation>
+		<cost>60.0</cost>
+		<repeatcost>10.0</repeatcost>
+		<smoothrotation></smoothrotation>
+		<attachproto>SentinelBase</attachproto>
+		<createunit quantity="5" minradius="20" maxradius="26" pattern="symmetric" permanent="" norandomrotate="" delay="0.0">MonolithOfTlaloc</createunit>
+		<forceplacement></forceplacement>
+	</power>
+	<power name="MCMT_Sentinels_of_Zeus" type="TempUnit" godpower="">
+		<displaynameid>STR_POWER_SENTINEL</displaynameid>
+		<rolloverid>STR_POWER_SENTINEL</rolloverid>
+		<icon>greek\static_color\god_powers\sentinel_icon.png</icon>
+		<placement ally="" allownature="" usetargetunitpositionforplacement="" fullybuiltonly="">Unit</placement>
+		<abstractplacementtargettype>LogicalTypeValidSentinelTarget</abstractplacementtargettype>
+		<minimapeventtime sendalertto="Ally">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAlly">SentinelBirth</soundset>
+		<activetime>3.0</activetime>
+		<powerplayerrelation>Ally</powerplayerrelation>
+		<cost>60.0</cost>
+		<repeatcost>10.0</repeatcost>
+		<smoothrotation></smoothrotation>
+		<attachproto>SentinelBase</attachproto>
+		<createunit quantity="5" minradius="20" maxradius="26" pattern="symmetric" permanent="" norandomrotate="" delay="0.0">StatueOfLightning</createunit>
+		<forceplacement></forceplacement>
+	</power>
+	<power name="MCMT_Sentinels_of_Alexandria" type="TempUnit" godpower="">
+		<displaynameid>STR_POWER_SENTINEL</displaynameid>
+		<rolloverid>STR_POWER_SENTINEL</rolloverid>
+		<icon>greek\static_color\god_powers\sentinel_icon.png</icon>
+		<placement ally="" allownature="" usetargetunitpositionforplacement="" fullybuiltonly="">Unit</placement>
+		<abstractplacementtargettype>LogicalTypeValidSentinelTarget</abstractplacementtargettype>
+		<minimapeventtime sendalertto="Ally">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAlly">SentinelBirth</soundset>
+		<activetime>3.0</activetime>
+		<powerplayerrelation>Ally</powerplayerrelation>
+		<cost>60.0</cost>
+		<repeatcost>10.0</repeatcost>
+		<smoothrotation></smoothrotation>
+		<attachproto>SentinelBase</attachproto>
+		<createunit quantity="5" minradius="20" maxradius="26" pattern="symmetric" permanent="" norandomrotate="" delay="0.0">MirrorTower</createunit>
+		<forceplacement></forceplacement>
+	</power>
+	<power name="MCMT_Summon_Town" type="TempUnit" godpower="">
+		<displaynameid>STR_POWER_SENTINEL</displaynameid>
+		<rolloverid>STR_POWER_SENTINEL</rolloverid>
+		<icon>greek\static_color\god_powers\sentinel_icon.png</icon>
+		<placement ally="" allownature="" usetargetunitpositionforplacement="" fullybuiltonly="">Unit</placement>
+		<abstractplacementtargettype>LogicalTypeValidSentinelTarget</abstractplacementtargettype>
+		<minimapeventtime sendalertto="Ally">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAlly">SentinelBirth</soundset>
+		<activetime>3.0</activetime>
+		<powerplayerrelation>Ally</powerplayerrelation>
+		<cost>60.0</cost>
+		<repeatcost>10.0</repeatcost>
+		<smoothrotation></smoothrotation>
+		<attachproto>SentinelBase</attachproto>
+		<createunit quantity="5" minradius="20" maxradius="26" pattern="symmetric" permanent="" norandomrotate="" delay="0.0">Manor</createunit>
+		<createunit quantity="1" minradius="20" maxradius="26" pattern="symmetric" permanent="" norandomrotate="" delay="0.0">Armory</createunit>
+		<createunit quantity="5" minradius="20" maxradius="26" pattern="symmetric" permanent="" norandomrotate="" delay="0.0">Manor</createunit>
+		<forceplacement></forceplacement>
+	</power>
 	<!--ChargedAbility-->
 	<power name="AbilitySpecialHandAttack" type="UnitAction">
 		<displaynameid>STR_ABILITY_SPECIALATTACK</displaynameid>
