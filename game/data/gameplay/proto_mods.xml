@@ -1069,7 +1069,7 @@
 		<flag>CreateUnitGroupAutomatically</flag>
 		<initialshading type="sand" factor="1"></initialshading>
 
-		<recharge type="attacks" init="0">3.000000</recharge>
+		<recharge type="attacks" init="0">6.000000</recharge>
 		<rechargeincludetypes>
 			<unittype>Unit</unittype>
 		</rechargeincludetypes>
@@ -1084,9 +1084,7 @@
 			<damage type="Hack">16.000000</damage>
 			<damagearea>5.000000</damagearea>
 			<damageflags>Nature|Enemy</damageflags>
-			<damagebonus type="Building">5.000000</damagebonus>
-			<damagebonus type="AbstractSiegeWeapon">4.000000</damagebonus>
-			<damagebonus type="Ship">4.000000</damagebonus>
+			<damagebonus type="Building">3.000000</damagebonus>
 			<maxrange>0.750000</maxrange>
 			<onhiteffect type="Freeze" freezetype="StoneDamage" duration="3.000000" damage="0.1"></onhiteffect>  
 		</protoaction>
