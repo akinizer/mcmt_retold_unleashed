@@ -2363,8 +2363,8 @@
             <effect type="TechStatus" status="obtainable">MCMT_KingdomGuardTraining_III</effect>
 
             <effect type="TechStatus" status="obtainable">MCMT_ArtilleryTraining</effect>   
-            <effect type="TechStatus" status="obtainable">LevyTerracottaSoldiers</effect>   
-            <effect type="TechStatus" status="obtainable">LevyTerracottaSoldiers</effect>   
+            <effect type="TechStatus" status="obtainable">MCMT_LevyTerracottaSoldiers</effect>   
+            <effect type="TechStatus" status="obtainable">MCMT_ConscriptTerracottaSoldiers</effect>   
             <effect type="TechStatus" status="obtainable">MCMT_WarriorTribe</effect>           
             <!--TechBuilding FutureTech-->
             <effect type="TechStatus" status="obtainable">MCMT_DivineArmaments</effect>
@@ -3397,6 +3397,7 @@
 	<!-- FOUNDER TECHS // LANDLORD AND NOAH SPAWN -->
 	<tech name="MCMT_SpecialService">
     <displaynameid>STR_TECH_SPECIALSERVICE_NAME</displaynameid>
+    <rollovertextid>STR_TECH_SPECIALSERVICE_LR</rollovertextid>
     <status>UNOBTAINABLE</status>
     <icon>resources\tech\activate_tech.jpg</icon>
     <researchpoints>1.0000</researchpoints>
@@ -3428,6 +3429,7 @@
 
   <tech name="MCMT_EgyptianRenovation">
     <displaynameid>STR_TECH_EGYPTIAN_RENOVATION_NAME</displaynameid>
+    <rollovertextid>STR_TECH_EGYPTIAN_RENOVATION_LR</rollovertextid>
     <status>UNOBTAINABLE</status>
     <icon>resources\tech\activate_tech.jpg</icon>
     <researchpoints>1.0000</researchpoints>
@@ -11575,7 +11577,7 @@
     </effects>    
   </tech>
   <!-- Chinese Military Techs -->
-  <tech name="LevyTerracottaSoldiers">
+  <tech name="MCMT_LevyTerracottaSoldiers">
 		<displaynameid>STR_TECH_LEVY_TERRACOTTASOLDIERS_NAME</displaynameid>
 		<rollovertextid>STR_TECH_LEVY_TERRACOTTASOLDIERS_LR</rollovertextid>
 		<cost resourcetype="Gold">450.0000</cost>
@@ -11592,7 +11594,7 @@
 				<target type="ProtoUnit">AbstractTerracotta</target></effect>
 		</effects>
 	</tech>
-	<tech name="ConscriptTerracottaSoldiers">
+	<tech name="MCMT_ConscriptTerracottaSoldiers">
 		<displaynameid>STR_TECH_CONSCRIPT_TERRACOTTASOLDIERS_NAME</displaynameid>
 		<rollovertextid>STR_TECH_CONSCRIPT_TERRACOTTASOLDIERS_LR</rollovertextid>
 		<cost resourcetype="Gold">650.0000</cost>

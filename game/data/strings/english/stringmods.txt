@@ -43,7 +43,8 @@ ID = "STR_UNIT_TITAN_YAMATANOOROCHI_NAME"   ;   Str = "Yamata no Orochi (Titan)"
 ID = "STR_UNIT_TITAN_CIPACTLI_NAME"  ;   Str = "Cipactli (Titan)"
 
 // SPECIAL UNITS
-ID = "STR_TECH_SPECIALSERVICE_NAME"   ;   Str = "Special Service"
+ID = "STR_TECH_SPECIALSERVICE_NAME"   ;   Str = "Overdrive Mode: Special Service"
+ID = "STR_TECH_SPECIALSERVICE_LR"   ;   Str = "Warning: This overdrive mode will enable respawnable Landlord founder unit of MCMT. He is supereffective at whatever he can reach whether running or flying. He establishes powerful and exotic strucures that provide many utilities, special units and techs"
 
 ID = "STR_UNIT_LANDLORD_NAME"   ;   Str = "Landlord"
 ID = "STR_UNIT_LANDLORD_LR"   ;   Str = "Elite Infantry. All-around. Head of Household and stronger than the basic variant."
@@ -382,7 +383,8 @@ ID = "STR_UNIT_LOKI_JOTNAR_SR"   ;   Str = "Loki in True Form"
 ID = "STR_UNIT_LOKI_JOTNAR_LR"   ;   Str = "God of Mischief. Has Never Been This Serious"
 
 // NOAH
-ID = "STR_TECH_EGYPTIAN_RENOVATION_NAME"   ;   Str = "Egyptian Renovation"
+ID = "STR_TECH_EGYPTIAN_RENOVATION_NAME"   ;   Str = "Overdrive Mode: Egyptian Renovation"
+ID = "STR_TECH_EGYPTIAN_RENOVATION_LR"   ;   Str = "Warning: This overdriver activator will enable Noah. He bears ability to heal, build A.R.K and limited conversion of units and military buildings. Devastative vs Pharaohs and Temples"
 
 ID = "STR_UNIT_NOAH_NAME"   ;   Str = "Noah"
 ID = "STR_UNIT_NOAH_SR"   ;   Str = "Noah the Oracle of Guidance"
@@ -434,7 +436,7 @@ ID = "STR_BLD_TEMPLE_OF_PRIMORDIALS_NAME"   ;   Str = "Temple of the Primordial 
 ID = "STR_BLD_TEMPLE_OF_PRIMORDIALS_LR"   ;   Str = "Worldly Gateway to Divine Entities"
 
 ID = "STR_BLD_TECH_BUILDING_NAME"   ;   Str = "Tech Building"
-ID = "STR_BLD_TECH_BUILDING_LR"   ;   Str = "Cybertech Researches"
+ID = "STR_BLD_TECH_BUILDING_LR"   ;   Str = "Cybertech Researches. It provides utility techs within the facility, empowers other MCMT strcutures and enables hidden techs in Armory"
 
 ID = "STR_BLD_SVA_NAME"   ;   Str = "Strategic Vessel Assembly"
 ID = "STR_BLD_SVA_LR"   ;   Str = "Mechanized Naval Warfare Deployment Center"
@@ -951,7 +953,6 @@ ID = "STR_TECH_LEVY_TERRACOTTASOLDIERS_LR"   ;   Str = "Terracotta Soldiers are 
 ID = "STR_TECH_CONSCRIPT_TERRACOTTASOLDIERS_NAME"  ;   Str = "Conscript Terracotta Soldiers"
 ID = "STR_TECH_CONSCRIPT_TERRACOTTASOLDIERS_LR"  ;   Str = "Terracotta Soldiers are conscripted to serve the Imperial China"
 
-
 // AZTEC SPECIAL TECHS
 ID = "STR_TECH_TELPOCHCALLI_TRAINING_NAME"   ;   Str = "Telpochcalli Training"
 ID = "STR_TECH_TELPOCHCALLI_TRAINING_LR"   ;   Str = "Commando training that enhanches physique of human soldiers"
@@ -1270,6 +1271,7 @@ ID = "STR_HUD_UNIT_TYPE_ABSTRACT_SPECTRAL"   ;   Str = "Spectrals"
 ID = "STR_HUD_UNIT_TYPE_ABSTRACT_HUNTRESS"   ;   Str = "Huntress Warriors"
 ID = "STR_HUD_UNIT_TYPE_ABSTRACT_NYMPH"   ;   Str = "Nymph Faes"
 ID = "STR_HUD_UNIT_TYPE_ABSTRACT_KUAFU"   ;   Str = "Kuafu Tribefolk"
+ID = "STR_HUD_UNIT_TYPE_ABSTRACT_TERRACOTTA"   ;   Str = "Terracotta Soldiers"
 
 // SUPERWEAPONS
 ID = "STR_POWER_PSIONIC_DECIMATOR"   ;   Str = "Psionic Decimator"

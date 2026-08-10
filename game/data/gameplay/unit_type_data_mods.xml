@@ -69,4 +69,8 @@
 		<unittype>AbstractKuafu</unittype>
 		<displaynameid>STR_HUD_UNIT_TYPE_ABSTRACT_KUAFU</displaynameid>
 	</unittypeentry>
+	<unittypeentry mergeMode="add">
+		<unittype>AbstractTerracotta</unittype>
+		<displaynameid>STR_HUD_UNIT_TYPE_ABSTRACT_TERRACOTTA</displaynameid>
+	</unittypeentry>
 </unittypedatamods>

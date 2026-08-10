@@ -8867,8 +8867,8 @@
 		<unitshieldregen damagetimeout="3.0">1.0000</unitshieldregen>
 
 		<tech row="1" column="4" mergeMode="remove">AdvancedFortifications</tech>
-		<tech row="1" column="5">LevyTerracottaSoldiers</tech>
-		<tech row="1" column="5">ConscriptTerracottaSoldiers</tech>
+		<tech row="1" column="5">MCMT_LevyTerracottaSoldiers</tech>
+		<tech row="1" column="5">MCMT_ConscriptTerracottaSoldiers</tech>
 		
 		<tech row="3" column="2">AdvancedFortifications</tech>
 		<tech row="3" column="2">MCMT_AdvancedFortifications_I</tech>
