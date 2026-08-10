@@ -1343,6 +1343,8 @@ ID = "STR_ABILITY_BURROW"   ;   Str = "Burrow"
 ID = "STR_ABILITY_EMERGE"   ;   Str = "Emerge"
 ID = "STR_UNIT_BURROW_ACTION"   ;   Str = "Burrow"
 
+ID = "STR_UNIT_CLOAKING_SHROUD_ABILITY"   ;   Str = "Cloaking Shroud"
+
 ID = "STR_ABILITY_SPECIALATTACK"   ;   Str = "Special Attack"
 ID = "STR_ABILITY_SPECIALATTACK_LR"   ;   Str = "This unit has a special ability that recharges"
 

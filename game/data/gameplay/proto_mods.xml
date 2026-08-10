@@ -3144,8 +3144,18 @@
 		<flag>TieToWaterSurface</flag>
 	</unit>
 	<unit name="Argus">
+		<unittype>AbstractScout</unittype>
+		<stealthdetectionradius>15.0000</stealthdetectionradius>
 		<movementtype>amphibious</movementtype>
 		<flag>TieToWaterSurface</flag>
+		<protoaction>
+			<name stringid="STR_UNIT_CLOAKING_SHROUD_ABILITY">CloakingShroud</name>
+			<type>AreaStealth</type>
+			<maxrange>10.0</maxrange>
+      		<rate type="AbstractVillager">1.0</rate>
+			<persistent>1</persistent>
+			<active>0</active>
+		</protoaction>
 	</unit>
 	<unit name="ArgusAcidBlobDamage">
 		<protoaction>
@@ -3154,6 +3164,7 @@
 				<modify type="ArmorSpecific" dmgtype="Pierce" applytype="Multiply">0.6000</modify>
 				<modify type="ArmorSpecific" dmgtype="Hack" applytype="Multiply">0.6000</modify>
 				<modify type="ArmorSpecific" dmgtype="Crush" applytype="Multiply">0.6000</modify>
+				<modify type="attackDisabled">2.000000</modify>
 			</onhiteffect>
 			<onhiteffect type="DamageOverTime" duration="6.000000">
 				<damage type="Divine">0.100000</damage>
@@ -3170,14 +3181,13 @@
 			<type>AutoRangedModify</type>
 			<modifyabstracttype>Unit</modifyabstracttype>
 			<persistent>1</persistent>
-			<maxrange>0.1</maxrange>
 			<modifytype>LOSFactor</modifytype>
 			<targetenemy>1</targetenemy>
 			<nostack>1</nostack>
 			<modelattachment>vfx\cold\cold.xml</modelattachment>
 			<modelattachmentbone>Spine</modelattachmentbone>
 			<maxrange>3.5</maxrange>
-			<modifymultiplier>0.4</modifymultiplier>
+			<modifymultiplier>0.01</modifymultiplier>
 		</protoaction>
 	</unit>
 

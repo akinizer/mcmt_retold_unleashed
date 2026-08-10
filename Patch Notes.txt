@@ -225,17 +225,16 @@
         - Temple of Solaris: infinite tech, train Templar x5
             - Templar: hero infantry, anti-economic, anti-healer, builder [temple, fortress]
 
-
-
 4. Atlanean reworks from mcmt mod and new changes
 - myth unit:
     - popcosts
 
     - flying: Caladria+
     - melee: Centimanus+, Automaton+, Behemoth+, Promethean+
-        - Argus+:
+        - Argus+: stealthdetectionradius, scout
             - ArgusAcidBlobDamage
                 - SelfDestruct: armor melt, arealosreduction, vfxpoison
+            - CloakingShroud (GuardianOfIo): areainvisibility, abstractvillager
     - ranged: Satyr+, Lampades+
     - naval: Manowar+, Servant+ 
         - Nereid+: JumpAttack

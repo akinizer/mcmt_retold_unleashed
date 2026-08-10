@@ -1774,8 +1774,7 @@
           <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">WenZhong</target></effect>
             <!--Chinese Economic-->
           <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="VillagerChinese" relativity="Absolute">
-            <target type="ProtoUnit">VillagerChineseClay</target>
-          </effect>
+            <target type="ProtoUnit">VillagerChineseClay</target></effect>
       </effects>
     </tech>
     <tech name="JapanesePresets" mergeMode="add">
@@ -1860,6 +1859,8 @@
 
         <effect type="Data" amount="15.00" subtype="BuildLimit" relativity="Assign"><target type="ProtoUnit">Oracle</target></effect>
         <effect type="Data" amount="15.00" subtype="BuildLimit" relativity="Assign"><target type="ProtoUnit">OracleHero</target></effect>
+        <!--Atlantean Container-->
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">ArgusAcidBlobDamage</target></effect>
       </effects>
     </tech>
     <tech name="AztecPresets" mergeMode="add">
@@ -9553,6 +9554,19 @@
     </effects>
   </tech>
   <!-- Atlantean Techs -->
+  <tech name="GuardianOfIo">
+    <effects>
+      <effect type="Data" amount="2.50" subtype="MaximumRange" action="AreaDamage" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">ArgusAcidBlobDamage</target></effect>
+      <effect type="Data" amount="2.50" subtype="MaximumRange" action="SelfDestructAttack" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">ArgusAcidBlobDamage</target></effect>
+      <effect type="Data" amount="2.50" subtype="MaximumRange" action="AreaLOSReduction" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">ArgusAcidBlobDamage</target></effect>
+
+      <effect type="Data" action="CloakingShroud" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Argus</target></effect>
+    </effects>
+  </tech>
   <tech name="VolcanicForge" mergeMode="add">
     <displaynameid>STR_TECH_VOLCANIC_FORGE_NAME</displaynameid>
     <rollovertextid>STR_TECH_VOLCANIC_FORGE_LR</rollovertextid>
