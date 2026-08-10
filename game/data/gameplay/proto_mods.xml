@@ -1018,7 +1018,7 @@
 		<trainpoints>40.0000</trainpoints>
 		<lifespan>120.0000</lifespan>
 
-		<weightclass>6</weightclass>
+		<weightclass>5</weightclass>
 		<populationcount>2</populationcount>
 		<maxvelocity>5.8500</maxvelocity>
 		<los>12.0000</los>
@@ -1084,7 +1084,7 @@
 			<damage type="Hack">16.000000</damage>
 			<damagearea>5.000000</damagearea>
 			<damageflags>Nature|Enemy</damageflags>
-			<damagebonus type="Building">3.000000</damagebonus>
+			<damagebonus type="Building">3.600000</damagebonus>
 			<maxrange>0.750000</maxrange>
 		</protoaction>
 		<protoaction>

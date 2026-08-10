@@ -222,6 +222,12 @@
 	</Pioneer>
 
 		<!--Chinese-HumanSoldier-->	
+	<TerracottaReclaimer>
+		<ability>AbilityChargedGaugeAttack<notcastable>true</notcastable><noautocast>true</noautocast><bindtochargeaction>true</bindtochargeaction></ability>
+	</TerracottaReclaimer>
+	<TerracottaSuppressor>
+		<ability>AbilityChargedRangedAttack<chargetimeasrof>1</chargetimeasrof></ability>
+	</TerracottaSuppressor>
 
 		<!--Chinese-MythUnit-->	
 	<QiongQiAir><ability>AbilityAutoScout<noautocast>true</noautocast></ability></QiongQiAir>	

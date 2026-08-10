@@ -1717,6 +1717,11 @@
 		<abstractplacementtargettype>Unit</abstractplacementtargettype>
 		<unitaction>ChargedRangedAttack</unitaction>
 	</power>
+	<power name="AbilityChargedGaugeAttack" type="GeneralEffect">
+		<displaynameid>STR_ABILITY_SPECIALATTACK</displaynameid>
+		<rolloverid>STR_ABILITY_SPECIALATTACK_LR</rolloverid>
+		<icon>japanese\static_color\abilities\shogun_ability_icon.png</icon>
+	</power>
 	<!--ChargedAbility Special-->
 	<power name="AbilityTrackerDevice" type="UnitAction">
 		<displaynameid>STR_ABILITY_TRACKERDEVICE_NAME</displaynameid>
