@@ -1326,9 +1326,7 @@
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractDissolvable" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">RockGiant</target></effect>
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractDissolvable" relativity="Absolute" mergeMode="add">
-          <target type="ProtoUnit">VillagerChineseClay</target></effect>
-        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractDissolvable" relativity="Absolute" mergeMode="add">
-          <target type="ProtoUnit">TerracottaRider</target></effect>
+          <target type="ProtoUnit">AbstractTerracotta</target></effect>
         <!--AbstractDivineLight-->   
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractDivineLight" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">AbstractSorcererLight</target></effect>
@@ -1525,6 +1523,17 @@
           <target type="ProtoUnit">IztaccihuatlDismounted</target></effect>
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHuntress" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">JaguarRider</target></effect>
+        <!-- AbstractTerracotta -->
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractTerracotta" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">TerracottaRider</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractTerracotta" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">TerracottaInfantry</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractTerracotta" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">TerracottaSuppressor</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractTerracotta" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">TerracottaReclaimer</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractTerracotta" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">VillagerChineseClay</target></effect>
       </effects>
     </tech>
 
@@ -2354,6 +2363,8 @@
             <effect type="TechStatus" status="obtainable">MCMT_KingdomGuardTraining_III</effect>
 
             <effect type="TechStatus" status="obtainable">MCMT_ArtilleryTraining</effect>   
+            <effect type="TechStatus" status="obtainable">LevyTerracottaSoldiers</effect>   
+            <effect type="TechStatus" status="obtainable">LevyTerracottaSoldiers</effect>   
             <effect type="TechStatus" status="obtainable">MCMT_WarriorTribe</effect>           
             <!--TechBuilding FutureTech-->
             <effect type="TechStatus" status="obtainable">MCMT_DivineArmaments</effect>
@@ -9650,7 +9661,7 @@
 	  <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
         <target type="ProtoUnit">VillagerChineseClay</target></effect>
       <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
-        <target type="ProtoUnit">TerracottaRider</target></effect>
+        <target type="ProtoUnit">AbstractTerracotta</target></effect>
 
 	   <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
         <target type="ProtoUnit">Building</target></effect>
@@ -11563,6 +11574,44 @@
 				<target type="ProtoUnit">AbstractVillager</target></effect>
     </effects>    
   </tech>
+  <!-- Chinese Military Techs -->
+  <tech name="LevyTerracottaSoldiers">
+		<displaynameid>STR_TECH_LEVY_TERRACOTTASOLDIERS_NAME</displaynameid>
+		<rollovertextid>STR_TECH_LEVY_TERRACOTTASOLDIERS_LR</rollovertextid>
+		<cost resourcetype="Gold">450.0000</cost>
+		<researchpoints>20.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+		<icon>resources\greek\static_color\technologies\levy_cavalry_icon.png</icon>
+		<flag>CountsTowardMilitaryScore</flag>
+		<effects>
+			<effect type="Data" amount="0.80" subtype="TrainPoints" relativity="Percent">
+				<target type="ProtoUnit">AbstractTerracotta</target></effect>
+      <effect type="Data" amount="1.10" subtype="Lifespan" relativity="BasePercent">
+				<target type="ProtoUnit">AbstractTerracotta</target></effect>
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">AbstractTerracotta</target></effect>
+		</effects>
+	</tech>
+	<tech name="ConscriptTerracottaSoldiers">
+		<displaynameid>STR_TECH_CONSCRIPT_TERRACOTTASOLDIERS_NAME</displaynameid>
+		<rollovertextid>STR_TECH_CONSCRIPT_TERRACOTTASOLDIERS_LR</rollovertextid>
+		<cost resourcetype="Gold">650.0000</cost>
+		<researchpoints>30.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+		<icon>resources\greek\static_color\technologies\conscript_cavalry_icon.png</icon>
+		<flag>CountsTowardMilitaryScore</flag>
+		<prereqs>
+			<techstatus status="Active">LevyTerracottaSoldiers</techstatus>
+		</prereqs>
+		<effects>
+			<effect type="Data" amount="0.80" subtype="TrainPoints" relativity="Percent">
+				<target type="ProtoUnit">AbstractTerracotta</target></effect>
+      <effect type="Data" amount="1.20" subtype="Lifespan" relativity="BasePercent">
+				<target type="ProtoUnit">AbstractTerracotta</target></effect>
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">AbstractTerracotta</target></effect>
+		</effects>
+	</tech>
   <!--Forbidden Techs-->
   <tech name="ForbiddenTechMonitors" mergeMode="add">
     <displaynameid>STR_TECH_ACTIVATE_FORBIDDEN_MONITORS_TECH</displaynameid>

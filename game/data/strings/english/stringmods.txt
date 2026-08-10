@@ -945,6 +945,13 @@ ID = "STR_UNIT_MAKINA_NAME"   ;   Str = "Makina (Hero)"
 ID = "STR_UNIT_MAKINA_SR"   ;   Str = "Adventurer from Distant Lands"
 ID = "STR_UNIT_MAKINA_LR"   ;   Str = "Battlemaster's fate crosses path with a traveler and hires it for stun and gore attacks in a short duration"
 
+// CHINESE SPECIAL TECHS
+ID = "STR_TECH_LEVY_TERRACOTTASOLDIERS_NAME"   ;   Str = "Levy Terracotta Soldiers"
+ID = "STR_TECH_LEVY_TERRACOTTASOLDIERS_LR"   ;   Str = "Terracotta Soldiers are levied to serve the Imperial China"
+ID = "STR_TECH_CONSCRIPT_TERRACOTTASOLDIERS_NAME"  ;   Str = "Conscript Terracotta Soldiers"
+ID = "STR_TECH_CONSCRIPT_TERRACOTTASOLDIERS_LR"  ;   Str = "Terracotta Soldiers are conscripted to serve the Imperial China"
+
+
 // AZTEC SPECIAL TECHS
 ID = "STR_TECH_TELPOCHCALLI_TRAINING_NAME"   ;   Str = "Telpochcalli Training"
 ID = "STR_TECH_TELPOCHCALLI_TRAINING_LR"   ;   Str = "Commando training that enhanches physique of human soldiers"
