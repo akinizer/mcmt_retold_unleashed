@@ -1475,6 +1475,8 @@
           <target type="ProtoUnit">PaleRider</target></effect>
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">KuafuWarrior</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Petsuchos</target></effect>
         
         <!--AbstractHuntress-->        
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHuntress" relativity="Absolute" mergeMode="add">
@@ -6960,7 +6962,8 @@
   <tech name="CopperWeapons">
     <effects>
       <effect type="Data" allactions="1" amount="1.10" subtype="Damage" relativity="BasePercent" mergeMode="add">
-				<target type="ProtoUnit">AbstractMythSoldier</target></effect>
+				<target type="ProtoUnit">AbstractMythSoldier
+        </target></effect>
     </effects>
   </tech>
   <tech name="BronzeWeapons">
@@ -8924,9 +8927,7 @@
         <target type="ProtoUnit">CrocodileOfIsis</target></effect>
 
       <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="ArcherLineUpgraded" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">Petsuchos</target></effect>  
-      <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">Petsuchos</target></effect>   
+        <target type="ProtoUnit">Petsuchos</target></effect>
       
       <effect type="Data" action="BeamAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">Petsuchos</target></effect>	

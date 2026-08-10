@@ -3691,6 +3691,7 @@
         <flag>TieToWaterSurface</flag>
 		<flag>AmphibiousBirth</flag>
 		<movementtype>amphibious</movementtype>
+		<rechargetime>18.0000</rechargetime>
 
         <initialhitpoints>200.0000</initialhitpoints>
         <maxhitpoints>200.0000</maxhitpoints>
@@ -3740,6 +3741,16 @@
 			<name>HandAttackWater</name>
 			<rof>1.000000</rof>
 			<damage type="Hack">15.000000</damage>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<damagebonus type="Ship">3.000000</damagebonus>
+			<maxrange>1.000000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>ChargedHandAttackWater</name>
+			<rof>2.000000</rof>
+			<damage type="Hack">15.000000</damage>
+			<damage type="Crush">15.000000</damage>
 			<damagebonus type="MythUnit">2.000000</damagebonus>
 			<damagebonus type="Hero">0.500000</damagebonus>
 			<damagebonus type="Ship">3.000000</damagebonus>

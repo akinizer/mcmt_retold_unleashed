@@ -32,6 +32,18 @@
 		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
 		<impacteffect>effects\impacts\hack</impacteffect>
 	</action>
+	<action>
+		<name stringid="STR_ABILITY_CRUNCH_ATTACK">ChargedHandAttackWater</name>
+		<type>Attack</type>
+		<rate type="All">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<forceareaattacktarget>1</forceareaattacktarget>
+		<anim>Charging</anim>
+		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+		<impacteffect>effects\impacts\hack</impacteffect>
+		<chargeaction>1</chargeaction>
+	</action>
 	<tactic>Land
 		<action priority="100">BeamAttack</action>
 		<action priority="90">HandAttack</action>
@@ -40,7 +52,8 @@
 		<attackmovetype>AbstractWall</attackmovetype>
 	</tactic>
 	<tactic>Water
-		<action priority="100">HandAttackWater</action>
+		<action priority="100">ChargedHandAttackWater</action>
+		<action priority="90">HandAttackWater</action>
 		<attacktype>LogicalTypeHandUnitsAttack</attacktype><autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype>
 	</tactic>
 </tactics>

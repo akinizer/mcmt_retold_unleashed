@@ -1337,6 +1337,7 @@ ID = "STR_ABILITY_SNOW_BLAST"   ;   Str = "Snow Blast"
 ID = "STR_ABILITY_DASH_ATTACK"   ;   Str = "Dash Attack"
 ID = "STR_ABILITY_BULLRUSH_ATTACK"   ;   Str = "Bull Rush"
 ID = "STR_ABILITY_ILLUSION_SURPRISE"   ;   Str = "Illusion Surprise"
+ID = "STR_ABILITY_CRUNCH_ATTACK"   ;   Str = "Crunch Attack"
 
 ID = "STR_ABILITY_BURROW"   ;   Str = "Burrow"
 ID = "STR_ABILITY_EMERGE"   ;   Str = "Emerge"

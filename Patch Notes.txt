@@ -314,11 +314,19 @@
     - ranged: 
         - Wadjet:
             - vfxpoison dot+ non-siege unit, minimized base divinedamage, amphibious
-        - Petsuchos
-            - ufolazer, rof+, amphibious
+        - Petsuchos (Nile Crocodile)
+            - amphibious, archerlineupgrade, mythsoldier
+            - land tactics:
+                - BeamAttack: distance, anti-structure, continous, projectilelazerufo
+                - HandAttack: close range, vfxbleed
+            - water tactics:
+                - maxvelocity+
+                - HandAttackWater: anti-naval
+                - ChargedHandAttackWater (Crunch Attack): hack & crush damage
         - Mummy:
             - OnDeath: MummyFallen, HandAttack
-            - pierce-, bonusdamage+ (mythunit,humansoldier,villager)    - naval: 
+            - pierce-, bonusdamage+ (mythunit,humansoldier,villager)    
+    - naval: 
         - Leviathan: garrison reworks
         - WarTurtle: miniturtle, visualscale-damage-hp via veterancy
 
@@ -430,11 +438,12 @@
     - TerracottaInfantry: lifespan, high piercearmor
     - TerracottaSupressor: elite cavalry
         - ChargedRangedAttack: ProjectileZhuque, FireTornado
-    - TerracottaReclaimer: anti-siege elite cavalry, aoe handattack, progfreeze
+    - TerracottaReclaimer: anti-siege elite cavalry
+        - ChargedHandAttack: aoe, freeze stonedamage
 
 - tech:
     - skyfire: improved, all flying units have hitonground & hitonwater conditions for spawn skyfire fireare
-
+    - Terracotta Techs: AbstractTerracotta, lifespan, hitpoints, trainpoints
 7. Campaign Heroes from mcmt mod, correlating techs and new features
 - Greek: veterancy numkill, lineupgrades
     
@@ -534,6 +543,9 @@
     - Noah
         - Respawn: 5 minutes
         - StellarGateway (A.R.K): mobile armored transport, mobilizes when Noah is garrisoned
+        - Heal
+        - Empower
+        - Convert (Divine Teaching: Convert): limited units & structures
     - WarriorTribe
         - replaces kuafu with kuafuwarrior in towncenter accel and on the field
         - KuafuWarrior: stronger variant of kuafu, mythunit, melee and ranged attacks, charges at towers head on, effective vs cavalry and flyingunit
@@ -1238,3 +1250,10 @@
 
 - Artemis:
     - HuntsOfArtemis: AbstractHuntress, HarvestOfSouls container, maximumrange+, bonusdamage vs Hunted
+
+28. New Special Custom God Powers
+- Sentinel
+    - MCMT_Sentinels_of_Tlalocan
+    - MCMT_Sentinels_of_Zeus
+    - MCMT_Sentinels_of_Alexandria
+    - MCMT_Summon_Town
