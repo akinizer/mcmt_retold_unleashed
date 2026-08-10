@@ -232,7 +232,10 @@
     - popcosts
 
     - flying: Caladria+
-    - melee: Centimanus+, Automaton+, Behemoth+, Argus+, Promethean+
+    - melee: Centimanus+, Automaton+, Behemoth+, Promethean+
+        - Argus+:
+            - ArgusAcidBlobDamage
+                - SelfDestruct: armor melt, arealosreduction, vfxpoison
     - ranged: Satyr+, Lampades+
     - naval: Manowar+, Servant+ 
         - Nereid+: JumpAttack
