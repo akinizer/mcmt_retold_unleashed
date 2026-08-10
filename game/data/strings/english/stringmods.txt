@@ -386,6 +386,9 @@ ID = "STR_UNIT_LOKI_JOTNAR_LR"   ;   Str = "God of Mischief. Has Never Been This
 ID = "STR_TECH_EGYPTIAN_RENOVATION_NAME"   ;   Str = "Overdrive Mode: Egyptian Renovation"
 ID = "STR_TECH_EGYPTIAN_RENOVATION_LR"   ;   Str = "Warning: This overdriver activator will enable Noah. He bears ability to heal, build A.R.K and limited conversion of units and military buildings. Devastative vs Pharaohs and Temples"
 
+ID = "STR_TECH_ENABLE_NOAHCONVERT_NAME"   ;   Str = "Divine Teaching: Convert"
+ID = "STR_TECH_ENABLE_NOAHCONVERT_LR"   ;   Str = "Enables Noah to guide heretics to divine light"
+
 ID = "STR_UNIT_NOAH_NAME"   ;   Str = "Noah"
 ID = "STR_UNIT_NOAH_SR"   ;   Str = "Noah the Oracle of Guidance"
 ID = "STR_UNIT_NOAH_LR"   ;   Str = "The Legendary Oracle that Visited Many Eras for Millenia in Many Forms; Widely Known as Moses and Pharaoh; Noah of Ark; King David;  "

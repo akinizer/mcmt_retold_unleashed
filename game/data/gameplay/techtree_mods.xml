@@ -3440,6 +3440,7 @@
     <effects>
       <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Noah</target></effect>
       <effect type="TechStatus" status="obtainable">MCMT_Noah_Respawn</effect>
+      <effect type="TechStatus" status="obtainable">MCMT_Enable_NoahConvert</effect>
     </effects>
   </tech>
 
@@ -3460,6 +3461,21 @@
       <effect type="TextOutput">STR_MSG_NOAH_SPAWN</effect>
     </effects>
   </tech>
+
+  <tech name="MCMT_Enable_NoahConvert">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_ENABLE_NOAHCONVERT_NAME</displaynameid>
+		<rollovertextid>STR_TECH_ENABLE_NOAHCONVERT_LR</rollovertextid>
+		<icon>resources\tech\trident.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Favor">200</cost>    
+		<effects>      
+      <effect type="Data" action="Convert" amount="1.00" subtype="ActionEnable" relativity="Absolute">
+        <target type="ProtoUnit">Noah</target></effect>
+		</effects>		
+	</tech>
 
     <!-- TEMPLE OF PRIMORDIALS // PAGINATION TECHS -->
   <tech name="TempleOfPrimordials_ActivateTech_GodsBeasts" mergeMode="add">
@@ -8603,7 +8619,8 @@
       <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
         <target type="ProtoUnit">Petsuchos</target></effect>
       <effect type="Data" amount="0.5" subtype="MaximumVelocity" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">Petsuchos</target></effect>
+        <target type="ProtoUnit">Petsuchos</target></effect>  
+
       <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
         <target type="ProtoUnit">CrocodileOfIsis</target></effect>
       <effect type="Data" amount="0.5" subtype="MaximumVelocity" relativity="Absolute" mergeMode="add">
@@ -8896,12 +8913,23 @@
   </tech>  
   <tech name="Crocodilopolis">
 		<effects>
+      <effect type="Data" action="BeamAttack" amount="6.00" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">Petsuchos</target></effect>
+      <!---->
 			<effect type="Data" amount="1.60" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
 				<target type="ProtoUnit">CrocodileOfIsis</target></effect>
 			<effect type="Data" amount="6.00" subtype="LOS" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">CrocodileOfIsis</target></effect>
       <effect type="Data" protoaction="HackArmorInverseAura" amount="1.00" subtype="ProtoActionAdd" unittype="HackArmorInverseAllyBuildingDockContainer" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">CrocodileOfIsis</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="ArcherLineUpgraded" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Petsuchos</target></effect>  
+      <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Petsuchos</target></effect>   
+      
+      <effect type="Data" action="BeamAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Petsuchos</target></effect>	
 		</effects>
 	</tech>
   <tech name="DarkWater">

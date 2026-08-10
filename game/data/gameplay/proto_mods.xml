@@ -3686,7 +3686,7 @@
 	</unit>
 	
 	<unit name="Petsuchos">
-		<displaynameid mergeMode="replace">STR_UNIT_NILECROCODILE_NAME</displaynameid>
+		<displaynameid>STR_UNIT_NILECROCODILE_NAME</displaynameid>
      
         <flag>TieToWaterSurface</flag>
 		<flag>AmphibiousBirth</flag>
@@ -3694,23 +3694,78 @@
 
         <initialhitpoints>200.0000</initialhitpoints>
         <maxhitpoints>200.0000</maxhitpoints>
-        
-		<unittype>ArcherLineUpgraded</unittype>	
-       
-       	<protoaction mergeMode="replace">
+
+		<tactics>mcmt_nilecrocodile.tactics</tactics>       
+       	<protoaction>
 			<name>BeamAttack</name>
 			<rof>0.500000</rof>
-			<damage type="Divine">5.000000</damage>
+			<damage type="Pierce" mergeMode="remove">10.000000</damage>
+			<damage type="Divine">2.000000</damage>
+
 			<damagebonus type="MythUnit">2.000000</damagebonus>
 			<damagebonus type="Building">5.000000</damagebonus>
 			<damagebonus type="AbstractSiegeWeapon">5.000000</damagebonus>
 			<damagebonus type="Hero">0.250000</damagebonus>
-			<maxrange>20.000000</maxrange>
+
+			<onhiteffect type="DamageOverTime" duration="1.000000" mergeMode="remove">
+				<damage type="Pierce">30.000000</damage>
+				<damage type="Divine">8.000000</damage>
+			</onhiteffect>
+			
 			<onhiteffect type="DamageOverTime" duration="20.000000" targetunittype="Unit">
 				<damage type="Divine">5.000000</damage>
 			</onhiteffect>
+
+			<minrange>4.00000</minrange>
+
 			<projectile>ProjectileUFOLazer</projectile>
-			<attachprotounit>SunRayRevealer</attachprotounit>
+			<active>0</active>
+		</protoaction>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Hack">15.000000</damage>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<maxrange>0.750000</maxrange>
+			<onhiteffect type="DamageOverTime" duration="3.000000">
+				<damage type="Divine">0.2000000</damage>
+				<target attacktype="HumanSoldier"></target>
+			</onhiteffect>
+			<onhiteffect type="Attach" proto="VFXBLeed" attachbone="spine" duration="3.000000">
+				<target attacktype="HumanSoldier"></target>
+			</onhiteffect>
+		</protoaction>
+		<protoaction>
+			<name>HandAttackWater</name>
+			<rof>1.000000</rof>
+			<damage type="Hack">15.000000</damage>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<damagebonus type="Ship">3.000000</damagebonus>
+			<maxrange>1.000000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>ChargedModify</name>
+			<type>ChargedModify</type>
+			<persistent>1</persistent>
+			<charged>
+				<chargedmodify modifytype="Speed" applytype="Multiply">1.5</chargedmodify>
+				<activationtype>TerrainType</activationtype>
+				<terraintype>Water</terraintype>
+				<settactic>Water</settactic>
+				<duration>1.0</duration>
+				<cooldown>0.01</cooldown>
+				<settactic>Water</settactic>
+			</charged>
+			<charged>
+				<activationtype>TerrainType</activationtype>
+				<terraintype>Land</terraintype>
+				<settactic>Land</settactic>
+				<duration>1.0</duration>
+				<cooldown>0.01</cooldown>
+				<settactic>Land</settactic>
+			</charged>
 		</protoaction>
 	</unit>
 	<unit name="CrocodileOfSet">
@@ -24342,6 +24397,7 @@
 		<flag>HasDefaultAttack</flag>
 		
 		<contain external="1">LogicalTypePickable</contain>
+		<tech row="0" column="2" mergeMode="add">MCMT_Enable_NoahConvert</tech>
 		<tactics>mcmt_noah.tactics</tactics>
 		
 		<protoaction>
@@ -24378,7 +24434,7 @@
 			<rate type="AbstractTitan">20.000000</rate>
 			<rate type="Sentinel">20.000000</rate>
 			<rate type="Huntable">2.000000</rate>
-			<active>1</active>
+			<active>0</active>
 		</protoaction>
 		<protoaction>
 			<name>Build</name>
