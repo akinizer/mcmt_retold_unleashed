@@ -1915,6 +1915,8 @@
           <target type="ProtoUnit">Hesperides</target></effect>
         <!-- Chinese Special Units -->
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">TerracottaInfantry</target></effect>	
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">TerracottaReclaimer</target></effect>	
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">TerracottaSuppressor</target></effect>	
         <!-- Japanese Special Units -->
         <!-- LandLord Special Units -->
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Bastion</target></effect>
@@ -3189,14 +3191,14 @@
     <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>
     <cost resourcetype="Gold">300.0000</cost>
     <cost resourcetype="Wood">100.0000</cost>
-    <cost resourcetype="Favor">1250.0000</cost>
+    <cost resourcetype="Favor">2000.0000</cost>
     <researchpoints>30.0000</researchpoints>
     <status>UNOBTAINABLE</status>
     <icon>resources\tech\explosives.jpg</icon>
     <flag>CountsTowardMilitaryScore</flag>
     <flag>MythTech</flag>
     <prereqs>
-      <typecount unit="AbstractFortress" count="0.00" state="aliveState" operator="gt"></typecount>
+      <typecount unit="TechBuilding" count="0.00" state="aliveState" operator="gt"></typecount>
     </prereqs>
     <effects>
       <!-- ultimate -->        
@@ -3221,14 +3223,14 @@
     <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>
     <cost resourcetype="Gold">300.0000</cost>
     <cost resourcetype="Wood">100.0000</cost>
-    <cost resourcetype="Favor">1250.0000</cost>
+    <cost resourcetype="Favor">2000.0000</cost>
     <researchpoints>30.0000</researchpoints>
     <status>UNOBTAINABLE</status>
     <icon>resources\tech\explosives.jpg</icon>
     <flag>CountsTowardMilitaryScore</flag>
     <flag>MythTech</flag>
     <prereqs>
-      <typecount unit="AbstractFortress" count="0.00" state="aliveState" operator="gt"></typecount>
+      <typecount unit="TechBuilding" count="0.00" state="aliveState" operator="gt"></typecount>
     </prereqs>
     <effects>
       <!-- ultimate -->        
@@ -3251,14 +3253,14 @@
     <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>
     <cost resourcetype="Gold">300.0000</cost>
     <cost resourcetype="Wood">100.0000</cost>
-    <cost resourcetype="Favor">1250.0000</cost>
+    <cost resourcetype="Favor">2000.0000</cost>
     <researchpoints>30.0000</researchpoints>
     <status>UNOBTAINABLE</status>
     <icon>resources\tech\explosives.jpg</icon>
     <flag>CountsTowardMilitaryScore</flag>
     <flag>MythTech</flag>
     <prereqs>
-      <typecount unit="AbstractFortress" count="0.00" state="aliveState" operator="gt"></typecount>
+      <typecount unit="TechBuilding" count="0.00" state="aliveState" operator="gt"></typecount>
     </prereqs>
     <effects>
       <!-- ultimate -->        
@@ -3285,14 +3287,14 @@
     <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>
     <cost resourcetype="Gold">300.0000</cost>
     <cost resourcetype="Wood">100.0000</cost>
-    <cost resourcetype="Favor">1250.0000</cost>
+    <cost resourcetype="Favor">2000.0000</cost>
     <researchpoints>30.0000</researchpoints>
     <status>UNOBTAINABLE</status>
     <icon>resources\tech\explosives.jpg</icon>
     <flag>CountsTowardMilitaryScore</flag>
     <flag>MythTech</flag>
     <prereqs>
-      <typecount unit="AbstractFortress" count="0.00" state="aliveState" operator="gt"></typecount>
+      <typecount unit="TechBuilding" count="0.00" state="aliveState" operator="gt"></typecount>
     </prereqs>
     <effects>
       <!-- ultimate -->        
@@ -3319,14 +3321,14 @@
     <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>
     <cost resourcetype="Gold">300.0000</cost>
     <cost resourcetype="Wood">100.0000</cost>
-    <cost resourcetype="Favor">1250.0000</cost>
+    <cost resourcetype="Favor">2000.0000</cost>
     <researchpoints>30.0000</researchpoints>
     <status>UNOBTAINABLE</status>
     <icon>resources\tech\explosives.jpg</icon>
     <flag>CountsTowardMilitaryScore</flag>
     <flag>MythTech</flag>
     <prereqs>
-      <typecount unit="AbstractFortress" count="0.00" state="aliveState" operator="gt"></typecount>
+      <typecount unit="TechBuilding" count="0.00" state="aliveState" operator="gt"></typecount>
     </prereqs>
     <effects>
       <!-- ultimate -->        
@@ -3351,14 +3353,14 @@
     <rollovertextid>STR_TECH_DETONATORS_LR</rollovertextid>
     <cost resourcetype="Gold">300.0000</cost>
     <cost resourcetype="Wood">100.0000</cost>
-    <cost resourcetype="Favor">1250.0000</cost>
+    <cost resourcetype="Favor">2000.0000</cost>
     <researchpoints>30.0000</researchpoints>
     <status>UNOBTAINABLE</status>
     <icon>resources\tech\explosives.jpg</icon>
     <flag>CountsTowardMilitaryScore</flag>
     <flag>MythTech</flag>
     <prereqs>
-      <typecount unit="AbstractFortress" count="0.00" state="aliveState" operator="gt"></typecount>
+      <typecount unit="TechBuilding" count="0.00" state="aliveState" operator="gt"></typecount>
     </prereqs>
     <effects>
       <!-- ultimate -->        
@@ -4917,7 +4919,7 @@
 		<flag>CountsTowardMilitaryScore</flag>
 		<flag>MythTech</flag>
     <prereqs>
-			<typecount unit="Armory" count="1.00" state="aliveState" operator="gte"></typecount>
+			<typecount unit="TechBuilding" count="1.00" state="aliveState" operator="gte"></typecount>
 		</prereqs>
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">225</cost>
@@ -4958,7 +4960,7 @@
 		<flag>CountsTowardMilitaryScore</flag>
 		<flag>MythTech</flag>
     <prereqs>
-			<typecount unit="AbstractArmory" count="1.00" state="aliveState" operator="gte"></typecount>
+			<typecount unit="TechBuilding" count="1.00" state="aliveState" operator="gte"></typecount>
 		</prereqs>
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">225</cost>
@@ -4996,7 +4998,7 @@
 		<flag>CountsTowardMilitaryScore</flag>
 		<flag>MythTech</flag>
     <prereqs>
-			<typecount unit="Armory" count="1.00" state="aliveState" operator="gte"></typecount>
+			<typecount unit="TechBuilding" count="1.00" state="aliveState" operator="gte"></typecount>
 		</prereqs>
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">225</cost>
@@ -5025,7 +5027,7 @@
 		<flag>CountsTowardMilitaryScore</flag>
 		<flag>MythTech</flag>
     <prereqs>
-			<typecount unit="Armory" count="1.00" state="aliveState" operator="gte"></typecount>
+			<typecount unit="TechBuilding" count="1.00" state="aliveState" operator="gte"></typecount>
 		</prereqs>
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">225</cost>
@@ -5069,7 +5071,7 @@
 		<flag>CountsTowardMilitaryScore</flag>
 		<flag>MythTech</flag>
     <prereqs>
-			<typecount unit="Armory" count="1.00" state="aliveState" operator="gte"></typecount>
+			<typecount unit="TechBuilding" count="1.00" state="aliveState" operator="gte"></typecount>
 		</prereqs>
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">225</cost>
@@ -5103,7 +5105,7 @@
 		<flag>CountsTowardMilitaryScore</flag>
 		<flag>MythTech</flag>
     <prereqs>
-			<typecount unit="Armory" count="1.00" state="aliveState" operator="gte"></typecount>
+			<typecount unit="TechBuilding" count="1.00" state="aliveState" operator="gte"></typecount>
 		</prereqs>
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">225</cost>
@@ -5148,7 +5150,7 @@
 		<flag>CountsTowardMilitaryScore</flag>
 		<flag>MythTech</flag>
     <prereqs>
-			<typecount unit="Armory" count="1.00" state="aliveState" operator="gte"></typecount>
+			<typecount unit="TechBuilding" count="1.00" state="aliveState" operator="gte"></typecount>
 		</prereqs>
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">225</cost>
@@ -5176,7 +5178,7 @@
 		<flag>CountsTowardMilitaryScore</flag>
 		<flag>MythTech</flag>
     <prereqs>
-			<typecount unit="Armory" count="1.00" state="aliveState" operator="gte"></typecount>
+			<typecount unit="TechBuilding" count="1.00" state="aliveState" operator="gte"></typecount>
 		</prereqs>
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">225</cost>
@@ -5209,7 +5211,7 @@
 		<flag>CountsTowardMilitaryScore</flag>
 		<flag>MythTech</flag>
     <prereqs>
-			<typecount unit="Armory" count="1.00" state="aliveState" operator="gte"></typecount>
+			<typecount unit="TechBuilding" count="1.00" state="aliveState" operator="gte"></typecount>
 		</prereqs>
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">225</cost>
@@ -5243,7 +5245,7 @@
 		<flag>CountsTowardMilitaryScore</flag>
 		<flag>MythTech</flag>
     <prereqs>
-			<typecount unit="Armory" count="1.00" state="aliveState" operator="gte"></typecount>
+			<typecount unit="TechBuilding" count="1.00" state="aliveState" operator="gte"></typecount>
 		</prereqs>
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">225</cost>
@@ -5275,7 +5277,7 @@
 		<flag>CountsTowardMilitaryScore</flag>
 		<flag>MythTech</flag>
     <prereqs>
-			<typecount unit="AbstractArmory" count="1.00" state="aliveState" operator="gte"></typecount>
+			<typecount unit="TechBuilding" count="1.00" state="aliveState" operator="gte"></typecount>
 		</prereqs>
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">225</cost>
@@ -5311,7 +5313,7 @@
 		<flag>CountsTowardMilitaryScore</flag>
 		<flag>MythTech</flag>
     <prereqs>
-			<typecount unit="Armory" count="1.00" state="aliveState" operator="gte"></typecount>
+			<typecount unit="TechBuilding" count="1.00" state="aliveState" operator="gte"></typecount>
 		</prereqs>
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Food">225</cost>
@@ -5339,7 +5341,7 @@
 		<flag>CountsTowardMilitaryScore</flag>
 		<flag>MythTech</flag>
     <prereqs>
-			<typecount unit="Armory" count="1.00" state="aliveState" operator="gte"></typecount>
+			<typecount unit="TechBuilding" count="1.00" state="aliveState" operator="gte"></typecount>
 		</prereqs>
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Wood">150</cost>
@@ -5358,7 +5360,7 @@
 		<flag>CountsTowardMilitaryScore</flag>
 		<flag>MythTech</flag>
     <prereqs>
-			<typecount unit="Armory" count="1.00" state="aliveState" operator="gte"></typecount>
+			<typecount unit="TechBuilding" count="1.00" state="aliveState" operator="gte"></typecount>
 		</prereqs>
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Wood">150</cost>
@@ -5377,7 +5379,7 @@
 		<flag>CountsTowardMilitaryScore</flag>
 		<flag>MythTech</flag>
     <prereqs>
-			<typecount unit="Armory" count="1.00" state="aliveState" operator="gte"></typecount>
+			<typecount unit="TechBuilding" count="1.00" state="aliveState" operator="gte"></typecount>
 		</prereqs>
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Wood">150</cost>
@@ -5398,7 +5400,7 @@
 		<flag>CountsTowardMilitaryScore</flag>
 		<flag>MythTech</flag>
     <prereqs>
-			<typecount unit="Armory" count="1.00" state="aliveState" operator="gte"></typecount>
+			<typecount unit="TechBuilding" count="1.00" state="aliveState" operator="gte"></typecount>
 		</prereqs>
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Wood">150</cost>
@@ -5417,7 +5419,7 @@
 		<flag>CountsTowardMilitaryScore</flag>
 		<flag>MythTech</flag>
     <prereqs>
-			<typecount unit="AbstractArmory" count="1.00" state="aliveState" operator="gte"></typecount>
+			<typecount unit="TechBuilding" count="1.00" state="aliveState" operator="gte"></typecount>
 		</prereqs>
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Wood">150</cost>
@@ -5436,7 +5438,7 @@
 		<flag>CountsTowardMilitaryScore</flag>
 		<flag>MythTech</flag>
     <prereqs>
-			<typecount unit="Armory" count="1.00" state="aliveState" operator="gte"></typecount>
+			<typecount unit="TechBuilding" count="1.00" state="aliveState" operator="gte"></typecount>
 		</prereqs>
 		<researchpoints>5.0000</researchpoints>
 		<cost resourcetype="Wood">150</cost>

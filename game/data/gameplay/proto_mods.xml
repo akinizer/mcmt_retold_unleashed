@@ -799,8 +799,10 @@
 	</unit>
 	
 	<unit name="TerracottaRider">
+		<impacttype>Stone</impacttype>
 		<unitregen mergeMode="replace">-1.0000</unitregen>
 		<armor type="Crush" value="0.3500"></armor>	
+		
 		<unittype>MythUnit</unittype>
 		<unittype>LogicalTypeMythUnitNotTitan</unittype>
 		<unittype>LogicalTypeMythUnitNotFlying</unittype>
@@ -808,6 +810,96 @@
 		<protoaction>
 			<name>HandAttack</name>
 			<damagebonus type="AbstractArcher" mergeMode="add">2.50000</damagebonus>
+		</protoaction>
+	</unit>
+
+	<unit name="TerracottaInfantry">
+		<displaynameid>STR_UNIT_TERRACOTTA_INFANTRY_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_TERRACOTTA_RIDER_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_TERRACOTTA_RIDER_SR</shortrollovertextid>
+		<icon>resources\chinese\player_color\units\terracotta_rider.png</icon>
+		<animfile>mcmt\units\imperial\terracotta_infantry.xml</animfile>
+		<soundsetfile>chinese\vo\qing_qi\qing_qi.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Stone</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>80.0000</initialhitpoints>
+		<maxhitpoints>80.0000</maxhitpoints>
+		<trainpoints>14.0000</trainpoints>
+		<lifespan>60.0000</lifespan>
+
+		<weightclass>5</weightclass>
+		<populationcount>2</populationcount>
+		<maxvelocity>4.0000</maxvelocity>
+		<maxrunvelocity>4.3000</maxrunvelocity>
+		<los>16.0000</los>
+		<cost resourcetype="Gold">55.0000</cost>
+		<armor type="Hack" value="0.1500"></armor>
+		<armor type="Pierce" value="0.8000"></armor>
+		<armor type="Crush" value="0.2000"></armor>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>AbstractInfantry</unittype>
+		<unittype>HumanSoldier</unittype>
+		<unittype>CavalryLineUpgraded</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<unittype>LogicalTypeMeleeInfantry</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<selfdestructprotoaction>SelfDestructAttack</selfdestructprotoaction>
+		<tactics>handattack_selfdestruct.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.200000</rof>
+			<damage type="Hack">9.000000</damage>
+			<maxrange>0.500000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>SelfDestructAttack</name>
+			<damage type="Hack">0.000000</damage>
+			<damagearea>10.000000</damagearea>
+			<damageflags>Self|Ally</damageflags>
+			<active>0</active>
+			<onhiteffect type="StatModify" targetunittype="AbstractInfantry" duration="3.000000">
+				<modify type="Damage">1.250000</modify>
+				<modify type="LifeSteal" applytype="Set">0.250000</modify>
+			</onhiteffect>
+			<onhiteffect type="Attach" targetunittype="AbstractInfantry" proto="VFXXuanyuansBloodline" duration="3.000000"></onhiteffect>
 		</protoaction>
 	</unit>
 	<!-- Chinese Military Units -->
@@ -904,6 +996,205 @@
 			<anim>Transform</anim>
 			<modifyduration>2500</modifyduration>
 			<modifyprotoid>WuzuJavelineerSandbag</modifyprotoid>
+		</protoaction>
+	</unit>
+	<unit name="TerracottaReclaimer">
+		<displaynameid>STR_UNIT_TERRACOTTA_RECLAIMER_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_TERRACOTTA_RECLAIMER_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_TERRACOTTA_RECLAIMER_SR</shortrollovertextid>
+		<icon>resources\chinese\player_color\units\qingqi_icon.png</icon>
+		<animfile>chinese\units\cavalry\qing_qi\qing_qi.xml</animfile>
+		<soundsetfile>chinese\vo\qing_qi\qing_qi.xml</soundsetfile>
+		<obstructionradiusx>0.7400</obstructionradiusx>
+		<obstructionradiusz>0.7400</obstructionradiusz>
+		<selectionradiusx>0.7500</selectionradiusx>
+		<selectionradiusz>1.1500</selectionradiusz>
+		<impacttype>Stone</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>295.0000</initialhitpoints>
+		<maxhitpoints>295.0000</maxhitpoints>
+		<trainpoints>40.0000</trainpoints>
+		<lifespan>120.0000</lifespan>
+
+		<weightclass>6</weightclass>
+		<populationcount>2</populationcount>
+		<maxvelocity>5.8500</maxvelocity>
+		<los>12.0000</los>
+		<cost resourcetype="Gold">135.0000</cost>
+		<cost resourcetype="Wood">45.0000</cost>
+		<armor type="Hack" value="0.1500"></armor>
+		<armor type="Pierce" value="0.6500"></armor>
+		<armor type="Crush" value="0.5900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>HumanSoldier</unittype>
+		<unittype>AbstractCavalry</unittype>
+		<unittype>CavalryLineUpgraded</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<unittype>LogicalTypeMeleeCavalry</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<initialshading type="sand" factor="1"></initialshading>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.800000</rof>
+			<damage type="Hack">16.000000</damage>
+			<damagearea>5.000000</damagearea>
+			<damageflags>Enemy</damageflags>
+			<damagebonus type="Building">5.000000</damagebonus>
+			<damagebonus type="AbstractSiegeWeapon">4.000000</damagebonus>
+			<damagebonus type="Ship">4.000000</damagebonus>
+			<maxrange>0.750000</maxrange>
+			<onhiteffect type="ProgFreeze" freezetype="Sand" duration="8.2" rate="0.15" freezeduration="20.0" targetunittype="LogicalTypeMythUnitNotTitan"></onhiteffect>
+			<onhiteffect type="ProgFreeze" freezetype="Sand" duration="8.2" rate="0.15" freezeduration="20.0" targetunittype="HumanSoldier"></onhiteffect>
+		</protoaction>
+	</unit>
+	<unit name="TerracottaSuppressor">
+		<displaynameid>STR_UNIT_TERRACOTTA_SUPPRESSOR_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_TERRACOTTA_SUPPRESSOR_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_TERRACOTTA_SUPPRESSOR_SR</shortrollovertextid>
+		<icon>resources\chinese\player_color\units\gongqi_icon.png</icon>
+		<animfile>chinese\units\archery\gong_qi\gong_qi.xml</animfile>
+		<soundsetfile>chinese\vo\gong_qi\gong_qi.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<selectionradiusx>0.7500</selectionradiusx>
+		<selectionradiusz>1.1500</selectionradiusz>
+		<impacttype>Stone</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>285.0000</initialhitpoints>
+		<maxhitpoints>285.0000</maxhitpoints>
+		<trainpoints>40.0000</trainpoints>
+		<lifespan>120.0000</lifespan>
+
+		<weightclass>6</weightclass>
+		<populationcount>2</populationcount>
+		<maxvelocity>5.3000</maxvelocity>
+		<los>18.0000</los>
+		<cost resourcetype="Wood">60.0000</cost>
+		<cost resourcetype="Gold">135.0000</cost>
+		<armor type="Hack" value="0.1000"></armor>
+		<armor type="Pierce" value="0.6500"></armor>
+		<armor type="Crush" value="0.5900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>AbstractArcher</unittype>
+		<unittype>AbstractCavalry</unittype>
+		<unittype>HumanSoldier</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<unittype>LogicalTypeRangedCavalry</unittype>
+		<flag>OrientUnitWithGround</flag>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>ConstrainOrientation</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		
+		<rechargetime>25.0000</rechargetime>
+		<initialshading type="sand" factor="1"></initialshading>
+		<tactics>rangedattack_chargedrangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.300000</rof>
+			<damage type="Pierce">6.500000</damage>
+			<damagebonus type="AbstractInfantry">1.500000</damagebonus>
+			<damagebonus type="AbstractArcher">1.500000</damagebonus>
+			<maxrange>16.000000</maxrange>
+			<projectile>ProjectileArrowFlaming</projectile>
+			<projectilechainbounce>1</projectilechainbounce>
+			<projectilechainbouncereduction>0.800</projectilechainbouncereduction>
+			<projectilechainbouncerange>5.3333333</projectilechainbouncerange>
+			<onhiteffect active="0" type="StatModify" duration="5.00000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+				<target ignoretype="AbstractTitan"></target>
+				<modify type="ArmorSpecific" dmgtype="Pierce" applytype="Multiply" stack="">0.9900</modify>
+				<modify type="ArmorSpecific" dmgtype="Hack" applytype="Multiply" stack="">0.9900</modify>
+			</onhiteffect>
+			<onhiteffect active="0" type="Attach" proto="VFXScorchingFeathers" attachbone="spine" duration="5.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+				<target ignoretype="AbstractTitan"></target>
+			</onhiteffect>
+		</protoaction>
+		<protoaction>
+			<name>ChargedRangedAttack</name>
+			<anim>RangedAttack</anim>
+			<rof>3.000000</rof>
+			<damage type="Pierce">18.000000</damage>
+			<maxrange>16.000000</maxrange>
+			<projectile>ProjectileZhuQue</projectile>
+			<perfectaccuracy>1</perfectaccuracy>
+			<instantballistics>1</instantballistics>
+			<rate type="Building">1.0</rate>
 		</protoaction>
 	</unit>
 
@@ -8581,7 +8872,10 @@
 		<tech row="3" column="2">MCMT_AdvancedFortifications_I</tech>
 		<tech row="3" column="2">MCMT_AdvancedFortifications_II</tech>
 		<tech row="3" column="2">MCMT_AdvancedFortifications_III</tech>
-		<tech row="3" column="2">Baolei_BuildingAccels</tech>		
+		<tech row="3" column="2">Baolei_BuildingAccels</tech>	
+
+		<train row="0" column="4">TerracottaReclaimer</train>
+		<train row="0" column="5">TerracottaSuppressor</train>
 	</unit>
 	<unit name="Fortress">
 		<tactics mergeMode="replace">global_building_fortress.tactics</tactics>
@@ -27732,93 +28026,6 @@
 		</protoaction>
 	</unit>
 
-	<unit name="TerracottaInfantry">
-		<displaynameid>STR_UNIT_DAO_SWORDSMAN_NAME</displaynameid>
-		<rollovertextid>STR_UNIT_DAO_SWORDSMAN_LR</rollovertextid>
-		<shortrollovertextid>STR_UNIT_DAO_SWORDSMAN_SR</shortrollovertextid>
-		<icon>resources\chinese\player_color\units\dao_swordsman_icon.png</icon>
-		<animfile>mcmt\units\imperial\terracotta_infantry.xml</animfile>
-		<soundsetfile>chinese\vo\dao_swordsman\dao_swordsman.xml</soundsetfile>
-		<obstructionradiusx>0.4900</obstructionradiusx>
-		<obstructionradiusz>0.4900</obstructionradiusz>
-		<impacttype>Armoured</impacttype>
-		<unitaitype>HandCombative</unitaitype>
-		<movementtype>land</movementtype>
-		<turnrate>18.0000</turnrate>
-		<initialhitpoints>80.0000</initialhitpoints>
-		<maxhitpoints>80.0000</maxhitpoints>
-		<trainpoints>14.0000</trainpoints>
-		<weightclass>5</weightclass>
-		<populationcount>2</populationcount>
-		<maxvelocity>4.0000</maxvelocity>
-		<maxrunvelocity>4.3000</maxrunvelocity>
-		<los>16.0000</los>
-		<cost resourcetype="Gold">55.0000</cost>
-		<armor type="Hack" value="0.1500"></armor>
-		<armor type="Pierce" value="0.8000"></armor>
-		<armor type="Crush" value="0.2000"></armor>
-		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
-		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
-		<unittype>LogicalTypeGarrisonInShips</unittype>
-		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
-		<unittype>LogicalTypeVillagersAttack</unittype>
-		<unittype>LogicalTypeHandUnitsAttack</unittype>
-		<unittype>LogicalTypeRangedUnitsAttack</unittype>
-		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
-		<unittype>LogicalTypeAffectedByRestoration</unittype>
-		<unittype>LogicalTypeValidBoltTarget</unittype>
-		<unittype>CountsTowardMilitaryScore</unittype>
-		<unittype>LogicalTypeEarthquakeAttack</unittype>
-		<unittype>LogicalTypeHealed</unittype>
-		<unittype>LogicalTypeValidMeteorTarget</unittype>
-		<unittype>LogicalTypeValidTornadoAttack</unittype>
-		<unittype>LogicalTypeConvertsHerds</unittype>
-		<unittype>LogicalTypeValidSpyTarget</unittype>
-		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
-		<unittype>LogicalTypeValidFrostTarget</unittype>
-		<unittype>LogicalTypeValidTraitorTarget</unittype>
-		<unittype>Unit</unittype>
-		<unittype>UnitClass</unittype>
-		<unittype>MilitaryUnit</unittype>
-		<unittype>AbstractInfantry</unittype>
-		<unittype>HumanSoldier</unittype>
-		<unittype>CavalryLineUpgraded</unittype>
-		<unittype>LogicalTypeLandMilitary</unittype>
-		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
-		<unittype>LogicalTypeNeededForVictory</unittype>
-		<unittype>LogicalTypeValidShockwaveTarget</unittype>
-		<unittype>LogicalTypeValidEidolon</unittype>
-		<unittype>LogicalTypeValidBloodPactTarget</unittype>
-		<unittype>LogicalTypeMeleeInfantry</unittype>
-		<flag>CollidesWithProjectiles</flag>
-		<flag>CorpseDecays</flag>
-		<flag>ShowGarrisonButton</flag>
-		<flag>DontRotateObstruction</flag>
-		<flag>ObscuredByUnits</flag>
-		<flag>CommonCommands</flag>
-		<flag>MilitaryCommands</flag>
-		<flag>CreateUnitGroupAutomatically</flag>
-		<selfdestructprotoaction>SelfDestructAttack</selfdestructprotoaction>
-		<tactics>handattack_selfdestruct.tactics</tactics>
-		<protoaction>
-			<name>HandAttack</name>
-			<rof>1.200000</rof>
-			<damage type="Hack">9.000000</damage>
-			<maxrange>0.500000</maxrange>
-		</protoaction>
-		<protoaction>
-			<name>SelfDestructAttack</name>
-			<damage type="Hack">0.000000</damage>
-			<damagearea>10.000000</damagearea>
-			<damageflags>Self|Ally</damageflags>
-			<active>0</active>
-			<onhiteffect type="StatModify" targetunittype="AbstractInfantry" duration="3.000000">
-				<modify type="Damage">1.250000</modify>
-				<modify type="LifeSteal" applytype="Set">0.250000</modify>
-			</onhiteffect>
-			<onhiteffect type="Attach" targetunittype="AbstractInfantry" proto="VFXXuanyuansBloodline" duration="3.000000"></onhiteffect>
-		</protoaction>
-	</unit>
 <!-- dismount units knights TODO
 	<unit name="WhiteHorseKnight" mergeMode="add"></unit>
 	<unit name="QingQiKnight" mergeMode="add"></unit>
@@ -31309,7 +31516,6 @@
 			<anim>HandAttack</anim>
 			<rate type="All">1.0</rate>
 			<attackaction>1</attackaction>
-			<areasortmode>Radial</areasortmode>
 			<impacteffect>effects\impacts\pierce</impacteffect>
 
 			<damage type="Divine">15.000000</damage>
@@ -31317,7 +31523,17 @@
 			<damageflags>Nature|Enemy</damageflags>
 
 			<onhiteffect type="Throw" targetunittype="HumanSoldier"></onhiteffect>
-			<onhiteffect type="Throw" targetunittype="AbstractVillager"></onhiteffect>
+			<onhiteffect type="Throw" targetunittype="LogicalTypeVillagerNotHero"></onhiteffect>
+			<maxsizeclass>6</maxsizeclass>
+
+			<throwdistancemin>4.0</throwdistancemin>
+			<throwdistancemax>8.0</throwdistancemax>
+			<throwmaxheight>10.0</throwmaxheight>
+			<throwvelocity>15.0</throwvelocity>
+			<impactforcemin>300.0f</impactforcemin>
+			<impactforcemax>600.0f</impactforcemax>
+			<impactlaunchangle>10.0</impactlaunchangle>
+			<forceareaattackcenter>1</forceareaattackcenter>
 			<throw>1</throw>
    		</protoaction>
   	</unit>	

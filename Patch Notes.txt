@@ -426,6 +426,12 @@
     - LiJing+, JiangZiya+
     - WenZhong+
 
+- Terracotta
+    - TerracottaInfantry: lifespan, high piercearmor
+    - TerracottaSupressor: elite cavalry
+        - ChargedRangedAttack: ProjectileZhuque, FireTornado
+    - TerracottaReclaimer: anti-siege elite cavalry, aoe handattack, progfreeze
+
 - tech:
     - skyfire: improved, all flying units have hitonground & hitonwater conditions for spawn skyfire fireare
 
@@ -913,10 +919,11 @@
     
 * Special Techs
 - DetonatorsJapanese: 
-    - prereq AbstractFortress
+    - prereq TechBuilding
     - explosive tech researchable in Armory, releases explosion on destruction (building, ship) or death (infrenal mythunit, shinobi), deals area damage and sends humansoldiers and villagers flying
     - Norse,Greek,Atlantean,Chinese,Egyptian: variants added, enabled for [mechanical, building, warship, explosive users, infernals]
 - DismountTactics:
+    - prereq TechBuilding
     - Greek: Hippeus, Prodromos
         - Hetairos: also trainable at Stable
     - Egyptian: MercenaryCavalry, ChariotArcher, CamelRider, WarElephant
@@ -925,6 +932,7 @@
     - Chinese: WhiteHorseCavalry
     - Japanese: Miko, Bushi, Daimyo, Shogun, YumiHorseArcher, NaginataRider
 - SpawnTactics: spawn tech
+    - prereq TechBuilding
     - Greek: Warship, WarshipHero
     - Egyptian:
         - Scarab: ScarabMini x12
@@ -945,7 +953,8 @@
     - Japanese 
         - Asura: CursedFireBlade x6
         - Warship: RaftChineseArcher
-- ReinforcementTactics: area rof, humansoldiers
+- DefensiveTactics: area rof, humansoldiers
+    - prereq TechBuilding
     - Greek: MilitaryAcademy
     - Egyptian: Barracks
     - Norse: GreatHall

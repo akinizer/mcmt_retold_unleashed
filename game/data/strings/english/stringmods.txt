@@ -866,6 +866,16 @@ ID = "STR_UNIT_CURSEDFLAME_SWORD_NAME"   ;   Str = "Cursed Flame Sword"
 ID = "STR_UNIT_CURSEDFLAME_SWORD_SR"   ;   Str = "Looted Swords forged in demonic flames of Asura"
 ID = "STR_UNIT_CURSEDFLAME_SWORD_LR"   ;   Str = "Asura feasts on the masters of weapons and loots their well-forged blades as a token of victory"
 
+ID = "STR_UNIT_TERRACOTTA_INFANTRY_NAME"   ;   Str = "Terracotta Infantry"
+
+ID = "STR_UNIT_TERRACOTTA_RECLAIMER_NAME"   ;   Str = "Terracotta Reclaimer"
+ID = "STR_UNIT_TERRACOTTA_RECLAIMER_LR"   ;   Str = "Elite Terracotta Cavalry"
+ID = "STR_UNIT_TERRACOTTA_RECLAIMER_SR"   ;   Str = "Elite Terracotta Cavalry"
+
+ID = "STR_UNIT_TERRACOTTA_SUPPRESSOR_NAME"   ;   Str = "Terracotta Suppressor"
+ID = "STR_UNIT_TERRACOTTA_SUPPRESSOR_LR"   ;   Str = "Elite Terracotta Cavalry"
+ID = "STR_UNIT_TERRACOTTA_SUPPRESSOR_SR"   ;   Str = "Elite Terracotta Cavalry"
+
 // JAPANESE SPECIAL UNITS
 ID = "STR_ACTION_JUMP_SCARE"   ;   Str = "Jump Scare"
 
