@@ -73,4 +73,12 @@
 		<unittype>AbstractTerracotta</unittype>
 		<displaynameid>STR_HUD_UNIT_TYPE_ABSTRACT_TERRACOTTA</displaynameid>
 	</unittypeentry>
+	<unittypeentry mergeMode="add">
+		<unittype>AbstractJaguar</unittype>
+		<displaynameid>STR_HUD_UNIT_TYPE_ABSTRACT_JAGUAR</displaynameid>
+	</unittypeentry>
+	<unittypeentry mergeMode="add">
+		<unittype>AbstractCoyotl</unittype>
+		<displaynameid>STR_HUD_UNIT_TYPE_ABSTRACT_COYOTL</displaynameid>
+	</unittypeentry>
 </unittypedatamods>

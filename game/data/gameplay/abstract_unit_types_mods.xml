@@ -47,4 +47,6 @@
     <!--Civilization Specific-->    
     <abstractunittype>AbstractEgyptianArcher</abstractunittype>
     <abstractunittype>AbstractTerracotta</abstractunittype>
+    <abstractunittype>AbstractJaguar</abstractunittype>
+    <abstractunittype>AbstractCoyotl</abstractunittype>    
 </abstractunittypesmods>

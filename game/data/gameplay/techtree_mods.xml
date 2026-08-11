@@ -551,6 +551,22 @@
       </effects>
     </tech>
 
+    <tech name="ArchaicAgeShennong">
+      <effects>
+        <effect type="TechStatus" status="obtainable" mergeMode="add">SpoilsOfWar</effect>
+      </effects>    
+    </tech>
+    <tech name="ArchaicAgeNuwa">
+      <effects>
+        <effect type="TechStatus" status="obtainable" mergeMode="add">SpoilsOfWar</effect>
+      </effects>    
+    </tech>
+    <tech name="ArchaicAgeFuxi">
+      <effects>
+        <effect type="TechStatus" status="obtainable" mergeMode="add">SpoilsOfWar</effect>
+      </effects>    
+    </tech>
+
     <tech name="HeroicAgeHades">
       <effects>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute" mergeMode="add">
@@ -1536,6 +1552,32 @@
           <target type="ProtoUnit">TerracottaReclaimer</target></effect>
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractTerracotta" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">VillagerChineseClay</target></effect>
+        <!-- AbstractJaguar -->
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractJaguar" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Iztaccihuatl</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractJaguar" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">IztaccihuatlDismounted</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractJaguar" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">IztaccihuatlJaguar</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractJaguar" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">JaguarRider</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractJaguar" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Jaguar</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractJaguar" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">JaguarBlack</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractJaguar" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Ocelot</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractJaguar" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">OcelotlWarrior</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractJaguar" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Amanra</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractJaguar" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AmanraOlder</target></effect>
+        <!-- AbstractCoyotl-->
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractCoyotl" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">CoyoteWarrior</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractCoyotl" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Popocatepetl</target></effect> 
       </effects>
     </tech>
 
@@ -10945,6 +10987,13 @@
   <tech name="MediumNoblesHutSoldiers">
 		<effects>
 			<effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Popocatepetl</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.15" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Popocatepetl</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Popocatepetl</target></effect>
+        
+			<effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
 				<target type="ProtoUnit">BattleMaster</target></effect>
 			<effect type="Data" action="HandAttack" amount="1.15" subtype="Damage" relativity="BasePercent" mergeMode="add">
 				<target type="ProtoUnit">BattleMaster</target></effect>
@@ -10958,7 +11007,14 @@
 		</effects>
 	</tech>
 	<tech name="HeavyNoblesHutSoldiers">
-	<effects>
+	  <effects>
+			<effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Popocatepetl</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Popocatepetl</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Popocatepetl</target></effect>
+
 			<effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
 				<target type="ProtoUnit">BattleMaster</target></effect>
 			<effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent" mergeMode="add">
@@ -10973,7 +11029,14 @@
 		</effects>
 	</tech>
 	<tech name="ChampionNoblesHutSoldiers">
-	<effects>
+	  <effects>
+			<effect type="Data" amount="1.25" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Popocatepetl</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.25" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">Popocatepetl</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Popocatepetl</target></effect>
+
 			<effect type="Data" amount="1.25" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
 				<target type="ProtoUnit">BattleMaster</target></effect>
 			<effect type="Data" action="HandAttack" amount="1.25" subtype="Damage" relativity="BasePercent" mergeMode="add">
@@ -11002,7 +11065,7 @@
 
   <tech name="MediumGreatTempleSoldiers">
     <icon mergeMode="remove">resources\aztec\static_color\technologies\medium_great_temple_soldiers_icon.png</icon>
-    <!---->
+
     <icon mergeMode="add">resources\aztec\static_color\technologies\heavy_great_temple_soldiers_icon.png</icon>
     <effects>
       <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
@@ -11027,18 +11090,25 @@
 				<target type="ProtoUnit">Tlacaelel</target></effect>
 
       <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
-				<target type="ProtoUnit">Itzcoatl</target></effect>
+				<target type="ProtoUnit">Popocatepetl</target></effect>
 			<effect type="Data" action="HandAttack" amount="1.10" subtype="Damage" relativity="BasePercent" mergeMode="add">
-				<target type="ProtoUnit">Itzcoatl</target></effect>
+				<target type="ProtoUnit">Popocatepetl</target></effect>
 			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
-				<target type="ProtoUnit">Itzcoatl</target></effect>
+				<target type="ProtoUnit">Popocatepetl</target></effect>
 
       <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
-				<target type="ProtoUnit">Popocatepetl</target></effect>
+				<target type="ProtoUnit">Iztaccihuatl</target></effect>
 			<effect type="Data" action="HandAttack" amount="1.10" subtype="Damage" relativity="BasePercent" mergeMode="add">
-				<target type="ProtoUnit">Popocatepetl</target></effect>
+				<target type="ProtoUnit">Iztaccihuatl</target></effect>
 			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
-				<target type="ProtoUnit">Popocatepetl</target></effect>
+				<target type="ProtoUnit">Iztaccihuatl</target></effect>
+
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">IztaccihuatlDismounted</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.10" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">IztaccihuatlDismounted</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">IztaccihuatlDismounted</target></effect>
 
       <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
 				<target type="ProtoUnit">Quinametzin</target></effect>
@@ -11075,18 +11145,25 @@
 				<target type="ProtoUnit">Tlacaelel</target></effect>
 
       <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
-				<target type="ProtoUnit">Itzcoatl</target></effect>
+				<target type="ProtoUnit">Popocatepetl</target></effect>
 			<effect type="Data" action="HandAttack" amount="1.15" subtype="Damage" relativity="BasePercent" mergeMode="add">
-				<target type="ProtoUnit">Itzcoatl</target></effect>
+				<target type="ProtoUnit">Popocatepetl</target></effect>
 			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
-				<target type="ProtoUnit">Itzcoatl</target></effect>
+				<target type="ProtoUnit">Popocatepetl</target></effect>
 
       <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
-				<target type="ProtoUnit">Popocatepetl</target></effect>
+				<target type="ProtoUnit">Iztaccihuatl</target></effect>
 			<effect type="Data" action="HandAttack" amount="1.15" subtype="Damage" relativity="BasePercent" mergeMode="add">
-				<target type="ProtoUnit">Popocatepetl</target></effect>
+				<target type="ProtoUnit">Iztaccihuatl</target></effect>
 			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
-				<target type="ProtoUnit">Popocatepetl</target></effect>
+				<target type="ProtoUnit">Iztaccihuatl</target></effect>
+
+      <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">IztaccihuatlDismounted</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.15" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">IztaccihuatlDismounted</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">IztaccihuatlDismounted</target></effect>
 
       <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
 				<target type="ProtoUnit">Quinametzin</target></effect>
@@ -11125,18 +11202,25 @@
 				<target type="ProtoUnit">Tlacaelel</target></effect>
 
       <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
-				<target type="ProtoUnit">Itzcoatl</target></effect>
+				<target type="ProtoUnit">Popocatepetl</target></effect>
 			<effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent" mergeMode="add">
-				<target type="ProtoUnit">Itzcoatl</target></effect>
+				<target type="ProtoUnit">Popocatepetl</target></effect>
 			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
-				<target type="ProtoUnit">Itzcoatl</target></effect>
+				<target type="ProtoUnit">Popocatepetl</target></effect>
 
       <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
-				<target type="ProtoUnit">Popocatepetl</target></effect>
+				<target type="ProtoUnit">Iztaccihuatl</target></effect>
 			<effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent" mergeMode="add">
-				<target type="ProtoUnit">Popocatepetl</target></effect>
+				<target type="ProtoUnit">Iztaccihuatl</target></effect>
 			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
-				<target type="ProtoUnit">Popocatepetl</target></effect>
+				<target type="ProtoUnit">Iztaccihuatl</target></effect>
+
+      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">IztaccihuatlDismounted</target></effect>
+			<effect type="Data" action="HandAttack" amount="1.20" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">IztaccihuatlDismounted</target></effect>
+			<effect type="Data" amount="1.00" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">IztaccihuatlDismounted</target></effect>
 
       <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
 				<target type="ProtoUnit">Quinametzin</target></effect>
@@ -11172,6 +11256,7 @@
         <target type="ProtoUnit">InfestedDen</target></effect>
     </effects>
   </tech>
+  
   <tech name="StingOfYappan">
     <effects>
       <effect type="Data" protoaction="AreaDamage" amount="1.00" subtype="ProtoActionAdd" unittype="AreaDamageContainerTargetEnemyNature" relativity="Assign" mergeMode="add">
@@ -11185,6 +11270,13 @@
 				<target type="ProtoUnit">AbstractTower</target></effect>
 			<effect type="Data" amount="2.00" subtype="OnHitEffectAttachBone" action="RangedAttack" effecttype="Attach" targettype="Unit" attachbone="spine" relativity="Assign" mergeMode="add">
 				<target type="ProtoUnit">AbstractTower</target></effect>			
+
+      <effect type="Data" amount="2.00" subtype="OnHitEffect" action="JumpAttack" effecttype="DamageOverTime" duration="6.00" targettype="Unit" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">Iztaccihuatl</target></effect>			
+			<effect type="Data" amount="2.00" subtype="OnHitEffect" action="JumpAttack" effecttype="Attach" duration="6.00" targettype="Unit" proto="VFXPoison" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">Iztaccihuatl</target></effect>
+			<effect type="Data" amount="2.00" subtype="OnHitEffectAttachBone" action="JumpAttack" effecttype="Attach" targettype="Unit" attachbone="spine" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">Iztaccihuatl</target></effect>
     </effects>
   </tech>
   <tech name="ToloacheTrance">
@@ -11224,28 +11316,55 @@
 				<target type="ProtoUnit">ObsidianButterfly</target></effect>
     </effects>
   </tech>
+
   <tech name="TwistedLimbs">
     <effects>
-    	<effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
-				<target type="ProtoUnit">Itzcoatl</target></effect>
+      <effect type="Data" amount="1.25" subtype="Damage" action="JumpAttackStealth" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">OcelotlWarrior</target></effect>
+			<effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">OcelotlWarrior</target></effect>
+    
+      <effect type="Data" amount="1.25" subtype="Damage" action="JumpAttackStealth" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">AbstractOcelotl</target></effect>
+			<effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">AbstractOcelotl</target></effect>
+
       <effect type="Data" action="JumpAttack" amount="2.0" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">MajorHero</target></effect>
 
       <effect type="Data" action="JumpAttack" amount="1.00" subtype="DamageArea" relativity="Absolute" mergeMode="add">
-				<target type="ProtoUnit">HumanSoldier</target></effect>
+				<target type="ProtoUnit">AbstractOcelotl</target></effect>
+      <effect type="Data" action="JumpAttack" amount="1.00" subtype="DamageArea" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractJaguar</target></effect>
     </effects>
   </tech>
   <tech name="TepeyollotlsReach">
     <effects>
+      <effect type="Data" allactions="1" amount="1.15" subtype="Damage" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">OcelotlWarrior</target></effect>
+			<effect type="Data" allactions="1" amount="1.15" subtype="Damage" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">JaguarRider</target></effect>
+			<effect type="Data" action="JumpAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">OcelotlWarrior</target></effect>
+			<effect type="Data" action="JumpAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">JaguarRider</target></effect>
+			<effect type="Data" action="JumpAttackStealth" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">OcelotlWarrior</target></effect>
+			<effect type="Data" action="JumpAttackStealth" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">JaguarRider</target></effect>
+      
       <effect type="Data" allactions="1" amount="1.15" subtype="Damage" relativity="BasePercent" mergeMode="add">
-        <target type="ProtoUnit">Iztaccihuatl</target></effect>
-      <effect type="Data" action="JumpAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">Iztaccihuatl</target></effect>
-
+        <target type="ProtoUnit">AbstractJaguar</target></effect>
       <effect type="Data" allactions="1" amount="1.15" subtype="Damage" relativity="BasePercent" mergeMode="add">
-        <target type="ProtoUnit">AmanraOlder</target></effect>
+        <target type="ProtoUnit">AbstractOcelotl</target></effect>
       <effect type="Data" action="JumpAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">AmanraOlder</target></effect>
+				<target type="ProtoUnit">AbstractJaguar</target></effect>
+      <effect type="Data" action="JumpAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractOcelotl</target></effect>
+      <effect type="Data" action="JumpAttackStealth" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractJaguar</target></effect>
+      <effect type="Data" action="JumpAttackStealth" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractOcelotl</target></effect>
     </effects>
   </tech>
   <tech name="TemiminaloyanTrials">
@@ -11429,8 +11548,14 @@
   </tech>
   <tech name="CuicacalliTraining">
     <effects>
+      <effect type="Data" amount="-0.15" subtype="ArmorVulnerability" armortype="Pierce" relativity="Percent" mergeMode="remove">
+				<target type="ProtoUnit">CoyoteWarrior</target></effect>
+
+      <effect type="Data" amount="-0.15" subtype="ArmorVulnerability" armortype="Pierce" relativity="Percent" mergeMode="add">
+				<target type="ProtoUnit">AbstractCoyotl</target></effect>
       <effect type="Data" amount="-0.05" subtype="ArmorVulnerability" armortype="Pierce" relativity="Percent" mergeMode="add">
         <target type="ProtoUnit">HumanSoldier</target></effect>
+
       <effect type="TechStatus" status="obtainable" mergeMode="add">TelpochcalliTraining</effect>
       <effect type="Data" amount="1.00" subtype="CommandAdd" tech="TelpochcalliTraining" row="2" column="1" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">NoblesHut</target></effect>	
@@ -11461,6 +11586,7 @@
         <target type="ProtoUnit">HumanSoldier</target></effect>
     </effects>    
   </tech>
+  
   <tech name="Nahuallatolli">
     <effects>
       <effect type="Data" amount="0.80" subtype="cost" resource="Wood" relativity="BasePercent" mergeMode="remove">
@@ -11475,7 +11601,7 @@
       <effect type="Data" allactions="1" amount="1.00" subtype="Damagebonus" unittype="HumanSoldier" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">AbstractTeixiptla</target></effect>
       <effect type="Data" allactions="1" amount="1.00" subtype="Damagebonus" unittype="HumanSoldier" relativity="Absolute" mergeMode="add">
-				<target type="ProtoUnit">OcelotlWarrior</target></effect>
+				<target type="ProtoUnit">AbstractOcelotl</target></effect>
       <effect type="Data" allactions="1" amount="1.00" subtype="Damagebonus" unittype="HumanSoldier" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">SoulGuide</target></effect>
     </effects>

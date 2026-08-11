@@ -1275,6 +1275,8 @@ ID = "STR_HUD_UNIT_TYPE_ABSTRACT_HUNTRESS"   ;   Str = "Huntress Warriors"
 ID = "STR_HUD_UNIT_TYPE_ABSTRACT_NYMPH"   ;   Str = "Nymph Faes"
 ID = "STR_HUD_UNIT_TYPE_ABSTRACT_KUAFU"   ;   Str = "Kuafu Tribefolk"
 ID = "STR_HUD_UNIT_TYPE_ABSTRACT_TERRACOTTA"   ;   Str = "Terracotta Soldiers"
+ID = "STR_HUD_UNIT_TYPE_ABSTRACT_JAGUAR"   ;   Str = "Jaguars"
+ID = "STR_HUD_UNIT_TYPE_ABSTRACT_COYOTL"   ;   Str = "Coyotls"
 
 // SUPERWEAPONS
 ID = "STR_POWER_PSIONIC_DECIMATOR"   ;   Str = "Psionic Decimator"

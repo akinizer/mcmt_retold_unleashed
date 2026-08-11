@@ -444,8 +444,9 @@
         - ChargedHandAttack: aoe, freeze stonedamage
 
 - tech:
-    - skyfire: improved, all flying units have hitonground & hitonwater conditions for spawn skyfire fireare
+    - SkyFire: improved, all flying units have hitonground & hitonwater conditions for spawn skyfire fireare
     - Terracotta Techs: AbstractTerracotta, lifespan, hitpoints, trainpoints
+
 7. Campaign Heroes from mcmt mod, correlating techs and new features
 - Greek: veterancy numkill, lineupgrades
     
@@ -1025,13 +1026,16 @@
 - WallConnectorToCharger: transforms a connector to an offensive connector, ChuNoKu RangedAttack, AsuraFireBallLeft anim
     - WallConnectorCharger: offesive connector with a dependant attachment (Cheiroballista, AsuraFireBallLeft, AsuraFireBallRight, Toxotes etc.)
 
-26. Aztec Expansion
+26. Aztec Expansion and New Changes
 
 * military tech reworks
 - tower upgrade: increase rof of sentrytower
 - GreatTempleTechs: 
     - Warriorpriest included
     - Quinametzin included, Otontin visualscale+, piercearmor-, Otontin bonusdamage vs building scaling
+    - Iztaccihuatl & IztaccihuatlDismounted included
+- NoblesHutSoldiers:
+    - Popocatepetl included
 - AdvancedTraps: Nahuallatolli trap improvements are moved in
 
 * armory rech reworks
@@ -1059,10 +1063,11 @@
     - VFXOniBerserkFlameBuilding: Oni Flame Area glow effect for Sentry Tower, spawn SelfDestruct on death
 
 - PreciousBones: hero hitpoints
-- CuicacalliTraining: HumanSoldier PierceArmor, enables TelpochcalliTraining
+- CuicacalliTraining: HumanSoldier PierceArmor, enables TelpochcalliTrainingi, simplified effect to Coyotl type warriors
 - TelpochcalliTraining: HumanSoldier Hitpoints
 - TeponaztliDrums: HumanSoldier maxvelocity, rof
 - Nahuallatolli: WarriorPriest,AbstractTeixiptla,OcelotlWarrior,SoulGuide bonusdamage vs HumanSoldier, no longer affects traps, description update
+    - simplified effect to Ocelotl type warriors
 - EveningStar:
     - EveningStarContainer: Spawn 1 SoulGuide, build completion action, attaches AbstractTemple
     - MythBonusContainerMedium: DamageBonus vs mythunit aura, attaches Temple
@@ -1089,13 +1094,17 @@
 - NecklaceOfEyeballs: Tunkuluchu LOS+
 - ShardsOfItztli:  
     - ArrowCanoe: rangedattack crushattack +1, ProjectileStymphalianBirdFeathers, CrushArmor +15%
-- TwistedLimbs: HumanSoldier JumpAttack DamageArea
+- TwistedLimbs: HumanSoldier JumpAttack DamageArea, simplified effect to Jaguar & Ocelotl type warriors
 - ToloacheTrance: affects RangedAttack LogicalTypeBuildingsThatShoot
 - Mictecah: ShornOne VFXLegendAuraStrongerUnit, OnHitEffect Kitsune Ghost Fire
 - StoneskinQuinametzin: damagearea, throw, piercearmor+, hackarmor+
 - OcpatliInfusions: 
     - villager dropoffheal
     - attach Villagers SpeedInverseNearBushContainer
+- SpoilsOfWar: obtainable at all Chinese ArchaicAge
+- TepeyollotlsReach: simplified effects to Jaguar & Ocelotl type warriors
+- StingOfYappan: Iztaccihuatl & IztaccihuatlDismounted included
+
 * god power reworks
 - Cost: free
 - Non-Aztec:
@@ -1124,6 +1133,7 @@
 * unit reworks
 - PopCost: villager, mythunit and humansoldier
 - Campaign Heroes: access to myth techs, veterancy
+    - Tlacaelel: weapon model changed to sword
 - Heroes: 
     - TeixiptlaHuitz: handattack maximumrange+
     - WarriorPriest: paint brush weapon (iztaccihuatl_weapon model), ranged unit, infatrylineupgrade, archerlineupgrade

@@ -3,13 +3,6 @@
 ==============================================================================
 
 === MILITARY TECHS FOR UNITS ===
-Raider Infantry: helm upgrade tech change to Infantry Line Upgrade from Cavalry
-- SpoilsOfWar -> archaicage tech
-
-Iztaccihuatl,IztaccihuatlDismounted,IztaccihuatlJaguar -> female,jaguar rider,spear -> techs
-Popocatepetl -> scout,coyotl,axe -> techs
-Itzcoatl  -> great temple soldier,sword -> techs
-Tlacaelel -> warrior,warriorpriest,great temple soldier -> techs,weapon model
 Quetzalcoatl -> summon,transform -> QuetzalcoatlSnake
 
 PirateCyclops + ScarletMacaw
