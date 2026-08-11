@@ -1,0 +1,86 @@
+<tactics>
+	<action>
+		<name stringid="STR_ACTION_STEALTH">Stealth</name>
+		<type>Stealth</type>
+		<maxrange>25.0</maxrange>
+		<ambushrange>10.0</ambushrange>
+		<ambushduration>1.0</ambushduration>
+		<autocastbyself>1</autocastbyself>
+		<autocastdistance>2.250000</autocastdistance>
+		<persistent>1</persistent>
+		<activevfxproto>VFXStealthEye</activevfxproto>
+		<revealarearadius>2.0</revealarearadius>
+		<revealareachain>1.0</revealareachain>
+		<soundsetenter volume="0.25">StealthBirth</soundsetenter>
+		<soundsetupdate>StealthAcknowledge</soundsetupdate>
+		<soundsetexit volume="0.25">StealthExists</soundsetexit>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_HAND">HandAttack</name>
+		<type>Attack</type>
+		<rate type="All">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<forceareaattacktarget>1</forceareaattacktarget>
+		<anim>HandAttack</anim>
+		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+		<impacteffect>effects\impacts\hack</impacteffect>
+		<firechallengepacket>1</firechallengepacket>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_JUMP">JumpAttackStealth</name>
+		<type>JumpAttack</type>
+		<ambushonly>1</ambushonly>
+		<onlyattackifpathclear>1</onlyattackifpathclear>
+		<rate type="HumanSoldier">1.0</rate>
+		<rate type="LogicalTypeMythUnitNotTitan">1.0</rate>
+		<rate type="LogicalTypeVillagerNotHero">1.0</rate>
+		<rate type="TradeUnit">1.0</rate>
+		<rate type="Hero">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<anim>JumpAttack</anim>
+		<chargeaction>1</chargeaction>
+		<impacteffect>effects\impacts\ambush_strike</impacteffect>
+		<firechallengepacket>1</firechallengepacket>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_JUMP">JumpAttack</name>
+		<type>JumpAttack</type>
+		<onlyattackifpathclear>1</onlyattackifpathclear>
+		<rate type="HumanSoldier">1.0</rate>
+		<rate type="LogicalTypeMythUnitNotTitan">1.0</rate>
+		<rate type="LogicalTypeVillagerNotHero">1.0</rate>
+		<rate type="TradeUnit">1.0</rate>
+		<rate type="Hero">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<anim>JumpAttack</anim>
+		<chargeaction>1</chargeaction>
+		<impacteffect>effects\impacts\ambush_strike</impacteffect>
+		<firechallengepacket>1</firechallengepacket>
+	</action>
+    <action>
+		<name stringid="STR_ACTION_CHARGE_HAND">ChargedHandAttack</name>
+		<type>Attack</type>
+		<rate type="Unit">1.0</rate>
+		<attackaction>1</attackaction>
+		<auxchargeaction>1</auxchargeaction>
+		<handlogic>1</handlogic>
+		<anim>HandAttack</anim>
+		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+		<impacteffect>effects\impacts\hack</impacteffect>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_DEVOTE">DevoteMajor</name>
+		<type>DevoteMajor</type>
+		<maxrange>0.2</maxrange>
+	</action>
+	<tactic>Default
+        <action priority="100">JumpAttackStealth</action>
+        <action priority="95">JumpAttack</action>
+        <action priority="85">ChargedHandAttack</action>
+        <action priority="90">HandAttack</action>
+        <action>DevoteMajor</action>
+        <attacktype>LogicalTypeHandUnitsAttack</attacktype><autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype></tactic>
+</tactics>

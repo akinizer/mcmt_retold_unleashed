@@ -312,6 +312,123 @@
 				  <target type="ProtoUnit">HeroProtagonist</target></effect>
       </effects>      
     </tech>
+
+    <tech name="HouseBuildLimit_I" mergeMode="add">
+      <displaynameid>STR_TECH_HOUSEBUILDLIMIT_I_NAME</displaynameid>
+      <rollovertextid>STR_TECH_HOUSEBUILDLIMIT_LR</rollovertextid>
+      <researchpoints>30.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\tech\upgrade_tech.png</icon>
+      <flag>NoTextMessage</flag>
+      <flag>HideFromDialogs</flag>
+      <cost resourcetype="Gold">200.0000</cost>  
+      <prereqs>
+        <specificage>ArchaicAge</specificage>
+      </prereqs>
+      <effects> 
+        <effect type="Data" amount="32.00" subtype="BuildLimit" relativity="Absolute">
+          <target type="ProtoUnit">House</target></effect>
+        <effect type="Data" amount="32.00" subtype="BuildLimit" relativity="Absolute">
+          <target type="ProtoUnit">Manor</target></effect>
+        <effect type="Data" amount="32.00" subtype="BuildLimit" relativity="Absolute">
+          <target type="ProtoUnit">Calpulli</target></effect>
+        <effect type="TechStatus" status="obtainable">HouseBuildLimit_II</effect>
+      </effects>
+    </tech>
+    <tech name="HouseBuildLimit_II" mergeMode="add">
+      <displaynameid>STR_TECH_HOUSEBUILDLIMIT_II_NAME</displaynameid>
+      <rollovertextid>STR_TECH_HOUSEBUILDLIMIT_LR</rollovertextid>
+      <researchpoints>45.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\tech\upgrade_tech.png</icon>
+      <flag>NoTextMessage</flag>
+      <flag>HideFromDialogs</flag>
+      <cost resourcetype="Gold">300.0000</cost>  
+      <prereqs>
+        <specificage>ClassicalAge</specificage>
+        <techstatus status="Active">HouseBuildLimit_I</techstatus>
+      </prereqs>
+      <effects> 
+        <effect type="Data" amount="32.00" subtype="BuildLimit" relativity="Absolute">
+          <target type="ProtoUnit">House</target></effect>
+        <effect type="Data" amount="32.00" subtype="BuildLimit" relativity="Absolute">
+          <target type="ProtoUnit">Manor</target></effect>
+        <effect type="Data" amount="32.00" subtype="BuildLimit" relativity="Absolute">
+          <target type="ProtoUnit">Calpulli</target></effect>
+        <effect type="TechStatus" status="obtainable">HouseBuildLimit_III</effect>
+      </effects>
+    </tech>
+    <tech name="HouseBuildLimit_III" mergeMode="add">
+      <displaynameid>STR_TECH_HOUSEBUILDLIMIT_III_NAME</displaynameid>
+     <rollovertextid>STR_TECH_HOUSEBUILDLIMIT_LR</rollovertextid>
+      <researchpoints>60.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\tech\upgrade_tech.png</icon>
+      <flag>NoTextMessage</flag>
+      <flag>HideFromDialogs</flag>
+      <cost resourcetype="Gold">500.0000</cost>  
+      <prereqs>
+        <specificage>HeroicAge</specificage>
+        <techstatus status="Active">HouseBuildLimit_II</techstatus>
+      </prereqs>
+      <effects> 
+        <effect type="Data" amount="32.00" subtype="BuildLimit" relativity="Absolute">
+          <target type="ProtoUnit">House</target></effect>
+        <effect type="Data" amount="32.00" subtype="BuildLimit" relativity="Absolute">
+          <target type="ProtoUnit">Manor</target></effect>
+        <effect type="Data" amount="32.00" subtype="BuildLimit" relativity="Absolute">
+          <target type="ProtoUnit">Calpulli</target></effect>
+        <effect type="TechStatus" status="obtainable">HouseBuildLimit_IV</effect>
+      </effects>
+    </tech>
+    <tech name="HouseBuildLimit_IV" mergeMode="add">
+      <displaynameid>STR_TECH_HOUSEBUILDLIMIT_IV_NAME</displaynameid>
+      <rollovertextid>STR_TECH_HOUSEBUILDLIMIT_LR</rollovertextid>
+      <researchpoints>60.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\tech\upgrade_tech.png</icon>
+      <flag>NoTextMessage</flag>
+      <flag>HideFromDialogs</flag>
+      <cost resourcetype="Wood">100.0000</cost>  
+      <cost resourcetype="Gold">500.0000</cost>  
+      <prereqs>
+        <specificage>MythicAge</specificage>
+        <techstatus status="Active">HouseBuildLimit_III</techstatus>
+      </prereqs>
+      <effects> 
+        <effect type="Data" amount="32.00" subtype="BuildLimit" relativity="Absolute">
+          <target type="ProtoUnit">House</target></effect>
+        <effect type="Data" amount="32.00" subtype="BuildLimit" relativity="Absolute">
+          <target type="ProtoUnit">Manor</target></effect>
+        <effect type="Data" amount="32.00" subtype="BuildLimit" relativity="Absolute">
+          <target type="ProtoUnit">Calpulli</target></effect>
+        <effect type="TechStatus" status="obtainable">HouseBuildLimit_V</effect>
+      </effects>
+    </tech>
+    <tech name="HouseBuildLimit_V" mergeMode="add">
+      <displaynameid>STR_TECH_HOUSEBUILDLIMIT_V_NAME</displaynameid>
+      <rollovertextid>STR_TECH_HOUSEBUILDLIMIT_LR</rollovertextid>
+      <researchpoints>60.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\tech\upgrade_tech.png</icon>
+      <flag>NoTextMessage</flag>
+      <flag>HideFromDialogs</flag>
+      <cost resourcetype="Wood">200.0000</cost>  
+      <cost resourcetype="Gold">500.0000</cost>  
+      <prereqs>
+        <specificage>WonderAge</specificage>
+        <techstatus status="Active">HouseBuildLimit_IV</techstatus>
+      </prereqs>
+      <effects> 
+        <effect type="Data" amount="32.00" subtype="BuildLimit" relativity="Absolute">
+          <target type="ProtoUnit">House</target></effect>
+        <effect type="Data" amount="32.00" subtype="BuildLimit" relativity="Absolute">
+          <target type="ProtoUnit">Manor</target></effect>
+        <effect type="Data" amount="32.00" subtype="BuildLimit" relativity="Absolute">
+          <target type="ProtoUnit">Calpulli</target></effect>
+      </effects>
+    </tech>
+    
     <!-- UPSTART GOD BOOSTS -->
     <tech name="UpstartBoost_Tsukuyomi" mergeMode="add">
       <displaynameid>STR_TECH_UPSTARTBOOST_NAME</displaynameid>
@@ -2378,8 +2495,7 @@
             <effect type="TechStatus" status="obtainable">MCMT_AdvancedFortifications_I</effect>
             <effect type="TechStatus" status="obtainable">MCMT_AdvancedFortifications_II</effect>
             <effect type="TechStatus" status="obtainable">MCMT_AdvancedFortifications_III</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_OracleWatchers</effect>
-            
+            <effect type="TechStatus" status="obtainable">MCMT_OracleWatchers</effect>            
             <!--Kingdom Tech: Encampments-->
             <effect type="TechStatus" status="obtainable">MCMT_AmazonTraining</effect>
             <effect type="TechStatus" status="obtainable">MCMT_AmazonTraining_I</effect>
@@ -2459,6 +2575,7 @@
             <effect type="TechStatus" status="obtainable">MCMT_FinancialDevelopmentUpgradeIII</effect>
             <!--House Techs: Special Unit Activators-->
             <effect type="TechStatus" status="obtainable">HouseSpecialUnitsActivator_Shared</effect>
+            <effect type="TechStatus" status="obtainable">HouseBuildLimit_I</effect>
             <!--Forbidden Techs-->
             <effect type="TechStatus" status="obtainable">ForbiddenTechMonitors</effect>
             <effect type="TechStatus" status="obtainable">ForbiddenTechBerny</effect>
@@ -11574,6 +11691,11 @@
     <effects>
       <effect type="Data" amount="1.25" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
         <target type="ProtoUnit">HumanSoldier</target></effect>
+      
+      <effect type="Data" action="ChargedHandAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">CoyoteWarrior</target></effect>
+      <effect type="Data" action="ChargedHandAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">OcelotlWarrior</target></effect>
     </effects>
   </tech>
   <tech name="TeponaztliDrums">

@@ -1716,9 +1716,19 @@
         <contain>Hero</contain>
 		<flag>HasGatherPoint</flag>
 		<flag>ObscuresUnits</flag>
+		<tech row="2" column="5">HouseBuildLimit_I</tech>
+		<tech row="2" column="5">HouseBuildLimit_II</tech>
+		<tech row="2" column="5">HouseBuildLimit_III</tech>
+		<tech row="2" column="5">HouseBuildLimit_IV</tech>
+		<tech row="2" column="5">HouseBuildLimit_V</tech>
     </unit>
 	<unit name="Manor">
         <maxcontained>15</maxcontained>
+		<tech row="2" column="5">HouseBuildLimit_I</tech>
+		<tech row="2" column="5">HouseBuildLimit_II</tech>
+		<tech row="2" column="5">HouseBuildLimit_III</tech>
+		<tech row="2" column="5">HouseBuildLimit_IV</tech>
+		<tech row="2" column="5">HouseBuildLimit_V</tech>
         <command row="1" column="1">CancelBuilding</command>
     </unit>   
 	<unit name="Market">
@@ -6628,6 +6638,37 @@
 			<projectile>ProjectileWadjetSpit</projectile>
 		</protoaction>		
 	</unit>
+	<unit name="CoyoteWarrior">
+		<tactics>mcmt_warrior_coyote.tactics</tactics>
+		<auxrechargetime>25.0000</auxrechargetime>
+		<protoaction>
+			<name>ChargedHandAttack</name>
+			<rof>1.200000</rof>
+			<damage type="Hack">7.000000</damage>
+			<damagebonus type="AbstractArcher">2.500000</damagebonus>
+			<maxrange>0.500000</maxrange>
+			<onhiteffect type="SelfModify" duration="5.000000">
+				<modify type="ROF">0.670000</modify>
+			</onhiteffect>
+			<onhiteffect type="Lifesteal" rate="0.25" targetunittype="Unit"></onhiteffect>
+			<active>0</active>
+		</protoaction>
+	</unit>
+	<unit name="OcelotlWarrior">
+		<tactics>mcmt_warrior_ocelotl.tactics</tactics>
+		<auxrechargetime>25.0000</auxrechargetime>
+		<protoaction>
+			<name>ChargedHandAttack</name>
+			<rof>1.600000</rof>
+			<damage type="Hack">20.000000</damage>
+			<maxrange>0.500000</maxrange>
+			<onhiteffect type="SelfModify" duration="5.000000">
+				<modify type="DamageSpecific" dmgtype="Hack">1.600000</modify>
+			</onhiteffect>
+			<onhiteffect type="Lifesteal" rate="0.25" targetunittype="Unit"></onhiteffect>
+			<active>0</active>
+		</protoaction>
+	</unit>
 	<unit name="WanderingTurkey" orderhint="5">
 		<displaynameid>STR_EMB_WANDERING_TURKEY_NAME</displaynameid>
 		<rollovertextid>STR_EMB_WANDERING_TURKEY_LR</rollovertextid>
@@ -6956,6 +6997,9 @@
 		</protoaction>
 	</unit>
 	<unit name="Calpulli">
+		<buildlimit>20</buildlimit>
+		<cost resourcetype="Wood">125.0000</cost>
+		<cost resourcetype="Food">25.0000</cost>
 		<contain>Unit</contain>
 		<notcontain>AbstractCavalry</notcontain>
 		<notcontain>MythUnit</notcontain>
@@ -6965,7 +7009,13 @@
 		<notcontain>TradeUnit</notcontain>
 		<maxcontained>5</maxcontained>
 
-		<populationcapaddition>5</populationcapaddition>
+		<populationcapaddition>8</populationcapaddition>
+		<tech row="2" column="5">HouseBuildLimit_I</tech>
+		<tech row="2" column="5">HouseBuildLimit_II</tech>
+		<tech row="2" column="5">HouseBuildLimit_III</tech>
+		<tech row="2" column="5">HouseBuildLimit_IV</tech>
+		<tech row="2" column="5">HouseBuildLimit_V</tech>
+
 		<tactics>aztec_calpulli_noranged.tactics</tactics>
 	</unit>
 	<unit name="CalpulliCraftWorkshop">
@@ -6990,7 +7040,7 @@
 		<notcontain>TradeUnit</notcontain>
 		<maxcontained>5</maxcontained>
 
-		<populationcapaddition>5</populationcapaddition>
+		<populationcapaddition>8</populationcapaddition>
 		<tactics>aztec_calpulli_noranged.tactics</tactics>
 		<protoaction>
 			<name>ChargedSpawn</name>
@@ -7000,7 +7050,7 @@
 	</unit>
 	<unit name="CalpulliLumberOutpost">
 		<unittype>ArcherLineUpgraded</unittype>
-		<populationcapaddition>5</populationcapaddition>
+		<populationcapaddition>8</populationcapaddition>
 		<protoaction>
 			<name>RangedAttack</name>
 			<damage type="Pierce">1.000000</damage>

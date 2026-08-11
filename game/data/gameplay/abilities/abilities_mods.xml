@@ -407,6 +407,12 @@
 		<ability>AbilitySleepDart<tech>ClassicalAgeAztec</tech><chargetimeasrof>1</chargetimeasrof><noautocast>true</noautocast></ability>
 		<ability>AbilityPoisonDart<tech>HeroicAgeAztec</tech><chargetimeasrof>1</chargetimeasrof><noautocast>true</noautocast></ability>
 	</QuimichinSpy>	
+	<CoyoteWarrior>
+		<ability>AbilityChargedHandAttack<tech>TelpochcalliTraining</tech><auxchargetimeasrof>1</auxchargetimeasrof></ability>
+	</CoyoteWarrior>
+	<OcelotlWarrior>
+		<ability>AbilityChargedHandAttack<tech>TelpochcalliTraining</tech><auxchargetimeasrof>1</auxchargetimeasrof></ability>
+	</OcelotlWarrior>
 		<!--Aztec-Economic-->
 	<WanderingTurkey>
 		<ability>AbilityAutoScout<noautocast>true</noautocast></ability>

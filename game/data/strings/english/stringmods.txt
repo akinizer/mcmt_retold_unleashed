@@ -624,6 +624,13 @@ ID = "STR_TECH_FINANCIAL_DEVELOPMENT_UPGRADE_I_NAME"   ;   Str = "Activate Tech:
 ID = "STR_TECH_FINANCIAL_DEVELOPMENT_UPGRADE_II_NAME"   ;   Str = "Activate Tech: Financial Development Upgrade II"
 ID = "STR_TECH_FINANCIAL_DEVELOPMENT_UPGRADE_III_NAME"   ;   Str = "Activate Tech: Financial Development Upgrade III"
 
+ID = "STR_TECH_HOUSEBUILDLIMIT_I_NAME"   ;   Str = "Expand Town Population I"
+ID = "STR_TECH_HOUSEBUILDLIMIT_II_NAME"   ;   Str = "Expand Town Population II"
+ID = "STR_TECH_HOUSEBUILDLIMIT_III_NAME"   ;   Str = "Expand Town Population III"
+ID = "STR_TECH_HOUSEBUILDLIMIT_IV_NAME"   ;   Str = "Expand Town Population IV"
+ID = "STR_TECH_HOUSEBUILDLIMIT_V_NAME"   ;   Str = "Expand Town Population V"
+ID = "STR_TECH_HOUSEBUILDLIMIT_LR"   ;   Str = "Allows more households to be built in the town"
+
 ID = "STR_TECH_FIELDWORKERS_NAME"   ;   Str = "Field Workers"
 ID = "STR_TECH_FIELDWORKERS_LR"   ;   Str = "Assign employees to work in many fields of operations and satisfy an collaborative income"
 ID = "STR_TECH_EXPERTENGINEERS_NAME"   ;   Str = "Expert Engineers"

@@ -1139,17 +1139,19 @@
     - WarriorPriest: paint brush weapon (iztaccihuatl_weapon model), ranged unit, infatrylineupgrade, archerlineupgrade
         - HandAttack: maximumrange increased to 2
         - RangedAttack: also targets nonflying units, minrange 4, divine damage, throw humansoldier
-- QuimichinSpy: 
-    - AutoScout disabled
-    - TemiminaloyanTrials: maximumrange+, los+, rof-, damagebonus vs human types, directprojectile, setname "Quimichin Sniper"
-    - ArchaicAgeAztec:
-        - TrackingDevice: launches a device that casts spy at a unit, manual ability, targets logicaltypespytarget
-    - ClassicalAgeAztec:
-        - SleepDart: blows a special dart that makes target unit fall a sleep, manual ability, targets units
-    - HeroicAgeAztec:
-        - PoisonDart: blows a special dart that makes unit suffering from toxic spores, manual ability, targets units
-- EagleWarrior: proxmity modes handattack added, rangedattack maxrange decreased, bonusdamages
-- TequihuaArcher: maxrange increased
+- HumanSoldiers:
+    - QuimichinSpy: 
+        - AutoScout disabled
+        - Quimichin Sniper (TemiminaloyanTrials): maximumrange+, los+, rof-, damagebonus vs human types, directprojectile, setname
+        - TrackingDevice (ArchaicAgeAztec): launches a device that casts spy at a unit, manual ability, targets logicaltypespytarget
+        - SleepDart (ClassicalAgeAztec): blows a special dart that makes target unit fall a sleep, manual ability, targets units
+        - PoisonDart (HeroicAgeAztec): blows a special dart that makes unit suffering from toxic spores, manual ability, targets units
+    - EagleWarrior: proxmity modes handattack added, rangedattack maxrange decreased, bonusdamages
+    - TequihuaArcher: maxrange increased
+    - CoyoteWarrior:
+        - ChargedHandAttack (TelpochcalliTraining): lifesteal, selfmodify rof
+    - OcelotlWarrior:
+        - ChargedHandAttack (TelpochcalliTraining): lifesteal, selfmodify damage
 - Naval:
     - FishingShipAztec: GatherBonus aura for other FishingShipAztec
 
@@ -1183,6 +1185,7 @@
     - scalebycontainedunittype villager
     - damagebonus ship removed
     - damagebonus villager added
+- Expand Population Techs: buildlimit+ [House, Manor, Capulli]
 - GreatTemple: unittype abstracttemple
 - TzompantliTower:
     - OmenOfDeath: enables TowerOfDeath action, enables ability on ungarrisoned SentryTower that debuffs all valid units with Mark for Death in an area
