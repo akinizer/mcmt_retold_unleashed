@@ -1038,7 +1038,7 @@
     - Popocatepetl included
 - AdvancedTraps: Nahuallatolli trap improvements are moved in
 
-* armory rech reworks
+* armory tech reworks
 - CrenellationsAztec: same changes applied as Crenallations
 - FlintWeapons: QuimichinSpy maximumrange+
 - JadeWeapons: QuimichinSpy maximumrange+
@@ -1156,10 +1156,11 @@
     - FishingShipAztec: GatherBonus aura for other FishingShipAztec
 - Trade:
     - CaravanAztec:
-        - HermitCampfire: los, tradeunit areainvisibility trap, areaslow trap
-        - SwitchTactics: Ranged, Ranged2
-        - Armor Piercing Blowgun: low rof, anti-building
-        - Submachine Blowgun: high rof, anti-unit
+        - HermitCampfire: los, 
+            - Phosphorus Smoke (TelpochcalliTraining): tradeunit areainvisibility trap, areaslow trap
+        - SwitchTactics (CuicacalliTraining): Ranged, Ranged2
+        - Armor Piercing Blowgun (CuicacalliTraining): low rof, anti-building
+        - Submachine Blowgun (CuicacalliTraining): high rof, anti-unit
 
 * mythunit reworks
 - ObsidianButterfly:
@@ -1215,6 +1216,8 @@
 * structure reworks
 - Display Name: titan, wonders, temples
 - Calpulli, CalpulliLivestock: oversight that displays ranged attack has been fixed
+- SpikeTrap:
+    - FirestormTrap (Nahuallatolli): SpikeTrap takes a new form that burns enemies in scorching fires
 
 * additional tree types
 - HesperidesTree, Goshinboku

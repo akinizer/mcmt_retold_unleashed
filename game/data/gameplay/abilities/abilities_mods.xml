@@ -418,7 +418,7 @@
 		<ability>AbilityAutoScout<noautocast>true</noautocast></ability>
 	</WanderingTurkey>	
 	<CaravanAztec>
-		<ability>NeZhaYouthSwitchTactic<chargetimeasrof>1</chargetimeasrof><castonself>true</castonself><noautocast>true</noautocast><donotforcestop>true</donotforcestop></ability>
+		<ability>NeZhaYouthSwitchTactic<tech>CuicacalliTraining</tech><chargetimeasrof>1</chargetimeasrof><castonself>true</castonself><noautocast>true</noautocast><donotforcestop>true</donotforcestop></ability>
 	</CaravanAztec>
 		<!--Aztec-Myth-->
 	<Tunkuluchu>

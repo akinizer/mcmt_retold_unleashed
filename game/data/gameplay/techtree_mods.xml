@@ -11677,6 +11677,11 @@
       <effect type="TechStatus" status="obtainable" mergeMode="add">TelpochcalliTraining</effect>
       <effect type="Data" amount="1.00" subtype="CommandAdd" tech="TelpochcalliTraining" row="2" column="1" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">NoblesHut</target></effect>	
+
+      <effect type="Data" action="RangedAttack1" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">CaravanAztec</target></effect>
+      <effect type="Data" action="RangedAttack2" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">CaravanAztec</target></effect>
     </effects>
   </tech>
   <tech name="TelpochcalliTraining" mergeMode="add">
@@ -11697,6 +11702,9 @@
 				<target type="ProtoUnit">CoyoteWarrior</target></effect>
       <effect type="Data" action="ChargedHandAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">OcelotlWarrior</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="PhosphorusSmokeTrapAura" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">HermitCampfire</target></effect>	
     </effects>
   </tech>
   <tech name="TeponaztliDrums">
@@ -11727,6 +11735,10 @@
 				<target type="ProtoUnit">AbstractOcelotl</target></effect>
       <effect type="Data" allactions="1" amount="1.00" subtype="Damagebonus" unittype="HumanSoldier" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">SoulGuide</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="ProjectileFireTornado" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">SpikeTrap</target></effect>	
+      <effect type="SetName" proto="SpikeTrap" newname="STR_BLD_FIRESTORM_TRAP_NAME" mergeMode="add"></effect>
     </effects>
   </tech>
   <tech name="AdvancedTraps">

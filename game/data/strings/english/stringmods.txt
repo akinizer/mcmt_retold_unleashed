@@ -472,6 +472,8 @@ ID = "STR_EMB_HERMITCAMPFIRE_NAME"   ;   Str = "Hermit Campfire"
 ID = "STR_EMB_HERMITCAMPFIRE_LR"   ;   Str = "Campfires supply hermits sight that makes their travels easier and safer"
 ID = "STR_EMB_HERMITCAMPFIRE_SR"   ;   Str = "Provides LOS and unleashes phosphorus ashes on destruction"
 
+ID = "STR_BLD_FIRESTORM_TRAP_NAME"   ;   Str = "Firestorm Trap"
+
 // SPECIAL UTILITY STRUCTURES
 ID = "STR_BLD_SONICDISRUPTORARRAY_NAME"   ;   Str = "Sonic Disruptor Array"
 ID = "STR_BLD_SONICDISRUPTORARRAY_SR"   ;   Str = "S.D.A"

@@ -9671,6 +9671,7 @@
 			<perfectaccuracy>1</perfectaccuracy>
 			<homingballistics>1.0</homingballistics>
 			<passthrough>1</passthrough>
+			<active>0</active>
 		</protoaction>
 		<protoaction>
 			<name>RangedAttack2</name>
@@ -9686,6 +9687,7 @@
 				<target ignoretype="AbstractTitan"></target>
 				<modify type="ROF" applytype="Multiply" stack="">1.0200</modify>
 			</onhiteffect>
+			<active>0</active>
 		</protoaction>
 		<protoaction>
 			<name>Build</name>
@@ -9728,7 +9730,6 @@
 		<armor type="Crush" value="0.0500"></armor>		
 
 		<killreward resourcetype="Wood">10.0</killreward>
-		<spawn type="dead" count="1" skipplacementcheck="">PhosphorusSmokeTrapAura</spawn>
 
 		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
 		<unittype>LogicalTypeBuildingsNotWalls</unittype>
