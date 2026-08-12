@@ -417,6 +417,9 @@
 	<WanderingTurkey>
 		<ability>AbilityAutoScout<noautocast>true</noautocast></ability>
 	</WanderingTurkey>	
+	<CaravanAztec>
+		<ability>NeZhaYouthSwitchTactic<chargetimeasrof>1</chargetimeasrof><castonself>true</castonself><noautocast>true</noautocast><donotforcestop>true</donotforcestop></ability>
+	</CaravanAztec>
 		<!--Aztec-Myth-->
 	<Tunkuluchu>
 		<ability>AbilitySojobo<auxchargetimeasrof>1</auxchargetimeasrof></ability>

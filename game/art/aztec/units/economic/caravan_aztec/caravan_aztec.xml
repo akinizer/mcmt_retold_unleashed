@@ -1,0 +1,13 @@
+<animfile validation="strict">
+    <attachment>Hammer<include>shared\units\attachments\tool\tool_hammer.xml</include></attachment>
+	<attachment>Weapon<include>aztec\units\attachments\dart_blower\dart_blower_z.xml</include></attachment>
+	<component>ModelComp<logic type="CarryType"><none><assetreference type="TMModel"><file>aztec\units\economic\caravan_aztec\caravan_aztec</file></assetreference></none><gold><assetreference type="TMModel"><file>aztec\units\economic\caravan_aztec\caravan_aztec_loaded</file></assetreference></gold></logic></component>
+	<anim>Death<assetreference type="TMAnimation"><file>aztec\units\economic\caravan_aztec\anim\caravan_aztec_death_a</file></assetreference><component>ModelComp</component><attach name="weapon" attachpoint="weapon"></attach></anim>
+	<anim>Idle<assetreference type="TMAnimation"><file>aztec\units\economic\caravan_aztec\anim\caravan_aztec_idle_a</file></assetreference><component>ModelComp</component><attach name="weapon" attachpoint="weapon"></attach></anim>
+	<anim>Bored<assetreference type="TMAnimation"><file>aztec\units\economic\caravan_aztec\anim\caravan_aztec_bored_a</file></assetreference><component>ModelComp</component><attach name="weapon" attachpoint="weapon"></attach></anim>
+	<anim>Walk<assetreference type="TMAnimation"><file>aztec\units\economic\caravan_aztec\anim\caravan_aztec_walk_a</file></assetreference><component>ModelComp</component><attach name="weapon" attachpoint="weapon"></attach></anim>
+	<anim>Flail<assetreference type="TMAnimation"><file>aztec\units\economic\caravan_aztec\anim\caravan_aztec_flail_a</file></assetreference><component>ModelComp</component><attach name="weapon" attachpoint="weapon"></attach></anim>
+	<anim>RangedAttack<assetreference type="TMAnimation"><file>aztec\units\economic\caravan_aztec\anim\caravan_aztec_rangedattack_a</file><tag type="Attack">0.59</tag></assetreference><component>ModelComp</component><attach name="weapon" attachpoint="weapon"></attach></anim>
+    <anim>Build<assetreference type="TMAnimation"><file>aztec\units\archery\quimichin_spy\anim\quimichin_spy_build</file><tag type="SpecificSoundSet" checkvisible="1" set="Build">0.99</tag></assetreference><component>ModelComp</component><attach name="Hammer" attachpoint="weapon"></attach></anim>
+    <anim>Switch<assetreference type="TMAnimation"><file>chinese\units\hero\ne_zha\anim\ne_zha_youth_switch_a</file><tag type="SpecificSoundSet" checkvisible="1" set="NezhaYouthSwitch">0.0</tag></assetreference><component>ModelComp</component><attach name="weapon" attachpoint="weapon"></attach></anim>
+</animfile>

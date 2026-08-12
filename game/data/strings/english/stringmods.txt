@@ -468,6 +468,10 @@ ID = "STR_EMB_PIONEERCAMPFIRE_NAME"   ;   Str = "Pioneer Campfire"
 ID = "STR_EMB_PIONEERCAMPFIRE_LR"   ;   Str = "Even Heroes need to catch a breath during adventrous quests. Campires supply both recovery and boost that accelerate thoughts"
 ID = "STR_EMB_PIONEERCAMPFIRE_SR"   ;   Str = "Regeneration and Rate of Fire Boost Area for a duration"
 
+ID = "STR_EMB_HERMITCAMPFIRE_NAME"   ;   Str = "Hermit Campfire"
+ID = "STR_EMB_HERMITCAMPFIRE_LR"   ;   Str = "Campfires supply hermits sight that makes their travels easier and safer"
+ID = "STR_EMB_HERMITCAMPFIRE_SR"   ;   Str = "Provides LOS and unleashes phosphorus ashes on destruction"
+
 // SPECIAL UTILITY STRUCTURES
 ID = "STR_BLD_SONICDISRUPTORARRAY_NAME"   ;   Str = "Sonic Disruptor Array"
 ID = "STR_BLD_SONICDISRUPTORARRAY_SR"   ;   Str = "S.D.A"
@@ -1265,6 +1269,7 @@ ID = "STR_TECH_DEFENSIVE_TACTICS_LR"   ;   Str = "Enable reinforcement field tha
 
 // ABSTRACT UNIT TYPES
 ID = "STR_HUD_UNIT_TYPE_HERO_PROTAGONIST"   ;   Str = "Hero Protagonist"
+ID = "STR_HUD_UNIT_TYPE_HERO_MAJOR"   ;   Str = "Major Heroes"
 ID = "STR_HUD_UNIT_TYPE_ABSTRACT_SERPENT"   ;   Str = "Serpentine Type"
 ID = "STR_HUD_UNIT_TYPE_ABSTRACT_WOODLAND"   ;   Str = "Woodland Type"
 ID = "STR_HUD_UNIT_TYPE_ABSTRACT_MYTHSOLDIER"   ;   Str = "Myth Soldier"
@@ -1333,6 +1338,9 @@ ID = "STR_ACTION_FIERYFLAMEATTACK"   ;   Str = "Fiery Flame Attack"
 ID = "STR_ACTION_SONICBLASTATTACK"   ;   Str = "Sonic Blast Attack"
 ID = "STR_ACTION_SONICBLASTATTACKFLYING"   ;   Str = "Sonic Blast Attack (Air)"
 ID = "STR_ABILITY_ABARDSTALE"   ;   Str = "A Bard's Tale"
+
+ID = "STR_ACTION_RANGED_BLOWSMG"   ;   Str = "Submachine Blowgun"
+ID = "STR_ACTION_RANGED_BLOWARMORPIERCING"   ;   Str = "Armor Piercing Blowgun"
 
 ID = "STR_ABILITY_BARRAGE_ATTACK"   ;   Str = "Barrage Attack"
 ID = "STR_ABILITY_FOCUS_SHOT_ATTACK"   ;   Str = "Focus Shot Attack"

@@ -5840,7 +5840,7 @@
 			</animinfo>
 		</animations>
 	</animxml>
-	<!-- chinese unit reworks demeter -->
+	<!-- chinese unit reworks -->
 	<animxml file="chinese\units\hero\pioneer\pioneer.xml">
 		<animations>
 			<animinfo mergeMode="add">
@@ -6016,7 +6016,40 @@
 			</animinfo>
 		</animations>
 	</animxml>
-
+	<animxml file="aztec\units\economic\caravan_aztec\caravan_aztec.xml">
+		<animations>
+			<animinfo mergeMod="add">
+				<name>Build</name>
+				<versioncount>1</versioncount>
+				<versions>
+					<version>
+						<file>aztec\units\economic\villager_aztec\anim\villager_aztec_male_build_a</file>
+						<duration>1.80000</duration>
+						<tags>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.99000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>Build</set>
+								</properties>
+							</tag>
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+			<animinfo mergeMod="add">
+				<name>Switch</name>
+				<versioncount>1</versioncount>
+				<versions>
+					<version>
+						<file>chinese\units\hero\ne_zha\anim\ne_zha_youth_switch_a</file>
+						<duration>1.66667</duration>
+					</version>
+				</versions>
+			</animinfo>
+		</animations>
+	</animxml>
 
 	<!-- greek unit reworks demeter -->
 	<animxml file="greek_demeter\units\archery\amazonarcher\amazonarcher.xml">

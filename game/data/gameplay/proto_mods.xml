@@ -9644,6 +9644,121 @@
 		<notcontain>AbstractFlyingUnit</notcontain>
 		<command row="3" column="2">Eject</command>
 	</unit>
+	<unit name="CaravanAztec">
+		<unitaitype>RangedCombative</unitaitype>
+		<unittype>Ranged</unittype>
+		<rechargetime>5.0000</rechargetime>
+				
+		<flag>AlwaysShowAbilities</flag>		
+		<flag>AbilitiesOnBothPages</flag>
+
+		<train row="0" column="5">HermitCampfire</train>
+		<tactics>mcmt_switch_ranged_ranged2.tactics</tactics>
+		<protoaction>
+			<name stringid="STR_EDT_TRADE">Trade</name>			
+			<type>Trade</type>
+		</protoaction>
+		<protoaction>
+			<name>RangedAttack1</name>
+			<rof>3.000000</rof>
+			<damage type="Pierce">36.00000</damage>
+			<damage type="Crush">1.00000</damage>
+			<damagebonus type="AbstractFlyingUnit">2.00000</damagebonus>
+			<maxrange>4.000000</maxrange>
+			<projectile>ProjectileIcarusBomb</projectile>
+			<rate type="Building">1.000000</rate>
+			<rate type="AbstractFlyingUnit">1.000000</rate>
+			<perfectaccuracy>1</perfectaccuracy>
+			<homingballistics>1.0</homingballistics>
+			<passthrough>1</passthrough>
+		</protoaction>
+		<protoaction>
+			<name>RangedAttack2</name>
+			<rof>1.000000</rof>
+			<damage type="Pierce">3.00000</damage>
+			<damagebonus type="HumanSoldier">2.00000</damagebonus>
+			<damagebonus type="AbstractVillager">3.00000</damagebonus>
+			<maxrange>8.000000</maxrange>
+			<projectile>ProjectileBlowDart</projectile>
+			<rate type="Unit">1.000000</rate>
+			<onhiteffect active="0" type="StatModify" duration="5.00000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractTitan"></target>
+				<modify type="ROF" applytype="Multiply" stack="">1.0200</modify>
+			</onhiteffect>
+		</protoaction>
+		<protoaction>
+			<name>Build</name>
+			<type>Build</type>
+			<maxrange>0.2</maxrange>
+			<anim>Build</anim>
+			<rate type="HermitCampfire">1.000000</rate>
+		</protoaction>
+		<protoaction>
+			<name>SwitchTactic</name>
+			<type>SwitchTactic</type>
+			<anim>Switch</anim>
+			<chargeaction>1</chargeaction>
+		</protoaction>
+	</unit>
+	<unit name="HermitCampfire">
+		<displaynameid>STR_EMB_HERMITCAMPFIRE_NAME</displaynameid>
+		<rollovertextid>STR_EMB_HERMITCAMPFIRE_LR</rollovertextid>
+		<shortrollovertextid>STR_EMB_HERMITCAMPFIRE_SR</shortrollovertextid>
+		<icon>resources\shared\static_color\technologies\signal_fires_icon.png</icon>
+		<animfile>shared\buildings\props\campfire\campfire.xml</animfile>
+		<soundsetfile>shared\sfx\buildings\granary.xml</soundsetfile>
+		<obstructionradiusx>1.0000</obstructionradiusx>
+		<obstructionradiusz>1.0000</obstructionradiusz>
+		<impacttype>Wood</impacttype>
+		<movementtype>land</movementtype>
+
+		<initialhitpoints>10.0000</initialhitpoints>
+		<maxhitpoints>10.0000</maxhitpoints>
+		
+		<buildpoints>40.0000</buildpoints>
+		<buildlimit>5</buildlimit>
+		<builderlimit>1</builderlimit>
+
+		<stealthdetectionradius>12.0000</stealthdetectionradius>
+		<los>15.0000</los>
+		<cost resourcetype="Wood">50.0000</cost>
+		<armor type="Hack" value="0.0500"></armor>
+		<armor type="Pierce" value="0.1000"></armor>
+		<armor type="Crush" value="0.0500"></armor>		
+
+		<killreward resourcetype="Wood">10.0</killreward>
+		<spawn type="dead" count="1" skipplacementcheck="">PhosphorusSmokeTrapAura</spawn>
+
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeBuildingsNotWalls</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>BuildingClass</unittype>
+		<unittype>Building</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeTartarianGateValidOverlapPlacement</unittype>
+		<unittype>LogicalTypeBuildingNotWonderOrTitan</unittype>
+
+		<flag>CollidesWithProjectiles</flag>
+		<flag>Immoveable</flag>
+		<flag>ObscuresUnits</flag>
+		<flag>NoIdleActions</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>Doppled</flag>
+		<flag>SelectWithObstruction</flag>
+		<flag>PaintTextureWhenPlacing</flag>
+		<flag>FlattenGround</flag>
+		<flag>DisplayRange</flag>
+		<flag>DynamicUpdate</flag>		
+		
+		<tactics>container.tactics</tactics>
+	</unit>
+
 	<unit name="Kataskopos">
 		<tactics>handattack.tactics</tactics>
 		<protoaction>
@@ -32823,6 +32938,46 @@
 		</protoaction>
 	</unit>
 
+	<!-- CUSTOM TRAPS -->
+	<unit name="PhosphorusSmokeTrapAura" orderhint="5">
+		<displaynameid>STR_VFX_SMOKE_TRAP_AURA_NAME</displaynameid>
+		<animfile>vfx\smoke\shinobi_smoke_bomb.xml</animfile>
+		<obstructionradiusx>3.0000</obstructionradiusx>
+		<obstructionradiusz>3.0000</obstructionradiusz>
+		<lifespan>6.0000</lifespan>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>Land</movementtype>
+		<los>15.0000</los>
+		<unittype>EmbellishmentClass</unittype>
+		<flag>HasContinuousParticles</flag>
+		<flag>NoHPBar</flag>
+		<flag>Immoveable</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>NonCollideable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSearchable</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NoIdleActions</flag>
+		<flag>NotDeathTracked</flag>
+		<flag>NonSolid</flag>
+		<flag>PlaceAnywhere</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>Doppled</flag>
+		<tactics>trap.tactics</tactics>
+		<protoaction>
+			<name>Invisibility</name>
+			<type>AreaStealth</type>
+			<persistent>1</persistent>
+			<maxrange>10</maxrange>
+			<rate type="TradeUnit">1.0</rate>
+		</protoaction>
+		<protoaction>
+			<name>AreaSpeedReduction</name>
+			<maxrange>8</maxrange>
+			<modifymultiplier>0.9</modifymultiplier>
+		</protoaction>
+	</unit>
 	<!-- GOD POWER SPAWNS -->
 
 	<!-- CUSTOM GOD POWER SPAWNS -->

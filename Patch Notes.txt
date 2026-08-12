@@ -1154,6 +1154,12 @@
         - ChargedHandAttack (TelpochcalliTraining): lifesteal, selfmodify damage
 - Naval:
     - FishingShipAztec: GatherBonus aura for other FishingShipAztec
+- Trade:
+    - CaravanAztec:
+        - HermitCampfire: los, tradeunit areainvisibility trap, areaslow trap
+        - SwitchTactics: Ranged, Ranged2
+        - Armor Piercing Blowgun: low rof, anti-building
+        - Submachine Blowgun: high rof, anti-unit
 
 * mythunit reworks
 - ObsidianButterfly:

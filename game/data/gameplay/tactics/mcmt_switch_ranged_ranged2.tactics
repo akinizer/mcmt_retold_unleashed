@@ -1,0 +1,28 @@
+<tactics>
+    <action>
+		<name stringid="STR_ACTION_RANGED_BLOWARMORPIERCING">RangedAttack1</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttack</anim>
+		<accuracy>0.8</accuracy>
+		<maxspread>5.0</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>99</trackrating>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_RANGED_BLOWSMG">RangedAttack2</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttack</anim>
+		<accuracy>0.8</accuracy>
+		<maxspread>5.0</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>99</trackrating>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+	</action>
+	<tactic>Ranged<abilityonly>1</abilityonly><action priority="100">RangedAttack1</action><attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype></tactic>
+    <tactic>Ranged2<abilityonly>1</abilityonly><action priority="100">RangedAttack2</action><attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype></tactic>
+</tactics>

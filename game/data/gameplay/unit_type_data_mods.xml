@@ -3,6 +3,10 @@
 		<unittype>HeroProtagonist</unittype>
 		<displaynameid>STR_HUD_UNIT_TYPE_HERO_PROTAGONIST</displaynameid>
 	</unittypeentry>
+    <unittypeentry mergeMode="add">
+		<unittype>MajorHero</unittype>
+		<displaynameid>STR_HUD_UNIT_TYPE_HERO_MAJOR</displaynameid>
+	</unittypeentry>
 	<!---->
     <unittypeentry mergeMode="add">
 		<unittype>AbstractSerpent</unittype>
