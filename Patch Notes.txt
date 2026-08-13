@@ -1136,6 +1136,11 @@
     - Tlacaelel: weapon model changed to sword
 - Heroes: 
     - TeixiptlaHuitz: handattack maximumrange+
+        - onhiteffect FireStorm
+    - TeixiptlaTezca:
+        - areadamage VFXCorruption
+    - TeixiptlaQuetz:
+        - charismaspeed VFXTailwind for heroes
     - WarriorPriest: paint brush weapon (iztaccihuatl_weapon model), ranged unit, infatrylineupgrade, archerlineupgrade
         - HandAttack: maximumrange increased to 2
         - RangedAttack: also targets nonflying units, minrange 4, divine damage, throw humansoldier

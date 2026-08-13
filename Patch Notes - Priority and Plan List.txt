@@ -5,8 +5,6 @@
 === MILITARY TECHS FOR UNITS ===
 Quetzalcoatl -> summon,transform -> QuetzalcoatlSnake
 
-PirateCyclops + ScarletMacaw
-
 === DISMOUNT TECHS
     * chinese soldier (tactical advance)
     - TerracottaRider: spawn TerracottaInfantry x1 -> new special unit
