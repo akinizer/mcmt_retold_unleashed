@@ -1657,15 +1657,61 @@
 		<unittype mergeMode="add">SiegeLineUpgraded</unittype>
 		<unittype mergeMode="add">InfantryLineUpgraded</unittype>
 	</unit>
+
+	<!-- Japanese Military Units -->
+
+	<unit name="Shinobi">
+		<auxrechargetime>20.0000</auxrechargetime>
+		<tactics>mcmt_shinobi.tactics</tactics>
+		<protoaction>
+			<name>HandAttack2</name>
+			<rof>2.000000</rof>
+			<damage type="Hack">12.000000</damage>
+			<damagebonus type="AbstractArcher">2.000000</damagebonus>
+			<damagebonus type="AbstractCavalry">2.500000</damagebonus>
+			<maxrange>0.500000</maxrange>
+			<targetlock>1</targetlock>
+		</protoaction>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.500000</rof>
+			<damage type="Pierce">8.000000</damage>
+			<damagebonus type="Hero">0.250000</damagebonus>
+			<minrange>4.000000</minrange>
+			<maxrange>16.000000</maxrange>
+			<projectile>ProjectileBlowDart</projectile>
+			<perfectaccuracy>1</perfectaccuracy>
+			<autoretarget>1</autoretarget>
+		</protoaction>
+		<protoaction>
+			<name>ChargedRangedAttack</name>
+			<rof>1.500000</rof>
+			<damage type="Pierce">12.000000</damage>
+			<damagebonus type="HumanSoldier">3.000000</damagebonus>
+			<maxrange>3.000000</maxrange>
+			<projectile>ProjectileBlowDart</projectile>
+			<numberprojectiles>4</numberprojectiles>
+			<maxspread>5.0</maxspread>
+			<volleymode>1</volleymode>
+			<spreadfactor>0.50</spreadfactor>
+			<perfectaccuracy>1</perfectaccuracy>
+			<autoretarget>1</autoretarget>
+		</protoaction>
+		<protoaction>
+			<name>BuildingAttack</name>
+			<rof>3.000000</rof>
+		</protoaction>
+	</unit>
 	
 	<!-- TODO
 	<unit name="YariSpearman"></unit>
 	
 	<unit name="Samurai"></unit> samurai sword anim, more hp, slower attack
-	<unit name="Shinobi"></unit>
+	
 	<unit name="NaginataRider"></unit> YariSpearman spawn
 	
 	-->
+	
 
     <!-- Japanese Naval Units-->
 
@@ -32092,6 +32138,43 @@
 			<throw>1</throw>
    		</protoaction>
   	</unit>	
+
+	<unit name="AreaDamageFirestorm">
+		<displaynameid>STR_VFX_NAPALM_CHARGE_NAME</displaynameid>
+		<animfile>vfx\fire\zhu_que_attack.xml</animfile>
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<lifespan>4.0000</lifespan>
+		<decay delay="0.1000" duration="0.1000"></decay>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>air</movementtype>
+		<los>5.0000</los>
+		<unittype>Unit</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NoIdleActions</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>area_damage.tactics</tactics>
+		<protoaction>
+			<name stringid="STR_VFX_NAPALM_CHARGE_NAME">AreaDamage</name>
+			<modifyamount>-20</modifyamount>
+			<modifydamagetype>Hack</modifydamagetype>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">0.250000</damagebonus>
+			<maxrange>4</maxrange>
+			<targetenemyincludenature>1</targetenemyincludenature>
+			<includeunbuilt>1</includeunbuilt>
+		</protoaction>
+	</unit>
 
 	<unit name="VFXSpawnSmoke" mergeMode="add">
 		<displaynameid>STR_VFX_DETONATORS_NAME</displaynameid>

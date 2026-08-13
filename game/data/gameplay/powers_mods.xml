@@ -1791,4 +1791,12 @@
 		<rolloverid>STR_UNIT_MAKINA_LR</rolloverid>
 		<icon>spc\player_color\units\kamina_icon.png</icon>
 	</power>
+	<power name="AbilityShinobiMultithrowAttack" type="UnitAction">
+		<displaynameid>STR_ABILITY_SHINOBI_MULTITHROW_ATTACK</displaynameid>
+		<rolloverid>STR_ABILITY_SHINOBI_MULTITHROW_ATTACK_LR</rolloverid>
+		<icon>japanese\static_color\abilities\iaijustu_ability_icon.png</icon>
+		<placement enemy="">Unit</placement>
+		<abstractplacementtargettype>Unit</abstractplacementtargettype>
+		<unitaction>ChargedRangedAttack</unitaction>
+	</power>
 </powersmod>

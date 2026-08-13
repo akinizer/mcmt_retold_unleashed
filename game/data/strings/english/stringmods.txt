@@ -1243,6 +1243,7 @@ ID = "STR_TECH_ELDRITCHSECTS_LR"   ;   Str = "Rituals that bring the awakening o
 ID = "STR_TECH_DETONATORS_NAME"   ;   Str = "Detonators"
 ID = "STR_TECH_DETONATORS_LR"   ;   Str = "Explosive breakthrough of the technology that can be used both offensively and defensively"
 ID = "STR_VFX_DETONATORS_NAME"   ;   Str = "Detonator Charge"
+ID = "STR_VFX_NAPALM_CHARGE_NAME"   ;   Str = "Napalm Charge"
 ID = "STR_VFX_DEVOTECONTAINERS_NAME"   ;   Str = "Temple Devote"
 ID = "STR_VFX_EVENINGSTARS_NAME"   ;   Str = "Evening Star Spawn"
 ID = "STR_VFX_HACKARMORBOOSTNEARALLYBUILDINGS_NAME"   ;   Str = "Hack Armor Boost Near Fortification"
@@ -1394,6 +1395,10 @@ ID = "STR_ABILITY_TAKEOFF_LR"   ;   Str = "The unit ascends to the skies taking 
 
 ID = "STR_ABILITY_LAND"   ;   Str = "Descend"
 ID = "STR_ABILITY_LAND_LR"   ;   Str = "The unit descends from skies to somewhere available and landable"
+
+ID = "STR_ABILITY_SHINOBI_MULTITHROW_ATTACK"   ;   Str = "Kunai Barrage"
+ID = "STR_ABILITY_SHINOBI_MULTITHROW_ATTACK_LR"   ;   Str = "Shinobi sends multiple kunais in close range"
+ID = "STR_ACTION_SLAYER_ATTACK"   ;   Str = "Slayer Attack"
 
 // COMMAND TECHS
 ID = "STR_BLD_FIREWALL_NAME"   ;   Str = "Fire Wall"

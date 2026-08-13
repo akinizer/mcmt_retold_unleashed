@@ -330,7 +330,7 @@
 	<Umibozu>
 		<ability>AbilityUmibozuAttack<chargetimeasrof>1</chargetimeasrof></ability>
 	</Umibozu>
-		<!--Japanese-HumanSoldier-->
+		<!--Japanese-Military-Hero-->
 	<OnnaMusha>
 		<ability>AbilityOni<tech>DeadlyRage</tech><auxchargetimeasrof>1</auxchargetimeasrof><castonself>true</castonself></ability>
 	</OnnaMusha>
@@ -340,6 +340,12 @@
 	<Shogun>
 		<ability>AbilityArkantos<auxchargetimeasrof>1</auxchargetimeasrof><castonself>1</castonself></ability>
 	</Shogun>	
+		<!--Japanese-Military-Infantry-->
+	<Shinobi>
+		<ability mergeMode="remove">AbilityShinobi<chargetimeasrof>1</chargetimeasrof><castonself>true</castonself></ability>
+		<ability>AbilityShinobi<auxchargetimeasrof>1</auxchargetimeasrof><castonself>true</castonself><noautocast>true</noautocast></ability>
+		<ability>AbilityShinobiMultithrowAttack<tech>ChampionDojoSoldiers</tech><chargetimeasrof>1</chargetimeasrof></ability>
+	</Shinobi>
 		<!--Japanese-Hero-Priest-->
 	<Onmyoji>
 		<ability>AbilityYasukoSolarShield<chargetimeasrof>1</chargetimeasrof><castonself>1</castonself></ability>

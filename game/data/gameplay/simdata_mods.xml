@@ -5781,6 +5781,110 @@
 		</animations>
 	</animxml>
 
+	<animxml file="japanese\units\ninja\shinobi\shinobi.xml">
+		<animations>
+			<animinfo>
+				<name>HandAttack</name>
+				<versioncount>2</versioncount>
+				<versions>
+					<version mergeMode="add">
+						<file>special\units\cheat\shinobi_wan_kenobi\anim\shinobi_wan_kenobi_attack_a</file>
+						<duration>1.00000</duration>
+						<tags>
+							<tag>
+								<type>Attack</type>
+								<position>0.35000</position>
+							</tag>
+							<tag>
+								<type>Attack</type>
+								<position>0.56000</position>
+							</tag>
+							<tag>
+								<type>Attack</type>
+								<position>0.71000</position>
+							</tag>
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+			<animinfo mergeMode="add">
+				<name>HandAttack2</name>
+				<versioncount>1</versioncount>
+				<versions>
+					<version>
+						<file>japanese\units\infantry\samurai\anim\samurai_specialattack_a</file>
+						<duration>1.80000</duration>
+						<tags>
+							<tag>
+								<type>Attack</type>
+								<position>0.72500</position>
+							</tag>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.70000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>SwooshSword</set>
+								</properties>
+							</tag>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.30000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>SamuraiChargedHandAttack</set>
+								</properties>
+							</tag>
+							<tag>
+								<type>particles</type>
+								<position>0.25000</position>
+								<properties>
+									<popcornfxname>units\samurai\samurai_charged_attack.pkfx</popcornfxname>
+									<bone>weapon</bone>
+									<movewithbone>1</movewithbone>
+									<stopwithanim>0</stopwithanim>
+									<adjustduration>1</adjustduration>
+								</properties>
+							</tag>
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+			<animinfo mergeMode="add">
+				<name>RangedAttack</name>
+				<versioncount>1</versioncount>
+				<versions>
+					<version>
+						<file>greek\units\hero\jason\anim\jason_attack_b</file>
+						<duration>2.00000</duration>
+						<tags>
+							<tag>
+								<type>Attack</type>
+								<position>0.35000</position>
+							</tag>
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+			<animinfo mergeMode="add">
+				<name>ChargedRangedAttack</name>
+				<versioncount>1</versioncount>
+				<versions>
+					<version>
+						<file>greek\units\hero\jason\anim\jason_attack_a</file>
+						<duration>2.00000</duration>
+						<tags>
+							<tag>
+								<type>Attack</type>
+								<position>0.35000</position>
+							</tag>
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+		</animations>
+	</animxml>
+
 	<!-- atlantean unit rework -->
 	<animxml file="atlantean\units\myth\nereid\nereid.xml">
 		<animations>

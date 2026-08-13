@@ -800,6 +800,17 @@
 - Daimyo: AbstractSamurai, InfantryLineUpgraded
 - Shogun: AbstractSamurai, InfantryLineUpgraded
     - AutoBoost / WarCry: duration, humansoldier damage+ 
+- Shinobi
+    - handattack: variations, unarmed, default melee
+    - rangedattack (MediumDojoSoldiers): kunai throw, effective in range, counter-humansoldier
+    - handattack2 (HeavyDojoSoldiers): counter-humansoldier, bonusdamage cavalry, archer
+    - chargedrangedattack (ChampionDojoSoldiers): kunai multi-throw, anti-unit, medium range, damagebonus vsw humansoldier
+    - torchattack:
+        - SeasideInfiltrators: onhiteffect Napalm Charges
+    - ninjutsu: manual, auxcharged
+    - smokebomb: manual, auxcharged
+    
+    
 
 * Worker
 - VillagerJapanese: Temple removed from build accel

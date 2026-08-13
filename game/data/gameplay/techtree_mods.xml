@@ -10520,6 +10520,26 @@
         <target type="ProtoUnit">ZhuQueLanded</target></effect>
 		</effects>
 	</tech>
+  <!-- Japanese Techs - Military -->
+  <tech name="MediumDojoSoldiers">
+    <effects>
+      <effect type="Data" action="RangedAttack" amount="1.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Shinobi</target></effect>
+    </effects>
+  </tech>
+  <tech name="HeavyDojoSoldiers">
+    <effects>
+      <effect type="Data" action="HandAttack2" amount="1.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Shinobi</target></effect>
+    </effects>
+  </tech>
+  <tech name="ChampionDojoSoldiers">
+    <effects>
+      <effect type="Data" action="ChargedRangedAttack" amount="1.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Shinobi</target></effect>
+    </effects>
+  </tech>
+
   <!-- Japanese Techs - Military -  Major Gods -->
   <tech name="Kagura">
 		<effects>
@@ -10889,6 +10909,9 @@
         <target type="ProtoUnit">AbstractArcher</target></effect>
       <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DirectProjectile" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">AbstractArcher</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Hit" proto="AreaDamageFirestorm" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Shinobi</target></effect>	
 		</effects>
 	</tech>
   <tech name="Onmyodo">

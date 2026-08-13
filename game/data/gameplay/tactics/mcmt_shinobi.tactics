@@ -1,0 +1,99 @@
+<tactics>
+	<action>
+		<name stringid="STR_ACTION_HAND">HandAttack</name>
+		<type>Attack</type>
+		<rate type="All">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<forceareaattacktarget>1</forceareaattacktarget>
+		<anim>HandAttack</anim>
+		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+		<impacteffect>effects\impacts\hack</impacteffect>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_SLAYER_ATTACK">HandAttack2</name>
+		<type>Attack</type>
+		<rate type="HumanSoldier">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<forceareaattacktarget>1</forceareaattacktarget>
+		<anim>HandAttack2</anim>
+		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+		<impacteffect>effects\impacts\hack</impacteffect>
+        <active>0</active>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_BOOST">AutoBoost</name>
+		<type>AutoBoost</type>
+		<rate type="Unit">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<anim>SelfBoost</anim>
+        <auxchargeaction>1</auxchargeaction>
+		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+		<impacteffect>effects\impacts\hack</impacteffect>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_SMOKE_BOMB">SmokeBomb</name>
+		<type>AutoBoost</type>
+		<rate type="Unit">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<active>0</active>
+		<anim>SmokeBomb</anim>
+		<auxchargeaction>1</auxchargeaction>
+		<impacteffect>effects\impacts\hack</impacteffect>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_BLD_ATK">BuildingAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>BuildingAttack</anim>
+		<accuracy>0.8</accuracy>
+		<maxspread>5.0</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>1.0</trackrating>
+		<impacteffect>effects\impacts\crush_medium</impacteffect>
+		<rate type="Building">1.0</rate>
+	</action>
+    <action>
+		<name stringid="STR_ACTION_RANGED">RangedAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttack</anim>
+		<accuracy>0.8</accuracy>
+		<maxspread>5.0</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>1.0</trackrating>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+		<rate type="Unit">1.0</rate>
+        <active>0</active>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_CHARGE_RANGED">ChargedRangedAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>ChargedRangedAttack</anim>
+		<accuracy>1.0</accuracy>
+		<maxspread>5.0</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>99.0</trackrating>
+		<chargeaction>1</chargeaction>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+		<rate type="Unit">1.0</rate>
+        <active>0</active>
+	</action>
+	<tactic>Default
+        <action priority="100">BuildingAttack</action>
+        <action priority="90">RangedAttack</action>
+        <action priority="80">ChargedRangedAttack</action>
+        <action priority="70">HandAttack2</action>
+        <action priority="60">HandAttack</action>
+        <action priority="50">AutoBoost</action>
+        <action priority="40">SmokeBomb</action>
+        <attacktype>LogicalTypeHandUnitsAttack</attacktype><autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype>
+    </tactic>
+</tactics>
