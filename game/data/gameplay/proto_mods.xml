@@ -3058,6 +3058,7 @@
 				<target attacktype="Unit"></target>
 				<target ignoretype="AbstractSiegeWeapon"></target>
 			</onhiteffect>
+			<active>0</active>
 		</protoaction>
 		<protoaction>
 			<name>MightyRoar</name>
