@@ -5309,8 +5309,6 @@
         warship - wuzu javelineer raft      
         
         <unit name="WhiteHorseKnight" mergeMode="add"></unit>
-	<unit name="QingQiKnight" mergeMode="add"></unit>
-	<unit name="GongQiKnight" mergeMode="add"></unit>
       -->
 			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="GeHalberdier" relativity="Assign">
         <target type="ProtoUnit">WhiteHorseCavalry</target></effect>
@@ -7884,8 +7882,21 @@
         <target type="ProtoUnit">AbstractInfernal</target></effect>
       <effect type="Data" amount="1.00" subtype="OnHitEffectAttachBone" action="HandAttack" effecttype="Attach" targettype="Unit" attachbone="spine" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">AbstractInfernal</target></effect>
+
+      <effect type="Data" amount="1.60" subtype="AdditionalScale" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Chimera</target></effect>
+      <effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent" mergeMode="add">
+        <target type="ProtoUnit">Chimera</target></effect>      
+      <effect type="Data" action="HandAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Chimera</target></effect>
     </effects>
   </tech>
+  <tech name="ShaftsOfPlague">
+      <effects>        
+        <effect type="Data" action="ChargedRangedSpitAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Chimera</target></effect>
+      </effects>
+    </tech>
   <tech name="ForgeOfOlympus">
     <effects>
       <effect type="Data" amount="2.0" subtype="ResearchRate" relativity="BasePercent" mergeMode="remove">

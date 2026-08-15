@@ -7,8 +7,6 @@ Quetzalcoatl -> summon,transform -> QuetzalcoatlSnake
 
 === DISMOUNT TECHS
     * chinese soldier (tactical advance)
-    * greek soldier (footsoldier superiority)
-    - Kataskopos: spawn VillagerGreek x1 / barbarian
 
 === MODEL UPDATE ===
 RaftEgyptianArcher

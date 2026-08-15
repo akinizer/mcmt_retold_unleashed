@@ -1,0 +1,49 @@
+<tactics>
+	<action>
+		<name stringid="STR_ACTION_HAND">HandAttack</name>
+		<type>Attack</type>
+		<rate type="All">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<forceareaattacktarget>1</forceareaattacktarget>
+		<anim>HandAttack</anim>
+		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+		<impacteffect>effects\impacts\hack</impacteffect>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_CHARGE_RANGED">ChargedRangedAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>ChargedRangedAttack</anim>
+		<accuracy>1.0</accuracy>
+		<perfectaccuracy>1.0</perfectaccuracy>
+		<instantballistics>1.0</instantballistics>
+		<maxspread>0</maxspread>
+		<trackrating>99.0</trackrating>
+		<chargeaction>1</chargeaction>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+		<rate type="Unit">1.0</rate>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_CHARGE_RANGED">ChargedRangedSpitAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>Launch</anim>
+		<accuracy>0.8</accuracy>
+		<maxspread>5.0</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>1.0</trackrating>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+		<auxchargeaction>1</auxchargeaction>
+		<rate type="All">1.0</rate>
+		<rate type="Hero">0.0</rate>
+	</action>
+	<tactic>Default
+        <action priority="100">ChargedRangedAttack</action>
+        <action priority="90">ChargedRangedSpitAttack</action>
+        <action priority="80">HandAttack</action>
+        <attacktype>LogicalTypeHandUnitsAttack</attacktype><autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype>
+	</tactic>
+</tactics>

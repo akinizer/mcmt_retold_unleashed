@@ -160,6 +160,10 @@
         - Minotaur+:
             - BullRush: Dash Attack, throw units, anti-building, anti-army
             - Gore (LabyrnthOfMinos): changed to auxchargedattack
+        - Chimera:
+            - ChargedRangedSpitAttack (ShaftsOfPlague): non-hero targeting, vfxpoison non-siege, wadjetspit
+            - ChargedRangedAttack (FlamesOfTyphon): dot+
+            - FlamesOfTyphon: visualscale+, hackarmor+, handattach range
         - PaleRider:
             - Hades cavalry, counter-hero, AbstractMythSoldier
             - Weak vs MythUnit
@@ -193,7 +197,7 @@
     - Atalanta+, Hippolyta+, Theseus+, Polyphemus+
     - Myrmidon+, 
     - TheArgo+
-        - RangedAttackJavelin (HeavyWarships)
+        - RangedAttackJavelin (HeavyWarships): close range crushing projectile attack
         - LastStand (ChampionWarships)
 - military units:
     - popcosts: humansoldier 1 or 2
@@ -330,10 +334,10 @@
             - amphibious, archerlineupgrade, mythsoldier
             - land tactics:
                 - BeamAttack: distance, anti-structure, continous, projectilelazerufo
-                - HandAttack: close range, vfxbleed
+                - HandAttack: close range, vfxbleed, unused HandAttack anim
             - water tactics:
                 - maxvelocity+
-                - HandAttackWater: anti-naval
+                - HandAttackWater: anti-naval, unused HandAttack anim
                 - ChargedHandAttackWater (Crunch Attack): hack & crush damage
         - Mummy:
             - OnDeath: MummyFallen, HandAttack
@@ -621,7 +625,7 @@
 - greek
     - SylvanLore: effect expanded to AbstractWoodland
     - AegisShield: reflects handattack, bonusdamage vs MythUnit, MythResistant
-    - FlamesOfTyphon: affects on AbstractInfernal, AbstractChthonic, Chimera ChargedRangedAttack dot+
+    - FlamesOfTyphon: affects on AbstractInfernal, AbstractChthonic
     - BeastSlayer: affects on AbstractBeast and AbstractBeastFolk
     - PhobosSpearOfPanic: bonusdamage vs hero, also affects Peltast
     - EnyosBowOfHorror: affects on Gastraphetoros, AmazonArcher, bonusdamage vs hero

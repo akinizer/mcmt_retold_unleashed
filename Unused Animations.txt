@@ -1,0 +1,19 @@
+chimera - claw attack
+egyptian\units\myth\sphinx\anim\sphinx_upgrade2_attack_a
+egyptian\units\myth\sphinx\anim\sphinx_upgrade2_attack_b
+greek\units\myth\nemean_lion\anim\nemean_lion_attack_b
+greek\units\myth\nemean_lion\anim\nemean_lion_attack_c
+chimera - roar
+greek\units\myth\nemean_lion\anim\nemean_lion_roarattack_a
+
+kraken:
+norse\units\myth\kraken\anim\kraken_whirlwindattack_a
+
+egyptian\units\myth\petsuchos\anim\petsuchos_attack_a
+
+chinese\units\myth\qi_lin\anim\qi_lin_kick_a
+
+aztec\units\myth\tlacanexquimilli\anim\tlacanexquimilli_special_attack_a
+
+atlantean\units\myth\nereid\anim\nereid_unit_whirlwindattack_a
+atlantean\units\myth\nereid\anim\nereid_shark_whirlwindattack_a

@@ -17,7 +17,7 @@
 		<attackaction>1</attackaction>
 		<handlogic>1</handlogic>
 		<forceareaattacktarget>1</forceareaattacktarget>
-		<anim>Charging</anim>
+		<anim>HandAttack</anim>
 		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
 		<impacteffect>effects\impacts\hack</impacteffect>
 	</action>
@@ -28,7 +28,7 @@
 		<attackaction>1</attackaction>
 		<handlogic>1</handlogic>
 		<forceareaattacktarget>1</forceareaattacktarget>
-		<anim>Charging</anim>
+		<anim>HandAttack</anim>
 		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
 		<impacteffect>effects\impacts\hack</impacteffect>
 	</action>
@@ -39,7 +39,7 @@
 		<attackaction>1</attackaction>
 		<handlogic>1</handlogic>
 		<forceareaattacktarget>1</forceareaattacktarget>
-		<anim>Charging</anim>
+		<anim>HandAttack</anim>
 		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
 		<impacteffect>effects\impacts\hack</impacteffect>
 		<chargeaction>1</chargeaction>

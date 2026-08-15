@@ -6186,7 +6186,7 @@
 			</animinfo>
 		</animations>
 	</animxml>
-	<!-- greek unit reworks -->
+	<!-- greek myth unit reworks -->
 	<animxml file="greek\units\myth\pegasus\pegasus.xml">
 		<animations>
 			<animinfo mergeMode="add">
@@ -6307,7 +6307,104 @@
 			</animinfo>
 		</animations>
 	</animxml>
+	<animxml file="greek\units\myth\manticore\manticore.xml">		
+		<animations>
+			<animinfo mergeMode="add">
+				<name>HandAttack</name>
+				<versioncount>2</versioncount>
+				<versions>
+					<version>
+						<file>chinese\units\myth\qiong_qi\anim\qiong_qi_attack_b</file>
+						<duration>1.33333</duration>
+						<tags>
+							<tag>
+								<type>Attack</type>
+								<position>0.76000</position>
+							</tag>
+							<tag>
+								<type>particles</type>
+								<position>0.20000</position>
+								<properties>
+									<popcornfxname>objects\qiongqi\qiongqi_attack_trail.pkfx</popcornfxname>
+									<bone>vfx_hand_right</bone>
+									<movewithbone>1</movewithbone>
+									<stopwithanim>1</stopwithanim>
+									<adjustduration>1</adjustduration>
+								</properties>
+							</tag>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.56000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>QiongQiAttackB</set>
+								</properties>
+							</tag>
+						</tags>
+					</version>
+					<version>
+						<file>chinese\units\myth\qiong_qi\anim\qiong_qi_attack_c</file>
+						<duration>1.33333</duration>
+						<tags>
+							<tag>
+								<type>Attack</type>
+								<position>0.76000</position>
+							</tag>
+							<tag>
+								<type>particles</type>
+								<position>0.20000</position>
+								<properties>
+									<popcornfxname>objects\qiongqi\qiongqi_attack_trail.pkfx</popcornfxname>
+									<bone>vfx_hand_left</bone>
+									<movewithbone>1</movewithbone>
+									<stopwithanim>1</stopwithanim>
+									<adjustduration>1</adjustduration>
+								</properties>
+							</tag>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.56000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>QiongQiAttackC</set>
+								</properties>
+							</tag>
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+		</animations>
+	</animxml>
+	<animxml file="greek\units\myth\chimera\chimera.xml">
+		<animations>
+			<animinfo mergeMode="add">
+				<name>Launch</name>
+				<versioncount>1</versioncount>
+				<versions>
+					<version>
+						<file>chinese\units\myth\xuan_wu\anim\xuan_wu_launch_a</file>
+						<duration>1.26667</duration>
+						<tags>
+							<tag>
+								<type>Attack</type>
+								<position>0.37000</position>
+							</tag>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.00000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>XuanWuLaunch</set>
+								</properties>
+							</tag>
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+		</animations>
+	</animxml>
 
+	<!-- greek hero reworks -->
 	<animxml file="greek\units\hero\achilles\achilles.xml">
 		<animations>
 			<animinfo mergeMode="add">
@@ -6390,74 +6487,6 @@
 								<properties>
 									<checkvisible>1</checkvisible>
 									<set>SwooshSword</set>
-								</properties>
-							</tag>
-						</tags>
-					</version>
-				</versions>
-			</animinfo>
-		</animations>
-	</animxml>
-	<animxml file="greek\units\myth\manticore\manticore.xml">		
-		<animations>
-			<animinfo mergeMode="add">
-				<name>HandAttack</name>
-				<versioncount>2</versioncount>
-				<versions>
-					<version>
-						<file>chinese\units\myth\qiong_qi\anim\qiong_qi_attack_b</file>
-						<duration>1.33333</duration>
-						<tags>
-							<tag>
-								<type>Attack</type>
-								<position>0.76000</position>
-							</tag>
-							<tag>
-								<type>particles</type>
-								<position>0.20000</position>
-								<properties>
-									<popcornfxname>objects\qiongqi\qiongqi_attack_trail.pkfx</popcornfxname>
-									<bone>vfx_hand_right</bone>
-									<movewithbone>1</movewithbone>
-									<stopwithanim>1</stopwithanim>
-									<adjustduration>1</adjustduration>
-								</properties>
-							</tag>
-							<tag>
-								<type>SpecificSoundSet</type>
-								<position>0.56000</position>
-								<properties>
-									<checkvisible>1</checkvisible>
-									<set>QiongQiAttackB</set>
-								</properties>
-							</tag>
-						</tags>
-					</version>
-					<version>
-						<file>chinese\units\myth\qiong_qi\anim\qiong_qi_attack_c</file>
-						<duration>1.33333</duration>
-						<tags>
-							<tag>
-								<type>Attack</type>
-								<position>0.76000</position>
-							</tag>
-							<tag>
-								<type>particles</type>
-								<position>0.20000</position>
-								<properties>
-									<popcornfxname>objects\qiongqi\qiongqi_attack_trail.pkfx</popcornfxname>
-									<bone>vfx_hand_left</bone>
-									<movewithbone>1</movewithbone>
-									<stopwithanim>1</stopwithanim>
-									<adjustduration>1</adjustduration>
-								</properties>
-							</tag>
-							<tag>
-								<type>SpecificSoundSet</type>
-								<position>0.56000</position>
-								<properties>
-									<checkvisible>1</checkvisible>
-									<set>QiongQiAttackC</set>
 								</properties>
 							</tag>
 						</tags>
@@ -7859,6 +7888,60 @@
 			</animinfo>
 		</animations>
 	 </animxml>
+
+	<!-- Egyptian Myth Units -->
+	<animxml file="egyptian\units\myth\petsuchos\petsuchos.xml">
+		<animations>
+			<animinfo mergeMode="add">
+				<name>HandAttack</name>
+				<versioncount>1</versioncount>
+				<versions>
+					<version>
+						<file>egyptian\units\myth\petsuchos\anim\petsuchos_attack_a</file>
+						<duration>2.00000</duration>
+						<tags>
+							<tag>
+								<type>Attack</type>
+								<position>0.50000</position>
+							</tag>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.47000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>PetsuchosAttack</set>
+								</properties>
+							</tag>
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+			<animinfo mergeMode="add">
+				<name>RangedAttack</name>
+				<versioncount>1</versioncount>
+				<versions>
+					<version>
+						<file>egyptian\units\myth\petsuchos\anim\petsuchos_charging_a</file>
+						<duration>2.00000</duration>
+						<tags>
+							<tag>
+								<type>Attack</type>
+								<position>0.50000</position>
+							</tag>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.47000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>PetsuchosAttack</set>
+								</properties>
+							</tag>
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+		</animations>
+	</animxml>
 
 	<!-- Egyptian Special Units -->
 
