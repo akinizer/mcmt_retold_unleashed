@@ -813,6 +813,23 @@ ID = "STR_UNIT_TEMPLAR_NAME"   ;   Str = "Templar (Hero Knight)"
 ID = "STR_UNIT_TEMPLAR_SR"   ;   Str = "Elite Knights of Knight Order"
 ID = "STR_UNIT_TEMPLAR_LR"   ;   Str = "Elite Infantries that train in Temple of Solaris and form army to spread wisdom by any means necessary. Effective against Economic Units and Healers"
 
+ID = "STR_UNIT_BARBARIAN_NAME"   ;   Str = "Barbarian"
+ID = "STR_UNIT_BARBARIAN_SR"   ;   Str = "Dismounted Greek Scout"
+ID = "STR_UNIT_BARBARIAN_LR"   ;   Str = "Kataskopos gets on two feet to deal with whom taken down his horse"
+
+ID = "STR_UNIT_HETAIROS_KNIGHT_NAME"   ;   Str = "Hetairos (Knight)"
+ID = "STR_UNIT_HETAIROS_KNIGHT_SR"   ;   Str = "Dismounted Greek Elite Infantry"
+ID = "STR_UNIT_HETAIROS_KNIGHT_LR"   ;   Str = "Dismounted Greek Elite Infantry. After losing the loyal horse and armaments, fists unleash a blazing willpower"
+
+ID = "STR_UNIT_PRODROMOS_KNIGHT_NAME"   ;   Str = "Prodromos (Knight)"
+ID = "STR_UNIT_PRODROMOS_KNIGHT_SR"   ;   Str = "Dismounted Greek Infantry"
+ID = "STR_UNIT_PRODROMOS_KNIGHT_LR"   ;   Str = "Dismounted Greek Infantry"
+
+ID = "STR_UNIT_HIPPEUS_KNIGHT_NAME"   ;   Str = "Shining Knight"
+ID = "STR_UNIT_HIPPEUS_KNIGHT_SR"   ;   Str = "White Knight in a Shining Armor"
+ID = "STR_UNIT_HIPPEUS_KNIGHT_LR"   ;   Str = "After abandoning the loyal companion, the rest of battle leaves a winning a heart"
+
+// GREEK SPECIAL TECHS
 ID = "STR_TECH_TEMPLEOFSOLARIS_NAME"   ;   Str = "Temple of Solaris"
 ID = "STR_TECH_TEMPLEOFSOLARIS_LR"   ;   Str = "Beacon of the Knight Order that praises the sun"
 
@@ -1337,6 +1354,8 @@ ID = "STR_ACTION_DISTANCINGATTACK"   ;   Str = "Distancing Attack"
 ID = "STR_ACTION_AXESWINGATTACK"   ;   Str = "Axe Swing Attack"
 
 ID = "STR_ACTION_FIERYFLAMEATTACK"   ;   Str = "Fiery Flame Attack"
+
+ID = "STR_ACTION_JAVELIN_ATTACK"   ;   Str = "Javelin Attack"
 
 ID = "STR_ACTION_SONICBLASTATTACK"   ;   Str = "Sonic Blast Attack"
 ID = "STR_ACTION_SONICBLASTATTACKFLYING"   ;   Str = "Sonic Blast Attack (Air)"

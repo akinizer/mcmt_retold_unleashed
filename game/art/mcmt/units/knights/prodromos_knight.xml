@@ -1,0 +1,12 @@
+<animfile validation="strict">
+	<attachment>Helmet<include>greek\units\cavalry\prodromos\prodromos_helm.xml</include></attachment>
+	<attachment>Weapon<include>greek\units\attachments\spear\spear_g_cavalry.xml</include></attachment>
+	<attachment>Shield<include>greek\units\attachments\shield\shield_g_c.xml</include></attachment>
+	<component>ModelComp<logic type="Tech"><none><assetreference type="TMModel"><file>greek\units\infantry\hypaspist\hypaspist_iron</file><materialvariant index="0"></materialvariant></assetreference></none><mediumcavalry><assetreference type="TMModel"><file>greek\units\infantry\hypaspist\hypaspist_bronze</file><materialvariant index="1"></materialvariant></assetreference></mediumcavalry><heavycavalry><assetreference type="TMModel"><file>greek\units\infantry\hypaspist\hypaspist_silver</file><materialvariant index="2"></materialvariant></assetreference></heavycavalry><championcavalry><assetreference type="TMModel"><file>greek\units\infantry\hypaspist\hypaspist_gold</file><materialvariant index="3"></materialvariant></assetreference></championcavalry></logic><attach name="Helmet" attachpoint="helmet"></attach><attach name="Weapon" attachpoint="weapon"></attach><attach name="Shield" attachpoint="shield"></attach></component>
+	<anim>HandAttack<assetreference type="TMAnimation"><file>greek\units\infantry\hypaspist\anim\hypaspist_attack_a</file><tag type="Attack">0.5</tag></assetreference><assetreference type="TMAnimation"><file>greek\units\infantry\hypaspist\anim\hypaspist_attack_b</file><tag type="Attack">0.5</tag></assetreference><component>ModelComp</component></anim>
+	<anim>Bored<assetreference type="TMAnimation"><file>greek\units\infantry\hypaspist\anim\hypaspist_bored_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Death<assetreference type="TMAnimation"><file>greek\units\infantry\hypaspist\anim\hypaspist_death_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Idle<assetreference type="TMAnimation"><file>greek\units\infantry\hypaspist\anim\hypaspist_idle_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Walk<assetreference type="TMAnimation"><file>greek\units\infantry\hypaspist\anim\hypaspist_walk_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Flail<assetreference type="TMAnimation"><file>greek\units\infantry\hypaspist\anim\hypaspist_flail_a</file></assetreference><component>ModelComp</component></anim>
+</animfile>

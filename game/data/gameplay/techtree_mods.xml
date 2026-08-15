@@ -1,4 +1,67 @@
 <techtreemods>
+<!--
+  <tech name="MCMT_DEBUGS" mergeMode="add">
+      <status>ACTIVE</status>
+      <delay>0.5000</delay>
+      <flag>Volatile</flag>
+      <flag>Persistent</flag>
+      <flag>HideFromDialogs</flag>
+      <effects> 
+         DEBUGGER Unit Testing :D
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+          <target type="ProtoUnit">ArachneLeaperSuspender</target></effect>
+        <effect type="CreateUnit" unit="ArachneLeaperSuspender" generator="TownCenter">
+          <pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+            <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>       
+
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+          <target type="ProtoUnit">ArachneLeaperVenomous</target></effect>
+        <effect type="CreateUnit" unit="ArachneLeaperVenomous" generator="TownCenter">
+          <pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+            <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>       
+
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+          <target type="ProtoUnit">ArachneGolem</target></effect>
+        <effect type="CreateUnit" unit="ArachneGolem" generator="TownCenter">
+          <pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+            <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>       
+        
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+          <target type="ProtoUnit">ArachneLeaperSuspender</target></effect>
+        <effect type="CreateUnit" unit="ArachneLeaperSuspender" generator="TownCenter">
+          <pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+            <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
+    
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+          <target type="ProtoUnit">Barbarian</target></effect>
+        <effect type="CreateUnit" unit="Barbarian" generator="TownCenter">
+          <pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+            <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
+
+           <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+          <target type="ProtoUnit">ProdromosKnight</target></effect>
+        <effect type="CreateUnit" unit="ProdromosKnight" generator="TownCenter">
+          <pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+            <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
+
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+          <target type="ProtoUnit">HippeusKnight</target></effect>
+        <effect type="CreateUnit" unit="HippeusKnight" generator="TownCenter">
+          <pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+            <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
+
+     
+
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+          <target type="ProtoUnit">HetairosKnight</target></effect>
+        <effect type="CreateUnit" unit="HetairosKnight" generator="TownCenter">
+          <pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+            <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
+      </effects>
+    </tech>  -->
+
+    <!-- =========================================== UNIT TESTING END =========================================== -->
+
     <!-- CIVILIZATION BLESSINGS: Base stats and Accels, Special Techs -->
     <tech name="ArchaicAgeAtlantean">
       <effects>
@@ -2469,121 +2532,101 @@
     <tech name="MCMT_Researches" mergeMode="add">
       <status>UNOBTAINABLE</status>
       <effects>
-        <!-- Unit Testing :D
-            <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
-              <target type="ProtoUnit">ArachneLeaperSuspender</target></effect>
-            <effect type="CreateUnit" unit="ArachneLeaperSuspender" generator="TownCenter">
-              <pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
-                <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>       
+        <!--Founders-->            
+        <effect type="TechStatus" status="obtainable">MCMT_SpecialService</effect>       
+        <!--Structure Improvements-->
+        <effect type="TechStatus" status="obtainable">MCMT_ArchitectsOfMarley</effect>		
+        <effect type="TechStatus" status="obtainable">MCMT_AdvancedFortifications_I</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_AdvancedFortifications_II</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_AdvancedFortifications_III</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_OracleWatchers</effect>            
+        <!--Kingdom Tech: Encampments-->
+        <effect type="TechStatus" status="obtainable">MCMT_AmazonTraining</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_AmazonTraining_I</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_AmazonTraining_II</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_AmazonTraining_III</effect>
 
-            <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
-              <target type="ProtoUnit">ArachneLeaperVenomous</target></effect>
-            <effect type="CreateUnit" unit="ArachneLeaperVenomous" generator="TownCenter">
-              <pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
-                <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>       
+        <effect type="TechStatus" status="obtainable">MCMT_ElvenTraining</effect>            
+        <effect type="TechStatus" status="obtainable">MCMT_ElvenTraining_I</effect>            
+        <effect type="TechStatus" status="obtainable">MCMT_ElvenTraining_II</effect>            
+        <effect type="TechStatus" status="obtainable">MCMT_ElvenTraining_III</effect>    
+        
+        <effect type="TechStatus" status="obtainable">MCMT_DivineNatureSpirits</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_DivineNatureSpirits_I</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_DivineNatureSpirits_II</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_DivineNatureSpirits_III</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_NymphMender</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_NymphCharmer</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_NymphOracle</effect>
 
-            <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
-              <target type="ProtoUnit">ArachneGolem</target></effect>
-            <effect type="CreateUnit" unit="ArachneGolem" generator="TownCenter">
-              <pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
-                <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>       
-        -->
-              
-            <!--Founders-->            
-            <effect type="TechStatus" status="obtainable">MCMT_SpecialService</effect>       
-          	<!--Structure Improvements-->
-            <effect type="TechStatus" status="obtainable">MCMT_ArchitectsOfMarley</effect>		
-            <effect type="TechStatus" status="obtainable">MCMT_AdvancedFortifications_I</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_AdvancedFortifications_II</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_AdvancedFortifications_III</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_OracleWatchers</effect>            
-            <!--Kingdom Tech: Encampments-->
-            <effect type="TechStatus" status="obtainable">MCMT_AmazonTraining</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_AmazonTraining_I</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_AmazonTraining_II</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_AmazonTraining_III</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_NubianTraining</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_NubianTraining_I</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_NubianTraining_II</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_NubianTraining_III</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_KingdomGuardTraining_I</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_KingdomGuardTraining_II</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_KingdomGuardTraining_III</effect>
 
-            <effect type="TechStatus" status="obtainable">MCMT_ElvenTraining</effect>            
-            <effect type="TechStatus" status="obtainable">MCMT_ElvenTraining_I</effect>            
-            <effect type="TechStatus" status="obtainable">MCMT_ElvenTraining_II</effect>            
-            <effect type="TechStatus" status="obtainable">MCMT_ElvenTraining_III</effect>    
-            
-            <effect type="TechStatus" status="obtainable">MCMT_DivineNatureSpirits</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_DivineNatureSpirits_I</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_DivineNatureSpirits_II</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_DivineNatureSpirits_III</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_NymphMender</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_NymphCharmer</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_NymphOracle</effect>
-
-            <effect type="TechStatus" status="obtainable">MCMT_NubianTraining</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_NubianTraining_I</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_NubianTraining_II</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_NubianTraining_III</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_KingdomGuardTraining_I</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_KingdomGuardTraining_II</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_KingdomGuardTraining_III</effect>
-
-            <effect type="TechStatus" status="obtainable">MCMT_ArtilleryTraining</effect>   
-            <effect type="TechStatus" status="obtainable">MCMT_LevyTerracottaSoldiers</effect>   
-            <effect type="TechStatus" status="obtainable">MCMT_ConscriptTerracottaSoldiers</effect>   
-            <effect type="TechStatus" status="obtainable">MCMT_WarriorTribe</effect>           
-            <!--TechBuilding FutureTech-->
-            <effect type="TechStatus" status="obtainable">MCMT_DivineArmaments</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_NanofiberPlatings</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_BowOfOrion</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_Anthrax</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_PhobosSpearOfPanic</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_DeimosSwordOfDread</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_EnyosBowOfHorror</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_Mjolnir</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_AegisShield</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_Stimulants</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_Absorbants</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_Compensations</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_MuscleTraining</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_VibrantLand</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_MonstrousRage</effect>
-            
-            <effect type="TechStatus" status="obtainable">MCMT_TowerOfBabel</effect>			
-            <effect type="TechStatus" status="obtainable">MCMT_MithrilArmaments</effect>			
-            <effect type="TechStatus" status="obtainable">MCMT_TurretInstallation</effect>			
-            <effect type="TechStatus" status="obtainable">MCMT_DivineProtection</effect>	
-            <effect type="TechStatus" status="obtainable">MCMT_AssistedTradeNetworks</effect>	
-            <!--Bastion FutureTech-->
-            <effect type="TechStatus" status="obtainable">ChampionArms</effect>			
-            <effect type="TechStatus" status="obtainable">ChampionHooves</effect>			
-            <effect type="TechStatus" status="obtainable">ChampionRangers</effect>			
-            <effect type="TechStatus" status="obtainable">ChampionEngines</effect>			
-            <!--SVA Techs-->
-            <effect type="TechStatus" status="obtainable">MCMT_Explosives</effect>
-            <effect type="TechStatus" status="obtainable">NavalDefensiveSystems</effect>
-            
-            <effect type="TechStatus" status="obtainable">Nanomachines</effect>			
-            <effect type="TechStatus" status="obtainable">MCMT_SVA_ComfortableFireports</effect>			
-            <effect type="TechStatus" status="obtainable">MCMT_SVA_EliteFireports</effect>			
-            <effect type="TechStatus" status="obtainable">MCMT_SVA_LuxuriousFireports</effect>	
-            <!--War Bunker Techs-->
-            <effect type="TechStatus" status="obtainable">AntiArmorLogistics</effect>
-            <effect type="TechStatus" status="obtainable">AntiAirLogistics</effect>
-            <!--Dwarven Armory Techs: KingdomTech and CyberTech-->
-            <effect type="TechStatus" status="obtainable">MCMT_RecruitingMountainDwarves</effect>	     
-            <effect type="TechStatus" status="obtainable">MCMT_GiantSlayingTechs</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_ThunderSlayingTechs</effect>
-            <!--Market CyberTech Financial Development Techs-->
-            <effect type="TechStatus" status="obtainable">MCMT_FinancialDevelopmentUpgradeI</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_FinancialDevelopmentUpgradeII</effect>
-            <effect type="TechStatus" status="obtainable">MCMT_FinancialDevelopmentUpgradeIII</effect>
-            <!--House Techs: Special Unit Activators-->
-            <effect type="TechStatus" status="obtainable">HouseSpecialUnitsActivator_Shared</effect>
-            <effect type="TechStatus" status="obtainable">HouseBuildLimit_I</effect>
-            <!--Forbidden Techs-->
-            <effect type="TechStatus" status="obtainable">ForbiddenTechMonitors</effect>
-            <effect type="TechStatus" status="obtainable">ForbiddenTechBerny</effect>
-            <effect type="TechStatus" status="obtainable">ForbiddenTechUnleashed</effect>
-            <effect type="TechStatus" status="obtainable">ForbiddenTechWrathOfRaHorakthy</effect>
-            <effect type="TechStatus" status="obtainable">ForbiddenTechDeathseeker</effect>
-            <effect type="TechStatus" status="obtainable">ForbiddenTechMictlan</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_ArtilleryTraining</effect>   
+        <effect type="TechStatus" status="obtainable">MCMT_LevyTerracottaSoldiers</effect>   
+        <effect type="TechStatus" status="obtainable">MCMT_ConscriptTerracottaSoldiers</effect>   
+        <effect type="TechStatus" status="obtainable">MCMT_WarriorTribe</effect>           
+        <!--TechBuilding FutureTech-->
+        <effect type="TechStatus" status="obtainable">MCMT_DivineArmaments</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_NanofiberPlatings</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_BowOfOrion</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_Anthrax</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_PhobosSpearOfPanic</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_DeimosSwordOfDread</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_EnyosBowOfHorror</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_Mjolnir</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_AegisShield</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_Stimulants</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_Absorbants</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_Compensations</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_MuscleTraining</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_VibrantLand</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_MonstrousRage</effect>
+        
+        <effect type="TechStatus" status="obtainable">MCMT_TowerOfBabel</effect>			
+        <effect type="TechStatus" status="obtainable">MCMT_MithrilArmaments</effect>			
+        <effect type="TechStatus" status="obtainable">MCMT_TurretInstallation</effect>			
+        <effect type="TechStatus" status="obtainable">MCMT_DivineProtection</effect>	
+        <effect type="TechStatus" status="obtainable">MCMT_AssistedTradeNetworks</effect>	
+        <!--Bastion FutureTech-->
+        <effect type="TechStatus" status="obtainable">ChampionArms</effect>			
+        <effect type="TechStatus" status="obtainable">ChampionHooves</effect>			
+        <effect type="TechStatus" status="obtainable">ChampionRangers</effect>			
+        <effect type="TechStatus" status="obtainable">ChampionEngines</effect>			
+        <!--SVA Techs-->
+        <effect type="TechStatus" status="obtainable">MCMT_Explosives</effect>
+        <effect type="TechStatus" status="obtainable">NavalDefensiveSystems</effect>
+        
+        <effect type="TechStatus" status="obtainable">Nanomachines</effect>			
+        <effect type="TechStatus" status="obtainable">MCMT_SVA_ComfortableFireports</effect>			
+        <effect type="TechStatus" status="obtainable">MCMT_SVA_EliteFireports</effect>			
+        <effect type="TechStatus" status="obtainable">MCMT_SVA_LuxuriousFireports</effect>	
+        <!--War Bunker Techs-->
+        <effect type="TechStatus" status="obtainable">AntiArmorLogistics</effect>
+        <effect type="TechStatus" status="obtainable">AntiAirLogistics</effect>
+        <!--Dwarven Armory Techs: KingdomTech and CyberTech-->
+        <effect type="TechStatus" status="obtainable">MCMT_RecruitingMountainDwarves</effect>	     
+        <effect type="TechStatus" status="obtainable">MCMT_GiantSlayingTechs</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_ThunderSlayingTechs</effect>
+        <!--Market CyberTech Financial Development Techs-->
+        <effect type="TechStatus" status="obtainable">MCMT_FinancialDevelopmentUpgradeI</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_FinancialDevelopmentUpgradeII</effect>
+        <effect type="TechStatus" status="obtainable">MCMT_FinancialDevelopmentUpgradeIII</effect>
+        <!--House Techs: Special Unit Activators-->
+        <effect type="TechStatus" status="obtainable">HouseSpecialUnitsActivator_Shared</effect>
+        <effect type="TechStatus" status="obtainable">HouseBuildLimit_I</effect>
+        <!--Forbidden Techs-->
+        <effect type="TechStatus" status="obtainable">ForbiddenTechMonitors</effect>
+        <effect type="TechStatus" status="obtainable">ForbiddenTechBerny</effect>
+        <effect type="TechStatus" status="obtainable">ForbiddenTechUnleashed</effect>
+        <effect type="TechStatus" status="obtainable">ForbiddenTechWrathOfRaHorakthy</effect>
+        <effect type="TechStatus" status="obtainable">ForbiddenTechDeathseeker</effect>
+        <effect type="TechStatus" status="obtainable">ForbiddenTechMictlan</effect>
       </effects>
     </tech>
 
@@ -5226,27 +5269,19 @@
 		<cost resourcetype="Gold">125</cost>
 		<effects>
       <!-- MYTH
-        kataskopos - barbarian
-        hippeus rider
-        prodromos rider
-        Hetairos rider
         scylla - bewitched girl
         warshipnothero - toxotes / gastraphetoros / amazon raft
         argo - jason raft
 
-        <unit name="HippeusKnight" mergeMode="add"></unit>
-	<unit name="ProdromosKnight" mergeMode="add"></unit>
-	<unit name="HetairosKnight" mergeMode="add"></unit>
 	<unit name="AchillesKnight" mergeMode="add"></unit>
-	<unit name="GreekSpy" mergeMode="add"></unit>
       -->
-			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Militia" relativity="Assign">
+			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Barbarian" relativity="Assign">
         <target type="ProtoUnit">Kataskopos</target></effect>
-			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Hypaspist" relativity="Assign">
+			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="HippeusKnight" relativity="Assign">
         <target type="ProtoUnit">Hippeus</target></effect>
-			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="Hoplite" relativity="Assign">
+			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="ProdromosKnight" relativity="Assign">
         <target type="ProtoUnit">Prodromos</target></effect>
-			<effect type="Data" amount="2.00" subtype="ModifySpawn" spawntype="Dead" proto="Hoplite" relativity="Assign">
+			<effect type="Data" amount="1.00" subtype="ModifySpawn" spawntype="Dead" proto="HetairosKnight" relativity="Assign">
         <target type="ProtoUnit">Hetairos</target></effect>
 
       <effect type="TechStatus" status="obtainable" mergeMode="add">SpawnTacticsGreek</effect>
@@ -7272,10 +7307,27 @@
   <!-- Greek - Naval Techs -->
   <tech name="Anastrophe">
     <effects>
-      <effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent">
+      <effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent" mergeMode="add">
 				<target type="ProtoUnit">Pentekonter</target></effect>
     </effects>
   </tech>
+  <tech name="HeavyWarships">
+		<effects>
+      <effect type="Data" action="RangedAttack" amount="9.00" subtype="MinmumRange" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">TheArgo</target></effect>
+
+      <effect type="Data" action="RangedAttackJavelin" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">TheArgo</target></effect>
+		</effects>
+	</tech>
+  <tech name="ChampionWarships">
+		<effects>
+      <effect type="Data" amount="0.003" subtype="OnDamageModify" modifytype="ArmorSpecific" damagetype="Hack" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">TheArgo</target></effect>
+			<effect type="Data" amount="0.003" subtype="OnDamageModify" modifytype="ArmorSpecific" damagetype="Pierce" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">TheArgo</target></effect>
+		</effects>
+	</tech>
   <!-- Greek - Demeter Techs -->
   <tech name="PredatoryInstinct">
     <effects>

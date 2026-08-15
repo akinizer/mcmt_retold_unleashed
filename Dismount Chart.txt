@@ -1,0 +1,55 @@
+=== Dismounted Unit Suitable Animations ===
+RaidingCavalry: Huskarl, Berserk
+TerracottaRider: TigerCavalryDismounted
+Kataskopos: Oracle, Hersir, Axeman
+
+=== Suitable Weapons ===
+Oracle: Staff, Sword
+Katapeltes: 2H Mace
+Arkantos: Spear, Javelin, Polearm
+
+=== === === Barbarian === === ===
+<animfile validation="strict">
+	<attachment>Weapon<component>ModelComp<assetreference type="TMModel"><file>atlantean\units\infantry\oracle\oracle_staff_gold</file></assetreference></component><anim>Idle<component>ModelComp</component></anim></attachment>
+	<attachment>Weapon<component>ModelComp<assetreference type="TMModel"><file>norse\units\attachments\sword\sword_n_upgrade3</file></assetreference></component><anim>Idle<component>ModelComp</component></anim></attachment>
+	<attachment>Weapon<component>ModelComp<assetreference type="TMModel"><file>greek\units\hero\heracles\heracles_club</file></assetreference></component><anim>Idle<component>ModelComp</component></anim></attachment>
+	<attachment>Weapon<include>greek\units\attachments\spear\spear_g.xml</include></attachment>
+	
+    <component>ModelComp<assetreference type="TMModel"><file>greek\units\cavalry\kataskopos\kataskopos</file></assetreference><attach name="Weapon" attachpoint="weapon"></attach></component>
+	<anim>HandAttack<assetreference type="TMAnimation"><file>atlantean\units\infantry\oracle\anim\oracle_attack_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Bored<assetreference type="TMAnimation"><file>atlantean\units\infantry\oracle\anim\oracle_bored_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Death<assetreference type="TMAnimation"><file>atlantean\units\infantry\oracle\anim\oracle_death_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Flail<assetreference type="TMAnimation"><file>atlantean\units\infantry\oracle\anim\oracle_flail_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Idle<assetreference type="TMAnimation"><file>atlantean\units\infantry\oracle\anim\oracle_idle_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>MaxLOS<assetreference type="TMAnimation"><file>atlantean\units\infantry\oracle\anim\oracle_maxlos_a</file><tag type="particles" popcornfxname="objects\oracle\oracle_maxlos.pkfx" bone="vfx_staff" movewithbone="true" stopwithanim="false" adjustduration="false">0.40</tag><tag type="particles" popcornfxname="objects\oracle\oracle_los.pkfx" bone="vfx_staff" movewithbone="true" stopwithanim="false" adjustduration="false">0.120</tag></assetreference><component>ModelComp</component></anim>
+	<anim>Walk<assetreference type="TMAnimation"><file>atlantean\units\infantry\oracle\anim\oracle_walk_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>HeroizeUp<assetreference type="TMAnimation"><file>atlantean\units\infantry\oracle\anim\oracle_heroize_1_up</file></assetreference><component>ModelComp</component></anim>
+	<anim>HeroizeFly<assetreference type="TMAnimation"><file>atlantean\units\infantry\oracle\anim\oracle_heroize_2_fly</file></assetreference><component>ModelComp</component></anim>
+	<anim>HeroizeDown<assetreference type="TMAnimation"><file>atlantean\units\infantry\oracle\anim\oracle_heroize_3_down</file></assetreference><component>ModelComp</component></anim>
+</animfile>
+
+<animfile validation="strict">
+	<attachment>Weapon<attachment>Flaming<component>VFXComp<logic type="Tech"><none><nullvisual></nullvisual></none><flamingweaponsactive><assetreference type="TMComposite"><file>vfx\weapons\flaming_weapons\hammers\hammer_flame_large_vfx</file></assetreference></flamingweaponsactive></logic></component><anim>Idle<component>VFXComp</component></anim></attachment><component>ModelComp<logic type="Veterancy"><none><assetreference type="TMComposite"><file>norse\units\hero\hersir\hersir_hammer_0</file></assetreference></none><r0><assetreference type="TMComposite"><file>norse\units\hero\hersir\hersir_hammer_1</file></assetreference></r0><r1><assetreference type="TMComposite"><file>norse\units\hero\hersir\hersir_hammer_2</file></assetreference></r1><r2><assetreference type="TMComposite"><file>norse\units\hero\hersir\hersir_hammer_3</file></assetreference></r2></logic><attach name="Flaming" attachpoint="vfx_flame"></attach></component><anim>Idle<component>ModelComp</component></anim></attachment>
+	<component>ModelComp<assetreference type="TMModel"><file>greek\units\cavalry\kataskopos\kataskopos</file></assetreference><attach name="Weapon" attachpoint="weapon"></attach></component>
+	<anim>HandAttack<assetreference type="TMAnimation"><file>norse\units\hero\hersir\anim\hersir_attack_a</file><tag type="Attack">0.45</tag><tag type="SpecificSoundSet" checkvisible="1" set="SwooshSword">0.38</tag></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach></anim>
+	<anim>Bored<assetreference type="TMAnimation"><file>norse\units\hero\hersir\anim\hersir_bored_a</file></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach></anim>
+	<anim>Death<assetreference type="TMAnimation"><file>norse\units\hero\hersir\anim\hersir_death_a</file></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach></anim>
+	<anim>Flail<assetreference type="TMAnimation"><file>norse\units\hero\hersir\anim\hersir_flail_a</file></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach></anim>
+	<anim>Idle<assetreference type="TMAnimation"><file>norse\units\hero\hersir\anim\hersir_idle_a</file></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach></anim>
+	<anim>Walk<assetreference type="TMAnimation"><file>norse\units\hero\hersir\anim\hersir_walk_a</file></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach></anim>
+</animfile>
+
+<animfile validation="strict">
+	<attachment>Weapon<include>egyptian\units\attachments\axe\axe_e_2handed.xml</include></attachment>
+	<component>ModelComp<assetreference type="TMModel"><file>greek\units\cavalry\kataskopos\kataskopos</file></assetreference><attach name="Weapon" attachpoint="weapon"></attach></component>
+	<anim>HandAttack<assetreference type="TMAnimation"><file>egyptian\units\infantry\axeman\anim\axeman_attack_a</file><tag type="Attack">0.6</tag><tag type="SpecificSoundSet" checkvisible="1" set="SwooshSword">0.46</tag></assetreference><assetreference type="TMAnimation"><file>egyptian\units\infantry\axeman\anim\axeman_attack_b</file><tag type="Attack">0.6</tag><tag type="SpecificSoundSet" checkvisible="1" set="SwooshSword">0.35</tag></assetreference><component>ModelComp</component></anim>
+	<anim>Bored<assetreference type="TMAnimation"><file>egyptian\units\infantry\axeman\anim\axeman_bored_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Death<assetreference type="TMAnimation"><file>egyptian\units\infantry\axeman\anim\axeman_death_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Idle<assetreference type="TMAnimation"><file>egyptian\units\infantry\axeman\anim\axeman_idle_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Walk<assetreference type="TMAnimation"><file>egyptian\units\infantry\axeman\anim\axeman_walk_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Flail<assetreference type="TMAnimation"><file>egyptian\units\infantry\axeman\anim\axeman_flail_a</file></assetreference><component>ModelComp</component></anim>
+</animfile>
+
+
+////
+<attachment>VFXAnti<component>ModelComp<assetreference type="PopcornFx"><file>smoke\sugaru\sugaru_anti_hero.pkfx</file></assetreference></component><anim>Idle<component>ModelComp</component></anim></attachment>

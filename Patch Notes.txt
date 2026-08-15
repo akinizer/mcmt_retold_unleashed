@@ -191,10 +191,20 @@
     - Achilles+, 
         - OnDeath: AchillesDismounted+
     - Atalanta+, Hippolyta+, Theseus+, Polyphemus+
-    - Myrmidon+, TheArgo+
+    - Myrmidon+, 
+    - TheArgo+
+        - RangedAttackJavelin (HeavyWarships)
+        - LastStand (ChampionWarships)
 - military units:
     - popcosts: humansoldier 1 or 2
     - Kataskopos+
+        - Barbarian (DismountTacticsGreek): unarmored club infantry, bonus vs mythunit
+    - Hetairos:
+        - HetairosKnight (DismountTacticsGreek): unarmed infantry, hack & crush damages, bonus vs archer
+    - Prodromos
+        - ProdromosKnight (DismountTacticsGreek):spear infantry, bonus vs cavalry
+    - Hippeus
+        - HippeusKnight (DismountTacticsGreek): Shining Knight, sends hearts at targets, armor reduction & vfxfoxcharm humansoldier, armorglow, bonus vs hero
 - naval
     - Pentekonter: 
         - DirectionalArmor
@@ -808,9 +818,7 @@
     - torchattack:
         - SeasideInfiltrators: onhiteffect Napalm Charges
     - ninjutsu: manual, auxcharged
-    - smokebomb: manual, auxcharged
-    
-    
+    - smokebomb: manual, auxcharged    
 
 * Worker
 - VillagerJapanese: Temple removed from build accel

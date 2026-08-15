@@ -2349,6 +2349,8 @@
 		<populationcount>2</populationcount>
 		<initialshieldpoints>100</initialshieldpoints>
 		<maxshieldpoints>100</maxshieldpoints>
+
+		<autoattackrange>25.0000</autoattackrange>
 		
 		<armor type="Pierce" value="0.6000"></armor>
 		<armor type="Hack" value="0.4500"></armor>
@@ -2358,18 +2360,33 @@
 		
 		<unittype>ArcherLineUpgraded</unittype>
 		<unittype>AbstractWarship</unittype>
-		
+
+		<flag>HasDefaultAttack</flag>
+		<tactics>greek_hero_proximitymodes_ships_argo.tactics</tactics>		
 		<protoaction>
 			<name>RangedAttack</name>
 			<rof>2.000000</rof>
-			<damage type="Pierce">1.000000</damage>
-			<damage type="Divine">0.200000</damage>
+			<damage type="Pierce">4.000000</damage>
+			<damage type="Divine">1.000000</damage>
 			<damagebonus type="MythUnit">3.500000</damagebonus>
 			<damagebonus type="Hero">2.500000</damagebonus>
 			<maxrange>20.000000</maxrange>
 			<projectile>ProjectileArrowFlaming</projectile>
-			<numberprojectiles>50</numberprojectiles>
+			<numberprojectiles>12</numberprojectiles>
 			<volleymode></volleymode>
+			<defaultattack>1</defaultattack>
+		</protoaction>
+		<protoaction>
+			<name>RangedAttackJavelin</name>
+			<rof>2.000000</rof>
+			<damage type="Crush">20.000000</damage>
+			<damage type="Pierce">20.000000</damage>
+			<damagebonus type="MythUnit">3.500000</damagebonus>
+			<maxrange>8.000000</maxrange>
+			<projectile>ProjectileJavelinFlaming</projectile>
+			<numberprojectiles>5</numberprojectiles>
+			<volleymode></volleymode>
+			<active>0</active>
 		</protoaction>
 	</unit>	
 
@@ -21040,12 +21057,417 @@
 			<typedmaxrange type="Fortress">2.0</typedmaxrange>
 		</protoaction>
 	</unit>
-	<!-- dismount units knights TODO
-	<unit name="HippeusKnight" mergeMode="add"></unit>
-	<unit name="ProdromosKnight" mergeMode="add"></unit>
-	<unit name="HetairosKnight" mergeMode="add"></unit>
+	
+	<!-- Greek Dismount Units - Knights -->
+	<unit name="Barbarian">
+		<displaynameid>STR_UNIT_BARBARIAN_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_BARBARIAN_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_BARBARIAN_SR</shortrollovertextid>
+		<icon>resources\greek\player_color\units\kataskopos_icon.png</icon>
+		<animfile>mcmt\units\knights\barbarian.xml</animfile>
+		<soundsetfile>greek\vo\hypaspist\hypaspist.xml</soundsetfile>
+
+		<stealthrevealselfradius>2.0</stealthrevealselfradius>
+		<stealthshowsilhouetteradius>5.0</stealthshowsilhouetteradius>
+		<flag>StealthOnBirth</flag>
+
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Unarmoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>95.0000</initialhitpoints>
+		<maxhitpoints>95.0000</maxhitpoints>
+		<trainpoints>9.5000</trainpoints>
+		<weightclass>5</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>4.5000</maxvelocity>
+		<los>16.0000</los>
+		<cost resourcetype="Food">45.0000</cost>
+		<armor type="Hack" value="0.3500"></armor>
+		<armor type="Pierce" value="0.0500"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>AbstractInfantry</unittype>
+		<unittype>HumanSoldier</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<unittype>LogicalTypeMeleeInfantry</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Hack">7.000000</damage>
+			<damagebonus type="MythUnit">3.00000</damagebonus>
+			<onhiteffect type="Lifesteal" rate="0.5" targetunittype="MythUnit"></onhiteffect>
+			<maxrange>0.500000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>HarvestOfSouls</name>
+			<type>ChargedModify</type>
+			<active>0</active>
+			<persistent>1</persistent>
+			<charged>
+				<chargedmodify modifytype="Damage" applytype="Multiply">1.15</chargedmodify>
+				<duration>5</duration>
+				<cooldown>0</cooldown>
+				<activationtype>KillEnemy</activationtype>
+			</charged>
+			<charged>
+				<chargedmodify modifytype="ROF" applytype="Multiply">0.8</chargedmodify>
+				<duration>5</duration>
+				<cooldown>0</cooldown>
+				<activationtype>KillEnemy</activationtype>
+			</charged>
+		</protoaction>
+		<protoaction>
+			<name stringid="STR_ACTION_STEALTH">Stealth</name>
+			<type>Stealth</type>
+			<maxrange>25.0</maxrange>
+			<autocastbyself>1</autocastbyself>
+			<autocastdistance>2.250000</autocastdistance>
+			<persistent>1</persistent>
+			<activevfxproto>VFXStealthEye</activevfxproto>
+			<revealarearadius>2.0</revealarearadius>
+			<revealareachain>1.0</revealareachain>
+			<soundsetenter>StealthBirth</soundsetenter>
+			<soundsetupdate>StealthAcknowledge</soundsetupdate>
+			<soundsetexit>StealthExists</soundsetexit>
+			<stealthanywhere>1</stealthanywhere>
+		</protoaction>
+	</unit>
+	<unit name="HetairosKnight">
+		<displaynameid>STR_UNIT_HETAIROS_KNIGHT_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_HETAIROS_KNIGHT_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_HETAIROS_KNIGHT_SR</shortrollovertextid>
+		<icon>resources\greek\player_color\units\hetairos_icon.png</icon>
+		<animfile>mcmt\units\knights\hetairos_knight.xml</animfile>
+		<soundsetfile>greek\vo\hypaspist\hypaspist.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>95.0000</initialhitpoints>
+		<maxhitpoints>95.0000</maxhitpoints>
+		<trainpoints>9.5000</trainpoints>
+		<weightclass>5</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>4.5000</maxvelocity>
+		<los>16.0000</los>
+		<cost resourcetype="Food">45.0000</cost>
+		<armor type="Hack" value="0.3500"></armor>
+		<armor type="Pierce" value="0.3500"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>AbstractInfantry</unittype>
+		<unittype>HumanSoldier</unittype>
+		<unittype>CavalryLineUpgraded</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<unittype>LogicalTypeMeleeInfantry</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Hack">7.000000</damage>
+			<damage type="Crush">1.000000</damage>
+			<damagebonus type="AbstractInfantry">3.00000</damagebonus>
+			<maxrange>0.500000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>HarvestOfSouls</name>
+			<type>ChargedModify</type>
+			<active>0</active>
+			<persistent>1</persistent>
+			<charged>
+				<chargedmodify modifytype="Damage" applytype="Multiply">1.15</chargedmodify>
+				<duration>5</duration>
+				<cooldown>0</cooldown>
+				<activationtype>KillEnemy</activationtype>
+			</charged>
+			<charged>
+				<chargedmodify modifytype="ROF" applytype="Multiply">0.8</chargedmodify>
+				<duration>5</duration>
+				<cooldown>0</cooldown>
+				<activationtype>KillEnemy</activationtype>
+			</charged>
+		</protoaction>
+	</unit>
+	<unit name="ProdromosKnight">
+		<displaynameid>STR_UNIT_PRODROMOS_KNIGHT_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_PRODROMOS_KNIGHT_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_PRODROMOS_KNIGHT_SR</shortrollovertextid>
+		<icon>resources\greek\player_color\units\prodromos_icon.png</icon>
+		<animfile>mcmt\units\knights\prodromos_knight.xml</animfile>
+		<soundsetfile>greek\vo\hoplite\hoplite.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>115.0000</initialhitpoints>
+		<maxhitpoints>115.0000</maxhitpoints>
+		<trainpoints>12.0000</trainpoints>
+		<weightclass>5</weightclass>
+		<populationcount>2</populationcount>
+		<maxvelocity>4.3000</maxvelocity>
+		<los>16.0000</los>
+		<cost resourcetype="Food">50.0000</cost>
+		<cost resourcetype="Gold">40.0000</cost>
+		<armor type="Hack" value="0.2500"></armor>
+		<armor type="Pierce" value="0.3500"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>AbstractInfantry</unittype>
+		<unittype>HumanSoldier</unittype>
+		<unittype>CavalryLineUpgraded</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<unittype>LogicalTypeMeleeInfantry</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.800000</rof>
+			<damage type="Hack">8.000000</damage>
+			<damagebonus type="AbstractCavalry">2.000000</damagebonus>
+			<maxrange>1.000000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>HarvestOfSouls</name>
+			<type>ChargedModify</type>
+			<active>0</active>
+			<persistent>1</persistent>
+			<charged>
+				<chargedmodify modifytype="Damage" applytype="Multiply">1.15</chargedmodify>
+				<duration>5</duration>
+				<cooldown>0</cooldown>
+				<activationtype>KillEnemy</activationtype>
+			</charged>
+			<charged>
+				<chargedmodify modifytype="ROF" applytype="Multiply">0.8</chargedmodify>
+				<duration>5</duration>
+				<cooldown>0</cooldown>
+				<activationtype>KillEnemy</activationtype>
+			</charged>
+		</protoaction>
+	</unit>
+	<unit name="HippeusKnight">
+		<displaynameid>STR_UNIT_HIPPEUS_KNIGHT_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_HIPPEUS_KNIGHT_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_HIPPEUS_KNIGHT_SR</shortrollovertextid>
+		<icon>resources\greek\player_color\units\hippeus_icon.png</icon>
+		<animfile>mcmt\units\knights\hippeus_knight.xml</animfile>
+		<soundsetfile>greek\vo\hypaspist\hypaspist.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>95.0000</initialhitpoints>
+		<maxhitpoints>95.0000</maxhitpoints>
+		<trainpoints>9.5000</trainpoints>
+		<weightclass>5</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>4.5000</maxvelocity>
+		<los>16.0000</los>
+		<cost resourcetype="Food">45.0000</cost>
+		<armor type="Hack" value="0.3500"></armor>
+		<armor type="Pierce" value="0.0500"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>AbstractInfantry</unittype>
+		<unittype>HumanSoldier</unittype>
+		<unittype>CavalryLineUpgraded</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<unittype>LogicalTypeMeleeInfantry</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<anim>HandAttack</anim>
+			<rof>1.500000</rof>
+			<damage type="Pierce">5.000000</damage>
+			<damagebonus type="Hero">4.000000</damagebonus>
+			<maxrange>16.000000</maxrange>
+			<projectile>ProjectileRainbowHeart</projectile>
+			<impacteffect>effects\impacts\pierce_medium</impacteffect>
+			<onhiteffect type="StatModify" duration="5.00000">
+				<target attacktype="HumanSoldier"></target>
+				<modify type="ArmorSpecific" dmgtype="Pierce" applytype="Multiply" stack="">0.9900</modify>
+				<modify type="ArmorSpecific" dmgtype="Hack" applytype="Multiply" stack="">0.9900</modify>
+			</onhiteffect>
+			<onhiteffect type="Attach" targetunittype="HumanSoldier" proto="VFXFoxCharm" attachbone="vfx_top" duration="5.000000"></onhiteffect>
+		</protoaction>
+		<protoaction>
+			<name>HarvestOfSouls</name>
+			<type>ChargedModify</type>
+			<active>0</active>
+			<persistent>1</persistent>
+			<charged>
+				<chargedmodify modifytype="Damage" applytype="Multiply">1.15</chargedmodify>
+				<duration>5</duration>
+				<cooldown>0</cooldown>
+				<activationtype>KillEnemy</activationtype>
+			</charged>
+			<charged>
+				<chargedmodify modifytype="ROF" applytype="Multiply">0.8</chargedmodify>
+				<duration>5</duration>
+				<cooldown>0</cooldown>
+				<activationtype>KillEnemy</activationtype>
+			</charged>
+		</protoaction>
+		<protoaction>
+			<name>HeroGlowOnSelf</name>
+			<type>Modify</type>
+			<modifyselfonly>1</modifyselfonly>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\hero_glow.xml</modelattachment>
+			<modelattachmentbone>Spine</modelattachmentbone>
+		</protoaction>		
+	</unit>
+	<!-- TODO
 	<unit name="AchillesKnight" mergeMode="add"></unit>
-	<unit name="GreekSpy" mergeMode="add"></unit>
 	-->
 	<unit name="Nymph">
 		<displaynameid>STR_UNIT_NYMPH_NAME</displaynameid>
