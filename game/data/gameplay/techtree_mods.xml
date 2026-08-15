@@ -7313,7 +7313,7 @@
   </tech>
   <tech name="HeavyWarships">
 		<effects>
-      <effect type="Data" action="RangedAttack" amount="9.00" subtype="MinmumRange" relativity="Absolute" mergeMode="add">
+      <effect type="Data" action="RangedAttack" amount="9.00" subtype="MinimumRange" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">TheArgo</target></effect>
 
       <effect type="Data" action="RangedAttackJavelin" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
