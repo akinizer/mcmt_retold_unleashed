@@ -3036,13 +3036,17 @@
 	</unit>
 	<unit name="Chimera">
 		<auxrechargetime>25.0000</auxrechargetime>
+		<flag>HasDefaultAttack</flag>
 		<tactics>mcmt_chimera.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<defaultattack>1</defaultattack>
+		</protoaction>
 		<protoaction>
 			<name>ChargedRangedSpitAttack</name>
 			<rof>1.500000</rof>
 			<damage type="Divine">5.000000</damage>
 			<damagebonus type="MythUnit">1.500000</damagebonus>
-			<damagebonus type="Hero">0.500000</damagebonus>
 			<maxrange>16.000000</maxrange>
 			<projectile>ProjectileWadjetSpit</projectile>
 			<onhiteffect type="DamageOverTime" duration="20.000000">
@@ -3054,6 +3058,19 @@
 				<target attacktype="Unit"></target>
 				<target ignoretype="AbstractSiegeWeapon"></target>
 			</onhiteffect>
+		</protoaction>
+		<protoaction>
+			<name>MightyRoar</name>
+			<rof>3.000000</rof>
+			<damage type="Hack">10.000000</damage>
+			<damagearea>5.000000</damagearea>
+			<damageflags>Enemy</damageflags>
+			<damagebonus type="MythUnit">3.000000</damagebonus>
+			<maxrange>18.0</maxrange>
+			<projectile>ProjectileBallOfFireInvisible</projectile>
+			<onhiteffect type="Snare" duration="3.00" rate="0.50"></onhiteffect>
+			<onhiteffect type="Stun" duration="1.00"></onhiteffect>
+			<active>0</active>
 		</protoaction>
 	</unit>
 

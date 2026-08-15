@@ -1419,6 +1419,8 @@ ID = "STR_ABILITY_SHINOBI_MULTITHROW_ATTACK"   ;   Str = "Kunai Barrage"
 ID = "STR_ABILITY_SHINOBI_MULTITHROW_ATTACK_LR"   ;   Str = "Shinobi sends multiple kunais in close range"
 ID = "STR_ACTION_SLAYER_ATTACK"   ;   Str = "Slayer Attack"
 
+ID = "STR_ABILITY_MIGHTY_ROAR"   ;   Str = "Mighty Roar"
+
 // COMMAND TECHS
 ID = "STR_BLD_FIREWALL_NAME"   ;   Str = "Fire Wall"
 

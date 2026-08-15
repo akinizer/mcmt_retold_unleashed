@@ -24,6 +24,7 @@
 		<chargeaction>1</chargeaction>
 		<impacteffect>effects\impacts\pierce</impacteffect>
 		<rate type="Unit">1.0</rate>
+		<rate type="AbstractFlyingUnit">0.0</rate>
 	</action>
 	<action>
 		<name stringid="STR_ACTION_CHARGE_RANGED">ChargedRangedSpitAttack</name>
@@ -40,10 +41,25 @@
 		<rate type="All">1.0</rate>
 		<rate type="Hero">0.0</rate>
 	</action>
+	<action>
+		<name stringid="STR_ABILITY_MIGHTY_ROAR">MightyRoar</name>
+		<rate type="AbstractFlyingUnit">1.0</rate>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttack</anim>
+		<accuracy>1.0</accuracy>
+		<trackrating>99.0</trackrating>
+		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+		<impacteffect>effects\impacts\hack</impacteffect>
+	</action>
 	<tactic>Default
-        <action priority="100">ChargedRangedAttack</action>
-        <action priority="90">ChargedRangedSpitAttack</action>
-        <action priority="80">HandAttack</action>
-        <attacktype>LogicalTypeHandUnitsAttack</attacktype><autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype>
+		<action priority="100">ChargedRangedSpitAttack</action>
+        <action priority="90">ChargedRangedAttack</action>     
+        <action priority="80">MightyRoar</action>
+        <action priority="70">HandAttack</action>
+        <attacktype>LogicalTypeHandUnitsAttack</attacktype><autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype>
+		<attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype>
+		<attackmovetype>AbstractWall</attackmovetype>
 	</tactic>
 </tactics>

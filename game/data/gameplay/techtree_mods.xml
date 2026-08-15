@@ -7892,11 +7892,18 @@
     </effects>
   </tech>
   <tech name="ShaftsOfPlague">
-      <effects>        
-        <effect type="Data" action="ChargedRangedSpitAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
-          <target type="ProtoUnit">Chimera</target></effect>
-      </effects>
-    </tech>
+    <effects>        
+      <effect type="Data" action="ChargedRangedSpitAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Chimera</target></effect>
+    </effects>
+  </tech>
+  <tech name="RoarOfOrthus">
+    <effects>        
+      <effect type="Data" action="MightyRoar" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Chimera</target></effect>
+    </effects>
+  </tech>
+
   <tech name="ForgeOfOlympus">
     <effects>
       <effect type="Data" amount="2.0" subtype="ResearchRate" relativity="BasePercent" mergeMode="remove">

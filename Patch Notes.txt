@@ -161,6 +161,7 @@
             - BullRush: Dash Attack, throw units, anti-building, anti-army
             - Gore (LabyrnthOfMinos): changed to auxchargedattack
         - Chimera:
+            - RangedAttack / Mighty Roar: onhiteffect stun FlyingUnit, aoe, hack damage
             - ChargedRangedSpitAttack (ShaftsOfPlague): non-hero targeting, vfxpoison non-siege, wadjetspit
             - ChargedRangedAttack (FlamesOfTyphon): dot+
             - FlamesOfTyphon: visualscale+, hackarmor+, handattach range
