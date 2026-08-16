@@ -1799,4 +1799,14 @@
 		<abstractplacementtargettype>Unit</abstractplacementtargettype>
 		<unitaction>ChargedRangedAttack</unitaction>
 	</power>
+	<power name="AbilityManticoreBarrageMode" type="UnitAction">
+		<displaynameid>STR_ABILITY_MANTICORE</displaynameid>
+		<rolloverid>STR_ABILITY_MANTICORE_LR</rolloverid>
+		<icon>greek\static_color\abilities\manticore_ability_icon.png</icon>
+		<placement enemy="" allowgroundtarget="">Unit</placement>
+		<abstractplacementtargettype>Unit</abstractplacementtargettype>
+		<abstractplacementtargettype>Building</abstractplacementtargettype>
+		<rangeindicator range="3.0" speed="0.2">Circle</rangeindicator>
+		<unitaction>ChargedRangedAttack</unitaction>
+	</power>
 </powersmod>

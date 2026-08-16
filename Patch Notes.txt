@@ -154,18 +154,21 @@
             - chargedmodify: walk, idle, waterwalk, wateridle anim
             - takeoff & descend: delayedtransform, transition anim
             - PehasusGroundedMessenger+: passenger 1 AbstractInfantry
-    - melee: Colossus+, Hydra+, NemeanLion+, Cyclops+
+    - melee: Colossus+, Hydra+, Cyclops+
+        - NemeanLion+:
+            - armor and damage improvements
+            - RoarOfOrthus: damage increase, handattack reflect
         - HadesShade+:
             - movementtype: air
         - Minotaur+:
             - BullRush: Dash Attack, throw units, anti-building, anti-army
             - Gore (LabyrnthOfMinos): changed to auxchargedattack
-        - Chimera:
+        - Chimera: 
             - RangedAttack / Mighty Roar: onhiteffect stun flying units, aoe, hack damage
             - ChargedRangedSpitAttack (ShaftsOfPlague): non-hero targeting, vfxpoison non-siege, wadjetspit
             - ChargedRangedAttack: no longer targets flying units
             - ChargedRangedAttack (FlamesOfTyphon): dot+
-            - FlamesOfTyphon: visualscale+, hackarmor+, handattach range
+            - FlamesOfTyphon: visualscale+, hackarmor+, handattach range, maxhitpoints+
         - PaleRider:
             - Hades cavalry, counter-hero, AbstractMythSoldier
             - Weak vs MythUnit
@@ -179,6 +182,7 @@
             - rangedattacK: default, effective to counter ranged units, usable for kiting units to flee or get closer
             - handattack: effective to counter humansoldiers that get too close
             - chargedrangedattack / barrage attack: effective for crowds in further distance and units that flee
+            - DelayedTransform / ManticoreBarrageMode: long range barrage charged attack, no regular attacks, autoattackrange, archerlineupgrade, unit & building targeting
         - Medusa: renamed to "gorgon"
             - faceofthegorgon: sets name to "gorgon matriarch"
     - naval: Carcinos+
@@ -207,14 +211,18 @@
         - Barbarian (DismountTacticsGreek): unarmored club infantry, bonus vs mythunit, stealth
     - Hetairos:
         - HetairosKnight (DismountTacticsGreek): unarmed infantry, hack & crush damages, bonus vs archer
-    - Prodromos
+    - Prodromos:
         - ProdromosKnight (DismountTacticsGreek):spear infantry, bonus vs cavalry
-    - Hippeus
+    - Hippeus:
         - HippeusKnight (DismountTacticsGreek): Shining Knight, sends hearts at targets, armor reduction & vfxfoxcharm humansoldier, armorglow, bonus vs hero
+    - Peltast:
+        - FlakCannonAttack (Ballistics): anit-land explosive ranged attack, effective vs buildings and ships
+        - FlakCannonAttackFlying (Ballistics): anit-air explosive ranged attack
 - naval
     - Pentekonter: 
         - DirectionalArmor
         - ChargedRangedAttack: areadamage, crushdamage, throw humansoldier & villager
+
 - Spartans
     - Prereq: ClassicAgeAres
     - SpartanTraining: enables Spartan building, techs and units
@@ -634,6 +642,7 @@
     - DeimosSwordOfDread: affects on Hetairos, bonusdamage vs hero
     - Anastrophe: Pentekonter HackArmor+
     - OlympianWeapons: Perseus bonusdamage vs Hero
+    - ShaftsOfPlague: affects on archerlineupgraded instead
 - atlantean
     - ArchaicAgeAtlantean:
         - MilitaryBarracks: Murmillo, Fanatic, Destroyer +

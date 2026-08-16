@@ -342,6 +342,10 @@ ID = "STR_UNIT_HWACHA_DEPLOYED_NAME"   ;   Str = "Hwacha (Deployed)"
 ID = "STR_UNIT_HWACHA_SR"   ;   Str = "The father of missile howitzers"
 ID = "STR_UNIT_HWACHA_LR"   ;   Str = "Chinese military has been considered as founding father of gunpowder and firearms. Koreans however improved Chinese Fire Lancer system as a mobile platform that can launch a missile salvo"
 
+ID = "STR_UNIT_MANTICORE_BARRAGEMODE_NAME"   ;   Str = "Manticore (Barrage Mode)"
+ID = "STR_UNIT_MANTICORE_BARRAGEMODE_LR"   ;   Str = "Manticore turns into statue form, making it a defensive and stationary barrage unit. Highly effective to keep invaders away with a rain of spikes passing through any unit in the range"
+ID = "STR_UNIT_MANTICORE_BARRAGEMODE_SR"   ;   Str = "Ballistic defensive deployment"
+
 // ECONOMIC UNITS
 ID = "STR_UNIT_OXCARTMODELX_NAME"   ;   Str = "Ox Cart Model - X"
 ID = "STR_UNIT_OXCARTMODELX_LR"   ;   Str = "Ox Cart Model - X"
@@ -1330,6 +1334,7 @@ ID = "STR_ACTION_RANGEDATTACKCORRUPTION"   ;   Str = "Miasma Bomb Attack"
 
 ID = "STR_ACTION_DEMOLITION_ATTACK"   ;   Str = "Demolition Attack"
 ID = "STR_ACTION_DEFLECT_ATTACK"   ;   Str = "Deflect Attack"
+ID = "STR_ACTION_FLAK_CANNON_ATTACK"   ;   Str = "Flak Cannon Attack"
 
 ID = "STR_ACTION_SLASHATTACK"   ;   Str = "Slash Attack"
 ID = "STR_ACTION_SPEARTHRUSTATTACK"   ;   Str = "Spear Thrust Attack"

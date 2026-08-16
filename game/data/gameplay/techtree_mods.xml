@@ -1914,9 +1914,9 @@
           <effect type="Data" amount="1.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Medusa</target></effect>
           <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Manticore</target></effect>
           <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">NemeanLion</target></effect>
-          <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Chimera</target></effect>
           <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Cyclops</target></effect>
           <effect type="Data" amount="2.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Carcinos</target></effect>
+          <effect type="Data" amount="3.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Chimera</target></effect>
           <effect type="Data" amount="5.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Hydra</target></effect>
           <effect type="Data" amount="5.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Scylla</target></effect>
           <effect type="Data" amount="5.00" subtype="PopulationCount" relativity="Assign"><target type="ProtoUnit">Colossus</target></effect>
@@ -2417,7 +2417,7 @@
         <!-- Projectile Special Units -->
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">ProjectileDisintegrationBolt</target></effect>
         <effect type="Data" amount="10.00" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">ProjectileDisintegrationBolt</target></effect>
-        <!-- Construct Special Units -->
+        <!-- Construct and Deployment Special Units -->
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">MotherShip</target></effect>	
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">PrismTank</target></effect>		
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">MirageTank</target></effect>		
@@ -2438,7 +2438,7 @@
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">NukeCannonDeployed</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">FireArcherSandbag</target></effect>					
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">ChuKoNuSandbag</target></effect>
-        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">WuzuJavelineerSandbag</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">ManticoreBarrageMode</target></effect>
         <!-- Atlantean Captain Special Units -->
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">ArcusCaptain</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">ContariusCaptain</target></effect>
@@ -7053,6 +7053,15 @@
 				<target type="ProtoUnit">ProjectileArrow</target></effect>
 			<effect type="Data" amount="5" subtype="MaximumVelocity" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">ProjectileArrowFlaming</target></effect>
+
+      <effect type="Data" action="FlakCannonAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Peltast</target></effect>
+      <effect type="Data" action="FlakCannonAttackFlying" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Peltast</target></effect>
+      <effect type="Data" action="RangedAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Peltast</target></effect>
+
+      <effect type="SetName" proto="Peltast" action="FlakCannonAttack" newname="STR_BLD_DIONYSIAN_FARM_NAME" mergeMode="add"></effect>
     </effects>
   </tech>
   <tech name="FortifiedTownCenter">
@@ -7566,7 +7575,7 @@
         <target type="ProtoUnit">AbstractVillager</target></effect>
     </effects>
   </tech>
- <tech name="ToolsOfTheTrade">
+  <tech name="ToolsOfTheTrade">
 		<displaynameid>STR_TECH_TOOLS_OF_THE_TRADE_NAME</displaynameid>
 		<rollovertextid>STR_TECH_TOOLS_OF_THE_TRADE_LR</rollovertextid>
 		<cost resourcetype="Wood">150.0000</cost>
@@ -7589,7 +7598,7 @@
         <target type="ProtoUnit">EconomicGuild</target></effect>
 		</effects>
 	</tech>
- <tech name="WarLoader">
+  <tech name="WarLoader">
 		<displaynameid>STR_TECH_WAR_LOADER_NAME</displaynameid>
 		<rollovertextid>STR_TECH_WAR_LOADER_LR</rollovertextid>
 		<cost resourcetype="Favor">15.0000</cost>
@@ -7618,7 +7627,7 @@
           <target type="ProtoUnit">WarLoader_DefensiveTurret</target></effect>
 		</effects>
 	</tech>
- <tech name="WarLoaderII">
+  <tech name="WarLoaderII">
 		<displaynameid>STR_TECH_WAR_LOADER_II_NAME</displaynameid>
 		<rollovertextid>STR_TECH_WAR_LOADER_II_LR</rollovertextid>
 		<cost resourcetype="Favor">15.0000</cost>
@@ -7889,10 +7898,26 @@
         <target type="ProtoUnit">Chimera</target></effect>      
       <effect type="Data" action="HandAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">Chimera</target></effect>
+      <effect type="Data" amount="1.50" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">Chimera</target></effect>
     </effects>
   </tech>
   <tech name="ShaftsOfPlague">
     <effects>        
+      <effect type="Data" amount="1.10" subtype="Damage" action="RangedAttack" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">AbstractArcher</target></effect>
+			<effect type="Data" amount="1.00" subtype="OnHitEffectActive" action="RangedAttack" effecttype="DamageOverTime" relativity="Absolute" hidetooltip="" mergeMode="remove">
+				<target type="ProtoUnit">AbstractArcher</target></effect>
+			<effect type="Data" amount="1.00" subtype="OnHitEffectActive" action="RangedAttack" effecttype="Attach" relativity="Absolute" tooltipid="STR_TECH_SHAFTS_OF_PLAGUE_OVERRIDE" mergeMode="remove">
+				<target type="ProtoUnit">AbstractArcher</target></effect>
+      <!---->
+      <effect type="Data" amount="1.10" subtype="Damage" action="RangedAttack" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">ArcherLineUpgraded</target></effect>
+			<effect type="Data" amount="1.00" subtype="OnHitEffectActive" action="RangedAttack" effecttype="DamageOverTime" relativity="Absolute" hidetooltip="" mergeMode="add">
+				<target type="ProtoUnit">ArcherLineUpgraded</target></effect>
+			<effect type="Data" amount="1.00" subtype="OnHitEffectActive" action="RangedAttack" effecttype="Attach" relativity="Absolute" tooltipid="STR_TECH_SHAFTS_OF_PLAGUE_OVERRIDE" mergeMode="add">
+				<target type="ProtoUnit">ArcherLineUpgraded</target></effect>
+
       <effect type="Data" action="ChargedRangedSpitAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">Chimera</target></effect>
     </effects>
@@ -7901,6 +7926,10 @@
     <effects>        
       <effect type="Data" action="MightyRoar" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">Chimera</target></effect>
+      <effect type="Data" amount="1.50" subtype="Damage" action="HandAttack" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">NemeanLion</target></effect>
+      <effect type="Data" protoaction="ThornedWallsAttackMedium" amount="1.00" subtype="ProtoActionAdd" unittype="ReflectAttackDivineContainer" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">NemeanLion</target></effect>
     </effects>
   </tech>
 

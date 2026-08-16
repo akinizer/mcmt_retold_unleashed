@@ -2825,15 +2825,15 @@
 		</protoaction>
 	</unit>
 	<unit name="NemeanLion">
-		<armor type="Hack" value="0.8000"></armor>
+		<armor type="Hack" value="0.6000"></armor>
 		<armor type="Pierce" value="0.9400"></armor>
 		<armor type="Crush" value="0.3000"></armor>
 		<impacttype>Armoured</impacttype>
 		<protoaction>
 			<name>HandAttack</name>
 			<rof>0.800000</rof>
-			<damage type="Hack">22.000000</damage>
-			<damage type="Crush">11.000000</damage>
+			<damage type="Hack">11.000000</damage>
+			<damage type="Crush">8.000000</damage>
 			<damagebonus type="MythUnit">2.000000</damagebonus>
 			<damagebonus type="Hero">0.500000</damagebonus>
 			<maxrange>1.000000</maxrange>
@@ -2842,6 +2842,7 @@
 		  <name stringid="STR_ABILITY_NEMEAN_LION">ChannelAttack</name>
 		  <rof>3.000000</rof>
 		  <damage type="Hack">10.000000</damage>
+		  <damage type="Crush">8.000000</damage>
 		  <damagearea>4.000000</damagearea>
 		  <damageflags>Nature|Enemy</damageflags>
 		  <damagebonus type="Hero">0.500000</damagebonus>
@@ -3007,22 +3008,101 @@
 			<damagebonus type="Hero">0.500000</damagebonus>
 			<maxrange>1.000000</maxrange>
 		</protoaction>
-		<protoaction mergeMode="replace">
+		<protoaction>
 			<name>RangedAttack</name>
 			<rof>1.100000</rof>
 			<damage type="Pierce">11.000000</damage>
-			<damagebonus type="MythUnit">3.000000</damagebonus>
-			<damagebonus type="Hero">0.250000</damagebonus>
 			<minrange>8.000000</minrange>
 			<maxrange>17.000000</maxrange>
-			<projectile>ProjectileManticoreBarb</projectile>
 			<numberprojectiles>6</numberprojectiles>
-			<volleymode></volleymode>
 		</protoaction>
-		<protoaction mergeMode="replace">
+		<protoaction>
+			<name>DelayedTransform</name>
+			<type>DelayedTransform</type>
+			<modifyduration>10000</modifyduration>
+			<modifyprotoid>ManticoreBarrageMode</modifyprotoid>
+		</protoaction>
+	</unit>
+	<unit name="ManticoreBarrageMode">
+		<displaynameid>STR_UNIT_MANTICORE_BARRAGEMODE_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_MANTICORE_BARRAGEMODE_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_MANTICORE_BARRAGEMODE_SR</shortrollovertextid>
+		<icon>resources\greek\player_color\units\manticore_icon.png</icon>
+		<animfile>greek\units\myth\manticore\manticore.xml</animfile>
+		<soundsetfile>greek\vo\manticore\manticore.xml</soundsetfile>
+		<obstructionradiusx>0.9900</obstructionradiusx>
+		<obstructionradiusz>0.9900</obstructionradiusz>
+		<selectionradiusx>1.2500</selectionradiusx>
+		<selectionradiusz>1.7500</selectionradiusz>
+		<impacttype>Unarmoured</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>air</movementtype>
+		<turnrate>13.5000</turnrate>
+		<initialhitpoints>420.0000</initialhitpoints>
+		<maxhitpoints>420.0000</maxhitpoints>
+		<trainpoints>17.0000</trainpoints>
+		<weightclass>7</weightclass>
+		<populationcount>2</populationcount>
+		<rechargetime>40.0000</rechargetime>
+		<autoattackrange>40</autoattackrange>
+
+		<los>18.0000</los>
+		<cost resourcetype="Wood">250.0000</cost>
+		<cost resourcetype="Favor">22.0000</cost>
+		<armor type="Hack" value="0.4500"></armor>
+		<armor type="Pierce" value="0.6000"></armor>
+		<armor type="Crush" value="0.8000"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeHeroicMythUnit</unittype>
+		<unittype>Unit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeFreezableMythUnit</unittype>
+		<unittype>LogicalTypeAffectedBySunRay</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>PreferSkeletonAsBonePile</flag>
+		<flag>RotateInPlace</flag>
+
+		<flag>Immoveable</flag>
+		<initialshading type="stone" factor="1"></initialshading>
+		<tactics>mcmt_manticore.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<active>0</active>
+		</protoaction>
+		<protoaction>
+			<name>HandAttack</name>
+			<active>0</active>
+		</protoaction>
+		<protoaction>
 			<name>ChargedRangedAttack</name>
 			<rof>2.000000</rof>
-			<damage type="Pierce">11.000000</damage>
+			<damage type="Pierce">12.000000</damage>
 			<damagearea>3.000000</damagearea>
 			<damageflags>Nature|Enemy</damageflags>
 			<damagebonus type="MythUnit">3.000000</damagebonus>
@@ -3030,10 +3110,14 @@
 			<minrange>18.000000</minrange>
 			<maxrange>28.000000</maxrange>
 			<projectile>ProjectileManticoreBarbSpecialAttack</projectile>
-			<numberprojectiles>200</numberprojectiles>
-			<volleymode></volleymode>
+			<numberprojectiles>100</numberprojectiles>
+			<rate type="Building">1.0</rate>		
+			<passthrough>1</passthrough>
+			<volleymode></volleymode>			
+			<defaultattack>1</defaultattack>
 		</protoaction>
 	</unit>
+
 	<unit name="Chimera">
 		<auxrechargetime>25.0000</auxrechargetime>
 		<flag>HasDefaultAttack</flag>
@@ -3076,6 +3160,57 @@
 	</unit>
 
     <!-- Greek Military Units-->
+	<unit name="Peltast">
+		<tactics>mcmt_peltast.tactics</tactics>
+		<protoaction>
+			<name>FlakCannonAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Pierce">2.000000</damage>
+			<damage type="Crush">1.000000</damage>
+			<maxrange>18.000000</maxrange>
+			<projectile>ProjectileIcarusBomb</projectile>
+			<projectilechainbounce>1</projectilechainbounce>
+			<projectilechainbouncereduction>0.800</projectilechainbouncereduction>
+			<projectilechainbouncerange>6</projectilechainbouncerange>
+			<impacteffect>effects\impacts\fireball</impacteffect>
+			<onhiteffect active="0" type="DamageOverTime" duration="6.000000">
+				<damage type="Divine">0.2500000</damage>
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+			<onhiteffect active="0" type="Attach" proto="VFXPoison" attachbone="spine" duration="6.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+			<perfectaccuracy>1</perfectaccuracy>
+			<instantballistics>1</instantballistics>
+			<active>0</active>
+		</protoaction>
+		<protoaction>
+			<name>FlakCannonAttackFlying</name>
+			<rof>3.000000</rof>
+			<damage type="Pierce">10.000000</damage>
+			<damage type="Crush">5.000000</damage>
+			<maxrange>18.000000</maxrange>
+			<projectile>ProjectileIcarusBomb</projectile>
+			<projectilechainbounce>1</projectilechainbounce>
+			<projectilechainbouncereduction>0.800</projectilechainbouncereduction>
+			<projectilechainbouncerange>6</projectilechainbouncerange>
+			<impacteffect>effects\impacts\asura_fire_ball</impacteffect>
+			<onhiteffect active="0" type="DamageOverTime" duration="6.000000">
+				<damage type="Divine">0.2500000</damage>
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+			<onhiteffect active="0" type="Attach" proto="VFXPoison" attachbone="spine" duration="6.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+			<perfectaccuracy>1</perfectaccuracy>
+			<instantballistics>1</instantballistics>
+			<active>0</active>
+		</protoaction>
+	</unit>
     <!-- Greek Naval Units-->
 	<unit name="Pentekonter">
 		<directionalarmor angle="1.0472" value="0.5000"></directionalarmor>
@@ -31592,6 +31727,14 @@
 			<name stringid="STR_ACTION_REFLECT_ATTACK">ThornedWallsAttack</name>
 			<type>ReflectAttack</type>
 			<damage type="Divine">1.000000</damage>
+			<reflecthandattacks>1</reflecthandattacks>
+			<attackaction>1</attackaction>
+			<impacteffect>effects\impacts\hack</impacteffect>
+		</protoaction>
+		<protoaction>
+			<name stringid="STR_ACTION_REFLECT_ATTACK">ThornedWallsAttackMedium</name>
+			<type>ReflectAttack</type>
+			<damage type="Divine">2.000000</damage>
 			<reflecthandattacks>1</reflecthandattacks>
 			<attackaction>1</attackaction>
 			<impacteffect>effects\impacts\hack</impacteffect>
