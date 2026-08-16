@@ -7334,12 +7334,14 @@
 				<target type="ProtoUnit">AbstractTransportShip</target></effect>
       <effect type="Data" amount="1.35" subtype="Hitpoints" relativity="BasePercent">
 				<target type="ProtoUnit">AbstractTransportShip</target></effect>
-      <effect type="Data" protoaction="Trail" amount="1.00" subtype="ProtoActionAdd" unittype="TrailOfSand" relativity="Assign">
+      <effect type="Data" protoaction="Trail" amount="1.00" subtype="ProtoActionAdd" unittype="TrailOfSand" relativity="Assign" hidetooltip="">
         <target type="ProtoUnit">AbstractTransportShip</target></effect>
-      <effect type="SetName" proto="AbstractTransportShip" newname="STR_UNIT_HOVER_TRANSPORT_NAME"></effect> 
+      <effect type="SetName" proto="AbstractTransportShip" newname="STR_UNIT_HOVER_TRANSPORT_NAME" hidetooltip="" ></effect> 
 
       <effect type="Data" action="RangedAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute">
         <target type="ProtoUnit">HoverTransport_DefensiveTurret</target></effect>
+
+      <effect type="TransformUnit" toprotoid="AbstractTransportShip" fromprotoid="AbstractTransportShip" includequeued="true"></effect>
 		</effects>
 	</tech>
 
