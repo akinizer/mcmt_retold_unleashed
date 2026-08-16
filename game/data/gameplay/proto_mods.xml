@@ -3210,6 +3210,59 @@
 			<active>0</active>
 		</protoaction>
 	</unit>
+	<unit name="Gastraphetoros">
+		<rechargetime>5.0000</rechargetime>
+		<tactics>mcmt_infantry_gastraphetoros_switch.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>4.000000</rof>
+			<damage type="Crush">8.000000</damage>
+			<damage type="Pierce">1.000000</damage>
+			<damagebonus type="Building" mergeMode="remove">20.000000</damagebonus>
+			<minrange>10.000000</minrange>
+			<maxrange>24.000000</maxrange>
+			<projectile>ProjectileArrowFlaming</projectile>
+			<projectilechainbounce>1</projectilechainbounce>
+			<projectilechainbouncereduction>0.800</projectilechainbouncereduction>
+			<projectilechainbouncerange>7.666666</projectilechainbouncerange>
+			<onhiteffect active="0" type="DamageOverTime" duration="6.000000">
+				<damage type="Divine">0.2500000</damage>
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+			<onhiteffect active="0" type="Attach" proto="VFXPoison" attachbone="spine" duration="6.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+		</protoaction>
+		<protoaction>
+			<name>RangedAttackRapidfire</name>
+			<rof>2.800000</rof>
+			<damage type="Pierce">8.000000</damage>
+			<damagebonus type="HumanSoldier">4.000000</damagebonus>
+			<damagebonus type="Building">0.200000</damagebonus>
+			<maxrange>10.000000</maxrange>
+			<projectile>ProjectileArrowFlaming</projectile>
+			<projectilechainbounce>1</projectilechainbounce>
+			<projectilechainbouncereduction>0.800</projectilechainbouncereduction>
+			<projectilechainbouncerange>7.666666</projectilechainbouncerange>
+			<onhiteffect active="0" type="DamageOverTime" duration="6.000000">
+				<damage type="Divine">0.2500000</damage>
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+			<onhiteffect active="0" type="Attach" proto="VFXPoison" attachbone="spine" duration="6.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+		</protoaction>
+		<protoaction>
+			<name>SwitchTactic</name>
+			<type>SwitchTactic</type>
+			<anim>Switch</anim>
+			<chargeaction>1</chargeaction>
+		</protoaction>
+	</unit>
     <!-- Greek Naval Units-->
 	<unit name="Pentekonter">
 		<directionalarmor angle="1.0472" value="0.5000"></directionalarmor>
@@ -10051,6 +10104,8 @@
 	</unit>
 	
 	<unit name="Petrobolos">
+		<rechargetime>5.0000</rechargetime>
+		<tactics>mcmt_siege_catapult_switch.tactics</tactics>
 		<protoaction>
 		  <name>RangedAttack</name>
 		  <rof>4.000000</rof>
@@ -10066,6 +10121,26 @@
 			<target attacktype="HumanSoldier"></target>
 			<target attacktype="LogicalTypeVillagerNotHero"></target>
 		  </onhiteffect>
+		</protoaction>
+		<protoaction>
+		  <name>RangedAttackToxic</name>
+		  <rof>4.000000</rof>
+		  <damage type="Crush">5.000000</damage>
+		  <damage type="Pierce">10.000000</damage>
+		  <damagebonus type="Ship">2.500000</damagebonus>
+		  <minrange>10.000000</minrange>
+		  <maxrange>28.000000</maxrange>
+		  <projectile>ProjectilePetrobolosShotToxic</projectile>
+		  <numberprojectiles>3</numberprojectiles>
+		  <impacteffect>effects\impacts\crush_medium</impacteffect>
+		  <canattackground>1</canattackground>
+		  <active>0</active>
+		</protoaction>
+		<protoaction>
+			<name>SwitchTactic</name>
+			<type>SwitchTactic</type>
+			<anim>Switch</anim>
+			<chargeaction>1</chargeaction>
 		</protoaction>
 	</unit>
 	<unit name="Catapult">
@@ -30220,6 +30295,38 @@
 		</protoaction>
 	</unit>
 	<!-- /// SPECIAL PROJECTILES /// -->
+	<unit name="ProjectilePetrobolosShotToxic">
+		<animfile>vfx\projectiles\petrobolos_shot\petrobolos_shot.xml</animfile>
+		<obstructionradiusx>0.2000</obstructionradiusx>
+		<obstructionradiusz>0.2000</obstructionradiusz>
+		<lifespan>2.0000</lifespan>
+		<decay delay="4.0000" duration="0.1000"></decay>
+		<spawn type="Hit" count="1">ArgusAcidBlobDamage</spawn>
+		<spawn type="HitGround" count="1">ArgusAcidBlobDamage</spawn>
+
+		<movementtype>air</movementtype>
+		<maxvelocity>25.0000</maxvelocity>
+		<unittype>Projectile</unittype>
+		<unittype>LogicalTypeSunRayProjectile</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NoUnitAI</flag>
+		<flag>NoIdleActions</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>Projectile</flag>
+		<flag>NoTieToGround</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>AdjustPositionOnTerrainCollision</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>HasContinuousParticles</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+	</unit>
 	<unit name="ProjectileDisintegrationBolt">
 		<animfile>vfx\projectiles\priest_pharaoh\priest_pharaoh.xml</animfile>
 		<obstructionradiusx>0.2000</obstructionradiusx>

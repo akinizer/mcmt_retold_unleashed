@@ -7920,6 +7920,9 @@
 
       <effect type="Data" action="ChargedRangedSpitAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">Chimera</target></effect>
+
+      <effect type="Data" action="RangedAttackToxic" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Petrobolos</target></effect>
     </effects>
   </tech>
   <tech name="RoarOfOrthus">

@@ -218,6 +218,14 @@
     - Peltast:
         - FlakCannonAttack (Ballistics): anit-land explosive ranged attack, effective vs buildings and ships
         - FlakCannonAttackFlying (Ballistics): anit-air explosive ranged attack
+    - Gastraphetoros:
+        - SwitchTactics
+        - RangedAttack: long range, slow, anti-building, anti-ship
+        - RangedAttackRapidfire: short range, anti-unit
+- siege weapons:
+    - Petrobolos:
+        - SwitchTactic
+        - RangedAttackToxic (ShaftsOfPlague): ProjectilePetrobolosShotToxic
 - naval
     - Pentekonter: 
         - DirectionalArmor

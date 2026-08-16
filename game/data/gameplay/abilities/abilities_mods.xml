@@ -195,6 +195,13 @@
 	<PegasusGroundedMessenger>
 		<ability>MCMT_Takeoff<rof>5</rof><castonself>true</castonself><noautocast>true</noautocast></ability>
 	</PegasusGroundedMessenger>
+		<!--Greek Military Units -->
+	<Gastraphetoros>
+		<ability>NeZhaYouthSwitchTactic<chargetimeasrof>1</chargetimeasrof><castonself>true</castonself><noautocast>true</noautocast><donotforcestop>true</donotforcestop></ability>
+	</Gastraphetoros>
+	<Petrobolos>
+		<ability>NeZhaYouthSwitchTactic<tech>ShaftsOfPlague</tech><chargetimeasrof>1</chargetimeasrof><castonself>true</castonself><noautocast>true</noautocast><donotforcestop>true</donotforcestop></ability>
+	</Petrobolos>
 		<!--Greek-MythUnit-->
 	<MirageTank>
     	<ability>AbilityHamadryad<tech>HallowedWoodlands</tech><castonself>true</castonself><chargetimeasrof>1</chargetimeasrof></ability>

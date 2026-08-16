@@ -1,0 +1,41 @@
+<animfile validation="strict">
+	<attachment>Arrow<include>shared\units\attachments\arrow\arrow.xml</include></attachment>
+	<attachment>Helmet<include>greek\units\archery\gastraphetoros\gastraphetoros_helm.xml</include></attachment>
+	<attachment>Weapon<include>greek\units\attachments\crossbow\crossbow.xml</include></attachment>
+	<attachment>Weapon2<include>greek\units\attachments\crossbow\crossbow.xml</include></attachment>
+	<attachment>Shield<include>greek\units\attachments\shield\shield_g_b.xml</include></attachment>
+	<component>ModelComp<logic type="Tech"><none><assetreference type="TMModel"><file>greek\units\archery\gastraphetoros\gastraphetoros_iron</file><materialvariant index="0"></materialvariant></assetreference></none><mediumarchers><assetreference type="TMModel"><file>greek\units\archery\gastraphetoros\gastraphetoros_bronze</file><materialvariant index="1"></materialvariant></assetreference></mediumarchers><heavyarchers><assetreference type="TMModel"><file>greek\units\archery\gastraphetoros\gastraphetoros_silver</file><materialvariant index="2"></materialvariant></assetreference></heavyarchers><championarchers><assetreference type="TMModel"><file>greek\units\archery\gastraphetoros\gastraphetoros_gold</file><materialvariant index="3"></materialvariant></assetreference></championarchers></logic><attach name="Helmet" attachpoint="helmet"></attach><attach name="Weapon" attachpoint="weapon" syncanims="1"></attach><attach name="Shield" attachpoint="shield"></attach></component>
+	<anim>Death<assetreference type="TMAnimation"><file>greek\units\archery\gastraphetoros\anim\gastraphetoros_death_a</file></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach></anim>
+	<anim>RangedAttack<assetreference type="TMAnimation"><file>greek\units\archery\gastraphetoros\anim\gastraphetoros_attack_a</file><tag type="Attack">0.2</tag><tag type="SpecificSoundSet" checkvisible="1" set="SwooshArrow">0.2</tag></assetreference><component>ModelComp</component><attach name="Arrow" attachpoint="arrow"></attach><attach name="Weapon" attachpoint="weapon" syncanims="1"></attach></anim>
+	<anim>Idle<assetreference type="TMAnimation"><file>greek\units\archery\gastraphetoros\anim\gastraphetoros_idle_a</file></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach></anim>
+	<anim>Bored<assetreference type="TMAnimation"><file>greek\units\archery\gastraphetoros\anim\gastraphetoros_bored_a</file></assetreference><assetreference type="TMAnimation"><file>greek\units\archery\gastraphetoros\anim\gastraphetoros_bored_b</file></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach></anim>
+	<anim>Walk<assetreference type="TMAnimation"><file>greek\units\archery\gastraphetoros\anim\gastraphetoros_walk_a</file></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach></anim>
+	<anim>Flail<assetreference type="TMAnimation"><file>greek\units\archery\gastraphetoros\anim\gastraphetoros_flail_a</file></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach></anim>
+    <anim>Switch<assetreference type="TMAnimation"><file>chinese\units\hero\ne_zha\anim\ne_zha_youth_switch_a</file><tag type="SpecificSoundSet" checkvisible="1" set="NezhaYouthSwitch">0.0</tag></assetreference><component>ModelComp</component><attach name="weapon" attachpoint="weapon"></attach></anim>
+	<anim>RangedAttackRapidfire
+		<assetreference type="TMAnimation">
+			<file>chinese\units\archery\chu_ko_nu\anim\chu_ko_nu_attack_a</file>
+			<tag type="Attack">0.20</tag>
+			<tag type="Attack">0.32</tag>
+			<tag type="Attack">0.40</tag>
+			<tag type="Attack">0.49</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="ChuKoNuRelease">0.16</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="ChuKoNuRelease">0.27</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="ChuKoNuRelease">0.35</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="ChuKoNuRelease">0.44</tag>
+		</assetreference>
+		<assetreference type="TMAnimation">
+			<file>chinese\units\archery\chu_ko_nu\anim\chu_ko_nu_attack_b</file>
+			<tag type="Attack">0.20</tag>
+			<tag type="Attack">0.32</tag>
+			<tag type="Attack">0.40</tag>
+			<tag type="Attack">0.49</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="ChuKoNuRelease">0.16</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="ChuKoNuRelease">0.27</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="ChuKoNuRelease">0.35</tag>
+			<tag type="SpecificSoundSet" checkvisible="1" set="ChuKoNuRelease">0.44</tag>
+		</assetreference>
+		<component>ModelComp</component>
+		<attach name="Arrow" attachpoint="arrow"></attach><attach name="Weapon" attachpoint="weapon" syncanims="1"></attach>
+	</anim>
+</animfile>
