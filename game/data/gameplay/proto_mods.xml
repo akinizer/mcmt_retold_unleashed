@@ -3183,7 +3183,6 @@
 				<target ignoretype="AbstractSiegeWeapon"></target>
 			</onhiteffect>
 			<perfectaccuracy>1</perfectaccuracy>
-			<instantballistics>1</instantballistics>
 			<active>0</active>
 		</protoaction>
 		<protoaction>
