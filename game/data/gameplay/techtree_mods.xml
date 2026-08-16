@@ -7311,13 +7311,38 @@
     </effects>
   </tech>  
 
-  <!-- Greek - Naval Techs -->
-  <tech name="Anastrophe">
+  
+  <!-- General Naval Techs-->
+  <tech name="EnclosedDeck">
     <effects>
-      <effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent" mergeMode="add">
-				<target type="ProtoUnit">Pentekonter</target></effect>
+      <effect type="TechStatus" status="obtainable" mergeMode="add">HoverTransport</effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="HoverTransport" row="1" column="4" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Dock</target></effect>
     </effects>
   </tech>
+  <tech name="HoverTransport">
+		<displaynameid>STR_TECH_HOVER_TRANSPORT_NAME</displaynameid>
+		<rollovertextid>STR_TECH_HOVER_TRANSPORT_LR</rollovertextid>
+		<cost resourcetype="Gold">200.0000</cost>
+		<cost resourcetype="Wood">500.0000</cost>
+		<researchpoints>40.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+		<icon>resources\shared\static_color\technologies\enclosed_deck_icon.png</icon>
+		<flag>CountsTowardMilitaryScore</flag>
+		<effects>
+			<effect type="Data" subtype="MovementType" movementtype="Amphibious" amount="1.00" relativity="Absolute">
+				<target type="ProtoUnit">AbstractTransportShip</target></effect>
+      <effect type="Data" amount="1.35" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">AbstractTransportShip</target></effect>
+      <effect type="Data" protoaction="Trail" amount="1.00" subtype="ProtoActionAdd" unittype="TrailOfSand" relativity="Assign">
+        <target type="ProtoUnit">AbstractTransportShip</target></effect>
+      <effect type="SetName" proto="AbstractTransportShip" newname="STR_UNIT_HOVER_TRANSPORT_NAME"></effect> 
+
+      <effect type="Data" action="RangedAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute">
+        <target type="ProtoUnit">HoverTransport_DefensiveTurret</target></effect>
+		</effects>
+	</tech>
+
   <tech name="HeavyWarships">
 		<effects>
       <effect type="Data" action="RangedAttack" amount="9.00" subtype="MinimumRange" relativity="Absolute" mergeMode="add">
@@ -7335,6 +7360,13 @@
 				<target type="ProtoUnit">TheArgo</target></effect>
 		</effects>
 	</tech>
+  <!-- Greek - Naval Techs -->
+  <tech name="Anastrophe">
+    <effects>
+      <effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent" mergeMode="add">
+				<target type="ProtoUnit">Pentekonter</target></effect>
+    </effects>
+  </tech>
   <!-- Greek - Demeter Techs -->
   <tech name="PredatoryInstinct">
     <effects>

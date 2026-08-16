@@ -595,7 +595,7 @@
 - Petrobolos+, Catapult+, Cheiroballista+, CheiroballistaHero+
 - SiegeTower+, Helepolis+
 
-12. Naval reworks from mcmt mod:
+12. Naval reworks from mcmt mod and new improvements:
 - Ship:  VisualScale+
 
 13. New Special Units: Cosmic Forces
@@ -709,9 +709,13 @@
 - transfer military units to different production buildings for grouping
 
 - special techs:
-    - general:
+    - fortification:
         - ArchitectsOfMarley: <prereq> Architects, <specificage> MythicAge
         - AdvancedFortifications I,II,III    
+    - naval:
+        - HoverTransport:
+            - AbstractTransportShip: movement type changes to Amphibious, hitpoints+, trail, setname Hover Transport
+            - Hover Transport Torpedo: ranged autotargeting magic bolt for kiting and self-defense
         
 16. Special structures from mcmt mod
 - LandLord build:

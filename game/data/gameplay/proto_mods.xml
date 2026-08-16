@@ -1717,7 +1717,6 @@
 
 	<!--	
 	<unit name="FishingShip"></unit>
-	<unit name="TransportShip"></unit>
 	<unit name="RammingWasen"></unit>
 	<unit name="Wasen"></unit>
 	<unit name="Junkozosen"></unit>
@@ -9800,6 +9799,29 @@
 	</unit>
 	<unit name="EarthWall">
 		<unitshieldregen damagetimeout="5.0">1.0000</unitshieldregen>
+	</unit>
+
+	<!-- General Naval Unit Improvements -->
+	<unit name="TransportShipGreek">
+		<dependentunit>HoverTransport_DefensiveTurret</dependentunit>
+	</unit>
+	<unit name="TransportShipEgyptian">
+		<dependentunit>HoverTransport_DefensiveTurret</dependentunit>
+	</unit>
+	<unit name="TransportShipNorse">
+		<dependentunit>HoverTransport_DefensiveTurret</dependentunit>
+	</unit>
+	<unit name="TransportShipAtlantean">
+		<dependentunit>HoverTransport_DefensiveTurret</dependentunit>
+	</unit>
+	<unit name="TransportShipChinese">
+		<dependentunit>HoverTransport_DefensiveTurret</dependentunit>
+	</unit>
+	<unit name="TransportShipJapanese">
+		<dependentunit>HoverTransport_DefensiveTurret</dependentunit>
+	</unit>
+	<unit name="TransportShipAztec">
+		<dependentunit>HoverTransport_DefensiveTurret</dependentunit>
 	</unit>
 
 	<!-- General Unit Improvements -->
@@ -30784,6 +30806,36 @@
 			<targetenemy>1</targetenemy>
 		</protoaction>
 	</unit>
+	<!-- Cosmetic Trails -->
+	<unit name="TrailOfSand">
+		<displaynameid>STR_VFX_NEZHA_FIRE_AREA_NAME</displaynameid>
+		<animfile>vfx\fire\ne_zha\na_zha_fire_damage_trail.xml</animfile>
+		<obstructionradiusx>0.2000</obstructionradiusx>
+		<obstructionradiusz>0.2000</obstructionradiusz>
+		<lifespan>4.0000</lifespan>
+		<decay delay="1.0000" duration="0.1000"></decay>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>air</movementtype>
+		<los>3.0000</los>
+		<unittype>Unit</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>TieToWaterSurface</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name>Trail</name>
+			<type>Trail</type>
+			<persistent>1</persistent>
+			<trailprotounit frequency="0.25">VFXRampage</trailprotounit>
+		</protoaction>
+	</unit>
 	<!-- /// GATHER BONUS AURA CONTAINERS /// -->
 	<unit name="GatherBonusContainer">
 		<obstructionradiusx>0.1000</obstructionradiusx>
@@ -33508,6 +33560,65 @@
 			<displayednumberprojectiles>1</displayednumberprojectiles>
 			<autoretarget>1</autoretarget>
 			<canattackground>1</canattackground>
+			<active>0</active>
+		</protoaction>
+		<protoaction>
+			<name>Drone</name>
+			<type>Drone</type>
+			<persistent>1</persistent>
+		</protoaction>
+	</unit>
+
+	<unit name="HoverTransport_DefensiveTurret">
+		<displaynameid>STR_HOVER_TRANSPORT_DEFENSIVETURRET_NAME</displaynameid>
+		<animfile>vfx\projectiles\asura\fire_ball_left.xml</animfile>
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>air</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>100.0000</initialhitpoints>
+		<maxhitpoints>100.0000</maxhitpoints>
+		<maxvelocity>0</maxvelocity>
+		<los>18.0000</los>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>LogicalTypeMythicMythUnit</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>NonCollideable</flag>
+		<flag>NoHPBar</flag>
+		<flag>Invulnerable</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>DependentAttach</flag>
+		<flag>NoTieToGround</flag>
+		<flag>DirectProjectile</flag>
+		<tactics>mcmt_rangedattack_torpedo.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>3.000000</rof>
+			<damage type="Crush">5.000000</damage>
+			<damagebonus type="Dock">5.00000</damagebonus>
+			<maxrange>16.000000</maxrange>
+			<projectile>ProjectileDraugrArrow</projectile>
+			<numberprojectiles>1</numberprojectiles>
+			<displayednumberprojectiles>1</displayednumberprojectiles>
+			<autoretarget>1</autoretarget>
+			<canattackground>1</canattackground>
+			<impacteffect>effects\impacts\onmyoji</impacteffect>
 			<active>0</active>
 		</protoaction>
 		<protoaction>

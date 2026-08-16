@@ -682,6 +682,12 @@ ID = "STR_UNIT_RAIJU_TEMPEST_NAME"   ;   Str = "Raiju Tempest"
 
 ID = "STR_UNIT_QUIMICHIN_SNIPER"   ;   Str = "Quimichin Sniper"
 
+// REWORKED NAVAL TECHS
+ID = "STR_UNIT_HOVER_TRANSPORT_NAME"   ;   Str = "Hover Transport"
+ID = "STR_TECH_HOVER_TRANSPORT_NAME"   ;   Str = "Enchanted Hover Deck"
+ID = "STR_TECH_HOVER_TRANSPORT_LR"   ;   Str = "Magical Ship enhancement enables transports ship to utilize on both land and sea"
+ID = "STR_HOVER_TRANSPORT_DEFENSIVETURRET_NAME"   ;   Str = "Hover Transport Torpedo"
+
 // FORBIDDEN TECH SPECIAL UNITS
 ID = "STR_FORBIDDEN_PYRAMID_UNLEASHED_NAME"   ;   Str = "Forbidden Pyramid (Unleashed)"
 ID = "STR_FORBIDDEN_PYRAMID_UNLEASHED_SR"   ;   Str = "Sealed Power that has never been meant to be unleashed"
