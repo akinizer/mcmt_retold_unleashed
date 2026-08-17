@@ -715,7 +715,10 @@
     - naval:
         - HoverTransport:
             - AbstractTransportShip: movement type changes to Amphibious, hitpoints+, trail, setname Hover Transport
-            - Hover Transport Torpedo: ranged autotargeting magic bolt for kiting and self-defense
+        - HoverTransport AntiUnitUpgrade:
+            - Hover Transport Torpedo: ranged autotargeting magic bolt for kiting and self-defense, hight rof, light damage, effective vs Naval Units & FlyingUnits
+        - HoverTransport AntiArmorUpgrade:
+            - HoverTransport AntiArmorUpgrade: ranged autotargeting magic bolt for kiting and self-defense, low rof, heavy damage, effective vs Naval Ships & Docks
         
 16. Special structures from mcmt mod
 - LandLord build:

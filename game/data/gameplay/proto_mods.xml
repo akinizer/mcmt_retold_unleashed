@@ -33615,7 +33615,7 @@
 			<damage type="Crush">5.000000</damage>
 			<damagebonus type="AbstractDock">5.00000</damagebonus>
 			<maxrange>16.000000</maxrange>
-			<projectile>ProjectileDraugrArrow</projectile>
+			<projectile>ProjectilePriestPharaoh</projectile>
 			<numberprojectiles>1</numberprojectiles>
 			<displayednumberprojectiles>1</displayednumberprojectiles>
 			<autoretarget>1</autoretarget>
@@ -33629,7 +33629,7 @@
 			<damagebonus type="AbstractDock">10.00000</damagebonus>
 			<damagebonus type="MythUnit">5.00000</damagebonus>
 			<maxrange>20.000000</maxrange>
-			<projectile>ProjectileShiJiAttack</projectile>
+			<projectile>ProjectileDraugrArrow</projectile>
 			<numberprojectiles>1</numberprojectiles>
 			<displayednumberprojectiles>1</displayednumberprojectiles>
 			<autoretarget>1</autoretarget>
