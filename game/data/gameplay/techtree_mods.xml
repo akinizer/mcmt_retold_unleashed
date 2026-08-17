@@ -897,6 +897,11 @@
       <status>UNOBTAINABLE</status>
       <!-- Naval Units -->
       <effects>
+        <!--Legacy-->
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="ArcherLineUpgraded" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbstractWarship</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="ArcherLineUpgraded" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbstractTower</target></effect>
         <!--HeroProtagonist-->
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="HeroProtagonist" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">OdysseusSPC</target></effect>
@@ -11347,6 +11352,104 @@
         <target type="ProtoUnit">Kitsune</target></effect>
     </effects>
   </tech>
+  <!-- General Military Techs -->
+  <tech name="MediumArchers">
+		<effects>
+			<effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">ArcherLineUpgraded</target></effect>
+			
+			<effect type="Data" action="RangedAttack" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">Peltast</target></effect>
+			<effect type="Data" action="RangedAttack" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">Turma</target></effect>
+			<effect type="Data" action="RangedAttack" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">TurmaHero</target></effect>
+			<effect type="Data" action="RangedAttackFlying" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">TurmaHero</target></effect>
+			<effect type="Data" action="RangedAttack" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">Cheiroballista</target></effect>
+			<effect type="Data" action="RangedAttack" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">CheiroballistaHero</target></effect>
+			<effect type="Data" action="RangedAttackFlying" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">CheiroballistaHero</target></effect>			
+			<effect type="Data" action="RangedAttack" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">WuzuJavelineer</target></effect>
+			<effect type="Data" action="RangedAttack" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">FireArcher</target></effect>
+      <!---->
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">AbstractArcher</target></effect>
+      <effect type="Data" action="RangedAttack" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">ArcherLineUpgraded</target></effect>
+      <effect type="Data" action="RangedAttackFlying" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">ArcherLineUpgraded</target></effect>
+		</effects>
+	</tech>
+	<tech name="HeavyArchers">
+		<effects>
+			<effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">ArcherLineUpgraded</target></effect>
+
+			<effect type="Data" action="RangedAttack" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">Peltast</target></effect>		
+			<effect type="Data" action="RangedAttack" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">Turma</target></effect>
+			<effect type="Data" action="RangedAttack" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">TurmaHero</target></effect>
+			<effect type="Data" action="RangedAttackFlying" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">TurmaHero</target></effect>
+			<effect type="Data" action="RangedAttack" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">Cheiroballista</target></effect>
+			<effect type="Data" action="RangedAttack" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">CheiroballistaHero</target></effect>
+			<effect type="Data" action="RangedAttackFlying" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">CheiroballistaHero</target></effect>
+			<effect type="Data" action="RangedAttack" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">WuzuJavelineer</target></effect>
+			<effect type="Data" action="RangedAttack" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">FireArcher</target></effect>
+			<!---->
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">AbstractArcher</target></effect>
+      <effect type="Data" action="RangedAttack" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">ArcherLineUpgraded</target></effect>
+      <effect type="Data" action="RangedAttackFlying" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">ArcherLineUpgraded</target></effect>
+		</effects>
+	</tech>
+	<tech name="ChampionArchers">
+		<effects>
+			<effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">ArcherLineUpgraded</target></effect>
+
+			<effect type="Data" action="RangedAttack" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">Peltast</target></effect>		
+			<effect type="Data" action="RangedAttack" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">Turma</target></effect>
+			<effect type="Data" action="RangedAttack" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">TurmaHero</target></effect>
+			<effect type="Data" action="RangedAttackFlying" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">TurmaHero</target></effect>
+			<effect type="Data" action="RangedAttack" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">Cheiroballista</target></effect>
+			<effect type="Data" action="RangedAttack" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">CheiroballistaHero</target></effect>
+			<effect type="Data" action="RangedAttackFlying" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">CheiroballistaHero</target></effect>
+			<effect type="Data" action="RangedAttack" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">WuzuJavelineer</target></effect>
+			<effect type="Data" action="RangedAttack" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">FireArcher</target></effect>
+			<!---->
+      <effect type="Data" amount="1.10" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">AbstractArcher</target></effect>
+      <effect type="Data" action="RangedAttack" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">ArcherLineUpgraded</target></effect>
+      <effect type="Data" action="RangedAttackFlying" amount="1.0" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">ArcherLineUpgraded</target></effect>
+		</effects>
+	</tech>
+
   <!-- Aztec Military Techs -->
 
   <tech name="MediumNoblesHutSoldiers">

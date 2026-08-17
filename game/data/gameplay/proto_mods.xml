@@ -2794,6 +2794,21 @@
 			</rank>
 		</veterancybonus>
 	</unit>
+	<unit name="Scylla">
+		<flag>HasDefaultAttack</flag>
+		<tactics>mcmt_scylla.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<defaultattack>1</defaultattack>
+		</protoaction>
+		<protoaction>
+			<name>Consume</name>
+			<rof>1.000000</rof>
+			<damage type="Crush">10.000000</damage>
+			<maxrange>2.000000</maxrange>
+			<onhiteffect type="Lifesteal" rate="0.5" targetunittype="AbstractFishingShip"></onhiteffect>
+		</protoaction>
+	</unit>
 	<unit name="Carcinos">
 		<armor type="Hack" value="0.7000"></armor>
 		<armor type="Pierce" value="0.9000"></armor>

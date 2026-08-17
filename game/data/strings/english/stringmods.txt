@@ -1435,6 +1435,7 @@ ID = "STR_ABILITY_SHINOBI_MULTITHROW_ATTACK_LR"   ;   Str = "Shinobi sends multi
 ID = "STR_ACTION_SLAYER_ATTACK"   ;   Str = "Slayer Attack"
 
 ID = "STR_ABILITY_MIGHTY_ROAR"   ;   Str = "Mighty Roar"
+ID = "STR_ACTION_CONSUME"   ;   Str = "Consume"
 
 // COMMAND TECHS
 ID = "STR_BLD_FIREWALL_NAME"   ;   Str = "Fire Wall"
