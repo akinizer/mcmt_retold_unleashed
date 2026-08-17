@@ -6959,19 +6959,7 @@
 
   <!-- TECH REWORKS -->
 
-  <!-- General - Techs -->
-  <tech name="HeroicFleet">
-    <effects>
-      <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythResistant" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">AbstractArcherShip</target></effect> 
-      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
-        <target type="ProtoUnit">AbstractArcherShip</target></effect>
-      <effect type="Data" action="RangedAttack" amount="3.0" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">AbstractArcherShip</target></effect>
-      <effect type="Data" subtype="LOS" amount="3.00" relativity="Absolute" mergeMode="add">
-				<target type="ProtoUnit">AbstractArcherShip</target></effect>
-    </effects>
-  </tech>
+  <!-- General Techs -->
   <tech name="Omniscience">
     <effects>
       <effect type="Data" amount="1.00" subtype="RevealEnemyUI" relativity="Absolute" mergeMode="add">
@@ -7113,6 +7101,45 @@
         <target type="ProtoUnit">Building</target></effect>
     </effects>
   </tech>  
+  <tech name="Engineers">
+    <effects>
+			<effect type="Data" action="RangedAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">Petrobolos</target></effect>
+			<effect type="Data" action="RangedAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">Catapult</target></effect>
+			<effect type="Data" action="RangedAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">FireSiphon</target></effect>
+			<effect type="Data" action="RangedAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">Oyumi</target></effect>
+			<effect type="Data" action="AntiWallAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">Petrobolos</target></effect>
+			<effect type="Data" action="AntiWallAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">Catapult</target></effect>
+			<effect type="Data" action="AntiWallAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">FireSiphon</target></effect>
+			<effect type="Data" action="AntiWallAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">Oyumi</target></effect>
+      <!---->
+      <effect type="Data" action="RangedAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractSiegeWeapon</target></effect>
+      <effect type="Data" action="AntiWallAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractSiegeWeapon</target></effect>
+      <effect type="Data" action="HandAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractSiegeWeapon</target></effect>
+      <effect type="Data" action="HandAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractSiegeWeapon</target></effect>
+
+      <effect type="Data" amount="-0.20" subtype="ArmorVulnerability" armortype="Crush" relativity="Percent" mergeMode="add">
+				<target type="ProtoUnit">AbstractWarship</target></effect>
+
+      <effect type="Data" amount="0.90" subtype="ROF" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">AbstractCloseCombatShip</target></effect>
+      <effect type="Data" amount="2.00" subtype="MaximumVelocity" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractArcherShip</target></effect>
+      <effect type="Data" amount="1.40" subtype="Hitpoints" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractSiegeShip</target></effect>
+		</effects>
+  </tech>
   <tech name="WatchTower">
     <effects>
       <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="LogicalTypeBuildingsThatShoot" relativity="Absolute" mergeMode="remove">
@@ -7310,9 +7337,20 @@
         <target type="ProtoUnit">ArcherLineUpgraded</target></effect>            
     </effects>
   </tech>  
-
   
   <!-- General Naval Techs-->
+  <tech name="HeroicFleet">
+    <effects>
+      <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythResistant" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">AbstractArcherShip</target></effect> 
+      <effect type="Data" amount="1.05" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">AbstractArcherShip</target></effect>
+      <effect type="Data" action="RangedAttack" amount="3.0" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">AbstractArcherShip</target></effect>
+      <effect type="Data" subtype="LOS" amount="3.00" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractArcherShip</target></effect>
+    </effects>
+  </tech>
   <tech name="EnclosedDeck">
     <effects>
       <effect type="TechStatus" status="obtainable" mergeMode="add">HoverTransport</effect>
