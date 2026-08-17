@@ -2714,6 +2714,7 @@
 			<rate type="LogicalTypeVillagerNotHero">1.0</rate>
 			<rate type="TradeUnit">1.0</rate>
 			<rate type="Building">1.0</rate>
+			<rate type="AbstractFlyingUnit">0.0</rate>
 			<charged>
 				<chargedmodify modifytype="Speed" applytype="Multiply">4.0</chargedmodify>
 				<duration>3.0</duration>
@@ -9803,25 +9804,25 @@
 
 	<!-- General Naval Unit Improvements -->
 	<unit name="TransportShipGreek">
-		<dependentunit>HoverTransport_DefensiveTurret</dependentunit>
+		<dependentunit>HoverTransport_DefensiveTurretLight</dependentunit>
 	</unit>
 	<unit name="TransportShipEgyptian">
-		<dependentunit>HoverTransport_DefensiveTurret</dependentunit>
+		<dependentunit>HoverTransport_DefensiveTurretLight</dependentunit>
 	</unit>
 	<unit name="TransportShipNorse">
-		<dependentunit>HoverTransport_DefensiveTurret</dependentunit>
+		<dependentunit>HoverTransport_DefensiveTurretLight</dependentunit>
 	</unit>
 	<unit name="TransportShipAtlantean">
-		<dependentunit>HoverTransport_DefensiveTurret</dependentunit>
+		<dependentunit>HoverTransport_DefensiveTurretLight</dependentunit>
 	</unit>
 	<unit name="TransportShipChinese">
-		<dependentunit>HoverTransport_DefensiveTurret</dependentunit>
+		<dependentunit>HoverTransport_DefensiveTurretLight</dependentunit>
 	</unit>
 	<unit name="TransportShipJapanese">
-		<dependentunit>HoverTransport_DefensiveTurret</dependentunit>
+		<dependentunit>HoverTransport_DefensiveTurretLight</dependentunit>
 	</unit>
 	<unit name="TransportShipAztec">
-		<dependentunit>HoverTransport_DefensiveTurret</dependentunit>
+		<dependentunit>HoverTransport_DefensiveTurretLight</dependentunit>
 	</unit>
 
 	<!-- General Unit Improvements -->
@@ -33569,7 +33570,7 @@
 		</protoaction>
 	</unit>
 
-	<unit name="HoverTransport_DefensiveTurret">
+	<unit name="HoverTransport_DefensiveTurretLight">
 		<displaynameid>STR_HOVER_TRANSPORT_DEFENSIVETURRET_NAME</displaynameid>
 		<animfile>vfx\projectiles\asura\fire_ball_left.xml</animfile>
 		<obstructionradiusx>0.1000</obstructionradiusx>
@@ -33585,6 +33586,7 @@
 		<unittype>UnitClass</unittype>
 		<unittype>Ranged</unittype>
 		<unittype>MilitaryUnit</unittype>
+		<unittype>AbstractWarship</unittype>
 		<unittype>LogicalTypeMythicMythUnit</unittype>
 		<unittype>LogicalTypeGarrisonInShips</unittype>
 		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
@@ -33608,10 +33610,10 @@
 		<flag>DirectProjectile</flag>
 		<tactics>mcmt_rangedattack_torpedo.tactics</tactics>
 		<protoaction>
-			<name>RangedAttack</name>
-			<rof>3.000000</rof>
+			<name>RangedAttackAntiUnit</name>
+			<rof>1.000000</rof>
 			<damage type="Crush">5.000000</damage>
-			<damagebonus type="Dock">5.00000</damagebonus>
+			<damagebonus type="AbstractDock">5.00000</damagebonus>
 			<maxrange>16.000000</maxrange>
 			<projectile>ProjectileDraugrArrow</projectile>
 			<numberprojectiles>1</numberprojectiles>
@@ -33619,7 +33621,20 @@
 			<autoretarget>1</autoretarget>
 			<canattackground>1</canattackground>
 			<impacteffect>effects\impacts\onmyoji</impacteffect>
-			<active>0</active>
+		</protoaction>
+		<protoaction>
+			<name>RangedAttackAntiArmor</name>
+			<rof>3.000000</rof>
+			<damage type="Crush">15.000000</damage>
+			<damagebonus type="AbstractDock">10.00000</damagebonus>
+			<damagebonus type="MythUnit">5.00000</damagebonus>
+			<maxrange>20.000000</maxrange>
+			<projectile>ProjectileShiJiAttack</projectile>
+			<numberprojectiles>1</numberprojectiles>
+			<displayednumberprojectiles>1</displayednumberprojectiles>
+			<autoretarget>1</autoretarget>
+			<canattackground>1</canattackground>
+			<impacteffect>effects\impacts\onmyoji</impacteffect>
 		</protoaction>
 		<protoaction>
 			<name>Drone</name>

@@ -1,6 +1,6 @@
 <tactics>
 	<action>
-		<name stringid="STR_ACTION_RANGED">RangedAttack</name>
+		<name stringid="STR_HOVER_TRANSPORT_DEFENSIVETURRET_NAME">RangedAttackAntiUnit</name>
 		<type>Attack</type>
 		<attackaction>1</attackaction>
 		<rangedlogic>1</rangedlogic>
@@ -11,12 +11,28 @@
 		<trackrating>1.0</trackrating>
 		<impacteffect>effects\impacts\pierce</impacteffect>
 		<rate type="NavalUnit">1.0</rate>
-		<rate type="Dock">1.0</rate>
+		<rate type="AbstractDock">1.0</rate>
+		<rate type="AbstractFlyingUnit">1.0</rate>
+		<active>0</active>
 	</action>
 	<action>
-		<name stringid="STR_ACTION_DEVOTE">DevoteMajor</name>
-		<type>DevoteMajor</type>
-		<maxrange>0.2</maxrange>
+		<name stringid="STR_HOVER_TRANSPORT_DEFENSIVETURRET_NAME">RangedAttackAntiArmor</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttack</anim>
+		<accuracy>0.8</accuracy>
+		<maxspread>5.0</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>1.0</trackrating>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+		<rate type="NavalUnit">1.0</rate>
+		<rate type="AbstractDock">1.0</rate>
+		<active>0</active>
 	</action>
-	<tactic>Default<action priority="100">RangedAttack</action><action>DevoteMajor</action><attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype></tactic>
+	<tactic>Default
+		<action priority="100">RangedAttackAntiArmor</action>
+		<action priority="90">RangedAttackAntiUnit</action>
+		<attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype>
+	</tactic>
 </tactics>

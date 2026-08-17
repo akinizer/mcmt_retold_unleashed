@@ -7336,12 +7336,62 @@
 				<target type="ProtoUnit">AbstractTransportShip</target></effect>
       <effect type="Data" protoaction="Trail" amount="1.00" subtype="ProtoActionAdd" unittype="TrailOfSand" relativity="Assign" hidetooltip="">
         <target type="ProtoUnit">AbstractTransportShip</target></effect>
-      <effect type="SetName" proto="AbstractTransportShip" newname="STR_UNIT_HOVER_TRANSPORT_NAME" hidetooltip="" ></effect> 
+        
+      <effect type="SetName" proto="TransportShipGreek" newname="STR_UNIT_HOVER_TRANSPORT_NAME" hidetooltip=""></effect> 
+      <effect type="SetName" proto="TransportShipEgyptian" newname="STR_UNIT_HOVER_TRANSPORT_NAME" hidetooltip=""></effect> 
+      <effect type="SetName" proto="TransportShipNorse" newname="STR_UNIT_HOVER_TRANSPORT_NAME" hidetooltip=""></effect> 
+      <effect type="SetName" proto="TransportShipAtlantean" newname="STR_UNIT_HOVER_TRANSPORT_NAME" hidetooltip=""></effect> 
+      <effect type="SetName" proto="TransportShipChinese" newname="STR_UNIT_HOVER_TRANSPORT_NAME" hidetooltip=""></effect> 
+      <effect type="SetName" proto="TransportShipJapanese" newname="STR_UNIT_HOVER_TRANSPORT_NAME" hidetooltip=""></effect> 
+      <effect type="SetName" proto="TransportShipAztec" newname="STR_UNIT_HOVER_TRANSPORT_NAME" hidetooltip=""></effect> 
 
-      <effect type="Data" action="RangedAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute">
-        <target type="ProtoUnit">HoverTransport_DefensiveTurret</target></effect>
+      <!-- Refresh VFX Trail -->
+      <effect type="TransformUnit" toprotoid="TransportShipGreek" fromprotoid="TransportShipGreek"></effect>
+      <effect type="TransformUnit" toprotoid="TransportShipEgyptian" fromprotoid="TransportShipEgyptian"></effect>
+      <effect type="TransformUnit" toprotoid="TransportShipNorse" fromprotoid="TransportShipNorse"></effect>
+      <effect type="TransformUnit" toprotoid="TransportShipAtlantean" fromprotoid="TransportShipAtlantean"></effect>
+      <effect type="TransformUnit" toprotoid="TransportShipChinese" fromprotoid="TransportShipChinese"></effect>
+      <effect type="TransformUnit" toprotoid="TransportShipJapanese" fromprotoid="TransportShipJapanese"></effect>
+      <effect type="TransformUnit" toprotoid="TransportShipAztec" fromprotoid="TransportShipAztec"></effect>
 
-      <effect type="TransformUnit" toprotoid="AbstractTransportShip" fromprotoid="AbstractTransportShip" includequeued="true"></effect>
+      <effect type="TechStatus" status="obtainable">HoverTransport_AntiUnit_Upgrade</effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="HoverTransport_AntiUnit_Upgrade" row="1" column="4" relativity="Assign">
+        <target type="ProtoUnit">Dock</target></effect>
+		</effects>
+	</tech>
+  <tech name="HoverTransport_AntiUnit_Upgrade">
+		<displaynameid>STR_TECH_HOVER_TRANSPORT_ANTIUNIT_UPGRADE_NAME</displaynameid>
+		<rollovertextid>STR_TECH_HOVER_TRANSPORT_ANTIUNIT_UPGRADE_LR</rollovertextid>
+		<cost resourcetype="Wood">500.0000</cost>
+		<cost resourcetype="Favor">10.0000</cost>
+		<researchpoints>40.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+		<icon>resources\shared\static_color\technologies\enclosed_deck_icon.png</icon>
+		<flag>CountsTowardMilitaryScore</flag>
+		<effects>
+      <effect type="Data" action="RangedAttackAntiUnit" amount="1.00" subtype="ActionEnable" relativity="Absolute">
+        <target type="ProtoUnit">HoverTransport_DefensiveTurretLight</target></effect>
+
+      <effect type="TechStatus" status="obtainable">HoverTransport_AntiArmor_Upgrade</effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="HoverTransport_AntiArmor_Upgrade" row="1" column="4" relativity="Assign">
+        <target type="ProtoUnit">Dock</target></effect>
+		</effects>
+	</tech>
+  <tech name="HoverTransport_AntiArmor_Upgrade">
+		<displaynameid>STR_TECH_HOVER_TRANSPORT_ANTIARMOR_UPGRADE_NAME</displaynameid>
+		<rollovertextid>STR_TECH_HOVER_TRANSPORT_ANTIARMOR_UPGRADE_LR</rollovertextid>
+		<cost resourcetype="Wood">500.0000</cost>
+		<cost resourcetype="Favor">10.0000</cost>
+		<researchpoints>40.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+		<icon>resources\shared\static_color\technologies\enclosed_deck_icon.png</icon>
+		<flag>CountsTowardMilitaryScore</flag>
+		<effects>
+      <effect type="Data" action="RangedAttackAntiArmor" amount="1.00" subtype="ActionEnable" relativity="Absolute">
+        <target type="ProtoUnit">HoverTransport_DefensiveTurretLight</target></effect>
+        
+      <effect type="Data" amount="4" subtype="LOS" relativity="Absolute">
+				<target type="ProtoUnit">AbstractTransportShip</target></effect>
 		</effects>
 	</tech>
 

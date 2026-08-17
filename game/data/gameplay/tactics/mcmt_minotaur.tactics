@@ -2,7 +2,7 @@
 	<action>
 		<name stringid="STR_ACTION_HAND">HandAttack</name>
 		<type>Attack</type>
-		<rate type="All">1.0</rate>
+		<rate type="LogicalTypeHandUnitsAttack">1.0</rate>
 		<attackaction>1</attackaction>
 		<handlogic>1</handlogic>
 		<forceareaattacktarget>1</forceareaattacktarget>
@@ -13,10 +13,12 @@
 	<action>
 		<name stringid="STR_ACTION_GORE">Gore</name>
 		<type>Gore</type>
+		<rate type="AbstractFlyingUnit">0.0</rate>
 		<rate type="HumanSoldier">1.0</rate>
 		<rate type="LogicalTypeMythUnitNotTitan">1.0</rate>
 		<rate type="LogicalTypeVillagerNotHero">1.0</rate>
 		<rate type="TradeUnit">1.0</rate>
+		
 		<attackaction>1</attackaction>
 		<handlogic>1</handlogic>
 		<anim>Gore</anim>

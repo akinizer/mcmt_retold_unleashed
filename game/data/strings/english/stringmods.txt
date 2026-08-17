@@ -686,6 +686,10 @@ ID = "STR_UNIT_QUIMICHIN_SNIPER"   ;   Str = "Quimichin Sniper"
 ID = "STR_UNIT_HOVER_TRANSPORT_NAME"   ;   Str = "Hover Transport"
 ID = "STR_TECH_HOVER_TRANSPORT_NAME"   ;   Str = "Enchanted Hover Deck"
 ID = "STR_TECH_HOVER_TRANSPORT_LR"   ;   Str = "Magical Ship enhancement enables transports ship to utilize on both land and sea"
+ID = "STR_TECH_HOVER_TRANSPORT_ANTIUNIT_UPGRADE_NAME"   ;   Str = "Hover Transport Upgrade: Anti-Unit Magic Bolts"
+ID = "STR_TECH_HOVER_TRANSPORT_ANTIUNIT_UPGRADE_LR"   ;   Str = "Magitech craftspeople install magic conversion engines to launch magical bolts. Effective vs Naval Units"
+ID = "STR_TECH_HOVER_TRANSPORT_ANTIARMOR_UPGRADE_NAME"   ;   Str = "Hover Transport Upgrade: Anti-Armor Magic Bolts"
+ID = "STR_TECH_HOVER_TRANSPORT_ANTIARMOR_UPGRADE_LR"   ;   Str = "Magitech craftspeople upgrades magic conversion engines to launch magical heavy bolts. Effective vs Myth Units and Naval Structures"
 ID = "STR_HOVER_TRANSPORT_DEFENSIVETURRET_NAME"   ;   Str = "Hover Transport Torpedo"
 
 // FORBIDDEN TECH SPECIAL UNITS
