@@ -2810,34 +2810,89 @@
 		</protoaction>
 	</unit>
 	<unit name="Carcinos">
-		<armor type="Hack" value="0.7000"></armor>
+		<armor type="Hack" value="0.4000"></armor>
 		<armor type="Pierce" value="0.9000"></armor>
 		<armor type="Crush" value="0.4000"></armor>
 		<maxvelocity>6.5000</maxvelocity>
-		<movementtype>amphibious</movementtype>		
-		<flag>TieToWaterSurface</flag>
-		<flag>TieToGround</flag>
+		<movementtype>Amphibious</movementtype>		
+
+		<rechargetime>22.0000</rechargetime>
+
 		<flag>AmphibiousBirth</flag>
+		<flag>HasDefaultAttack</flag>
+		<selfdestructprotoaction>SelfDestructAttack</selfdestructprotoaction>
+
+		<tactics>mcmt_crab.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<defaultattack>1</defaultattack>
+		</protoaction>
+		<protoaction>
+			<name>ChargedHandAttack</name>
+			<rof>0.800000</rof>
+			<damage type="Hack">50.000000</damage>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<maxrange>1.000000</maxrange>
+			<onhiteffect type="Throw">
+				<target attacktype="HumanSoldier"></target>
+				<target attacktype="LogicalTypeVillagerNotHero"></target>
+			</onhiteffect>
+			<onhiteffect type="DamageOverTime" duration="3.000000">
+				<damage type="Divine">1.0000000</damage>
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+			<onhiteffect type="Attach" proto="VFXBLeed" attachbone="spine" duration="3.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+			<throw>1</throw>
+			<impactforcemin>300.0f</impactforcemin>
+			<impactforcemax>600.0f</impactforcemax>
+			<impactlaunchangle>10.0</impactlaunchangle>
+			<areasortmode>Directional</areasortmode>
+
+			<rate type="Unit">1.0</rate>		
+			<chargeaction>1</chargeaction>
+		</protoaction>
+		<protoaction>
+			<name>SelfDestructAttack</name>
+			<type>Attack</type>
+			<anim>HandAttack</anim>
+			<rate type="All">1.0</rate>
+			<attackaction>1</attackaction>
+			<areasortmode>Radial</areasortmode>
+			<impacteffect>effects\impacts\pierce</impacteffect>
+
+			<damage type="Pierce">100.000000</damage>
+			<damagearea>9.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">0.500000</damagebonus>
+		</protoaction>
 		<protoaction>
 			<name>ChargedModify</name>
 			<type>ChargedModify</type>
 			<persistent>1</persistent>
-			<charged>
+			<charged>				
+				<chargedmodify modifytype="ArmorSpecific" param="Hack" applytype="Multiply">1.6000</chargedmodify>
 				<activationtype>TerrainType</activationtype>
+				<settactic>Default</settactic>
 				<terraintype>Water</terraintype>
-				<settactic>Water</settactic>
 				<duration>1.0</duration>
 				<cooldown>0.01</cooldown>
 			</charged>
 			<charged>
 				<chargedmodify modifytype="Speed" applytype="Multiply">0.5</chargedmodify>
 				<activationtype>TerrainType</activationtype>
+				<settactic>Default</settactic>
 				<terraintype>Land</terraintype>
-				<settactic>Land</settactic>
 				<duration>1.0</duration>
 				<cooldown>0.01</cooldown>
 			</charged>
 		</protoaction>
+		
 	</unit>
 	<unit name="NemeanLion">
 		<armor type="Hack" value="0.6000"></armor>
@@ -31187,6 +31242,80 @@
 		</protoaction>
 	</unit> 
 	
+	<!-- /// IDLE BONUS CONTAINERS /// -->
+	<unit name="IdleStatBonusContainer" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name>PetrificationBonusHack</name>
+			<type>IdleStatBonus</type>
+			<modifyamount>0.025000</modifyamount>
+			<modifydamagetype>Hack</modifydamagetype>
+			<modifyratecap>1.250000</modifyratecap>
+			<modifybase>1.000000</modifybase>
+			<modifydecay>0.005000</modifydecay>
+			<persistent>1</persistent>
+			<modifytype>ArmorSpecific</modifytype>
+		</protoaction>
+		<protoaction>
+			<name>PetrificationBonusPierce</name>
+			<type>IdleStatBonus</type>
+			<modifyamount>0.025000</modifyamount>
+			<modifydamagetype>Pierce</modifydamagetype>
+			<modifyratecap>1.250000</modifyratecap>
+			<modifybase>1.000000</modifybase>
+			<modifydecay>0.005000</modifydecay>
+			<persistent>1</persistent>
+			<modifytype>ArmorSpecific</modifytype>
+		</protoaction>
+		<protoaction>
+			<name>AutoLOS</name>
+			<type>IdleStatBonus</type>
+			<modifyamount>1.000000</modifyamount>
+			<modifyratecap>8.000000</modifyratecap>
+			<modifydecay>0.300000</modifydecay>
+			<modifytype>LOS</modifytype>
+			<anim>MaxLOS</anim>
+			<persistent>1</persistent>
+		</protoaction>
+		<protoaction>
+			<name>LonghouseSpeedBonus</name>
+			<type>IdleStatBonus</type>
+			<modifyamount>0.0100</modifyamount>
+			<modifyratecap>1.3000</modifyratecap>
+			<modifybase>1.0000</modifybase>
+			<modifydecay>0.0050</modifydecay>
+			<modifytype>Speed</modifytype>
+			<persistent>1</persistent>
+		</protoaction>
+		<protoaction>
+			<name>IdleDamageBonus</name>
+			<type>IdleStatBonus</type>
+			<modifyamount>0.00250</modifyamount>
+			<modifyratecap>1.3000</modifyratecap>
+			<modifybase>1.0000</modifybase>
+			<modifydecay>0.00100</modifydecay>
+			<modifytype>Damage</modifytype>
+			<persistent>1</persistent>
+		</protoaction>
+	</unit> 
+
 	<!-- /// BONUS DAMAGE AURA CONTAINERS /// -->
 	<unit name="MythBonusContainer" mergeMode="add">
 		<obstructionradiusx>0.1000</obstructionradiusx>

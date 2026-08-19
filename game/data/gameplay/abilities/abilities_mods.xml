@@ -228,6 +228,9 @@
 		<ability>AbilityManticoreBarrageMode<chargetimeasrof>1</chargetimeasrof></ability>
 		<ability>PassiveSolarFlare<tech>SunRay</tech><alwaysdisabledingrid>1</alwaysdisabledingrid></ability>
 	</ManticoreBarrageMode>
+	<Carcinos>
+		<ability>AbilityChargedHandAttack<chargetimeasrof>1</chargetimeasrof></ability>
+	</Carcinos>
 		<!--Chinese-Hero-->	
 	<Nezha>
 		<ability>PassiveDivineImmunity<alwaysdisabledingrid>1</alwaysdisabledingrid></ability>
