@@ -1808,79 +1808,80 @@
 		<tactics>mcmt_market.tactics</tactics>
 		<protoaction>
 			<name>ShrineGatherRateBoost</name>
-		<modifybase>1.0</modifybase>
-		<maxrange>20</maxrange>
-		<modifyratebytype>1</modifyratebytype>
-		<modifyabstracttype>Resource</modifyabstracttype>
-		<rate type="Tree">0.05</rate>
-		<rate type="NonConvertableHerdable">0.067</rate>
-		<rate type="ArcticWolf">0.1</rate>
-		<rate type="Aurochs">0.333</rate>
-		<rate type="Baboon">0.083</rate>
-		<rate type="Bear">0.167</rate>
-		<rate type="Boar">0.267</rate>
-		<rate type="Caribou">0.133</rate>
-		<rate type="Crocodile">0.167</rate>
-		<rate type="CrownedCrane">0.083</rate>
-		<rate type="Deer">0.133</rate>
-		<rate type="Elephant">0.6</rate>
-		<rate type="Elk">0.133</rate>
-		<rate type="Gazelle">0.133</rate>
-		<rate type="Giraffe">0.267</rate>
-		<rate type="Hippopotamus">0.333</rate>
-		<rate type="Hyena">0.083</rate>
-		<rate type="Lion">0.083</rate>
-		<rate type="Monkey">0.083</rate>
-		<rate type="PolarBear">0.167</rate>
-		<rate type="Rhinoceros">0.433</rate>
-		<rate type="Walrus">0.333</rate>
-		<rate type="WaterBuffalo">0.333</rate>
-		<rate type="Wolf">0.1</rate>
-		<rate type="Zebra">0.167</rate>
-		<rate type="BlackBear">0.167</rate>
-		<rate type="GoldenPheasant">0.1</rate>
-		<rate type="RedCrownedCrane">0.1</rate>
-		<rate type="SpottedDeer">0.133</rate>
-		<rate type="DeerShrineOfTheHunt">0.133</rate>
-		<rate type="SnowMonkey">0.083</rate>
-		<rate type="JapaneseWolf">0.1</rate>
-		<rate type="GreenPheasant">0.1</rate>
-		<rate type="Serow">0.167</rate>
-		<rate type="BerryBush">0.1</rate>
-		<rate type="MineGoldLarge">1.00</rate>
-		<rate type="MineGoldMedium">0.50</rate>
-		<rate type="MineGoldSmall">0.25</rate>
-		<rate type="MineDwarvenLarge">1.00</rate>
-		<rate type="MineDwarvenMedium">0.50</rate>
-		<rate type="MineDwarvenSmall">0.25</rate>
-		<persistent>1</persistent>
-		<modifytype>GatherRateMultiplier</modifytype>
-		<exclusive>1</exclusive>
-		<includenature>1</includenature>
-		<donotignoredead>1</donotignoredead>
-		<modifyinventoryscale>1</modifyinventoryscale>
+			<modifybase>1.0</modifybase>
+			<maxrange>20</maxrange>
+			<modifyratebytype>1</modifyratebytype>
+			<modifyabstracttype>Resource</modifyabstracttype>
+			<rate type="Tree">0.05</rate>
+			<rate type="NonConvertableHerdable">0.067</rate>
+			<rate type="ArcticWolf">0.1</rate>
+			<rate type="Aurochs">0.333</rate>
+			<rate type="Baboon">0.083</rate>
+			<rate type="Bear">0.167</rate>
+			<rate type="Boar">0.267</rate>
+			<rate type="Caribou">0.133</rate>
+			<rate type="Crocodile">0.167</rate>
+			<rate type="CrownedCrane">0.083</rate>
+			<rate type="Deer">0.133</rate>
+			<rate type="Elephant">0.6</rate>
+			<rate type="Elk">0.133</rate>
+			<rate type="Gazelle">0.133</rate>
+			<rate type="Giraffe">0.267</rate>
+			<rate type="Hippopotamus">0.333</rate>
+			<rate type="Hyena">0.083</rate>
+			<rate type="Lion">0.083</rate>
+			<rate type="Monkey">0.083</rate>
+			<rate type="PolarBear">0.167</rate>
+			<rate type="Rhinoceros">0.433</rate>
+			<rate type="Walrus">0.333</rate>
+			<rate type="WaterBuffalo">0.333</rate>
+			<rate type="Wolf">0.1</rate>
+			<rate type="Zebra">0.167</rate>
+			<rate type="BlackBear">0.167</rate>
+			<rate type="GoldenPheasant">0.1</rate>
+			<rate type="RedCrownedCrane">0.1</rate>
+			<rate type="SpottedDeer">0.133</rate>
+			<rate type="DeerShrineOfTheHunt">0.133</rate>
+			<rate type="SnowMonkey">0.083</rate>
+			<rate type="JapaneseWolf">0.1</rate>
+			<rate type="GreenPheasant">0.1</rate>
+			<rate type="Serow">0.167</rate>
+			<rate type="BerryBush">0.1</rate>
+			<rate type="MineGoldLarge">1.00</rate>
+			<rate type="MineGoldMedium">0.50</rate>
+			<rate type="MineGoldSmall">0.25</rate>
+			<rate type="MineDwarvenLarge">1.00</rate>
+			<rate type="MineDwarvenMedium">0.50</rate>
+			<rate type="MineDwarvenSmall">0.25</rate>
+			<persistent>1</persistent>
+			<modifytype>GatherRateMultiplier</modifytype>
+			<exclusive>1</exclusive>
+			<includenature>1</includenature>
+			<donotignoredead>1</donotignoredead>
+			<modifyinventoryscale>1</modifyinventoryscale>
+			<active>0</active>
 		</protoaction>
 		<protoaction>
-		<name>ResourceInventoryAura</name>
-		<modifyamount>0.250000</modifyamount>
-		<maxrange>20</maxrange>
-		<rate type="MineGoldLarge">5.00</rate>
-		<rate type="MineGoldMedium">2.50</rate>
-		<rate type="MineGoldSmall">1.25</rate>
-		<rate type="MineDwarvenLarge">5.00</rate>
-		<rate type="MineDwarvenMedium">2.50</rate>
-		<rate type="MineDwarvenSmall">1.25</rate>
-		<rate type="Tree">0.50</rate>
-		<rate type="Huntable">1.00</rate>
-		<rate type="BerryBush">1.00</rate>
-		<rate type="NonConvertableHerdable">0.50</rate>
-		<active>0</active>
+			<name>ResourceInventoryAura</name>
+			<modifyamount>0.250000</modifyamount>
+			<maxrange>20</maxrange>
+			<rate type="MineGoldLarge">5.00</rate>
+			<rate type="MineGoldMedium">2.50</rate>
+			<rate type="MineGoldSmall">1.25</rate>
+			<rate type="MineDwarvenLarge">5.00</rate>
+			<rate type="MineDwarvenMedium">2.50</rate>
+			<rate type="MineDwarvenSmall">1.25</rate>
+			<rate type="Tree">0.50</rate>
+			<rate type="Huntable">1.00</rate>
+			<rate type="BerryBush">1.00</rate>
+			<rate type="NonConvertableHerdable">0.50</rate>
+			<active>0</active>
 		</protoaction>
 		<protoaction>
-		<name>ResourceInventoryCapAura</name>
-		<maxrange>20</maxrange>
-		<modifymultiplier>0.400000</modifymultiplier>
-		<active>0</active>
+			<name>ResourceInventoryCapAura</name>
+			<maxrange>20</maxrange>
+			<modifymultiplier>0.400000</modifymultiplier>
+			<active>0</active>
 		</protoaction>
 	</unit>
 	<unit name="Temple">

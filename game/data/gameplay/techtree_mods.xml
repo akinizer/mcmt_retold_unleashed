@@ -3872,6 +3872,8 @@
         <target type="ProtoUnit">Market</target></effect>
       <effect type="Data" action="ResourceInventoryCapAura" amount="1.00" subtype="ActionEnable" relativity="Absolute">
         <target type="ProtoUnit">Market</target></effect>
+      <effect type="Data" action="ShrineGatherRateBoost" amount="1.00" subtype="ActionEnable" relativity="Absolute">
+        <target type="ProtoUnit">Market</target></effect>
 
       <effect type="SetName" proto="Market" newname="STR_UNIT_ECONOMIC_CENTER_NAME"></effect>
     </effects>
