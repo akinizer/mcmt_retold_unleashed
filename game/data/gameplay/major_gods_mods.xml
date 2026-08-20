@@ -1,0 +1,9 @@
+<civsmods>
+    <civ>
+        <name>Hades</name>
+        <startingunits>
+			<unit count="1" delay="4.00" x="6.00" y="0.00" z="0.00" mergeMode="remove">Kataskopos</unit>
+			<unit count="1" delay="4.00" x="6.00" y="0.00" z="0.00" mergeMode="add">KataskoposPossessed</unit>
+		</startingunits>
+    </civ>
+</civsmods>

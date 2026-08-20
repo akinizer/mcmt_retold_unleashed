@@ -30,6 +30,8 @@
     <abstractunittype>AbstractNubian</abstractunittype>
     <abstractunittype>AbstractHuntress</abstractunittype>
     <abstractunittype>AbstractMythSoldier</abstractunittype>
+    <abstractunittype>AbstractNavalTransport</abstractunittype>
+    <abstractunittype>AbstractLandTransport</abstractunittype>
     <!--Type Superiority & Vulnerability-->
     <abstractunittype>AbstractMythResistant</abstractunittype>
     <abstractunittype>AbstractFireResistant</abstractunittype>

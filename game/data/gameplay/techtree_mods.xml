@@ -724,6 +724,11 @@
       </effects>
     </tech>
     
+    <tech name="ArchaicAgeHades">
+      <effects>
+        <effect type="TransformUnit" toprotoid="KataskoposPossessed" fromprotoid="Kataskopos" includequeued="true" mergeMode="add"></effect>
+      </effects>
+    </tech>
     <tech name="ArchaicAgePoseidon">
       <effects>
         <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Hetairos" row="0" column="2" relativity="Assign" mergeMode="add">
@@ -1763,6 +1768,23 @@
           <target type="ProtoUnit">CoyoteWarrior</target></effect>
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractCoyotl" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">Popocatepetl</target></effect> 
+
+        <!-- AbstractNavalTransport -->
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractNavalTransport" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbstractTransportShip</target></effect> 
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractNavalTransport" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Leviathan</target></effect> 
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractNavalTransport" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">WorldBreaker</target></effect> 
+        <!-- AbstractLandTransport -->
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractLandTransport" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">SiegeTower</target></effect> 
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractLandTransport" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Helepolis</target></effect> 
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractLandTransport" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">CaravanChinese</target></effect> 
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractLandTransport" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">MobileFortress</target></effect> 
       </effects>
     </tech>
 
@@ -3873,6 +3895,12 @@
       <effect type="Data" action="ResourceInventoryCapAura" amount="1.00" subtype="ActionEnable" relativity="Absolute">
         <target type="ProtoUnit">Market</target></effect>
       <effect type="Data" action="ShrineGatherRateBoost" amount="1.00" subtype="ActionEnable" relativity="Absolute">
+        <target type="ProtoUnit">Market</target></effect>
+      <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DisplayRange" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Market</target></effect>
+      <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DisplayRangeOverride" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Market</target></effect>
+      <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="LikeBonusPreview" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">Market</target></effect>
 
       <effect type="SetName" proto="Market" newname="STR_UNIT_ECONOMIC_CENTER_NAME"></effect>
@@ -7147,6 +7175,19 @@
 				<target type="ProtoUnit">AbstractSiegeShip</target></effect>
 		</effects>
   </tech>
+  <tech name="DraftHorses">
+    <displaynameid>STR_TECH_HORSE_POWER_NAME</displaynameid>
+    <effects>
+      <effect type="Data" protoaction="Trail" amount="1.00" subtype="ProtoActionAdd" unittype="TrailOfSand" relativity="Assign" hidetooltip="" mergeMode="add">
+        <target type="ProtoUnit">AbstractLandTransport</target></effect>
+
+      <effect type="TransformUnit" toprotoid="Helepolis" fromprotoid="Helepolis" mergeMode="add"></effect>
+      <effect type="TransformUnit" toprotoid="SiegeTower" fromprotoid="SiegeTower" mergeMode="add"></effect>
+      <effect type="TransformUnit" toprotoid="CaravanChinese" fromprotoid="SiegeTower" mergeMode="add"></effect>
+      <effect type="TransformUnit" toprotoid="MobileFortress" fromprotoid="SiegeTower" mergeMode="add"></effect>
+    </effects>
+  </tech>
+
   <tech name="WatchTower">
     <effects>
       <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="LogicalTypeBuildingsThatShoot" relativity="Absolute" mergeMode="remove">
@@ -7363,6 +7404,14 @@
       <effect type="TechStatus" status="obtainable" mergeMode="add">HoverTransport</effect>
       <effect type="Data" amount="1.00" subtype="CommandAdd" tech="HoverTransport" row="1" column="4" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">Dock</target></effect>
+      
+      <effect type="Data" amount="10.00" subtype="MaximumContained" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Leviathan</target></effect>
+      <effect type="Data" amount="2.00" subtype="MaximumContained" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractFishingShip</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="AddContainedType" unitType="AbstractVillager" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">AbstractFishingShip</target></effect>
     </effects>
   </tech>
   <tech name="HoverTransport">
@@ -7847,8 +7896,10 @@
       <effect type="Data" amount="1.10" subtype="Damage" action="RangedAttack" relativity="BasePercent" mergeMode="remove">
 				<target type="ProtoUnit">Centaur</target></effect>
       <!---->
-      <effect type="Data" protoaction="LonghouseSpeedBonus" amount="1.00" subtype="ProtoActionAdd" unittype="IdleSpeedBonus" relativity="Assign" mergeMode="add">
+      <effect type="Data" protoaction="LonghouseSpeedBonus" amount="1.00" subtype="ProtoActionAdd" unittype="IdleStatBonusContainer" relativity="Assign" mergeMode="add">
 				<target type="ProtoUnit">CavalryLineUpgraded</target></effect>
+      <effect type="Data" protoaction="LonghouseSpeedBonus" amount="1.00" subtype="ProtoActionAdd" unittype="IdleStatBonusContainer" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">AbstractCavalry</target></effect>
     </effects>
   </tech>
   <tech name="BeastSlayer">
@@ -8274,8 +8325,10 @@
     <effects>
       <effect type="Data" action="HandAttack" amount="1.0" subtype="DamageBonus" unittype="AbstractCavalry" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">AbstractCavalry</target></effect>
-      <effect type="Data" amount="1.50" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
+      <effect type="Data" amount="1.30" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
         <target type="ProtoUnit">AbstractCavalry</target></effect>
+       <effect type="Data" protoaction="IdleDamageBonus" amount="1.00" subtype="ProtoActionAdd" unittype="IdleStatBonusContainer" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">AbstractCavalry</target></effect>
 
       <effect type="Data" amount="4" subtype="LOS" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">Hippocampus</target></effect>
@@ -8283,6 +8336,12 @@
         <target type="ProtoUnit">Hippocampus</target></effect>
       <effect type="Data" amount="1.50" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
         <target type="ProtoUnit">Hippocampus</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="CavalryLineUpgraded" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Kataskopos</target></effect>
+      <effect type="Data" amount="1.0" subtype="Damage" damagetype="Divine" action="HandAttack" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Kataskopos</target></effect>
+      <effect type="TransformUnit" toprotoid="Kataskopos" fromprotoid="Kataskopos" includequeued="true" mergeMode="add"></effect>
     </effects>
   </tech>
   <tech name="DivineBlood">
@@ -8321,6 +8380,7 @@
       <effect type="Data" amount="1.00" subtype="CommandAdd" proto="DionysianFarm" row="1" column="3" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">VillagerGreek</target></effect>
 			<effect type="SetName" proto="Farm" newname="STR_BLD_DIONYSIAN_FARM_NAME" mergeMode="add"></effect>
+      <effect type="TransformUnit" toprotoid="Farm" fromprotoid="Farm" includequeued="true" mergeMode="add"></effect>
 
       <effect type="TechStatus" status="obtainable" mergeMode="add">DionysiaRuralFestival</effect>
       <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DionysiaRuralFestival" row="2" column="1" relativity="Assign" hidetooltip="" mergeMode="add">

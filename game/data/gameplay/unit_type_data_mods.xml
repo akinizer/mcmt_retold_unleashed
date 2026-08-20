@@ -22,6 +22,15 @@
 		<displaynameid>STR_HUD_UNIT_TYPE_ABSTRACT_MYTHSOLDIER</displaynameid>
 	</unittypeentry>
     <unittypeentry mergeMode="add">
+		<unittype>AbstractNavalTransport</unittype>
+		<displaynameid>STR_HUD_UNIT_TYPE_TRANSPORT_NAVAL</displaynameid>
+	</unittypeentry>
+    <unittypeentry mergeMode="add">
+		<unittype>AbstractLandTransport</unittype>
+		<displaynameid>STR_HUD_UNIT_TYPE_TRANSPORT_LAND</displaynameid>
+	</unittypeentry>
+
+    <unittypeentry mergeMode="add">
 		<unittype>AbstractEgyptianArcher</unittype>
 		<displaynameid>STR_HUD_UNIT_TYPE_ABSTRACT_EGYPTIAN_ARCHER</displaynameid>
 	</unittypeentry>

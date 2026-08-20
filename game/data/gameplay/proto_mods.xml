@@ -1716,7 +1716,7 @@
     <!-- Japanese Naval Units-->
 
 	<!--	
-	<unit name="FishingShip"></unit>
+	
 	<unit name="RammingWasen"></unit>
 	<unit name="Wasen"></unit>
 	<unit name="Junkozosen"></unit>
@@ -1802,9 +1802,6 @@
 		<train row="2" column="4">CyberTechCombineHarvester</train>
 		<train row="2" column="5">CyberTechIdolizer</train>
 
-		<flag>DisplayRange</flag>
-		<flag>DisplayRangeOverride</flag>
-        <flag>LikeBonusPreview</flag>
 		<tactics>mcmt_market.tactics</tactics>
 		<protoaction>
 			<name>ShrineGatherRateBoost</name>
@@ -2944,8 +2941,15 @@
 			<onhiteffect type="Throw">
 				<target attacktype="HumanSoldier"></target>
 				<target attacktype="AbstractVillager"></target>
-				<target attacktype="LogicalTypeMythUnitNotTitan"></target>
+				<target attacktype="TradeUnit"></target>
 		  </onhiteffect>
+		</protoaction>
+		<protoaction>
+			<name>Throw</name>
+			<rate type="LogicalTypeMythUnitNotTitan">1.0</rate>
+			<rate type="LogicalTypeVillagerNotHero">0.0</rate>
+			<rate type="HumanSoldier">0.0</rate>
+			<rate type="TradeUnit">0.0</rate>
 		</protoaction>
 	</unit>
 	<unit name="HadesShade">
@@ -4003,7 +4007,6 @@
         <maxcontained>0</maxcontained>
         <containedspeedbonus>0.2</containedspeedbonus>
         
-        <unittype>AbstractTransportShip</unittype>
         <unittype>AbstractSiegeShip</unittype>
         <unittype>SiegeLineUpgraded</unittype>
         <buildlimit>5</buildlimit>
@@ -7762,6 +7765,60 @@
 			<includetypes><unittype>Unit</unittype></includetypes>
 		</veterancybonus>
 	</unit>
+ 	<unit name="Agamemnon">
+		<flag>ExperienceUnit</flag>
+		<unittype>InfantryLineUpgraded</unittype>
+		<protoaction>
+			<name>HandAttack</name>
+			<onhiteffect type="Throw" targetunittype="HumanSoldier"></onhiteffect>
+			<onhiteffect type="Throw" targetunittype="Ship"></onhiteffect>
+			<throw>1</throw>
+			<impactforcemin>300.0f</impactforcemin>
+			<impactforcemax>600.0f</impactforcemax>
+			<impactlaunchangle>10.0</impactlaunchangle>
+			<areasortmode>Directional</areasortmode>
+		</protoaction>
+		<veterancyranks>
+			<rank><numkills>5</numkills></rank>
+			<rank><numkills>12</numkills></rank>
+			<rank><numkills>18</numkills></rank>
+			<rank><numkills>24</numkills></rank>
+			<rank><numkills>30</numkills></rank>
+		</veterancyranks>
+		<veterancybonus>
+			<rank id="0">
+				<veterancymodify modifytype="ROF">0.8000</veterancymodify><veterancymodify modifytype="Damage">1.1000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">1.4000</veterancymodify>
+				<veterancymodify modifytype="VisualScale">0.1</veterancymodify>
+				<veterancymodify modifytype="MaximumRange">0.5</veterancymodify>
+			</rank>
+			<rank id="1">
+				<veterancymodify modifytype="ROF">0.7000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">1.8000</veterancymodify>
+				<veterancymodify modifytype="VisualScale">0.1</veterancymodify>
+				<veterancymodify modifytype="MaximumRange">0.75</veterancymodify>
+			</rank>
+			<rank id="2">
+				<veterancymodify modifytype="ROF">0.6000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">2.2000</veterancymodify>
+				<veterancymodify modifytype="VisualScale">0.1</veterancymodify>
+				<veterancymodify modifytype="MaximumRange">1.0</veterancymodify>
+			</rank>
+			<rank id="3">
+				<veterancymodify modifytype="ROF">0.7000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">2.6000</veterancymodify>
+				<veterancymodify modifytype="VisualScale">0.1</veterancymodify>
+				<veterancymodify modifytype="MaximumRange">1.25</veterancymodify>
+			</rank>
+			<rank id="4">
+				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">2.0000</veterancymodify>
+				<veterancymodify modifytype="MaxHP">3.0000</veterancymodify>
+				<veterancymodify modifytype="VisualScale">0.1</veterancymodify>
+				<veterancymodify modifytype="MaximumRange">1.5</veterancymodify>
+			</rank>
+			<includetypes><unittype>Unit</unittype></includetypes>
+		</veterancybonus>
+	</unit>
 	<unit name="OdysseusSPC">
 		<unittype>ArcherLineUpgraded</unittype>
 		<flag>ExperienceUnit</flag>
@@ -7811,25 +7868,34 @@
 			<rank id="0">
 				<veterancymodify modifytype="ROF">0.8000</veterancymodify><veterancymodify modifytype="Damage">1.1000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">1.4000</veterancymodify>
+				<veterancymodify modifytype="VisualScale">0.1</veterancymodify>
 			</rank>
 			<rank id="1">
 				<veterancymodify modifytype="ROF">0.7000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">1.8000</veterancymodify>
+				<veterancymodify modifytype="VisualScale">0.1</veterancymodify>
 			</rank>
 			<rank id="2">
 				<veterancymodify modifytype="ROF">0.6000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">2.2000</veterancymodify>
+				<veterancymodify modifytype="VisualScale">0.1</veterancymodify>
 			</rank>
 			<rank id="3">
 				<veterancymodify modifytype="ROF">0.5000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">2.6000</veterancymodify>
+				<veterancymodify modifytype="VisualScale">0.1</veterancymodify>
 			</rank>
 			<rank id="4">
 				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">2.0000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">3.0000</veterancymodify>
+				<veterancymodify modifytype="VisualScale">0.1</veterancymodify>
 			</rank>
 			<includetypes><unittype>Unit</unittype></includetypes>
 		</veterancybonus>
+		<protoaction>
+			<name>Gore</name>
+			<maxsizeclass>6</maxsizeclass>
+		</protoaction>
 	</unit>
 	<unit name="ChironSPC">
 		<unittype>ArcherLineUpgraded</unittype>
@@ -8764,22 +8830,27 @@
 			<rank id="0">
 				<veterancymodify modifytype="ROF">0.8000</veterancymodify><veterancymodify modifytype="Damage">1.1000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">1.5000</veterancymodify>
+				<veterancymodify modifytype="VisualScale">0.1</veterancymodify>
 			</rank>
 			<rank id="1">
 				<veterancymodify modifytype="ROF">0.7000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">2.0000</veterancymodify>
+				<veterancymodify modifytype="VisualScale">0.1</veterancymodify>
 			</rank>
 			<rank id="2">
 				<veterancymodify modifytype="ROF">0.6000</veterancymodify><veterancymodify modifytype="Damage">1.3000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">2.5000</veterancymodify>
+				<veterancymodify modifytype="VisualScale">0.1</veterancymodify>
 			</rank>
 			<rank id="3">
 				<veterancymodify modifytype="ROF">0.5000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">3.0000</veterancymodify>
+				<veterancymodify modifytype="VisualScale">0.1</veterancymodify>
 			</rank>
 			<rank id="4">
 				<veterancymodify modifytype="ROF">0.4000</veterancymodify><veterancymodify modifytype="Damage">1.5000</veterancymodify>
 				<veterancymodify modifytype="MaxHP">3.5000</veterancymodify>
+				<veterancymodify modifytype="VisualScale">0.1</veterancymodify>
 			</rank>
 			<includetypes><unittype>Unit</unittype></includetypes>
 		</veterancybonus>
@@ -9382,7 +9453,24 @@
 			<maxrange>1.000000</maxrange>
 		</protoaction>
 	</unit>
-	
+
+	<unit name="FishingShipGreek">
+		<protoaction>
+			<name>GatherBonusFishingShip</name>
+			<type>AutoRangedModify</type>
+			<persistent>1</persistent>
+			<maxrange>18</maxrange>
+			<modifyabstracttype>AbstractFishingShip</modifyabstracttype>
+			<modifytype>GatherRate</modifytype>
+			<modifymultiplier>1.50</modifymultiplier>
+			<modelattachment>vfx\glow\hero_glow_extra_large.xml</modelattachment>
+
+			<activeifcontainsunits>1</activeifcontainsunits>
+			<modifyselfonly>1</modifyselfonly>
+		</protoaction>
+	</unit>
+<!---->
+
     <!--general buildings improvements-->
 	<unit name="SentryTower">
 		<unittype>ArcherLineUpgraded</unittype>
@@ -9550,7 +9638,7 @@
 	</unit>
 	<unit name="Farm">
 		<farmingnumstops>2</farmingnumstops>
-		<gathererlimit>4</gathererlimit>
+		<gathererlimit>3</gathererlimit>
 	</unit>
 	<unit name="DwarvenArmory">
 		<tech row="0" column="0">CopperWeapons</tech><tech row="0" column="0">BronzeWeapons</tech><tech row="0" column="0">IronWeapons</tech><tech row="0" column="0">DwarvenWeapons</tech>
@@ -9899,7 +9987,6 @@
 	<!-- General Unit Improvements -->
 	<unit name="SiegeTower">
 		<unittype>AbstractTower</unittype>
-		<unittype>AbstractTransportShip</unittype>
 		<unittype>ArcherLineUpgraded</unittype>
 		<tactics>mcmt_siegetowerturret.tactics</tactics>
 		<protoaction>
@@ -10019,7 +10106,6 @@
 	</unit>
 	<unit name="Helepolis">
 		<unittype>AbstractTower</unittype>
-		<unittype>AbstractTransportShip</unittype>
 		
 		<armor type="Hack" value="0.3500"></armor>
 		<armor type="Pierce" value="0.9000"></armor>
@@ -10057,7 +10143,6 @@
 		</protoaction>
 	</unit>
 	<unit name="CaravanChinese">
-		<unittype>AbstractTransportShip</unittype>
 		<maxcontained>3</maxcontained>
 		<contain>Unit</contain>
 		<notcontain>AbstractCavalry</notcontain>
@@ -14944,7 +15029,6 @@
 		<unittype>UnitClass</unittype>
 		<unittype>AbstractSiegeWeapon</unittype>
 		<unittype>SiegeLineUpgraded</unittype>
-		<unittype>AbstractTransportShip</unittype>
 
 		<unittype>LogicalTypeConvertsHerds</unittype>
 		<unittype>LogicalTypeEarthquakeAttack</unittype>
@@ -16241,7 +16325,7 @@
 		<initialhitpoints>600.0000</initialhitpoints>
 		<maxhitpoints>600.0000</maxhitpoints>
 		<autobuildrate>10.0000</autobuildrate>
-		<gathererlimit>5</gathererlimit>
+		<gathererlimit>3</gathererlimit>
 		<buildingworkrate>1.5000</buildingworkrate>
 		<los>6.0000</los>
 		<initialresource resourcetype="Food">1.0000</initialresource>
@@ -17455,7 +17539,6 @@
     <unittype>AbstractSiegeShip</unittype>
     <unittype>AbstractSiegeWeapon</unittype>
     <unittype>SiegeLineUpgraded</unittype>
-    <unittype>AbstractTransportShip</unittype>
     <unittype>AbstractTitan</unittype>
 	
 	<maxcontained>50</maxcontained>
@@ -22659,7 +22742,7 @@
 		<obstructionradiusz>0.7400</obstructionradiusz>
 		<selectionradiusx>0.7500</selectionradiusx>
 		<selectionradiusz>1.1500</selectionradiusz>
-		<impacttype>Unrmoured</impacttype>
+		<impacttype>Unarmoured</impacttype>
 		<unitaitype>HandCombative</unitaitype>
 		<movementtype>land</movementtype>
 		<turnrate>18.0000</turnrate>
@@ -22735,6 +22818,93 @@
 			<trailprotounit frequency="0.25">FeiTrail</trailprotounit>
 		</protoaction>
 	</unit>
+
+	<unit name="KataskoposPossessed">
+		<displaynameid>STR_UNIT_KATASKOPOS_POSSESSED_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_KATASKOPOS_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_KATASKOPOS_SR</shortrollovertextid>
+		<icon>resources\greek\player_color\units\hades_shade_icon.png</icon>
+		<animfile>mcmt\units\spectral\palerider.xml</animfile>
+		<soundsetfile>greek\vo\hades_shade\hades_shade.xml</soundsetfile>
+
+		<obstructionradiusx>0.7400</obstructionradiusx>
+		<obstructionradiusz>0.7400</obstructionradiusz>
+		<selectionradiusx>0.7500</selectionradiusx>
+		<selectionradiusz>1.1500</selectionradiusz>
+		<impacttype>Unarmoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>Amphibious</movementtype>
+		<flag>TieToWaterSurface</flag>
+
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>70.0000</initialhitpoints>
+		<maxhitpoints>70.0000</maxhitpoints>
+		<weightclass>6</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>5.5000</maxvelocity>
+		<stealthdetectionradius>8.0000</stealthdetectionradius>
+		<los>18.0000</los>
+		<bloodgroupoverride>noblood</bloodgroupoverride>
+		<cost resourcetype="Food">75.0000</cost>
+		<armor type="Hack" value="0.1000"></armor>
+		<armor type="Pierce" value="0.7000"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>Unit</unittype>
+		<unittype>AbstractCavalry</unittype>
+		<unittype>AbstractScout</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<unittype>LogicalTypeMeleeCavalry</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.100000</rof>
+			<damage type="Hack">1.000000</damage>
+			<damagebonus type="AbstractScout">5.000000</damagebonus>
+			<maxrange>0.750000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>HeroGlowOnSelf</name>
+			<type>Modify</type>
+			<modifyselfonly>1</modifyselfonly>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\hero_glow.xml</modelattachment>
+			<modelattachmentbone>Spine</modelattachmentbone>
+		</protoaction>
+	</unit>
+
 	<!-- Greek Special Naval Units -->
 	 <unit name="RaftGreekArcher">
 		<displaynameid>STR_UNIT_RAFTARCHER_NAME</displaynameid>
@@ -31264,7 +31434,7 @@
 		<flag>NotDeathTracked</flag>
 		<tactics>container.tactics</tactics>
 		<protoaction>
-			<name>PetrificationBonusHack</name>
+			<name stringid="STR_VFX_IDLESTATBONUS_ARMOR_HACK_NAME">PetrificationBonusHack</name>
 			<type>IdleStatBonus</type>
 			<modifyamount>0.025000</modifyamount>
 			<modifydamagetype>Hack</modifydamagetype>
@@ -31275,7 +31445,7 @@
 			<modifytype>ArmorSpecific</modifytype>
 		</protoaction>
 		<protoaction>
-			<name>PetrificationBonusPierce</name>
+			<name stringid="STR_VFX_IDLESTATBONUS_ARMOR_PIERCE_NAME">PetrificationBonusPierce</name>
 			<type>IdleStatBonus</type>
 			<modifyamount>0.025000</modifyamount>
 			<modifydamagetype>Pierce</modifydamagetype>
@@ -31286,7 +31456,7 @@
 			<modifytype>ArmorSpecific</modifytype>
 		</protoaction>
 		<protoaction>
-			<name>AutoLOS</name>
+			<name stringid="STR_VFX_IDLESTATBONUS_AUTOLOS_NAME">AutoLOS</name>
 			<type>IdleStatBonus</type>
 			<modifyamount>1.000000</modifyamount>
 			<modifyratecap>8.000000</modifyratecap>
@@ -31296,7 +31466,7 @@
 			<persistent>1</persistent>
 		</protoaction>
 		<protoaction>
-			<name>LonghouseSpeedBonus</name>
+			<name stringid="STR_VFX_IDLESTATBONUS_SPEED_NAME">LonghouseSpeedBonus</name>
 			<type>IdleStatBonus</type>
 			<modifyamount>0.0100</modifyamount>
 			<modifyratecap>1.3000</modifyratecap>
@@ -31306,7 +31476,7 @@
 			<persistent>1</persistent>
 		</protoaction>
 		<protoaction>
-			<name>IdleDamageBonus</name>
+			<name stringid="STR_VFX_IDLESTATBONUS_DAMAGE_NAME">IdleDamageBonus</name>
 			<type>IdleStatBonus</type>
 			<modifyamount>0.00250</modifyamount>
 			<modifyratecap>1.3000</modifyratecap>

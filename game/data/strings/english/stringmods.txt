@@ -682,6 +682,9 @@ ID = "STR_UNIT_RAIJU_TEMPEST_NAME"   ;   Str = "Raiju Tempest"
 
 ID = "STR_UNIT_QUIMICHIN_SNIPER"   ;   Str = "Quimichin Sniper"
 
+// REWORKED GENERAL TECHS
+ID = "STR_TECH_HORSE_POWER_NAME"   ;   Str = "Horse Power"
+
 // REWORKED NAVAL TECHS
 ID = "STR_UNIT_HOVER_TRANSPORT_NAME"   ;   Str = "Hover Transport"
 ID = "STR_TECH_HOVER_TRANSPORT_NAME"   ;   Str = "Enchanted Hover Deck"
@@ -822,6 +825,8 @@ ID = "STR_UNIT_KUAFUWARRIOR_SR"   ;   Str = "Kuafu with a boulder stronger than 
 ID = "STR_UNIT_PALERIDER_NAME"   ;   Str = "Pale Rider"
 ID = "STR_UNIT_PALERIDER_SR"   ;   Str = "Death's Charger"
 ID = "STR_UNIT_PALERIDER_LR"   ;   Str = "As the royal servants of Hades, Pale Riders chase whoever flees from Underworld's domain or the Death's very self"
+
+ID = "STR_UNIT_KATASKOPOS_POSSESSED_NAME"   ;   Str = "Kataskopos (Possessed)"
 
 ID = "STR_UNIT_TEMPLAR_NAME"   ;   Str = "Templar (Hero Knight)"
 ID = "STR_UNIT_TEMPLAR_SR"   ;   Str = "Elite Knights of Knight Order"
@@ -1291,6 +1296,11 @@ ID = "STR_VFX_ROFBONUS"   ;   Str = "Attack Speed Rate Bonus"
 ID = "STR_VFX_HARVESTOFHUNTS_NAME"   ;   Str = "Harvest of Hunts Bonus"
 ID = "STR_VFX_HARVESTOFRAIDS_NAME"   ;   Str = "Harvest of Raids Bonus"
 ID = "STR_ACTION_GOLD_GATHER_RATE_BOOST"   ;   Str = "Gold Gather Rate Boost"
+ID = "STR_VFX_IDLESTATBONUS_SPEED_NAME"   ;   Str = "Idle Speed Bonus"
+ID = "STR_VFX_IDLESTATBONUS_DAMAGE_NAME"   ;   Str = "Idle Damage Bonus"
+ID = "STR_VFX_IDLESTATBONUS_ARMOR_HACK_NAME"   ;   Str = "Idle Hack Armor Bonus"
+ID = "STR_VFX_IDLESTATBONUS_ARMOR_PIERCE_NAME"   ;   Str = "Idle Pierce Bonus"
+ID = "STR_VFX_IDLESTATBONUS_AUTOLOS_NAME"   ;   Str = "Idle Auto LOS Bonus"
 
 ID = "STR_TECH_DISMOUNT_TACTICS_NAME"   ;   Str = "Dismount Tactics"
 ID = "STR_TECH_DISMOUNT_TACTICS_LR"   ;   Str = "Enable dismount capability for mounted units"
@@ -1323,6 +1333,9 @@ ID = "STR_HUD_UNIT_TYPE_ABSTRACT_KUAFU"   ;   Str = "Kuafu Tribefolk"
 ID = "STR_HUD_UNIT_TYPE_ABSTRACT_TERRACOTTA"   ;   Str = "Terracotta Soldiers"
 ID = "STR_HUD_UNIT_TYPE_ABSTRACT_JAGUAR"   ;   Str = "Jaguars"
 ID = "STR_HUD_UNIT_TYPE_ABSTRACT_COYOTL"   ;   Str = "Coyotls"
+
+ID = "STR_HUD_UNIT_TYPE_TRANSPORT_NAVAL"   ;   Str = "Naval Transportation"
+ID = "STR_HUD_UNIT_TYPE_TRANSPORT_LAND"   ;   Str = "In-Land Transportation"
 
 // SUPERWEAPONS
 ID = "STR_POWER_PSIONIC_DECIMATOR"   ;   Str = "Psionic Decimator"
