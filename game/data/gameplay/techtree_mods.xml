@@ -4271,6 +4271,23 @@
 			<effect type="TechStatus" status="obtainable">CrossbowTower</effect>
 		</effects>
 	</tech>
+
+  <tech name="AdvancedFortifications">
+    <effects>
+      <effect type="Data" allactions="1" amount="1.50" subtype="Damage" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">AbstractFortress</target></effect>
+			<effect type="Data" allactions="1" amount="1.50" subtype="Damage" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">AbstractTower</target></effect>
+      <!---->
+      <effect type="Data" action="RangedAttack" amount="1.0" subtype="NumberProjectiles" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractFortress</target></effect>
+      <effect type="Data" allactions="1" amount="1.30" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">AbstractTower</target></effect>
+      <effect type="Data" action="RangedAttack" amount="8.00" subtype="Damagebonus" unittype="HumanSoldier" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractTower</target></effect>
+    </effects>
+  </tech>
+
   <tech name="MCMT_AdvancedFortifications_I" mergeMode="add">
     <flag>NeverAutoResearch</flag>
 		<displaynameid>STR_TECH_ADVANCEDFORTIFICATIONS_I_NAME</displaynameid>
@@ -8380,7 +8397,7 @@
       <effect type="Data" amount="1.00" subtype="CommandAdd" proto="DionysianFarm" row="1" column="3" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">VillagerGreek</target></effect>
 			<effect type="SetName" proto="Farm" newname="STR_BLD_DIONYSIAN_FARM_NAME" mergeMode="add"></effect>
-      <effect type="TransformUnit" toprotoid="Farm" fromprotoid="Farm" includequeued="true" mergeMode="add"></effect>
+      <effect type="TransformUnit" toprotoid="DionysianFarm" fromprotoid="Farm" includequeued="true" mergeMode="add"></effect>
 
       <effect type="TechStatus" status="obtainable" mergeMode="add">DionysiaRuralFestival</effect>
       <effect type="Data" amount="1.00" subtype="CommandAdd" tech="DionysiaRuralFestival" row="2" column="1" relativity="Assign" hidetooltip="" mergeMode="add">

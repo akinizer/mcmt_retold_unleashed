@@ -186,14 +186,18 @@
         - Medusa: renamed to "gorgon"
             - faceofthegorgon: sets name to "gorgon matriarch"
     - naval: 
-        Carcinos+:
+        - Carcinos+:
             - ChargedHandAttack: throw humansoldier & villager, vfxbleed unit
             - ChargedModify: land hackarmor-, water speed+
+        - FishingShip:
+            - GatherBonus (EnclosedDeck): selfmodify, activeifgarrisoned villager
+            - Garrison (EnclosedDeck): villager 2
     
 - hero:
     - favor costs removed, pop 1 or 2
     - OnDamageModify: Atalanta+, Jason+
     - VisualScale: TheArgo+, Polyphemus+
+    - Attack Modes: proximity & target-based
 
     - Jason+, Heracles+ Odysseus+, Bellerophon+
     - Ajax+, Chiron+, 
@@ -212,6 +216,7 @@
     - popcosts: humansoldier 1 or 2
     - Kataskopos+
         - Barbarian (DismountTacticsGreek): unarmored club infantry, bonus vs mythunit, stealth
+        - HandAttack (LordOfTheHorses): divine damage
     - Hetairos:
         - HetairosKnight (DismountTacticsGreek): unarmed infantry, hack & crush damages, bonus vs archer
     - Prodromos:
@@ -487,6 +492,7 @@
     
     - Arkantos: artmodel (weapon, golden trident)
     - OdysseusSPC, AjaxSPC, ChironSPC, Kastor
+    - Agamemnon: throw humansoldier
 
 - Egyptian: veterancy numkill, lineupgrades, egyptian techs (spearmen, axemen, feetofjackal)
     - Amanra
@@ -638,29 +644,34 @@
 - Japanese DLC: trees are reworked
 
 15. Tech reworks from mcmt mod and new reworks
+- starter units:
+    - ArchaicAgeHades: KataskoposPossessed
 - general
-    - BurningPitch -> bonusdamage-, vfxfire, affected(abstractarcher->archerlineupgrade)
-    - Ballistics
+    - Omniscience
+    - BurningPitch: 
+        - rangedsoldier bonusdamage-, affected(abstractarcher->archerlineupgrade), vfxfire [building, ship, siegeweapon]
+        - [tower, fortress] bonusdamage vs humansoldier
+        - arrowship damage+
+        - villager bonusdamage vs animalofset
+    - Ballistics:
+        - [Hero, Tower, Fortress]: trackrating 99
+        - HumanSoldier: bonusdamage vs Scout
     - Bronze-Silver-Iron Weapons: also affects AbstractMythSoldier
     - Bronze-Silver-Iron Armor: also affects AbstractMythSoldier
     - Bronze-Silver-Iron Shields: also affects AbstractMythSoldier
-- naval
-    - Warship techs
-    - Transport techs
-- exploration
-    - Omniscience
-- fortification:
-    - Masons
-    - Architects
-    - FortifiedTownCenter
-    - Crenellations
-    - Tower techs
-- mechanical
     - Engineers:
         - affected types simplified for maximumrange
         - handattack added to effects
         - warship crusharmor+, closecombatship rof, archership speed, siegeship hitpoints
-- armory techs
+- naval
+    - Warship techs
+    - Transport techs:
+        - EnclosedDeck:
+    
+- fortification:
+    - Masons, Architects
+    - FortifiedTownCenter
+    - Tower Techs: Crenellations, CrenellationsAztec, tower upgrade techs
 - greek
     - SylvanLore: effect expanded to AbstractWoodland
     - AegisShield: reflects handattack, bonusdamage vs MythUnit, MythResistant
@@ -672,6 +683,22 @@
     - Anastrophe: Pentekonter HackArmor+
     - OlympianWeapons: Perseus bonusdamage vs Hero
     - ShaftsOfPlague: affects on archerlineupgraded instead
+    - LordOfTheHorses: 
+        - Cavalry: speed increase-, idledamagebonus container
+
+    - ChthonicRites:
+        - Spawn: BullOfHeaven
+        - MadnessOfDionysus:
+            - Hero: handattack damageovertime humansoldier
+            - HumanSoldier: trainpoints-, lifesteal humansoldier, lifesteal villager
+            - EldritchSects:
+                - [Hydra, Scylla, Cyclops, Chimera] regen
+    - Dionysia: Destival Preparations
+        - DionysianFarm: autogather favor, areaheal
+        - Dionysia: Rural Festival
+            - farm workrate
+            - Dionysia: Urban Festival
+                - farm workrate
 - atlantean
     - ArchaicAgeAtlantean:
         - MilitaryBarracks: Murmillo, Fanatic, Destroyer +
