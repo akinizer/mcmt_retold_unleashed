@@ -2560,13 +2560,11 @@
       <status>UNOBTAINABLE</status>
       <effects>
         <!--Founders-->            
-        <effect type="TechStatus" status="obtainable">MCMT_SpecialService</effect>       
-        <!--Structure Improvements-->
-        <effect type="TechStatus" status="obtainable">MCMT_ArchitectsOfMarley</effect>		
-        <effect type="TechStatus" status="obtainable">MCMT_AdvancedFortifications_I</effect>
-        <effect type="TechStatus" status="obtainable">MCMT_AdvancedFortifications_II</effect>
-        <effect type="TechStatus" status="obtainable">MCMT_AdvancedFortifications_III</effect>
-        <effect type="TechStatus" status="obtainable">MCMT_OracleWatchers</effect>            
+        <effect type="TechStatus" status="obtainable">MCMT_SpecialService</effect>      
+         
+        <!-- Structure Improvements: MCMT_AdvancedFortifications_I to III, MCMT_ArchitectsOfMarley -->
+        <!-- Exploration Improvements: MCMT_OracleWatchers -->
+            
         <!--Kingdom Tech: Encampments-->
         <effect type="TechStatus" status="obtainable">MCMT_AmazonTraining</effect>
         <effect type="TechStatus" status="obtainable">MCMT_AmazonTraining_I</effect>
@@ -4281,10 +4279,15 @@
       <!---->
       <effect type="Data" action="RangedAttack" amount="1.0" subtype="NumberProjectiles" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">AbstractFortress</target></effect>
+      <effect type="Data" action="RangedAttack" amount="1.0" subtype="DisplayedNumberProjectiles" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">SentryTower</target></effect>
+      
       <effect type="Data" allactions="1" amount="1.30" subtype="Damage" relativity="BasePercent" mergeMode="add">
 				<target type="ProtoUnit">AbstractTower</target></effect>
       <effect type="Data" action="RangedAttack" amount="8.00" subtype="Damagebonus" unittype="HumanSoldier" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">AbstractTower</target></effect>
+
+      <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_AdvancedFortifications_I</effect>
     </effects>
   </tech>
 
@@ -4313,6 +4316,8 @@
 				<target type="ProtoUnit">AbstractFortress</target></effect>
       <effect type="Data" amount="1000.0" subtype="Hitpoints" relativity="Absolute">
         <target type="ProtoUnit">AbstractFortress</target></effect>
+      
+      <effect type="TechStatus" status="obtainable">MCMT_AdvancedFortifications_II</effect>
     </effects>
   </tech>
   <tech name="MCMT_AdvancedFortifications_II" mergeMode="add">
@@ -4340,6 +4345,8 @@
 				<target type="ProtoUnit">AbstractFortress</target></effect>
       <effect type="Data" amount="1000.0" subtype="Hitpoints" relativity="Absolute">
         <target type="ProtoUnit">AbstractFortress</target></effect>
+
+      <effect type="TechStatus" status="obtainable">MCMT_AdvancedFortifications_III</effect>
     </effects>
   </tech>
   <tech name="MCMT_AdvancedFortifications_III" mergeMode="add">
@@ -7020,6 +7027,11 @@
         <target type="Player"></target></effect>
     </effects>
   </tech>
+  <tech name="CarrierPigeons">
+    <effects>
+      <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_OracleWatchers</effect>        
+    </effects>
+  </tech>
   <tech name="Crenellations">
     <effects>
       <effect type="Data" allactions="1" amount="0.25" subtype="Damagebonus" unittype="AbstractCavalry" relativity="Absolute" mergeMode="remove">
@@ -7151,6 +7163,8 @@
         <target type="ProtoUnit">Building</target></effect>
       <effect type="Data" amount="-0.30" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent" mergeMode="add">
         <target type="ProtoUnit">Building</target></effect>
+
+      <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_ArchitectsOfMarley</effect>
     </effects>
   </tech>  
   <tech name="Engineers">
@@ -9125,11 +9139,11 @@
     </effects>
   </tech>
   <!-- Egyptian Naval Techs -->
-  <tech name="SolarBarque" mergeMode="add">
+  <tech name="SolarBarque">
     <effects>
-        <effect type="Data" action="RangedAttack" amount="1.0" subtype="Projectile" unittype="ProjectileBallOfFire" relativity="Assign">
+        <effect type="Data" action="RangedAttack" amount="1.0" subtype="Projectile" unittype="ProjectileBallOfFire" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">WarBarge</target></effect>
-        <effect type="Data" amount="2.00" subtype="Damage" damagetype="Divine" action="RangedAttack" relativity="Absolute">
+        <effect type="Data" amount="2.00" subtype="Damage" damagetype="Divine" action="RangedAttack" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">WarBarge</target></effect>
     </effects>
   </tech>

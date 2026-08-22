@@ -385,6 +385,8 @@
     - Slinger: ArcherLineUpgrade
 - warship:
     - warbarge: progfreeze
+    - kebenit:
+        - ChargedModify (SolarBarque): 3 snakes -> 2 snakes 1 wadjet
 - hero:
     - popcost 1 or 2
     - General Reworks: Priest+, Pharaoh+, PharaohNewKingdom+, SonOfOsiris (Son of Horus)+

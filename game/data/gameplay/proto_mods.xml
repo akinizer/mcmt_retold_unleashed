@@ -5114,6 +5114,13 @@
 		<unittype>ArcherLineUpgraded</unittype>
 	</unit>
     <!-- Egyptian Naval Units-->
+	<unit name="Kebenit">
+		<protoaction>
+			<name>ChargedSpawn</name>
+			<rate type="SeaSnake">2.000000</rate>
+			<rate type="Wadjet">1.000000</rate>
+		</protoaction>
+	</unit>
 	<unit name="WarBarge">
 		<protoaction>
 			<name>RangedAttack</name>
@@ -11619,7 +11626,7 @@
 		<rollovertextid>STR_UNIT_LANDLORD_LR</rollovertextid>
 		<shortrollovertextid>STR_UNIT_BERSERK_SR</shortrollovertextid>
 		<icon>resources\norse\player_color\units\berserk_icon.png</icon>
-		<animfile>norse\units\infantry\berserk\berserk.xml</animfile>
+		<animfile>mcmt\units\founder\landlord.xml</animfile>
 		<soundsetfile>norse\vo\berserk\berserk.xml</soundsetfile>
 		<obstructionradiusx>0.800</obstructionradiusx>
 		<obstructionradiusz>0.800</obstructionradiusz>
@@ -11667,7 +11674,6 @@
 		<unittype>HeroShadowUpgraded</unittype>
 		
 		<unittype>Ranged</unittype>
-		<unittype>AbstractInfantry</unittype>
 		<unittype>InfantryLineUpgraded</unittype>		
 		
 		<unittype>LogicalTypeConvertsHerds</unittype>
@@ -11692,30 +11698,35 @@
 		<flag>AbilitiesOnBothPages</flag>
 		<flag>HasDefaultAttack</flag>
 		<flag>HideStances</flag>
+
+		<!--cost added-->
+		<cost resourcetype="Food">80.000</cost>
+		<cost resourcetype="Wood">120.000</cost>
+		<cost resourcetype="Favor">1.000</cost>		
+
+		<maxcontained>1.0</maxcontained>
 	
 		<tactics>mcmt_landlord.tactics</tactics>
 		<protoaction>
 			<name>HandAttack</name>
-			<rof>1.500000</rof>
-			<damage type="Hack">15.00000</damage>
-			<maxrange>0.500000</maxrange>
-			<onhiteffect type="Lifesteal" rate="2.0" targetunittype="Unit"></onhiteffect>
-			<damage type="Hack">20.00000</damage>
-			<damage type="Crush">8.00000</damage>
+			<rof>2.000000</rof>
+			<damage type="Hack">40.00000</damage>
+			<damage type="Crush">20.00000</damage>
+			<maxrange>2.000000</maxrange>
+			<onhiteffect type="Lifesteal" rate="2.0" targetunittype="Unit"></onhiteffect>			
 			<damagebonus type="MythUnit">5.000000</damagebonus>
 			<damagebonus type="Building">3.000000</damagebonus>
+			<impacteffect>effects\impacts\crush</impacteffect>
 			<defaultattack>1</defaultattack>
 		</protoaction>
 		<protoaction>
 			<name>ThrowAttack</name>
-			<rof>1.500000</rof>
-			<damage type="Hack">20.000000</damage>
-			<damage type="Pierce">8.000000</damage>
+			<rof>0.500000</rof>
+			<damage type="Hack">10.000000</damage>
 			<maxrange>28.0000</maxrange>
 			<projectile>ProjectileAxeFlaming</projectile>
 			<numberprojectiles>1</numberprojectiles>
 			<volleymode>1</volleymode>
-			<active>1</active>
 		</protoaction>
 		<protoaction>
 			<name>Build</name>
@@ -11769,10 +11780,18 @@
 			<modelattachment>vfx\glow\hero_glow.xml</modelattachment>
 			<modelattachmentbone>Spine</modelattachmentbone>
 		</protoaction>
-		<!--cost added-->
-		<cost resourcetype="Food">80.000</cost>
-		<cost resourcetype="Wood">120.000</cost>
-		<cost resourcetype="Favor">1.000</cost>		
+		<protoaction>
+		  <name>Pickup</name>
+		  <type>Pickup</type>
+		  <maxrange>1</maxrange>
+		  <rate type="LogicalTypePickable">1.00000</rate>
+		</protoaction>
+		<protoaction>
+		  <name>DropOff</name>
+		  <type>DropOff</type>
+		  <maxrange>1</maxrange>
+		  <rate type="AbstractTemple">1.00000</rate>
+		</protoaction>			
 	</unit>		
 
 	<!-- Manor & House Special Units-->

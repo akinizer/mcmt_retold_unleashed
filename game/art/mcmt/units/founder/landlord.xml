@@ -1,0 +1,25 @@
+<animfile validation="strict">
+    <attachment>Helmet<component>ModelComp<assetreference type="TMModel"><file>norse\units\infantry\berserk\berserk_helm_upgrade3</file><materialvariant index="3"></materialvariant></assetreference></component><anim>Idle<component>ModelComp</component></anim></attachment>
+    <attachment>Weapon
+        <component>ModelComp
+            <assetreference type="TMComposite"><file>norse\units\hero\hersir\hersir_hammer_3</file></assetreference>
+        </component>
+        <anim>Idle<component>ModelComp</component></anim>
+    </attachment>
+
+    <attachment>Shield<component>ModelComp<assetreference type="TMModel"><file>norse\units\attachments\shield\shield_n_a_upgrade3</file><materialvariant index="3"></materialvariant></assetreference></component><anim>Idle<component>ModelComp</component></anim></attachment>
+    <attachment>Hammer<component>ModelComp<assetreference type="TMModel"><file>norse\units\hero\hersir\hersir_hammer</file></assetreference></component><anim>Idle<component>ModelComp</component></anim></attachment>
+  
+    <component>ModelComp<logic type="Cinematic">
+        <normal><assetreference type="TMModel"><file>norse\units\infantry\berserk\berserk_gold</file><materialvariant index="3"></materialvariant></assetreference></normal>
+        <cinematic><assetreference type="TMModel"><file>norse\units\infantry\berserk\berserk_gold</file><materialvariant index="3"></materialvariant></assetreference></cinematic>
+    </logic></component>
+
+    <anim>HandAttack<assetreference type="TMAnimation"><file>norse\units\infantry\berserk\anim\berserk_attack_a</file><tag type="Attack">0.4</tag><tag type="SpecificSoundSet" checkvisible="1" set="SwooshSword">0.45</tag></assetreference><component>ModelComp</component><attach name="Helmet" attachpoint="helm" syncanims="1"></attach><attach name="Weapon" attachpoint="weapon"></attach><attach name="Props" attachpoint="props"></attach><attach name="Shield" attachpoint="shield"></attach></anim>
+    <anim>Bored<assetreference type="TMAnimation"><file>norse\units\infantry\berserk\anim\berserk_bored_a</file></assetreference><component>ModelComp</component><attach name="Helmet" attachpoint="helm" syncanims="1"></attach><attach name="Weapon" attachpoint="weapon"></attach><attach name="Props" attachpoint="props"></attach><attach name="Shield" attachpoint="shield"></attach></anim>
+    <anim>Death<assetreference type="TMAnimation"><file>norse\units\infantry\berserk\anim\berserk_death_a</file></assetreference><component>ModelComp</component><attach name="Helmet" attachpoint="helm" syncanims="1"></attach><attach name="Weapon" attachpoint="weapon"></attach><attach name="Props" attachpoint="props"></attach><attach name="Shield" attachpoint="shield"></attach></anim>
+    <anim>Flail<assetreference type="TMAnimation"><file>norse\units\infantry\berserk\anim\berserk_flail_a</file></assetreference><component>ModelComp</component><attach name="Helmet" attachpoint="helm" syncanims="1"></attach><attach name="Weapon" attachpoint="weapon"></attach><attach name="Props" attachpoint="props"></attach><attach name="Shield" attachpoint="shield"></attach></anim>
+    <anim>Idle<assetreference type="TMAnimation"><file>norse\units\infantry\berserk\anim\berserk_idle_a</file></assetreference><component>ModelComp</component><attach name="Helmet" attachpoint="helm" syncanims="1"></attach><attach name="Weapon" attachpoint="weapon"></attach><attach name="Props" attachpoint="props"></attach><attach name="Shield" attachpoint="shield"></attach></anim>
+    <anim>Walk<assetreference type="TMAnimation"><file>norse\units\infantry\berserk\anim\berserk_run_a</file></assetreference><component>ModelComp</component><attach name="Helmet" attachpoint="helm" syncanims="1"></attach><attach name="Weapon" attachpoint="weapon"></attach><attach name="Props" attachpoint="props"></attach><attach name="Shield" attachpoint="shield"></attach></anim>
+    <anim>Build<assetreference type="TMAnimation"><file>norse\units\infantry\berserk\anim\berserk_build_a</file><tag type="SpecificSoundSet" checkvisible="1" set="Build">0.99</tag></assetreference><component>ModelComp</component><attach name="Helmet" attachpoint="helm" syncanims="1"></attach><attach name="Hammer" attachpoint="hammer"></attach><attach name="Shield" attachpoint="shield"></attach></anim><anim>Cinematic<assetreference type="TMAnimation"><file>norse\units\infantry\berserk\anim\igc\fott_bers_25_kill_them_all</file></assetreference><component>ModelComp</component><attach name="Helmet" attachpoint="helm" syncanims="1"></attach><attach name="Weapon" attachpoint="weapon"></attach><attach name="Props" attachpoint="props"></attach><attach name="Shield" attachpoint="shield"></attach></anim>
+</animfile>

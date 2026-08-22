@@ -1,0 +1,94 @@
+Humanoid (myth, archery, economic, infantry, ninja, hero, siege, spc):
+- Hover: Caladria, Servant, HadesShade, ShadeSpc, Harpy, NeZhaGrownup, Icarus, Osiris, ServantOfKronos
+- Caster: 
+    - Mage: Lampades, Caladria, Servant, Caladria, Circe, Azusa, Azusa Suzu, YukiOnna, HuangZhaowusWife, Osiris, Shiji
+    - Monk: Sage, Oracle, OracleHero, CangJie
+    - Priest: Pharaoh, Miko, Onmyoji, AbeNoSeimei, Priest, SonOfOsiris, Setna
+    - Warrior: Orpheus, FolstagFlagBearer, HuanZhaoWu, Reginleif
+    - Empower: 
+        - Worker: Villager (pray), Prisoner (pray), OldMan (praise zeus), YanFeiFeng (mas yff 07c worship)
+        - Monk: Oracle / OracleHero (AutoLOS), Pharaoh, Priest, SonOfOsiris, SonOfOsirisSPC (sna son 08 awaken guardian), Reginleif, Setna
+        - Mage: Lampades (ability), Sage (ability)
+        - Warrior: Ajax (cheer), Orpheus (singing, idle), FolstagFlagBearer (wave), SonOfOsiris
+    - Debuff:
+        - Soldier: Ajax (point, mid we surrender)
+    - SelfModify:
+        - Soldier: Ajax (hearty laugh), DaoSwordsman (bow), Skult (laugh transform)
+- Unarmed Melee / Throw: 
+    - Punch: Centimanus, Cyclops, Dryad, Satyr, Mummy, Wretch, FireGiant, Sugaru, Agamemnon, Skult
+    - Claw: LykaonWolf
+    - Kick: MountainGiant (punt), Sugaru
+    - Ninja:  Kunoichi, Shinobi, Sam Shinobi
+    - Throw: Slinger, ThrowingAxeman
+- Unarmed Elastic: Promethean
+- Armed Melee:
+    - 2W: Anubite, Theris, Einheri, Fanatic, Kastor
+    - 2H: Destroyer, Katapeltes, Axeman, Samurai, Berserk, HeroOfRagnarok, Hersir
+        - HandAttack: YangJian, Akari
+        - Chop: Villager
+    - 1H Sword / Scythe: Minion, Murmillo, DaoSwordsman, Hypaspist, Myrmidon, Huskarl, Kamos, Kemyst, KastorYoung
+        - HandAttack: Sakimori Tsurugi, LiJing, Ajax, Heracles, Jason, Perseus, Theseus, Midas, Kagemasa, GeneralMelagius
+        - Off: Oracle, OracleHero, Krios, Theocrat, Bushi, Amanra
+    - Spear / Stab: Mercenary, Spearman, Hoplite, Militia, BushiYari, YariSpearman,  (hand attack), Portable Ram Unit
+        - HandAttack: Villager, NeZhaChild, NeZhaYouth, Atalanta, OnnaMusha, Arkantos, Gargarensis, HuanZhaoWu, YanFeiFeng
+- Archer: 
+    - Bow: Draugr, Arcus, FireArcher, Toxotes (signalshot), YumiArcher, Pioneer, Hippolyta, Odysseus, Houyi
+        - RangedAttack: Villager, Heracles, Perseus, Theseus, Midas, OnnaMusha, Akari, YanFeiFeng
+        - Off: Bushi
+    - Arbalest: ChuKoNu, Gastraphetoros
+    - Javelin: WuzuJavelineer, Peltast
+        - RangedAttack: YangJian, Ajax, Atalanta, HuanZhaoWu, Reginleif
+- Siege Unit: Cheiroballista Unit
+
+Dual:
+- Axeman, Berserk, Hersir
+- Spearman, Hoplite
+
+Naval:
+- Ship
+- Argus (Floating ship)
+
+Robot:
+- Colossus
+- Automaton
+
+Avian:
+- Bird: StymphalianBird, Roc, Raven
+- Dragon: Nidhogg
+
+Winged Humanoid:
+- Caladria
+- Icarus
+- Harpy
+
+Beast 4-Leg:
+
+Giant (oversized human models, legs submerge or hands pass through body)
+- Large: Chiyou, Gaia, Kronos, Prometheus, Titan (civilization)
+- Medium-Statue: Guardian, LivingPoseidonStatue
+- Medium-Gigantes: Centimanus, Cyclops, Polyphemus
+- Medium-Giants: FireGiant, MountainGiant, MountainGiantBoss, RockGiant, FrostGiant, KingFolstag
+- Medium-Brutes: Minotaur, Hamadryad, Kuafu
+- Ability:
+    - Breath: FrostGiant, KingFolstag
+    - Smash: Polyphemus, MountainGiant, MountainGiantBoss
+    - Throw: Troll, Polyphemus, Hamadryad
+    - Pickup: Cyclops, Polyphemus, Kuafu
+    - Gore: Minotaur
+    - Cast: RockGiant, Guardian
+
+Jumpfly:
+- Humanoid: Anubite, Theris, Amanra
+- Cavalry: Bellerophon, Nereid
+- Beast:
+
+AOE_Attack:
+- Avenger
+- Sphinx
+- Arkantos
+
+Worker:
+- LykaonVillager
+- VillagerDwarf, Eitri, EitriHammer, Brokk
+- NorseSoldierThatBuilds
+- VillagerNorse, VillagerGreek, VillagerEgyptian, VillagerAztec, VillagerJapanese, VillagerChinese
