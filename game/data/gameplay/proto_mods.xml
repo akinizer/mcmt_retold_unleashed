@@ -11705,6 +11705,8 @@
 		<cost resourcetype="Favor">1.000</cost>		
 
 		<maxcontained>1.0</maxcontained>
+		<contain external="1">LogicalTypePickable</contain>
+		<flag>HideGarrisonFlag</flag>
 	
 		<tactics>mcmt_landlord.tactics</tactics>
 		<protoaction>
@@ -11724,9 +11726,9 @@
 			<rof>0.500000</rof>
 			<damage type="Hack">10.000000</damage>
 			<maxrange>28.0000</maxrange>
-			<projectile>ProjectileAxeFlaming</projectile>
+			<projectile>ProjectileBlowDart</projectile>
 			<numberprojectiles>1</numberprojectiles>
-			<volleymode>1</volleymode>
+			<perfectaccuracy>1</perfectaccuracy>
 		</protoaction>
 		<protoaction>
 			<name>Build</name>

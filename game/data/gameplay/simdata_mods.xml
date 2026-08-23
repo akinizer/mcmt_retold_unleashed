@@ -245,11 +245,10 @@
 			</animinfo>
 			<animinfo>
 				<name>HandAttack</name>
-				<visualindex>1</visualindex>
 				<versioncount>1</versioncount>
 				<versions>
 					<version>
-						<file>norse\units\infantry\berserk\anim\berserk_female_attack_a</file>
+						<file>norse\units\infantry\berserk\anim\berserk_attack_a</file>
 						<duration>0.70000</duration>
 						<tags>
 							<tag>
@@ -352,6 +351,36 @@
 					<version>
 						<file>norse\units\infantry\berserk\anim\igc\fott_bers_25_kill_them_all</file>
 						<duration>2.35000</duration>
+					</version>
+				</versions>
+			</animinfo>
+			<animinfo>
+				<name>Carry</name>
+				<versioncount>1</versioncount>
+				<versions>
+					<version>
+						<file>greek\units\hero\heracles\anim\heracles_carry_a</file>
+						<duration>0.68000</duration>
+					</version>
+				</versions>
+			</animinfo>
+			<animinfo>
+				<name>CarryBored</name>
+				<versioncount>1</versioncount>
+				<versions>
+					<version>
+						<file>greek\units\hero\heracles\anim\heracles_carrybored_a</file>
+						<duration>1.50000</duration>
+					</version>
+				</versions>
+			</animinfo>
+			<animinfo>
+				<name>CarryIdle</name>
+				<versioncount>1</versioncount>
+				<versions>
+					<version>
+						<file>greek\units\hero\heracles\anim\heracles_carryidle_a</file>
+						<duration>3.00000</duration>
 					</version>
 				</versions>
 			</animinfo>
