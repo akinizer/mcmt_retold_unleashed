@@ -354,36 +354,6 @@
 					</version>
 				</versions>
 			</animinfo>
-			<animinfo>
-				<name>Carry</name>
-				<versioncount>1</versioncount>
-				<versions>
-					<version>
-						<file>greek\units\hero\heracles\anim\heracles_carry_a</file>
-						<duration>0.68000</duration>
-					</version>
-				</versions>
-			</animinfo>
-			<animinfo>
-				<name>CarryBored</name>
-				<versioncount>1</versioncount>
-				<versions>
-					<version>
-						<file>greek\units\hero\heracles\anim\heracles_carrybored_a</file>
-						<duration>1.50000</duration>
-					</version>
-				</versions>
-			</animinfo>
-			<animinfo>
-				<name>CarryIdle</name>
-				<versioncount>1</versioncount>
-				<versions>
-					<version>
-						<file>greek\units\hero\heracles\anim\heracles_carryidle_a</file>
-						<duration>3.00000</duration>
-					</version>
-				</versions>
-			</animinfo>
 		</animations>
 		<animlogics>
 			<animmap>

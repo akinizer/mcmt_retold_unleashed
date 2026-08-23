@@ -15,7 +15,7 @@
 * Complete Rework of Techs, Units, Buildings, Heroes (proximity modes, target modes and mix of both, better projectiles)
 * Sci-Fi Tech, Vehicles, Units, Buildings, Techs
 * A Massive Size Mammoth of Set with Laser Weaponry
-* Founder Units: Special Building Builder, Ballist,c Converter Units
+* Founder Units: Special Building Builder, Ballistic Converter Units
 * Mobile Fortress and A.R.K
 * Multigunner Infantry: Bombardment and Gattling Modes
 * Area of Effect Utility Buildings: Invisibility, Damage Aura, Resource Boost
