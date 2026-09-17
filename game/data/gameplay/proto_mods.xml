@@ -421,6 +421,21 @@
     <!-- CHINESE SECTION -->
 
     <!-- Chinese MythUnits-->
+	<unit name="TaoTie">
+		<protoaction>
+			<name>Devour</name>
+			<rate type="Huntable">1.0</rate>
+		
+			<charged>
+				<chargedmodify modifytype="NumProjectiles" applytype="Add">1</chargedmodify>
+				<activationtype>AfterAction</activationtype>
+			</charged>
+		</protoaction>
+		<protoaction>
+			<name>ChargedRangedAttack</name>
+			<volleymode></volleymode>
+		</protoaction>
+	</unit>
     <unit name="QiLin">
 		<los>20.0000</los>
 	</unit>
@@ -904,6 +919,8 @@
 	</unit>
 	<!-- Chinese Military Units -->
 	<unit name="ChuKoNu">
+		<flag>DependentAttack</flag>
+		<dependentunit>CustomDependantUnit_Rifleman_Grenade</dependentunit>
 		<tactics>chukonu.tactics</tactics>
 		<protoaction>
 			<name>RangedAttack</name>
@@ -1750,6 +1767,14 @@
 	<unit name="Watermill">
 		<unittype>AbstractDock</unittype>
 		<flag>SnapPlacement</flag>
+	</unit>
+	<unit name="SacredGate">
+		<flag>SharedGarrison</flag>
+		<flag>HideGarrisonFlag</flag>
+		<flag>AllowAutoGarrison</flag>
+		<maxcontained>8.0</maxcontained>
+		<contain>Hero</contain>
+		<command row="3" column="1">Eject</command>
 	</unit>
 
     <!-- GENERAL SECTION -->
@@ -4528,16 +4553,7 @@
 		<flag>NotDeathTracked</flag>
 		<flag>PreferSkeletonAsBonePile</flag>
 		<initialshading type="gold" factor="1"></initialshading>
-        <selfdestructprotoaction>SelfDestructAttack</selfdestructprotoaction>
-        <tactics>hamadryad_tree.tactics</tactics>
-        <protoaction>
-            <name>HandAttack</name>
-            <active>0</active>
-        </protoaction>
-        <protoaction>
-			<name>SelfDestructAttack</name>
-			<active>0</active>
-		</protoaction>
+        <tactics>mcmt_scarab_burrowed.tactics</tactics>
 		<protoaction>
 			<name>DelayedHamadryadTransform</name>
 			<type>DelayedTransform</type>
@@ -8492,7 +8508,7 @@
 		<unittype>InfantryLineUpgraded</unittype>
 	</unit>
 
-	<!-- Campaign Repurposed Special Units - Yasuko's Tale 
+	<!-- Campaign Repurposed Special Units - Yasuko's Tale  TODO
 	 	
 	<unit name="YasukoBasket"></unit>
 	<unit name="YasukoUnarmed"></unit>
@@ -8518,6 +8534,138 @@
 	
 	-->
 
+	<unit name="Oiran">
+		<displaynameid>STR_UNIT_OIRAN_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_OIRAN_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_OIRAN_SR</shortrollovertextid>
+		<icon>resources\spc\player_color\units\magumo_icon.png</icon>
+		<animfile>japanese\spc\units\magumo\magumo_human.xml</animfile>
+		<soundsetfile>japanese\vo\magumo\magumo.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Unarmoured</impacttype>
+		<unitaitype>Civilian</unitaitype>
+		<autoattackrange>16.0000</autoattackrange>
+		<movementtype>land</movementtype>
+		<turnrate>20.0000</turnrate>
+		<trainpoints>20.0000</trainpoints>
+		<initialhitpoints>55.0000</initialhitpoints>
+		<maxhitpoints>55.0000</maxhitpoints>
+		<weightclass>4</weightclass>
+		<populationcount>2</populationcount>
+		<maxvelocity>3.5000</maxvelocity>
+
+		<rechargetime>12.0000</rechargetime>
+		<auxrechargetime>15.0000</auxrechargetime>
+
+		<los>17.0000</los>
+		<bloodgroupoverride>mythbloodgreen</bloodgroupoverride>
+		<cost resourcetype="Food">165.0000</cost>
+		<cost resourcetype="Favor">15.0000</cost>
+		<armor type="Hack" value="0.1000"></armor>
+		<armor type="Pierce" value="0.3000"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeSharedHeroSelection</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>AffectedByTownBell</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeTrainableMythUnit</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>HasDefaultAttack</flag>
+		<tactics>mcmt_oiran.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Pierce">22.000000</damage>
+			<maxrange>15.000000</maxrange>
+			<projectile>ProjectileShiJiAttack</projectile>
+			<defaultattack>1</defaultattack>
+		</protoaction>
+		<protoaction>
+			<name>ArrowOfFear</name>
+			<rof>1.000000</rof>
+			<damage type="Pierce">22.000000</damage>
+			<damage type="Crush">5.000000</damage>
+			<maxrange>15.000000</maxrange>
+			<projectile>ProjectilePriestPharaoh</projectile>
+			<onhiteffect type="Flee" duration="5.000000"></onhiteffect>
+			<numberprojectiles>4</numberprojectiles>
+			<volleymode>1</volleymode>
+		</protoaction>
+		<protoaction>
+			<name>GhostlyRipple</name>
+			<rof>0.800000</rof>
+			<damage type="Pierce">22.000000</damage>
+			<damage type="Divine">5.000000</damage>
+			<maxrange>15.000000</maxrange>
+			<damagearea>4.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<projectile>ProjectileOnmyojiAttack</projectile>
+			<onhiteffect type="Flee" duration="5.000000"></onhiteffect>
+		</protoaction>
+		<protoaction>
+			<name>Enchant</name>
+			<rof>3.5</rof>
+			<maxrange>18.000000</maxrange>
+			<onhiteffect type="StatModify" duration="5.000000">
+				<modify type="ROF">3.000000</modify>
+				<modify type="Speed">0.670000</modify>
+			</onhiteffect>
+			<onhiteffect type="Attach" proto="VFXCaladriaPacify" attachbone="spine" duration="5.000000"></onhiteffect>
+			<exclusive>1</exclusive>
+		</protoaction>
+		<protoaction>
+			<name>ChargedModify</name>
+			<type>ChargedModify</type>
+			<persistent>1</persistent>
+			<charged>
+				<chargedmodify modifytype="Damage" applytype="Multiply">1.15</chargedmodify>
+				<duration>5</duration>
+				<cooldown>0</cooldown>
+				<activationtype>BelowHitpointsThreshold</activationtype>
+				<HitpointsRatioThreshold>0.25</HitpointsRatioThreshold>
+			</charged>
+		</protoaction>
+		<protoaction>
+			<name>DelayedTransform</name>			
+    		<type>DelayedTransform</type>
+			<modifyduration>2500</modifyduration>
+			<modifyprotoid>Jorogumo</modifyprotoid>
+		</protoaction>
+		<disguiseprotoid>VillagerJapanese</disguiseprotoid>
+	</unit>
+	
 	<!-- Campaign Heroes Golden Gift -->
 	<unit name="Brokk">
 		<unittype>AbstractInfantry</unittype><unittype>InfantryLineUpgraded</unittype>
@@ -9540,7 +9688,6 @@
 
 	<unit name="Baolei">
 		<tactics mergeMode="replace">global_building_fortress.tactics</tactics>
-		<unitshieldregen damagetimeout="3.0">1.0000</unitshieldregen>
 
 		<tech row="1" column="4" mergeMode="remove">AdvancedFortifications</tech>
 		<tech row="1" column="5">MCMT_LevyTerracottaSoldiers</tech>
@@ -9557,7 +9704,6 @@
 	</unit>
 	<unit name="Fortress">
 		<tactics mergeMode="replace">global_building_fortress.tactics</tactics>
-		<unitshieldregen damagetimeout="3.0">1.0000</unitshieldregen>
 		<tech row="1" column="4" mergeMode="remove">AdvancedFortifications</tech>
 		
 		<tech row="3" column="2">AdvancedFortifications</tech>
@@ -9567,7 +9713,6 @@
 	</unit>
 	<unit name="MigdolStronghold">
 		<tactics mergeMode="replace">global_building_fortress.tactics</tactics>
-		<unitshieldregen damagetimeout="3.0">1.0000</unitshieldregen>
 		<tech row="1" column="4" mergeMode="remove">AdvancedFortifications</tech>
 		
 		<tech row="3" column="2">AdvancedFortifications</tech>
@@ -9577,7 +9722,6 @@
 	</unit>
 	<unit name="HillFort">
 		<tactics mergeMode="replace">global_building_fortress.tactics</tactics>
-		<unitshieldregen damagetimeout="3.0">1.0000</unitshieldregen>
 		<tech row="1" column="4" mergeMode="remove">AdvancedFortifications</tech>
 		
 		<tech row="3" column="2">AdvancedFortifications</tech>
@@ -9587,7 +9731,6 @@
 	</unit>
 	<unit name="Palace">
 		<tactics mergeMode="replace">global_building_fortress.tactics</tactics>
-		<unitshieldregen damagetimeout="3.0">1.0000</unitshieldregen>
 		<tech row="1" column="4" mergeMode="remove">AdvancedFortifications</tech>
 		
 		<tech row="3" column="2">AdvancedFortifications</tech>
@@ -9597,7 +9740,6 @@
 	</unit>
 	<unit name="AsgadianHillFort">
 		<tactics mergeMode="replace">global_building_fortress.tactics</tactics>
-		<unitshieldregen damagetimeout="3.0">1.0000</unitshieldregen>
 		<tech row="1" column="4" mergeMode="remove">AdvancedFortifications</tech>
 		
 		<tech row="3" column="2">AdvancedFortifications</tech>
@@ -9607,7 +9749,6 @@
 	</unit>
 	<unit name="Castle">
 		<tactics mergeMode="replace">global_building_fortress.tactics</tactics>
-		<unitshieldregen damagetimeout="3.0">1.0000</unitshieldregen>
 		<tech row="1" column="4" mergeMode="remove">AdvancedFortifications</tech>
 		
 		<tech row="3" column="2">AdvancedFortifications</tech>
@@ -9618,7 +9759,6 @@
 	<unit name="GreatTemple">
 		<unittype>AbstractTemple</unittype>
 		<tactics mergeMode="replace">global_building_fortress.tactics</tactics>
-		<unitshieldregen damagetimeout="3.0">1.0000</unitshieldregen>
 		<tech row="1" column="4" mergeMode="remove">AdvancedFortifications</tech>
 		
 		<tech row="3" column="2">AdvancedFortifications</tech>
@@ -11633,7 +11773,7 @@
 		<minimapicon>ui\minimap\minimap_hero_spc</minimapicon>
 		
 		<impacttype>Armoured</impacttype>
-		<unitaitype>HandCombative</unitaitype>
+		<unitaitype>RangedCombative</unitaitype>
 		<movementtype>land</movementtype>
 		<turnrate>18.0000</turnrate>
 		<initialhitpoints>300.0000</initialhitpoints>
@@ -11674,7 +11814,7 @@
 		<unittype>HeroShadowUpgraded</unittype>
 		
 		<unittype>Ranged</unittype>
-		<unittype>InfantryLineUpgraded</unittype>		
+		<unittype>InfantryLineUpgraded</unittype>
 		
 		<unittype>LogicalTypeConvertsHerds</unittype>
 		<unittype>LogicalTypeEarthquakeAttack</unittype>
@@ -11723,10 +11863,10 @@
 		</protoaction>
 		<protoaction>
 			<name>ThrowAttack</name>
-			<rof>0.500000</rof>
-			<damage type="Hack">10.000000</damage>
+			<rof>0.800000</rof>
+			<damage type="Hack">16.000000</damage>
 			<maxrange>28.0000</maxrange>
-			<projectile>ProjectileBlowDart</projectile>
+			<projectile>ProjectileKuafuStone</projectile>
 			<numberprojectiles>1</numberprojectiles>
 			<perfectaccuracy>1</perfectaccuracy>
 		</protoaction>
@@ -31828,7 +31968,59 @@
 			<modifymultiplier>1.10</modifymultiplier>
 			<nostack>1</nostack>
 		</protoaction>
-	</unit> 
+	</unit>
+
+	<unit name="ArmorInverseAuraContainer" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name stringid="STR_VFX_HACKARMOR_INVERSEAURA_CONTAINER">HackArmorInverseAura</name>
+			<type>LikeBonus</type>
+			<modifydamagetype>Hack</modifydamagetype>
+			<modifyratecap>1.300000</modifyratecap>
+			<modifybase>1.000000</modifybase>
+			<maxrange>6</maxrange>
+			<modifyratebytype>1</modifyratebytype>
+			<modifyabstracttype>MilitaryUnit</modifyabstracttype>
+			<rate type="HumanSoldier">0.02</rate>
+			<targetenemy>1</targetenemy>
+			<persistent>1</persistent>
+			<modifytype>ArmorSpecific</modifytype>
+			<modelattachment>vfx\glow\arkantos_boost.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		</protoaction>
+		<protoaction>
+			<name stringid="STR_VFX_HACKARMOR_INVERSEAURA_CONTAINER">HackArmorInverseAuraNearAlly</name>
+			<type>LikeBonus</type>
+			<modifydamagetype>Hack</modifydamagetype>
+			<modifyratecap>1.300000</modifyratecap>
+			<modifybase>1.000000</modifybase>
+			<maxrange>6</maxrange>
+			<modifyratebytype>1</modifyratebytype>
+			<modifyabstracttype>MilitaryUnit</modifyabstracttype>
+			<rate type="HumanSoldier">0.02</rate>
+			<persistent>1</persistent>
+			<modifytype>ArmorSpecific</modifytype>
+			<modelattachment>vfx\glow\arkantos_boost.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		</protoaction>
+	</unit>  
 
 	<unit name="HackArmorInverseAllyBuildingContainer" mergeMode="add">
 		<displaynameid>STR_VFX_HACKARMORBOOSTNEARALLYBUILDINGS_NAME</displaynameid>
@@ -34185,6 +34377,7 @@
 			<persistent>1</persistent>
 		</protoaction>
 	</unit>
+	
 	<unit name="CustomDependantUnit_ForbiddenLaserBlaster_AntiAir">
 		<animfile>mcmt\units\dependants\chargedattack_dependant.xml</animfile>
 		<obstructionradiusx>0.1000</obstructionradiusx>
@@ -34234,6 +34427,68 @@
 			<persistent>1</persistent>
 		</protoaction>
 	</unit>
+
+	<unit name="CustomDependantUnit_Rifleman_Grenade">
+		<animfile>mcmt\units\dependants\chargedattack_dependant.xml</animfile>
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>air</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>100.0000</initialhitpoints>
+		<maxhitpoints>100.0000</maxhitpoints>
+		<maxvelocity>0</maxvelocity>
+		<los>18.0000</los>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>AbstractArcher</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<unittype>HumanSoldier</unittype>
+		<unittype>LogicalTypeMythicMythUnit</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>NonCollideable</flag>
+		<flag>NoHPBar</flag>
+		<flag>Invulnerable</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>DependentAttach</flag>
+		<flag>NoTieToGround</flag>
+		<flag>DirectProjectile</flag>
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>3.000000</rof>
+			<damage type="Hack">20.000000</damage>
+			<damage type="Crush">10.000000</damage>
+			<maxrange>20.000000</maxrange>
+			<projectile>ProjectileIcarusBomb</projectile>
+			<numberprojectiles>1</numberprojectiles>
+			<displayednumberprojectiles>1</displayednumberprojectiles>
+			<autoretarget>1</autoretarget>
+			<canattackground>1</canattackground>
+			<impacteffect>effects\impacts\fireball</impacteffect>
+			<active>0</active>
+		</protoaction>
+		<protoaction>
+			<name>Drone</name>
+			<type>Drone</type>
+			<persistent>1</persistent>
+		</protoaction>
+	</unit>
+	
 
 	<!-- CUSTOM TRAPS -->
 	<unit name="PhosphorusSmokeTrapAura" orderhint="5">

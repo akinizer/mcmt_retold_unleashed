@@ -2,14 +2,13 @@
   <action>
     <name stringid="STR_ACTION_HAND">HandAttack</name>
     <type>Attack</type>
-    <rate type="All">1.0</rate>
-    <rate type="AbstractFlyingUnit">0</rate>
+    <rate type="LogicalTypeHandUnitsAttack">1.0</rate>
+    <rate type="AbstractFlyingUnit">0.0</rate>
     <attackaction>1</attackaction>
     <handlogic>1</handlogic>
     <forceareaattacktarget>1</forceareaattacktarget>
     <anim>HandAttack</anim>
-    <onhiteffect type="Snare" duration="2" rate="0.85">
-    </onhiteffect>
+    <onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
     <impacteffect>effects\impacts\hack</impacteffect>
   </action>
   <action>
@@ -28,9 +27,8 @@
   <tactic>Default
     <action priority="100">ThrowAttack</action>
     <action priority="90">HandAttack</action>
-    <attacktype>LogicalTypeRangedUnitsAttack</attacktype>
-    <autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype>
-    <attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype>
+    <attacktype>LogicalTypeHandUnitsAttack</attacktype><autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype>
+    <attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype>
     <attackmovetype>AbstractWall</attackmovetype>
   </tactic>
 </tactics>

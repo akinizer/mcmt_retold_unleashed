@@ -1,0 +1,67 @@
+<tactics>
+	<action>
+		<name stringid="STR_ACTION_RANGED">RangedAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>ArrowOfFear</anim>
+		<accuracy>0.8</accuracy>
+		<maxspread>5.0</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>1.0</trackrating>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+		<rate type="All">1.0</rate>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_CHARGE_RANGED">ArrowOfFear</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>ArrowOfFear</anim>
+		<accuracy>1.0</accuracy>
+		<maxspread>5.0</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>99.0</trackrating>
+		<chargeaction>1</chargeaction>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+		<rate type="Building">0.0</rate>
+		<rate type="HumanSoldier">1.0</rate>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_CHARGE_RANGED">GhostlyRipple</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>ArrowOfFear</anim>
+		<accuracy>1.0</accuracy>
+		<maxspread>5.0</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>99.0</trackrating>
+		<chargeaction>1</chargeaction>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+		<rate type="Building">0.0</rate>
+		<rate type="LogicalTypeMythUnitNotTitan">1.0</rate>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_CHARGE_RANGED">Enchant</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>ArrowOfFear</anim>
+		<accuracy>1.0</accuracy>
+		<maxspread>5.0</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>99.0</trackrating>
+		<auxchargeaction>1</auxchargeaction>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+		<rate type="HumanSoldier">1.0</rate>
+		<rate type="LogicalTypeMythUnitNotTitan">1.0</rate>
+	</action>
+	<tactic>Default
+        <action priority="100">Enchant</action>
+        <action priority="90">ArrowOfFear</action>
+        <action priority="80">GhostlyRipple</action>
+        <action priority="70">RangedAttack</action>
+        <attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype>
+    </tactic>
+</tactics>

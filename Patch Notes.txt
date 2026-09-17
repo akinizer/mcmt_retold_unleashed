@@ -447,6 +447,8 @@
             - chainattack: gains crushdamage
             - chargedchainattack bounce, lightningbolt onhit
     - melee: QiLin+, YaZi+, TaoWu+, HunDun+, QionQi+, BaiHu+, TerracottaRider+
+        - TaoTie:
+            - Devour: includes huntable, afteraction numprojectiles+
     - naval: XuanWu+
         - ChiWen+:
             - handattack: close range
@@ -463,10 +465,12 @@
 
     - ChuKoNu:
         - DelayedTransform:ChuKoNuSandbag
+        - Grenade (MasterOfWeaponry): dependant projectile attack, effective vs armored units
     - FireArcher
         - DelayedTransform:FireArcherSandbag
     - WuzuJavelineer:
         - DelayedTransform:WuzuJavelineerSandbag
+        
 - hero:
     - popcosts 
     - VisualScale: NeZha (adult)+
@@ -490,8 +494,7 @@
     - Terracotta Techs: AbstractTerracotta, lifespan, hitpoints, trainpoints
 
 7. Campaign Heroes from mcmt mod, correlating techs and new features
-- Greek: veterancy numkill, lineupgrades
-    
+- Greek: veterancy numkill, lineupgrades    
     - Arkantos: artmodel (weapon, golden trident)
     - OdysseusSPC, AjaxSPC, ChironSPC, Kastor
     - Agamemnon: throw humansoldier
@@ -919,6 +922,16 @@
 * Building
 - VisualScale: Dojo, Guardhouse, StableJapanese
 - Watermill: shore-restricted by default, upgradable to in-land
+- HesperidesTree
+    - ActivateGoldenApplesHesperides: shadow tech 
+    - GoldenApplesHesperides: 
+        - enables authogather favor for heroes, autogather food for HesperidesTree
+        - enables Hamadryad & Hesperides units for HesperidesTree
+        - Dryads get weaker and slower as they get distant from the tree
+        - Hamadryad: dryad variant ported from Demeter, excels in ranged and melee
+        - Hesperides: smaller version of dryad, effective to counter hero and mythunt, amassable
+
+- SacredGate: passage, garrison heroes
 
 * Special Unit
 - MCMT_HeadPriest: improved version of Abe-No-Seimei, old priest that likes teasing others
@@ -948,14 +961,11 @@
     - Snow Blast: auxcharged ability, ranged, snowball projectile, slow unit, throw [HumanSoldier, AbstractVillager]
     - Air Flow Trail
 
-- HesperidesTree
-    - ActivateGoldenApplesHesperides: shadow tech 
-    - GoldenApplesHesperides: 
-        - enables authogather favor for heroes, autogather food for HesperidesTree
-        - enables Hamadryad & Hesperides units for HesperidesTree
-        - Dryads get weaker and slower as they get distant from the tree
-        - Hamadryad: dryad variant ported from Demeter, excels in ranged and melee
-        - Hesperides: smaller version of dryad, effective to counter hero and mythunt, amassable
+- Oiran:
+    - OiranUnlockTech (ClassicalAgeInariOkami): volite tech that auto-activates when prereq satisfied 
+    - civilian unit with witchcraft
+    - delayedtransform / conditionaltransform: jorogumo
+
 
 * Techs Reworks & Additions - Major God Tech
 - Kagura: 
@@ -1018,6 +1028,8 @@
     - Onmyoji: name ("Shrine Priest" -> "Onmyoji")
 - AsymmetricalBows:
     - YumiHorseArcher: NumberProjectiles+, NumberOfBounces+ 
+- EightBanners:
+    - protoactionadd: Hero HackArmorInverseAuraNearAlly
 
 * Techs Reworks & Additions - Myth Unit Upgrade
 - windsickles: kamaitachi chargedmeleeattack applies bleed

@@ -1347,8 +1347,8 @@
 		<allowduringnorush>1</allowduringnorush>
 	</power>
 	<power name="MCMT_AbstractUnitTransform" type="UnitAction" mergeMode="add">
-		<displaynameid>STR_ABILITY_ROC</displaynameid>
-		<rolloverid>STR_ABILITY_ROC_LR</rolloverid>
+		<displaynameid>STR_ABILITY_TRANSFORM</displaynameid>
+		<rolloverid>STR_ABILITY_TRANSFORM_LR</rolloverid>
 		<icon>egyptian\static_color\abilities\roc_ability_icon.png</icon>
 		<activetime>4</activetime>
 		<radius>5.0</radius>
@@ -1358,8 +1358,8 @@
 		<allowduringnorush>1</allowduringnorush>
 	</power>
 	<power name="AbilityScarabBurrow" type="UnitAction" mergeMode="add">
-		<displaynameid>STR_ABILITY_ROC</displaynameid>
-		<rolloverid>STR_ABILITY_ROC_LR</rolloverid>
+		<displaynameid>STR_ABILITY_BURROW</displaynameid>
+		<rolloverid>STR_ABILITY_BURROW_LR</rolloverid>
 		<icon>egyptian\static_color\abilities\roc_ability_icon.png</icon>
 		<activetime>4</activetime>
 		<radius>5.0</radius>
@@ -1808,5 +1808,31 @@
 		<abstractplacementtargettype>Building</abstractplacementtargettype>
 		<rangeindicator range="3.0" speed="0.2">Circle</rangeindicator>
 		<unitaction>ChargedRangedAttack</unitaction>
+	</power>
+	<power name="AbilityOiranArrowOfFear" type="UnitAction">
+		<displaynameid>STR_ABILITY_ARROWOFFEAR</displaynameid>
+		<rolloverid>STR_ABILITY_ARROWOFFEAR_LR</rolloverid>
+		<icon>japanese\static_color\abilities\iaijustu_ability_icon.png</icon>
+		<placement enemy="">Unit</placement>
+		<abstractplacementtargettype>HumanSoldier</abstractplacementtargettype>
+		<unitaction>ArrowOfFear</unitaction>
+	</power>
+	<power name="AbilityOiranGhostlyRipple" type="UnitAction">
+		<displaynameid>STR_ABILITY_GHOSTLYRIPPLE</displaynameid>
+		<rolloverid>STR_ABILITY_GHOSTLYRIPPLE_LR</rolloverid>
+		<icon>japanese\static_color\abilities\iaijustu_ability_icon.png</icon>
+		<placement enemy="">Unit</placement>
+		<abstractplacementtargettype>LogicalTypeMythUnitNotTitan</abstractplacementtargettype>
+		<unitaction>GhostlyRipple</unitaction>
+	</power>
+	<power name="AbilityOiranEnchant" type="UnitAction">
+		<displaynameid>STR_ABILITY_CALADRIA_PACIFY</displaynameid>
+		<rolloverid>STR_ABILITY_CALADRIA_PACIFY_LR</rolloverid>
+		<icon>atlantean\static_color\abilities\caladria_ability_pacify_icon.png</icon>
+		<placement enemy="">Unit</placement>
+		<abstractplacementtargettype>HumanSoldier</abstractplacementtargettype>
+		<abstractplacementtargettype>LogicalTypeMythUnitNotTitan</abstractplacementtargettype>
+		<abstractplacementtargettype>AnimalOfSet</abstractplacementtargettype>
+		<unitaction>Enchant</unitaction>
 	</power>
 </powersmod>

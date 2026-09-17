@@ -1,12 +1,12 @@
 <techtreemods>
-<!--
+
   <tech name="MCMT_DEBUGS" mergeMode="add">
       <status>ACTIVE</status>
       <delay>0.5000</delay>
       <flag>Volatile</flag>
       <flag>Persistent</flag>
       <flag>HideFromDialogs</flag>
-      <effects> 
+      <effects> <!--
          DEBUGGER Unit Testing :D
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
           <target type="ProtoUnit">ArachneLeaperSuspender</target></effect>
@@ -57,8 +57,16 @@
         <effect type="CreateUnit" unit="HetairosKnight" generator="TownCenter">
           <pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
             <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
+
+         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+          <target type="ProtoUnit">Oiran</target></effect>
+        <effect type="CreateUnit" unit="Oiran" generator="TownCenter">
+          <pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+            <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>-->
       </effects>
-    </tech>  -->
+    </tech>  
+
+    
 
     <!-- =========================================== UNIT TESTING END =========================================== -->
 
@@ -3343,6 +3351,37 @@
         <target type="ProtoUnit">ShrineJapanese</target></effect>
     </effects>
   </tech>
+
+  <tech name="ActivateEffectsOiran" mergeMode="add">
+    <status>ACTIVE</status>
+    <delay>0.5000</delay>
+    <flag>Volatile</flag>
+    <flag>Persistent</flag>
+    <flag>HideAllNotifications</flag>
+    <flag>HideFromDialogs</flag>
+    <effects>
+      <effect type="TechStatus" status="obtainable">EffectsOiran</effect>
+    </effects>
+  </tech>
+  <tech name="EffectsOiran" mergeMode="add">
+    <status>UNOBTAINABLE</status>
+    <delay>0.5000</delay>
+    <flag>Volatile</flag>
+    <flag>Persistent</flag>
+    <flag>HideAllNotifications</flag>
+    <flag>HideFromDialogs</flag>
+    <prereqs>
+      <techstatus status="Active">ActivateEffectsOiran</techstatus>
+      <techstatus status="Active">ClassicalAgeInariOkami</techstatus>
+    </prereqs>
+    <effects>
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+        <target type="ProtoUnit">Oiran</target></effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" proto="Oiran" row="0" column="5" relativity="Assign">
+        <target type="ProtoUnit">House</target></effect>
+    </effects>
+  </tech>
+
   <!-- Aztec Special Techs -->
   <tech name="ActivateEffectsAgaveBloom" mergeMode="add">
     <status>ACTIVE</status>
@@ -4377,6 +4416,8 @@
         <target type="ProtoUnit">AbstractFortress</target></effect>
 
       <effect type="Data" amount="1000.00" subtype="ShieldPoints" relativity="Absolute">
+        <target type="ProtoUnit">AbstractFortress</target></effect>
+      <effect type="Data" amount="1.0" subtype="UnitShieldRegenRate" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">AbstractFortress</target></effect>
       <effect type="Data" action="RangedAttack" amount="1.5" subtype="MaximumRange" relativity="BasePercent">
         <target type="ProtoUnit">AbstractFortress</target></effect>
@@ -10724,6 +10765,9 @@
 
       <effect type="Data" amount="0.5" subtype="OnHitEffect" action="HandAttack" effecttype="Snare" duration="2.00" targettype="AbstractCavalry" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">HumanSoldier</target></effect>
+
+      <effect type="Data" action="RangedAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add" tooltipid="STR_TECH_FRAG_GRENADE_OVERRIDE_TOOLTIP">
+        <target type="ProtoUnit">CustomDependantUnit_Rifleman_Grenade</target></effect>
     </effects>
   </tech>
    <tech name="QiLinsBlessing">
@@ -11275,6 +11319,12 @@
         <target type="ProtoUnit">Tornado</target></effect>
     </effects>
   </tech>			
+  <tech name="EightBanners">
+    <effects>
+      <effect type="Data" protoaction="HackArmorInverseAuraNearAlly" amount="1.00" subtype="ProtoActionAdd" unittype="ArmorInverseAuraContainer" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Hero</target></effect>
+    </effects>
+  </tech>
 
   <!-- Japanese Techs - Myth Unit -  Major Gods -->
   <tech name="WindSickles">

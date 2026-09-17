@@ -242,6 +242,12 @@
 		<ability>AbilityCentaur<tech>HeroicAgeChinese</tech><auxchargetimeasrof>1</auxchargetimeasrof></ability>
 		<ability>AbilityOdysseusSPC<tech>MythicAgeChinese</tech><auxchargetimeasrof>1</auxchargetimeasrof></ability>
 	</Pioneer>
+	<Oiran>
+		<ability>MCMT_AbstractUnitTransform<rof>5</rof><castonself>true</castonself><noautocast>true</noautocast></ability>
+		<ability>AbilityOiranEnchant<auxchargetimeasrof>1</auxchargetimeasrof></ability>
+		<ability>AbilityOiranArrowOfFear<chargetimeasrof>1</chargetimeasrof></ability>
+		<ability>AbilityOiranGhostlyRipple<chargetimeasrof>1</chargetimeasrof></ability>
+	</Oiran>
 
 		<!--Chinese-HumanSoldier-->	
 	<TerracottaReclaimer>

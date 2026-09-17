@@ -695,6 +695,9 @@ ID = "STR_TECH_HOVER_TRANSPORT_ANTIARMOR_UPGRADE_NAME"   ;   Str = "Hover Transp
 ID = "STR_TECH_HOVER_TRANSPORT_ANTIARMOR_UPGRADE_LR"   ;   Str = "Magitech craftspeople upgrades magic conversion engines to launch magical heavy bolts. Effective vs Myth Units and Naval Structures"
 ID = "STR_HOVER_TRANSPORT_DEFENSIVETURRET_NAME"   ;   Str = "Hover Transport Torpedo"
 
+// REWORKED GOD POWERS
+ID = "STR_BLD_SACRED_GATE_SR"   ;   Str = "Torii Gates allow Heroes travel between realms"
+
 // FORBIDDEN TECH SPECIAL UNITS
 ID = "STR_FORBIDDEN_PYRAMID_UNLEASHED_NAME"   ;   Str = "Forbidden Pyramid (Unleashed)"
 ID = "STR_FORBIDDEN_PYRAMID_UNLEASHED_SR"   ;   Str = "Sealed Power that has never been meant to be unleashed"
@@ -953,6 +956,10 @@ ID = "STR_UNIT_YUKIONNA_MUSHA_MISTBENDER_LR"   ;   Str = "Yuki-Onna seeks a man 
 ID = "STR_UNIT_OVERCHARGED_SWORD_NAME"   ;   Str = "Overcharged Sword"
 ID = "STR_UNIT_OVERCHARGED_SWORD_SR"   ;   Str = "Sword of Ya Zi with animated with immense energy from the rage"
 ID = "STR_UNIT_OVERCHARGED_SWORD_LR"   ;   Str = "The rage unleashes as it is freed from vessel of Ya Zi and becomes one with the weapon"
+
+ID = "STR_UNIT_OIRAN_NAME"   ;   Str = "Oiran"
+ID = "STR_UNIT_OIRAN_SR"   ;   Str = "Professional Entertainer"
+ID = "STR_UNIT_OIRAN_LR"   ;   Str = "Oirans are high tier artists excelling in many branches"
 
 // JAPANESE SPECIAL TECHS
 ID = "STR_TECH_MIKO_ORACLE_UPGRADE_NAME"   ;   Str = "Oracles of Shinto"
@@ -1288,6 +1295,7 @@ ID = "STR_VFX_HACKARMORBOOSTNEARALLYBUILDINGSDOCK_NAME"   ;   Str = "Hack Armor 
 ID = "STR_VFX_SPEEDINVERSENEARBUSHES_NAME"   ;   Str = "Speed Boost Near Bushes"
 ID = "STR_VFX_SPEEDINVERSENEARWONDER_NAME"   ;   Str = "Speed Boost Near Wonder"
 ID = "STR_VFX_SPEEDINVERSENEARNATIONCENTER_NAME"   ;   Str = "Speed Boost Near Nation Center"
+ID = "STR_VFX_HACKARMOR_INVERSEAURA_CONTAINER"   ;   Str = "Hack Armor Inverse Aura Container"
 ID = "STR_VFX_TOWEROFDEATH"   ;   Str = "Tower of Death"
 ID = "STR_VFX_AUTOREPAIR"   ;   Str = "Autorepair"
 ID = "STR_VFX_MYTHDAMAGEBONUS"   ;   Str = "Bonus Damage vs MythUnit"
@@ -1351,6 +1359,9 @@ ID = "STR_ACTION_TRANSFORM"   ;   Str = "Transform"
 ID = "STR_ACTION_DEPLOY"   ;   Str = "Deploy"
 ID = "STR_ACTION_UNDEPLOY"   ;   Str = "Undeploy"
 
+ID = "STR_ABILITY_TRANSFORM"   ;   Str = "Transform"
+ID = "STR_ABILITY_TRANSFORM_LR"   ;   Str = "This unit has an ability to transform"
+
 ID = "STR_ACTION_RANGEDATTACKSOLAR"   ;   Str = "Holy Grenade Attack"
 ID = "STR_ACTION_RANGEDATTACKAQUATIC"   ;   Str = "Hydro Mine Attack"
 ID = "STR_ACTION_RANGEDATTACKCORRUPTION"   ;   Str = "Miasma Bomb Attack"
@@ -1409,6 +1420,9 @@ ID = "STR_ABILITY_CRUNCH_ATTACK"   ;   Str = "Crunch Attack"
 ID = "STR_ABILITY_BURROW"   ;   Str = "Burrow"
 ID = "STR_ABILITY_EMERGE"   ;   Str = "Emerge"
 ID = "STR_UNIT_BURROW_ACTION"   ;   Str = "Burrow"
+ID = "STR_ABILITY_BURROW_LR"   ;   Str = "Unit submerges into the ground and hides its presence until an ambush or a move order"
+
+ID = "STR_ABILITY_AMBUSH"   ;   Str = "Ambush"
 
 ID = "STR_UNIT_CLOAKING_SHROUD_ABILITY"   ;   Str = "Cloaking Shroud"
 
@@ -1450,6 +1464,11 @@ ID = "STR_ACTION_SLAYER_ATTACK"   ;   Str = "Slayer Attack"
 ID = "STR_ABILITY_MIGHTY_ROAR"   ;   Str = "Mighty Roar"
 ID = "STR_ACTION_CONSUME"   ;   Str = "Consume"
 
+ID = "STR_ABILITY_ARROWOFFEAR"   ;   Str = "Arrow of Fear"
+ID = "STR_ABILITY_ARROWOFFEAR_LR"   ;   Str = "Oirans can manifest phantasmal arrows that pierce through and inflict fear on human hearts"
+ID = "STR_ABILITY_GHOSTLYRIPPLE"   ;   Str = "Ghostly Ripple"
+ID = "STR_ABILITY_GHOSTLYRIPPLE_LR"   ;   Str = "Oirans can use their witchery arts to send ghostly ripples to intimidate nearby mythical units"
+
 // COMMAND TECHS
 ID = "STR_BLD_FIREWALL_NAME"   ;   Str = "Fire Wall"
 
@@ -1473,6 +1492,9 @@ ID = "STR_MSG_ETERNALMOON"   ;   Str = "Tsukuyomi blesses human units with power
 ID = "STR_MSG_DIVINESUN"   ;   Str = "Amaterasu blesses heroes with power of Divine Sun!\n•  Duration: 1 minute\n•  Effect: Heroes deal 20% more damage"
 ID = "STR_MSG_STORMS"   ;   Str = "Susanoo blesses myth units with power of Untamed Storm!\n•  Duration: 1 minute\n•  Effect: Myth Units deal 20% more damage"
 ID = "STR_TECH_UPSTARTBOOST_NAME"   ;   Str = "Upstart Boost"
+
+// EFFECT TOOLTIP OVERRIDES
+ID = "STR_TECH_FRAG_GRENADE_OVERRIDE_TOOLTIP"   ;   Str = "Enables Chu Ko Nu grenade launcher action "
 
 // XL MAPS
 ID = "STR_MAP_ACROPOLIS_COLOSSAL_NAME" ;   Str = "Acropolis Colossal Map"
