@@ -3,17 +3,10 @@
 ==============================================================================
 
 === MODEL UPDATE ===
-- VillagerDwarf: chopping axe
-- VillagerNorse: heracles bat
-- VillagerChinese: spear
-- VillagerEgyptian: camel rider sword
-- VillagerAtlantean: murmillo sword
-- VillagerAtlanteanHero: destroyer fork
-
-- SiegeWarship: (non-norse, close range) arrow 
-- MeleeWarship: (non-norse, mid range) arrow, (norse) stronger melee, (greek) [ram attack hackarmor+]
-- ArrowShip: (norse, close range) axe, (greek, close range) javelin, (greek) [charge attack projectile lightning, bounty on arrowships, maxcontainedspeed, attack modes, arrow & javelin]
-- TransportShip: (deck upgrade, bounty to slayer, tradeunit) merchantship
+- warship dependants
+    - SiegeWarship: (non-norse, close range) arrow 
+    - MeleeWarship: (non-norse, mid range) arrow, (norse) stronger melee, (greek) [ram attack hackarmor+]
+    - ArrowShip: (norse, close range) axe, (greek, close range) javelin, (greek) [charge attack projectile lightning, bounty on arrowships, maxcontainedspeed, attack modes, arrow & javelin]
 
 chaosdrone
 - jumpattackunit: instakill unit excludetarget mythunit, navalunit
@@ -23,7 +16,6 @@ chaosdrone
 - amphibious,fast,medium armor, low hp
 
 === NEW ABILITY ===
-EagleWarrior: Spawn Eagle (StymphalianBird)
 SpiderWoman: ondeath, summon arachne types, lifespan
 Avenger: anubite jump anim, target hero
 

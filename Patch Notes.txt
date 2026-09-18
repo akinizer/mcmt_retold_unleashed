@@ -1407,3 +1407,10 @@
     - RaftJapaneseArcher
     - RaftGreekArcher, RaftGreekArcherHero
     - RaftAztecArcher
+
+- Villager
+    - villagerdwarf: knife -> axe
+    - villagerchinese: knife -> spear
+    - villageregypt: knife -> kopesh
+    - villageratlantean: knife -> murmillo sword
+    - villageratlanteanhero: knife -> fork
