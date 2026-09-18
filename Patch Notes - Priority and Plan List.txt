@@ -2,22 +2,8 @@
 ==================== PRIORITY-PLANS ==========================================
 ==============================================================================
 
-=== MILITARY TECHS FOR UNITS ===
-Quetzalcoatl -> summon,transform -> QuetzalcoatlSnake
-
-=== DISMOUNT TECHS
-    * chinese soldier (tactical advance)
-
 === MODEL UPDATE ===
-RaftEgyptianArcher
-RaftNorseArcher
-RaftAtlanteanArcher
-RaftChineseArcher
-RaftJapaneseArcher
-RaftGreekArcher, RaftGreekArcherHero
-RaftAztecArcher
-
-- VillagerDwarf: minotauraxe / chopping axe
+- VillagerDwarf: chopping axe
 - VillagerNorse: heracles bat
 - VillagerChinese: spear
 - VillagerEgyptian: camel rider sword
@@ -71,7 +57,7 @@ Avenger: anubite jump anim, target hero
 - HADES
     - Children of Underworld (heroes): spawn hadesshade
 - DEMETER
-    - Guardian of Harvests: summon Holo, gretahalberd model, transform lykaonwolf, aura farm gatherrate+
+    - Guardian of Harvests: summon Holo, gretahalberd model, transform kitsune, aura farm gatherrate+
 
 === WEAPON MODELS
 Horse + Brunhild + Bow

@@ -1397,3 +1397,13 @@
     - MCMT_Sentinels_of_Zeus
     - MCMT_Sentinels_of_Alexandria
     - MCMT_Summon_Town
+
+29. Archer Raft Patch
+- Raft
+    - RaftEgyptianArcher
+    - RaftNorseArcher
+    - RaftAtlanteanArcher
+    - RaftChineseArcher
+    - RaftJapaneseArcher
+    - RaftGreekArcher, RaftGreekArcherHero
+    - RaftAztecArcher

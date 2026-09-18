@@ -6574,11 +6574,16 @@
     <!-- Chinese Special Military Units-->	
     <!-- Chinese Special Naval Units-->
 	<unit name="RaftChineseArcher">
-		<displaynameid>STR_UNIT_RAFTARCHER_NAME</displaynameid>
+		<displaynameid>STR_UNIT_RAFTARCHER_CHINESE_NAME</displaynameid>
 		<shortrollovertextid>STR_UNIT_RAFTARCHER_SR</shortrollovertextid>
 		<rollovertextid>STR_UNIT_RAFTARCHER_LR</rollovertextid>
 		<icon>resources\nature\animals\naval\monkey_raft_icon.png</icon>
-		<animfile>nature\animals\naval\monkey_raft\monkey_raft.xml</animfile>
+		<animfile>mcmt\units\pirates\raft\raft_chinese_archer.xml</animfile>
+		<soundsetfile>chinese\vo\fire_archer\fire_archer.xml</soundsetfile>
+		<unitaitype>RangedCombative</unitaitype>
+		<impacttype>Unarmoured</impacttype>
+		<autoattackrange>20.0000</autoattackrange>
+
 		<obstructionradiusx>0.9900</obstructionradiusx>
 		<obstructionradiusz>0.9900</obstructionradiusz>
 		<selectionradiusx>1.2500</selectionradiusx>
@@ -6600,21 +6605,18 @@
 		<unittype>LogicalTypeRangedUnitsAttack</unittype>
 		<unittype>LogicalTypeValidBoltTarget</unittype>
 		<unittype>LogicalTypeHealed</unittype>
-		<unittype>Ship</unittype>
 		<unittype>Unit</unittype>
 		<unittype>UnitClass</unittype>
 		<unittype>Ranged</unittype>
-		<unittype>AbstractArcher</unittype>
 		<unittype>ArcherLineUpgraded</unittype>
-		<unittype>HumanSoldier</unittype>
+		<unittype>NavalUnit</unittype>
 		<unittype>LogicalTypeConvertsHerds</unittype>
 		<unittype>LogicalTypeEarthquakeAttack</unittype>
 		<unittype>LogicalTypeValidTornadoAttack</unittype>
 		<unittype>LogicalTypeValidSpyTarget</unittype>
 		<unittype>LogicalTypeValidFrostTarget</unittype>
 		<unittype>LogicalTypeValidTraitorTarget</unittype>
-		<unittype>LogicalTypeAffectedByRestoration</unittype>
-		<unittype>NavalUnit</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>		
 		<unittype>LogicalTypeValidShockwaveTarget</unittype>
 		<unittype>LogicalTypeNotEconomicOrMilitaryUnit</unittype>
 		<flag>TieToWaterSurface</flag>
@@ -6625,6 +6627,31 @@
 		<flag>ObscuredByUnits</flag>
 		<flag>NoIdleActions</flag>
 		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Pierce">4.000000</damage>
+			<damagebonus type="AbstractInfantry">3.000000</damagebonus>
+			<damagebonus type="Building">6.00000</damagebonus>
+			<maxrange>11.000000</maxrange>
+			<projectile>ProjectileYangJianAttack</projectile>
+			<projectilechainbounce>1</projectilechainbounce>
+			<projectilechainbouncereduction>0.800</projectilechainbouncereduction>
+			<projectilechainbouncerange>4</projectilechainbouncerange>
+			<onhiteffect active="0" type="StatModify" duration="5.00000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+				<target ignoretype="AbstractTitan"></target>
+				<modify type="ArmorSpecific" dmgtype="Pierce" applytype="Multiply" stack="">0.9900</modify>
+				<modify type="ArmorSpecific" dmgtype="Hack" applytype="Multiply" stack="">0.9900</modify>
+			</onhiteffect>
+			<onhiteffect active="0" type="Attach" proto="VFXScorchingFeathers" attachbone="spine" duration="5.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+				<target ignoretype="AbstractTitan"></target>
+			</onhiteffect>
+		</protoaction>
 	</unit>
     <!-- Chinese Special Buildings-->
 
@@ -7528,6 +7555,89 @@
 			<active>0</active>
 		</protoaction>
 	</unit>	
+
+	<!-- Aztec Special Naval Units -->
+	<unit name="RaftAztecArcher">
+		<displaynameid>STR_UNIT_RAFTARCHER_AZTEC_NAME</displaynameid>
+		<shortrollovertextid>STR_UNIT_RAFTARCHER_SR</shortrollovertextid>
+		<rollovertextid>STR_UNIT_RAFTARCHER_LR</rollovertextid>
+		<icon>resources\nature\animals\naval\monkey_raft_icon.png</icon>
+		<animfile>mcmt\units\pirates\raft\raft_aztec_archer.xml</animfile>
+		<soundsetfile>aztec\vo\tequihuaarcher\tequihuaarcher.xml</soundsetfile>
+		<unitaitype>RangedCombative</unitaitype>
+		<impacttype>Unarmoured</impacttype>
+		<autoattackrange>20.0000</autoattackrange>
+
+		<obstructionradiusx>0.9900</obstructionradiusx>
+		<obstructionradiusz>0.9900</obstructionradiusz>
+		<selectionradiusx>1.2500</selectionradiusx>
+		<selectionradiusz>1.2500</selectionradiusz>
+		<movementtype>water</movementtype>
+		<turnrate>3.0000</turnrate>
+		<initialhitpoints>200.0000</initialhitpoints>
+		<maxhitpoints>200.0000</maxhitpoints>
+		<weightclass>6</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>5.0000</maxvelocity>
+		<los>16.0000</los>
+		<cost resourcetype="Favor">1.0000</cost>
+		<armor type="Hack" value="0.1000"></armor>
+		<armor type="Pierce" value="0.1000"></armor>
+		<armor type="Crush" value="0.1000"></armor>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<unittype>NavalUnit</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeNotEconomicOrMilitaryUnit</unittype>
+		<flag>TieToWaterSurface</flag>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>DecalStickToWaterSurface</flag>
+		<flag>FadeOutDecalOnDeath</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>NoIdleActions</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Pierce">4.000000</damage>
+			<damagebonus type="AbstractInfantry">3.000000</damagebonus>
+			<damagebonus type="Building">6.00000</damagebonus>
+			<maxrange>11.000000</maxrange>
+			<projectile>ProjectileKuafuStone</projectile>
+			<projectilechainbounce>1</projectilechainbounce>
+			<projectilechainbouncereduction>0.800</projectilechainbouncereduction>
+			<projectilechainbouncerange>4</projectilechainbouncerange>
+			<onhiteffect active="0" type="StatModify" duration="5.00000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+				<target ignoretype="AbstractTitan"></target>
+				<modify type="ArmorSpecific" dmgtype="Pierce" applytype="Multiply" stack="">0.9900</modify>
+				<modify type="ArmorSpecific" dmgtype="Hack" applytype="Multiply" stack="">0.9900</modify>
+			</onhiteffect>
+			<onhiteffect active="0" type="Attach" proto="VFXScorchingFeathers" attachbone="spine" duration="5.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+				<target ignoretype="AbstractTitan"></target>
+			</onhiteffect>
+		</protoaction>
+	</unit>
+
 	<!-- Aztec Special Units -->
 	<unit name="BattleMaster">
 		<displaynameid>STR_BLD_BATTLEMASTER_NAME</displaynameid>
@@ -23069,11 +23179,16 @@
 
 	<!-- Greek Special Naval Units -->
 	 <unit name="RaftGreekArcher">
-		<displaynameid>STR_UNIT_RAFTARCHER_NAME</displaynameid>
+		<displaynameid>STR_UNIT_RAFTARCHER_GREEK_NAME</displaynameid>
 		<shortrollovertextid>STR_UNIT_RAFTARCHER_SR</shortrollovertextid>
 		<rollovertextid>STR_UNIT_RAFTARCHER_LR</rollovertextid>
 		<icon>resources\nature\animals\naval\monkey_raft_icon.png</icon>
-		<animfile>nature\animals\naval\monkey_raft\monkey_raft.xml</animfile>
+		<animfile>mcmt\units\pirates\raft\raft_greek_archer.xml</animfile>
+		<soundsetfile>greek\vo\toxotes\toxotes.xml</soundsetfile>
+		<unitaitype>RangedCombative</unitaitype>
+		<impacttype>Unarmoured</impacttype>
+		<autoattackrange>20.0000</autoattackrange>
+
 		<obstructionradiusx>0.9900</obstructionradiusx>
 		<obstructionradiusz>0.9900</obstructionradiusz>
 		<selectionradiusx>1.2500</selectionradiusx>
@@ -23095,13 +23210,11 @@
 		<unittype>LogicalTypeRangedUnitsAttack</unittype>
 		<unittype>LogicalTypeValidBoltTarget</unittype>
 		<unittype>LogicalTypeHealed</unittype>
-		<unittype>Ship</unittype>
 		<unittype>Unit</unittype>
 		<unittype>UnitClass</unittype>
 		<unittype>Ranged</unittype>
-		<unittype>AbstractArcher</unittype>
 		<unittype>ArcherLineUpgraded</unittype>
-		<unittype>HumanSoldier</unittype>
+		<unittype>NavalUnit</unittype>
 		<unittype>LogicalTypeConvertsHerds</unittype>
 		<unittype>LogicalTypeEarthquakeAttack</unittype>
 		<unittype>LogicalTypeValidTornadoAttack</unittype>
@@ -23109,7 +23222,6 @@
 		<unittype>LogicalTypeValidFrostTarget</unittype>
 		<unittype>LogicalTypeValidTraitorTarget</unittype>
 		<unittype>LogicalTypeAffectedByRestoration</unittype>
-		<unittype>NavalUnit</unittype>
 		<unittype>LogicalTypeValidShockwaveTarget</unittype>
 		<unittype>LogicalTypeNotEconomicOrMilitaryUnit</unittype>
 		<flag>TieToWaterSurface</flag>
@@ -23120,13 +23232,43 @@
 		<flag>ObscuredByUnits</flag>
 		<flag>NoIdleActions</flag>
 		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Pierce">4.000000</damage>
+			<damagebonus type="AbstractInfantry">3.000000</damagebonus>
+			<damagebonus type="Building">6.00000</damagebonus>
+			<maxrange>11.000000</maxrange>
+			<projectile>ProjectileSlingStoneFlaming</projectile>
+			<projectilechainbounce>1</projectilechainbounce>
+			<projectilechainbouncereduction>0.800</projectilechainbouncereduction>
+			<projectilechainbouncerange>4</projectilechainbouncerange>
+			<onhiteffect active="0" type="StatModify" duration="5.00000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+				<target ignoretype="AbstractTitan"></target>
+				<modify type="ArmorSpecific" dmgtype="Pierce" applytype="Multiply" stack="">0.9900</modify>
+				<modify type="ArmorSpecific" dmgtype="Hack" applytype="Multiply" stack="">0.9900</modify>
+			</onhiteffect>
+			<onhiteffect active="0" type="Attach" proto="VFXScorchingFeathers" attachbone="spine" duration="5.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+				<target ignoretype="AbstractTitan"></target>
+			</onhiteffect>
+		</protoaction>
 	</unit>
 	 <unit name="RaftGreekArcherHero">
-		<displaynameid>STR_UNIT_RAFTARCHER_NAME</displaynameid>
+		<displaynameid>STR_UNIT_RAFTARCHER_GREEK_HERO_NAME</displaynameid>
 		<shortrollovertextid>STR_UNIT_RAFTARCHER_SR</shortrollovertextid>
 		<rollovertextid>STR_UNIT_RAFTARCHER_LR</rollovertextid>
 		<icon>resources\nature\animals\naval\monkey_raft_icon.png</icon>
-		<animfile>nature\animals\naval\monkey_raft\monkey_raft.xml</animfile>
+		<animfile>mcmt\units\pirates\raft\raft_greek_archer_hero.xml</animfile>
+		<soundsetfile>greek_demeter\vo\amazon_archer\amazonarcher.xml</soundsetfile>
+		<unitaitype>RangedCombative</unitaitype>
+		<impacttype>Unarmoured</impacttype>
+		<autoattackrange>20.0000</autoattackrange>
+
 		<obstructionradiusx>0.9900</obstructionradiusx>
 		<obstructionradiusz>0.9900</obstructionradiusz>
 		<selectionradiusx>1.2500</selectionradiusx>
@@ -23148,13 +23290,13 @@
 		<unittype>LogicalTypeRangedUnitsAttack</unittype>
 		<unittype>LogicalTypeValidBoltTarget</unittype>
 		<unittype>LogicalTypeHealed</unittype>
-		<unittype>Ship</unittype>
 		<unittype>Unit</unittype>
 		<unittype>UnitClass</unittype>
 		<unittype>Ranged</unittype>
-		<unittype>AbstractArcher</unittype>
 		<unittype>ArcherLineUpgraded</unittype>
-		<unittype>HumanSoldier</unittype>
+		<unittype>NavalUnit</unittype>
+		<unittype>Hero</unittype>
+		<unittype>HeroShadowUpgraded</unittype>
 		<unittype>LogicalTypeConvertsHerds</unittype>
 		<unittype>LogicalTypeEarthquakeAttack</unittype>
 		<unittype>LogicalTypeValidTornadoAttack</unittype>
@@ -23162,7 +23304,6 @@
 		<unittype>LogicalTypeValidFrostTarget</unittype>
 		<unittype>LogicalTypeValidTraitorTarget</unittype>
 		<unittype>LogicalTypeAffectedByRestoration</unittype>
-		<unittype>NavalUnit</unittype>
 		<unittype>LogicalTypeValidShockwaveTarget</unittype>
 		<unittype>LogicalTypeNotEconomicOrMilitaryUnit</unittype>
 		<flag>TieToWaterSurface</flag>
@@ -23173,6 +23314,32 @@
 		<flag>ObscuredByUnits</flag>
 		<flag>NoIdleActions</flag>
 		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Pierce">4.000000</damage>
+			<damagebonus type="AbstractInfantry">3.000000</damagebonus>
+			<damagebonus type="Building">6.00000</damagebonus>
+			<damagebonus type="MythUnit">10.00000</damagebonus>
+			<maxrange>11.000000</maxrange>
+			<projectile>ProjectileSlingStoneFlaming</projectile>
+			<projectilechainbounce>1</projectilechainbounce>
+			<projectilechainbouncereduction>0.800</projectilechainbouncereduction>
+			<projectilechainbouncerange>4</projectilechainbouncerange>
+			<onhiteffect active="0" type="StatModify" duration="5.00000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+				<target ignoretype="AbstractTitan"></target>
+				<modify type="ArmorSpecific" dmgtype="Pierce" applytype="Multiply" stack="">0.9900</modify>
+				<modify type="ArmorSpecific" dmgtype="Hack" applytype="Multiply" stack="">0.9900</modify>
+			</onhiteffect>
+			<onhiteffect active="0" type="Attach" proto="VFXScorchingFeathers" attachbone="spine" duration="5.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+				<target ignoretype="AbstractTitan"></target>
+			</onhiteffect>
+		</protoaction>
 	</unit>
 
 	<!-- SPARTAN UNITS -->
@@ -25608,11 +25775,16 @@
 
 	<!-- Norse Special Naval Units -->
 	<unit name="RaftNorseArcher">
-		<displaynameid>STR_UNIT_RAFTARCHER_NAME</displaynameid>
+		<displaynameid>STR_UNIT_RAFTARCHER_NORSE_NAME</displaynameid>
 		<shortrollovertextid>STR_UNIT_RAFTARCHER_SR</shortrollovertextid>
 		<rollovertextid>STR_UNIT_RAFTARCHER_LR</rollovertextid>
 		<icon>resources\nature\animals\naval\monkey_raft_icon.png</icon>
-		<animfile>nature\animals\naval\monkey_raft\monkey_raft.xml</animfile>
+		<animfile>mcmt\units\pirates\raft\raft_norse_archer.xml</animfile>
+		<soundsetfile>norse\vo\throwing_axeman\throwing_axeman.xml</soundsetfile>
+		<unitaitype>RangedCombative</unitaitype>
+		<impacttype>Unarmoured</impacttype>
+		<autoattackrange>20.0000</autoattackrange>
+
 		<obstructionradiusx>0.9900</obstructionradiusx>
 		<obstructionradiusz>0.9900</obstructionradiusz>
 		<selectionradiusx>1.2500</selectionradiusx>
@@ -25634,13 +25806,11 @@
 		<unittype>LogicalTypeRangedUnitsAttack</unittype>
 		<unittype>LogicalTypeValidBoltTarget</unittype>
 		<unittype>LogicalTypeHealed</unittype>
-		<unittype>Ship</unittype>
 		<unittype>Unit</unittype>
 		<unittype>UnitClass</unittype>
 		<unittype>Ranged</unittype>
-		<unittype>AbstractArcher</unittype>
 		<unittype>ArcherLineUpgraded</unittype>
-		<unittype>HumanSoldier</unittype>
+		<unittype>NavalUnit</unittype>
 		<unittype>LogicalTypeConvertsHerds</unittype>
 		<unittype>LogicalTypeEarthquakeAttack</unittype>
 		<unittype>LogicalTypeValidTornadoAttack</unittype>
@@ -25648,7 +25818,6 @@
 		<unittype>LogicalTypeValidFrostTarget</unittype>
 		<unittype>LogicalTypeValidTraitorTarget</unittype>
 		<unittype>LogicalTypeAffectedByRestoration</unittype>
-		<unittype>NavalUnit</unittype>
 		<unittype>LogicalTypeValidShockwaveTarget</unittype>
 		<unittype>LogicalTypeNotEconomicOrMilitaryUnit</unittype>
 		<flag>TieToWaterSurface</flag>
@@ -25659,6 +25828,31 @@
 		<flag>ObscuredByUnits</flag>
 		<flag>NoIdleActions</flag>
 		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Pierce">4.000000</damage>
+			<damagebonus type="AbstractInfantry">3.000000</damagebonus>
+			<damagebonus type="Building">6.00000</damagebonus>
+			<maxrange>11.000000</maxrange>
+			<projectile>ProjectileAxeFlaming</projectile>
+			<projectilechainbounce>1</projectilechainbounce>
+			<projectilechainbouncereduction>0.800</projectilechainbouncereduction>
+			<projectilechainbouncerange>4</projectilechainbouncerange>
+			<onhiteffect active="0" type="StatModify" duration="5.00000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+				<target ignoretype="AbstractTitan"></target>
+				<modify type="ArmorSpecific" dmgtype="Pierce" applytype="Multiply" stack="">0.9900</modify>
+				<modify type="ArmorSpecific" dmgtype="Hack" applytype="Multiply" stack="">0.9900</modify>
+			</onhiteffect>
+			<onhiteffect active="0" type="Attach" proto="VFXScorchingFeathers" attachbone="spine" duration="5.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+				<target ignoretype="AbstractTitan"></target>
+			</onhiteffect>
+		</protoaction>
 	</unit>
 	
 	<!-- Norse Special Buildings -->
@@ -27193,11 +27387,16 @@
 	</unit>
 	<!-- Egyptian Special Naval Units -->
 	<unit name="RaftEgyptianArcher">
-		<displaynameid>STR_UNIT_RAFTARCHER_NAME</displaynameid>
+		<displaynameid>STR_UNIT_RAFTARCHER_EGYPTIAN_NAME</displaynameid>
 		<shortrollovertextid>STR_UNIT_RAFTARCHER_SR</shortrollovertextid>
 		<rollovertextid>STR_UNIT_RAFTARCHER_LR</rollovertextid>
 		<icon>resources\nature\animals\naval\monkey_raft_icon.png</icon>
-		<animfile>nature\animals\naval\monkey_raft\monkey_raft.xml</animfile>
+		<animfile>mcmt\units\pirates\raft\raft_egyptian_archer.xml</animfile>
+		<soundsetfile>egyptian\vo\slinger\slinger.xml</soundsetfile>
+		<unitaitype>RangedCombative</unitaitype>
+		<impacttype>Unarmoured</impacttype>
+		<autoattackrange>20.0000</autoattackrange>
+
 		<obstructionradiusx>0.9900</obstructionradiusx>
 		<obstructionradiusz>0.9900</obstructionradiusz>
 		<selectionradiusx>1.2500</selectionradiusx>
@@ -27219,13 +27418,11 @@
 		<unittype>LogicalTypeRangedUnitsAttack</unittype>
 		<unittype>LogicalTypeValidBoltTarget</unittype>
 		<unittype>LogicalTypeHealed</unittype>
-		<unittype>Ship</unittype>
 		<unittype>Unit</unittype>
 		<unittype>UnitClass</unittype>
 		<unittype>Ranged</unittype>
-		<unittype>AbstractArcher</unittype>
 		<unittype>ArcherLineUpgraded</unittype>
-		<unittype>HumanSoldier</unittype>
+		<unittype>NavalUnit</unittype>
 		<unittype>LogicalTypeConvertsHerds</unittype>
 		<unittype>LogicalTypeEarthquakeAttack</unittype>
 		<unittype>LogicalTypeValidTornadoAttack</unittype>
@@ -27233,7 +27430,6 @@
 		<unittype>LogicalTypeValidFrostTarget</unittype>
 		<unittype>LogicalTypeValidTraitorTarget</unittype>
 		<unittype>LogicalTypeAffectedByRestoration</unittype>
-		<unittype>NavalUnit</unittype>
 		<unittype>LogicalTypeValidShockwaveTarget</unittype>
 		<unittype>LogicalTypeNotEconomicOrMilitaryUnit</unittype>
 		<flag>TieToWaterSurface</flag>
@@ -27244,6 +27440,31 @@
 		<flag>ObscuredByUnits</flag>
 		<flag>NoIdleActions</flag>
 		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Pierce">4.000000</damage>
+			<damagebonus type="AbstractInfantry">3.000000</damagebonus>
+			<damagebonus type="Building">6.00000</damagebonus>
+			<maxrange>11.000000</maxrange>
+			<projectile>ProjectileSlingStoneFlaming</projectile>
+			<projectilechainbounce>1</projectilechainbounce>
+			<projectilechainbouncereduction>0.800</projectilechainbouncereduction>
+			<projectilechainbouncerange>4</projectilechainbouncerange>
+			<onhiteffect active="0" type="StatModify" duration="5.00000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+				<target ignoretype="AbstractTitan"></target>
+				<modify type="ArmorSpecific" dmgtype="Pierce" applytype="Multiply" stack="">0.9900</modify>
+				<modify type="ArmorSpecific" dmgtype="Hack" applytype="Multiply" stack="">0.9900</modify>
+			</onhiteffect>
+			<onhiteffect active="0" type="Attach" proto="VFXScorchingFeathers" attachbone="spine" duration="5.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+				<target ignoretype="AbstractTitan"></target>
+			</onhiteffect>
+		</protoaction>
 	</unit>
 
 	<!-- Egyptian Special Buildings -->
@@ -29019,11 +29240,16 @@
 	</unit>
 	<!-- Atlantean Special Naval Units -->
 	<unit name="RaftAtlanteanArcher">
-		<displaynameid>STR_UNIT_RAFTARCHER_NAME</displaynameid>
+		<displaynameid>STR_UNIT_RAFTARCHER_ATLANTEAN_NAME</displaynameid>
 		<shortrollovertextid>STR_UNIT_RAFTARCHER_SR</shortrollovertextid>
 		<rollovertextid>STR_UNIT_RAFTARCHER_LR</rollovertextid>
 		<icon>resources\nature\animals\naval\monkey_raft_icon.png</icon>
-		<animfile>nature\animals\naval\monkey_raft\monkey_raft.xml</animfile>
+		<animfile>mcmt\units\pirates\raft\raft_atlantean_archer.xml</animfile>
+		<soundsetfile>atlantean\vo\arcus\arcus.xml</soundsetfile>
+		<unitaitype>RangedCombative</unitaitype>
+		<impacttype>Unarmoured</impacttype>
+		<autoattackrange>20.0000</autoattackrange>
+
 		<obstructionradiusx>0.9900</obstructionradiusx>
 		<obstructionradiusz>0.9900</obstructionradiusz>
 		<selectionradiusx>1.2500</selectionradiusx>
@@ -29045,7 +29271,6 @@
 		<unittype>LogicalTypeRangedUnitsAttack</unittype>
 		<unittype>LogicalTypeValidBoltTarget</unittype>
 		<unittype>LogicalTypeHealed</unittype>
-		<unittype>Ship</unittype>
 		<unittype>Unit</unittype>
 		<unittype>UnitClass</unittype>
 		<unittype>Ranged</unittype>
@@ -29070,6 +29295,31 @@
 		<flag>ObscuredByUnits</flag>
 		<flag>NoIdleActions</flag>
 		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Pierce">4.000000</damage>
+			<damagebonus type="AbstractInfantry">3.000000</damagebonus>
+			<damagebonus type="Building">6.00000</damagebonus>
+			<maxrange>11.000000</maxrange>
+			<projectile>ProjectileSlingStoneFlaming</projectile>
+			<projectilechainbounce>1</projectilechainbounce>
+			<projectilechainbouncereduction>0.800</projectilechainbouncereduction>
+			<projectilechainbouncerange>4</projectilechainbouncerange>
+			<onhiteffect active="0" type="StatModify" duration="5.00000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+				<target ignoretype="AbstractTitan"></target>
+				<modify type="ArmorSpecific" dmgtype="Pierce" applytype="Multiply" stack="">0.9900</modify>
+				<modify type="ArmorSpecific" dmgtype="Hack" applytype="Multiply" stack="">0.9900</modify>
+			</onhiteffect>
+			<onhiteffect active="0" type="Attach" proto="VFXScorchingFeathers" attachbone="spine" duration="5.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+				<target ignoretype="AbstractTitan"></target>
+			</onhiteffect>
+		</protoaction>
 	</unit>
 
 	<!-- Chinese Special Units -->
@@ -29994,11 +30244,16 @@
 	</unit>
 	<!-- Japanese Special Naval Units -->
 	<unit name="RaftJapaneseArcher">
-		<displaynameid>STR_UNIT_RAFTARCHER_NAME</displaynameid>
+		<displaynameid>STR_UNIT_RAFTARCHER_JAPANESE_NAME</displaynameid>
 		<shortrollovertextid>STR_UNIT_RAFTARCHER_SR</shortrollovertextid>
 		<rollovertextid>STR_UNIT_RAFTARCHER_LR</rollovertextid>
 		<icon>resources\nature\animals\naval\monkey_raft_icon.png</icon>
-		<animfile>nature\animals\naval\monkey_raft\monkey_raft.xml</animfile>
+		<animfile>mcmt\units\pirates\raft\raft_japanese_archer.xml</animfile>
+		<soundsetfile>japanese\vo\yumi_archer\yumi_archer.xml</soundsetfile>
+		<unitaitype>RangedCombative</unitaitype>
+		<impacttype>Unarmoured</impacttype>
+		<autoattackrange>20.0000</autoattackrange>
+
 		<obstructionradiusx>0.9900</obstructionradiusx>
 		<obstructionradiusz>0.9900</obstructionradiusz>
 		<selectionradiusx>1.2500</selectionradiusx>
@@ -30020,7 +30275,6 @@
 		<unittype>LogicalTypeRangedUnitsAttack</unittype>
 		<unittype>LogicalTypeValidBoltTarget</unittype>
 		<unittype>LogicalTypeHealed</unittype>
-		<unittype>Ship</unittype>
 		<unittype>Unit</unittype>
 		<unittype>UnitClass</unittype>
 		<unittype>Ranged</unittype>
@@ -30045,6 +30299,31 @@
 		<flag>ObscuredByUnits</flag>
 		<flag>NoIdleActions</flag>
 		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Pierce">4.000000</damage>
+			<damagebonus type="AbstractInfantry">3.000000</damagebonus>
+			<damagebonus type="Building">6.00000</damagebonus>
+			<maxrange>11.000000</maxrange>
+			<projectile>ProjectileBlowDart</projectile>
+			<projectilechainbounce>1</projectilechainbounce>
+			<projectilechainbouncereduction>0.800</projectilechainbouncereduction>
+			<projectilechainbouncerange>4</projectilechainbouncerange>
+			<onhiteffect active="0" type="StatModify" duration="5.00000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+				<target ignoretype="AbstractTitan"></target>
+				<modify type="ArmorSpecific" dmgtype="Pierce" applytype="Multiply" stack="">0.9900</modify>
+				<modify type="ArmorSpecific" dmgtype="Hack" applytype="Multiply" stack="">0.9900</modify>
+			</onhiteffect>
+			<onhiteffect active="0" type="Attach" proto="VFXScorchingFeathers" attachbone="spine" duration="5.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+				<target ignoretype="AbstractTitan"></target>
+			</onhiteffect>
+		</protoaction>
 	</unit>
 	<!-- dismount units knights todo
 	<unit name="NaginataSamurai" mergeMode="add"></unit>

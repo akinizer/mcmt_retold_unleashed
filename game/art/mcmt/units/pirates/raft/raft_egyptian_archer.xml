@@ -1,0 +1,6 @@
+<animfile validation="strict">
+	<component>ModelComp<assetreference type="TMComposite"><file>mcmt\units\pirates\raft\raft_egyptian_archer</file></assetreference></component>
+	<anim>Idle<assetreference type="TMAnimation"><file>chinese\units\economic\villager_chinese\anim\villager_chinese_male_idle_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>RangedAttack<assetreference type="TMAnimation"><file>chinese\units\economic\kuafu\anim\kuafu_attack_a</file><tag type="Attack">0.6</tag><tag type="SpecificSoundSet" checkvisible="1" set="KuafuSwoosh"></tag></assetreference><component>ModelComp</component></anim>
+	<anim>Death<assetreference type="TMAnimation"><file>greek\units\naval\trireme\anim\trireme_kraken_death_a</file></assetreference><component>HullComp</component></anim>
+</animfile>

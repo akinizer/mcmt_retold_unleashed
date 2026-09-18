@@ -90,6 +90,15 @@ ID = "STR_UNIT_DEFORESTATOR_LR"   ;   Str = "Merchant Lumberjack gets on a machi
 ID = "STR_UNIT_DEFORESTATOR_SR"   ;   Str = "Lumberjack (Machine)"
 
 ID = "STR_UNIT_RAFTARCHER_NAME"   ;   Str = "Raft Archer"
+ID = "STR_UNIT_RAFTARCHER_ATLANTEAN_NAME"   ;   Str = "Raft Archer (Atlantean)"
+ID = "STR_UNIT_RAFTARCHER_AZTEC_NAME"   ;   Str = "Raft Archer (Aztec)"
+ID = "STR_UNIT_RAFTARCHER_CHINESE_NAME"   ;   Str = "Raft Archer (Chinese)"
+ID = "STR_UNIT_RAFTARCHER_EGYPTIAN_NAME"   ;   Str = "Raft Archer (Egyptian)"
+ID = "STR_UNIT_RAFTARCHER_GREEK_NAME"   ;   Str = "Raft Archer (Greek)"
+ID = "STR_UNIT_RAFTARCHER_GREEK_HERO_NAME"   ;   Str = "Raft Archer (Greek Hero)"
+ID = "STR_UNIT_RAFTARCHER_JAPANESE_NAME"   ;   Str = "Raft Archer (Japanese)"
+ID = "STR_UNIT_RAFTARCHER_NORSE_NAME"   ;   Str = "Raft Archer (Norse)"
+
 ID = "STR_UNIT_RAFTARCHER_SR"   ;   Str = "Survivor crewmate from the shipwreck"
 ID = "STR_UNIT_RAFTARCHER_LR"   ;   Str = "The survivor wishes to make it through hurling storms, pirates and enemy ships"
 
