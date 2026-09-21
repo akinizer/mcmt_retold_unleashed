@@ -6478,6 +6478,47 @@
 		</animations>
 	</animxml>
 	
+	<!-- greek unit reworks naval -->
+	<animxml file="greek\units\naval\trireme\trireme.xml">
+		<animations>
+			<animinfo mergeMode="add">
+				<name>Charging</name>
+				<versioncount>1</versioncount>
+				<versions>
+					<version>
+						<file>japanese\units\naval\junkozosen\anim\junkozosen_attack_a</file>
+						<duration>2.00000</duration>
+						<tags>
+							<tag>
+								<type>Attack</type>
+								<position>0.28000</position>
+							</tag>
+							<tag>
+								<type>Attack</type>
+								<position>0.28000</position>
+							</tag>
+							<tag>
+								<type>Attack</type>
+								<position>0.28000</position>
+							</tag>
+							<tag>
+								<type>Attack</type>
+								<position>0.28000</position>
+							</tag>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.28000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>ShinigamiAttack</set>
+								</properties>
+							</tag>
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+		</animations>
+	</animxml>
 	<!-- greek unit reworks legacy -->
 	<animxml file="greek\units\siege\petrobolos\petrobolos.xml">
 		<animations>

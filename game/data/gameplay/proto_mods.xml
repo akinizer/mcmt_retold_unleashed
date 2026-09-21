@@ -94,7 +94,7 @@
         <maxvelocity>6.3000</maxvelocity>
         <armor type="Hack" value="0.2500"></armor>
         <armor type="Pierce" value="0.3000"></armor>
-        <unittype>SiegeLineUpgraded</unittype>
+        <unittype>AbstractSiegeWeapon</unittype>
 
       	<protoaction>
             <name>RangedAttack</name>
@@ -2599,7 +2599,7 @@
 		<armor type="Crush" value="0.9900"></armor>
 		
 		<unittype>InfantryLineUpgraded</unittype>
-		<unittype>SiegeLineUpgraded</unittype>
+		<unittype>AbstractSiegeWeapon</unittype>
 		
 		<tactics>greek_hero_proximitymodes_structure_polyphemus.tactics</tactics>
 		<protoaction>
@@ -2782,7 +2782,7 @@
 	<unit name="Colossus">
 		<unittype>MilitaryUnit</unittype>
 		<unittype>InfantryLineUpgraded</unittype>
-		<unittype>SiegeLineUpgraded</unittype>		
+		<unittype>AbstractSiegeWeapon</unittype>		
 		<protoaction>
 			<name>HandAttack</name>
 			<rof>0.950000</rof>
@@ -2952,6 +2952,7 @@
 		<initialhitpoints>700.0000</initialhitpoints>
 		<maxhitpoints>700.0000</maxhitpoints>
 		<armor type="Hack" value="0.8000"></armor>
+		<tactics>mcmt_cyclops.tactics</tactics>
 		<protoaction>
 			<name>HandAttack</name>
 			<rof>3.000000</rof>
@@ -2967,14 +2968,9 @@
 				<target attacktype="HumanSoldier"></target>
 				<target attacktype="AbstractVillager"></target>
 				<target attacktype="TradeUnit"></target>
+				<target ignoretype="MythUnit"></target>
+				<target ignoretype="Hero"></target>
 		  </onhiteffect>
-		</protoaction>
-		<protoaction>
-			<name>Throw</name>
-			<rate type="LogicalTypeMythUnitNotTitan">1.0</rate>
-			<rate type="LogicalTypeVillagerNotHero">0.0</rate>
-			<rate type="HumanSoldier">0.0</rate>
-			<rate type="TradeUnit">0.0</rate>
 		</protoaction>
 	</unit>
 	<unit name="HadesShade">
@@ -3364,6 +3360,29 @@
 		</protoaction>
 	</unit>
     <!-- Greek Naval Units-->
+	<unit name="Trireme">
+		<rechargetime>15.0000</rechargetime>
+		<tactics>rangedattack_lightningattack.tactics</tactics>
+		<protoaction>
+			<name>LightningAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Divine">2.00000</damage>
+			<damage type="Pierce">2.000000</damage>
+			<damagebonus type="AbstractArcherShip">4.000000</damagebonus>
+			<maxrange>20.000000</maxrange>
+			<numberbounces>2</numberbounces>
+			<chargeaction>1</chargeaction>
+			<onhiteffect active="0" type="StatModify" duration="5.00000">
+				<target attacktype="AbstractWarship"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+				<target ignoretype="AbstractTitan"></target>
+				<modify type="ArmorSpecific" dmgtype="Pierce" applytype="Multiply" stack="">0.9900</modify>
+				<modify type="ArmorSpecific" dmgtype="Hack" applytype="Multiply" stack="">0.9900</modify>
+			</onhiteffect>
+		</protoaction>
+		
+	</unit>
+
 	<unit name="Pentekonter">
 		<directionalarmor angle="1.0472" value="0.5000"></directionalarmor>
 		<flag>AreaDamageConstant</flag>
@@ -3451,7 +3470,6 @@
 	</unit>
 	<unit name="Centimanus">
 		<unittype>AbstractSiegeWeapon</unittype>
-		<unittype>SiegeLineUpgraded</unittype>
 		<protoaction>
 			<name>HandAttack</name>
 			<rof>1.500000</rof>
@@ -3539,7 +3557,6 @@
 	<unit name="Behemoth">
 		<unitregen>6</unitregen>
 		<unittype>AbstractSiegeWeapon</unittype>
-		<unittype>SiegeLineUpgraded</unittype>
 		<movementtype>amphibious</movementtype>		
 		<flag>TieToWaterSurface</flag>
 	</unit>
@@ -3671,7 +3688,6 @@
     <!-- Atlantean Military Units-->
 	<unit name="Katapeltes">
 		<unittype>AbstractSiegeWeapon</unittype>
-		<unittype>SiegeLineUpgraded</unittype>
 		<protoaction mergeMode="replace">
 			<name>HandAttack</name>
 			<rof>1.200000</rof>
@@ -4033,7 +4049,7 @@
         <containedspeedbonus>0.2</containedspeedbonus>
         
         <unittype>AbstractSiegeShip</unittype>
-        <unittype>SiegeLineUpgraded</unittype>
+        <unittype>AbstractSiegeWeapon</unittype>
         <buildlimit>5</buildlimit>
 
         <protoaction>
@@ -4433,7 +4449,7 @@
 	</unit>
 	
 	<unit name="Scarab">
-		<unittype>SiegeLineUpgraded</unittype>
+		<unittype>AbstractSiegeWeapon</unittype>
 
        <initialshading type="gold" factor="1"></initialshading>
         <protoaction>
@@ -4516,7 +4532,6 @@
         <unittype>MythUnit</unittype>
         <unittype>MythUnitSiege</unittype>
         <unittype>AbstractSiegeWeapon</unittype>
-		<unittype>SiegeLineUpgraded</unittype>
 
         <unittype>CountsTowardMilitaryScore</unittype>
         <unittype>LogicalTypeValidBoltTarget</unittype>
@@ -5119,7 +5134,6 @@
     <!-- Egyptian Military Units-->
 	<unit name="WarElephant">
 		<unittype>AbstractSiegeWeapon</unittype>
-		<unittype>SiegeLineUpgraded</unittype>
 	</unit>
 	<unit name="ChariotArcher">
 		<unittype>AbstractArcher</unittype>
@@ -5330,22 +5344,18 @@
     <!-- Norse Myth Units-->
     <unit name="GullinburstiArchaic">
 		<unittype>AbstractSiegeWeapon</unittype>
-		<unittype>SiegeLineUpgraded</unittype>
 		<lifespan>50.0000</lifespan>
 	</unit>
 	<unit name="GullinburstiClassical">
 		<unittype>AbstractSiegeWeapon</unittype>
-		<unittype>SiegeLineUpgraded</unittype>
 		<lifespan>125.0000</lifespan>
 	</unit>
 	<unit name="GullinburstiHeroic">
 		<unittype>AbstractSiegeWeapon</unittype>
-		<unittype>SiegeLineUpgraded</unittype>
 		<lifespan>200.0000</lifespan>
 	</unit>
 	<unit name="GullinburstiMythic">
 		<unittype>AbstractSiegeWeapon</unittype>
-		<unittype>SiegeLineUpgraded</unittype>
 		<lifespan>300.0000</lifespan>
 	</unit>
 	
@@ -5385,7 +5395,6 @@
 	
 	<unit name="RockGiant">
 		<unittype>AbstractSiegeWeapon</unittype>
-		<unittype>SiegeLineUpgraded</unittype>
 		<armor type="Hack" value="0.8500"></armor>
 		<armor type="Pierce" value="0.9000"></armor>
 		<armor type="Crush" value="0.4000"></armor>
@@ -5416,7 +5425,6 @@
 	
 	<unit name="MountainGiant">
 		<unittype>AbstractSiegeWeapon</unittype>
-		<unittype>SiegeLineUpgraded</unittype>
 		<armor type="Hack" value="0.6500"></armor>
 		<armor type="Pierce" value="0.4000"></armor>
 		<armor type="Crush" value="0.8000"></armor>
@@ -5776,7 +5784,6 @@
 		<armor type="Pierce" value="0.7000"></armor>
 		<armor type="Crush" value="0.4000"></armor>
 		<unittype>AbstractSiegeWeapon</unittype>
-		<unittype>SiegeLineUpgraded</unittype>
 		<protoaction>
 			<name>RangedAttack</name>
 			<rof>2.000000</rof>
@@ -6712,7 +6719,7 @@
 		<unittype>MajorHero</unittype>
 		<unittype>HeroShadowUpgraded</unittype>
 		<unittype>ArcherLineUpgraded</unittype>
-		<unittype>SiegeLineUpgraded</unittype>
+		<unittype>AbstractSiegeWeapon</unittype>
 
 		<unittype>LogicalTypeFindMilitaryHero</unittype>
 		<unittype>LogicalTypeValidBoltTarget</unittype>
@@ -7370,7 +7377,7 @@
 		</protoaction>
 	</unit>
 	<unit name="Ayotochtli">
-		<unittype>SiegeLineUpgraded</unittype>
+		<unittype>AbstractSiegeWeapon</unittype>
 
 		<auxrechargetime>30.0000</auxrechargetime>
 		<tactics>mcmt_ayotochtli.tactics</tactics>
@@ -7692,7 +7699,7 @@
 		<unittype>Unit</unittype>
 		<unittype>HumanSoldier</unittype>
 		<unittype>InfantryLineUpgraded</unittype>
-		<unittype>SiegeLineUpgraded</unittype>
+		<unittype>AbstractSiegeWeapon</unittype>
 		<unittype>LogicalTypeValidBoltTarget</unittype>
 		<unittype>LogicalTypeConvertsHerds</unittype>
 		<unittype>LogicalTypeEarthquakeAttack</unittype>
@@ -8218,11 +8225,11 @@
 		<maxshieldpoints>1000</maxshieldpoints>
 	</unit>
 	<unit name="Guardian">
-		<unittype>SiegeLineUpgraded</unittype>
+		<unittype>AbstractSiegeWeapon</unittype>
 		<unittype>InfantryLineUpgraded</unittype>
 	</unit>
 	<unit name="GuardianSPC">
-		<unittype>SiegeLineUpgraded</unittype>
+		<unittype>AbstractSiegeWeapon</unittype>
 		<unittype>InfantryLineUpgraded</unittype>
 	</unit>
 	<unit name="Setna">
@@ -10368,7 +10375,6 @@
 		<armor type="Pierce" value="0.9000"></armor>
 		<armor type="Crush" value="0.6500"></armor>
 		
-		<unittype>AbstractArcher</unittype>
 		<unittype>ArcherLineUpgraded</unittype>
 		
 		<tactics>rangedattack_antiwall.tactics</tactics>
@@ -10384,6 +10390,7 @@
 		  <scalebycontainedunittype>
 			<rate type="Unit">0.050000</rate>
 		  </scalebycontainedunittype>
+		  <passthroughbuildings>1</passthroughbuildings>
 		</protoaction>
 		<protoaction>
 		  <name>RangedAttack</name>
@@ -12196,7 +12203,7 @@
         <unittype>Hero</unittype>
         <unittype>MajorHero</unittype>
         <unittype>HeroShadowUpgraded</unittype>
-        <unittype>SiegeLineUpgraded</unittype>
+        <unittype>AbstractSiegeWeapon</unittype>
         <unittype>InfantryLineUpgraded</unittype>
 
         <unittype>CountsTowardMilitaryScore</unittype>
@@ -12410,7 +12417,7 @@
         <unittype>UnitClass</unittype>
         <unittype>Unit</unittype>
         <unittype>InfantryLineUpgraded</unittype>
-        <unittype>SiegeLineUpgraded</unittype>
+        <unittype>AbstractSiegeWeapon</unittype>
         <unittype>Hero</unittype>
         <unittype>MajorHero</unittype>
         <unittype>HeroShadowUpgraded</unittype>
@@ -13069,7 +13076,6 @@
 		<unittype>MajorHero</unittype>
 		<unittype>HeroShadowUpgraded</unittype>
 		<unittype>AbstractSiegeWeapon</unittype>
-		<unittype>SiegeLineUpgraded</unittype>		
 		
 		<unittype>LogicalTypeConvertsHerds</unittype>
 		<unittype>LogicalTypeEarthquakeAttack</unittype>
@@ -13511,7 +13517,6 @@
 		<unittype>EconomicUpgraded</unittype>	
 		
 		<unittype>AbstractSiegeWeapon</unittype>
-		<unittype>SiegeLineUpgraded</unittype>
 		
 		<unittype>LogicalTypeHealed</unittype>
 		<unittype>LogicalTypeConvertsHerds</unittype>
@@ -13809,7 +13814,6 @@
 		<unittype>AbstractArcher</unittype>
 		<unittype>ArcherLineUpgraded</unittype>
 		<unittype>AbstractScout</unittype>
-		<unittype>SiegeLineUpgraded</unittype>
 
 		<unittype>LogicalTypeHealed</unittype>
 		<unittype>LogicalTypeConvertsHerds</unittype>
@@ -15000,7 +15004,6 @@
 		<unittype>AbstractInfantry</unittype>
 		<unittype>InfantryLineUpgraded</unittype>
 		<unittype>AbstractSiegeWeapon</unittype>
-		<unittype>SiegeLineUpgraded</unittype>
 		<unittype>Hero</unittype>
 		<unittype>MinorHero</unittype>
 		<unittype>HeroShadowUpgraded</unittype>
@@ -17706,7 +17709,6 @@
     <unittype>AbstractWarship</unittype>
     <unittype>AbstractSiegeShip</unittype>
     <unittype>AbstractSiegeWeapon</unittype>
-    <unittype>SiegeLineUpgraded</unittype>
     <unittype>Ranged</unittype>
 	
     <unittype>CountsTowardMilitaryScore</unittype>
@@ -17810,7 +17812,6 @@
     <unittype>Ranged</unittype>
     <unittype>AbstractSiegeShip</unittype>
     <unittype>AbstractSiegeWeapon</unittype>
-    <unittype>SiegeLineUpgraded</unittype>
     <unittype>AbstractTitan</unittype>
 	
 	<maxcontained>50</maxcontained>
@@ -19152,7 +19153,6 @@
 		<unittype>AbstractInfantry</unittype>
 		<unittype>InfantryLineUpgraded</unittype>
 		<unittype>AbstractSiegeWeapon</unittype>
-		<unittype>SiegeLineUpgraded</unittype>
 		
 		<unittype>LogicalTypeConvertsHerds</unittype>
 		<unittype>LogicalTypeEarthquakeAttack</unittype>
@@ -19770,7 +19770,6 @@
 		<unittype>MythUnit</unittype>
 		<unittype>MythUnitSiege</unittype>
 		<unittype>AbstractSiegeWeapon</unittype>
-		<unittype>SiegeLineUpgraded</unittype>
 		
 		<maxcontained>6</maxcontained>
 		<containedhitpointbonus>50</containedhitpointbonus>
@@ -19965,7 +19964,7 @@
 		<unittype>AbstractWarshipHero</unittype>
 		<unittype>AbstractWarship</unittype>
 		<unittype>AbstractSiegeShip</unittype>
-		<unittype>SiegeLineUpgraded</unittype>
+		<unittype>AbstractSiegeWeapon</unittype>
 		<unittype>AbstractTitan</unittype>
 		
 		<unittype>Hero</unittype>
@@ -26118,8 +26117,6 @@
 		<unittype>UnitClass</unittype>
 		<unittype>MilitaryUnit</unittype>
 		<unittype>Ranged</unittype>
-		<unittype>AbstractSiegeWeapon</unittype>
-		<unittype>SiegeLineUpgraded</unittype>
 		
 		<unittype>LogicalTypeValidBoltTarget</unittype>
 		<unittype>LogicalTypeConvertsHerds</unittype>
@@ -26217,7 +26214,6 @@
 		<unittype>MilitaryUnit</unittype>
 
 		<unittype>AbstractSiegeWeapon</unittype>
-		<unittype>SiegeLineUpgraded</unittype>
 
 		<unittype>AbstractTitan</unittype>
 		<unittype>AnimalOfSet</unittype>
@@ -26523,7 +26519,6 @@
         <unittype>MythUnit</unittype>
         <unittype>AbstractSiegeWeapon</unittype>
         <unittype>AbstractSiegeShip</unittype>
-        <unittype>SiegeLineUpgraded</unittype>
         <buildlimit>3</buildlimit>
 
 		<rechargetime>18.0000</rechargetime>
@@ -27338,7 +27333,6 @@
 		<unittype>HumanSoldier</unittype>
 		<unittype>AbstractCavalry</unittype>
 		<unittype>AbstractSiegeWeapon</unittype>
-		<unittype>SiegeLineUpgraded</unittype>
 		<unittype>CavalryLineUpgraded</unittype>
 		<unittype>LogicalTypeValidBoltTarget</unittype>
 		<unittype>LogicalTypeConvertsHerds</unittype>
@@ -34767,7 +34761,163 @@
 			<persistent>1</persistent>
 		</protoaction>
 	</unit>
-	
+
+	<unit name="CustomDependantUnit_Warship_Arrow">
+		<animfile>mcmt\units\dependants\chargedattack_dependant.xml</animfile>
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>air</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>100.0000</initialhitpoints>
+		<maxhitpoints>100.0000</maxhitpoints>
+		<maxvelocity>3.2000</maxvelocity>
+		<los>18.0000</los>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>LogicalTypeMythicMythUnit</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>NonCollideable</flag>
+		<flag>NoHPBar</flag>
+		<flag>Invulnerable</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>DependentAttach</flag>
+		<flag>NoTieToGround</flag>
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Pierce">4.000000</damage>
+			<maxrange>16.000000</maxrange>
+			<projectile>ProjectileArrowFireArcher</projectile>
+			<impacteffect>effects\impacts\pierce</impacteffect>
+			 <numberprojectiles>4</numberprojectiles>
+            <volleymode></volleymode>
+		</protoaction>
+		<protoaction>
+			<name>Drone</name>
+			<type>Drone</type>
+			<persistent>1</persistent>
+		</protoaction>
+	</unit>	
+	<unit name="CustomDependantUnit_Warship_Javelin">
+		<animfile>mcmt\units\dependants\chargedattack_dependant.xml</animfile>
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>air</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>100.0000</initialhitpoints>
+		<maxhitpoints>100.0000</maxhitpoints>
+		<maxvelocity>3.2000</maxvelocity>
+		<los>18.0000</los>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>LogicalTypeMythicMythUnit</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>NonCollideable</flag>
+		<flag>NoHPBar</flag>
+		<flag>Invulnerable</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>DependentAttach</flag>
+		<flag>NoTieToGround</flag>
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Pierce">5.000000</damage>
+			<maxrange>15.000000</maxrange>
+			<projectile>ProjectileJavelinFlaming</projectile>
+			<impacteffect>effects\impacts\pierce</impacteffect>
+			 <numberprojectiles>4</numberprojectiles>
+            <volleymode></volleymode>
+		</protoaction>
+		<protoaction>
+			<name>Drone</name>
+			<type>Drone</type>
+			<persistent>1</persistent>
+		</protoaction>
+	</unit>	
+	<unit name="CustomDependantUnit_Warship_Axe">
+		<animfile>mcmt\units\dependants\chargedattack_dependant.xml</animfile>
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>air</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>100.0000</initialhitpoints>
+		<maxhitpoints>100.0000</maxhitpoints>
+		<maxvelocity>3.2000</maxvelocity>
+		<los>18.0000</los>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>LogicalTypeMythicMythUnit</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>NonCollideable</flag>
+		<flag>NoHPBar</flag>
+		<flag>Invulnerable</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>DependentAttach</flag>
+		<flag>NoTieToGround</flag>
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Hack">2.000000</damage>
+			<maxrange>15.000000</maxrange>
+			<projectile>ProjectileAxeFlaming</projectile>
+			<impacteffect>effects\impacts\hack</impacteffect>
+			 <numberprojectiles>4</numberprojectiles>
+            <volleymode></volleymode>
+		</protoaction>
+		<protoaction>
+			<name>Drone</name>
+			<type>Drone</type>
+			<persistent>1</persistent>
+		</protoaction>
+	</unit>	
 
 	<!-- CUSTOM TRAPS -->
 	<unit name="PhosphorusSmokeTrapAura" orderhint="5">

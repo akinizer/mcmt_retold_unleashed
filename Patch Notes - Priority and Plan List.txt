@@ -3,7 +3,7 @@
 ==============================================================================
 
 === MODEL UPDATE ===
-- warship dependants
+- warship dependants, warship tech upgrade
     - SiegeWarship: (non-norse, close range) arrow 
     - MeleeWarship: (non-norse, mid range) arrow, (norse) stronger melee, (greek) [ram attack hackarmor+]
     - ArrowShip: (norse, close range) axe, (greek, close range) javelin, (greek) [charge attack projectile lightning, bounty on arrowships, maxcontainedspeed, attack modes, arrow & javelin]

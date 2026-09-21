@@ -154,7 +154,10 @@
             - chargedmodify: walk, idle, waterwalk, wateridle anim
             - takeoff & descend: delayedtransform, transition anim
             - PehasusGroundedMessenger+: passenger 1 AbstractInfantry
-    - melee: Colossus+, Hydra+, Cyclops+
+    - melee: Colossus+, Hydra+
+        -  Cyclops+:
+            - HandAttacK: rof-, damage+, throw humansoldier, villager, tradeunit
+            - Throw: throw MythUnit
         - NemeanLion+:
             - armor and damage improvements
             - RoarOfOrthus: damage increase, handattack reflect
@@ -611,6 +614,12 @@
 
 12. Naval reworks from mcmt mod and new improvements:
 - Ship:  VisualScale+
+    - Trireme:
+        - ChargedRangedAttack:
+            - MythicAgeHera: ProjectileLightning, statmodify AttackDisabled
+            - MythicAgeHephaestus: ProjectileMirrorTowerLazer, VFXFire
+            - MythicAgeArtemis: ProjectileYasukoBeam, statmodify Armor-
+            - MythicAgePersephone: ProjectileChanequeLazer, statmodify ROF-
 
 13. New Special Units: Cosmic Forces
 - special hero:

@@ -792,6 +792,54 @@
         <effect type="SetName" proto="Priest" newname="STR_UNIT_PRIEST_OF_MANIA_NAME" mergeMode="add"></effect>
       </effects>
     </tech>
+
+    <!-- MINOR GOD IMPROVEMENTS-->
+
+    <tech name="MythicAgeHera">
+      <effects>        
+        <effect type="Data" action="LightningAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Trireme</target></effect>
+        <effect type="Data" amount="0.85" subtype="OnHitEffect" action="LightningAttack" effecttype="AttackDisabled" duration="2.00" relativity="Assign" mergeMode="add">
+          <target type="ProtoUnit">Trireme</target></effect>
+      </effects>
+    </tech>
+    <tech name="MythicAgeHephaestus">
+      <effects>        
+        <effect type="Data" action="LightningAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Trireme</target></effect>
+        <effect type="Data" action="LightningAttack" amount="1.0" subtype="Projectile" unittype="ProjectileMirrorTowerLazer" relativity="Assign" mergeMode="add">
+          <target type="ProtoUnit">Trireme</target></effect>
+        
+        <effect type="Data" amount="0.20" subtype="OnHitEffect" action="LightningAttack" effecttype="DamageOverTime" duration="6.00" targettype="AbstractWarship" dmgtype="Divine" relativity="Assign" mergeMode="add">
+          <target type="ProtoUnit">Trireme</target></effect>
+        <effect type="Data" amount="1.00" subtype="OnHitEffect" action="LightningAttack" effecttype="Attach" duration="6.00" targettype="AbstractWarship" proto="VFXFire" relativity="Assign" mergeMode="add">
+          <target type="ProtoUnit">Trireme</target></effect>
+        <effect type="Data" amount="1.00" subtype="OnHitEffectAttachBone" action="LightningAttack" effecttype="Attach" targettype="AbstractWarship" attachbone="spine" relativity="Assign" mergeMode="add">
+          <target type="ProtoUnit">Trireme</target></effect>
+      </effects>
+    </tech>
+    <tech name="MythicAgeArtemis">
+      <effects>        
+        <effect type="Data" action="LightningAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Trireme</target></effect>
+        <effect type="Data" action="LightningAttack" amount="1.0" subtype="Projectile" unittype="ProjectileYasukoBeam" relativity="Assign" mergeMode="add">
+          <target type="ProtoUnit">Trireme</target></effect>
+        
+        <effect type="Data" amount="1.00" subtype="OnHitEffectActive" action="LightningAttack" effecttype="StatModify" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Trireme</target></effect>
+      </effects>
+    </tech>
+    <tech name="MythicAgePersephone">
+      <effects>        
+        <effect type="Data" action="LightningAttack" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Trireme</target></effect>
+        <effect type="Data" action="LightningAttack" amount="1.0" subtype="Projectile" unittype="ProjectileChanequeLazer" relativity="Assign" mergeMode="add">
+          <target type="ProtoUnit">Trireme</target></effect>
+
+        <effect type="Data" amount="1.10" subtype="OnHitEffectStatModify" targettype="AbstractWarship" action="LightningAttack" effecttype="StatModify" modifytype="ROF" relativity="Absolute" mergeMode="add">
+				  <target type="ProtoUnit">Trireme</target></effect>
+      </effects>
+    </tech>
     
     <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <tech name="MCMT_Techs" mergeMode="add">
@@ -901,8 +949,9 @@
       <!-- Naval Units -->
       <effects>
         <effect type="Data" amount="3.00" subtype="AdditionalScale" relativity="Absolute">
-          <target type="ProtoUnit">Ship</target>
-        </effect>
+          <target type="ProtoUnit">Ship</target></effect>
+        <effect type="Data" amount="4.00" subtype="Hitpoints" relativity="Percent">
+          <target type="ProtoUnit">Ship</target></effect>
       </effects>
     </tech>
 
@@ -7226,14 +7275,21 @@
 				<target type="ProtoUnit">FireSiphon</target></effect>
 			<effect type="Data" action="AntiWallAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="remove">
 				<target type="ProtoUnit">Oyumi</target></effect>
+
+      <effect type="Data" allactions="1" amount="1.50" subtype="Damage" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">SiegeLineUpgraded</target></effect>
+      <effect type="Data" allactions="1" amount="1.00" subtype="Damagebonus" unittype="AbstractWall" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">SiegeLineUpgraded</target></effect>
+			<effect type="Data" allactions="1" amount="1.00" subtype="Damagebonus" unittype="EarthWall" relativity="Absolute" hidetooltip="" mergeMode="remove">
+				<target type="ProtoUnit">SiegeLineUpgraded</target></effect>
       <!---->
       <effect type="Data" action="RangedAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">AbstractSiegeWeapon</target></effect>
       <effect type="Data" action="AntiWallAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">AbstractSiegeWeapon</target></effect>
-      <effect type="Data" action="HandAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+      <effect type="Data" action="HandAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">AbstractSiegeWeapon</target></effect>
-      <effect type="Data" action="HandAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+      <effect type="Data" action="RangedAttackToxic" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">AbstractSiegeWeapon</target></effect>
 
       <effect type="Data" amount="-0.20" subtype="ArmorVulnerability" armortype="Crush" relativity="Percent" mergeMode="add">
@@ -7245,6 +7301,13 @@
 				<target type="ProtoUnit">AbstractArcherShip</target></effect>
       <effect type="Data" amount="1.40" subtype="Hitpoints" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">AbstractSiegeShip</target></effect>
+
+      <effect type="Data" allactions="1" amount="1.50" subtype="Damage" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">AbstractSiegeWeapon</target></effect>
+      <effect type="Data" allactions="1" amount="1.00" subtype="Damagebonus" unittype="AbstractWall" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractSiegeWeapon</target></effect>
+			<effect type="Data" allactions="1" amount="1.00" subtype="Damagebonus" unittype="EarthWall" relativity="Absolute" hidetooltip="" mergeMode="add">
+				<target type="ProtoUnit">AbstractSiegeWeapon</target></effect>
 		</effects>
   </tech>
   <tech name="DraftHorses">
@@ -8382,7 +8445,7 @@
       <!---->
       <effect type="Data" action="Throw" amount="2.00" subtype="DamageArea" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">Cyclops</target></effect>
-      <effect type="Data" action="HandAttack" amount="3.00" subtype="DamageArea" relativity="Absolute" mergeMode="add">
+      <effect type="Data" action="HandAttack" amount="1.00" subtype="DamageArea" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">Cyclops</target></effect>
 
       <effect type="Data" amount="1.30" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
