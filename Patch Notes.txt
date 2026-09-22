@@ -875,7 +875,7 @@
     - MatsuriAzula: PsionicLevitation +
     - WorldBreaker: TsunamiGenerator +
 
-20. Japanese reworks on various aspects
+20. Japanese reworks on various aspects and additional improvements
 * MythUnit
 - popcosts
 - TitanYamataNoOrochi: titanattack on naval+
@@ -889,7 +889,21 @@
     - CosmicShimmer: manual teleport, land-sea
 - Asura: SiegeLineUpgrade
 - Oni: SiegeLineUpgrade, InfantryLineUpgrade
-
+- Jorogumo:
+    - SpiderDen (DeadlySnare): lifespan
+        - ChargedSpawn: 
+            - ArachneLeaperSuspender:
+                - HandAttack
+                - JumpAttack: OnHitEffect Snare Unit
+        - Death: 
+            - ArachneGolem:
+                - HandAttack
+                - ChargedHandAttack: OnHitEffect ProgFreeze StoneDamage HumanSoldier & Villager
+    - Throw: freeze, dot
+        - Reincarnation:
+            - ArachneLeaperVenomous
+                - HandAttack
+                - JumpAttack: OnHitEffect VFXPoison Unit
 * Infantry, Samurai, Archer, Cavalry
 - popcosts 1 or 2
 - YumiArcher: AbstractArcher

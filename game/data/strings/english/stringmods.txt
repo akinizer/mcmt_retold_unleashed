@@ -942,6 +942,11 @@ ID = "STR_UNIT_TERRACOTTA_SUPPRESSOR_NAME"   ;   Str = "Terracotta Suppressor"
 ID = "STR_UNIT_TERRACOTTA_SUPPRESSOR_LR"   ;   Str = "Elite Terracotta Cavalry"
 ID = "STR_UNIT_TERRACOTTA_SUPPRESSOR_SR"   ;   Str = "Elite Terracotta Cavalry"
 
+// JAPANESE SPECIAL BUILDINGS
+ID = "STR_BLD_SPIDER_NEST_NAME"   ;   Str = "Spider Nest"
+ID = "STR_BLD_SPIDER_NEST_SR"   ;   Str = "Spider Nest"
+ID = "STR_BLD_SPIDER_NEST_LR"   ;   Str = "A nest inhabited by spiders"
+
 // JAPANESE SPECIAL UNITS
 ID = "STR_ACTION_JUMP_SCARE"   ;   Str = "Jump Scare"
 
@@ -969,6 +974,18 @@ ID = "STR_UNIT_OVERCHARGED_SWORD_LR"   ;   Str = "The rage unleashes as it is fr
 ID = "STR_UNIT_OIRAN_NAME"   ;   Str = "Oiran"
 ID = "STR_UNIT_OIRAN_SR"   ;   Str = "Professional Entertainer"
 ID = "STR_UNIT_OIRAN_LR"   ;   Str = "Oirans are high tier artists excelling in many branches"
+
+ID = "STR_UNIT_ARACHNE_GOLEM_NAME"   ;   Str = "Arachne Golem"
+ID = "STR_UNIT_ARACHNE_GOLEM_SR"   ;   Str = "Durable Arachne variant"
+ID = "STR_UNIT_ARACHNE_GOLEM_LR"   ;   Str = "Arachne variant formed from stone and capable of petrification upon successive hits"
+
+ID = "STR_UNIT_ARACHNE_LEAPER_SUSPENDER_NAME"   ;   Str = "Arachne Leaper (Suspender)"
+ID = "STR_UNIT_ARACHNE_LEAPER_SUSPENDER_SR"   ;   Str = "Agile Arachne variant"
+ID = "STR_UNIT_ARACHNE_LEAPER_SUSPENDER_LR"   ;   Str = "Arachne variant that leaps and snares its preys"
+
+ID = "STR_UNIT_ARACHNE_LEAPER_VENOMOUS_NAME"   ;   Str = "Arachne Leaper (Venomous)"
+ID = "STR_UNIT_ARACHNE_LEAPER_VENOMOUS_SR"   ;   Str = "Agile Arachne variant"
+ID = "STR_UNIT_ARACHNE_LEAPER_VENOMOUS_LR"   ;   Str = "Arachne variant that leaps and envenoms its preys"
 
 // JAPANESE SPECIAL TECHS
 ID = "STR_TECH_MIKO_ORACLE_UPGRADE_NAME"   ;   Str = "Oracles of Shinto"

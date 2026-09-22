@@ -2,12 +2,6 @@
 ==================== PRIORITY-PLANS ==========================================
 ==============================================================================
 
-=== MODEL UPDATE ===
-- warship dependants, warship tech upgrade
-    - SiegeWarship: (non-norse, close range) arrow 
-    - MeleeWarship: (non-norse, mid range) arrow, (norse) stronger melee, (greek) [ram attack hackarmor+]
-    - ArrowShip: (norse, close range) axe, (greek, close range) javelin, (greek) [charge attack projectile lightning, bounty on arrowships, maxcontainedspeed, attack modes, arrow & javelin]
-
 chaosdrone
 - jumpattackunit: instakill unit excludetarget mythunit, navalunit
 - jumpattackvehicle: selfdestructattack, corruption, spawn chaosdrone, 2 min
@@ -16,15 +10,15 @@ chaosdrone
 - amphibious,fast,medium armor, low hp
 
 === NEW ABILITY ===
-SpiderWoman: ondeath, summon arachne types, lifespan
-Avenger: anubite jump anim, target hero
+Avenger: 
+- jump: hero-killer
 
 ==============================================================================
 ==================== REWORK-PLANS ============================================
 ==============================================================================
 * nitroglicerine -> vfxcold variant of detonators
 
-* WONDERS OF WORLD PROTOCOL
+* WONDERS OF WORLD PROTOCOL - Volatile Techs
 - KRONOS: 
     - titanomachy: myth units, defense, hp+
 - ORANOS: 

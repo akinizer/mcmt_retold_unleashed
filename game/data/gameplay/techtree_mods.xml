@@ -2237,6 +2237,7 @@
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">TerracottaReclaimer</target></effect>	
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">TerracottaSuppressor</target></effect>	
         <!-- Japanese Special Units -->
+        
         <!-- LandLord Special Units -->
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Bastion</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">TempleOfPrimordials</target></effect>
@@ -11556,6 +11557,12 @@
 
       <effect type="Data" action="DelayedHamadryadTransform" amount="1.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">Kitsune</target></effect>
+    </effects>
+  </tech>
+  <tech name="DeadlySnare">
+    <effects>
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">SpiderNest</target></effect>
     </effects>
   </tech>
   <!-- General Military Techs -->
