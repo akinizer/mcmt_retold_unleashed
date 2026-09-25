@@ -927,6 +927,13 @@ ID = "STR_BLD_REINFORCEMENT_TENT_NAME"   ;   Str = "Reinforcement Tent"
 ID = "STR_BLD_REINFORCEMENT_TENT_SR"   ;   Str = "Roc Tent that reinforces humansoldiers nearby"
 ID = "STR_BLD_REINFORCEMENT_TENT_LR"   ;   Str = "Roc Tent converts to a structure that makes surrounding human military units more efficient in battle"
 
+// EGYPTIAN SPECIAL TECHS
+ID = "STR_TECH_EFFECT_AVENGER_SPEAR_NAME"   ;   Str = "Enhanced Avian Muscles"
+ID = "STR_TECH_EFFECT_AVENGER_SPEAR_LR"   ;   Str = "Avian muscles are enhanced to increase the speed and accuracy of the Avenger Spear"
+
+ID = "STR_TECH_EFFECT_AVENGER_AXE_NAME"   ;   Str = "Cauterizing Sword Dancing"
+ID = "STR_TECH_EFFECT_AVENGER_AXE_LR"   ;   Str = "Swordmaster skills and agility of avian delivers a deadly dance of fire and steel"
+
 // CHINESE SPECIAL UNITS
 ID = "STR_UNIT_CURSEDFLAME_SWORD_NAME"   ;   Str = "Cursed Flame Sword"
 ID = "STR_UNIT_CURSEDFLAME_SWORD_SR"   ;   Str = "Looted Swords forged in demonic flames of Asura"
@@ -1495,6 +1502,8 @@ ID = "STR_ABILITY_ARROWOFFEAR_LR"   ;   Str = "Oirans can manifest phantasmal ar
 ID = "STR_ABILITY_GHOSTLYRIPPLE"   ;   Str = "Ghostly Ripple"
 ID = "STR_ABILITY_GHOSTLYRIPPLE_LR"   ;   Str = "Oirans can use their witchery arts to send ghostly ripples to intimidate nearby mythical units"
 
+ID = "STR_ACTION_SANDGUST_ATTACK"   ;   Str = "Sand Gust Attack"
+
 // COMMAND TECHS
 ID = "STR_BLD_FIREWALL_NAME"   ;   Str = "Fire Wall"
 
@@ -1520,7 +1529,9 @@ ID = "STR_MSG_STORMS"   ;   Str = "Susanoo blesses myth units with power of Unta
 ID = "STR_TECH_UPSTARTBOOST_NAME"   ;   Str = "Upstart Boost"
 
 // EFFECT TOOLTIP OVERRIDES
-ID = "STR_TECH_FRAG_GRENADE_OVERRIDE_TOOLTIP"   ;   Str = "Enables Chu Ko Nu grenade launcher action "
+ID = "STR_TECH_FRAG_GRENADE_OVERRIDE_TOOLTIP"   ;   Str = "Enables Chu Ko Nu grenade launcher action"
+ID = "STR_TECH_AVENGER_AXE_OVERRIDE"   ;   Str = "Avenger Blades now wound Human Military Units and reduce their attack speed for a duration"
+ID = "STR_TECH_XUANWU_FROSTBOLT_OVERRIDE"   ;   Str = "Strong currents draw Xuan Wu stronger and upgrade its projectile to Frost Bolts that freeze ships while swimming"
 
 // XL MAPS
 ID = "STR_MAP_ACROPOLIS_COLOSSAL_NAME" ;   Str = "Acropolis Colossal Map"

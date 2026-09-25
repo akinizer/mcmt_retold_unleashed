@@ -8460,6 +8460,57 @@
 	 </animxml>
 
 	<!-- Egyptian Myth Units -->
+	<animxml file="egyptian\units\myth\avenger\avenger.xml">
+		<animations>
+			<animinfo mergeMode="add">
+				<name>JumpFly</name>
+				<versioncount>3</versioncount>
+				<versions>
+					<version>
+						<file>egyptian\units\myth\anubite\anim\anubite_jumptakeoff_a</file>
+						<duration>0.60000</duration>
+						<tags>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.28000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>AnubiteJump</set>
+								</properties>
+							</tag>
+						</tags>
+					</version>
+					<version>
+						<file>egyptian\units\myth\anubite\anim\anubite_jumpfly_a</file>
+						<duration>0.40000</duration>
+					</version>
+					<version>
+						<file>egyptian\units\myth\anubite\anim\anubite_jumpland_a</file>
+						<duration>0.50000</duration>
+						<tags>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.41000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>AnubiteLand</set>
+								</properties>
+							</tag>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.50000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>SwooshSword</set>
+								</properties>
+							</tag>
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+		</animations>
+	</animxml>
+
 	<animxml file="egyptian\units\myth\petsuchos\petsuchos.xml">
 		<animations>
 			<animinfo mergeMode="add">

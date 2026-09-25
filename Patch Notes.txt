@@ -351,11 +351,19 @@
 - myth unit:
     - VisualScale: Phoenix+, Leviathan+, WarTurtle+, Scarab+, Sphinx+
 
-    - melee: Minion+, MinionReincarnated+, Avenger+, Sphinx+, Anubite+, ScorpionMan+
+    - melee: Minion+, MinionReincarnated+, Anubite+, ScorpionMan+
         - Scarab+
             - shading: gold
             - Burrow: tech-enabled (crimsonlinen), manual ability, submerges into ground and undetectable by enemies
-            - Ambush: tech-enabled (crimsonlinen), detection-based, conditional transform (ambush, moved, delayedtransform)            
+            - Ambush: tech-enabled (crimsonlinen), detection-based, conditional transform (ambush, moved, delayedtransform)      
+        - Avenger+
+            - JumpAttack (SpearOfHorus): targets HumanSoldier, SelfModify Speed, duration
+            - AoEAttack (AxeOfVengeance): StatModify HumanSoldier RoF-, duration 
+            - ChargedModify: BelowThreshold Speed+, KillEnemy RoF+, duration
+            - Trail: VFXDustSmall, cosmetic
+        - Sphinx+       
+            - AoEAttack: pull HumanSoldier & Villager
+            - Upgrade2: WhirlwindComp Firestorm
     - ranged: 
         - Wadjet:
             - vfxpoison dot+ non-siege unit, minimized base divinedamage, amphibious
@@ -452,7 +460,10 @@
     - melee: QiLin+, YaZi+, TaoWu+, HunDun+, QionQi+, BaiHu+, TerracottaRider+
         - TaoTie:
             - Devour: includes huntable, afteraction numprojectiles+
-    - naval: XuanWu+
+    - naval: 
+        - XuanWu+:
+            - ChargedRangedAttack & ChargedLandRangedAttack (TempestuousStorms): ProjectileDraugrArrow, Freeze rate Ship
+            - ChargedRangedAttack & ChargedLandRangedAttack (SouthernFire): ProjectileAsuraFireBall, bonusdamage vs Ship
         - ChiWen+:
             - handattack: close range
             - chargedrangedattack: distance divinedamage low rof
@@ -686,6 +697,8 @@
     - Masons, Architects
     - FortifiedTownCenter
     - Tower Techs: Crenellations, CrenellationsAztec, tower upgrade techs
+    - AdvancedFortifications:
+        - Fortress: ProjectileExplosiveBomb, VolleyMode
 - greek
     - SylvanLore: effect expanded to AbstractWoodland
     - AegisShield: reflects handattack, bonusdamage vs MythUnit, MythResistant

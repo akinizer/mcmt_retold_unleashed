@@ -527,6 +527,7 @@
 		  <onhiteffect type="Attach" targetunittype="Unit" proto="VFXPoison" attachbone="spine" duration="20.000000">
 		  </onhiteffect>
 		  <perfectaccuracy>1</perfectaccuracy>
+		  <maxheight>0</maxheight>
 		</protoaction>
 		<protoaction>
 		  <name>LandChargedRangedAttack</name>
@@ -3350,6 +3351,7 @@
 				<target ignoretype="MythUnit"></target>
 				<target ignoretype="Hero"></target>
 		  </onhiteffect>
+		  <maxsizeclass>7</maxsizeclass>
 		</protoaction>
 	</unit>
 	<unit name="HadesShade">
@@ -3594,6 +3596,7 @@
 	</unit>
 
 	<unit name="Chimera">
+		<weightclass>9</weightclass>
 		<auxrechargetime>25.0000</auxrechargetime>
 		<flag>HasDefaultAttack</flag>
 		<tactics>mcmt_chimera.tactics</tactics>
@@ -4809,22 +4812,66 @@
 	
 	<unit name="Avenger">
       	<unittype>InfantryLineUpgraded</unittype>
+		<rechargetime>20.0000</rechargetime>
+		<auxrechargetime>20.0000</auxrechargetime>
+		<tactics>mcmt_avenger.tactics</tactics>
 
         <protoaction>
-                <name>AoEAttack</name>
-                <rof>10.000000</rof>
-                <damage type="Hack">1.000000</damage>
-                <damagearea>10.000000</damagearea>
-                <damageflags>Nature|Enemy</damageflags>
-                <damagebonus type="MythUnit">5.000000</damagebonus>
-                <damagebonus type="HumanSoldier">10.000000</damagebonus>
-                <damagebonus type="Hero">0.500000</damagebonus>
-                <maxrange>2.000000</maxrange>
-                <onhiteffect type="Throw">
+			<name>AoEAttack</name>
+			<rof>10.000000</rof>
+			<damagearea>2.000000</damagearea>
+			<damagebonus type="MythUnit">5.000000</damagebonus>
+			<damagebonus type="HumanSoldier">10.000000</damagebonus>
+
+			<onhiteffect type="StatModify" duration="4.000000" targetUnitType="HumanSoldier" active="0">
+				<Modify type="ROF" applyType="Multiply">1.300000</Modify>
+			</onhiteffect>
+			<onhiteffect type="Throw">
                 <target attacktype="HumanSoldier"></target>
                 <target attacktype="LogicalTypeVillagerNotHero"></target>
             </onhiteffect>
+			
+			<throwmaxheight>5.000000</throwmaxheight>
+			<throwvelocity>5.000000</throwvelocity>
+			<maxsizeclass>5</maxsizeclass>
         </protoaction>
+		<protoaction>
+			<name>JumpAttack</name>
+			<rof>15.000000</rof>
+			<damage type="Hack">45.000000</damage>
+			<minrange>4.000000</minrange>
+			<maxrange>12.000000</maxrange>
+
+			<rate type="HumanSoldier">1.000000</rate>
+			<onhiteffect type="SelfModify" duration="3.000000">
+				<Modify type="Speed" applyType="Multiply">1.300000</Modify>
+			</onhiteffect>
+			<active>0</active>
+		</protoaction>
+		<protoaction>
+			<name>ChargedModify</name>
+			<type>ChargedModify</type>
+			<persistent>1</persistent>
+			<charged>
+				<chargedmodify modifytype="Speed" applytype="Multiply">1.25</chargedmodify>
+				<duration>5</duration>
+				<cooldown>0</cooldown>
+				<activationtype>BelowHitpointsThreshold</activationtype>
+				<hitpointsRatioThreshold>0.25</hitpointsRatioThreshold>
+			</charged>
+			<charged>
+				<chargedmodify modifytype="ROF" applytype="Multiply">0.8</chargedmodify>
+				<duration>5</duration>
+				<cooldown>0</cooldown>
+				<activationtype>KillEnemy</activationtype>
+			</charged>
+		</protoaction>
+		<protoaction>
+			<name>Trail</name>
+			<type>Trail</type>
+			<persistent>1</persistent>
+			<trailprotounit frequency="0.25">VFXDustSmall</trailprotounit>
+		</protoaction>
 	</unit>
 	
 	<unit name="Scarab">
@@ -5058,7 +5105,8 @@
 	
 	<unit name="Sphinx">
         <impacttype>Stone</impacttype>
-        
+		<weightclass>9</weightclass>
+        <tactics>mcmt_sphinx.tactics</tactics>
 		<protoaction>
 			<name>AoEAttack</name>
 			<rof>1.000000</rof>
@@ -5069,10 +5117,10 @@
 			<damagebonus type="MythUnit">2.000000</damagebonus>
 			<damagebonus type="Hero">0.500000</damagebonus>
 			<maxrange>1.000000</maxrange>
-			<onhiteffect type="Throw">
+			<onhiteffect active="0" type="Pull" radius="5.00000">
 				<target attacktype="HumanSoldier"></target>
 				<target attacktype="LogicalTypeVillagerNotHero"></target>
-		   </onhiteffect>
+			</onhiteffect>
 		</protoaction>	
 	</unit>
 	
@@ -31088,7 +31136,101 @@
 			<forcespawn>1</forcespawn>
 		</protoaction>
 	</unit>
-	<!-- /// SPECIAL PROJECTILES /// -->
+	<!-- /// SPECIAL PROJECTILES - BOMBS - GRENADES /// -->
+	<unit name="ProjectileExplosiveBomb">
+		<animfile>vfx\projectiles\icarus_bomb\icarus_bomb.xml</animfile>
+		<obstructionradiusx>0.2000</obstructionradiusx>
+		<obstructionradiusz>0.2000</obstructionradiusz>
+		<lifespan>2.0000</lifespan>
+		<decay delay="2.0000" duration="0.1000"></decay>
+		<spawn type="Hit" count="1">SelfDestructSpawnMinorDamage</spawn>
+		<spawn type="HitGround" count="1">SelfDestructSpawnMinorDamage</spawn>
+
+		<movementtype>air</movementtype>
+		<maxvelocity>30.0000</maxvelocity>
+		<unittype>Projectile</unittype>
+		<unittype>LogicalTypeSunRayProjectile</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NoUnitAI</flag>
+		<flag>NoIdleActions</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>Projectile</flag>
+		<flag>NoTieToGround</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>HasContinuousParticles</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+	</unit>
+	<unit name="ProjectileExplosiveBombToxic">
+		<animfile>vfx\projectiles\icarus_bomb\icarus_bomb.xml</animfile>
+		<obstructionradiusx>0.2000</obstructionradiusx>
+		<obstructionradiusz>0.2000</obstructionradiusz>
+		<lifespan>2.0000</lifespan>
+		<decay delay="2.0000" duration="0.1000"></decay>
+		<spawn type="Hit" count="1">ArgusAcidBlobDamage</spawn>
+		<spawn type="HitGround" count="1">ArgusAcidBlobDamage</spawn>
+
+		<movementtype>air</movementtype>
+		<maxvelocity>30.0000</maxvelocity>
+		<unittype>Projectile</unittype>
+		<unittype>LogicalTypeSunRayProjectile</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NoUnitAI</flag>
+		<flag>NoIdleActions</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>Projectile</flag>
+		<flag>NoTieToGround</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>HasContinuousParticles</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+	</unit>
+	<unit name="ProjectileExplosiveBombMiasma">
+		<animfile>vfx\projectiles\icarus_bomb\icarus_bomb.xml</animfile>
+		<obstructionradiusx>0.2000</obstructionradiusx>
+		<obstructionradiusz>0.2000</obstructionradiusz>
+		<lifespan>2.0000</lifespan>
+		<decay delay="2.0000" duration="0.1000"></decay>
+		<spawn type="Hit" count="1">PriestAreaDamageCorruptionAreaContainer</spawn>
+		<spawn type="HitGround" count="1">PriestAreaDamageCorruptionAreaContainer</spawn>
+
+		<movementtype>air</movementtype>
+		<maxvelocity>30.0000</maxvelocity>
+		<unittype>Projectile</unittype>
+		<unittype>LogicalTypeSunRayProjectile</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NoUnitAI</flag>
+		<flag>NoIdleActions</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>Projectile</flag>
+		<flag>NoTieToGround</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>HasContinuousParticles</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+	</unit>
+
 	<unit name="ProjectilePetrobolosShotToxic">
 		<animfile>vfx\projectiles\petrobolos_shot\petrobolos_shot.xml</animfile>
 		<obstructionradiusx>0.2000</obstructionradiusx>
@@ -33560,7 +33702,7 @@
 			<anim>HandAttack</anim>
 			<rate type="All">1.0</rate>
 			<attackaction>1</attackaction>
-			<impacteffect>effects\impacts\pierce</impacteffect>
+			<impacteffect>effects\impacts\</impacteffect>
 
 			<damage type="Divine">15.000000</damage>
 			<damagearea>9.000000</damagearea>

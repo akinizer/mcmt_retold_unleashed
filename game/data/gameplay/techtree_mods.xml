@@ -950,7 +950,7 @@
       <effects>
         <effect type="Data" amount="3.00" subtype="AdditionalScale" relativity="Absolute">
           <target type="ProtoUnit">Ship</target></effect>
-        <effect type="Data" amount="4.00" subtype="Hitpoints" relativity="Percent">
+        <effect type="Data" amount="3.50" subtype="Hitpoints" relativity="Percent">
           <target type="ProtoUnit">Ship</target></effect>
       </effects>
     </tech>
@@ -3015,7 +3015,57 @@
       </effects>
     </tech>
     <!-- Norse Special Techs -->
-    <!-- Egyptian Special Techs -->    
+    <!-- Egyptian Special Techs -->   
+    <tech name="ActivateEffectsAvenger" mergeMode="add">
+      <status>ACTIVE</status>
+      <delay>0.5000</delay>
+      <flag>volatile</flag>
+      <flag>persistent</flag>
+      <flag>hideAllNotifications</flag>
+      <flag>hideFromDialogs</flag>
+      <effects>
+        <effect type="TechStatus" status="obtainable">EffectsAvengerSpear</effect>
+        <effect type="TechStatus" status="obtainable">EffectsAvengerAxe</effect>
+      </effects>
+    </tech>
+
+    <tech name="EffectsAvengerSpear" mergeMode="add">
+      <displaynameid>STR_TECH_EFFECT_AVENGER_SPEAR_NAME</displaynameid>
+      <rollovertextid>STR_TECH_EFFECT_AVENGER_SPEAR_LR</rollovertextid>
+      <status>UNOBTAINABLE</status>
+      <delay>0.5000</delay>
+      <flag>volatile</flag>
+      <flag>persistent</flag>
+      <icon>resources\egyptian\static_color\technologies\spear_of_horus_icon.png</icon>
+      <prereqs>
+        <techstatus status="Active">SpearOfHorus</techstatus>
+        <techstatus status="Active">ActivateEffectsAvenger</techstatus>
+      </prereqs>
+      <effects>
+        <effect type="Data" amount="1.0" subtype="ActionEnable" action="JumpAttack" relativity="Absolute">
+          <target type="ProtoUnit">Avenger</target></effect>
+      </effects>
+    </tech>
+
+    <tech name="EffectsAvengerAxe" mergeMode="add">
+      <displaynameid>STR_TECH_EFFECT_AVENGER_AXE_NAME</displaynameid>
+      <rollovertextid>STR_TECH_EFFECT_AVENGER_AXE_LR</rollovertextid>
+      <status>UNOBTAINABLE</status>
+      <delay>0.5000</delay>
+      <flag>volatile</flag>
+      <flag>persistent</flag>
+      <icon>resources\egyptian\static_color\technologies\axe_of_vengeance_icon.png</icon>
+      <prereqs>
+        <techstatus status="Active">AxeOfVengeance</techstatus>
+        <techstatus status="Active">ActivateEffectsAvenger</techstatus>
+      </prereqs>
+      <effects>
+        <effect type="Data" amount="1.0" subtype="OnHitEffectActive" action="AoEAttack" effectType="StatModify" tooltipid="STR_TECH_AVENGER_AXE_OVERRIDE" relativity="Absolute">
+          <target type="ProtoUnit">Avenger</target>
+        </effect>
+      </effects>
+    </tech>
+
     <!-- Atlantean Special Techs -->
     <tech name="ActivateGoldenApplesHesperides" mergeMode="add">
       <status>ACTIVE</status>
@@ -4375,6 +4425,11 @@
 				<target type="ProtoUnit">AbstractTower</target></effect>
       <effect type="Data" action="RangedAttack" amount="8.00" subtype="Damagebonus" unittype="HumanSoldier" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">AbstractTower</target></effect>
+
+      <effect type="Data" action="RangedAttack" amount="1.0" subtype="Projectile" unittype="ProjectileExplosiveBomb" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">AbstractFortress</target></effect>
+      <effect type="Data" subtype="VolleyMode" action="RangedAttack" amount="1.00" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractFortress</target></effect>
 
       <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_AdvancedFortifications_I</effect>
     </effects>
@@ -9310,16 +9365,26 @@
           <target type="ProtoUnit">Scarab</target></effect>
     </effects>
   </tech>  
-  <tech name="Criosphinx" mergeMode="add">
+  <tech name="Criosphinx">
     <effects>
-        <effect type="Data" amount="4.00" subtype="Damage" action="AoEAttack" relativity="BasePercent"><target type="ProtoUnit">Sphinx</target></effect>
-      <effect type="Data" action="AoEAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute"><target type="ProtoUnit">Sphinx</target></effect>
+      <effect type="Data" action="AoEAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Sphinx</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="OnHitEffectActive" action="AoEAttack" effecttype="Pull" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">Sphinx</target></effect>
     </effects>
   </tech>
-  <tech name="Hieracosphinx" mergeMode="add">
+  <tech name="Hieracosphinx">
     <effects>
-        <effect type="Data" amount="4.00" subtype="Damage" action="AoEAttack" relativity="BasePercent"><target type="ProtoUnit">Sphinx</target></effect>
-      <effect type="Data" action="AoEAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute"><target type="ProtoUnit">Sphinx</target></effect>
+      <effect type="Data" action="AoEAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Sphinx</target></effect>
+
+      <effect type="Data" amount="0.20" subtype="OnHitEffect" action="AoEAttack" effecttype="DamageOverTime" duration="6.00" targettype="Unit" dmgtype="Divine" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">Sphinx</target></effect>
+			<effect type="Data" amount="1.00" subtype="OnHitEffect" action="AoEAttack" effecttype="Attach" duration="6.00" targettype="Unit" proto="VFXFire" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">Sphinx</target></effect>
+			<effect type="Data" amount="1.00" subtype="OnHitEffectAttachBone" action="AoEAttack" effecttype="Attach" targettype="Unit" attachbone="spine" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">Sphinx</target></effect>
     </effects>
   </tech>
   <tech name="FeetOfTheJackal" mergeMode="add">
@@ -10880,6 +10945,13 @@
         <target type="ProtoUnit">Hero</target></effect>
       <effect type="Data" action="RangedAttack" amount="0.75" subtype="RateOfFire" relativity="BasePercent" mergeMode="add">
         <target type="ProtoUnit">Hero</target></effect>
+
+      <effect type="Data" action="ChargedRangedAttack" amount="1.0" subtype="Projectile" unittype="ProjectileDraugrArrow" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">XuanWu</target></effect>
+      <effect type="Data" amount="0.80" subtype="OnHitEffect" action="ChargedRangedAttack" effecttype="Freeze" freezeType="Default" duration="6.00" targettype="Ship" relativity="Assign" mergeMode="add" tooltipid="STR_TECH_XUANWU_FROSTBOLT_OVERRIDE">
+        <target type="ProtoUnit">XuanWu</target></effect>
+      <effect type="Data" subtype="MaxHeight" action="ChargedRangedAttack" amount="0.00" relativity="Assign" mergeMode="add">
+				<target type="ProtoUnit">XuanWu</target></effect>
     </effects>
   </tech>
   <tech name="LastStand">
@@ -10940,6 +11012,11 @@
         <target type="ProtoUnit">DouJian</target></effect>
       <effect type="Data" amount="1.00" subtype="OnHitEffectAttachBone" action="RangedAttack" effecttype="Attach" targettype="Building" attachbone="spine" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">DouJian</target></effect>
+
+      <effect type="Data" action="ChargedRangedAttack" amount="1.0" subtype="Projectile" unittype="ProjectileBallOfFireAsura" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">XuanWu</target></effect>
+      <effect type="Data" action="ChargedRangedAttack" amount="1.0" subtype="DamageBonus" unittype="Ship" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">XuanWu</target></effect>  
     </effects>
   </tech>
   <tech name="FlamingBlood">

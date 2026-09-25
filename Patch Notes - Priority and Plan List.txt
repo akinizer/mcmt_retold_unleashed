@@ -1,7 +1,25 @@
 ==============================================================================
 ==================== PRIORITY-PLANS ==========================================
 ==============================================================================
+=== REWORKED UNIT ===
+XuanWu -> projectile frostbolt, freeze rate 0.80
+UFO -> abduct cow
+Melee Ship
+    MengChong, Tepoztli Canoe, Pentekonter, Ramming Wasen, Dreki -> areadamage
+    Fire Ship
+Siege Ship
+    LouChuan -> dependant attack, humansoldier, arrow volley
+    Siege Brireme, Atlatl Siege Canoe, War Barge, Juggernaut, Junkozosen, Longboat
+Arrow Ship: 
+    Doujian: (rangedattack) projectileballistashot, (dependant) projectilearrowflaming
+    Brireme, Arrow Canoe, Kebenit, Lost Ship, Wasen
+    The Argo
 
+==== DEPENDANT TEST
+try adding ballista dependant to siege ship instead of attachment
+try adding archer to charior instead of attachment
+
+=== NEW UNIT ===
 chaosdrone
 - jumpattackunit: instakill unit excludetarget mythunit, navalunit
 - jumpattackvehicle: selfdestructattack, corruption, spawn chaosdrone, 2 min
@@ -9,9 +27,13 @@ chaosdrone
 - spider model, mini
 - amphibious,fast,medium armor, low hp
 
-=== NEW ABILITY ===
-Avenger: 
-- jump: hero-killer
+shaman
+- immune to convert, traitor
+- handattack: modelcomp lion, bonusdamage vs humansoldier, vfxbleed areadamage, high rof
+- buildingattack: modelcomp rhino, hack & crush damahe, low rof
+- flight form: modelcomp hawk, scout, los+
+- water form: modelcomp shark, bonusdamage vs ship
+- anim: handattack, handattackwater, buildingattack, transform
 
 ==============================================================================
 ==================== REWORK-PLANS ============================================
