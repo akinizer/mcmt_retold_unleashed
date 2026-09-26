@@ -16,6 +16,24 @@
 		<rate type="All">1.0</rate>
 	</action>
 	<action>
+		<name stringid="STR_ACTION_CANNONBALL_ATTACK">RangedAttackDistant</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttack</anim>
+		<accuracy>0.8</accuracy>
+		<maxspread>5.0</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>1.0</trackrating>
+		<scalebycontainedunittype>
+			<rate type="Unit">0.05</rate>
+		</scalebycontainedunittype>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+		<rate type="NavalUnit">1.0</rate>
+		<hidefromstats>1</hidefromstats>
+		<active>0</active>
+	</action>
+	<action>
 		<name stringid="STR_ACTION_BLD_ATK">FlyingUnitAttack</name>
 		<type>Attack</type>
 		<attackaction>1</attackaction>
@@ -98,8 +116,9 @@
 	</action>
 	<tactic>Default
         <action priority="100">FlyingUnitAttack</action>
-        <action priority="90">LightningAttack</action>
-        <action priority="80">RangedAttack</action>
-        <action priority="70">HandAttack</action>
+        <action priority="90">RangedAttackDistant</action>
+        <action priority="80">LightningAttack</action>
+        <action priority="70">RangedAttack</action>
+        <action priority="60">HandAttack</action>
         <action>ArgivePatronageMyrmidon</action><action>ArgivePatronageAmazonArcher</action><action>AreaHeal</action><attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype></tactic>
 </tactics>

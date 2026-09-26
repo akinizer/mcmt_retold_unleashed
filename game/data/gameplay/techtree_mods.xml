@@ -279,6 +279,11 @@
           <target type="ProtoUnit" mergeMode="add">Pioneer</target></effect>
       </effects>    
     </tech>
+    <tech name="MythicAgeGreek">
+      <effects>
+        <effect type="TechStatus" status="obtainable">CannoballTower</effect>
+      </effects>    
+    </tech>
 
     <tech name="ArchaicAgeEgyptian">
       <effects>        
@@ -4426,10 +4431,8 @@
       <effect type="Data" action="RangedAttack" amount="8.00" subtype="Damagebonus" unittype="HumanSoldier" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">AbstractTower</target></effect>
 
-      <effect type="Data" action="RangedAttack" amount="1.0" subtype="Projectile" unittype="ProjectileExplosiveBomb" relativity="Assign" mergeMode="add">
-        <target type="ProtoUnit">AbstractFortress</target></effect>
-      <effect type="Data" subtype="VolleyMode" action="RangedAttack" amount="1.00" relativity="Absolute" mergeMode="add">
-				<target type="ProtoUnit">AbstractFortress</target></effect>
+      <effect type="Data" action="RangedAttackDistant" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">Fortress</target></effect>
 
       <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_AdvancedFortifications_I</effect>
     </effects>
@@ -7395,6 +7398,28 @@
         <target type="ProtoUnit">SentryTower</target></effect>
     </effects>
   </tech>
+  <tech name="CannoballTower" mergeMode="add">
+		<displaynameid>STR_TECH_CANNONBALL_TOWER_NAME</displaynameid>
+		<rollovertextid>STR_TECH_CANNONBALL_TOWER_LR</rollovertextid>
+		<cost resourcetype="Food">500.0000</cost>
+		<cost resourcetype="Wood">800.0000</cost>
+		<researchpoints>40.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+		<icon>resources\egyptian\static_color\technologies\ballista_tower_icon.png</icon>
+		<flag>CountsTowardMilitaryScore</flag>
+		<prereqs>
+			<techstatus status="Active">GuardTower</techstatus>
+		</prereqs>
+		<effects>
+			<effect type="Data" allactions="1" amount="1.50" subtype="Damage" relativity="BasePercent">
+				<target type="ProtoUnit">SentryTower</target></effect>
+			<effect type="Data" amount="1.50" subtype="Hitpoints" relativity="BasePercent">
+				<target type="ProtoUnit">SentryTower</target></effect>
+			<effect type="Data" action="RangedAttack" amount="1.0" subtype="Projectile" unittype="ProjectileExplosiveBomb" relativity="Assign">
+				<target type="ProtoUnit">SentryTower</target></effect>
+			<effect type="SetName" proto="SentryTower" newname="STR_BLD_CANNONBALL_TOWER_NAME"></effect>
+		</effects>
+	</tech>
   <tech name="BallistaTower">
     <effects>
       <effect type="Data" amount="5.00" subtype="Damage" damagetype="Crush" action="RangedAttack" relativity="Absolute" mergeMode="add">

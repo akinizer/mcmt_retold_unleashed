@@ -9897,6 +9897,7 @@
 
 		<tech row="0" column="0">MCMT_OracleWatchers</tech>
 		<tech row="0" column="2">MCMT_AmazonVanguards</tech>
+		<tech row="0" column="1">CannoballTower</tech>
 		<buildlimit>10</buildlimit>
 
 		<contain>ArcherLineUpgraded</contain>
@@ -9970,6 +9971,20 @@
 		<tech row="3" column="2">MCMT_AdvancedFortifications_I</tech>
 		<tech row="3" column="2">MCMT_AdvancedFortifications_II</tech>
 		<tech row="3" column="2">MCMT_AdvancedFortifications_III</tech>		
+
+		<protoaction>
+			<name>RangedAttackDistant</name>
+			<rof>1.000000</rof>
+			<damage type="Pierce">12.500000</damage>
+			<damagebonus type="Ship">3.000000</damagebonus>
+			<minrange>20.000000</minrange>
+			<maxrange>40.000000</maxrange>
+			<projectile>ProjectileExplosiveBombScharapnel</projectile>
+			<displayednumberprojectiles>3</displayednumberprojectiles>
+			<autoretarget>1</autoretarget>
+			<canattackground>1</canattackground>
+			<volleymode></volleymode>
+		</protoaction>
 	</unit>
 	<unit name="MigdolStronghold">
 		<tactics mergeMode="replace">global_building_fortress.tactics</tactics>
@@ -31143,6 +31158,69 @@
 		<obstructionradiusz>0.2000</obstructionradiusz>
 		<lifespan>2.0000</lifespan>
 		<decay delay="2.0000" duration="0.1000"></decay>
+		<spawn type="Hit" count="1">SelfDestructSpawnMinorDamage</spawn>
+		<spawn type="HitGround" count="1">SelfDestructSpawnMinorDamage</spawn>
+
+		<movementtype>air</movementtype>
+		<maxvelocity>30.0000</maxvelocity>
+		<unittype>Projectile</unittype>
+		<unittype>LogicalTypeSunRayProjectile</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NoUnitAI</flag>
+		<flag>NoIdleActions</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>Projectile</flag>
+		<flag>NoTieToGround</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>HasContinuousParticles</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+	</unit>
+	<unit name="ProjectileExplosiveBombThrow">
+		<animfile>vfx\projectiles\icarus_bomb\icarus_bomb.xml</animfile>
+		<obstructionradiusx>0.2000</obstructionradiusx>
+		<obstructionradiusz>0.2000</obstructionradiusz>
+		<lifespan>2.0000</lifespan>
+		<decay delay="2.0000" duration="0.1000"></decay>
+		<spawn type="Hit" count="1">SelfDestructSpawnMinorDamage</spawn>
+		<spawn type="HitGround" count="1">SelfDestructSpawnMinorDamage</spawn>
+
+		<movementtype>air</movementtype>
+		<maxvelocity>30.0000</maxvelocity>
+		<unittype>Projectile</unittype>
+		<unittype>LogicalTypeSunRayProjectile</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NoUnitAI</flag>
+		<flag>NoIdleActions</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>Projectile</flag>
+		<flag>NoTieToGround</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>HasContinuousParticles</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+	</unit>
+	<unit name="ProjectileExplosiveBombScharapnel">
+		<animfile>vfx\projectiles\icarus_bomb\icarus_bomb.xml</animfile>
+		<obstructionradiusx>0.2000</obstructionradiusx>
+		<obstructionradiusz>0.2000</obstructionradiusz>
+		<lifespan>2.0000</lifespan>
+		<decay delay="2.0000" duration="0.1000"></decay>
+		<spawn type="Hit" count="1">SelfDestructSpawnScharapnelBomb</spawn>
 		<spawn type="HitGround" count="1">SelfDestructSpawnScharapnelBomb</spawn>
 
 		<movementtype>air</movementtype>
@@ -33762,6 +33840,45 @@
    		</protoaction>
   	</unit>	
 	<unit name="SelfDestructSpawnMinorDamage" mergeMode="add">
+		<displaynameid>STR_VFX_DETONATORS_NAME</displaynameid>
+		<animfile>vfx\projectiles\asura\ball_of_fire_asura.xml</animfile>
+		<obstructionradiusx>0.4000</obstructionradiusx>
+		<obstructionradiusz>0.4000</obstructionradiusz>
+		<lifespan>0.1000</lifespan>
+		<decay delay="0.0000" duration="0.5000"></decay>
+		<movementtype>land</movementtype>
+		<unittype>Unit</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NoIdleActions</flag>
+		<flag>AreaDamageConstant</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<flag>BallisticTrackSource</flag>
+		<selfdestructprotoaction>SelfDestructAttack</selfdestructprotoaction>
+		<tactics>area_damage.tactics</tactics>
+		<protoaction>
+			<name>SelfDestructAttack</name>
+			<type>Attack</type>
+			<anim>HandAttack</anim>
+			<rate type="All">1.0</rate>
+			<attackaction>1</attackaction>
+			<areasortmode>Radial</areasortmode>
+			<impacteffect>effects\impacts\pierce</impacteffect>
+
+			<damage type="Divine">5.000000</damage>
+			<damagearea>5.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+   		</protoaction>
+  	</unit>	
+	<unit name="SelfDestructSpawnMinorDamageThrow" mergeMode="add">
 		<displaynameid>STR_VFX_DETONATORS_NAME</displaynameid>
 		<animfile>vfx\projectiles\asura\ball_of_fire_asura.xml</animfile>
 		<obstructionradiusx>0.4000</obstructionradiusx>

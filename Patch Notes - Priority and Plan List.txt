@@ -1,6 +1,10 @@
 ==============================================================================
 ==================== PRIORITY-PLANS ==========================================
 ==============================================================================
+=== REWORKED TECH ===
+AbstractFortifications: AdvancedDefenses, Safeguard, wall upgrades
+Book of Thoth: add priest accel Monument
+
 === REWORKED UNIT ===
 XuanWu -> projectile frostbolt, freeze rate 0.80
 UFO -> abduct cow

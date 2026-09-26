@@ -268,6 +268,12 @@
         - Temple of Solaris: infinite tech, train Templar x5
             - Templar: hero infantry, anti-economic, anti-healer, builder [temple, fortress]
 
+- Buildings:
+    - Fortress:
+        - Cannoball Attack (AdvancedFortifications): anti-naval, bonusdamage vs Ship
+    - SentryTower
+        - CannoballTower: tower upgrade, ProjectileIcarusBomb
+
 4. Atlanean reworks from mcmt mod and new changes
 - myth unit:
     - popcosts
@@ -697,8 +703,7 @@
     - Masons, Architects
     - FortifiedTownCenter
     - Tower Techs: Crenellations, CrenellationsAztec, tower upgrade techs
-    - AdvancedFortifications:
-        - Fortress: ProjectileExplosiveBomb, VolleyMode
+    - AdvancedFortifications
 - greek
     - SylvanLore: effect expanded to AbstractWoodland
     - AegisShield: reflects handattack, bonusdamage vs MythUnit, MythResistant

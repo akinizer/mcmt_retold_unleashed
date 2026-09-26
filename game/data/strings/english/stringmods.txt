@@ -590,6 +590,10 @@ ID = "STR_BLD_FORTIFIED_WARTOWER_NAME"   ;   Str = "Fortified Wartower"
 ID = "STR_BLD_FORTIFIED_WARTOWERII_NAME"   ;   Str = "Fortified Wartower II"
 ID = "STR_BLD_TITAN_WALL_NAME"   ;   Str = "Titan Wall of Aegis"
 
+ID = "STR_BLD_CANNONBALL_TOWER_NAME"   ;   Str = "Cannonball Tower"
+ID = "STR_TECH_CANNONBALL_TOWER_NAME"   ;   Str = "Cannonball Tower"
+ID = "STR_TECH_CANNONBALL_TOWER_LR"   ;   Str = "Cannonball Tower"
+
 ID = "STR_BLD_ELECTROFENCE_NAME"   ;   Str = "Electrofence"
 ID = "STR_BLD_ELECTROFENCE_SR"   ;   Str = "Powered Barrier"
 ID = "STR_BLD_ELECTROFENCE_LR"   ;   Str = "FutureTech Fortification Barrier"
@@ -1402,6 +1406,7 @@ ID = "STR_ACTION_RANGEDATTACKCORRUPTION"   ;   Str = "Miasma Bomb Attack"
 ID = "STR_ACTION_DEMOLITION_ATTACK"   ;   Str = "Demolition Attack"
 ID = "STR_ACTION_DEFLECT_ATTACK"   ;   Str = "Deflect Attack"
 ID = "STR_ACTION_FLAK_CANNON_ATTACK"   ;   Str = "Flak Cannon Attack"
+ID = "STR_ACTION_CANNONBALL_ATTACK"   ;   Str = "Cannonball Attack"
 
 ID = "STR_ACTION_SLASHATTACK"   ;   Str = "Slash Attack"
 ID = "STR_ACTION_SPEARTHRUSTATTACK"   ;   Str = "Spear Thrust Attack"
