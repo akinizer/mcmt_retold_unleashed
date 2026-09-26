@@ -270,8 +270,8 @@
 
 - Buildings:
     - Fortress:
-        - Cannoball Attack (AdvancedFortifications): anti-naval, bonusdamage vs Ship
-    - SentryTower
+        - RangedAttackDistant (AdvancedFortifications): anti-naval, long range, bonusdamage vs Ship
+    - SentryTower:
         - CannoballTower: tower upgrade, ProjectileIcarusBomb
 
 4. Atlanean reworks from mcmt mod and new changes
@@ -419,6 +419,7 @@
         - Priest of Holy Fire: Holy Grenade Attack (MythicAgeRa)
         - Priest of Fertility: Hydro Mine Attack (MythicAgeIsis)
         - Priest of Mania: Miasma Bomb Attack (MythicAgeSet)
+        - Build (BookOfThoth): Monuments
 - SiegeWorks:
     - MechanizedMammothUnit+
 - Nubians
@@ -512,6 +513,7 @@
 - tech:
     - SkyFire: improved, all flying units have hitonground & hitonwater conditions for spawn skyfire fireare
     - Terracotta Techs: AbstractTerracotta, lifespan, hitpoints, trainpoints
+    - AdvancedDefenses: affects on AbstractFortification
 
 7. Campaign Heroes from mcmt mod, correlating techs and new features
 - Greek: veterancy numkill, lineupgrades    
@@ -703,7 +705,10 @@
     - Masons, Architects
     - FortifiedTownCenter
     - Tower Techs: Crenellations, CrenellationsAztec, tower upgrade techs
-    - AdvancedFortifications
+    - Wall Upgrade Techs: affects on AbstractTypeWallOrTower
+    - AdvancedFortifications:
+        - TowerFortificationBoost: boosts ROF of nearby Towers
+        - WallFortificationBoost: boosts Armor of nearby Walls
 - greek
     - SylvanLore: effect expanded to AbstractWoodland
     - AegisShield: reflects handattack, bonusdamage vs MythUnit, MythResistant
@@ -750,6 +755,7 @@
         - SpeedContainerNearWonder, SpeedContainerNearTownCenter
     - Sessrumnir: Hero build workrate+, bountyreward Favor
     - Safeguard: Hirdman build SentryTower workrate+ 
+        - affects on AbstractFortification, AbstractTypeWallOrTower
     - SonsOfSlepnir: AbstractCavalry Hitpoints+, damagebonus vws AbstractCavalry, MaximumVelocity+
     - HammerOfThunder: Hersir VFXThunderCharge
     - HuntressAxe: 

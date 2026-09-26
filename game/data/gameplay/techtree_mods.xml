@@ -1847,6 +1847,16 @@
           <target type="ProtoUnit">CaravanChinese</target></effect> 
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractLandTransport" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">MobileFortress</target></effect> 
+        <!-- AbstractFortification -->
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractFortification" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbstractFortress</target></effect> 
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractFortification" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbstractTypeWallOrTower</target></effect>
+        <!-- AbstractTypeWallOrTower -->
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractTypeWallOrTower" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbstractTower</target></effect> 
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractTypeWallOrTower" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbstractWall</target></effect> 
       </effects>
     </tech>
 
@@ -4424,15 +4434,18 @@
       <effect type="Data" action="RangedAttack" amount="1.0" subtype="NumberProjectiles" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">AbstractFortress</target></effect>
       <effect type="Data" action="RangedAttack" amount="1.0" subtype="DisplayedNumberProjectiles" relativity="Absolute" mergeMode="add">
-				<target type="ProtoUnit">SentryTower</target></effect>
-      
-      <effect type="Data" allactions="1" amount="1.30" subtype="Damage" relativity="BasePercent" mergeMode="add">
-				<target type="ProtoUnit">AbstractTower</target></effect>
-      <effect type="Data" action="RangedAttack" amount="8.00" subtype="Damagebonus" unittype="HumanSoldier" relativity="Absolute" mergeMode="add">
-				<target type="ProtoUnit">AbstractTower</target></effect>
+				<target type="ProtoUnit">AbstractFortress</target></effect>
 
       <effect type="Data" action="RangedAttackDistant" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">Fortress</target></effect>
+      
+      <effect type="Data" action="RangedAttack" amount="8.00" subtype="Damagebonus" unittype="HumanSoldier" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractTower</target></effect>
+
+      <effect type="Data" subtype="ProtoActionAdd" protoaction="TowerFortificationBoost" amount="1.00" unittype="AdvancedFortificationsContainer" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">AbstractFortress</target></effect>
+      <effect type="Data" subtype="ProtoActionAdd" protoaction="WallFortificationBoost" amount="1.00" unittype="AdvancedFortificationsContainer" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">AbstractFortress</target></effect>
 
       <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_AdvancedFortifications_I</effect>
     </effects>
@@ -7452,6 +7465,102 @@
         <target type="ProtoUnit">LogicalTypeMythUnitNotTitan</target></effect>
     </effects>
   </tech>
+    <!-- Wall Techs -->
+  <tech name="BronzeWall">
+    <effects>
+      <effect type="Data" amount="2.00" subtype="Hitpoints" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">AbstractWall</target></effect>
+			<effect type="Data" amount="2" subtype="LOS" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">AbstractWall</target></effect>
+      <!---->
+      <effect type="Data" amount="2.00" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">AbstractTypeWallOrTower</target></effect>
+			<effect type="Data" amount="2" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractTypeWallOrTower</target></effect>
+    </effects>
+  </tech>
+  <tech name="IronWall">
+    <effects>
+      <effect type="Data" amount="2.00" subtype="Hitpoints" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">AbstractWall</target></effect>
+			<effect type="Data" amount="2" subtype="LOS" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">AbstractWall</target></effect>
+      <!---->
+      <effect type="Data" amount="2.00" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">AbstractTypeWallOrTower</target></effect>
+			<effect type="Data" amount="2" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractTypeWallOrTower</target></effect>
+    </effects>
+  </tech>
+  <tech name="OrichalcumWall">
+    <effects>
+      <effect type="Data" amount="2.00" subtype="Hitpoints" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">AbstractWall</target></effect>
+			<effect type="Data" amount="2" subtype="LOS" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">AbstractWall</target></effect>
+      <!---->
+      <effect type="Data" amount="2.00" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">AbstractTypeWallOrTower</target></effect>
+			<effect type="Data" amount="2" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractTypeWallOrTower</target></effect>
+    </effects>
+  </tech>
+  <tech name="GreatWall">
+    <effects>
+      <effect type="Data" amount="2.00" subtype="Hitpoints" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">AbstractWall</target></effect>
+			<effect type="Data" amount="2" subtype="LOS" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">AbstractWall</target></effect>
+      <!---->
+      <effect type="Data" amount="2.00" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">AbstractTypeWallOrTower</target></effect>
+			<effect type="Data" amount="2" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractTypeWallOrTower</target></effect>
+    </effects>
+  </tech>
+  <tech name="CitadelWall">
+    <effects>
+      <effect type="Data" amount="2.00" subtype="Hitpoints" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">AbstractWall</target></effect>
+			<effect type="Data" amount="2" subtype="LOS" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">AbstractWall</target></effect>
+      <!---->
+      <effect type="Data" amount="2.00" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">AbstractTypeWallOrTower</target></effect>
+			<effect type="Data" amount="2" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractTypeWallOrTower</target></effect>
+    </effects>
+  </tech>
+  <tech name="StoneWall">
+    <effects>
+      <effect type="Data" amount="2.00" subtype="Hitpoints" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">AbstractWall</target></effect>
+			<effect type="Data" amount="7" subtype="LOS" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">AbstractWall</target></effect>
+			<effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent" mergeMode="remove">
+				<target type="ProtoUnit">AbstractWall</target></effect>
+      <!---->
+       <effect type="Data" amount="2.00" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">AbstractTypeWallOrTower</target></effect>
+			<effect type="Data" amount="7" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractTypeWallOrTower</target></effect>
+			<effect type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent" mergeMode="add">
+				<target type="ProtoUnit">AbstractTypeWallOrTower</target></effect>
+    </effects>
+  </tech>
+  <tech name="FortifiedWall">
+    <effects>
+      <effect type="Data" amount="2.00" subtype="Hitpoints" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">AbstractWall</target></effect>
+			<effect type="Data" amount="3" subtype="LOS" relativity="Absolute" mergeMode="remove">
+				<target type="ProtoUnit">AbstractWall</target></effect>
+      <!---->
+      <effect type="Data" amount="2.00" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">AbstractTypeWallOrTower</target></effect>
+			<effect type="Data" amount="3" subtype="LOS" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">AbstractTypeWallOrTower</target></effect>
+    </effects>
+  </tech>
     <!-- General Armory Techs -->
   <tech name="CopperWeapons">
     <effects>
@@ -9582,14 +9691,28 @@
       </effect>
     </effects>
   </tech>
-  <tech name="BookOfThoth" mergeMode="add">
+  <tech name="BookOfThoth">
     <effects>
-      <effect type="Data" action="AutoGather" amount="1.25" subtype="WorkRate" unittype="Favor" relativity="BasePercent">
-          <target type="ProtoUnit">EconomicUpgraded</target>
-        </effect>
-      <effect type="Data" action="AutoGather" amount="1.25" subtype="WorkRate" unittype="Favor" relativity="BasePercent">
-          <target type="ProtoUnit">AbstractMonument</target>
-        </effect>
+      <effect type="Data" action="AutoGather" amount="1.25" subtype="WorkRate" unittype="Favor" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">EconomicUpgraded</target></effect>
+      <effect type="Data" action="AutoGather" amount="1.25" subtype="WorkRate" unittype="Favor" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">AbstractMonument</target></effect>
+
+      <effect type="Data" action="Build" amount="0.10" subtype="Workrate" unittype="AbstractMonument" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Priest</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="CommandAdd" proto="MonumentToVillagers" row="0" column="4" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Priest</target></effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" proto="MonumentToSoldiers" row="0" column="4" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Priest</target></effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" proto="MonumentToSoldiers" row="0" column="4" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Priest</target></effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" proto="MonumentToPriests" row="0" column="4" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Priest</target></effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" proto="MonumentToPharaohs" row="0" column="4" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Priest</target></effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" proto="MonumentToGods" row="0" column="4" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Priest</target></effect>
     </effects>
   </tech>  
   <tech name="Crocodilopolis">
@@ -10190,6 +10313,14 @@
 	</tech>
   <tech name="Safeguard">
     <effects>
+      <effect type="Data" amount="1.25" subtype="Hitpoints" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">SentryTower</target></effect>
+			<effect type="Data" amount="1.25" subtype="Hitpoints" relativity="BasePercent" mergeMode="remove">
+				<target type="ProtoUnit">AbstractWall</target></effect>
+      <!---->
+      <effect type="Data" amount="1.25" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+				<target type="ProtoUnit">AbstractTypeWallOrTower</target></effect>
+
       <effect type="Data" action="Build" amount="1.30" subtype="WorkRate" unittype="SentryTower" relativity="BasePercent" mergeMode="add">
 				<target type="ProtoUnit">Hirdman</target> </effect>
     </effects>
@@ -10757,22 +10888,16 @@
 			<effect type="TechStatus" status="active" mergeMode="remove">WallConnectorToTower</effect>
       <!---->
       <effect type="Data" allactions="1" amount="1.25" subtype="Damage" relativity="BasePercent" mergeMode="add">
-        <target type="ProtoUnit">SentryTower</target></effect>
+        <target type="ProtoUnit">AbstractFortification</target></effect>
       <effect type="Data" action="RangedAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">SentryTower</target></effect>
+        <target type="ProtoUnit">AbstractFortification</target></effect>
       <effect type="Data" amount="2" subtype="LOS" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">SentryTower</target></effect>
-      <effect type="Data" allactions="1" amount="1.25" subtype="Damage" relativity="BasePercent" mergeMode="add">
-        <target type="ProtoUnit">Baolei</target></effect>
-      <effect type="Data" action="RangedAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">Baolei</target></effect>
-      <effect type="Data" amount="2" subtype="LOS" relativity="Absolute" mergeMode="add">
-        <target type="ProtoUnit">Baolei</target></effect>
-      
+        <target type="ProtoUnit">AbstractFortification</target></effect>
+   
       <effect type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
-        <target type="ProtoUnit">AbstractWall</target></effect>
+        <target type="ProtoUnit">AbstractTypeWallOrTower</target></effect>
  			<effect type="Data" amount="-0.15" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent" mergeMode="add">
-        <target type="ProtoUnit">AbstractWall</target></effect>
+        <target type="ProtoUnit">AbstractTypeWallOrTower</target></effect>
 
       <effect type="TechStatus" status="active" mergeMode="add">WallConnectorToTower</effect>
     </effects>

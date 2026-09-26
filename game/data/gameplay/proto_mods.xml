@@ -9893,7 +9893,6 @@
 		<armor type="Hack" value="0.5000"></armor>
 		<armor type="Pierce" value="0.8500"></armor>
 		<armor type="Crush" value="0.0500"></armor>
-		<unittype>AbstractWall</unittype>
 
 		<tech row="0" column="0">MCMT_OracleWatchers</tech>
 		<tech row="0" column="2">MCMT_AmazonVanguards</tech>
@@ -32554,6 +32553,50 @@
 			<modifytype>Armor</modifytype>
 			<modifymultiplier>1.10</modifymultiplier>
 			<nostack>1</nostack>
+		</protoaction>
+	</unit>
+	<unit name="AdvancedFortificationsContainer" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name>TowerFortificationBoost</name>
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>AbstractTower</modifyabstracttype>
+			<maxrange>20</maxrange>
+			<persistent>1</persistent>
+			<modifytype>ROF</modifytype>
+			<modifymultiplier>0.90</modifymultiplier>
+			<nostack>1</nostack>
+			<modelattachment>vfx\glow\qi_lin_bless_vfx.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		</protoaction>
+		<protoaction>
+			<name>WallFortificationBoost</name>
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>AbstractWall</modifyabstracttype>
+			<maxrange>20</maxrange>
+			<persistent>1</persistent>
+			<modifytype>Armor</modifytype>
+			<modifymultiplier>1.10</modifymultiplier>
+			<nostack>1</nostack>
+			<modelattachment>vfx\glow\qi_lin_bless_vfx.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
 		</protoaction>
 	</unit>
 

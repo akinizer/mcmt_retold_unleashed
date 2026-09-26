@@ -2,7 +2,6 @@
 ==================== PRIORITY-PLANS ==========================================
 ==============================================================================
 === REWORKED TECH ===
-AbstractFortifications: AdvancedDefenses, Safeguard, wall upgrades
 Book of Thoth: add priest accel Monument
 
 === REWORKED UNIT ===

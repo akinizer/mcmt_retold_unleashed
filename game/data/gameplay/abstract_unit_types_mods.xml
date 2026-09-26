@@ -50,5 +50,8 @@
     <abstractunittype>AbstractEgyptianArcher</abstractunittype>
     <abstractunittype>AbstractTerracotta</abstractunittype>
     <abstractunittype>AbstractJaguar</abstractunittype>
-    <abstractunittype>AbstractCoyotl</abstractunittype>    
+    <abstractunittype>AbstractCoyotl</abstractunittype>   
+    <!--Structure Specific-->     
+    <abstractunittype>AbstractFortification</abstractunittype>   
+    <abstractunittype>AbstractTypeWallOrTower</abstractunittype>   
 </abstractunittypesmods>

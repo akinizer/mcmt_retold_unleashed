@@ -1382,6 +1382,9 @@ ID = "STR_HUD_UNIT_TYPE_ABSTRACT_COYOTL"   ;   Str = "Coyotls"
 ID = "STR_HUD_UNIT_TYPE_TRANSPORT_NAVAL"   ;   Str = "Naval Transportation"
 ID = "STR_HUD_UNIT_TYPE_TRANSPORT_LAND"   ;   Str = "In-Land Transportation"
 
+ID = "STR_HUD_UNIT_TYPE_ABSTRACT_FORTIFICATION"   ;   Str = "Fortifications"
+ID = "STR_HUD_UNIT_TYPE_ABSTRACT_WALLORTOWER"   ;   Str = "Walls and Towers"
+
 // SUPERWEAPONS
 ID = "STR_POWER_PSIONIC_DECIMATOR"   ;   Str = "Psionic Decimator"
 ID = "STR_POWER_PSIONIC_DECIMATOR_LR"   ;   Str = "Psionic Superweapon Unleashed by Matsuri Yurio"

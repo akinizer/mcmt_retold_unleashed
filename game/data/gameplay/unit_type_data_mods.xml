@@ -94,4 +94,13 @@
 		<unittype>AbstractCoyotl</unittype>
 		<displaynameid>STR_HUD_UNIT_TYPE_ABSTRACT_COYOTL</displaynameid>
 	</unittypeentry>
+	
+	<unittypeentry mergeMode="add">
+		<unittype>AbstractFortification</unittype>
+		<displaynameid>STR_HUD_UNIT_TYPE_ABSTRACT_FORTIFICATION</displaynameid>
+	</unittypeentry>
+	<unittypeentry mergeMode="add">
+		<unittype>AbstractTypeWallOrTower</unittype>
+		<displaynameid>STR_HUD_UNIT_TYPE_ABSTRACT_WALLORTOWER</displaynameid>
+	</unittypeentry>
 </unittypedatamods>
