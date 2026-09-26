@@ -2502,6 +2502,8 @@
           <target type="ProtoUnit">OilRigPacked</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
           <target type="ProtoUnit">Onigami</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+          <target type="ProtoUnit">NavalCruiser</target></effect>
         <!-- AirCommand Special Units -->
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
           <target type="ProtoUnit">MrWukong</target></effect>
@@ -2588,6 +2590,8 @@
         <!--House-->
         <effect type="Data" amount="1.00" subtype="CommandAdd" tech="HouseSpecialUnitsActivator_Atlantean" row="3" column="4" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">Manor</target></effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="NavalCruiser" row="0" column="5" relativity="Assign" mergeMode="add">
+          <target type="ProtoUnit">Dock</target></effect>
       </effects>
     </tech>
 

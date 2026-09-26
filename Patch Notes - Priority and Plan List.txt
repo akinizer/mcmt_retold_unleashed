@@ -1,23 +1,6 @@
 ==============================================================================
 ==================== PRIORITY-PLANS ==========================================
 ==============================================================================
-=== REWORKED UNIT ===
-XuanWu -> projectile frostbolt, freeze rate 0.80
-UFO -> abduct cow
-Melee Ship
-    MengChong, Tepoztli Canoe, Pentekonter, Ramming Wasen, Dreki -> areadamage
-    Fire Ship
-Siege Ship
-    LouChuan -> dependant attack, humansoldier, arrow volley
-    Siege Brireme, Atlatl Siege Canoe, War Barge, Juggernaut, Junkozosen, Longboat
-Arrow Ship: 
-    Doujian: (rangedattack) projectileballistashot, (dependant) projectilearrowflaming
-    Brireme, Arrow Canoe, Kebenit, Lost Ship, Wasen
-    The Argo
-
-==== DEPENDANT TEST
-try adding ballista dependant to siege ship instead of attachment
-try adding archer to charior instead of attachment
 
 === NEW UNIT ===
 chaosdrone

@@ -50,7 +50,7 @@
 		</animations>
 	</animxml>
 
-	<!-- founder units -->
+	<!-- founder special units -->
 	<animxml file="mcmt\units\founder\landlord.xml">
 		<visuallogics>
 			<visualmap>
@@ -373,7 +373,7 @@
 		</animlogics>
 	</animxml>
 
-	<!-- encampment units -->
+	<!-- encampment special units -->
 
 	<animxml file="mcmt\units\cavalry_arbalest\cavalry_arbalest.xml">
     <visuallogics>
@@ -5933,6 +5933,154 @@
 		<alsouseslogic>
 			<tech></tech>
 		</alsouseslogic>
+	</animxml>
+
+	<!-- sva special naval units -->
+	<animxml file="mcmt\units\pirates\cruiser\naval_cruiser.xml">
+		<visuallogics>
+			<visualmap>
+				<visualnode>
+					<model>atlantean\units\naval\siege_bireme\siege_bireme</model>
+					<logic>
+						<tech>none</tech>
+						<tech>none</tech>
+					</logic>
+				</visualnode>
+				<visualnode>
+					<model>atlantean\units\naval\siege_bireme\siege_bireme</model>
+					<logic>
+						<tech>heavywarships</tech>
+						<tech>none</tech>
+					</logic>
+				</visualnode>
+				<visualnode>
+					<model>atlantean\units\naval\siege_bireme\siege_bireme</model>
+					<logic>
+						<tech>championwarships</tech>
+						<tech>none</tech>
+					</logic>
+				</visualnode>
+				<visualnode>
+					<model>atlantean\units\naval\siege_bireme\siege_bireme</model>
+					<logic>
+						<tech>none</tech>
+						<tech>copperarmor</tech>
+					</logic>
+				</visualnode>
+				<visualnode>
+					<model>atlantean\units\naval\siege_bireme\siege_bireme</model>
+					<logic>
+						<tech>heavywarships</tech>
+						<tech>copperarmor</tech>
+					</logic>
+				</visualnode>
+				<visualnode>
+					<model>atlantean\units\naval\siege_bireme\siege_bireme</model>
+					<logic>
+						<tech>championwarships</tech>
+						<tech>copperarmor</tech>
+					</logic>
+				</visualnode>
+				<visualnode>
+					<model>atlantean\units\naval\siege_bireme\siege_bireme</model>
+					<logic>
+						<tech>none</tech>
+						<tech>bronzearmor</tech>
+					</logic>
+				</visualnode>
+				<visualnode>
+					<model>atlantean\units\naval\siege_bireme\siege_bireme</model>
+					<logic>
+						<tech>heavywarships</tech>
+						<tech>bronzearmor</tech>
+					</logic>
+				</visualnode>
+				<visualnode>
+					<model>atlantean\units\naval\siege_bireme\siege_bireme</model>
+					<logic>
+						<tech>championwarships</tech>
+						<tech>bronzearmor</tech>
+					</logic>
+				</visualnode>
+				<visualnode>
+					<model>atlantean\units\naval\siege_bireme\siege_bireme</model>
+					<logic>
+						<tech>none</tech>
+						<tech>ironarmor</tech>
+					</logic>
+				</visualnode>
+				<visualnode>
+					<model>atlantean\units\naval\siege_bireme\siege_bireme</model>
+					<logic>
+						<tech>heavywarships</tech>
+						<tech>ironarmor</tech>
+					</logic>
+				</visualnode>
+				<visualnode>
+					<model>atlantean\units\naval\siege_bireme\siege_bireme</model>
+					<logic>
+						<tech>championwarships</tech>
+						<tech>ironarmor</tech>
+					</logic>
+				</visualnode>
+			</visualmap>
+		</visuallogics>
+		<animations>
+			<animinfo>
+				<name>RangedAttack</name>
+				<versioncount>1</versioncount>
+				<versions>
+					<version>
+						<file>atlantean\units\naval\siege_bireme\anim\siege_bireme_attack_a</file>
+						<duration>2.00000</duration>
+						<tags>
+							<tag>
+								<type>Attack</type>
+								<position>0.30000</position>
+							</tag>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.26000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>CatapultAttack</set>
+								</properties>
+							</tag>
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+			<animinfo>
+				<name>Idle</name>
+				<versioncount>1</versioncount>
+				<versions>
+					<version>
+						<file>atlantean\units\naval\siege_bireme\anim\siege_bireme_idle_a</file>
+						<duration>2.00000</duration>
+					</version>
+				</versions>
+			</animinfo>
+			<animinfo>
+				<name>Walk</name>
+				<versioncount>1</versioncount>
+				<versions>
+					<version>
+						<file>atlantean\units\naval\siege_bireme\anim\siege_bireme_walk_a</file>
+						<duration>2.00000</duration>
+					</version>
+				</versions>
+			</animinfo>
+			<animinfo>
+				<name>Capsize</name>
+				<versioncount>1</versioncount>
+				<versions>
+					<version>
+						<file>atlantean\units\naval\siege_bireme\anim\siege_bireme_kraken_death_a</file>
+						<duration>5.00000</duration>
+					</version>
+				</versions>
+			</animinfo>
+		</animations>
 	</animxml>
 
 	<!-- japanese unit reworks -->

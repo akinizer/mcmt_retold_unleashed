@@ -4124,6 +4124,82 @@
 	</unit>
 
     <!-- Atlantean Naval Units-->
+	<unit name="NavalCruiser">
+		<displaynameid>STR_UNIT_TRANSPORT_SHIP_ATLANTEAN_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_TRANSPORT_SHIP_ATLANTEAN_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_TRANSPORT_SHIP_ATLANTEAN_SR</shortrollovertextid>
+		<icon>resources\atlantean\player_color\units\transport_ship_atlantean_icon.png</icon>
+		<animfile>mcmt\units\pirates\cruiser\naval_cruiser.xml</animfile>
+		<soundsetfile>atlantean\vo\transport_ship_atlantean\transport_ship_atlantean.xml</soundsetfile>
+		<obstructionradiusx>0.9900</obstructionradiusx>
+		<obstructionradiusz>0.9900</obstructionradiusz>
+		<selectionradiusx>1.2500</selectionradiusx>
+		<selectionradiusz>2.5000</selectionradiusz>
+		<impacttype>Wood</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>water</movementtype>
+		<turnrate>6.0000</turnrate>
+		<initialhitpoints>180.0000</initialhitpoints>
+		<maxhitpoints>180.0000</maxhitpoints>
+		<trainpoints>19.0000</trainpoints>
+		<weightclass>6</weightclass>
+		<sizeclass>1</sizeclass>
+		<populationcount>3</populationcount>
+		<maxvelocity>3.300</maxvelocity>
+		<los>14.0000</los>
+		<cost resourcetype="Wood">110.0000</cost>
+		<armor type="Hack" value="0.4000"></armor>
+		<armor type="Pierce" value="0.8000"></armor>
+		<armor type="Crush" value="0.0500"></armor>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>Ship</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>NavalUnit</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeMinimapFilterEconomic</unittype>
+		<unittype>LogicalTypeShipNotHero</unittype>
+		<unittype>LogicalTypeNotEconomicOrMilitaryUnit</unittype>
+		<unittype>LogicalTypeDivineImmunity</unittype>
+		<flag>TieToWaterSurface</flag>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>DecalStickToWaterSurface</flag>
+		<flag>FadeOutDecalOnDeath</flag>
+		<flag>ObscuresUnits</flag>
+		<flag>HasContinuousParticles</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>NoIdleActions</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+
+		<flag>IgnoreDependentEditor</flag>
+		<dependentunit>CustomDependantUnitHarpy</dependentunit>
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<type>Attack</type>
+			<maxrange>28.00</maxrange>
+			<attackaction>1</attackaction>
+			<anim>RangedAttack</anim>
+			<rate type="Unit">1.00</rate>
+			<rate type="Building">1.00</rate>
+		</protoaction>
+	</unit>
     <!-- Atlantean Buildings-->
     <!-- Special Tree Buildings-->
     <unit name="HesperidesTree">
@@ -34503,6 +34579,64 @@
 			<maxrange>16.000000</maxrange>
 			<projectile>ProjectileBallOfFireAsura</projectile>
 			<impacteffect>effects\impacts\crush_medium</impacteffect>
+		</protoaction>
+		<protoaction>
+			<name>Drone</name>
+			<type>Drone</type>
+			<persistent>1</persistent>
+		</protoaction>
+	</unit>
+
+	<unit name="CustomDependantUnitHarpy">
+		<animfile>greek\units\myth\harpy\harpy.xml</animfile>
+		<soundsetfile>greek\vo\harpy\harpy.xml</soundsetfile>
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>air</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>100.0000</initialhitpoints>
+		<maxhitpoints>100.0000</maxhitpoints>
+		<maxvelocity>3.2000</maxvelocity>
+		<los>18.0000</los>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>MythUnit</unittype>
+		<unittype>MythUnitRanged</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>AbstractFlyingUnit</unittype>
+		<unittype>LogicalTypeMythicMythUnit</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>NonCollideable</flag>
+		<flag>NoHPBar</flag>
+		<flag>Invulnerable</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>DependentAttach</flag>
+		<flag>NoTieToGround</flag>
+		<flag>FlyingUnit</flag>
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.800000</rof>
+			<damage type="Pierce">15.00000</damage>
+			<damage type="Crush">1.00000</damage>
+			<damagebonus type="MythUnit">4.000000</damagebonus>
+			<maxrange>10.000000</maxrange>
+			<numberprojectiles>3</numberprojectiles>
+			<volleymode></volleymode>
+			<projectile>ProjectileStymphalianBirdFeathers</projectile>
 		</protoaction>
 		<protoaction>
 			<name>Drone</name>

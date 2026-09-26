@@ -292,6 +292,7 @@
     - popcosts: 1
 - humansoldier:
     - popcosts 1 or 2
+    - Katapeltes: crush damage, abstractsiegeweapon, siegelineupgrade
 - heroinfantry:
     - popcosts 1 or 2
 - Nymphs
@@ -303,6 +304,10 @@
     - NymphMender: ascension path, enables heal ability and updates name to Nymph (Mender), hp increases
     - NymphCharmer: ascension path, enables convert ability [huntable, abstractvillager] and updates name to Nymph (Charmer), hackarmor increases
     - NymphOracle: ascension path, enables empower ability and updates name to Nymph (Oracle), LOS increase
+- Naval Special Units:
+    - NavalCruiser:
+        - Dependent: CustomDependantUnitHarpy
+        - RangedAttack: sends Harpy dependent to target
 
 5. Norse reworks from mcmt mod and new improvements
 - popcost:
@@ -699,7 +704,7 @@
 - naval
     - Warship techs
     - Transport techs:
-        - EnclosedDeck:
+        - EnclosedDeck
     
 - fortification:
     - Masons, Architects
@@ -741,8 +746,6 @@
         - MilitaryBarracks: Murmillo, Fanatic, Destroyer +
         - CounterBarracks: Arcus, Turma, Cheiroballista +
         - Palace: Katapeltes, Contarius, Fire Siphon +    
-    - HumanSoldier:
-        - Katapeltes: crush damage, abstractsiegeweapon, siegelineupgrade
 - norse
     - ArchaicAgeLoki: Draugr,LogicalTypeMythUnitNotTitan,Rime,Jotuns,Valgaldr+
         - GreatHall: Draugr+
