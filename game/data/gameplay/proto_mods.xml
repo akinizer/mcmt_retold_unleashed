@@ -31143,7 +31143,6 @@
 		<obstructionradiusz>0.2000</obstructionradiusz>
 		<lifespan>2.0000</lifespan>
 		<decay delay="2.0000" duration="0.1000"></decay>
-		<spawn type="Hit" count="1">SelfDestructSpawnScharapnelBomb</spawn>
 		<spawn type="HitGround" count="1">SelfDestructSpawnScharapnelBomb</spawn>
 
 		<movementtype>air</movementtype>
