@@ -31143,8 +31143,8 @@
 		<obstructionradiusz>0.2000</obstructionradiusz>
 		<lifespan>2.0000</lifespan>
 		<decay delay="2.0000" duration="0.1000"></decay>
-		<spawn type="Hit" count="1">SelfDestructSpawnMinorDamage</spawn>
-		<spawn type="HitGround" count="1">SelfDestructSpawnMinorDamage</spawn>
+		<spawn type="Hit" count="1">SelfDestructSpawnScharapnelBomb</spawn>
+		<spawn type="HitGround" count="1">SelfDestructSpawnScharapnelBomb</spawn>
 
 		<movementtype>air</movementtype>
 		<maxvelocity>30.0000</maxvelocity>
@@ -33721,6 +33721,45 @@
 			<impactlaunchangle>10.0</impactlaunchangle>
 			<forceareaattackcenter>1</forceareaattackcenter>
 			<throw>1</throw>
+   		</protoaction>
+  	</unit>	
+	<unit name="SelfDestructSpawnScharapnelBomb" mergeMode="add">
+		<displaynameid>STR_VFX_DETONATORS_NAME</displaynameid>
+		<animfile>vfx\projectiles\asura\ball_of_fire_asura.xml</animfile>
+		<obstructionradiusx>0.4000</obstructionradiusx>
+		<obstructionradiusz>0.4000</obstructionradiusz>
+		<lifespan>0.1000</lifespan>
+		<decay delay="0.0000" duration="0.5000"></decay>
+		<movementtype>land</movementtype>
+		<unittype>Unit</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NoIdleActions</flag>
+		<flag>AreaDamageConstant</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<flag>BallisticTrackSource</flag>
+		<selfdestructprotoaction>SelfDestructAttack</selfdestructprotoaction>
+		<tactics>area_damage.tactics</tactics>
+		<protoaction>
+			<name>SelfDestructAttack</name>
+			<type>Attack</type>
+			<anim>HandAttack</anim>
+			<rate type="All">1.0</rate>
+			<attackaction>1</attackaction>
+			<areasortmode>Radial</areasortmode>
+			<impacteffect>effects\impacts\pierce</impacteffect>
+
+			<damage type="Pierce">5.000000</damage>
+			<damagearea>3.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
    		</protoaction>
   	</unit>	
 	<unit name="SelfDestructSpawnMinorDamage" mergeMode="add">
