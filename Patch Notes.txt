@@ -274,7 +274,7 @@
     - SentryTower:
         - CannoballTower: tower upgrade, ProjectileIcarusBomb
 
-4. Atlanean reworks from mcmt mod and new changes
+4. Atlantean reworks from mcmt mod and new changes
 - myth unit:
     - popcosts
 
@@ -304,10 +304,21 @@
     - NymphMender: ascension path, enables heal ability and updates name to Nymph (Mender), hp increases
     - NymphCharmer: ascension path, enables convert ability [huntable, abstractvillager] and updates name to Nymph (Charmer), hackarmor increases
     - NymphOracle: ascension path, enables empower ability and updates name to Nymph (Oracle), LOS increase
+
 - Naval Special Units:
     - NavalCruiser:
         - Dependent: CustomDependantUnitHarpy
         - RangedAttack: sends Harpy dependent to target
+- FutureTech Special Units:
+    - WarArmory:
+        - MineLoader: gold mining truck, slow, large capacity
+            - WarLoader: enables anti-infantry auto-targeting system
+            - WarLoaderII: upgrades weapon to anti-armor auto-targeting system
+        - ArachneChaosDrone: mechanical arachne variant, excels at espinage and sabotage, amphibious
+            - JumpAttack: jumps at and instakills non-hero human & trade units
+            - JumpAttackSiege: jumps at armored units [SiegeLineUpgraded, Ship]
+            - SelfDestructAttack: attaches to armored units, damage them until destruction, respawns
+
 
 5. Norse reworks from mcmt mod and new improvements
 - popcost:
@@ -852,6 +863,12 @@
 
         - FlyingDutchman:
             - Trains: MummyFallen,PirateCaptain,GhostCrew +
+
+        - OilRigPacked:
+            - Slow Naval Unit, Deployable
+            - OilRig (DelayedTransform): Off-Shore Building 
+                - Autogather: Gold
+                - Repack 
         
     - Hall of Heroes:
         - Trains: Captains (numkill veterancy), Tanks, Mothership

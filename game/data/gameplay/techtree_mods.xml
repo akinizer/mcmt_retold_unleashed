@@ -10337,8 +10337,8 @@
       <effect type="Data" amount="2.50" subtype="MaximumRange" action="AreaLOSReduction" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">ArgusAcidBlobDamage</target></effect>
 
-      <effect type="Data" action="CloakingShroud" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
-				<target type="ProtoUnit">Argus</target></effect>
+      <effect type="Data" protoaction="CloakingShroud" amount="1.00" subtype="ProtoActionAdd" unittype="AreaStealthContainer" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Argus</target></effect>
     </effects>
   </tech>
   <tech name="VolcanicForge" mergeMode="add">
@@ -11487,7 +11487,7 @@
       <effect type="Data" amount="0.75" subtype="BuildPoints" relativity="Percent" mergeMode="add">
 				<target type="ProtoUnit">Watermill</target></effect>
 
-       <effect type="Data" protoaction="Abundance" amount="1.00" subtype="ProtoActionAdd" unittype="AbundanceAura" relativity="Assign" mergeMode="add">
+      <effect type="Data" protoaction="Abundance" amount="1.00" subtype="ProtoActionAdd" unittype="AbundanceAura" relativity="Assign" mergeMode="add">
         <target type="ProtoUnit">Watermill</target></effect>
 		</effects>
 	</tech>

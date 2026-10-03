@@ -4080,14 +4080,6 @@
 		<stealthdetectionradius>15.0000</stealthdetectionradius>
 		<movementtype>amphibious</movementtype>
 		<flag>TieToWaterSurface</flag>
-		<protoaction>
-			<name stringid="STR_UNIT_CLOAKING_SHROUD_ABILITY">CloakingShroud</name>
-			<type>AreaStealth</type>
-			<maxrange>10.0</maxrange>
-      		<rate type="AbstractVillager">1.0</rate>
-			<persistent>1</persistent>
-			<active>0</active>
-		</protoaction>
 	</unit>
 	<unit name="ArgusAcidBlobDamage">
 		<protoaction>
@@ -9714,8 +9706,9 @@
 		<train row="0" column="3">WarArmory</train>
 		<protoaction>
 			<name>RangedAttack</name>
-			<rate type="All">1.0</rate>
 			<rate type="Building">0.0</rate>
+			<rate type="All">1.0</rate>
+			<damagebonus type="MythUnit">3.000000</damagebonus>
 		</protoaction>
 		<protoaction>
 			<name>Gather</name>
@@ -33116,6 +33109,33 @@
 		</protoaction>
 	</unit> 
 	<!-- /// AREA OF EFFECT AURA CONTAINERS /// -->
+	<unit name="AreaStealthContainer" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name stringid="STR_UNIT_CLOAKING_SHROUD_ABILITY">CloakingShroud</name>
+			<type>AreaStealth</type>
+			<maxrange>10.0</maxrange>
+      		<rate type="AbstractVillager">1.0</rate>
+			<persistent>1</persistent>
+		</protoaction>
+	</unit> 
 	<unit name="AreaHealContainer" mergeMode="add">
 		<obstructionradiusx>0.1000</obstructionradiusx>
 		<obstructionradiusz>0.1000</obstructionradiusz>

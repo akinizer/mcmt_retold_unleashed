@@ -11,37 +11,18 @@ shaman
 - water form: modelcomp shark, bonusdamage vs ship
 - anim: handattack, handattackwater, buildingattack, transform
 
+hover tank
+- war armory
+- model firesiphon
+- projectileicarusbomb
+- anti-armor, weak vs infantry
+- slow
+- anim: argus (walk, idle)
+- amphibious (tide-powered engines)
+
 ==============================================================================
 ==================== REWORK-PLANS ============================================
 ==============================================================================
-* nitroglicerine -> vfxcold variant of detonators
-
-* WONDERS OF WORLD PROTOCOL - Volatile Techs
-- KRONOS: 
-    - titanomachy: myth units, defense, hp+
-- ORANOS: 
-    - blessing from heavens: flying units, defense+, hp+, los+
-- GAIA: nature units (servant, dryad, hamadryad), defense+, hp+
-    - Channels: (abstractvillager) maxvelocity 100%+
-    - Nature's Protection (humansoldier): piercearmor+, regeneration, ThornedWall
-    - Mother Tree (Hesperides Tree): enableaction areaheal 
-
-- RA
-    - Cycle of Creation (priest, abstractpharaoh): los+, maxvelocity, unitshield, enable tech Reincarnation
-- ISIS
-    - Nile's Blessing: Laborer, FishingShip food gatherrate+
-    - True Names: Aset, Wsjr
-- SET (wadjet, scarab, phoenix, warturtle, petsuchos, roc)
-    - Set's Presence: animalistic units, hp+, maxvelocity 0.5+
-
-- ZEUS
-    - Children of Zeus (heroes): vfxlightning on mythunits
-- POSEIDON
-    - Children of Sea (heroes): recovery
-- HADES
-    - Children of Underworld (heroes): spawn hadesshade
-- DEMETER
-    - Guardian of Harvests: summon Holo, gretahalberd model, transform kitsune, aura farm gatherrate+
 
 === WEAPON MODELS
 Horse + Brunhild + Bow
