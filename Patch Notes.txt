@@ -311,13 +311,18 @@
         - RangedAttack: sends Harpy dependent to target
 - FutureTech Special Units:
     - WarArmory:
-        - MineLoader: gold mining truck, slow, large capacity
+        - MiningLoader: gold mining truck, slow, large capacity
             - WarLoader: enables anti-infantry auto-targeting system
             - WarLoaderII: upgrades weapon to anti-armor auto-targeting system
         - ArachneChaosDrone: mechanical arachne variant, excels at espinage and sabotage, amphibious
             - JumpAttack: jumps at and instakills non-hero human & trade units
             - JumpAttackSiege: jumps at armored units [SiegeLineUpgraded, Ship]
             - SelfDestructAttack: attaches to armored units, damage them until destruction, respawns
+        - ArachneSupressorDrone: amphibious, agile drone unit
+            - JumpAttack: instakill humans
+            - RangedAttack: gattling attack
+            - DefensiveTurret: dependant, anti-unit, effective vs MythUnits 
+        - HoverTank: hovering land unit, slow, anti-armor
 
 
 5. Norse reworks from mcmt mod and new improvements

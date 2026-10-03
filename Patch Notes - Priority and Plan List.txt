@@ -11,15 +11,6 @@ shaman
 - water form: modelcomp shark, bonusdamage vs ship
 - anim: handattack, handattackwater, buildingattack, transform
 
-hover tank
-- war armory
-- model firesiphon
-- projectileicarusbomb
-- anti-armor, weak vs infantry
-- slow
-- anim: argus (walk, idle)
-- amphibious (tide-powered engines)
-
 ==============================================================================
 ==================== REWORK-PLANS ============================================
 ==============================================================================

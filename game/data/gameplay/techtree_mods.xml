@@ -2182,9 +2182,7 @@
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">TerracottaReclaimer</target></effect>	
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">TerracottaSuppressor</target></effect>	
         <!-- Japanese Special Units -->
-        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">ArachneChaosDrone</target></effect>
-        <effect type="Data" amount="0.50" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">ArachneChaosDrone</target></effect>
-
+       
         <!-- LandLord Special Units -->
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Bastion</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">TempleOfPrimordials</target></effect>
@@ -2484,12 +2482,19 @@
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">FanaticCaptain</target></effect>		
         <!-- Mage Tower Special Units -->
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Maiar</target></effect>
-        <!-- Forbidden Tech Units -->
+        <!-- Forbidden Tech Special Units -->
         <effect type="Data" amount="0.60" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">M0N17-R</target></effect>
         <effect type="Data" amount="0.60" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">D347H-X</target></effect>
         <effect type="Data" amount="0.60" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">L0S7-1</target></effect>
         <effect type="Data" amount="8.00" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">SoulTaker</target></effect>
         <effect type="Data" amount="8.00" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">BeastBerny</target></effect>
+        <!-- War Armory Special Units  -->
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">ArachneSupressorDrone</target></effect>
+        <effect type="Data" amount="0.50" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">ArachneSupressorDrone</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">ArachneChaosDrone</target></effect>
+        <effect type="Data" amount="0.50" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">ArachneChaosDrone</target></effect>
+
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">HoverTank</target></effect>
       </effects>
     </tech> 
 

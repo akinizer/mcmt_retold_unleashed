@@ -7,4 +7,5 @@
     <anim>JumpFly<assetreference type="TMAnimation"><file>atlantean\units\myth\tartarian_spawn\anim\tartarian_spawn_jumptakeoff_a</file></assetreference><assetreference type="TMAnimation"><file>atlantean\units\myth\tartarian_spawn\anim\tartarian_spawn_jumpfly_a</file></assetreference><assetreference type="TMAnimation"><file>atlantean\units\myth\tartarian_spawn\anim\tartarian_spawn_jumpland_a</file></assetreference><component>ModelComp</component></anim>
 	<anim>WalkWater<assetreference type="TMAnimation"><file>norse\units\myth\kraken\anim\kraken_walk_a</file><tag type="particles" popcornfxname="water\water_splash_generic_large.pkfx" bone="vfx_birth" movewithbone="true" stopwithanim="false" adjustduration="false">0.02</tag></assetreference><component>ModelComp</component></anim>
 	<anim>IdleWater<assetreference type="TMAnimation"><file>egyptian\units\myth\leviathan\anim\leviathan_idle_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>RangedAttack<assetreference type="TMAnimation"><file>misc\dummy\dummy_animation</file><tag type="Attack">0.375</tag></assetreference><component>ModelComp</component></anim>
 </animfile>

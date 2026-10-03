@@ -1725,139 +1725,6 @@
 		</protoaction>
 	</unit>
 
-	<unit name="ArachneChaosDrone">
-		<displaynameid>STR_UNIT_ARACHNE_CHAOS_DRONE_NAME</displaynameid>
-		<rollovertextid>STR_UNIT_ARACHNE_CHAOS_DRONE_LR</rollovertextid>
-		<shortrollovertextid>STR_UNIT_ARACHNE_CHAOS_DRONE_SR</shortrollovertextid>
-		<soundsetfile>shared\vo\cheat\ufo\ufo.xml</soundsetfile>
-		<animfile>mcmt\units\beast\arachne.xml</animfile>
-		<icon>resources\tech\arachne.jpg</icon>
-		<obstructionradiusx>0.4900</obstructionradiusx>
-		<obstructionradiusz>0.4900</obstructionradiusz>
-		<selectionradiusx>0.4900</selectionradiusx>
-		<selectionradiusz>0.4900</selectionradiusz>
-		<impacttype>Metal</impacttype>
-		<unitaitype>HandCombative</unitaitype>
-		<autoattackrange>25</autoattackrange>
-		<movementtype>Amphibious</movementtype>
-		<flag>TieToWaterSurface</flag>
-
-		<turnrate>18.0000</turnrate>
-		<initialhitpoints>80.0000</initialhitpoints>
-		<maxhitpoints>80.0000</maxhitpoints>
-		<trainpoints>35.0000</trainpoints>
-		<weightclass>9</weightclass>
-		<populationcount>1</populationcount>
-		<maxvelocity>5.7500</maxvelocity>
-
-		<los>25.0000</los>
-		<cost resourcetype="Gold">100.0000</cost>
-		<cost resourcetype="Favor">1.0000</cost>
-
-		<armor type="Hack" value="0.1000"></armor>
-		<armor type="Pierce" value="0.7000"></armor>
-		<armor type="Crush" value="0.2000"></armor>
-		<unittype>LogicalTypeNeededForVictory</unittype>
-		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
-		<unittype>LogicalTypeLandMilitary</unittype>
-		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
-		<unittype>LogicalTypeGarrisonInShips</unittype>
-		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
-		<unittype>LogicalTypeVillagersAttack</unittype>
-		<unittype>LogicalTypeHandUnitsAttack</unittype>
-		<unittype>LogicalTypeRangedUnitsAttack</unittype>
-		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
-		<unittype>LogicalTypeMythicMythUnit</unittype>
-		<unittype>MilitaryUnit</unittype>
-		<unittype>UnitClass</unittype>
-		<unittype>Unit</unittype>
-		<unittype>CountsTowardMilitaryScore</unittype>
-		<unittype>LogicalTypeValidBoltTarget</unittype>
-		<unittype>LogicalTypeEarthquakeAttack</unittype>
-		<unittype>LogicalTypeAffectedByRestoration</unittype>
-		<unittype>LogicalTypeValidMeteorTarget</unittype>
-		<unittype>LogicalTypeValidTornadoAttack</unittype>
-		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
-		<unittype>LogicalTypeMythUnitNotTitan</unittype>
-		<unittype>LogicalTypeValidSpyTarget</unittype>
-		<unittype>LogicalTypeValidFrostTarget</unittype>
-		<unittype>LogicalTypeValidTraitorTarget</unittype>
-		<unittype>LogicalTypeHealed</unittype>
-		<unittype>LogicalTypeValidShockwaveTarget</unittype>
-		<unittype>LogicalTypeFreezableMythUnit</unittype>
-		<unittype>LogicalTypeAgressiveNatureUnit</unittype>
-		<unittype>LogicalTypeMythUnitNotFlying</unittype>
-		<unittype>LogicalTypeValidBloodPactTarget</unittype>
-		<flag>CollidesWithProjectiles</flag>
-		<flag>CorpseDecays</flag>
-		<flag>ShowGarrisonButton</flag>
-		<flag>DontRotateObstruction</flag>
-		<flag>ObscuredByUnits</flag>
-		<flag>CommonCommands</flag>
-		<flag>MilitaryCommands</flag>
-		<flag>CreateUnitGroupAutomatically</flag>
-		<bloodgroupoverride>noblood</bloodgroupoverride>		
-		<tactics>mcmt_arachne_drone.tactics</tactics>
-		<selfdestructprotoaction>SelfDestructAttack</selfdestructprotoaction>
-		<protoaction>
-			<name>JumpAttack</name>
-			<rof>1.000000</rof>
-			<damage type="Hack">1.000000</damage>
-			<damagebonus type="HumanSoldier">999.00000</damagebonus>
-			<damagebonus type="LogicalTypeVillagerNotHero">999.000000</damagebonus>
-			<maxrange>14.000000</maxrange>
-			<perfectaccuracy>1</perfectaccuracy>
-			<homingballistics>1</homingballistics>
-		</protoaction>
-		<protoaction>
-			<name>JumpAttackSiege</name>
-			<rof>1.000000</rof>
-			<damage type="Hack">1.000000</damage>
-			<minrange>4.000000</minrange>
-			<maxrange>14.000000</maxrange>
-			<perfectaccuracy>1</perfectaccuracy>
-			<homingballistics>1</homingballistics>
-		</protoaction>
-		<protoaction>
-			<name>SelfDestructAttack</name>
-			<rof>1.000000</rof>
-			<damage type="Hack">1.000000</damage>
-			<maxrange>14.000000</maxrange>
-
-			<onhiteffect type="DamageOverTime" duration="999.000000">
-				<damage type="Divine">10.000000</damage>
-				<target attacktype="Unit"></target>
-			</onhiteffect>
-			<onhiteffect type="Reincarnation" proto="ArachneChaosDrone" duration="999.000000">
-				<target attacktype="Unit"></target>
-			</onhiteffect>
-			<onhiteffect type="Attach" proto="VFXPoison" attachbone="spine" duration="999.000000">
-				<target attacktype="Unit"></target>
-			</onhiteffect>
-
-			<selfdestruct>1</selfdestruct>
-		</protoaction>
-		<protoaction>
-			<name>ChargedModify</name>
-			<type>ChargedModify</type>
-			<persistent>1</persistent>
-			<charged>
-				<activationtype>TerrainType</activationtype>
-				<terraintype>Water</terraintype>
-				<settactic>Water</settactic>
-				<duration>1.0</duration>
-				<cooldown>0.01</cooldown>
-			</charged>
-			<charged>
-				<activationtype>TerrainType</activationtype>
-				<terraintype>Land</terraintype>
-				<settactic>Land</settactic>
-				<duration>1.0</duration>
-				<cooldown>0.01</cooldown>
-			</charged>
-		</protoaction>
-	</unit>
-
 	<unit name="Kamaitachi">
 		<unittype mergeMode="add">AbstractSamurai</unittype>
 	</unit>
@@ -12291,6 +12158,8 @@
 		
 		<train row="0" column="0">MineralLoader</train>
 		<train row="0" column="1">ArachneChaosDrone</train>
+		<train row="0" column="2">ArachneSupressorDrone</train>
+		<train row="0" column="5">HoverTank</train>
 		<tech row="1" column="0">ToolsOfTheTrade</tech>
 		<tech row="1" column="0">WarLoader</tech>
 		<tech row="1" column="0">WarLoaderII</tech>
@@ -21930,6 +21799,431 @@
 			<name>BlessingSlowDownEnemyHumanUnitsDivine</name>
 		</protoaction>
 	</unit>
+
+	<!-- WarArmory Special Units-->
+	<unit name="MineralLoader">	
+		<displaynameid>STR_UNIT_MININGLOADER_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_MININGLOADER_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_MININGLOADER_SR</shortrollovertextid>	
+		<icon>resources\chinese\player_color\units\caravan_chinese_icon.png</icon>
+		<animfile>chinese\units\economic\caravan_chinese\caravan_chinese.xml</animfile>
+		<soundsetfile>chinese\vo\caravan_chinese\caravan_chinese.xml</soundsetfile>
+		
+		<obstructionradiusx>0.7400</obstructionradiusx>
+		<obstructionradiusz>0.7400</obstructionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>Civilian</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>600.0000</initialhitpoints>
+		<maxhitpoints>600.0000</maxhitpoints>
+
+		<trainpoints>15</trainpoints>
+		<weightclass>12</weightclass>
+		<populationcount>2</populationcount>
+		<maxvelocity>2.0000</maxvelocity>
+		<los>18.0000</los>
+
+		<cost resourcetype="Gold">2000.0000</cost>
+		<cost resourcetype="Favor">1.0000</cost>
+		<armor type="Hack" value="0.6000"></armor>
+		<armor type="Pierce" value="0.9600"></armor>
+		<armor type="Crush" value="0.5000"></armor>
+		<carrycapacity resourcetype="Gold">50.0000</carrycapacity>
+
+		<unittype>LogicalTypeMinimapFilterEconomic</unittype>
+		<unittype>LogicalTypeEasySelectAvoid</unittype>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>EconomicUnit</unittype>
+		<unittype>CountsTowardEconomicScore</unittype>
+		<unittype>ValidIdleVillager</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>EconomicUpgraded</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+				
+		<flag>ForceSecondPage</flag>
+
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>AutoTrainable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>NonAutoFormedUnit</flag>
+
+		<dependentunit>WarLoader_DefensiveTurret</dependentunit>
+		
+		<tactics>mcmt_gathergold.tactics</tactics>
+		<protoaction>
+			<name>Gather</name>
+			<dropsitegathering>1</dropsitegathering>
+			<rate type="GoldResource">0.800000</rate>
+			<maxrange>1.5</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>HeroGlowOnSelf</name>
+			<type>Modify</type>
+			<modifyselfonly>1</modifyselfonly>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\hero_glow_large.xml</modelattachment>
+			<modelattachmentbone>Spine</modelattachmentbone>
+		</protoaction>
+	</unit>
+
+	<unit name="ArachneChaosDrone">
+		<displaynameid>STR_UNIT_ARACHNE_CHAOS_DRONE_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_ARACHNE_CHAOS_DRONE_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_ARACHNE_CHAOS_DRONE_SR</shortrollovertextid>
+		<soundsetfile>shared\vo\cheat\ufo\ufo.xml</soundsetfile>
+		<animfile>mcmt\units\beast\arachne.xml</animfile>
+		<icon>resources\tech\arachne.jpg</icon>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<selectionradiusx>0.4900</selectionradiusx>
+		<selectionradiusz>0.4900</selectionradiusz>
+		<impacttype>Metal</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<autoattackrange>25</autoattackrange>
+		<movementtype>Amphibious</movementtype>
+		<flag>TieToWaterSurface</flag>
+
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>80.0000</initialhitpoints>
+		<maxhitpoints>80.0000</maxhitpoints>
+		<trainpoints>35.0000</trainpoints>
+		<weightclass>9</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>5.7500</maxvelocity>
+
+		<los>25.0000</los>
+		<cost resourcetype="Gold">100.0000</cost>
+		<cost resourcetype="Favor">1.0000</cost>
+
+		<armor type="Hack" value="0.1000"></armor>
+		<armor type="Pierce" value="0.7000"></armor>
+		<armor type="Crush" value="0.2000"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeMythicMythUnit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeMythUnitNotTitan</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeFreezableMythUnit</unittype>
+		<unittype>LogicalTypeAgressiveNatureUnit</unittype>
+		<unittype>LogicalTypeMythUnitNotFlying</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<bloodgroupoverride>noblood</bloodgroupoverride>		
+		<tactics>mcmt_arachne_drone.tactics</tactics>
+		<selfdestructprotoaction>SelfDestructAttack</selfdestructprotoaction>
+		<protoaction>
+			<name>JumpAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Hack">1.000000</damage>
+			<damagebonus type="HumanSoldier">999.00000</damagebonus>
+			<damagebonus type="LogicalTypeVillagerNotHero">999.000000</damagebonus>
+			<maxrange>14.000000</maxrange>
+			<perfectaccuracy>1</perfectaccuracy>
+			<homingballistics>1</homingballistics>
+		</protoaction>
+		<protoaction>
+			<name>JumpAttackSiege</name>
+			<rof>1.000000</rof>
+			<damage type="Hack">1.000000</damage>
+			<minrange>4.000000</minrange>
+			<maxrange>14.000000</maxrange>
+			<perfectaccuracy>1</perfectaccuracy>
+			<homingballistics>1</homingballistics>
+		</protoaction>
+		<protoaction>
+			<name>SelfDestructAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Hack">1.000000</damage>
+			<maxrange>14.000000</maxrange>
+
+			<onhiteffect type="DamageOverTime" duration="999.000000">
+				<damage type="Divine">10.000000</damage>
+				<target attacktype="Unit"></target>
+			</onhiteffect>
+			<onhiteffect type="Reincarnation" proto="ArachneChaosDrone" duration="999.000000">
+				<target attacktype="Unit"></target>
+			</onhiteffect>
+			<onhiteffect type="Attach" proto="VFXPoison" attachbone="spine" duration="999.000000">
+				<target attacktype="Unit"></target>
+			</onhiteffect>
+
+			<selfdestruct>1</selfdestruct>
+		</protoaction>
+		<protoaction>
+			<name>ChargedModify</name>
+			<type>ChargedModify</type>
+			<persistent>1</persistent>
+			<charged>
+				<activationtype>TerrainType</activationtype>
+				<terraintype>Water</terraintype>
+				<settactic>Water</settactic>
+				<duration>1.0</duration>
+				<cooldown>0.01</cooldown>
+			</charged>
+			<charged>
+				<activationtype>TerrainType</activationtype>
+				<terraintype>Land</terraintype>
+				<settactic>Land</settactic>
+				<duration>1.0</duration>
+				<cooldown>0.01</cooldown>
+			</charged>
+		</protoaction>
+	</unit>
+	<unit name="ArachneSupressorDrone">
+		<displaynameid>STR_UNIT_ARACHNE_SUPRESSOR_DRONE_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_ARACHNE_SUPRESSOR_DRONE_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_ARACHNE_SUPRESSOR_DRONE_SR</shortrollovertextid>
+		
+		<soundsetfile>shared\vo\cheat\ufo\ufo.xml</soundsetfile>
+		<animfile>mcmt\units\beast\arachne.xml</animfile>
+		<icon>resources\tech\arachne.jpg</icon>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<selectionradiusx>0.4900</selectionradiusx>
+		<selectionradiusz>0.4900</selectionradiusz>
+		<impacttype>Metal</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<autoattackrange>25</autoattackrange>
+		<movementtype>Amphibious</movementtype>
+		<flag>TieToWaterSurface</flag>
+
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>100.0000</initialhitpoints>
+		<maxhitpoints>100.0000</maxhitpoints>
+		<trainpoints>35.0000</trainpoints>
+		<weightclass>9</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>5.7500</maxvelocity>
+
+		<los>25.0000</los>
+		<cost resourcetype="Gold">250.0000</cost>
+		<cost resourcetype="Favor">1.0000</cost>
+
+		<armor type="Hack" value="0.1000"></armor>
+		<armor type="Pierce" value="0.7000"></armor>
+		<armor type="Crush" value="0.2000"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeMythicMythUnit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeMythUnitNotTitan</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeFreezableMythUnit</unittype>
+		<unittype>LogicalTypeAgressiveNatureUnit</unittype>
+		<unittype>LogicalTypeMythUnitNotFlying</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<bloodgroupoverride>noblood</bloodgroupoverride>	
+
+		<flag>DependentAttack</flag>
+		<dependentunit>ArachneSupressorDrone_DefensiveTurret</dependentunit>
+		<tactics>mcmt_arachne_drone_supressor.tactics</tactics>
+		<protoaction>
+			<name>JumpAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Hack">1.000000</damage>
+			<damagebonus type="HumanSoldier">999.00000</damagebonus>
+			<damagebonus type="LogicalTypeVillagerNotHero">999.000000</damagebonus>
+			<maxrange>16.000000</maxrange>
+			<perfectaccuracy>1</perfectaccuracy>
+			<homingballistics>1</homingballistics>
+		</protoaction>
+			<protoaction>
+			<name>RangedAttack</name>
+			<rof>0.800000</rof>
+			<damage type="Pierce">2.000000</damage>
+			<maxrange>16.000000</maxrange>
+			<projectile>ProjectileBlowDart</projectile>
+			<impacteffect>effects\impacts\pierce</impacteffect>
+			<perfectaccuracy>1</perfectaccuracy>
+			<homingballistics>1</homingballistics>
+		</protoaction>
+		<protoaction>
+			<name>ChargedModify</name>
+			<type>ChargedModify</type>
+			<persistent>1</persistent>
+			<charged>
+				<activationtype>TerrainType</activationtype>
+				<terraintype>Water</terraintype>
+				<settactic>Water</settactic>
+				<duration>1.0</duration>
+				<cooldown>0.01</cooldown>
+			</charged>
+			<charged>
+				<activationtype>TerrainType</activationtype>
+				<terraintype>Land</terraintype>
+				<settactic>Land</settactic>
+				<duration>1.0</duration>
+				<cooldown>0.01</cooldown>
+			</charged>
+		</protoaction>
+	</unit>
+
+	<unit name="HoverTank">
+		<displaynameid>STR_UNIT_HOVER_TANK_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_HOVER_TANK_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_HOVER_TANK_SR</shortrollovertextid>
+		
+		<icon>resources\atlantean\player_color\units\fire_siphon_icon.png</icon>
+		<animfile>mcmt\units\futuretech\hover_tank.xml</animfile>
+		<soundsetfile>atlantean\vo\fire_siphon\fire_siphon.xml</soundsetfile>
+		<obstructionradiusx>1.4900</obstructionradiusx>
+		<obstructionradiusz>1.4900</obstructionradiusz>
+		<selectionradiusx>2.2500</selectionradiusx>
+		<selectionradiusz>2.2500</selectionradiusz>
+		<impacttype>Metal</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>3.0000</turnrate>
+		<initialhitpoints>400.0000</initialhitpoints>
+		<maxhitpoints>400.0000</maxhitpoints>
+		<trainpoints>19.0000</trainpoints>
+		<weightclass>8</weightclass>
+		<populationcount>5</populationcount>
+		<maxvelocity>2.9000</maxvelocity>
+		<los>22.0000</los>
+		<bloodgroupoverride>noblood</bloodgroupoverride>
+		<cost resourcetype="Gold">425.0000</cost>
+		<cost resourcetype="Favor">5.0000</cost>
+		<armor type="Hack" value="0.2500"></armor>
+		<armor type="Pierce" value="0.9000"></armor>
+		<armor type="Crush" value="0.8500"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeAutoAttackFocusBuildings</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>AbstractSiegeWeapon</unittype>
+		<unittype>SiegeLineUpgraded</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<flag>OrientUnitWithGround</flag>
+		<flag>RotateInPlace</flag>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>ConstrainOrientation</flag>
+		<flag>DisplayMinimumRange</flag>
+		<flag>DisplayRange</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>3.500000</rof>
+			<damage type="Pierce">50.000000</damage>
+			<damage type="Crush">160.000000</damage>
+			<damagebonus type="HumanSoldier">0.300000</damagebonus>
+			<maxrange>22.000000</maxrange>
+			<projectile>ProjectileIcarusBomb</projectile>
+			<impacteffect>effects\impacts\fireball</impacteffect>
+		</protoaction>
+	</unit>
+
 	<!-- Greek Special Units-->
 	 <unit name="AchillesDismounted">	
 		<displaynameid>STR_UNIT_ACHILLES_NAME</displaynameid>
@@ -29583,93 +29877,7 @@
 	 <unit name="ContariusKnight" mergeMode="add"></unit>
 	 <unit name="ContariusHero" mergeMode="add"></unit>
 -->
-	 <unit name="MineralLoader">	
-		<displaynameid>STR_UNIT_MININGLOADER_NAME</displaynameid>
-		<rollovertextid>STR_UNIT_MININGLOADER_LR</rollovertextid>
-		<shortrollovertextid>STR_UNIT_MININGLOADER_SR</shortrollovertextid>	
-		<icon>resources\chinese\player_color\units\caravan_chinese_icon.png</icon>
-		<animfile>chinese\units\economic\caravan_chinese\caravan_chinese.xml</animfile>
-		<soundsetfile>chinese\vo\caravan_chinese\caravan_chinese.xml</soundsetfile>
-		
-		<obstructionradiusx>0.7400</obstructionradiusx>
-		<obstructionradiusz>0.7400</obstructionradiusz>
-		<impacttype>Armoured</impacttype>
-		<unitaitype>Civilian</unitaitype>
-		<movementtype>land</movementtype>
-		<turnrate>18.0000</turnrate>
-		<initialhitpoints>600.0000</initialhitpoints>
-		<maxhitpoints>600.0000</maxhitpoints>
-
-		<trainpoints>15</trainpoints>
-		<weightclass>12</weightclass>
-		<populationcount>2</populationcount>
-		<maxvelocity>2.0000</maxvelocity>
-		<los>18.0000</los>
-
-		<cost resourcetype="Gold">2000.0000</cost>
-		<cost resourcetype="Favor">1.0000</cost>
-		<armor type="Hack" value="0.6000"></armor>
-		<armor type="Pierce" value="0.9600"></armor>
-		<armor type="Crush" value="0.5000"></armor>
-		<carrycapacity resourcetype="Gold">50.0000</carrycapacity>
-
-		<unittype>LogicalTypeMinimapFilterEconomic</unittype>
-		<unittype>LogicalTypeEasySelectAvoid</unittype>
-		<unittype>LogicalTypeNeededForVictory</unittype>
-		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
-		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
-		<unittype>LogicalTypeGarrisonInShips</unittype>
-		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
-		<unittype>LogicalTypeVillagersAttack</unittype>
-		<unittype>LogicalTypeHandUnitsAttack</unittype>
-		<unittype>LogicalTypeRangedUnitsAttack</unittype>
-		<unittype>LogicalTypeAffectedByRestoration</unittype>
-		<unittype>LogicalTypeHealed</unittype>
-		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
-		<unittype>Unit</unittype>
-		<unittype>UnitClass</unittype>
-		<unittype>EconomicUnit</unittype>
-		<unittype>CountsTowardEconomicScore</unittype>
-		<unittype>ValidIdleVillager</unittype>
-		<unittype>LogicalTypeEarthquakeAttack</unittype>
-		<unittype>LogicalTypeValidMeteorTarget</unittype>
-		<unittype>LogicalTypeValidTornadoAttack</unittype>
-		<unittype>LogicalTypeValidSpyTarget</unittype>
-		<unittype>LogicalTypeValidFrostTarget</unittype>
-		<unittype>EconomicUpgraded</unittype>
-		<unittype>LogicalTypeValidShockwaveTarget</unittype>
-		<unittype>LogicalTypeValidTraitorTarget</unittype>
-				
-		<flag>ForceSecondPage</flag>
-
-		<flag>CollidesWithProjectiles</flag>
-		<flag>CorpseDecays</flag>
-		<flag>DontRotateObstruction</flag>
-		<flag>ObscuredByUnits</flag>
-		<flag>CommonCommands</flag>
-		<flag>AutoTrainable</flag>
-		<flag>NoIdleActions</flag>
-		<flag>CreateUnitGroupAutomatically</flag>
-		<flag>NonAutoFormedUnit</flag>
-
-		<dependentunit>WarLoader_DefensiveTurret</dependentunit>
-		
-		<tactics>mcmt_gathergold.tactics</tactics>
-		<protoaction>
-			<name>Gather</name>
-			<dropsitegathering>1</dropsitegathering>
-			<rate type="GoldResource">0.800000</rate>
-			<maxrange>1.5</maxrange>
-		</protoaction>
-		<protoaction>
-			<name>HeroGlowOnSelf</name>
-			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
-			<persistent>1</persistent>
-			<modelattachment>vfx\glow\hero_glow_large.xml</modelattachment>
-			<modelattachmentbone>Spine</modelattachmentbone>
-		</protoaction>
-	</unit>
+	 
 	<!-- Atlantean Special Naval Units -->
 	<unit name="RaftAtlanteanArcher">
 		<displaynameid>STR_UNIT_RAFTARCHER_ATLANTEAN_NAME</displaynameid>
@@ -35233,6 +35441,66 @@
 			<damagebonus type="MythUnit">5.00000</damagebonus>
 			<maxrange>20.000000</maxrange>
 			<projectile>ProjectileDraugrArrow</projectile>
+			<numberprojectiles>1</numberprojectiles>
+			<displayednumberprojectiles>1</displayednumberprojectiles>
+			<autoretarget>1</autoretarget>
+			<canattackground>1</canattackground>
+			<impacteffect>effects\impacts\onmyoji</impacteffect>
+		</protoaction>
+		<protoaction>
+			<name>Drone</name>
+			<type>Drone</type>
+			<persistent>1</persistent>
+		</protoaction>
+	</unit>
+
+	<unit name="ArachneSupressorDrone_DefensiveTurret">
+		<displaynameid>STR_HOVER_TRANSPORT_DEFENSIVETURRET_NAME</displaynameid>
+		<animfile>mcmt\units\dependants\chargedattack_dependant.xml</animfile>
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>air</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>100.0000</initialhitpoints>
+		<maxhitpoints>100.0000</maxhitpoints>
+		<maxvelocity>0</maxvelocity>
+		<los>18.0000</los>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>AbstractWarship</unittype>
+		<unittype>LogicalTypeMythicMythUnit</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>NonCollideable</flag>
+		<flag>NoHPBar</flag>
+		<flag>Invulnerable</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>DependentAttach</flag>
+		<flag>NoTieToGround</flag>
+		<flag>DirectProjectile</flag>
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.500000</rof>
+			<damage type="Pierce">8.000000</damage>
+			<damage type="Crush">2.000000</damage>
+			<damagebonus type="MythUnit">2.00000</damagebonus>
+			<maxrange>16.000000</maxrange>
+			<projectile>ProjectilePriestPharaoh</projectile>
 			<numberprojectiles>1</numberprojectiles>
 			<displayednumberprojectiles>1</displayednumberprojectiles>
 			<autoretarget>1</autoretarget>

@@ -336,6 +336,11 @@ ID = "STR_UNIT_MCMT_WORLDBREAKER_NAME"   ;   Str = "Worldbreaker"
 ID = "STR_UNIT_MCMT_WORLDBREAKER_SR"   ;   Str = "Worldbreaker"
 ID = "STR_UNIT_MCMT_WORLDBREAKER_LR"   ;   Str = "Superunit of the Rising Sun Empire that Operates as Mobile Dock of Onigami and Naval Fortress. Equipped with Anti-Air, Anti-Army and Anti-Titan Cannons. Bearer of Tsunai Generator Superweapon"
 
+// WAR ARMORY UNITS
+ID = "STR_UNIT_HOVER_TANK_NAME"   ;   Str = "Hover Tank"
+ID = "STR_UNIT_HOVER_TANK_SR"   ;   Str = "Floating Artillery Unit"
+ID = "STR_UNIT_HOVER_TANK_LR"   ;   Str = "Hover Tank is a floating artillery unit that can be effective against armored units and structures. The unit can transverse both land and seas as a result of Oceanos' Tide Blessing applied on Automaton Propulsion Engines by Prof. Daedalus"
+
 // DEPLOYABLE UNITS
 ID = "STR_UNIT_NUKECANNON_NAME"   ;   Str = "Nuke Cannon"
 ID = "STR_UNIT_NUKECANNON_DEPLOYED_NAME"   ;   Str = "Nuke Cannon (Deployed)"
@@ -1005,6 +1010,10 @@ ID = "STR_UNIT_ARACHNE_LEAPER_VENOMOUS_LR"   ;   Str = "Arachne variant that lea
 ID = "STR_UNIT_ARACHNE_CHAOS_DRONE_NAME"   ;   Str = "Arachne Chaos Drone"
 ID = "STR_UNIT_ARACHNE_CHAOS_DRONE_SR"   ;   Str = "Leaps on Humans and sabotages Siege Weapons"
 ID = "STR_UNIT_ARACHNE_CHAOS_DRONE_LR"   ;   Str = "Arachne variant that is effective in espionage and sabotage"
+
+ID = "STR_UNIT_ARACHNE_SUPRESSOR_DRONE_NAME"   ;   Str = "Arachne Suppressor Drone"
+ID = "STR_UNIT_ARACHNE_SUPRESSOR_DRONE_SR"   ;   Str = "Leaps on Humans and rains a builletstorm on whoever attempts to retreat"
+ID = "STR_UNIT_ARACHNE_SUPRESSOR_DRONE_LR"   ;   Str = "Arachne variant that is effective in espionage and supression"
 
 // JAPANESE SPECIAL TECHS
 ID = "STR_TECH_MIKO_ORACLE_UPGRADE_NAME"   ;   Str = "Oracles of Shinto"
