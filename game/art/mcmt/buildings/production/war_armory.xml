@@ -1,0 +1,10 @@
+<animfile validation="strict">
+    <attachment>ConstructionProps<include>shared\buildings\construction\construction_large_props.xml</include></attachment>
+    <component>ModelComp
+        <logic type="BuildingCompletion"><p0><assetreference type="TMComposite"><file>shared\buildings\construction\construction_large_a</file></assetreference><attach name="ConstructionProps" attachpoint="bonethatdoesntexist"></attach></p0><p33><assetreference type="TMComposite"><file>shared\buildings\construction\construction_large_b</file></assetreference><attach name="ConstructionProps" attachpoint="bonethatdoesntexist"></attach></p33><p66><assetreference type="TMComposite"><file>egyptian\buildings\siege_works\siege_works_const</file></assetreference></p66>
+            <p100><assetreference type="TMComposite"><file>spc\buildings\underworld_passage_spc\underworld_passage_spc_g_entrance</file></assetreference></p100>
+        </logic>
+    </component>
+	
+	<anim>Idle<component>ModelComp</component></anim>
+</animfile>

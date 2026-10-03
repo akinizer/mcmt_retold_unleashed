@@ -3,13 +3,6 @@
 ==============================================================================
 
 === NEW UNIT ===
-chaosdrone
-- jumpattackunit: instakill unit excludetarget mythunit, navalunit
-- jumpattackvehicle: selfdestructattack, corruption, spawn chaosdrone, 2 min
-- jumpattackship: selfdestructattack, corruption, 2 min
-- spider model, mini
-- amphibious,fast,medium armor, low hp
-
 shaman
 - immune to convert, traitor
 - handattack: modelcomp lion, bonusdamage vs humansoldier, vfxbleed areadamage, high rof

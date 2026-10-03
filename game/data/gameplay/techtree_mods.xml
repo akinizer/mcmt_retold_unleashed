@@ -1,75 +1,4 @@
 <techtreemods>
-
-  <tech name="MCMT_DEBUGS" mergeMode="add">
-      <status>ACTIVE</status>
-      <delay>0.5000</delay>
-      <flag>Volatile</flag>
-      <flag>Persistent</flag>
-      <flag>HideFromDialogs</flag>
-      <effects> <!--
-         DEBUGGER Unit Testing :D
-        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
-          <target type="ProtoUnit">ArachneLeaperSuspender</target></effect>
-        <effect type="CreateUnit" unit="ArachneLeaperSuspender" generator="TownCenter">
-          <pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
-            <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>       
-
-        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
-          <target type="ProtoUnit">ArachneLeaperVenomous</target></effect>
-        <effect type="CreateUnit" unit="ArachneLeaperVenomous" generator="TownCenter">
-          <pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
-            <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>       
-
-        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
-          <target type="ProtoUnit">ArachneGolem</target></effect>
-        <effect type="CreateUnit" unit="ArachneGolem" generator="TownCenter">
-          <pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
-            <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>       
-        
-        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
-          <target type="ProtoUnit">ArachneLeaperSuspender</target></effect>
-        <effect type="CreateUnit" unit="ArachneLeaperSuspender" generator="TownCenter">
-          <pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
-            <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
-    
-        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
-          <target type="ProtoUnit">Barbarian</target></effect>
-        <effect type="CreateUnit" unit="Barbarian" generator="TownCenter">
-          <pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
-            <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
-
-           <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
-          <target type="ProtoUnit">ProdromosKnight</target></effect>
-        <effect type="CreateUnit" unit="ProdromosKnight" generator="TownCenter">
-          <pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
-            <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
-
-        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
-          <target type="ProtoUnit">HippeusKnight</target></effect>
-        <effect type="CreateUnit" unit="HippeusKnight" generator="TownCenter">
-          <pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
-            <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
-
-     
-
-        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
-          <target type="ProtoUnit">HetairosKnight</target></effect>
-        <effect type="CreateUnit" unit="HetairosKnight" generator="TownCenter">
-          <pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
-            <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
-
-         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
-          <target type="ProtoUnit">Oiran</target></effect>
-        <effect type="CreateUnit" unit="Oiran" generator="TownCenter">
-          <pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
-            <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>-->
-      </effects>
-    </tech>  
-
-    
-
-    <!-- =========================================== UNIT TESTING END =========================================== -->
-
     <!-- CIVILIZATION BLESSINGS: Base stats and Accels, Special Techs -->
     <tech name="ArchaicAgeAtlantean">
       <effects>
@@ -2225,6 +2154,7 @@
       <effects>
         <!-- General Special Units -->
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">PansChosen</target></effect>        
+        
         <!-- Greek Special Units -->
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">PegasusGroundedMessenger</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Enceladus</target></effect>        
@@ -2252,7 +2182,9 @@
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">TerracottaReclaimer</target></effect>	
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">TerracottaSuppressor</target></effect>	
         <!-- Japanese Special Units -->
-        
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">ArachneChaosDrone</target></effect>
+        <effect type="Data" amount="0.50" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">ArachneChaosDrone</target></effect>
+
         <!-- LandLord Special Units -->
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Bastion</target></effect>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">TempleOfPrimordials</target></effect>
@@ -2464,7 +2396,8 @@
 
         <!-- S.V.A Special Units -->
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">OilRig</target></effect>
-        
+        <effect type="TechStatus" status="active" mergeMode="add">OilrigPackup</effect>
+
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
           <target type="ProtoUnit">Desolator</target></effect>	
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
@@ -3137,6 +3070,35 @@
 				  <target type="ProtoUnit">HesperidesTree</target></effect>
       </effects>
     </tech>
+
+    <tech name="ActivateEffectsWarArmory" mergeMode="add">
+      <status>ACTIVE</status>
+      <delay>0.5000</delay>
+      <flag>Volatile</flag>
+      <flag>Persistent</flag>
+      <flag>HideAllNotifications</flag>
+      <flag>HideFromDialogs</flag>
+      <effects>
+        <effect type="TechStatus" status="obtainable">EffectsWarArmory</effect>
+      </effects>
+    </tech>
+    <tech name="EffectsWarArmory" mergeMode="add">
+      <status>UNOBTAINABLE</status>
+      <delay>0.5000</delay>
+      <flag>Volatile</flag>
+      <flag>Persistent</flag>
+      <flag>HideAllNotifications</flag>
+      <flag>HideFromDialogs</flag>
+      <prereqs>
+        <techstatus status="Active">ActivateEffectsWarArmory</techstatus>
+        <typecount unit="AbstractArmory" count="1.00" state="aliveState" operator="gte"></typecount>
+      </prereqs>
+      <effects>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">WarArmory</target></effect>
+      </effects>
+    </tech>
+    
     <!-- Chinese Special Techs -->
      
      <!--Chinese: Baolei Commands-->  
@@ -13026,7 +12988,7 @@
         <target type="ProtoUnit">Wonder</target></effect>
     </effects>
   </tech> 
-fo
+
   <!-- RESEARCHABLE COMMANDS-->
   <tech name="WallConnectorToArcher" type="Normal">
 		<cost resourcetype="Wood">150.0000</cost>
@@ -13052,4 +13014,11 @@ fo
 		<flag>HideAllNotifications</flag>
 		<techtype>ResearchableCommand</techtype>
 	</tech>
+
+  <tech name="OilrigPackup" type="Normal">
+    <researchpoints>25.0000</researchpoints>
+    <status>UNOBTAINABLE</status>
+    <flag>HideAllNotifications</flag>
+    <techtype>ResearchableCommand</techtype>
+  </tech>
 </techtreemods>

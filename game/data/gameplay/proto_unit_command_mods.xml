@@ -29,4 +29,17 @@
 		<unitcommand></unitcommand>
 		<researchonselected></researchonselected>
 	</protounitcommand>
+    <protounitcommand>
+		<name>OilrigPackup</name>
+		<icon>resources\tech\arachne.jpg</icon>
+		<associatedtech>OilrigPackup</associatedtech>
+		<displaynameid>STR_BLD_OILRIGPACKED_NAME</displaynameid>
+		<rollovertextid>STR_BLD_OILRIGPACKED_LR</rollovertextid>
+		<transform></transform>
+		<unitcommand></unitcommand>
+		<researchonselected></researchonselected>
+		<reusable></reusable>
+	</protounitcommand>
+
+	
 </protounitcommandmods>

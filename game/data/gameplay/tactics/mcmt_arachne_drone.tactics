@@ -1,0 +1,47 @@
+<tactics>
+    <action>
+		<name stringid="STR_ACTION_JUMP">JumpAttack</name>
+		<type>JumpAttack</type>
+		<rate type="HumanSoldier">1.0</rate>
+		<rate type="LogicalTypeVillagerNotHero">1.0</rate>
+		<rate type="TradeUnit">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<anim>JumpAttack</anim>
+		<impacteffect>effects\impacts\crush</impacteffect>
+	</action>
+    <action>
+		<name stringid="STR_ACTION_JUMP">JumpAttackSiege</name>
+		<type>JumpAttack</type>
+		<rate type="SiegeLineUpgraded">1.0</rate>
+		<rate type="Ship">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<anim>JumpAttack</anim>
+		<impacteffect>effects\impacts\crush</impacteffect>
+	</action>
+    <action>
+		<name stringid="STR_ACTION_JUMP">SelfDestructAttack</name>
+		<type>Attack</type>
+		<rate type="SiegeLineUpgraded">1.0</rate>
+		<rate type="Ship">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<anim>HandAttack</anim>
+		<impacteffect>effects\impacts\crush</impacteffect>
+	</action>
+	<tactic>Land<abilityonly>1</abilityonly>
+        <action priority="100">JumpAttackSiege</action>
+        <action priority="90">JumpAttack</action>
+        <action priority="80">SelfDestructAttack</action>
+        <attacktype>LogicalTypeHandUnitsAttack</attacktype><autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype>
+		<walkanim>Walk</walkanim><idleanim>Idle</idleanim>
+	</tactic>
+	<tactic>Water<abilityonly>1</abilityonly>
+        <action priority="100">JumpAttackSiege</action>
+        <action priority="90">JumpAttack</action>
+        <action priority="80">SelfDestructAttack</action>
+        <attacktype>LogicalTypeHandUnitsAttack</attacktype><autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype>
+		<walkanim>WalkWater</walkanim><idleanim>IdleWater</idleanim>
+	</tactic>
+</tactics>

@@ -487,6 +487,10 @@ ID = "STR_EMB_HERMITCAMPFIRE_SR"   ;   Str = "Provides LOS and unleashes phospho
 
 ID = "STR_BLD_FIRESTORM_TRAP_NAME"   ;   Str = "Firestorm Trap"
 
+ID = "STR_BLD_SIEGE_WAR_ARMORY_NAME"   ;   Str = "War Armory"
+ID = "STR_BLD_SIEGE_WAR_ARMORY_LR"   ;   Str = "Advanced Technological Warfare Facility that utilizes finest scientists overseen by FutureTech and Prof. Daedelus. Choronos' grand scheme on World War III and creation of time machine allows technological supplies to transported into Ancient Era with the finest architectural designs of Daedalus who created the first Artifical Intelligence named Automaton. As the scientific warfare unleashes in the era of gods, civilizations start to invent their own contributions. This sudden breakthrough in the timeline pulls the attention of distant galaxies and specimens sleeping beneath the earth for eons..."
+ID = "STR_BLD_SIEGE_WAR_ARMORY_SR"   ;   Str = "Provides technological units and upgrades"
+
 // SPECIAL UTILITY STRUCTURES
 ID = "STR_BLD_SONICDISRUPTORARRAY_NAME"   ;   Str = "Sonic Disruptor Array"
 ID = "STR_BLD_SONICDISRUPTORARRAY_SR"   ;   Str = "S.D.A"
@@ -997,6 +1001,10 @@ ID = "STR_UNIT_ARACHNE_LEAPER_SUSPENDER_LR"   ;   Str = "Arachne variant that le
 ID = "STR_UNIT_ARACHNE_LEAPER_VENOMOUS_NAME"   ;   Str = "Arachne Leaper (Venomous)"
 ID = "STR_UNIT_ARACHNE_LEAPER_VENOMOUS_SR"   ;   Str = "Agile Arachne variant"
 ID = "STR_UNIT_ARACHNE_LEAPER_VENOMOUS_LR"   ;   Str = "Arachne variant that leaps and envenoms its preys"
+
+ID = "STR_UNIT_ARACHNE_CHAOS_DRONE_NAME"   ;   Str = "Arachne Chaos Drone"
+ID = "STR_UNIT_ARACHNE_CHAOS_DRONE_SR"   ;   Str = "Leaps on Humans and sabotages Siege Weapons"
+ID = "STR_UNIT_ARACHNE_CHAOS_DRONE_LR"   ;   Str = "Arachne variant that is effective in espionage and sabotage"
 
 // JAPANESE SPECIAL TECHS
 ID = "STR_TECH_MIKO_ORACLE_UPGRADE_NAME"   ;   Str = "Oracles of Shinto"

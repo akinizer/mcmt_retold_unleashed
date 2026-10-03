@@ -190,6 +190,10 @@
 	<Nereid>
 		<ability>AbilityFlyingShark<chargetimeasrof>1</chargetimeasrof></ability>
 	</Nereid>
+		<!--Atlantean Special Units-->
+	<ArachneChaosDrone>
+		<ability>PassiveAmphibious<alwaysdisabledingrid>1</alwaysdisabledingrid></ability>
+	</ArachneChaosDrone>
 		<!--Greek Special Units -->
 	<Pegasus>
 		<ability>MCMT_Descend<rof>5</rof><castonself>true</castonself><noautocast>true</noautocast></ability>

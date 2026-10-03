@@ -56,7 +56,7 @@
 * Compatibility with Campaign
 * Exotic Lore and References, Sci-Fi, Science, Mythology, History, Cyborgs and Plenty of Surprises!
 * Up-to-Date to Demeter and Japanese
-* Encampments from Kingdom Tech: Amazonians, Spartans, Athenians, Nymphs, Mountain Dwarves, Elves, Nubians & Kingdom Guards
+* Encampments from Kingdom Tech: Amazonians, Spartans, Athenians, Nymphs, Mountain Dwarves, Elves, Nubians & Kingdom Guards, War Armoy of Daedelus
 * Dismount Warfare
 * Type Superiority & Elemental Damage: Elemental Resistances & Vulnerabilities, MythUnit Resistances!
 * Myth Soldier unit type that enables certain Myth Units to benefit from Armory Techs
