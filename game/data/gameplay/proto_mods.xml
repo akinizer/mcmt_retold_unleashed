@@ -7939,16 +7939,24 @@
 			<damagebonus type="MythUnit">5.000000</damagebonus>
 		</protoaction>		
 		<protoaction>
-		  <name>ChargedHandAttack</name>
-		  <rof>3.000000</rof>
-		  <damage type="Hack">20.000000</damage>
-		  <maxrange>1.000000</maxrange>
+			<name>ChargedHandAttack</name>
+			<rof>3.000000</rof>
+			<damage type="Hack">20.000000</damage>
+			<damagearea>3.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<maxrange>1.000000</maxrange>
+			<onhiteffect type="DamageOverTime" targetunittype="Unit" duration="5.000000">
+				<damage type="Divine">5.000000</damage>
+			</onhiteffect>
+			<onhiteffect type="Attach" targetunittype="Unit" proto="VFXBleed" attachbone="spine" duration="5.000000"></onhiteffect>
+			<coneareaangle>30.000000</coneareaangle>
 		</protoaction>
 		<protoaction>
-		  <name>ChargedHandAttackBuilding</name>
-		  <rof>3.000000</rof>
-		  <damage type="Crush">50.000000</damage>
-		  <maxrange>1.000000</maxrange>
+			<name>ChargedHandAttackBuilding</name>
+			<rof>3.000000</rof>
+			<damage type="Crush">50.000000</damage>
+			<damagebonus type="AbstractWall">2.000000</damagebonus>
+			<maxrange>1.000000</maxrange>
 		</protoaction>
 		<protoaction>
 			<name>HandAttackShark</name>

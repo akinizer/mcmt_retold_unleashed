@@ -1397,8 +1397,8 @@
     - HireBuddyMakina: Makina, AoE Stun, Gore, Lifespan 5s
 - ShamanHero (ShamanCouncil):
     - HandAttack: unarmed
-    - ChargedHandAttack: anti-unit, lion transform attack
-    - ChargedHandAttackBuilding: anti-building, elephant transform attack
+    - ChargedHandAttack: anti-unit, lion transform attack, vfx bleed, cone aoe angle 30
+    - ChargedHandAttackBuilding: anti-building, elephant transform attack, bonus vs wall
     - ChargedModify: Shark Form, shark attack
     - ShamanBirdHero (DelayedTransform): Hawk Form, hover, scout
         - DelayedTransform: ShamanHero

@@ -10921,47 +10921,15 @@
 			</animinfo>
 			<animinfo>
 				<name>HandAttackLion</name>
-				<versioncount>2</versioncount>
+				<versioncount>1</versioncount>
 				<versions>
 					<version>
-						<file>aztec\units\hero\warrior_priest\anim\warrior_priest_attack_a</file>
-						<duration>1.33333</duration>
+						<file>nature\animals\land\lion\anim\lion_attack_a</file>
+						<duration>2.26667</duration>
 						<tags>
 							<tag>
 								<type>Attack</type>
-								<position>0.35000</position>
-							</tag>
-							<tag>
-								<type>particles</type>
-								<position>0.35000</position>
-								<properties>
-									<popcornfxname>objects\weapon_fx\sword_swipe_hero.pkfx</popcornfxname>
-									<bone>vfx_weapon</bone>
-									<movewithbone>1</movewithbone>
-									<stopwithanim>0</stopwithanim>
-									<adjustduration>1</adjustduration>
-								</properties>
-							</tag>
-						</tags>
-					</version>
-					<version>
-						<file>aztec\units\hero\warrior_priest\anim\warrior_priest_attack_b</file>
-						<duration>1.33333</duration>
-						<tags>
-							<tag>
-								<type>Attack</type>
-								<position>0.35000</position>
-							</tag>
-							<tag>
-								<type>particles</type>
-								<position>0.35000</position>
-								<properties>
-									<popcornfxname>objects\weapon_fx\sword_swipe_hero.pkfx</popcornfxname>
-									<bone>vfx_weapon</bone>
-									<movewithbone>1</movewithbone>
-									<stopwithanim>0</stopwithanim>
-									<adjustduration>1</adjustduration>
-								</properties>
+								<position>0.50000</position>
 							</tag>
 						</tags>
 					</version>
@@ -10969,47 +10937,15 @@
 			</animinfo>
 			<animinfo>
 				<name>HandAttackElephant</name>
-				<versioncount>2</versioncount>
+				<versioncount>1</versioncount>
 				<versions>
 					<version>
-						<file>aztec\units\hero\warrior_priest\anim\warrior_priest_attack_a</file>
+						<file>nature\animals\land\elephant\anim\elephant_attack_a</file>
 						<duration>1.33333</duration>
 						<tags>
 							<tag>
 								<type>Attack</type>
-								<position>0.35000</position>
-							</tag>
-							<tag>
-								<type>particles</type>
-								<position>0.35000</position>
-								<properties>
-									<popcornfxname>objects\weapon_fx\sword_swipe_hero.pkfx</popcornfxname>
-									<bone>vfx_weapon</bone>
-									<movewithbone>1</movewithbone>
-									<stopwithanim>0</stopwithanim>
-									<adjustduration>1</adjustduration>
-								</properties>
-							</tag>
-						</tags>
-					</version>
-					<version>
-						<file>aztec\units\hero\warrior_priest\anim\warrior_priest_attack_b</file>
-						<duration>1.33333</duration>
-						<tags>
-							<tag>
-								<type>Attack</type>
-								<position>0.35000</position>
-							</tag>
-							<tag>
-								<type>particles</type>
-								<position>0.35000</position>
-								<properties>
-									<popcornfxname>objects\weapon_fx\sword_swipe_hero.pkfx</popcornfxname>
-									<bone>vfx_weapon</bone>
-									<movewithbone>1</movewithbone>
-									<stopwithanim>0</stopwithanim>
-									<adjustduration>1</adjustduration>
-								</properties>
+								<position>0.50000</position>
 							</tag>
 						</tags>
 					</version>
@@ -11017,46 +10953,47 @@
 			</animinfo>
 			<animinfo>
 				<name>HandAttackShark</name>
-				<versioncount>2</versioncount>
+				<versioncount>1</versioncount>
 				<versions>
 					<version>
-						<file>aztec\units\hero\warrior_priest\anim\warrior_priest_attack_a</file>
-						<duration>1.33333</duration>
+						<file>atlantean\units\myth\nereid\anim\nereid_shark_attack_a</file>
+						<duration>1.00000</duration>
 						<tags>
 							<tag>
 								<type>Attack</type>
-								<position>0.35000</position>
+								<position>0.60000</position>
 							</tag>
 							<tag>
 								<type>particles</type>
-								<position>0.35000</position>
+								<position>0.53000</position>
 								<properties>
-									<popcornfxname>objects\weapon_fx\sword_swipe_hero.pkfx</popcornfxname>
+									<popcornfxname>objects\weapon_fx\swipe_generic_short_medium.pkfx</popcornfxname>
 									<bone>vfx_weapon</bone>
 									<movewithbone>1</movewithbone>
 									<stopwithanim>0</stopwithanim>
-									<adjustduration>1</adjustduration>
+									<adjustduration>0</adjustduration>
 								</properties>
 							</tag>
-						</tags>
-					</version>
-					<version>
-						<file>aztec\units\hero\warrior_priest\anim\warrior_priest_attack_b</file>
-						<duration>1.33333</duration>
-						<tags>
 							<tag>
-								<type>Attack</type>
-								<position>0.35000</position>
+								<type>particles</type>
+								<position>0.65200</position>
+								<properties>
+									<popcornfxname>water\water_splash_generic.pkfx</popcornfxname>
+									<bone>vfx_shark_nose</bone>
+									<movewithbone>0</movewithbone>
+									<stopwithanim>0</stopwithanim>
+									<adjustduration>0</adjustduration>
+								</properties>
 							</tag>
 							<tag>
 								<type>particles</type>
-								<position>0.35000</position>
+								<position>0.57300</position>
 								<properties>
-									<popcornfxname>objects\weapon_fx\sword_swipe_hero.pkfx</popcornfxname>
-									<bone>vfx_weapon</bone>
-									<movewithbone>1</movewithbone>
+									<popcornfxname>water\water_splash_generic.pkfx</popcornfxname>
+									<bone>vfx_tail</bone>
+									<movewithbone>0</movewithbone>
 									<stopwithanim>0</stopwithanim>
-									<adjustduration>1</adjustduration>
+									<adjustduration>0</adjustduration>
 								</properties>
 							</tag>
 						</tags>
@@ -11078,8 +11015,8 @@
 				<versioncount>1</versioncount>
 				<versions>
 					<version>
-						<file>aztec\units\archery\eagle_warrior\anim\eagle_warrior_idle_a</file>
-						<duration>1.96667</duration>
+						<file>atlantean\units\myth\nereid\anim\nereid_shark_idle_a</file>
+						<duration>3.00000</duration>
 					</version>
 				</versions>
 			</animinfo>
@@ -11098,8 +11035,21 @@
 				<versioncount>1</versioncount>
 				<versions>
 					<version>
-						<file>aztec\units\archery\eagle_warrior\anim\eagle_warrior_idle_b</file>
-						<duration>4.00000</duration>
+						<file>atlantean\units\myth\nereid\anim\nereid_shark_bored_a</file>
+						<duration>3.33333</duration>
+						<tags>
+							<tag>
+								<type>particles</type>
+								<position>0.80100</position>
+								<properties>
+									<popcornfxname>water\water_splash_generic.pkfx</popcornfxname>
+									<bone>vfx_shark_nose</bone>
+									<movewithbone>0</movewithbone>
+									<stopwithanim>0</stopwithanim>
+									<adjustduration>0</adjustduration>
+								</properties>
+							</tag>
+						</tags>
 					</version>
 				</versions>
 			</animinfo>
@@ -11118,8 +11068,8 @@
 				<versioncount>1</versioncount>
 				<versions>
 					<version>
-						<file>aztec\units\archery\eagle_warrior\anim\eagle_warrior_walk</file>
-						<duration>0.60000</duration>
+						<file>atlantean\units\myth\nereid\anim\nereid_shark_walk_a</file>
+						<duration>1.50000</duration>
 					</version>
 				</versions>
 			</animinfo>
