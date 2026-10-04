@@ -1,0 +1,26 @@
+<animfile validation="strict">
+	<attachment>Weapon<include>aztec\units\hero\warrior_priest\warrior_priest_knife.xml</include></attachment>
+	<attachment>Shield<include>aztec\units\attachments\shield\shield_z_b.xml</include></attachment>
+	<component>ModelComp<assetreference type="TMModel"><file>aztec\units\archery\eagle_warrior\eagle_warrior_gold</file><playercoloroverridename name="EagleWarrior"></playercoloroverridename></assetreference>
+        <attach name="Weapon" attachpoint="weapon"></attach>
+        <attach name="Shield" attachpoint="shield"></attach>
+    </component>
+	<anim>Death<assetreference type="TMAnimation"><file>aztec\units\archery\eagle_warrior\anim\eagle_warrior_death</file></assetreference><component>ModelComp</component></anim>
+	<anim>HandAttack<assetreference type="TMAnimation"><file>aztec\units\hero\warrior_priest\anim\warrior_priest_attack_a</file><tag type="Attack">0.35</tag><tag type="particles" popcornfxname="objects\weapon_fx\sword_swipe_hero.pkfx" bone="vfx_weapon" movewithbone="true" stopwithanim="false" adjustduration="true">0.350</tag></assetreference><assetreference type="TMAnimation"><file>aztec\units\hero\warrior_priest\anim\warrior_priest_attack_b</file><tag type="Attack">0.35</tag><tag type="particles" popcornfxname="objects\weapon_fx\sword_swipe_hero.pkfx" bone="vfx_weapon" movewithbone="true" stopwithanim="false" adjustduration="true">0.350</tag></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach></anim>
+	<anim>Idle<assetreference type="TMAnimation"><file>aztec\units\hero\warrior_priest\anim\warrior_priest_idle_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Bored<assetreference type="TMAnimation"><file>aztec\units\hero\warrior_priest\anim\warrior_priest_idle_bored_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Walk<assetreference type="TMAnimation"><file>aztec\units\archery\eagle_warrior\anim\eagle_warrior_walk</file></assetreference><component>ModelComp</component></anim>
+	<anim>Flail<assetreference type="TMAnimation"><file>aztec\units\archery\eagle_warrior\anim\eagle_warrior_flail</file></assetreference><component>ModelComp</component></anim>
+
+    <component>ModelCompLion<assetreference type="TMModel"><file>nature\animals\land\lion\lion</file></assetreference></component>
+    <anim>HandAttackLion<assetreference type="TMAnimation"><file>nature\animals\land\lion\anim\lion_attack_a</file><tag type="Attack">0.5</tag></assetreference><component>ModelCompLion</component></anim>
+
+    <component>ModelCompElephant<assetreference type="TMModel"><file>nature\animals\land\elephant\elephant</file></assetreference></component>
+    <anim>HandAttackElephant<assetreference type="TMAnimation"><file>nature\animals\land\elephant\anim\elephant_attack_a</file><tag type="Attack">0.5</tag></assetreference><component>ModelCompElephant</component></anim>
+	
+    <component>ModelCompShark<assetreference type="TMModel"><file>atlantean\units\myth\nereid\nereid_shark</file></assetreference></component>
+    <anim>HandAttackShark<assetreference type="TMAnimation"><file>atlantean\units\myth\nereid\anim\nereid_shark_attack_a</file><tag type="Attack">0.6</tag><tag type="particles" popcornfxname="objects\weapon_fx\swipe_generic_short_medium.pkfx" bone="vfx_weapon" movewithbone="true" stopwithanim="false" adjustduration="false">0.530</tag><tag type="particles" popcornfxname="water\water_splash_generic.pkfx" bone="vfx_shark_nose" movewithbone="false" stopwithanim="false" adjustduration="false">0.652</tag><tag type="particles" popcornfxname="water\water_splash_generic.pkfx" bone="vfx_tail" movewithbone="false" stopwithanim="false" adjustduration="false">0.573</tag></assetreference><component>ModelCompShark</component></anim>
+	<anim>BoredShark<assetreference type="TMAnimation"><file>atlantean\units\myth\nereid\anim\nereid_shark_bored_a</file><tag type="particles" popcornfxname="water\water_splash_generic.pkfx" bone="vfx_shark_nose" movewithbone="false" stopwithanim="false" adjustduration="false">0.801</tag></assetreference><component>ModelCompShark</component></anim>
+	<anim>WalkShark<assetreference type="TMAnimation"><file>atlantean\units\myth\nereid\anim\nereid_shark_walk_a</file></assetreference><component>ModelCompShark</component></anim>
+	<anim>IdleShark<assetreference type="TMAnimation"><file>atlantean\units\myth\nereid\anim\nereid_shark_idle_a</file></assetreference><component>ModelCompShark</component></anim>
+</animfile>

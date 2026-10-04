@@ -414,6 +414,11 @@ ID = "STR_MSG_NOAH_SPAWN"   ;   Str = "Noah has returned to teach Pharaoh a new 
 
 ID = "STR_UNIT_TUTANKHAMUN_NAME"   ;   Str = "Tutankhamun (Hero)"
 
+// SHAMAN
+ID = "STR_TECH_SHAMAN_COUNCIL_NAME"   ;   Str = "Shaman Council"
+ID = "STR_TECH_SHAMAN_COUNCIL_LR"   ;   Str = "Warning: This overdriver activator will summon Shaman Council of Eagle Warriors and the Shaman Hero with supreme transformation abilities"
+ID = "STR_MSG_SHAMAN_COUNCIL_SPAWN"   ;   Str = "A new Shaman Council has arrived from distant lands!"
+
 // ORPHIC
 ID = "STR_UNIT_ORPHIC_EGG_NAME"   ;   Str = "Orphic Egg"
 ID = "STR_UNIT_ORPHIC_EGG_SR"   ;   Str = "Cosmic Egg of Cosmos"
@@ -1059,6 +1064,10 @@ ID = "STR_BLD_BATTLEMASTER_ABILITY"   ;   Str = "Hire Buddy: Makina"
 ID = "STR_UNIT_MAKINA_NAME"   ;   Str = "Makina (Hero)"
 ID = "STR_UNIT_MAKINA_SR"   ;   Str = "Adventurer from Distant Lands"
 ID = "STR_UNIT_MAKINA_LR"   ;   Str = "Battlemaster's fate crosses path with a traveler and hires it for stun and gore attacks in a short duration"
+
+ID = "STR_UNIT_SHAMAN_HERO_NAME"   ;   Str = "Shaman (Hero)"
+ID = "STR_UNIT_SHAMAN_HERO_SR"   ;   Str = "Hero from Distant Lands"
+ID = "STR_UNIT_SHAMAN_HERO_LR"   ;   Str = "Ancient spiritual leader with powerful abilities"
 
 // CHINESE SPECIAL TECHS
 ID = "STR_TECH_LEVY_TERRACOTTASOLDIERS_NAME"   ;   Str = "Levy Terracotta Soldiers"

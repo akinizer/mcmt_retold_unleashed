@@ -1395,6 +1395,13 @@
 - BattleMaster: Elite HumanSoldier, Enabled in MythicAge, Trained at NoblesHut, Available to MythicAgeHuitzi
     - Counter-Hero, Counter-HumanSoldier, Lifesteal, HarvestOfSouls, Buildlimit 3
     - HireBuddyMakina: Makina, AoE Stun, Gore, Lifespan 5s
+- ShamanHero (ShamanCouncil):
+    - HandAttack: unarmed
+    - ChargedHandAttack: anti-unit, lion transform attack
+    - ChargedHandAttackBuilding: anti-building, elephant transform attack
+    - ChargedModify: Shark Form, shark attack
+    - ShamanBirdHero (DelayedTransform): Hawk Form, hover, scout
+        - DelayedTransform: ShamanHero
 
 * special buildings
 - WallConnectorArcher,WallConnectorCrusher,WallConnectorCharger:

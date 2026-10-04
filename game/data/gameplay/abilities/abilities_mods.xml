@@ -439,6 +439,12 @@
 	<BattleMaster>
 		<ability>AbilityChargedSpawnBattlemaster<notcastable>true</notcastable><noautocast>true</noautocast><bindtochargeaction>true</bindtochargeaction></ability>
 	</BattleMaster>
+	<ShamanHero>
+		<ability>MCMT_AbstractUnitTransform<rof>40</rof><castonself>true</castonself><noautocast>true</noautocast></ability>
+	</ShamanHero>
+	<ShamanBirdHero>
+		<ability>MCMT_AbstractUnitTransform<rof>40</rof><castonself>true</castonself><noautocast>true</noautocast></ability>
+	</ShamanBirdHero>
 		<!--Aztec-Military-->
 	<QuimichinSpy>
 		<ability>AbilityTrackerDevice<tech>ArchaicAgeAztec</tech><chargetimeasrof>1</chargetimeasrof><noautocast>true</noautocast></ability>

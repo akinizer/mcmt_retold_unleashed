@@ -1,0 +1,72 @@
+<tactics>
+	<action>
+		<name stringid="STR_ACTION_HAND">HandAttack</name>
+		<type>Attack</type>
+		<rate type="All">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<forceareaattacktarget>1</forceareaattacktarget>
+		<anim>HandAttack</anim>
+		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+		<impacteffect>effects\impacts\hack</impacteffect>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_CHARGE_HAND">ChargedHandAttack</name>
+		<type>Attack</type>
+		<rate type="Unit">1.0</rate>
+		<attackaction>1</attackaction>
+		<chargeaction>1</chargeaction>
+		<handlogic>1</handlogic>
+		<anim>HandAttackLion</anim>
+		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+		<impacteffect>effects\impacts\hack</impacteffect>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_CHARGE_HAND">ChargedHandAttackBuilding</name>
+		<type>Attack</type>
+		<rate type="Building">1.0</rate>
+		<attackaction>1</attackaction>
+		<auxchargeaction>1</auxchargeaction>
+		<handlogic>1</handlogic>
+		<anim>HandAttackElephant</anim>
+		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+		<impacteffect>effects\impacts\crush</impacteffect>
+	</action>
+    <action>
+		<name stringid="STR_ACTION_HAND">HandAttackShark</name>
+		<type>Attack</type>
+		<rate type="All">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<forceareaattacktarget>1</forceareaattacktarget>
+		<anim>HandAttackShark</anim>
+		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+		<impacteffect>effects\impacts\hack</impacteffect>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_DEVOTE">DevoteMinor</name>
+		<active>0</active>
+		<type>DevoteMinor</type>
+		<maxrange>0.2</maxrange>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_DEVOTE">DevoteMajor</name>
+		<type>DevoteMajor</type>
+		<maxrange>0.2</maxrange>
+	</action>
+	<tactic>Land
+        <action priority="100">ChargedHandAttack</action>
+	    <action priority="90">ChargedHandAttackBuilding</action>
+	    <action priority="80">HandAttack</action>
+        <action>DevoteMinor</action>
+        <action>DevoteMajor</action>
+        <attacktype>LogicalTypeHandUnitsAttack</attacktype><autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype>
+    </tactic>
+	<tactic>Water
+        <action priority="100">HandAttackShark</action>
+        <action>DevoteMinor</action>
+        <action>DevoteMajor</action>
+        <attacktype>LogicalTypeHandUnitsAttack</attacktype><autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype>
+        <walkanim>WalkShark</walkanim><idleanim>IdleShark</idleanim><boredanim>BoredShark</boredanim>
+    </tactic>
+</tactics>

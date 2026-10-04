@@ -7857,6 +7857,247 @@
 	</unit>
 
 	<!-- Aztec Special Units -->
+	<unit name="ShamanHero">
+		<displaynameid>STR_UNIT_SHAMAN_HERO_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_SHAMAN_HERO_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_SHAMAN_HERO_SR</shortrollovertextid>
+
+		<icon>resources\aztec\player_color\units\eagle_warrior_icon.png</icon>
+		<animfile>mcmt\units\aztec\shaman.xml</animfile>
+		<soundsetfile>aztec\vo\eaglewarrior\eaglewarrior.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>amphibious</movementtype>
+		<flag>TieToWaterSurface</flag>
+
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>390.0000</initialhitpoints>
+		<maxhitpoints>390.0000</maxhitpoints>
+		<trainpoints>21.0000</trainpoints>
+		<weightclass>4</weightclass>
+		<populationcount>3</populationcount>
+		<maxvelocity>5.0000</maxvelocity>
+		<los>20.0000</los>
+		<cost resourcetype="Wood">180.0000</cost>
+		<cost resourcetype="Gold">245.0000</cost>
+		<armor type="Hack" value="0.6000"></armor>
+		<armor type="Pierce" value="0.7000"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>Unit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>Hero</unittype>
+		<unittype>MajorHero</unittype>
+		<unittype>HeroShadowUpgraded</unittype>
+		
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeAffectedBySunRay</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+
+		<rechargetime>25.0000</rechargetime>
+		<auxrechargetime>25.0000</auxrechargetime>
+		
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>mcmt_shamanhero.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.500000</rof>
+			<damage type="Hack">22.000000</damage>
+			<damagebonus type="MythUnit">5.000000</damagebonus>
+		</protoaction>		
+		<protoaction>
+		  <name>ChargedHandAttack</name>
+		  <rof>3.000000</rof>
+		  <damage type="Hack">20.000000</damage>
+		  <maxrange>1.000000</maxrange>
+		</protoaction>
+		<protoaction>
+		  <name>ChargedHandAttackBuilding</name>
+		  <rof>3.000000</rof>
+		  <damage type="Crush">50.000000</damage>
+		  <maxrange>1.000000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>HandAttackShark</name>
+			<rof>1.000000</rof>
+			<damage type="Hack">25.000000</damage>
+			<damagebonus type="Ship">2.000000</damagebonus>
+			<damagebonus type="MythUnit">5.000000</damagebonus>
+			<maxrange>1.000000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>DelayedTransform</name>			
+    		<type>DelayedTransform</type>
+			<modifyduration>2500</modifyduration>
+			<modifyprotoid>ShamanBirdHero</modifyprotoid>
+		</protoaction>
+		<protoaction>
+			<name>ChargedModify</name>
+			<type>ChargedModify</type>
+			<persistent>1</persistent>
+			<charged>
+				<activationtype>TerrainType</activationtype>
+				<terraintype>Water</terraintype>
+				<settactic>Water</settactic>
+				<duration>1.0</duration>
+				<cooldown>0.01</cooldown>
+			</charged>
+			<charged>
+				<activationtype>TerrainType</activationtype>
+				<terraintype>Land</terraintype>
+				<settactic>Land</settactic>
+				<duration>1.0</duration>
+				<cooldown>0.01</cooldown>
+			</charged>
+		</protoaction>
+		<protoaction>
+			<name>DevoteMajor</name>
+			<devotiontime>10.000000</devotiontime>
+			<modelattachment>vfx\glow\appearance.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		</protoaction>
+		<protoaction>
+			<name>HeroRingOnSelf</name>
+			<type>Modify</type>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
+		</protoaction>
+		<protoaction>
+			<name>HeroGlowOnSelf</name>
+			<type>Modify</type>
+			<modifyselfonly>1</modifyselfonly>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\hero_glow.xml</modelattachment>
+			<modelattachmentbone>Spine</modelattachmentbone>
+		</protoaction>
+	</unit>
+	<unit name="ShamanBirdHero">
+		<displaynameid>STR_UNIT_SHAMAN_HERO_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_SHAMAN_HERO_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_SHAMAN_HERO_SR</shortrollovertextid>
+
+		<icon>resources\aztec\player_color\units\eagle_warrior_icon.png</icon>
+		<animfile>nature\animals\flying\hawk\hawk.xml</animfile>
+		<soundsetfile>aztec\vo\eaglewarrior\eaglewarrior.xml</soundsetfile>
+		
+		<obstructionradiusx>0.9900</obstructionradiusx>
+		<obstructionradiusz>0.9900</obstructionradiusz>
+		<impacttype>Unarmoured</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>amphibious</movementtype>
+		<flag>TieToWaterSurface</flag>
+
+		<turnrate>18.0000</turnrate>
+		<heighthitpointbaroffset>1.00</heighthitpointbaroffset>
+		<initialhitpoints>390.0000</initialhitpoints>
+		<maxhitpoints>390.0000</maxhitpoints>
+		<trainpoints>21.0000</trainpoints>
+		<populationcount>3</populationcount>
+		<maxvelocity>6.0000</maxvelocity>
+		<los>26.0000</los>
+		<cost resourcetype="Wood">180.0000</cost>
+		<cost resourcetype="Gold">245.0000</cost>
+		<armor type="Hack" value="0.6000"></armor>
+		<armor type="Pierce" value="0.7000"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeHeroicMythUnit</unittype>
+		<unittype>Unit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>Hero</unittype>
+		<unittype>MajorHero</unittype>
+		<unittype>HeroShadowUpgraded</unittype>
+		<unittype>AbstractScout</unittype>
+
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeAffectedBySunRay</unittype>
+
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<command row="3" column="0">Stop</command>
+		<command row="3" column="3">Patrol</command>
+		<command row="3" column="4">AttackMove</command>
+		<command row="3" column="5">Delete</command>
+		<tactics>default.tactics</tactics>
+		<protoaction>
+			<name>DelayedTransform</name>			
+    		<type>DelayedTransform</type>
+			<modifyduration>2500</modifyduration>
+			<modifyprotoid>ShamanHero</modifyprotoid>
+		</protoaction>
+		<protoaction>
+			<name>HeroRingOnSelf</name>
+			<type>Modify</type>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
+		</protoaction>
+		<protoaction>
+			<name>HeroGlowOnSelf</name>
+			<type>Modify</type>
+			<modifyselfonly>1</modifyselfonly>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\hero_glow.xml</modelattachment>
+			<modelattachmentbone>Spine</modelattachmentbone>
+		</protoaction>
+	</unit>
+
 	<unit name="BattleMaster">
 		<displaynameid>STR_BLD_BATTLEMASTER_NAME</displaynameid>
 		<rollovertextid>STR_BLD_BATTLEMASTER_LR</rollovertextid>
@@ -10014,6 +10255,7 @@
 		<tech row="2" column="1">MCMT_ArchitectsOfMarley</tech>
 		<tech row="3" column="2">MCMT_SpecialService</tech>
 		<tech row="3" column="3">MCMT_EgyptianRenovation</tech>
+		<tech row="3" column="3">MCMT_ShamanCouncil</tech>
 	</unit>
 	<unit name="CitadelCenter">
 		<unittype>AbstractFortress</unittype>

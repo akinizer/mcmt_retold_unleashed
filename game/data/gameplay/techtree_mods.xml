@@ -2569,6 +2569,11 @@
       </effects>
     </tech>
 
+    <tech name="ArchaicAgeAztec">		
+	  	<effects>
+        <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_ShamanCouncil</effect>
+      </effects>
+    </tech>
      <!-- MCMT SECTION FOR SPECIAL RESEARCHES AND ACCELS -->
 
     <tech name="MCMT_Researches" mergeMode="add">
@@ -3832,6 +3837,43 @@
         <target type="ProtoUnit">Noah</target></effect>
 		</effects>		
 	</tech>
+
+  <!---->
+  <tech name="MCMT_ShamanCouncil">
+    <displaynameid>STR_TECH_SHAMAN_COUNCIL_NAME</displaynameid>
+    <rollovertextid>STR_TECH_SHAMAN_COUNCIL_LR</rollovertextid>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\tech\activate_tech.jpg</icon>
+    <researchpoints>1.0000</researchpoints>
+    <cost resourcetype="Favor">815.0000</cost>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <prereqs><techstatus status="Active">ArchaicAgeAztec</techstatus></prereqs>
+    <effects>
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">ShamanHero</target></effect>
+      <effect type="TechStatus" status="obtainable">MCMT_Shaman_Respawn</effect>
+    </effects>
+  </tech>
+
+  <tech name="MCMT_Shaman_Respawn">
+    <status>UNOBTAINABLE</status>
+    <delay>300.0000</delay>
+    <flag>Volatile</flag>
+    <flag>Persistent</flag>
+    <flag>HideFromDialogs</flag>
+    <prereqs>
+      <techstatus status="Active">MCMT_ShamanCouncil</techstatus>
+      <typecount unit="AbstractTownCenter" count="0.00" state="aliveState" operator="gt"></typecount>
+      <typecount unit="ShamanHero" count="1.00" state="aliveState" operator="lt"></typecount>
+    </prereqs>
+    <effects>
+      <effect type="CreateUnit" unit="ShamanHero" generator="AbstractTownCenter">
+        <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
+      <effect type="CreateUnit" unit="EagleWarrior" generator="AbstractTownCenter">
+        <pattern type="Leaving" speed="0.00" radius="0.00" quantity="2.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
+      <effect type="TextOutput">STR_MSG_SHAMAN_COUNCIL_SPAWN</effect>
+    </effects>
+  </tech>
 
     <!-- TEMPLE OF PRIMORDIALS // PAGINATION TECHS -->
   <tech name="TempleOfPrimordials_ActivateTech_GodsBeasts" mergeMode="add">

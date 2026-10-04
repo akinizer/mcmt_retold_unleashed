@@ -1,18 +1,5 @@
 ==============================================================================
-==================== PRIORITY-PLANS ==========================================
-==============================================================================
-
-=== NEW UNIT ===
-shaman
-- immune to convert, traitor
-- handattack: modelcomp lion, bonusdamage vs humansoldier, vfxbleed areadamage, high rof
-- buildingattack: modelcomp rhino, hack & crush damahe, low rof
-- flight form: modelcomp hawk, scout, los+
-- water form: modelcomp shark, bonusdamage vs ship
-- anim: handattack, handattackwater, buildingattack, transform
-
-==============================================================================
-==================== REWORK-PLANS ============================================
+==================== PRIORITY-PLANS ============================================
 ==============================================================================
 
 === WEAPON MODELS
