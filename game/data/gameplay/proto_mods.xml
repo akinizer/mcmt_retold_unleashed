@@ -7931,6 +7931,7 @@
 		<flag>CommonCommands</flag>
 		<flag>MilitaryCommands</flag>
 		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>HasDefaultAttack</flag>
 		<tactics>mcmt_shamanhero.tactics</tactics>
 		<protoaction>
 			<name>HandAttack</name>
@@ -7965,6 +7966,14 @@
 			<damagebonus type="Ship">2.000000</damagebonus>
 			<damagebonus type="MythUnit">5.000000</damagebonus>
 			<maxrange>1.000000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>BeamAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Divine">87.00000</damage>
+			<maxrange>20.000000</maxrange>
+			<numberbounces>1</numberbounces>
+			<projectile>ProjectileChainLightning</projectile>
 		</protoaction>
 		<protoaction>
 			<name>DelayedTransform</name>			
@@ -8089,6 +8098,16 @@
     		<type>DelayedTransform</type>
 			<modifyduration>2500</modifyduration>
 			<modifyprotoid>ShamanHero</modifyprotoid>
+		</protoaction>
+		<protoaction>
+			<name>AutoLOS</name>
+			<type>IdleStatBonus</type>
+			<anim>Idle</anim>
+			<modifyamount>1.000000</modifyamount>
+			<modifyratecap>25.000000</modifyratecap>
+			<modifydecay>0.300000</modifydecay>
+			<modifytype>LOS</modifytype>
+			<persistent>1</persistent>
 		</protoaction>
 		<protoaction>
 			<name>HeroRingOnSelf</name>
