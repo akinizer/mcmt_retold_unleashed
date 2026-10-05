@@ -7862,7 +7862,7 @@
 		<rollovertextid>STR_UNIT_SHAMAN_HERO_LR</rollovertextid>
 		<shortrollovertextid>STR_UNIT_SHAMAN_HERO_SR</shortrollovertextid>
 
-		<icon>resources\aztec\player_color\units\eagle_warrior_icon.png</icon>
+		<icon>resources\tech\shaman.png</icon>
 		<animfile>mcmt\units\aztec\shaman.xml</animfile>
 		<soundsetfile>aztec\vo\eaglewarrior\eaglewarrior.xml</soundsetfile>
 		<obstructionradiusx>0.4900</obstructionradiusx>
@@ -8017,7 +8017,7 @@
 		<rollovertextid>STR_UNIT_SHAMAN_HERO_LR</rollovertextid>
 		<shortrollovertextid>STR_UNIT_SHAMAN_HERO_SR</shortrollovertextid>
 
-		<icon>resources\aztec\player_color\units\eagle_warrior_icon.png</icon>
+		<icon>resources\tech\hero_eagle.png</icon>
 		<animfile>nature\animals\flying\hawk\hawk.xml</animfile>
 		<soundsetfile>aztec\vo\eaglewarrior\eaglewarrior.xml</soundsetfile>
 		
