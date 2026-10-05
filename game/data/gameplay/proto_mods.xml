@@ -8389,8 +8389,10 @@
 		<unittype>InfantryLineUpgraded</unittype>
 		<protoaction>
 			<name>HandAttack</name>
-			<onhiteffect type="Throw" targetunittype="HumanSoldier"></onhiteffect>
-			<onhiteffect type="Throw" targetunittype="Ship"></onhiteffect>
+			<onhiteffect type="Throw">
+				<target attacktype="HumanSoldier"></target>
+				<target attacktype="Ship"></target>
+			</onhiteffect>
 			<throw>1</throw>
 			<impactforcemin>300.0f</impactforcemin>
 			<impactforcemax>600.0f</impactforcemax>
