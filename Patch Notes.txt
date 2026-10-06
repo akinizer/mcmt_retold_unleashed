@@ -323,6 +323,14 @@
             - RangedAttack: gattling attack
             - DefensiveTurret: dependant, anti-unit, effective vs MythUnits 
         - HoverTank: hovering land unit, slow, anti-armor
+        - DeathTower:
+            - RangedAttack: semi-auto ProjectileBallistaShot, ProjectilePharaohPrisest (SchematicsOfAdeptusMechanikus), anit-unit
+            - BeamAttack (SchematicsOfAdeptusMechanikus) : tesla electric charge release, ProjectileLightning
+- FutureTech Special Techs:  
+        - SchematicsOfAdeptusMechanikus:
+            - HoverTank: speed+, amphibious, reflect
+            - DeathTower: Projectiile upgrade, amphibious, RangedAttack rof+
+            - Venerable Rank for both units 
 
 
 5. Norse reworks from mcmt mod and new improvements
@@ -829,6 +837,7 @@
 - LandLord build:
     - TechBuilding+
     - MageTower+
+        - model: guard tower
     - WarBunker+
         - directprojectile
     - EcoMarket+

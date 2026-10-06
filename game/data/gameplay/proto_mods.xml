@@ -11728,11 +11728,7 @@
 		<rollovertextid>STR_BLD_SENTRY_TOWER_LR</rollovertextid>
 		<shortrollovertextid>STR_BLD_SENTRY_TOWER_SR</shortrollovertextid>
 		<icon>resources\shared\static_color\buildings\sentry_tower_icon.png</icon>
-		<animfile culture="greek">greek\buildings\tower\tower.xml</animfile>
-		<animfile culture="egyptian">egyptian\buildings\tower\tower.xml</animfile>
-		<animfile culture="norse">norse\buildings\tower\tower.xml</animfile>
-		<animfile culture="atlantean">atlantean\buildings\tower\tower.xml</animfile>
-		<animfile culture="chinese">chinese\buildings\tower\tower.xml</animfile>
+		<animfile>mcmt\buildings\production\mage_tower.xml</animfile>
 		<soundsetfile>atlantean\sfx\buildings\mirror_tower.xml</soundsetfile>
 		<minimapicon>ui\minimap\minimap_hero_spc</minimapicon>
 		
@@ -12430,10 +12426,12 @@
 		<train row="0" column="0">MineralLoader</train>
 		<train row="0" column="1">ArachneChaosDrone</train>
 		<train row="0" column="2">ArachneSupressorDrone</train>
+		<train row="0" column="4">DeathTower</train>
 		<train row="0" column="5">HoverTank</train>
 		<tech row="1" column="0">ToolsOfTheTrade</tech>
 		<tech row="1" column="0">WarLoader</tech>
 		<tech row="1" column="0">WarLoaderII</tech>
+		<tech row="1" column="4">SchematicsOfAdeptusMechanikus</tech>
 		<flag>CollidesWithProjectiles</flag>
 		<flag>Immoveable</flag>
 		<flag>ObscuresUnits</flag>
@@ -22456,7 +22454,6 @@
 		<unittype>UnitClass</unittype>
 		<unittype>MilitaryUnit</unittype>
 		<unittype>AbstractSiegeWeapon</unittype>
-		<unittype>SiegeLineUpgraded</unittype>
 		<unittype>LogicalTypeValidBoltTarget</unittype>
 		<unittype>LogicalTypeConvertsHerds</unittype>
 		<unittype>LogicalTypeEarthquakeAttack</unittype>
@@ -22492,6 +22489,102 @@
 			<maxrange>22.000000</maxrange>
 			<projectile>ProjectileIcarusBomb</projectile>
 			<impacteffect>effects\impacts\fireball</impacteffect>
+		</protoaction>
+	</unit>
+	<unit name="DeathTower">
+		<displaynameid>STR_UNIT_HELEPOLIS_DEATH_TOWER_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_HELEPOLIS_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_HELEPOLIS_SR</shortrollovertextid>
+		<icon>resources\greek\player_color\units\helepolis_icon.png</icon>
+		<animfile>mcmt\units\futuretech\helepolis_death_tower.xml</animfile>
+		<soundsetfile>greek\vo\helepolis\helepolis.xml</soundsetfile>
+		<obstructionradiusx>1.7400</obstructionradiusx>
+		<obstructionradiusz>1.7400</obstructionradiusz>
+		<selectionradiusx>2.5000</selectionradiusx>
+		<selectionradiusz>2.5000</selectionradiusz>
+		<impacttype>Stone</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<formationorder>1</formationorder>
+		<movementtype>land</movementtype>
+		<turnrate>3.0000</turnrate>
+		<initialhitpoints>850.0000</initialhitpoints>
+		<maxhitpoints>850.0000</maxhitpoints>
+		<trainpoints>24.0000</trainpoints>
+		<weightclass>12</weightclass>
+		<maxvelocity>3.2000</maxvelocity>
+		<populationcount>4</populationcount>
+		<los>20.0000</los>
+		<bloodgroupoverride>noblood</bloodgroupoverride>
+		<cost resourcetype="Wood">500.0000</cost>
+		<cost resourcetype="Gold">200.0000</cost>
+		<armor type="Hack" value="0.6500"></armor>
+		<armor type="Pierce" value="0.8000"></armor>
+		<armor type="Crush" value="0.2500"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeAutoAttackFocusBuildings</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>Unit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>AbstractSiegeWeapon</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuresUnits</flag>
+		<flag>RotateInPlace</flag>
+		<flag>OrientUnitWithGround</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>ConstrainOrientation</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>HasDefaultAttack</flag>
+		<initialshading type="gold" factor="1"></initialshading>
+		<tactics>mcmt_helepolis_death_tower.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Crush">20.000000</damage>
+			<damage type="Pierce">10.000000</damage>
+			<maxrange>16.000000</maxrange>
+			<projectile>ProjectileBallistaShot</projectile>
+			<displayednumberprojectiles>3</displayednumberprojectiles>
+			<impacteffect>effects\impacts\crush</impacteffect>
+			<maxheight>2</maxheight>
+			<defaultattack>1</defaultattack>
+		</protoaction>
+		<protoaction>
+			<name>BeamAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Divine">23.00000</damage>
+			<maxrange>16.000000</maxrange>
+			<displayednumberprojectiles>4</displayednumberprojectiles>
+			<projectile>ProjectileChainLightning</projectile>
+			<active>0</active>
 		</protoaction>
 	</unit>
 
@@ -33848,7 +33941,7 @@
 			<name stringid="STR_ACTION_REFLECT_ATTACK">AegisShieldReflectAttack</name>
 			<type>ReflectAttack</type>
 			<damage type="Divine">1.000000</damage>
-			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="MythUnit">5.000000</damagebonus>
 			<reflecthandattacks>1</reflecthandattacks>
 			<attackaction>1</attackaction>
 			<impacteffect>effects\impacts\hack</impacteffect>

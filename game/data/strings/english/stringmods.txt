@@ -338,8 +338,12 @@ ID = "STR_UNIT_MCMT_WORLDBREAKER_LR"   ;   Str = "Superunit of the Rising Sun Em
 
 // WAR ARMORY UNITS
 ID = "STR_UNIT_HOVER_TANK_NAME"   ;   Str = "Hover Tank"
+ID = "STR_UNIT_HOVER_TANK_VENERABLE_NAME"   ;   Str = "Venerable Hover Tank"
 ID = "STR_UNIT_HOVER_TANK_SR"   ;   Str = "Floating Artillery Unit"
 ID = "STR_UNIT_HOVER_TANK_LR"   ;   Str = "Hover Tank is a floating artillery unit that can be effective against armored units and structures. The unit can transverse both land and seas as a result of Oceanos' Tide Blessing applied on Automaton Propulsion Engines by Prof. Daedalus"
+
+ID = "STR_UNIT_HELEPOLIS_DEATH_TOWER_NAME"   ;   Str = "Death Tower"
+ID = "STR_UNIT_HELEPOLIS_DEATH_TOWER_VENERABLE_NAME"   ;   Str = "Venerable Death Tower"
 
 // DEPLOYABLE UNITS
 ID = "STR_UNIT_NUKECANNON_NAME"   ;   Str = "Nuke Cannon"
@@ -877,6 +881,10 @@ ID = "STR_UNIT_PRODROMOS_KNIGHT_LR"   ;   Str = "Dismounted Greek Infantry"
 ID = "STR_UNIT_HIPPEUS_KNIGHT_NAME"   ;   Str = "Shining Knight"
 ID = "STR_UNIT_HIPPEUS_KNIGHT_SR"   ;   Str = "White Knight in a Shining Armor"
 ID = "STR_UNIT_HIPPEUS_KNIGHT_LR"   ;   Str = "After abandoning the loyal companion, the rest of battle leaves a winning a heart"
+
+// ATLANTEAN SPECIAL TECHS
+ID = "STR_TECH_SCHEMATICS_OF_ADEPTUSMECHANIKUS_NAME"   ;   Str = "Schematics of Adeptus Mechanikus"
+ID = "STR_TECH_SCHEMATICS_OF_ADEPTUSMECHANIKUS_LR"   ;   Str = "The brilliant techpriests join the research facility of Prof. Daedalus and improve capabilities of War Armory siege units."
 
 // GREEK SPECIAL TECHS
 ID = "STR_TECH_TEMPLEOFSOLARIS_NAME"   ;   Str = "Temple of Solaris"

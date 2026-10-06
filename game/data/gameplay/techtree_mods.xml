@@ -41,7 +41,9 @@
         <!--Town Center-->
         <effect type="TechStatus" status="obtainable" mergeMode="add">ToolsOfTheTrade</effect>
         <effect type="Data" amount="1.00" subtype="CommandAdd" tech="ToolsOfTheTrade" row="0" column="2" relativity="Assign" mergeMode="add">
-          <target type="ProtoUnit">EconomicGuild</target></effect>	
+          <target type="ProtoUnit">EconomicGuild</target></effect>
+        <!--War Armory-->
+        <effect type="TechStatus" status="obtainable" mergeMode="add">EnableWarArmory</effect>
       </effects>
     </tech>
 
@@ -2489,12 +2491,7 @@
         <effect type="Data" amount="8.00" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">SoulTaker</target></effect>
         <effect type="Data" amount="8.00" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">BeastBerny</target></effect>
         <!-- War Armory Special Units  -->
-        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">ArachneSupressorDrone</target></effect>
-        <effect type="Data" amount="0.50" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">ArachneSupressorDrone</target></effect>
-        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">ArachneChaosDrone</target></effect>
-        <effect type="Data" amount="0.50" subtype="AdditionalScale" relativity="Absolute"><target type="ProtoUnit">ArachneChaosDrone</target></effect>
-
-        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">HoverTank</target></effect>
+       
       </effects>
     </tech> 
 
@@ -3081,18 +3078,7 @@
       </effects>
     </tech>
 
-    <tech name="ActivateEffectsWarArmory" mergeMode="add">
-      <status>ACTIVE</status>
-      <delay>0.5000</delay>
-      <flag>Volatile</flag>
-      <flag>Persistent</flag>
-      <flag>HideAllNotifications</flag>
-      <flag>HideFromDialogs</flag>
-      <effects>
-        <effect type="TechStatus" status="obtainable">EffectsWarArmory</effect>
-      </effects>
-    </tech>
-    <tech name="EffectsWarArmory" mergeMode="add">
+    <tech name="EnableWarArmory" mergeMode="add">
       <status>UNOBTAINABLE</status>
       <delay>0.5000</delay>
       <flag>Volatile</flag>
@@ -3104,8 +3090,59 @@
         <typecount unit="AbstractArmory" count="1.00" state="aliveState" operator="gte"></typecount>
       </prereqs>
       <effects>
-        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute" mergeMode="add">
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
           <target type="ProtoUnit">WarArmory</target></effect>
+        <!-- Researchable Techs -->
+        <effect type="TechStatus" status="obtainable">SchematicsOfAdeptusMechanikus</effect>
+        <!-- Trainle Units -->
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+          <target type="ProtoUnit">ArachneSupressorDrone</target></effect>
+        <effect type="Data" amount="0.50" subtype="AdditionalScale" relativity="Absolute">
+          <target type="ProtoUnit">ArachneSupressorDrone</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+          <target type="ProtoUnit">ArachneChaosDrone</target></effect>
+        <effect type="Data" amount="0.50" subtype="AdditionalScale" relativity="Absolute">
+          <target type="ProtoUnit">ArachneChaosDrone</target></effect>
+
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+          <target type="ProtoUnit">HoverTank</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+          <target type="ProtoUnit">DeathTower</target></effect>
+      </effects>
+    </tech>
+
+    <tech name="SchematicsOfAdeptusMechanikus" mergeMode="add">
+      <displaynameid>STR_TECH_SCHEMATICS_OF_ADEPTUSMECHANIKUS_NAME</displaynameid>
+      <rollovertextid>STR_TECH_SCHEMATICS_OF_ADEPTUSMECHANIKUS_LR</rollovertextid>
+      <researchpoints>40.0000</researchpoints>
+      <status>UNOBTAINABLE</status>
+      <icon>resources\tech\adeptus_mechanikus_logo.jpg</icon>
+      <cost resourcetype="Wood">500.0000</cost>
+      <cost resourcetype="Gold">100.0000</cost>
+      <prereqs>
+        <techstatus status="Active">ActivateEffectsSchematicsOfAdeptusMechanikus</techstatus>
+        <typecount unit="WarArmory" count="1.00" state="aliveState" operator="gte"></typecount>
+      </prereqs>
+      <effects>
+        <effect type="Data" subtype="MovementType" movementtype="Amphibious" amount="1.00" relativity="Absolute">
+				  <target type="ProtoUnit">DeathTower</target></effect>
+        <effect type="Data" subtype="MovementType" movementtype="Amphibious" amount="1.00" relativity="Absolute">
+				  <target type="ProtoUnit">HoverTank</target></effect>
+
+        <effect type="Data" action="RangedAttack" amount="1.0" subtype="Projectile" unittype="ProjectilePriestPharaoh" relativity="Assign">
+          <target type="ProtoUnit">DeathTower</target></effect>        
+        <effect type="Data" action="RangedAttack" amount="0.90" subtype="RoF" relativity="BasePercent">
+				  <target type="ProtoUnit">DeathTower</target></effect>  
+        <effect type="Data" action="BeamAttack" amount="1.00" subtype="ActionEnable" relativity="Assign">
+          <target type="ProtoUnit">DeathTower</target></effect>
+
+        <effect type="Data" amount="1.0" subtype="MaximumVelocity" relativity="Absolute">
+          <target type="ProtoUnit">HoverTank</target></effect>
+        <effect type="Data" protoaction="AegisShieldReflectAttack" amount="1.00" subtype="ProtoActionAdd" unittype="ReflectAttackDivineContainer" relativity="Assign">
+				  <target type="ProtoUnit">HoverTank</target></effect>
+        
+        <effect type="SetName" proto="HoverTank" newname="STR_UNIT_HOVER_TANK_VENERABLE_NAME"></effect>
+        <effect type="SetName" proto="DeathTower" newname="STR_UNIT_HELEPOLIS_DEATH_TOWER_VENERABLE_NAME"></effect>
       </effects>
     </tech>
     
