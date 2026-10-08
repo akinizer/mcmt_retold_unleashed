@@ -209,7 +209,10 @@
             - GorgonsGazeAttack (BeastSlayer): tech-enabled
             - HandAttack OnhitEffectActive (OlympianWeapons): ProgFreeze StoneDamage on HumanSoldier & MythUnit
     - Achilles+, 
-        - JumpAttack: perfectaccuracy, homingballistics
+        - JumpAttack: perfectaccuracy, homingballistics, onhiteffect firestorm
+        - Weapon Model: Flaming Sword
+        - Lancel: Nezha Spear
+        - GlowRing: Oni Rage Fire
     - Atalanta+, Hippolyta+, Theseus+, Polyphemus+
     - Myrmidon+, 
     - TheArgo+

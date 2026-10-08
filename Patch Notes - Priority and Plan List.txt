@@ -5,6 +5,9 @@
 Achilles:
 - JumpAttack: onhiteffect spawn firetornado
 
+ValkyrieWarrior:
+- weapon model: sword
+
 === UNIT MODELS
 Ogre / Orc: TitanYmir model
 Sentinel Archer: walking unit??

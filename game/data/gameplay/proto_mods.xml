@@ -2596,6 +2596,7 @@
 		<armor type="Crush" value="0.4900"></armor>
 		
 		<unittype>CavalryLineUpgraded</unittype>
+		<unittype>Ranged</unittype>
 		
 		<autoattackrange>16.0000</autoattackrange>
 		<rechargetime>15.0000</rechargetime>
@@ -2612,11 +2613,14 @@
 		</protoaction>		
 		<protoaction>
 			<name>RangedAttack</name>
-			<rof>2.000000</rof>
-			<damage type="Pierce">5.0000</damage>
+			<rof>3.000000</rof>
+			<damage type="Pierce">12.0000</damage>
 			<damagebonus type="MythUnit">8.000000</damagebonus>
-			<maxrange>12.000000</maxrange>
-			<projectile>ProjectileJavelinFlaming</projectile>
+			<maxrange>16.000000</maxrange>
+			<projectile>ProjectileNeZhaSpear</projectile>
+			<perfectaccuracy>1</perfectaccuracy>
+			<homingballistics>1</homingballistics>
+			<maxheight>2</maxheight>
 		</protoaction>
 		<protoaction>
 			<name>JumpAttack</name>
@@ -2628,6 +2632,16 @@
 			<onlyattackifpathclear>1</onlyattackifpathclear>
 			<perfectaccuracy>1</perfectaccuracy>
 			<homingballistics>1</homingballistics>
+			
+			<damagearea>1.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<onhiteffect type="Spawn"  targetunittype="Unit" proto="AreaDamageFirestorm" amount="1"></onhiteffect>
+		</protoaction>
+		<protoaction>
+			<name>HeroRingOnSelf</name>
+			<type>Modify</type>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\oni_berserk_loop.xml</modelattachment>
 		</protoaction>
 	</unit>
 	<unit name="Chiron">
@@ -22730,15 +22744,7 @@
 			<name>HeroRingOnSelf</name>
 			<type>Modify</type>
 			<persistent>1</persistent>
-			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
-		</protoaction>
-		<protoaction>
-			<name>HeroGlowOnSelf</name>
-			<type>Modify</type>
-			<modifyselfonly>1</modifyselfonly>
-			<persistent>1</persistent>
-			<modelattachment>vfx\glow\hero_glow.xml</modelattachment>
-			<modelattachmentbone>Spine</modelattachmentbone>
+			<modelattachment>vfx\glow\oni_berserk_loop.xml</modelattachment>
 		</protoaction>
 	</unit>
 	<unit name="Templar">
@@ -32333,6 +32339,35 @@
 
 		<movementtype>air</movementtype>
 		<maxvelocity>25.0000</maxvelocity>
+		<unittype>Projectile</unittype>
+		<unittype>LogicalTypeSunRayProjectile</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NoUnitAI</flag>
+		<flag>NoIdleActions</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>Projectile</flag>
+		<flag>NoTieToGround</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>AdjustPositionOnTerrainCollision</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>HasContinuousParticles</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+	</unit>
+	<unit name="ProjectileNeZhaSpear">
+		<animfile>vfx\projectiles\javelin\nezha_spear.xml</animfile>
+		<obstructionradiusx>0.2000</obstructionradiusx>
+		<obstructionradiusz>0.2000</obstructionradiusz>
+		<lifespan>2.0000</lifespan>
+		<decay delay="4.0000" duration="0.1000"></decay>
+		<movementtype>air</movementtype>
+		<maxvelocity>35.0000</maxvelocity>
 		<unittype>Projectile</unittype>
 		<unittype>LogicalTypeSunRayProjectile</unittype>
 		<flag>Invulnerable</flag>

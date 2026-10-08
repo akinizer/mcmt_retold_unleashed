@@ -1,5 +1,14 @@
 <animfile validation="strict">
-    <attachment>Weapon<include>greek\units\attachments\sword\sword_g.xml</include></attachment>
+    <attachment>Weapon
+        <attachment>Flaming
+            <component>VFXComp<assetreference type="TMComposite"><file>vfx\weapons\flaming_weapons\swords\sword_a_upgrade3_flame_vfx</file></assetreference></component>
+            <anim>Idle<component>VFXComp</component></anim>
+        </attachment>
+        <component>ModelComp
+            <assetreference type="TMModel"><file>norse\units\attachments\sword\sword_n_upgrade3</file></assetreference>
+            <attach name="Flaming" attachpoint="vfx_flame"></attach></component><anim>Idle<component>ModelComp</component>
+        </anim>
+    </attachment>
     <attachment>Javelin<component>ModelComp<assetreference type="TMModel"><file>shared\units\attachments\javelin\javelin_upgrade3</file></assetreference></component><anim>Idle<component>ModelComp</component></anim></attachment>
     <attachment>HeroGlow<include>vfx\glow\hero_glow.xml</include></attachment>
     <component>ModelComp<assetreference type="TMModel"><file>greek\units\hero\achilles\achilles</file></assetreference><attach name="HeroGlow" attachpoint="hero_glow"></attach></component>

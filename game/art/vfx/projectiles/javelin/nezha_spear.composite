@@ -1,0 +1,43 @@
+{
+    "entities": [{
+            "type": "model",
+            "local_transform": [
+                0.8293628096580505,
+                0.0,
+                -0.23300659656524659,
+                0.03385470435023308,
+                0.0,
+                -0.3495100140571594,
+                -0.5529083609580994,
+                0.38789433240890505,
+                0.0,
+                0.8999999761581421,
+                0.0,
+                0.0
+            ],
+            "probability": 1.0,
+            "seed": 0,
+            "passive_rotation": [0.0, 0.0, 0.0],
+            "enable_lod": false,
+            "maintain_terrain_height": false,
+            "maintain_terrain_orientation": false,
+            "is_ghost": false,
+            "deathbehaviour": "Default",
+            "destruction_customdestruction": false,
+            "destruction_dontusetemplate": false,
+            "destruction_manualtargetchoice": false,
+            "destruction_ignore": false,
+            "destruction_disabletargetlow": false,
+            "destruction_disabletargettitan": true,
+            "destruction_disabletargethigh": true,
+            "destruction_dontusephysicstemplate": false,
+            "destruction_destroymode": "default",
+            "destruction_hitstodestroy": 1,
+            "model_ref": "chinese\\units\\hero\\ne_zha\\ne_zha_spear_upgrade2"
+        }],
+    "events": [],
+    "destructionsharedsettings": {
+        "ignorefordestruction": false
+    },
+    "globalsettings": {}
+}

@@ -1,0 +1,4 @@
+<animfile validation="strict">
+	<component>ModelComp<assetreference type="TMComposite"><file>vfx\projectiles\javelin\nezha_spear</file></assetreference></component>
+	<anim>Idle<component>ModelComp</component></anim>
+</animfile>
