@@ -2,6 +2,9 @@
 ==================== PRIORITY-PLANS ==========================================
 ==============================================================================
 
+Achilles:
+- JumpAttack: onhiteffect spawn firetornado
+
 === UNIT MODELS
 Ogre / Orc: TitanYmir model
 Sentinel Archer: walking unit??
@@ -18,13 +21,15 @@ Nereid + Staff
 ==================== WILL BE CONSIDERED ======================================
 ==============================================================================
 
-=== CROSSOVER
+=== Landlord Structure: Multiverse Portal
+* model: portal vfx
 * luffy: militia / prodromos_rider -> promethean_attack_a, promethean_attack_b, shinobi_wan_kenobi_attack_b, avenger_whirlwindattack_a 
 * alvida: miko -> oni club
 * zorro: chiyou -> 4x katana, 
 * mihawk: samurai, throw, ranged slash
 * colossaltitan: fanatic -> delayedtransform, explosion birth, firegiant hero 
 * bloodthirster: aztec covert, lifespan, winged humanoid mythunit, doubleaxe, jumpattack
+* goku: nezha -> umibozu teleport, shinobu fist attack, mountain giant kick, onmyoji rangedattack
 
 === New Structures
 japanese\units\naval\ramming_wasen\ramming_wasen_hut_upgrade1 / 2 / 3

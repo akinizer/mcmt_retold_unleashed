@@ -15,7 +15,7 @@
 * Complete Rework of Techs, Units, Buildings, Heroes (proximity modes, target modes and mix of both, better projectiles)
 * Sci-Fi Tech, Vehicles, Units, Buildings, Techs
 * A Massive Size Mammoth of Set with Laser Weaponry
-* Founder Units: Special Building Builder, Ballistic Converter Units
+* Founder Units: Landlord (General), Civilization Founder Heroes
 * Mobile Fortress and A.R.K
 * Multigunner Infantry: Bombardment and Gattling Modes
 * Area of Effect Utility Buildings: Invisibility, Damage Aura, Resource Boost
@@ -26,7 +26,7 @@
 * Reworked Towers: Shooting If Contained
 * Stronger Myth Units, Mightier Military Techs, Herofied Jarls
 * Campaign Heroes Reworked: Numkill Veterancy
-* Civilization Heroes Reworked: Achilles Has Joined with Tendon, Greek Heroes with Blessed Armors, Archers with Long Range and Rapid Fire Modes, Heroes with Extra Ranged Modes
+* Civilization Heroes Reworked: Achilles Has Joined with Mighty Leap, Greek Heroes with Blessed Armors, Archers with Long Range and Rapid Fire Modes, Heroes with Extra Ranged Modes
 * Pegasus Winged Messenger: Reworked to Flying Trade unit
 * More Dismountable Units: Valkyrie Warrior
 * Berserks Reworked: Reviving to Bears as a joke-referencing to the name
@@ -209,7 +209,7 @@
             - GorgonsGazeAttack (BeastSlayer): tech-enabled
             - HandAttack OnhitEffectActive (OlympianWeapons): ProgFreeze StoneDamage on HumanSoldier & MythUnit
     - Achilles+, 
-        - OnDeath: AchillesDismounted+
+        - JumpAttack: perfectaccuracy, homingballistics
     - Atalanta+, Hippolyta+, Theseus+, Polyphemus+
     - Myrmidon+, 
     - TheArgo+
@@ -380,7 +380,14 @@
             - modelattachment: hero glow 
         - elventraining: enables elf units and elventent at greathall
         - elventraining I-II-III: improves maxrange and armor of elven units
-            - final upgrade improves enables direct damage for all, provides divine damage on rangedattack of royalelf and rangedattackflying of rangerelf
+            - final upgrade improves enables direct damage for all, provides divine damage on rangedattack of royalelf and rangedattackflying of 
+    - BrunnhildeMounted: Shieldmaiden Cavalry Hero
+        - HandAttack: spear attack
+        - RangedAttack: anti-naval lance throw
+        - RangedAttackMyth: anti-myth lance throw
+        - JumpAttack: pegasus jumpfly
+        - Heal: valkyrie heal
+        - ChargedSpawn: ValkyrieWarrior, duration
 
 6. Egyptian reworks from mcmt mod and additional reworks
 - myth unit:

@@ -1,0 +1,14 @@
+const int cShaderBronze = 0;
+const int cShaderStone = 1;
+const int cShaderFrost = 2;
+const int cShaderBurning = 3;
+const int cShaderGold = 4;
+const int cShaderClay = 5;
+const int cShaderSand = 6;
+const int cShaderCocoon = 7;
+const int cShaderUndead = 8;
+const int cShaderBlood = 9;
+
+type="sand / stone / freeze / blood / gold / ..."
+factor="1" sandy
+factor="9" very sandy

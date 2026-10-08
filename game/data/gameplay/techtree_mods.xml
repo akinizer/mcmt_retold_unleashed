@@ -87,7 +87,7 @@
       </effects>
     </tech>
     <tech name="ArchaicAgeNorse">
-      <effects>        
+      <effects>
         <effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="NonSolid" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">TownCenter</target></effect>
         <effect type="Data" amount="1.25" subtype="ObstructionRadiusX" relativity="BasePercent" mergeMode="add">
@@ -1326,6 +1326,8 @@
           <target type="ProtoUnit">Reginleif</target></effect>
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractValkyrie" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">Brunhild</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractValkyrie" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">BrunnhildeMounted</target></effect>
         <!--AbstractHumanoid-->
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHumanoid" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">HumanSoldier</target></effect>
@@ -2512,6 +2514,8 @@
 
     <tech name="ArchaicAgeNorse">
       <effects>
+        <!--BrunnhildeMounted-->
+        <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_BrunnhildesCalling</effect>
         <!--House-->
         <effect type="Data" amount="1.00" subtype="CommandRemove" tech="HouseSpecialUnitsActivator_Shared" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">House</target></effect>
@@ -2974,6 +2978,8 @@
       </effects>
     </tech>
     <!-- Norse Special Techs -->
+    
+
     <!-- Egyptian Special Techs -->   
     <tech name="ActivateEffectsAvenger" mergeMode="add">
       <status>ACTIVE</status>
@@ -3081,7 +3087,7 @@
     <tech name="EnableWarArmory" mergeMode="add">
       <status>UNOBTAINABLE</status>
       <delay>0.5000</delay>
-      <flag>Volatile</flag>
+      <flag>Volatile</flag> 
       <flag>Persistent</flag>
       <flag>HideAllNotifications</flag>
       <flag>HideFromDialogs</flag>
@@ -3792,7 +3798,7 @@
   
 	<!-- /// MCMT RESEARCHES /// -->
 	
-	<!-- FOUNDER TECHS // LANDLORD AND NOAH SPAWN -->
+	<!-- FOUNDER TECHS // SPAWNS: LANDLORD, NOAH, SHAMAN, BRUNNHILDE -->
 	<tech name="MCMT_SpecialService">
     <displaynameid>STR_TECH_SPECIALSERVICE_NAME</displaynameid>
     <rollovertextid>STR_TECH_SPECIALSERVICE_LR</rollovertextid>
@@ -3909,6 +3915,39 @@
       <effect type="CreateUnit" unit="EagleWarrior" generator="AbstractTownCenter">
         <pattern type="Leaving" speed="0.00" radius="0.00" quantity="2.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
       <effect type="TextOutput">STR_MSG_SHAMAN_COUNCIL_SPAWN</effect>
+    </effects>
+  </tech>
+  <!---->
+  <tech name="MCMT_BrunnhildesCalling">
+    <displaynameid>STR_TECH_BRUNNHILDES_CALLING_NAME</displaynameid>
+    <rollovertextid>STR_TECH_BRUNNHILDES_CALLING_LR</rollovertextid>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\tech\activate_tech.jpg</icon>
+    <researchpoints>1.0000</researchpoints>
+    <cost resourcetype="Favor">815.0000</cost>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <prereqs><techstatus status="Active">ArchaicAgeNorse</techstatus></prereqs>
+    <effects>
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">BrunnhildeMounted</target></effect>
+      <effect type="TechStatus" status="obtainable">MCMT_Brunnhilde_Respawn</effect>
+    </effects>
+  </tech>
+
+  <tech name="MCMT_Brunnhilde_Respawn">
+    <status>UNOBTAINABLE</status>
+    <delay>300.0000</delay>
+    <flag>Volatile</flag>
+    <flag>Persistent</flag>
+    <flag>HideFromDialogs</flag>
+    <prereqs>
+      <techstatus status="Active">MCMT_BrunnhildesCalling</techstatus>
+      <typecount unit="AbstractTownCenter" count="0.00" state="aliveState" operator="gt"></typecount>
+      <typecount unit="BrunnhildeMounted" count="1.00" state="aliveState" operator="lt"></typecount>
+    </prereqs>
+    <effects>
+      <effect type="CreateUnit" unit="BrunnhildeMounted" generator="AbstractTownCenter">
+        <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
     </effects>
   </tech>
 
@@ -9946,78 +9985,74 @@
       </effect>
     </effects>
   </tech>
-  <tech name="Disablot" mergeMode="add">
+  <tech name="Disablot">
 	<cost resourcetype="Gold">500.0000</cost>
     <cost resourcetype="Favor">25.0000</cost>
 
     <effects>
-      <effect type="Data" amount="1.50" subtype="Damage" action="HandAttack" relativity="BasePercent">
-        <target type="ProtoUnit">ValkyrieWarrior</target>
-      </effect>
-      <effect type="Data" action="Heal" amount="1.33" unittype="LogicalTypeHealed" subtype="WorkRate" relativity="BasePercent">
-        <target type="ProtoUnit">ValkyrieWarrior</target>
-      </effect>
-      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent">
-          <target type="ProtoUnit">ValkyrieWarrior</target>
-        </effect>
-      <effect type="Data" amount="1.20" subtype="MaximumVelocity" relativity="BasePercent">
-          <target type="ProtoUnit">ValkyrieWarrior</target>
-        </effect>
-      <effect type="Data" amount="-0.20" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent">
-          <target type="ProtoUnit">ValkyrieWarrior</target>
-        </effect>
+      <effect type="Data" amount="1.50" subtype="Damage" action="HandAttack" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">ValkyrieWarrior</target></effect>
+      <effect type="Data" action="Heal" amount="1.33" unittype="LogicalTypeHealed" subtype="WorkRate" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">ValkyrieWarrior</target></effect>
+      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">ValkyrieWarrior</target></effect>
+      <effect type="Data" amount="1.20" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">ValkyrieWarrior</target></effect>
+      <effect type="Data" amount="-0.20" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent" mergeMode="add">
+        <target type="ProtoUnit">ValkyrieWarrior</target></effect>
 
-      <effect type="Data" amount="1.50" subtype="Damage" action="HandAttack" relativity="BasePercent">
-          <target type="ProtoUnit">Brunhild</target>
-      </effect>
-      <effect type="Data" action="Heal" amount="1.33" unittype="LogicalTypeHealed" subtype="WorkRate" relativity="BasePercent">
-        <target type="ProtoUnit">Brunhild</target>
-      </effect>
-      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent">
-          <target type="ProtoUnit">Brunhild</target>
-        </effect>
-      <effect type="Data" amount="1.20" subtype="MaximumVelocity" relativity="BasePercent">
-          <target type="ProtoUnit">Brunhild</target>
-        </effect>
-      <effect type="Data" amount="-0.20" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent">
-          <target type="ProtoUnit">Brunhild</target>
-      </effect>
+      <effect type="Data" amount="1.50" subtype="Damage" action="HandAttack" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">Brunhild</target></effect>
+      <effect type="Data" action="Heal" amount="1.33" unittype="LogicalTypeHealed" subtype="WorkRate" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">Brunhild</target></effect>
+      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">Brunhild</target></effect>
+      <effect type="Data" amount="1.20" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">Brunhild</target></effect>
+      <effect type="Data" amount="-0.20" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent" mergeMode="add">
+        <target type="ProtoUnit">Brunhild</target></effect>
 
-	    <effect type="Data" amount="1.50" subtype="Damage" action="RangedAttack" relativity="BasePercent">
-        <target type="ProtoUnit">Reginleif</target>
-      </effect>
-      <effect type="Data" action="Heal" amount="1.33" unittype="LogicalTypeHealed" subtype="WorkRate" relativity="BasePercent">
-        <target type="ProtoUnit">Reginleif</target>
-      </effect>
-	    <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent">
-        <target type="ProtoUnit">Reginleif</target>
-      </effect>
-	    <effect type="Data" amount="1.20" subtype="MaximumVelocity" relativity="BasePercent">
-        <target type="ProtoUnit">Reginleif</target>
-      </effect>
-	    <effect type="Data" amount="-0.20" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent">
-        <target type="ProtoUnit">Reginleif</target>
-      </effect>
+      <effect type="Data" amount="1.50" subtype="Damage" action="HandAttack" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">BrunnhildeMounted</target></effect>
+      <effect type="Data" amount="1.30" subtype="Damage" action="RangedAttackMyth" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">BrunnhildeMounted</target></effect>
+      <effect type="Data" amount="3.00" subtype="Damage" damagetype="Crush" action="RangedAttack" relativity="Absolute" mergeMode="add">
+        <target type="ProtoUnit">BrunnhildeMounted</target></effect>      
+      <effect type="Data" action="Heal" amount="1.33" unittype="LogicalTypeHealed" subtype="WorkRate" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">BrunnhildeMounted</target></effect>
+      <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">BrunnhildeMounted</target></effect>
+      <effect type="Data" amount="1.20" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">BrunnhildeMounted</target></effect>
+      <effect type="Data" amount="-0.20" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent" mergeMode="add">
+        <target type="ProtoUnit">BrunnhildeMounted</target></effect>
+      <effect type="Data" action="JumpAttack" amount="2.00" subtype="MaximumRange" relativity="Absolute" mergeMode="add">
+				<target type="ProtoUnit">BrunnhildeMounted</target></effect>
 
-	    <effect type="Data" amount="0.00" subtype="Cost" resource="Food" relativity="Assign">
-       <target type="ProtoUnit">Valkyrie</target>
-      </effect>
-	    <effect type="Data" amount="0.00" subtype="Cost" resource="Wood" relativity="Assign">
-       <target type="ProtoUnit">Valkyrie</target>
-      </effect>
-	    <effect type="Data" amount="0.00" subtype="Cost" resource="Gold" relativity="Assign">
-       <target type="ProtoUnit">Valkyrie</target>
-      </effect>
+	    <effect type="Data" amount="1.50" subtype="Damage" action="RangedAttack" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">Reginleif</target></effect>
+      <effect type="Data" action="Heal" amount="1.33" unittype="LogicalTypeHealed" subtype="WorkRate" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">Reginleif</target></effect>
+	    <effect type="Data" amount="1.20" subtype="Hitpoints" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">Reginleif</target></effect>
+	    <effect type="Data" amount="1.20" subtype="MaximumVelocity" relativity="BasePercent" mergeMode="add">
+        <target type="ProtoUnit">Reginleif</target></effect>
+	    <effect type="Data" amount="-0.20" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent" mergeMode="add">
+        <target type="ProtoUnit">Reginleif</target></effect>
 
-	    <effect type="Data" amount="0.00" subtype="Cost" resource="Food" relativity="Assign">
-       <target type="ProtoUnit">ValkyrieWarrior</target>
-      </effect>
-	    <effect type="Data" amount="0.00" subtype="Cost" resource="Wood" relativity="Assign">
-       <target type="ProtoUnit">ValkyrieWarrior</target>
-      </effect>
-	    <effect type="Data" amount="0.00" subtype="Cost" resource="Gold" relativity="Assign">
-       <target type="ProtoUnit">ValkyrieWarrior</target>
-      </effect>
+	    <effect type="Data" amount="0.00" subtype="Cost" resource="Food" relativity="Assign" mergeMode="add">
+       <target type="ProtoUnit">Valkyrie</target></effect>
+	    <effect type="Data" amount="0.00" subtype="Cost" resource="Wood" relativity="Assign" mergeMode="add">
+       <target type="ProtoUnit">Valkyrie</target></effect>
+	    <effect type="Data" amount="0.00" subtype="Cost" resource="Gold" relativity="Assign" mergeMode="add">
+       <target type="ProtoUnit">Valkyrie</target></effect>
+
+	    <effect type="Data" amount="0.00" subtype="Cost" resource="Food" relativity="Assign" mergeMode="add">
+       <target type="ProtoUnit">ValkyrieWarrior</target></effect>
+	    <effect type="Data" amount="0.00" subtype="Cost" resource="Wood" relativity="Assign" mergeMode="add">
+       <target type="ProtoUnit">ValkyrieWarrior</target></effect>
+	    <effect type="Data" amount="0.00" subtype="Cost" resource="Gold" relativity="Assign" mergeMode="add">
+       <target type="ProtoUnit">ValkyrieWarrior</target></effect>
     </effects>
   </tech>
 

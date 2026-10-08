@@ -423,6 +423,11 @@ ID = "STR_TECH_SHAMAN_COUNCIL_NAME"   ;   Str = "Shaman Council"
 ID = "STR_TECH_SHAMAN_COUNCIL_LR"   ;   Str = "Warning: This overdriver activator will summon Shaman Council of Eagle Warriors and the Shaman Hero with supreme transformation abilities"
 ID = "STR_MSG_SHAMAN_COUNCIL_SPAWN"   ;   Str = "A new Shaman Council has arrived from distant lands!"
 
+// BRUNNHILDE
+ID = "STR_TECH_BRUNNHILDES_CALLING_NAME"   ;   Str = "Brunnhilde's Calling"
+ID = "STR_TECH_BRUNNHILDES_CALLING_LR"   ;   Str = "Warning: This overdriver activator will summon Brunnhilde CAvalry Hero and her aidee Valkyrie Warriors"
+ID = "STR_MSG_BRUNNHILDES_CALLING_SPAWN"   ;   Str = "Brunnhilde has descended from Valhalla!"
+
 // ORPHIC
 ID = "STR_UNIT_ORPHIC_EGG_NAME"   ;   Str = "Orphic Egg"
 ID = "STR_UNIT_ORPHIC_EGG_SR"   ;   Str = "Cosmic Egg of Cosmos"
@@ -910,6 +915,10 @@ ID = "STR_UNIT_BLACKSMITH_DWARF_LR"   ;   Str = "Dwarves are talented at mining 
 ID = "STR_UNIT_RAIDERINFANTRY_NAME"   ;   Str = "Raider Infantry"
 ID = "STR_UNIT_RAIDERINFANTRY_SR"   ;   Str = "Lives for Plundering, Conquest and Population"
 ID = "STR_UNIT_RAIDERINFANTRY_LR"   ;   Str = "Vikings have been famous with their raids in nearby villages, expansion of their territories and search for people to join in their cause"
+
+ID = "STR_UNIT_BRUNNHILDE_MOUNTED_NAME"   ;   Str = "Brunnhilde (Commander Hero)"
+ID = "STR_UNIT_BRUNNHILDE_MOUNTED_SR"   ;   Str = "Shieldmaiden Cavalry Hero"
+ID = "STR_UNIT_BRUNNHILDE_MOUNTED_LR"   ;   Str = "Brunnhilde is a legendary hero that leads many valkyrie armies under the command of All-Father Odin into many heroic battles. She has various mighty abilities gained through fierce battles. Her spear can pierce through Myth and Naval Units. Her steed can fly onto many enemies. Her blessing can recover grave wounds. Her experience can call more valkyries into her battles"
 
 // EGYPTIAN SPECIAL UNITS
 ID = "STR_UNIT_NUBIANMERCENARY_NAME"   ;   Str = "Nubian Mercenary"
