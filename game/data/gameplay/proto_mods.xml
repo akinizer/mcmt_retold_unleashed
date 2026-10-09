@@ -2635,7 +2635,7 @@
 			
 			<damagearea>1.000000</damagearea>
 			<damageflags>Nature|Enemy</damageflags>
-			<onhiteffect type="Spawn"  targetunittype="Unit" proto="AreaDamageFirestorm" amount="1"></onhiteffect>
+			<onhiteffect type="Spawn"  targetunittype="Unit" proto="AreaDamageFirestormLesser" amount="1"></onhiteffect>
 		</protoaction>
 		<protoaction>
 			<name>HeroRingOnSelf</name>
@@ -35243,6 +35243,42 @@
 		<protoaction>
 			<name stringid="STR_VFX_NAPALM_CHARGE_NAME">AreaDamage</name>
 			<modifyamount>-20</modifyamount>
+			<modifydamagetype>Hack</modifydamagetype>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">0.250000</damagebonus>
+			<maxrange>4</maxrange>
+			<targetenemyincludenature>1</targetenemyincludenature>
+			<includeunbuilt>1</includeunbuilt>
+		</protoaction>
+	</unit>
+	<unit name="AreaDamageFirestormLesser">
+		<displaynameid>STR_VFX_NAPALM_CHARGE_NAME</displaynameid>
+		<animfile>vfx\fire\zhu_que_attack.xml</animfile>
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<lifespan>4.0000</lifespan>
+		<decay delay="0.1000" duration="0.1000"></decay>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>air</movementtype>
+		<los>5.0000</los>
+		<unittype>Unit</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NoIdleActions</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>area_damage.tactics</tactics>
+		<protoaction>
+			<name stringid="STR_VFX_NAPALM_CHARGE_NAME">AreaDamage</name>
+			<modifyamount>-5</modifyamount>
 			<modifydamagetype>Hack</modifydamagetype>
 			<damagebonus type="MythUnit">2.000000</damagebonus>
 			<damagebonus type="Hero">0.250000</damagebonus>
