@@ -25767,6 +25767,7 @@
 			<type>Pickup</type>
 			<maxrange>1</maxrange>
 			<rate type="LogicalTypePickable">1.00000</rate>
+			<active>0</active>
 		</protoaction>
 		<protoaction>
 			<name>DropOff</name>

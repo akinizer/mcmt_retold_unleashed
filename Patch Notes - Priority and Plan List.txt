@@ -2,12 +2,6 @@
 ==================== PRIORITY-PLANS ==========================================
 ==============================================================================
 
-Achilles:
-- JumpAttack: onhiteffect spawn firetornado
-
-ValkyrieWarrior:
-- weapon model: sword
-
 === UNIT MODELS
 Ogre / Orc: TitanYmir model
 Sentinel Archer: walking unit??
@@ -19,6 +13,47 @@ Centaur + Sword /  Spear
 Chiron + Arbalest (ChuKoNu, Gastraphetoros)
 Arcus + Sword
 Nereid + Staff
+
+=== GP MERGE
+Deepstrike Pods: Pillar of Tlalocan + SkyPassage
+Deepstrike Sentinels: Pillar of Tlalocan + Sentinel
+Deepstrike 
+EarthWall + TrojanWall
+
+=== GP REWORK
+Carnivora
+Valor -> Area
+SpiderLair -> Spawn Arachne after pickup
+Chaos -> duration+
+Vortex
+MonolithOfTlaloc -> amount+
+VenomBeast
+BlazingPrairie
+Rain -> spawn proto dock
+ShiftingSands -> armor+
+PlagueOfSerpents -> anaconda, wadjet, cobra
+Ancestors -> mummy x1
+Citadel -> village center
+SonOfOsiris -> priest
+Meteor -> fire giant
+Lure -> farm boost
+Bronze -> major hero
+Curse -> PigSPC
+UnderworldPassage -> spawn shades
+ShrineOfTheHunt
+Goshinboku
+Shogun -> birtharmor
+DragonTyphoon -> pull
+YasukoKnockback
+DwarvenMine -> dwarven gatherrate
+HealingSpring -> healrate+
+Undermine -> sentinel
+AsgardianBastion -> AsgardianHillFort Tower
+FlamingWeapons -> stackable
+WalkingWoods -> walkingberrybush
+Ragnarok -> einheri to einherihero
+Fimbulwinter -> fenris alpha x1
+
 
 ==============================================================================
 ==================== WILL BE CONSIDERED ======================================
