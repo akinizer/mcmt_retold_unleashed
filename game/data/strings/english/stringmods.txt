@@ -605,6 +605,7 @@ ID = "STR_BLD_TEMPLOMAYOR_NAME" ;   Str = "Templo Mayor"
 ID = "STR_BLD_TEMPLEOFEHECATL_NAME" ;   Str = "Temple of Ehecatl"
 ID = "STR_BLD_TEMPLEOFKUKULKAN_NAME" ;   Str = "Temple of Kukulkan"
 
+// GLOBAL SPECIAL BUILDINGS
 ID = "STR_BLD_MAGETOWER_NAME"   ;   Str = "Mage Tower"
 ID = "STR_BLD_MAGETOWER_SR"   ;   Str = "Mage Tower"
 ID = "STR_BLD_MAGETOWER_LR"   ;   Str = "Akashic Archive and Residence of the Archmage"
@@ -656,6 +657,10 @@ ID = "STR_UNIT_WARP_PORTAL_LR"   ;   Str = "Warp Portal techonlogy has been used
 ID = "STR_UNIT_SIEGE_TURRET_NAME"   ;   Str = "Siege Turret"
 ID = "STR_UNIT_SIEGE_TURRET_SR"   ;   Str = "Siege Turret"
 ID = "STR_UNIT_SIEGE_TURRET_LR"   ;   Str = "Siege Tower Entrenchment in a Defensive Position"
+
+ID = "STR_BLD_DEEPSTRIKE_DROP_POD_NAME"   ;   Str = "Deepstrike Drop Pod"
+ID = "STR_BLD_DEEPSTRIKE_DROP_POD_SR"   ;   Str = "Deploys Units"
+ID = "STR_BLD_DEEPSTRIKE_DROP_POD_LR"   ;   Str = "Captain Eureka commands its cruisers to send pods containing elite teams from Cosmic Forces Armada"
 
 // CYBERTECH FINANCIAL DEVELOPMENT STRUCTURES
 ID = "STR_UNIT_ECONOMIC_CENTER_NAME"   ;   Str = "Economic Center"

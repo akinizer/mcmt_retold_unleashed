@@ -11927,6 +11927,8 @@
 		<flag>DisplayRangeOverride</flag>
 		<flag>ForceEmpowerable</flag>
 		<flag>HasGatherPoint</flag>
+		<flag>AlwaysShowAbilities</flag>
+		
 		<contain>Unit</contain>
 		<notcontain>MythUnit</notcontain>
 		<notcontain>AbstractSiegeWeapon</notcontain>
@@ -12465,6 +12467,79 @@
 		<command row="3" column="0">SetGatherPoint</command>
 		<command row="3" column="1">Eject</command>
 		<command row="3" column="5">Delete</command>
+	</unit>
+
+	<unit name="DeepStrikePod">
+		<displaynameid>STR_BLD_DEEPSTRIKE_DROP_POD_NAME</displaynameid>
+		<rollovertextid>STR_BLD_DEEPSTRIKE_DROP_POD_LR</rollovertextid>
+		<shortrollovertextid>STR_BLD_DEEPSTRIKE_DROP_POD_SR</shortrollovertextid>
+		<icon>resources\atlantean\static_color\buildings\sky_passage_icon.png</icon>
+		<minimapicon>ui\minimap\minimap_sky_passage</minimapicon>
+		<animfile>mcmt\buildings\gp\deepstrike_pod.xml</animfile>
+		<soundsetfile>atlantean\sfx\buildings\sky_passage.xml</soundsetfile>
+		<obstructionradiusx>3.0000</obstructionradiusx>
+		<obstructionradiusz>3.0000</obstructionradiusz>
+		<impacttype>Metal</impacttype>
+		<movementtype>land</movementtype>
+		<initialhitpoints>500.0000</initialhitpoints>
+		<maxhitpoints>500.0000</maxhitpoints>
+		<buildpoints>30.0000</buildpoints>
+		<buildlimit>2.0000</buildlimit>
+		<los>12.0000</los>
+		<cost resourcetype="Wood">25.0000</cost>
+		<cost resourcetype="Favor">8.0000</cost>
+		<armor type="Hack" value="0.4000"></armor>
+		<armor type="Pierce" value="0.9000"></armor>
+		<armor type="Crush" value="0.0500"></armor>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeBuildingsNotWalls</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>Building</unittype>
+		<unittype>BuildingClass</unittype>
+		<unittype>MilitaryBuilding</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeAffectedByCeaseFireBuildingSlow</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeTartarianGateValidOverlapPlacement</unittype>
+		<unittype>LogicalTypeMinimapFilterEconomic</unittype>
+		<unittype>LogicalTypeBuildingNotWonderOrTitan</unittype>
+		<unittype>LogicalTypeTeleporterBuilding</unittype>
+		<unittype>LogicalTypeValidForestProtectionPlacement</unittype>
+		<unittype>LogicalTypeBuildingThatConvertsConvertibles</unittype>
+		<hotkeycontext>SkyPassageAccel</hotkeycontext>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>Immoveable</flag>
+		<flag>ObscuresUnits</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>Doppled</flag>
+		<flag>SelectWithObstruction</flag>
+		<flag>PaintTextureWhenPlacing</flag>
+		<flag>FlattenGround</flag>
+		<flag>NoIdleActions</flag>
+		<flag>GroupSelection</flag>
+		<lifespan>20.0000</lifespan>
+		<spawn type="dead" count="5">Automaton</spawn>
+		<spawn type="dead" count="3">Arcus</spawn>
+		<spawn type="dead" count="1">FireSiphon</spawn>
+		<tactics>default.tactics</tactics>
+		<protoaction>
+			<name notactics="">BirthAttack</name>
+			<type>Attack</type>
+			<damage type="Hack">25.000000</damage>
+			<damagearea>7.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<attackaction>1</attackaction>
+			<rate type="Unit">1.0</rate>
+			<rate type="Building">1.0</rate>
+			<onhiteffect type="Throw" targetunittype="Unit"></onhiteffect>
+		</protoaction>
 	</unit>
 
     <!-- Founder Special Units-->

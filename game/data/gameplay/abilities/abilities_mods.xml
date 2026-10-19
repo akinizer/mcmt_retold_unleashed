@@ -184,6 +184,11 @@
 	<SandDevourer>
 		<ability>AbilityMountainGiantBludgeon<chargetimeasrof>1</chargetimeasrof></ability>
 	</SandDevourer>
+		<!-- Special Buildings-->
+	<AirCommand>
+		<ability>MCMT_DeepStrikePods<rof>1</rof><actioncommand>true</actioncommand><noautocast>true</noautocast></ability>
+	</AirCommand>
+
 		<!--General-NavalUnit-->
 		
 		<!--Atlantean-MythUnit-->

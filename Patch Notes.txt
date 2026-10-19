@@ -863,6 +863,8 @@
     - AirCommand (damage aura)
         - MrWukong+:
         - Kirovos Air Shark: Sharkbite Shells LMG (general purpose), Orichalcum Bombs (anti-building), Auto Targeting System (Lasers)
+        - DeepStrike: ability, summons several deepstrike drop pods on target area
+            - DeepStrikeDropPod: lifespan, spawn ondeath elite units
     - Bastion:
         - units+
         - techs+
