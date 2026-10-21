@@ -12527,7 +12527,77 @@
 		<spawn type="dead" count="5">Automaton</spawn>
 		<spawn type="dead" count="3">Arcus</spawn>
 		<spawn type="dead" count="1">FireSiphon</spawn>
-		<tactics>default.tactics</tactics>
+		<tactics>global_default_attack.tactics</tactics>
+		<protoaction>
+			<name notactics="">BirthAttack</name>
+			<type>Attack</type>
+			<damage type="Hack">25.000000</damage>
+			<damagearea>7.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<attackaction>1</attackaction>
+			<rate type="Unit">1.0</rate>
+			<rate type="Building">1.0</rate>
+			<onhiteffect type="Throw" targetunittype="Unit"></onhiteffect>
+		</protoaction>
+	</unit>
+	<unit name="DeepStrikePod_MechanizedAsura">
+		<displaynameid>STR_BLD_DEEPSTRIKE_DROP_POD_NAME</displaynameid>
+		<rollovertextid>STR_BLD_DEEPSTRIKE_DROP_POD_LR</rollovertextid>
+		<shortrollovertextid>STR_BLD_DEEPSTRIKE_DROP_POD_SR</shortrollovertextid>
+		<icon>resources\atlantean\static_color\buildings\sky_passage_icon.png</icon>
+		<minimapicon>ui\minimap\minimap_sky_passage</minimapicon>
+		<animfile>mcmt\buildings\gp\deepstrike_pod.xml</animfile>
+		<soundsetfile>atlantean\sfx\buildings\sky_passage.xml</soundsetfile>
+		<obstructionradiusx>3.0000</obstructionradiusx>
+		<obstructionradiusz>3.0000</obstructionradiusz>
+		<impacttype>Metal</impacttype>
+		<movementtype>land</movementtype>
+		<initialhitpoints>1200.0000</initialhitpoints>
+		<maxhitpoints>1200.0000</maxhitpoints>
+		<buildpoints>30.0000</buildpoints>
+		<buildlimit>2.0000</buildlimit>
+		<los>12.0000</los>
+		<armor type="Hack" value="0.4000"></armor>
+		<armor type="Pierce" value="0.9000"></armor>
+		<armor type="Crush" value="0.0500"></armor>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeBuildingsNotWalls</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>Building</unittype>
+		<unittype>BuildingClass</unittype>
+		<unittype>MilitaryBuilding</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeAffectedByCeaseFireBuildingSlow</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeTartarianGateValidOverlapPlacement</unittype>
+		<unittype>LogicalTypeMinimapFilterEconomic</unittype>
+		<unittype>LogicalTypeBuildingNotWonderOrTitan</unittype>
+		<unittype>LogicalTypeTeleporterBuilding</unittype>
+		<unittype>LogicalTypeValidForestProtectionPlacement</unittype>
+		<unittype>LogicalTypeBuildingThatConvertsConvertibles</unittype>
+		<hotkeycontext>SkyPassageAccel</hotkeycontext>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>Immoveable</flag>
+		<flag>NotDeleteable</flag>
+		<flag>ObscuresUnits</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>Doppled</flag>
+		<flag>SelectWithObstruction</flag>
+		<flag>PaintTextureWhenPlacing</flag>
+		<flag>FlattenGround</flag>
+		<flag>NoIdleActions</flag>
+		<flag>GroupSelection</flag>
+		<lifespan>20.0000</lifespan>
+		<spawn type="dead" count="2">MechanizedAsura</spawn>
+		<spawn type="dead" count="1">MechanizedAsuraHellfire</spawn>
+		<tactics>global_default_attack.tactics</tactics>
 		<protoaction>
 			<name notactics="">BirthAttack</name>
 			<type>Attack</type>
@@ -17614,6 +17684,185 @@
 			<projectile>ProjectileYukiOnnaBall</projectile>	
 			<onhiteffect type="Spawn" proto="MCMT_VFXWaterSplash_Large" amount="1"></onhiteffect>
 		</protoaction>		
+	</unit>
+	<unit name="MechanizedAsura">
+		<displaynameid>STR_UNIT_MECHANIZED_ASURA_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_MECHANIZED_ASURA_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_MECHANIZED_ASURA_SR</shortrollovertextid>
+		<icon>resources\japanese\player_color\units\asura_icon.png</icon>
+		<animfile>japanese\units\myth\asura\asura.xml</animfile>
+		<soundsetfile>shared\vo\cheat\ufo\ufo.xml</soundsetfile>
+		<obstructionradiusx>0.9900</obstructionradiusx>
+		<obstructionradiusz>0.9900</obstructionradiusz>
+		<impacttype>Metal</impacttype>
+		<dependentunit attachbone="LeftHand">Mechanized_Asura_Gattling</dependentunit>
+		<dependentunit attachbone="RightHand">Mechanized_Asura_Gattling</dependentunit>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>1000.0000</initialhitpoints>
+		<maxhitpoints>1000.0000</maxhitpoints>
+		<trainpoints>15.0000</trainpoints>
+		<weightclass>12</weightclass>
+		<populationcount>4</populationcount>
+		<maxvelocity>3.2000</maxvelocity>
+		<rechargetime>30.0000</rechargetime>
+		<los>18.0000</los>
+		<cost resourcetype="Food">250.0000</cost>
+		<cost resourcetype="Gold">150.0000</cost>
+		<cost resourcetype="Favor">30.0000</cost>
+		<armor type="Hack" value="0.4500"></armor>
+		<armor type="Pierce" value="0.6500"></armor>
+		<armor type="Crush" value="0.8000"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeMythicMythUnit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeMythUnitNotTitan</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeFreezableMythUnit</unittype>
+		<unittype>LogicalTypeMythUnitNotFlying</unittype>
+		<unittype>LogicalTypeTrainableMythUnit</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>IgnoreDependentEditor</flag>
+
+		<initialshading type="bronze" factor="1"></initialshading>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>4.000000</rof>
+			<damage type="Hack">60.000000</damage>
+			<damagearea>5.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<maxrange>5.000000</maxrange>
+			<impacteffect>effects\impacts\crush_medium</impacteffect>
+		</protoaction>
+		<protoaction>
+			<name>AutoGather</name>
+			<type>AutoGather</type>
+			<persistent>1</persistent>
+			<active>0</active>
+		</protoaction>
+	</unit>
+	<unit name="MechanizedAsuraHellfire">
+		<displaynameid>STR_UNIT_MECHANIZED_ASURA_HELLFIRE_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_MECHANIZED_ASURA_HELLFIRE_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_MECHANIZED_ASURA_HELLFIRE_SR</shortrollovertextid>
+		<icon>resources\japanese\player_color\units\asura_icon.png</icon>
+		<animfile>japanese\units\myth\asura\asura.xml</animfile>
+		<soundsetfile>shared\vo\cheat\ufo\ufo.xml</soundsetfile>
+		<obstructionradiusx>0.9900</obstructionradiusx>
+		<obstructionradiusz>0.9900</obstructionradiusz>
+		<impacttype>Metal</impacttype>
+		<dependentunit attachbone="LeftHand">CustomDependantUnit_ManOWar</dependentunit>
+		<dependentunit attachbone="RightHand">CustomDependantUnit_ManOWar</dependentunit>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>1000.0000</initialhitpoints>
+		<maxhitpoints>1000.0000</maxhitpoints>
+		<trainpoints>15.0000</trainpoints>
+		<weightclass>12</weightclass>
+		<populationcount>4</populationcount>
+		<maxvelocity>3.2000</maxvelocity>
+		<rechargetime>30.0000</rechargetime>
+		<los>18.0000</los>
+		<cost resourcetype="Food">250.0000</cost>
+		<cost resourcetype="Gold">150.0000</cost>
+		<cost resourcetype="Favor">30.0000</cost>
+		<armor type="Hack" value="0.4500"></armor>
+		<armor type="Pierce" value="0.6500"></armor>
+		<armor type="Crush" value="0.8000"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeMythicMythUnit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeMythUnitNotTitan</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeFreezableMythUnit</unittype>
+		<unittype>LogicalTypeMythUnitNotFlying</unittype>
+		<unittype>LogicalTypeTrainableMythUnit</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>IgnoreDependentEditor</flag>
+
+		<initialshading type="gold" factor="1"></initialshading>
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>4.000000</rof>
+			<damage type="Crush">80.000000</damage>
+			<maxrange>16.000000</maxrange>
+			<projectile>ProjectileBallOfFire</projectile>
+			<impacteffect>effects\impacts\asura_fire_ball</impacteffect>
+			<homingballistics>1</homingballistics>
+			<anim>HandAttack</anim>
+		</protoaction>
+		<protoaction>
+			<name>AutoGather</name>
+			<type>AutoGather</type>
+			<persistent>1</persistent>
+			<active>0</active>
+		</protoaction>
 	</unit>
   	<!-- S.V.A Special Units -->
   <unit name="Desolator">
@@ -35757,6 +36006,56 @@
 		</protoaction>
 	</unit>
 
+	<unit name="CustomDependantUnit_ManOWar">
+		<animfile>atlantean\units\myth\man_o_war\man_o_war.xml</animfile>
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>air</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>100.0000</initialhitpoints>
+		<maxhitpoints>100.0000</maxhitpoints>
+		<maxvelocity>3.2000</maxvelocity>
+		<los>18.0000</los>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>LogicalTypeMythicMythUnit</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>NonCollideable</flag>
+		<flag>NoHPBar</flag>
+		<flag>Invulnerable</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>DependentAttach</flag>
+		<flag>NoTieToGround</flag>
+		<tactics>statue_of_lightning.tactics</tactics>
+		<protoaction>
+			<name>LightningAttack</name>
+			<rof>4.000000</rof>
+			<damage type="Divine">20.00000</damage>
+			<maxrange>10.000000</maxrange>
+			<numberbounces>3</numberbounces>
+		</protoaction>
+		<protoaction>
+			<name>Drone</name>
+			<type>Drone</type>
+			<persistent>1</persistent>
+		</protoaction>
+	</unit>
+
 	<unit name="VFXKitsuneIllusionDependantUnit">
 		<animfile>spc\units\hallgerd_forkbeard\hallgerd_forkbeard.xml</animfile>
 		<obstructionradiusx>0.1000</obstructionradiusx>
@@ -36045,6 +36344,61 @@
 			<autoretarget>1</autoretarget>
 			<canattackground>1</canattackground>
 			<active>0</active>
+		</protoaction>
+		<protoaction>
+			<name>Drone</name>
+			<type>Drone</type>
+			<persistent>1</persistent>
+		</protoaction>
+	</unit>
+
+	<unit name="Mechanized_Asura_Gattling">
+		<animfile>mcmt\units\dependants\rangedattack_dependant_fireball.xml</animfile>
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>air</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>100.0000</initialhitpoints>
+		<maxhitpoints>100.0000</maxhitpoints>
+		<maxvelocity>0</maxvelocity>
+		<los>18.0000</los>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>LogicalTypeMythicMythUnit</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>NonCollideable</flag>
+		<flag>NoHPBar</flag>
+		<flag>Invulnerable</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>DependentAttach</flag>
+		<flag>NoTieToGround</flag>
+		<flag>DirectProjectile</flag>
+		<tactics>rangedattack.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>0.600000</rof>
+			<damage type="Pierce">1.000000</damage>
+			<maxrange>16.000000</maxrange>
+			<projectile>ProjectilePriestPharaoh</projectile>
+			<numberprojectiles>1</numberprojectiles>
+			<displayednumberprojectiles>1</displayednumberprojectiles>
+			<autoretarget>1</autoretarget>
+			<canattackground>1</canattackground>
 		</protoaction>
 		<protoaction>
 			<name>Drone</name>

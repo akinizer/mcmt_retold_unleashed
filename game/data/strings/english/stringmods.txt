@@ -288,6 +288,7 @@ ID = "STR_UNIT_EARTHSHAKER_NAME"   ;   Str = "Earthshaker"
 ID = "STR_UNIT_EARTHSHAKER_SR"   ;   Str = "Earthshaker"
 ID = "STR_UNIT_EARTHSHAKER_LR"   ;   Str = "The Worst Nightmare of Gaia"
 
+// AIR COMMAND HQ UNITS
 ID = "STR_UNIT_MR_WUKONG_NAME"   ;   Str = "Mr. Wukong"
 ID = "STR_UNIT_MR_WUKONG_SR"   ;   Str = "Mr. Wukong"
 ID = "STR_UNIT_MR_WUKONG_LR"   ;   Str = "The Monkey King from the Rising Sun Empire in service to establish civilizations"
@@ -295,6 +296,14 @@ ID = "STR_UNIT_MR_WUKONG_LR"   ;   Str = "The Monkey King from the Rising Sun Em
 ID = "STR_UNIT_FLYING_SHARK_NAME"   ;   Str = "Kirovos Air Shark"
 ID = "STR_UNIT_FLYING_SHARK_SR"   ;   Str = "Terror in the sky equipped with anti-building bomb and machine gun and auto-targeting systems"
 ID = "STR_UNIT_FLYING_SHARK_LR"   ;   Str = "Kirovos reporting. Bite-knowledged. Air Shark ready. Waterbomb mix optimal. Ready to splash and crush."
+
+ID = "STR_UNIT_MECHANIZED_ASURA_NAME"   ;   Str = "Mechanized Asura"
+ID = "STR_UNIT_MECHANIZED_ASURA_SR"   ;   Str = "Walker Unit deployed from Cosmic Fleet"
+ID = "STR_UNIT_MECHANIZED_ASURA_LR"   ;   Str = "This unit gets its design based on an infamous space overlord. Equipped with heavy gattling guns"
+
+ID = "STR_UNIT_MECHANIZED_ASURA_HELLFIRE_NAME"   ;   Str = "Mechanized Hellfire Asura"
+ID = "STR_UNIT_MECHANIZED_ASURA_HELLFIRE_SR"   ;   Str = "Walker Unit deployed from Cosmic Fleet"
+ID = "STR_UNIT_MECHANIZED_ASURA_HELLFIRE_LR"   ;   Str = "This unit gets its design based on an infamous space overlord. Equipped with pulsar cannons"
 
 ID = "STR_ACTION_SHARKBITESHELL"   ;   Str = "Sharkbite Shells"
 ID = "STR_ACTION_ORICHALCHUM_BOMBS"   ;   Str = "Orichalchum Bombs"

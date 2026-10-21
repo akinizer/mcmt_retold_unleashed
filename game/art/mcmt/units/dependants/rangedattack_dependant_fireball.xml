@@ -1,0 +1,5 @@
+<animfile validation="strict">
+	<component>VFXComp<logic type="Tech"><none></none></logic></component>
+	<anim>Idle<component>VFXComp</component></anim>
+    <anim>RangedAttack<assetreference type="TMAnimation"><file>misc\dummy\dummy_animation</file><tag type="Attack">0.2</tag><tag type="SpecificSoundSet" checkvisible="1" set="SonOfOsirisBolt">0.2</tag></assetreference><component>ModelComp</component></anim>
+</animfile>

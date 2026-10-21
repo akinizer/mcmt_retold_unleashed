@@ -187,6 +187,7 @@
 		<!-- Special Buildings-->
 	<AirCommand>
 		<ability>MCMT_DeepStrikePods<rof>1</rof><actioncommand>true</actioncommand><noautocast>true</noautocast></ability>
+		<ability>MCMT_DeepStrikePods_MechanizedAsura<rof>1</rof><actioncommand>true</actioncommand><noautocast>true</noautocast></ability>
 	</AirCommand>
 
 		<!--General-NavalUnit-->

@@ -1,0 +1,3 @@
+<tactics>
+	<tactic>Default<attacktype>LogicalTypeHandUnitsAttack</attacktype><autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype></tactic>
+</tactics>

@@ -864,7 +864,15 @@
         - MrWukong+:
         - Kirovos Air Shark: Sharkbite Shells LMG (general purpose), Orichalcum Bombs (anti-building), Auto Targeting System (Lasers)
         - DeepStrike: ability, summons several deepstrike drop pods on target area
-            - DeepStrikeDropPod: lifespan, spawn ondeath elite units
+            - DeepStrikeDropPod: lifespan, spawn elite units
+        - Deepstrike Asura:
+            - DeepStrikeDropPod: lifespan, spawn walker units
+            - Mechanized Asura: 
+                - HandAttack: general purpose, low rof
+                - Gattling Attack: dependant, anti-unit, high rof
+            - Mechanized Asura Hellfire: 
+                - Ranged Attack: fireball, anti-armor
+                - Lightning Attack: dependant, general purpose
     - Bastion:
         - units+
         - techs+

@@ -1713,6 +1713,24 @@
 		<terrainrumbling height="0.03" width="1.0" speed="25.0" fadetime="0.5"></terrainrumbling>
 		<createunit quantity="5" minradius="10.0" maxradius="15.0" delay="1.0" norandomrotate="" pattern="symmetric" permanent="" destroyunderneath="" donotdestroyfriendliesunderneath="" createunitsoundset="PillarofTlalocanImpact">DeepStrikePod</createunit>
 	</power>
+	<power name="MCMT_DeepStrikePods_MechanizedAsura" type="TempUnit" godpower="" orderhint="5">
+		<displaynameid>STR_BLD_DEEPSTRIKE_DROP_POD_NAME</displaynameid>
+		<rolloverid>STR_BLD_DEEPSTRIKE_DROP_POD_LR</rolloverid>
+		<icon>tech\deepstrike.jpg</icon>
+		<placement disallowwatercast="" overlaptype="LogicalTypeTartarianGateValidOverlapPlacement" allownature="" notoverlapselforally="">Overlap</placement>
+		<camerashake duration="1.0" strength="0.20" range="40.0"></camerashake>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">PillarofTlalocanBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>-1</activetime>
+		<radius>4.0</radius>
+		<rangeindicator range="4.0" speed="0.2">Circle</rangeindicator>
+		<forceuseplacementorientation></forceuseplacementorientation>
+		<forceplacement></forceplacement>
+		<powerplayerrelation>All</powerplayerrelation>
+		<terrainrumbling height="0.03" width="1.0" speed="25.0" fadetime="0.5"></terrainrumbling>
+		<createunit quantity="5" minradius="10.0" maxradius="15.0" delay="1.0" norandomrotate="" pattern="symmetric" permanent="" destroyunderneath="" donotdestroyfriendliesunderneath="" createunitsoundset="PillarofTlalocanImpact">DeepStrikePod_MechanizedAsura</createunit>
+	</power>
 	<!--ChargedAbility-->
 	<power name="AbilitySpecialHandAttack" type="UnitAction">
 		<displaynameid>STR_ABILITY_SPECIALATTACK</displaynameid>
