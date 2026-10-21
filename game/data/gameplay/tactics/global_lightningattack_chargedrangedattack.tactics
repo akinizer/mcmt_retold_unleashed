@@ -1,0 +1,21 @@
+<tactics>
+	<action>
+		<name stringid="STR_ACTION_RANGED">LightningAttack</name>
+		<type>ChainAttack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>Charging</anim>
+		<projectile>ProjectileChainLightning</projectile>
+		<accuracy>1.0</accuracy>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+		<rate type="All">1.0</rate>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_DEVOTE">DevoteMajor</name>
+		<type>DevoteMajor</type>
+		<maxrange>0.2</maxrange>
+	</action>
+	<tactic>Default
+        <action priority="100">LightningAttack</action>
+        <action>DevoteMajor</action><attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype></tactic>
+</tactics>
