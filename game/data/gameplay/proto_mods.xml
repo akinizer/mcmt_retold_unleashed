@@ -10300,6 +10300,7 @@
 		<tech row="2" column="1">MCMT_ArchitectsOfMarley</tech>
 		<tech row="3" column="2">MCMT_SpecialService</tech>
 		<tech row="3" column="3">MCMT_EgyptianRenovation</tech>
+		<tech row="3" column="3">MCMT_Rise_of_Akhenaten</tech>
 		<tech row="3" column="3">MCMT_ShamanCouncil</tech>
 		<tech row="3" column="3">MCMT_BrunnhildesCalling</tech>
 	</unit>
@@ -27582,7 +27583,7 @@
 		<flag>HasDefaultAttack</flag>
 		
 		<contain external="1">LogicalTypePickable</contain>
-		<tech row="0" column="2" mergeMode="add">MCMT_Enable_NoahConvert</tech>
+		<tech row="1" column="5" mergeMode="add">MCMT_Enable_NoahConvert</tech>
 		<tactics>mcmt_noah.tactics</tactics>
 		
 		<protoaction>
@@ -27613,12 +27614,11 @@
 			<rate type="HumanSoldier">5.000000</rate>
 			<rate type="AbstractWarship">5.000000</rate>
 			<rate type="LogicalTypeMythUnitNotTitan">10.000000</rate>
-			<rate type="LogicalTypeMilitaryProductionBuilding">10.000000</rate>
-			<rate type="AbstractDock">10.000000</rate>
-			<rate type="AbstractMarket">10.000000</rate>
-			<rate type="AbstractTitan">20.000000</rate>
+			<rate type="LogicalTypeMilitaryProductionBuilding">30.000000</rate>
+			<rate type="AbstractDock">20.000000</rate>
+			<rate type="AbstractMarket">20.000000</rate>
+			<rate type="AbstractTitan">100.000000</rate>
 			<rate type="Sentinel">20.000000</rate>
-			<rate type="Huntable">2.000000</rate>
 			<active>0</active>
 		</protoaction>
 		<protoaction>
@@ -27746,6 +27746,247 @@
 
 		<contain>Noah</contain>
 	</unit>
+	<unit name="Akhenaten">
+		<displaynameid>STR_UNIT_AKHENATEN_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_AKHENATEN_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_AKHENATEN_SR</shortrollovertextid>
+		<icon>resources\egyptian\player_color\units\mummy_icon.png</icon>
+		<animfile>egyptian\units\myth\mummy\mummy.xml</animfile>
+		<soundsetfile>egyptian\vo\son_of_osiris\son_of_osiris.xml</soundsetfile>
+		<obstructionradiusx>0.7400</obstructionradiusx>
+		<obstructionradiusz>0.7400</obstructionradiusz>
+		<impacttype>Unarmoured</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>625.0000</initialhitpoints>
+		<maxhitpoints>625.0000</maxhitpoints>
+		<trainpoints>17.0000</trainpoints>
+		<weightclass>7</weightclass>
+		<populationcount>4</populationcount>
+		<maxvelocity>4.0000</maxvelocity>
+		
+		<los>16.0000</los>
+		<bloodgroupoverride>mythbloodgreen</bloodgroupoverride>
+		<cost resourcetype="Wood">275.0000</cost>
+		<cost resourcetype="Favor">25.0000</cost>
+		<armor type="Hack" value="0.5500"></armor>
+		<armor type="Pierce" value="0.7000"></armor>
+		<armor type="Crush" value="0.8000"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>Unit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>Hero</unittype>
+		<unittype>AbstractPharaoh</unittype>
+		<unittype>AbstractEmpowerer</unittype>
+		<unittype>Hero</unittype>
+		<unittype>MajorHero</unittype>
+		<unittype>HeroShadowUpgraded</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+
+		<auxrechargetime>20.0000</auxrechargetime>
+		<recharge type="kills" init="0">5.000000</recharge>
+		<rechargeincludetypes>
+			<unittype>Unit</unittype>
+		</rechargeincludetypes>
+		<rechargeexcludetypes>
+			<unittype>Resource</unittype>
+		</rechargeexcludetypes>
+
+		<tactics>mcmt_akhenaten.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>2.500000</rof>
+			<damage type="Pierce">30.000000</damage>
+			<damage type="Divine">20.000000</damage>
+			<damagebonus type="MythUnit">3.000000</damagebonus>
+			<maxrange>12.000000</maxrange>
+			<projectile>ProjectileMummyFlies</projectile>
+			<onhiteffect type="DamageOverTime" duration="15.000000">
+				<damage type="Divine">4.000000</damage>
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+			<onhiteffect type="Attach" proto="VFXPoison" attachbone="spine" duration="15.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+		</protoaction>
+		<protoaction>
+			<name>ReincarnationAttack</name>
+			<rof>3.000000</rof>
+			<damage type="Divine">100.000000</damage>
+			<damagearea>2.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<maxrange>12.000000</maxrange>
+			<projectile>ProjectileMummyFlies</projectile>
+			<onhiteffect type="Reincarnation" proto="UnboundSoul" duration="15.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+			<onhiteffect type="Lifesteal" rate="0.75" targetunittype="Unit"></onhiteffect>
+		</protoaction>
+		<protoaction>
+			<name stringid="STR_ACTION_CHARGE_SPAWN">ChargedSpawn</name>
+			<type>Spawn</type>
+			<rate type="MinionReincarnated">5.000000</rate>
+			<minrate type="Unit">1.000000</minrate>
+			<anim>Birth</anim>
+			<persistent>1</persistent>
+			<animationrate>1</animationrate>
+			<chargeaction>1</chargeaction>
+			<forcespawn>1</forcespawn>
+		</protoaction>
+		<protoaction>
+			<name>HackArmorInverseAura</name>
+			<type>LikeBonus</type>
+			<modifydamagetype>Hack</modifydamagetype>
+			<modifyratecap>1.300000</modifyratecap>
+			<modifybase>1.000000</modifybase>
+			<maxrange>10</maxrange>
+			<modifyratebytype>1</modifyratebytype>
+			<modifyabstracttype>MythUnit</modifyabstracttype>
+			<rate type="MythUnit">0.02</rate>
+			<persistent>1</persistent>
+			<modifytype>ArmorSpecific</modifytype>
+		</protoaction>
+		<protoaction>
+			<name>PierceArmorInverseAura</name>
+			<type>LikeBonus</type>
+			<modifydamagetype>Pierce</modifydamagetype>
+			<modifyratecap>1.300000</modifyratecap>
+			<modifybase>1.000000</modifybase>
+			<maxrange>10</maxrange>
+			<modifyratebytype>1</modifyratebytype>
+			<modifyabstracttype>MythUnit</modifyabstracttype>
+			<rate type="MythUnit">0.02</rate>
+			<persistent>1</persistent>
+			<modifytype>ArmorSpecific</modifytype>
+		</protoaction>
+		<protoaction>
+			<name>HeroRingOnSelf</name>
+			<type>Modify</type>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\hero_glow_ring_large.xml</modelattachment>
+		</protoaction>
+		<protoaction>
+			<name>HeroGlowOnSelf</name>
+			<type>Modify</type>
+			<modifyselfonly>1</modifyselfonly>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\hero_glow_large.xml</modelattachment>
+			<modelattachmentbone>Spine</modelattachmentbone>
+		</protoaction>
+	</unit>
+	<unit name="UnboundSoul">
+		<displaynameid>STR_UNIT_UNBOUND_SOUL_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_UNBOUND_SOUL_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_UNBOUND_SOUL_SR</shortrollovertextid>
+		<icon>resources\greek\player_color\units\hades_shade_icon.png</icon>
+		<animfile>greek\units\myth\hades_shade\hades_shade.xml</animfile>
+		<soundsetfile>greek\vo\hades_shade\hades_shade.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Unarmoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>100.0000</initialhitpoints>
+		<maxhitpoints>100.0000</maxhitpoints>
+		<weightclass>5</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>4.5000</maxvelocity>
+		<los>16.0000</los>
+		<bloodgroupoverride>noblood</bloodgroupoverride>
+		<cost resourcetype="Gold">100.0000</cost>
+		<cost resourcetype="Favor">5.0000</cost>
+		<armor type="Hack" value="0.2000"></armor>
+		<armor type="Pierce" value="0.2000"></armor>
+		<armor type="Crush" value="0.8000"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeArchaicMythUnit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>MythUnit</unittype>
+		<unittype>MythUnitMelee</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeMythUnitNotTitan</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeFreezableMythUnit</unittype>
+		<unittype>LogicalTypeMythUnitNotFlying</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>Wanders</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>IgnoreForFavoriteUnitCount</flag>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Hack">12.000000</damage>
+			<maxrange>0.500000</maxrange>
+		</protoaction>
+	</unit>
+
 	<unit name="MechanizedMammothUnit">
 		<displaynameid>STR_UNIT_MECHANIZED_MAMMOTH_UNIT_NAME</displaynameid>
 		<rollovertextid>STR_UNIT_MECHANIZED_MAMMOTH_UNIT_LR</rollovertextid>
@@ -33610,6 +33851,39 @@
 	</unit> 
 
 	<!-- /// BONUS DAMAGE AURA CONTAINERS /// -->
+	<unit name="HumanSoldierBonusContainer" mergeMode="add">
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>air</movementtype>
+		<flag>Invulnerable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>NoTieToGround</flag>
+		<flag>NonCollideable</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name stringid="STR_VFX_MYTHDAMAGEBONUS">DamageBonusVsHumanSoldier</name>
+			<type>AutoRangedModify</type>
+			<modifytype>DamageByTargetType</modifytype>
+			<modifyabstracttype>AbstractSpectral</modifyabstracttype>
+			<maxrange>5</maxrange>
+			<modifydamagetargettype>HumanSoldier</modifydamagetargettype>
+			<modifyamount>5.0</modifyamount>
+			<modelattachment>vfx\glow\shrine_active.xml</modelattachment>
+			<modelattachmentbone>spine</modelattachmentbone>
+			<persistent>1</persistent>
+		</protoaction>
+	</unit> 
+
 	<unit name="MythBonusContainer" mergeMode="add">
 		<obstructionradiusx>0.1000</obstructionradiusx>
 		<obstructionradiusz>0.1000</obstructionradiusz>

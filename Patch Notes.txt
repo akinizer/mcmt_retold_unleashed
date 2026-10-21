@@ -650,12 +650,21 @@
 - Manor
 - SiegeWorks
 - TownCenter:
-    - Noah
+    - Noah (Ra)
         - Respawn: 5 minutes
         - StellarGateway (A.R.K): mobile armored transport, mobilizes when Noah is garrisoned
         - Heal
         - Empower
         - Convert (Divine Teaching: Convert): limited units & structures
+    - Akhenaten (Set)
+        - Respawn: 5 minutes
+        - ReincarnationAttack: high damage, spawn UnboundSoul, lifesteal
+            - UnboundSoul: basic shade variant
+        - HandAttack: vfxpoison
+        - ChargedSpawn: recharge on kills, spawn minion x5 after 5 kills
+        - LikeBonus: gains armor for friendly mythunits nearby
+        - DamageBonusVsHumanSoldier: abstractspectral damagebonus vs humansoldier
+
     - WarriorTribe
         - replaces kuafu with kuafuwarrior in towncenter accel and on the field
         - KuafuWarrior: stronger variant of kuafu, mythunit, melee and ranged attacks, charges at towers head on, effective vs cavalry and flyingunit

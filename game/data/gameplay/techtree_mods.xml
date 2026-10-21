@@ -586,6 +586,8 @@
     </tech>
 
     <!-- MAJOR GOD IMPROVEMENTS -->
+
+      <!-- Norse-->
     <tech name="ArchaicAgeLoki">
         <effects>
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Draugr</target></effect>
@@ -667,7 +669,8 @@
         <effect type="Data" amount="0.01" subtype="BuildPoints" relativity="Percent"><target type="ProtoUnit">AbstractFarm</target></effect>
       </effects>
     </tech>
-    
+
+      <!-- Greek -->
     <tech name="ArchaicAgeHades">
       <effects>
         <effect type="TransformUnit" toprotoid="KataskoposPossessed" fromprotoid="Kataskopos" includequeued="true" mergeMode="add"></effect>
@@ -680,6 +683,15 @@
       </effects>
     </tech>
 
+    <tech name="HeroicAgeHades">
+      <effects>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">PaleRider</target></effect> 
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="PaleRider" row="0" column="5" relativity="Assign" mergeMode="add">
+          <target type="ProtoUnit">Stable</target></effect>
+      </effects>
+    </tech>
+      <!-- Chinese -->
     <tech name="ArchaicAgeShennong">
       <effects>
         <effect type="TechStatus" status="obtainable" mergeMode="add">SpoilsOfWar</effect>
@@ -696,15 +708,20 @@
       </effects>    
     </tech>
 
-    <tech name="HeroicAgeHades">
+      <!-- Egyptian -->
+    <tech name="ArchaicAgeRa">
       <effects>
-        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute" mergeMode="add">
-          <target type="ProtoUnit">PaleRider</target></effect> 
-        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="PaleRider" row="0" column="5" relativity="Assign" mergeMode="add">
-          <target type="ProtoUnit">Stable</target></effect>
+        <!--Noah-->
+        <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_EgyptianRenovation</effect>
       </effects>
     </tech>
-
+    <tech name="ArchaicAgeSet">
+      <effects>
+        <!--Akhenaten-->
+        <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_Rise_of_Akhenaten</effect>
+      </effects>
+    </tech>
+      
     <tech name="MythicAgeIsis">
       <effects>
         <effect type="Data" action="RangedAttackAquatic" amount="1.00" subtype="ActionEnable" relativity="Absolute" mergeMode="add">
@@ -1292,9 +1309,13 @@
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSpectral" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">PaleRider</target></effect>    
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSpectral" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">KataskoposPossessed</target></effect>    
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSpectral" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">AbstractShinigami</target></effect>  
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSpectral" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">Wanyudo</target></effect>  
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractSpectral" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">UnboundSoul</target></effect>  
         <!--AbstractShinigami-->
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractShinigami" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">Shinigami</target></effect>
@@ -1678,6 +1699,8 @@
           <target type="ProtoUnit">KuafuWarrior</target></effect>
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">Petsuchos</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">UnboundSoul</target></effect>
         
         <!--AbstractHuntress-->        
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHuntress" relativity="Absolute" mergeMode="add">
@@ -2537,8 +2560,6 @@
 
     <tech name="ArchaicAgeEgyptian">		
 	  	<effects>
-        <!--Noah-->
-        <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_EgyptianRenovation</effect>
         <!--Son of Osiris / Horus-->
         <effect type="Data" action="Empower" amount="1.25" subtype="EmpowerModify" empowertype="self" unittype="logicaltypebuildingthatcanbeempowered" modifytype="FavorGatherRate" relativity="BasePercent" mergeMode="add"><target type="ProtoUnit">SonOfOsiris</target></effect>
         <effect type="Data" action="Empower" amount="1.25" subtype="EmpowerModify" empowertype="self" unittype="logicaltypebuildingthatcanbeempowered" modifytype="DropsiteRate" relativity="BasePercent" mergeMode="add"><target type="ProtoUnit">SonOfOsiris</target></effect>
@@ -3831,6 +3852,44 @@
 		</effects>
 		<effect type="TextOutput">STR_MSG_LANDLORD_SPAWN</effect>
 	</tech>
+
+  <tech name="MCMT_Rise_of_Akhenaten">
+    <displaynameid>STR_TECH_RISE_OF_AKHENATEN_NAME</displaynameid>
+    <rollovertextid>STR_TECH_RISE_OF_AKHENATEN_LR</rollovertextid>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\tech\activate_tech.jpg</icon>
+    <researchpoints>1.0000</researchpoints>
+    <cost resourcetype="Favor">815.0000</cost>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <prereqs><techstatus status="Active">ArchaicAgeEgyptian</techstatus></prereqs>
+    <effects>
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Akhenaten</target></effect>
+      <effect type="Data" protoaction="DamageBonusVsHumanSoldier" amount="1.00" subtype="ProtoActionAdd" unittype="HumanSoldierBonusContainer" relativity="Assign">
+          <target type="ProtoUnit">Akhenaten</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">UnboundSoul</target></effect>
+      <effect type="TechStatus" status="obtainable">MCMT_Akhenaten_Respawn</effect>
+    </effects>
+  </tech>
+
+  <tech name="MCMT_Akhenaten_Respawn">
+    <status>UNOBTAINABLE</status>
+    <delay>300.0000</delay>
+    <flag>Volatile</flag>
+    <flag>Persistent</flag>
+    <flag>HideFromDialogs</flag>
+    <prereqs>
+      <techstatus status="Active">MCMT_Rise_of_Akhenaten</techstatus>
+      <typecount unit="AbstractTownCenter" count="0.00" state="aliveState" operator="gt"></typecount>
+      <typecount unit="Akhenaten" count="1.00" state="aliveState" operator="lt"></typecount>
+    </prereqs>
+    <effects>
+      <effect type="CreateUnit" unit="Akhenaten" generator="AbstractTownCenter">
+        <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
+      <effect type="TextOutput">STR_MSG_AKHENATEN_SPAWN</effect>
+    </effects>
+  </tech>
 
   <tech name="MCMT_EgyptianRenovation">
     <displaynameid>STR_TECH_EGYPTIAN_RENOVATION_NAME</displaynameid>

@@ -19,6 +19,11 @@
 		<ability>PassiveSacredHands<alwaysdisabledingrid>1</alwaysdisabledingrid></ability>
 	</Noah>
 
+	<Akhenaten>
+		<ability>AbilityChargedSpawnSpecial<notcastable>true</notcastable><noautocast>true</noautocast><bindtochargeaction>true</bindtochargeaction></ability>
+		<ability>AbilityMummy<auxchargetimeasrof>1</auxchargetimeasrof></ability>
+	</Akhenaten>
+
 		<!-- Bastion Units -->
 	<TravelerOxWagon>
 		<ability>Heal<actioncommand>true</actioncommand></ability>

@@ -413,6 +413,19 @@ ID = "STR_UNIT_LOKI_JOTNAR_NAME"   ;   Str = "Loki Odinson (God)"
 ID = "STR_UNIT_LOKI_JOTNAR_SR"   ;   Str = "Loki in True Form"
 ID = "STR_UNIT_LOKI_JOTNAR_LR"   ;   Str = "God of Mischief. Has Never Been This Serious"
 
+// AKHENATEN
+ID = "STR_TECH_RISE_OF_AKHENATEN_NAME"   ;   Str = "Overdrive Mode: Rise of Akhenaten"
+ID = "STR_TECH_RISE_OF_AKHENATEN_LR"   ;   Str = "Warning: This overdriver activator will enable Akhenaten, an immortal hero that has returned from death for a revenge"
+
+ID = "STR_UNIT_AKHENATEN_NAME"   ;   Str = "Akhenaten"
+ID = "STR_UNIT_AKHENATEN_SR"   ;   Str = "Undead Pharaoh"
+ID = "STR_UNIT_AKHENATEN_LR"   ;   Str = "Immortal nemesis of Noah and immortal founder of Akenism"
+ID = "STR_MSG_AKHENATEN_SPAWN"   ;   Str = "Akhenaten has returned to lands of the living!"
+
+ID = "STR_UNIT_UNBOUND_SOUL_NAME"   ;   Str = "Unbound Soul"
+ID = "STR_UNIT_UNBOUND_SOUL_SR"   ;   Str = "Spectral Unit"
+ID = "STR_UNIT_UNBOUND_SOUL_LR"   ;   Str = "Akhenaten resurrects the souls of his victims as his spectral minions"
+
 // NOAH
 ID = "STR_TECH_EGYPTIAN_RENOVATION_NAME"   ;   Str = "Overdrive Mode: Egyptian Renovation"
 ID = "STR_TECH_EGYPTIAN_RENOVATION_LR"   ;   Str = "Warning: This overdriver activator will enable Noah. He bears ability to heal, build A.R.K and limited conversion of units and military buildings. Devastative vs Pharaohs and Temples"
@@ -1568,6 +1581,9 @@ ID = "STR_ABILITY_GHOSTLYRIPPLE"   ;   Str = "Ghostly Ripple"
 ID = "STR_ABILITY_GHOSTLYRIPPLE_LR"   ;   Str = "Oirans can use their witchery arts to send ghostly ripples to intimidate nearby mythical units"
 
 ID = "STR_ACTION_SANDGUST_ATTACK"   ;   Str = "Sand Gust Attack"
+
+ID = "STR_ABILITY_SPECIAL_CHARGEDSPAWN"   ;   Str = "Charged Spawn"
+ID = "STR_ABILITY_SPECIAL_CHARGEDSPAWN_LR"   ;   Str = "This unit spawns units via a charge gauge"
 
 // COMMAND TECHS
 ID = "STR_BLD_FIREWALL_NAME"   ;   Str = "Fire Wall"

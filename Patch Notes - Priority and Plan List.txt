@@ -4,7 +4,6 @@
 
 === UNIT MODELS
 Ogre / Orc: TitanYmir model
-Sentinel Archer: walking unit??
 Regent
 
 === WEAPON MODELS
@@ -15,10 +14,8 @@ Arcus + Sword
 Nereid + Staff
 
 === GP MERGE
-Deepstrike Pods: Pillar of Tlalocan + SkyPassage
-Deepstrike Sentinels: Pillar of Tlalocan + Sentinel
-Deepstrike 
 EarthWall + TrojanWall
+Sentinel Stonesquinametzin
 
 === GP REWORK
 Carnivora
