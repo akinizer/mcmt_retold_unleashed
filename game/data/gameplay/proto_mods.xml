@@ -766,7 +766,6 @@
 			<canattackground>1</canattackground>
 			<displayednumberprojectiles>2</displayednumberprojectiles>
 			<autoretarget>1</autoretarget>
-			<canattackground>1</canattackground>
 			<onhiteffect type="Spawn" proto="MCMT_BoltStrikeMinor" amount="1"></onhiteffect>
 		</protoaction>
 	</unit>
@@ -12526,7 +12525,7 @@
 		<flag>GroupSelection</flag>
 		<lifespan>20.0000</lifespan>
 		<spawn type="dead" count="5">Automaton</spawn>
-		<spawn type="dead" count="3">Arcus</spawn>
+		<spawn type="dead" count="1">DeepstrikeCommando</spawn>
 		<spawn type="dead" count="1">FireSiphon</spawn>
 		<tactics>global_default_attack.tactics</tactics>
 		<protoaction>
@@ -17593,9 +17592,9 @@
 			<rate type="AbstractWall">1.1250</rate>
 			<rate type="Building">2.2500</rate>
 		</protoaction>	
-  </unit>
+  	</unit>
 
-  <unit name="SharkFlying">
+  	<unit name="SharkFlying">
 		<displaynameid>STR_UNIT_FLYING_SHARK_NAME</displaynameid>
 		<shortrollovertextid>STR_UNIT_FLYING_SHARK_SR</shortrollovertextid>
 		<rollovertextid>STR_UNIT_FLYING_SHARK_LR</rollovertextid>
@@ -17863,6 +17862,109 @@
 			<type>AutoGather</type>
 			<persistent>1</persistent>
 			<active>0</active>
+		</protoaction>
+	</unit>
+
+	<unit name="DeepstrikeCommando">
+		<displaynameid>STR_UNIT_DARK_REGENT_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_DARK_REGENT_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_DARK_REGENT_SR</shortrollovertextid>
+		<icon>resources\special\regent_icon.png</icon>
+		<minimapicon>ui\minimap\minimap_hero</minimapicon>
+		<animfile>mcmt\units\futuretech\deepstrike_commando.xml</animfile>
+		<soundsetfile>norse\vo\mountain_giant\mountain_giant.xml</soundsetfile>
+		<obstructionradiusx>0.7400</obstructionradiusx>
+		<obstructionradiusz>0.7400</obstructionradiusz>
+		<impacttype>Metal</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>amphibious</movementtype>
+		<flag>TieToWaterSurface</flag>
+		
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>260.0000</initialhitpoints>
+		<maxhitpoints>260.0000</maxhitpoints>
+		<weightclass>5</weightclass>
+		<maxvelocity>4.8000</maxvelocity>
+		<los>16.0000</los>
+		<armor type="Hack" value="0.4800"></armor>
+		<armor type="Pierce" value="0.5500"></armor>
+		<armor type="Crush" value="0.8900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+		<unittype>ArcherLineUpgraded</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeMinimapFilterEconomic</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeFindMilitaryHero</unittype>
+		<unittype>LogicalTypeNotEconomicOrMilitaryUnit</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>NoIdleActions</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+
+		<initialshieldpoints>100.0000</initialshieldpoints>
+		<maxshieldpoints>100.0000</maxshieldpoints>
+
+		<rechargetime>40</rechargetime>
+		<tactics>mcmt_deepstrike_commando.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Hack">20.000000</damage>
+			<damage type="Divine">2.000000</damage>
+			<damagebonus type="MythUnit">5.000000</damagebonus>
+			<maxrange>0.500000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>3.500000</rof>
+			<damage type="Crush">22.000000</damage>
+			<damage type="Divine">8.000000</damage>
+			<damagebonus type="MythUnit">5.000000</damagebonus>
+			<damagebonus type="Ship">2.000000</damagebonus>
+			<minrange>4.000000</minrange>
+			<maxrange>22.000000</maxrange>
+			<projectile>ProjectileOnmyojiAttack</projectile>
+		</protoaction>
+		<protoaction>
+			<name>JumpAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Hack">80.000000</damage>
+			<damagebonus type="HumanSoldier">2.00000</damagebonus>
+			<maxrange>14.000000</maxrange>
+			<perfectaccuracy>1</perfectaccuracy>
+			<homingballistics>1</homingballistics>
+			<onlyattackifpathclear>1</onlyattackifpathclear>
+		</protoaction>
+		<protoaction>
+			<name>HeroRingOnSelf</name>
+			<type>Modify</type>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\oni_berserk_loop.xml</modelattachment>
 		</protoaction>
 	</unit>
   	<!-- S.V.A Special Units -->
@@ -35107,6 +35209,26 @@
 		</protoaction>
 	</unit> 
 
+	<unit name="VFXThunderBlast">
+		<displaynameid>STR_VFX_SMITING_GUST_NAME</displaynameid>
+		<animfile>vfx\glow\thunderblast_glow.xml</animfile>
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<movementtype>land</movementtype>
+		<los>10.0000</los>
+		<lifespan>5.0000</lifespan>
+		<flag>NoIdleActions</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>NoHPBar</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotCommandable</flag>
+		<flag>PlaceAnywhere</flag>
+		<flag>TieToWaterSurface</flag>
+	</unit>
 	<!-- /// AREA DAMAGE AND SELFDESTRUCTION CONTAINERS /// -->
 	<unit name="AreaDamageContainer" mergeMode="add">
 		<obstructionradiusx>0.1000</obstructionradiusx>

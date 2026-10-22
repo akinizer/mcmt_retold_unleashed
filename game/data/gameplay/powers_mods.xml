@@ -32,7 +32,9 @@
 	<power name="PlentyVault" type="TempUnit" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="LightningStorm" type="LightningStorm" godpower="">
-		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>
+		<cost>0.0</cost><repeatcost>0.0</repeatcost>
+		<scorchvfxproto>VFXThunderBlast</scorchvfxproto>
+	</power>
 	<power name="Earthquake" type="Earthquake" godpower="">
 		<cost>0.0</cost><repeatcost>0.0</repeatcost></power>	
 	<power name="UnderworldInvasion" type="UnderworldInvasion" godpower="" orderhint="3" mergeMode="replace">

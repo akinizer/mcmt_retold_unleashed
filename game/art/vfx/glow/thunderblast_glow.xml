@@ -1,0 +1,4 @@
+<animfile validation="strict">
+	<component>ModelComp<logic type="Cinematic"><normal><assetreference type="TMComposite"><file>vfx\glow\thunderblast_glow</file></assetreference></normal><cinematic><nullvisual></nullvisual></cinematic></logic></component>
+	<anim>Idle<component>ModelComp</component></anim>
+</animfile>

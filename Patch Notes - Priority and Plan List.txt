@@ -4,7 +4,6 @@
 
 === UNIT MODELS
 Ogre / Orc: TitanYmir model
-Regent
 
 === WEAPON MODELS
 Horse + Brunhild + Bow

@@ -305,6 +305,10 @@ ID = "STR_UNIT_MECHANIZED_ASURA_HELLFIRE_NAME"   ;   Str = "Mechanized Hellfire 
 ID = "STR_UNIT_MECHANIZED_ASURA_HELLFIRE_SR"   ;   Str = "Walker Unit deployed from Cosmic Fleet"
 ID = "STR_UNIT_MECHANIZED_ASURA_HELLFIRE_LR"   ;   Str = "This unit gets its design based on an infamous space overlord. Equipped with pulsar cannons"
 
+ID = "STR_UNIT_DARK_REGENT_NAME"   ;   Str = "Dark Regent (Hero)"
+ID = "STR_UNIT_DARK_REGENT_SR"   ;   Str = "Hero Infantry with a dark power"
+ID = "STR_UNIT_DARK_REGENT_LR"   ;   Str = "This unit has been assigned to lead his task force on the field by Cosmic Forces"
+
 ID = "STR_ACTION_SHARKBITESHELL"   ;   Str = "Sharkbite Shells"
 ID = "STR_ACTION_ORICHALCHUM_BOMBS"   ;   Str = "Orichalchum Bombs"
 

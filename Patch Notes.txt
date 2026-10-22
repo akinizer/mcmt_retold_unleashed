@@ -874,6 +874,10 @@
         - Kirovos Air Shark: Sharkbite Shells LMG (general purpose), Orichalcum Bombs (anti-building), Auto Targeting System (Lasers)
         - DeepStrike: ability, summons several deepstrike drop pods on target area
             - DeepStrikeDropPod: lifespan, spawn elite units
+            - DeepstrikeCommando / Dark Regent: Regent Dark Lord, hero, strong vs mythunit, amphibious
+                - handattack: lightsaber anim
+                - rangedattack: unarmed, projectileonmyoji, anti-flying & naval
+                - jumpattack: lightsaber anim, anubite jumpfly
         - Deepstrike Asura:
             - DeepStrikeDropPod: lifespan, spawn walker units
             - Mechanized Asura: 

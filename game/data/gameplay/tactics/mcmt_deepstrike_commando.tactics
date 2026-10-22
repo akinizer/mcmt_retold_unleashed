@@ -1,0 +1,43 @@
+<tactics>
+	<action>
+		<name stringid="STR_ACTION_HAND">HandAttack</name>
+		<type>Attack</type>
+		<rate type="LogicalTypeHandUnitsAttack">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<forceareaattacktarget>1</forceareaattacktarget>
+		<anim>HandAttack</anim>
+		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+		<impacteffect>effects\impacts\hack</impacteffect>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_RANGED">RangedAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttack</anim>
+		<accuracy>1.0</accuracy>
+		<perfectaccuracy>1.0</perfectaccuracy>
+		<maxspread>0</maxspread>
+		<trackrating>99.0</trackrating>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+		<rate type="AbstractFlyingUnit">1.0</rate>
+		<rate type="NavalUnit">1.0</rate>
+	</action>
+    <action>
+		<name stringid="STR_ACTION_JUMP">JumpAttack</name>
+		<type>JumpAttack</type>
+		<rate type="Building">0.0</rate>
+		<rate type="NavalUnit">0.0</rate>
+		<rate type="LogicalTypeHandUnitsAttack">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<anim>JumpAttack</anim>
+		<chargeaction>1</chargeaction>
+		<impacteffect>effects\impacts\hack</impacteffect>
+	</action>
+	<tactic>Default
+        <action priority="100">JumpAttack</action>
+        <action priority="90">RangedAttack</action>
+        <action priority="80">HandAttack</action><attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype></tactic>
+</tactics>
