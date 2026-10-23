@@ -434,11 +434,15 @@
 - siege weapon:
     - SiegeTower:
         - Entrench: SiegeTurret
-- cavalry:
-    - WarElephant: SiegeLineEpgrade
-- archer:
-    - ChariotArcher: ArcherLineUpgrade
-    - Slinger: ArcherLineUpgrade
+- human soldier
+    - infantry:
+        - Mercenary: lifedrain -> lifespan    
+    - cavalry:
+        - MercenaryCavalry: lifedrain -> lifespan
+        - WarElephant: SiegeLineEpgrade
+    - archer:
+        - ChariotArcher: ArcherLineUpgrade
+        - Slinger: ArcherLineUpgrade
 - warship:
     - warbarge: progfreeze
     - kebenit:
@@ -461,7 +465,8 @@
         - Build (BookOfThoth): Monuments
 - SiegeWorks:
     - MechanizedMammothUnit+
-- Nubians
+- Nubians:
+
     - Nubian Mercenary: blade unit, light shield, high rof, axemen techs
     - Nubian Charger: spear unit, light shield, high maxvelocity, spearmen techs
         - IdleSpeedBonus (tech-enabled): this fast unit releases muscle power for a start dash
