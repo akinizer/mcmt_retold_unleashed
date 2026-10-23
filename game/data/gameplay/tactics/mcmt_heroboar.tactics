@@ -1,0 +1,49 @@
+<tactics>
+	<action>
+		<name stringid="STR_ACTION_HAND">HandAttack</name>
+		<type>Attack</type>
+		<rate type="All">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<forceareaattacktarget>1</forceareaattacktarget>
+		<anim>HandAttack</anim>
+		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+		<impacteffect>effects\impacts\hack</impacteffect>
+	</action>
+    <action>
+		<name stringid="STR_ACTION_HAND">BuckAttack</name>
+		<type>BuckAttack</type>
+		<rate type="LogicalTypeVillagerNotHero">1.0</rate>
+		<attackaction>1</attackaction>
+		<chargeaction>1</chargeaction>
+		<handlogic>1</handlogic>
+		<anim>Gore</anim>
+		<impacteffect>effects\impacts\hack</impacteffect>
+
+        <rof>0.200000</rof>
+        <damage type="Hack">100.000000</damage>
+        <damage type="Crush">30.000000</damage>
+        <damagebonus type="MythUnit">2.000000</damagebonus>
+        <damagebonus type="Hero">0.500000</damagebonus>
+        <maxrange>3.000000</maxrange>
+        <shockstun>1</shockstun>
+        <stunduration>8.0</stunduration>
+        <workonfrozenunits>0</workonfrozenunits>
+        <active>0</active>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_DEVOTE">DevoteMinor</name>
+		<active>0</active>
+		<type>DevoteMinor</type>
+		<maxrange>0.2</maxrange>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_DEVOTE">DevoteMajor</name>
+		<type>DevoteMajor</type>
+		<maxrange>0.2</maxrange>
+	</action>
+	<tactic>Default
+        <action priority="100">BuckAttack</action>
+        <action priority="90">HandAttack</action>
+        <action>DevoteMinor</action><action>DevoteMajor</action><attacktype>LogicalTypeHandUnitsAttack</attacktype><autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype></tactic>
+</tactics>

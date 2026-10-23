@@ -559,7 +559,10 @@
     - Arkantos: artmodel (weapon, golden trident)
     - OdysseusSPC, AjaxSPC, ChironSPC, Kastor
     - Agamemnon: throw humansoldier
-
+    - ArkantosBoar:
+        - BuckAttack
+    - AjaxBoar:
+        - Taowu Charge
 - Egyptian: veterancy numkill, lineupgrades, egyptian techs (spearmen, axemen, feetofjackal)
     - Amanra
         - JumpAttack: maximumrange+
