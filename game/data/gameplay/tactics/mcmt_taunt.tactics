@@ -1,0 +1,15 @@
+<tactics>
+	<action>
+		<name stringid="STR_ACTION_TAUNT">TauntAttack</name>
+		<type>Attack</type>
+		<rate type="HumanSoldier">1.0</rate>
+		<rate type="LogicalTypeMythUnitNotTitan">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<anim>Taunt</anim>
+		<chargeaction>1</chargeaction>
+		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+		<impacteffect>effects\impacts\hack</impacteffect>
+	</action>
+	<tactic>Default<action priority="100">TauntAttack</action><attacktype>LogicalTypeHandUnitsAttack</attacktype><autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype></tactic>
+</tactics>

@@ -6630,6 +6630,147 @@
 		</animations>
 	</animxml>
 
+	<!-- campaign protagonist hero reworks -->
+	<animxml file="spc\units\skult\skult.xml">
+		<animations>
+			<animinfo mergeMode="add">
+				<name>Build</name>
+				<versioncount>1</versioncount>
+				<versions>
+					<version>
+						<file>greek\units\economic\villager_greek\anim\villager_greek_male_dig_a</file>
+						<duration>2.33333</duration>
+						<tags>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.20000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>GatherFarm</set>
+								</properties>
+							</tag>
+							<tag>
+								<type>particles</type>
+								<position>0.17000</position>
+								<properties>
+									<popcornfxname>objects\villager\digging_dirt.pkfx</popcornfxname>
+									<bone>vfx_shovel</bone>
+									<movewithbone>1</movewithbone>
+									<stopwithanim>0</stopwithanim>
+									<adjustduration>0</adjustduration>
+								</properties>
+							</tag>
+							<tag>
+								<type>particles</type>
+								<position>0.66000</position>
+								<properties>
+									<popcornfxname>objects\villager\digging_dirt.pkfx</popcornfxname>
+									<bone>vfx_shovel</bone>
+									<movewithbone>1</movewithbone>
+									<stopwithanim>0</stopwithanim>
+									<adjustduration>0</adjustduration>
+								</properties>
+							</tag>
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+		</animations>		
+	</animxml>
+
+	<animxml file="spc\units\folstag_flag_bearer\folstag_flag_bearer.xml">
+		<animations>
+			<animinfo mergeMode="add">
+				<name>Build</name>
+				<versioncount>1</versioncount>
+				<versions>
+					<version>
+						<file>norse\units\infantry\huskarl\anim\huskarl_build_a</file>
+						<duration>0.73333</duration>
+						<tags>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.99000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>Build</set>
+								</properties>
+							</tag>
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+			<animinfo mergeMode="add">
+				<name>Taunt</name>
+				<versioncount>1</versioncount>
+				<versions>
+					<version>
+						<file>norse_freyr\units\myth\rock_giant\anim\rock_giant_taunt_a</file>
+						<duration>3.00000</duration>
+						<tags>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.10000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<allowoverlap>1</allowoverlap>
+									<set>RockGiantTauntVFX</set>
+								</properties>
+							</tag>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.17000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>CrushStone</set>
+								</properties>
+							</tag>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.32000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>CrushStone</set>
+								</properties>
+							</tag>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.42000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>RockGiantTaunt</set>
+								</properties>
+							</tag>
+							<tag>
+								<type>LockOn</type>
+								<position>0.10000</position>
+							</tag>
+							<tag>
+								<type>Attack</type>
+								<position>0.10000</position>
+							</tag>
+							<tag>
+								<type>LockOff</type>
+								<position>1.00000</position>
+							</tag>
+							<tag>
+								<type>particles</type>
+								<position>0.10000</position>
+								<properties>
+									<popcornfxname>godpowers\rock_giant\rock_giant_shield_hit.pkfx</popcornfxname>
+									<bone>shield_hit</bone>
+									<movewithbone>1</movewithbone>
+									<stopwithanim>1</stopwithanim>
+									<adjustduration>1</adjustduration>
+								</properties>
+							</tag>
+						</tags>
+					</version>
+				</versions>
+			</animinfo>
+		</animations>
+	</animxml>
+
 	<!-- japanese unit reworks -->
 
 	<animxml file="japanese\units\hero\onmyoji\onmyoji.xml">

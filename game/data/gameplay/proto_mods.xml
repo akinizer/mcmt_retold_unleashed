@@ -8869,11 +8869,144 @@
 		</protoaction>
 	</unit>
 
+	<unit name="FolstagFlagBearer">
+		<rechargetime>15.0000</rechargetime>
+		<flag>DisplayRange</flag>
+		<flag>AlwaysShowAbilities</flag>		
+		<flag>AbilitiesOnBothPages</flag>
+
+		<hotkeycontext>BuildNorseAccel</hotkeycontext>
+		<train row="0" column="5">TownCenter</train>
+		<train row="255" column="5">VillageCenter</train>
+
+		<tactics>mcmt_taunt.tactics</tactics>
+		<protoaction>
+			<name>Build</name>
+			<type>Build</type>
+			<anim>Build</anim>
+			<rate type="Building">1.000000</rate>
+			<maxrange>0.2</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>Repair</name>
+			<type>Repair</type>
+			<anim>Build</anim>
+			<maxrange>0.2</maxrange>
+			<rate type="Building">0.5000</rate>
+		</protoaction>
+		<protoaction>
+			<name>TauntAttack</name>
+			<rof>3.000000</rof>
+			<damagearea>6.000000</damagearea>
+			<damageflags>Enemy</damageflags>
+			<maxrange>3.000000</maxrange>
+			<forceareaattackcenter>1</forceareaattackcenter>
+			<onhiteffect type="StatModify" targetunittype="HumanSoldier" duration="5.000000">
+				<modify type="ForcedTarget">1.000000</modify>
+			</onhiteffect>
+			<onhiteffect type="StatModify" targetunittype="LogicalTypeMythUnitNotTitan" duration="5.000000">
+				<modify type="ForcedTarget">1.000000</modify>
+			</onhiteffect>
+			<onhiteffect type="Attach" targetunittype="HumanSoldier" proto="VFXChaos" attachbone="vfx_top" duration="5.000000"></onhiteffect>
+			<onhiteffect type="Attach" targetunittype="LogicalTypeMythUnitNotTitan" proto="VFXChaos" attachbone="vfx_top" duration="5.000000"></onhiteffect>
+		</protoaction>
+		<protoaction>
+			<name>AreaHeal</name>
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>MilitaryUnit</modifyabstracttype>
+			<persistent>1</persistent>
+			<modifytype>HealRate</modifytype>
+			<includeally>1</includeally>
+			<modelattachment>greek\godpowers\restoration\healing_vfx.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+			<modifyamount>1</modifyamount>			
+			<maxrange>5</maxrange>
+		</protoaction>		
+	</unit>
+
+	<unit name="Skult">
+		<unittype>AbstractScout</unittype>
+		<train row="0" column="5">SnowmanBuildable</train>
+		
+		<stealthrevealselfradius>2.0</stealthrevealselfradius>
+		<stealthshowsilhouetteradius>3.0</stealthshowsilhouetteradius>
+		<tactics>container.tactics</tactics>
+		<protoaction>
+			<name>Build</name>
+			<type>Build</type>
+			<anim>Build</anim>
+			<rate type="Building">1.000000</rate>
+			<maxrange>0.2</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>Repair</name>
+			<type>Repair</type>
+			<anim>Build</anim>
+			<maxrange>0.2</maxrange>
+			<rate type="Building">0.5000</rate>
+		</protoaction>
+		<protoaction>
+			<name stringid="STR_ACTION_STEALTH">Stealth</name>
+			<type>Stealth</type>
+			<maxrange>25.0</maxrange>
+			<autocastbyself>1</autocastbyself>
+			<autocastdistance>2.250000</autocastdistance>
+			<persistent>1</persistent>
+			<activevfxproto>VFXStealthEye</activevfxproto>
+			<revealarearadius>2.0</revealarearadius>
+			<revealareachain>1.0</revealareachain>
+			<soundsetenter>StealthBirth</soundsetenter>
+			<soundsetupdate>StealthAcknowledge</soundsetupdate>
+			<soundsetexit>StealthExists</soundsetexit>
+		</protoaction>
+	</unit>
+	<unit name="SnowmanBuildable">
+		<displaynameid>STR_EMB_SNOWMAN_NAME</displaynameid>
+		<animfile>shared\buildings\props\snowman\snowman.xml</animfile>
+		<icon>resources\tech\snowman_tophat.jpg</icon>
+
+		<obstructionradiusx>1.0000</obstructionradiusx>
+		<obstructionradiusz>1.0000</obstructionradiusz>
+		<impacttype>Wood</impacttype>
+		<movementtype>land</movementtype>
+
+		<initialhitpoints>1.0000</initialhitpoints>
+		<maxhitpoints>1.0000</maxhitpoints>
+		
+		<buildpoints>10.0000</buildpoints>
+		<los>15.0000</los>
+
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeBuildingsNotWalls</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>BuildingClass</unittype>
+		<unittype>Building</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeTartarianGateValidOverlapPlacement</unittype>
+		<unittype>LogicalTypeBuildingNotWonderOrTitan</unittype>
+
+		<flag>CollidesWithProjectiles</flag>
+		<flag>Immoveable</flag>
+		<flag>ObscuresUnits</flag>
+		<flag>NoIdleActions</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>Doppled</flag>
+		<flag>SelectWithObstruction</flag>
+		<flag>PaintTextureWhenPlacing</flag>
+		<flag>FlattenGround</flag>
+		<flag>DisplayRange</flag>
+		<flag>DynamicUpdate</flag>		
+		
+		<tactics>container.tactics</tactics>
+	</unit>
 	<!-- TODO
 
 	<unit name="OldMan"></unit>
-	<unit name="Skult"></unit>
-	<unit name="FolstagFlagBearer"></unit>
 	<unit name="Theocrat"></unit>
 	<unit name="Krios"></unit>
 	

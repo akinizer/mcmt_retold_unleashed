@@ -1589,6 +1589,9 @@ ID = "STR_ACTION_SANDGUST_ATTACK"   ;   Str = "Sand Gust Attack"
 ID = "STR_ABILITY_SPECIAL_CHARGEDSPAWN"   ;   Str = "Charged Spawn"
 ID = "STR_ABILITY_SPECIAL_CHARGEDSPAWN_LR"   ;   Str = "This unit spawns units via a charge gauge"
 
+ID = "STR_ABILITY_TAUNT"   ;   Str = "Taunt"
+ID = "STR_ABILITY_TAUNT_LR"   ;   Str = "Taunts nearby enemies with a move that is too brave or too cowardly"
+
 // COMMAND TECHS
 ID = "STR_BLD_FIREWALL_NAME"   ;   Str = "Fire Wall"
 

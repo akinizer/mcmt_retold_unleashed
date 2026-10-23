@@ -570,6 +570,13 @@
     - Brokk,Eitri
         - Build: MCMT_DwarvenForge (giantslaying and thunderslaying techs)
     - KingFolstag
+    - Skult:
+        - Stealth
+        - Build: SnowmanBuildable
+    - FolstagFlagBearer:
+        - AreaHeal: MilitaryUnit
+        - Taunt: HumanSoldier, MythUnit
+        - Build: TownCenter / VillageCenter
 - Atlantean: veterancy numkill, lineupgrades
     - Kastor: AbstractSamurai
     - KastorYoung, KastorStaff

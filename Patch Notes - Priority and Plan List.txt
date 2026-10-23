@@ -16,6 +16,15 @@ Nereid + Staff
 EarthWall + TrojanWall
 Sentinel Stonesquinametzin
 
+=== SPC REWORK / REPURPOSE
+<unit name="OldMan"></unit>
+<unit name="Theocrat"></unit>
+<unit name="Krios"></unit>
+
+<unit name="ArkantosBoar"></unit>
+<unit name="AjaxBoar"></unit>
+...
+
 === GP REWORK
 Carnivora
 Valor -> Area

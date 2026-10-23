@@ -1,5 +1,9 @@
 <abilitiesmods>	
     <!-- Unit Reworks -->
+		<!-- Campaign Protagonist Heroes -->
+	<FolstagFlagBearer>
+		<ability>AbilityTaunt<castonself>1</castonself><chargetimeasrof>1</chargetimeasrof></ability>
+	</FolstagFlagBearer>
 		<!-- Founders -->
 	<Landlord>
 		<ability>PassiveLifesteal<alwaysdisabledingrid>1</alwaysdisabledingrid></ability>	

@@ -1889,4 +1889,14 @@
 		<abstractplacementtargettype>AnimalOfSet</abstractplacementtargettype>
 		<unitaction>Enchant</unitaction>
 	</power>
+	<power name="AbilityTaunt" type="UnitAction">
+		<displaynameid>STR_ABILITY_TAUNT</displaynameid>
+		<rolloverid>STR_ABILITY_TAUNT_LR</rolloverid>
+		<icon>norse_freyr\static_color\abilities\rock_giant_ability_jotunmodr_icon.png</icon>
+		<placement>Self</placement>
+		<abstractplacementtargettype>HumanSoldier</abstractplacementtargettype>
+		<abstractplacementtargettype>LogicalTypeMythUnitNotTitan</abstractplacementtargettype>
+		<rangeindicator range="6.0" speed="0.2">Circle</rangeindicator>
+		<unitaction>TauntAttack</unitaction>
+	</power>
 </powersmod>

@@ -1,0 +1,12 @@
+<animfile>
+	<component>ModelComp<assetreference type="TMModel"><file>spc\units\folstag_flag_bearer\folstag_flag_bearer</file></assetreference></component>
+	<anim>Death<assetreference type="TMAnimation"><file>spc\units\folstag_flag_bearer\anim\folstag_flag_bearer_death_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Flail<assetreference type="TMAnimation"><file>spc\units\folstag_flag_bearer\anim\folstag_flag_bearer_flail_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Idle<assetreference type="TMAnimation"><file>spc\units\folstag_flag_bearer\anim\folstag_flag_bearer_idle_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Recover<assetreference type="TMAnimation"><file>spc\units\folstag_flag_bearer\anim\folstag_flag_bearer_recover_a</file><tag type="particles" popcornfxname="glow\hero_recover.pkfx" bone="vfx_recover" movewithbone="false" stopwithanim="false" adjustduration="false">0.02</tag></assetreference><component>ModelComp</component></anim>
+	<anim>Walk<assetreference type="TMAnimation"><file>spc\units\folstag_flag_bearer\anim\folstag_flag_bearer_walk_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Wave<assetreference type="TMAnimation"><file>spc\units\folstag_flag_bearer\anim\folstag_flag_bearer_wave_a</file></assetreference><component>ModelComp</component></anim>
+
+	<anim>Build<assetreference type="TMAnimation"><file>spc\units\folstag_flag_bearer\anim\folstag_flag_bearer_wave_a</file><tag type="SpecificSoundSet" checkvisible="1" set="Build">0.99</tag></assetreference><component>ModelComp</component></anim>
+    <anim>Taunt<assetreference type="TMAnimation"><file>spc\units\folstag_flag_bearer\anim\folstag_flag_bearer_wave_a</file><tag type="SpecificSoundSet" checkvisible="1" set="RockGiantTauntVFX" allowoverlap="1">0.10</tag><tag type="SpecificSoundSet" checkvisible="1" set="CrushStone">0.17</tag><tag type="SpecificSoundSet" checkvisible="1" set="CrushStone">0.32</tag><tag type="SpecificSoundSet" checkvisible="1" set="RockGiantTaunt">0.42</tag><tag type="LockOn">0.1</tag><tag type="Attack">0.1</tag><tag type="LockOff">1.0</tag><tag type="particles" popcornfxname="godpowers\rock_giant\rock_giant_shield_hit.pkfx" bone="shield_hit" movewithbone="true" stopwithanim="true" adjustduration="true">0.1</tag></assetreference><component>ModelComp</component></anim>
+</animfile>
