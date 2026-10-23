@@ -1623,6 +1623,23 @@
 			<target type="Tech">EclipseActive</target></effect>
 	</power>
 	<!-- New Sentinel God Powers -->
+	<power name="MCMT_Sentinel_Aztec" type="TempUnit" godpower="">
+		<displaynameid>STR_POWER_SENTINEL</displaynameid>
+		<rolloverid>STR_POWER_SENTINEL</rolloverid>
+		<icon>greek\static_color\god_powers\sentinel_icon.png</icon>
+		<placement ally="" allownature="" usetargetunitpositionforplacement="" fullybuiltonly="">Unit</placement>
+		<abstractplacementtargettype>LogicalTypeValidSentinelTarget</abstractplacementtargettype>
+		<minimapeventtime sendalertto="Ally">10.0</minimapeventtime>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAlly">SentinelBirth</soundset>
+		<activetime>3.0</activetime>
+		<powerplayerrelation>Ally</powerplayerrelation>
+		<cost>60.0</cost>
+		<repeatcost>10.0</repeatcost>
+		<smoothrotation></smoothrotation>
+		<createunit quantity="5" minradius="20" maxradius="26" pattern="symmetric" permanent="" norandomrotate="" delay="0.0">Stonesquinametzin</createunit>
+		<forceplacement></forceplacement>
+	</power>
 	<power name="MCMT_Sentinels_of_Tlalocan" type="TempUnit" godpower="">
 		<displaynameid>STR_POWER_SENTINEL</displaynameid>
 		<rolloverid>STR_POWER_SENTINEL</rolloverid>

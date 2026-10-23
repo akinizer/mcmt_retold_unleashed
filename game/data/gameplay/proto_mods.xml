@@ -37625,6 +37625,106 @@
 		</protoaction>
 	</unit>
 	<!-- GOD POWER SPAWNS -->
+	<unit name="Stonesquinametzin">
+		<displaynameid>STR_UNIT_STONESQUINAMETZIN_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_QUINAMETZIN_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_QUINAMETZIN_SR</shortrollovertextid>
+		<icon>resources\aztec\player_color\units\quinametzin_icon.png</icon>
+		<animfile>mcmt\buildings\gp\stonesquinametzin.xml</animfile>
+		<soundsetfile>aztec\vo\quinametzin\quinametzin.xml</soundsetfile>
+		<obstructionradiusx>0.9900</obstructionradiusx>
+		<obstructionradiusz>0.9900</obstructionradiusz>
+		<impacttype>Stone</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>600.0000</initialhitpoints>
+		<maxhitpoints>600.0000</maxhitpoints>
+		<trainpoints>20.0000</trainpoints>
+		<weightclass>9</weightclass>
+		<populationcount>4</populationcount>
+		<maxvelocity>0.0000</maxvelocity>
+		<los>32.0000</los>
+		<cost resourcetype="Gold">300.0000</cost>
+		<cost resourcetype="Favor">5.0000</cost>
+		<armor type="Hack" value="0.2500"></armor>
+		<armor type="Pierce" value="0.8000"></armor>
+		<armor type="Crush" value="0.8000"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeMythicMythUnit</unittype>
+		<unittype>Unit</unittype>
+		<unittype>MythUnit</unittype>
+		<unittype>MythUnitRanged</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeMythUnitNotTitan</unittype>
+		<unittype>LogicalTypeRangedMythUnit</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeFreezableMythUnit</unittype>
+		<unittype>LogicalTypeMythUnitThatGeneratesFavor</unittype>
+		<unittype>LogicalTypeMythUnitNotFlying</unittype>
+		<unittype>LogicalTypeTrainableMythUnit</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>HasContinuousParticles</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+
+		<flag>RotateInPlace</flag>
+		<flag>Immoveable</flag>
+		<tactics>rangedattack_antiwall.tactics</tactics>
+		<protoaction>
+			<name>AntiWallAttack</name>
+			<rof>3.000000</rof>
+			<damage type="Pierce">15.000000</damage>
+			<damage type="Crush">150.000000</damage>
+			<damagearea>8.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">0.250000</damagebonus>
+			<maxrange>28.000000</maxrange>
+			<projectile>ProjectileBoulder</projectile>
+			<impacteffect>effects\impacts\crush_medium</impacteffect>
+		</protoaction>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>3.000000</rof>
+			<damage type="Pierce">15.000000</damage>
+			<damage type="Crush">150.000000</damage>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">0.250000</damagebonus>
+			<maxrange>28.000000</maxrange>
+			<projectile>ProjectileBoulder</projectile>
+			<impacteffect>effects\impacts\crush_medium</impacteffect>
+		</protoaction>
+	</unit>
 
 	<!-- CUSTOM GOD POWER SPAWNS -->
 	 <unit name="MCMT_BoltStrike">

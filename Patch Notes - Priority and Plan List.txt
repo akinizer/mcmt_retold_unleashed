@@ -6,7 +6,6 @@
 Ogre / Orc: TitanYmir model
 
 === WEAPON MODELS
-Horse + Brunhild + Bow
 Centaur + Sword /  Spear
 Chiron + Arbalest (ChuKoNu, Gastraphetoros)
 Arcus + Sword
@@ -20,9 +19,6 @@ Sentinel Stonesquinametzin
 <unit name="OldMan"></unit>
 <unit name="Theocrat"></unit>
 <unit name="Krios"></unit>
-
-<unit name="ArkantosBoar"></unit>
-<unit name="AjaxBoar"></unit>
 ...
 
 === GP REWORK

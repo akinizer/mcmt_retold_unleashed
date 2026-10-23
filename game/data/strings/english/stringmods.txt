@@ -688,6 +688,8 @@ ID = "STR_BLD_DEEPSTRIKE_DROP_POD_NAME"   ;   Str = "Deepstrike Drop Pod"
 ID = "STR_BLD_DEEPSTRIKE_DROP_POD_SR"   ;   Str = "Deploys Units"
 ID = "STR_BLD_DEEPSTRIKE_DROP_POD_LR"   ;   Str = "Captain Eureka commands its cruisers to send pods containing elite teams from Cosmic Forces Armada"
 
+ID = "STR_UNIT_STONESQUINAMETZIN_NAME"   ;   Str = "Stonesquinametzin"
+
 // CYBERTECH FINANCIAL DEVELOPMENT STRUCTURES
 ID = "STR_UNIT_ECONOMIC_CENTER_NAME"   ;   Str = "Economic Center"
 ID = "STR_UNIT_FINANCIAL_CENTER_NAME"   ;   Str = "Financial Center"
