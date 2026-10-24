@@ -418,6 +418,15 @@ ID = "STR_UNIT_LOKI_JOTNAR_SR"   ;   Str = "Loki in True Form"
 ID = "STR_UNIT_LOKI_JOTNAR_LR"   ;   Str = "God of Mischief. Has Never Been This Serious"
 
 // AKHENATEN
+ID = "STR_TECH_FALCON_GUARDIAN_NAME"   ;   Str = "Overdrive Mode: Falon Guardian"
+ID = "STR_TECH_FALCON_GUARDIAN_LR"   ;   Str = "Warning: This overdriver activator will enable Qebehsenuef, a son of Horus, associated with protection and mummification"
+
+ID = "STR_UNIT_QEBEHSENUEF_NAME"   ;   Str = "Qebehsenuef"
+ID = "STR_UNIT_QEBEHSENUEF_SR"   ;   Str = "Guardian Falcon"
+ID = "STR_UNIT_QEBEHSENUEF_LR"   ;   Str = "Four sons have divine duty to protect Osiris until his return among seven guardians"
+ID = "STR_MSG_QEBEHSENUEF_SPAWN"   ;   Str = "Qebehsenuef has descended!"
+
+// AKHENATEN
 ID = "STR_TECH_RISE_OF_AKHENATEN_NAME"   ;   Str = "Overdrive Mode: Rise of Akhenaten"
 ID = "STR_TECH_RISE_OF_AKHENATEN_LR"   ;   Str = "Warning: This overdriver activator will enable Akhenaten, an immortal hero that has returned from death for a revenge"
 

@@ -671,6 +671,12 @@
         - Heal
         - Empower
         - Convert (Divine Teaching: Convert): limited units & structures
+    - Qebehsenuef (Isis)
+        - Respawn: 5 minutes
+        - LightningAttack: default ranged, ProjectileTeaserLaser
+        - DischargedAttack: default close range, forceareaattackcenter, VFX Energy Barrier Appear
+        - ChargedLightningAttack: bounce, ProjectileSoulGuideLightning, onhiteffect spawn Bolt Strike
+        - ChargedRangedAttack: areadamage, onhiteffect spawn Sand Storm        
     - Akhenaten (Set)
         - Respawn: 5 minutes
         - ReincarnationAttack: high damage, spawn UnboundSoul, lifesteal

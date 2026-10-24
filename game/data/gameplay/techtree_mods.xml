@@ -715,6 +715,12 @@
         <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_EgyptianRenovation</effect>
       </effects>
     </tech>
+    <tech name="ArchaicAgeIsis">
+      <effects>
+        <!--Qebehsenuef-->
+        <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_Falcon_Guardian</effect>
+      </effects>
+    </tech>
     <tech name="ArchaicAgeSet">
       <effects>
         <!--Akhenaten-->
@@ -3853,6 +3859,40 @@
 		</effects>
 		<effect type="TextOutput">STR_MSG_LANDLORD_SPAWN</effect>
 	</tech>
+
+  <tech name="MCMT_Falcon_Guardian">
+    <displaynameid>STR_TECH_FALCON_GUARDIAN_NAME</displaynameid>
+    <rollovertextid>STR_TECH_FALCON_GUARDIAN_LR</rollovertextid>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\tech\activate_tech.jpg</icon>
+    <researchpoints>1.0000</researchpoints>
+    <cost resourcetype="Favor">815.0000</cost>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <prereqs><techstatus status="Active">ArchaicAgeEgyptian</techstatus></prereqs>
+    <effects>
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Qebehsenuef</target></effect>
+      <effect type="TechStatus" status="obtainable">MCMT_Qebehsenuef_Respawn</effect>
+    </effects>
+  </tech>
+
+  <tech name="MCMT_Qebehsenuef_Respawn">
+    <status>UNOBTAINABLE</status>
+    <delay>300.0000</delay>
+    <flag>Volatile</flag>
+    <flag>Persistent</flag>
+    <flag>HideFromDialogs</flag>
+    <prereqs>
+      <techstatus status="Active">MCMT_Falcon_Guardian</techstatus>
+      <typecount unit="AbstractTownCenter" count="0.00" state="aliveState" operator="gt"></typecount>
+      <typecount unit="Qebehsenuef" count="1.00" state="aliveState" operator="lt"></typecount>
+    </prereqs>
+    <effects>
+      <effect type="CreateUnit" unit="Qebehsenuef" generator="AbstractTownCenter">
+        <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
+      <effect type="TextOutput">STR_MSG_QEBEHSENUEF_SPAWN</effect>
+    </effects>
+  </tech>
 
   <tech name="MCMT_Rise_of_Akhenaten">
     <displaynameid>STR_TECH_RISE_OF_AKHENATEN_NAME</displaynameid>

@@ -10478,6 +10478,7 @@
 		<tech row="2" column="1">MCMT_ArchitectsOfMarley</tech>
 		<tech row="3" column="2">MCMT_SpecialService</tech>
 		<tech row="3" column="3">MCMT_EgyptianRenovation</tech>
+		<tech row="3" column="3">MCMT_Falcon_Guardian</tech>
 		<tech row="3" column="3">MCMT_Rise_of_Akhenaten</tech>
 		<tech row="3" column="3">MCMT_ShamanCouncil</tech>
 		<tech row="3" column="3">MCMT_BrunnhildesCalling</tech>
@@ -27779,7 +27780,154 @@
 	</unit>
 
 	<!-- Egyptian Special Units -->
-	 <unit name="Noah">
+	<unit name="Qebehsenuef">
+		<displaynameid>STR_UNIT_QEBEHSENUEF_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_QEBEHSENUEF_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_QEBEHSENUEF_SR</shortrollovertextid>
+		<icon>resources\egyptian\player_color\units\son_of_osiris_icon.png</icon>
+		<animfile>mcmt\units\divine\demigods\qebehsenuef.xml</animfile>
+		<soundsetfile>egyptian\vo\son_of_osiris\son_of_osiris.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<autoattackrange>18.0000</autoattackrange>
+		<formationorder>4</formationorder>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>1420.0000</initialhitpoints>
+		<maxhitpoints>1420.0000</maxhitpoints>
+		<weightclass>6</weightclass>
+		<maxcontained>1</maxcontained>
+		<maxvelocity>3.6000</maxvelocity>
+		<los>20.0000</los>
+		<bloodgroupoverride>defaultmythblood</bloodgroupoverride>
+		<armor type="Hack" value="0.47000"></armor>
+		<armor type="Pierce" value="0.5000"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<culture>Egyptian</culture>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>Hero</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>MajorHero</unittype>
+		<unittype>HeroShadowUpgraded</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>		
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeMinimapFilterEconomic</unittype>		
+		<unittype>LogicalTypeFindMilitaryHero</unittype>
+		<unittype>LogicalTypeDivineImmunity</unittype>
+		<hotkeycontext>PharaohAccel</hotkeycontext>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>ExcludeFromMoveAllMilitary</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>AutoCommandStartDisabled</flag>
+		<flag>HideGarrisonFlag</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>DeleteConfirmation</flag>
+		<contain external="1">LogicalTypePickable</contain>
+
+		<rechargetime>12.0000</rechargetime>
+		<auxrechargetime>30.0000</auxrechargetime>
+		<tactics>mcmt_qebehsenuef.tactics</tactics>
+		<protoaction>
+			<name>LightningAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Divine">35.00000</damage>
+			<damagebonus type="HumanSoldier">3.000000</damagebonus>
+			<minrange>4.000000</minrange>
+			<maxrange>18.000000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>ChargedLightningAttack</name>
+			<rof>5.000000</rof>
+			<damage type="Divine">100.00000</damage>
+			<numberbounces>5</numberbounces>
+			<onhiteffect type="Spawn" targetunittype="Unit" proto="MCMT_BoltStrikeMinor" amount="1"></onhiteffect>
+			<minrange>4.000000</minrange>
+			<maxrange>18.000000</maxrange>	
+		</protoaction>
+		<protoaction>
+			<name>ChargedRangedAttack</name>
+			<rof>3.000000</rof>
+			<minrange>4.000000</minrange>
+			<maxrange>18.000000</maxrange>	
+			<damagearea>10.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<projectile>ProjectileBallOfFireInvisible</projectile>
+			<onhiteffect type="Spawn" targetunittype="Unit" proto="AreaDamageSandstorm" amount="1"></onhiteffect>	
+			<perfectaccuracy>1</perfectaccuracy>
+			<instantballistics>1</instantballistics>
+		</protoaction>
+		<protoaction>
+			<name>DischargedAttack</name>
+			<rof>5.000000</rof>
+			<maxrange>4.000000</maxrange>
+			<damagearea>4.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<projectile>ProjectileBallOfFireInvisible</projectile>
+			<perfectaccuracy>1</perfectaccuracy>
+			<instantballistics>1</instantballistics>
+			<forceareaattackcenter>1</forceareaattackcenter>
+			<onhiteffect type="Snare" duration="10.0" rate="0.15" targetunittype="Unit"></onhiteffect>
+			<onhiteffect type="Throw" targetunittype="HumanSoldier"></onhiteffect>
+			<onhiteffect type="Throw" targetunittype="LogicalTypeVillagerNotHero"></onhiteffect>
+			<onhiteffect type="Throw" targetunittype="LogicalTypeMythUnitNotTitan"></onhiteffect>
+			<throw>1</throw>
+			<throwdistancemin>4.0</throwdistancemin>
+			<throwdistancemax>8.0</throwdistancemax>
+			<throwmaxheight>10.0</throwmaxheight>
+			<throwvelocity>15.0</throwvelocity>
+			<impactforcemin>300.0f</impactforcemin>
+			<impactforcemax>600.0f</impactforcemax>
+			<impactlaunchangle>10.0</impactlaunchangle>
+			<areasortmode>Directional</areasortmode>
+			<maxsizeclass>7</maxsizeclass>
+		</protoaction>
+		<protoaction>
+			<name>Pickup</name>
+			<type>Pickup</type>
+			<maxrange>1</maxrange>
+			<rate type="LogicalTypePickable">1.00000</rate>
+		</protoaction>
+		<protoaction>
+			<name>DropOff</name>
+			<type>DropOff</type>
+			<maxrange>1</maxrange>
+			<rate type="AbstractTemple">1.00000</rate>
+		</protoaction>
+		<protoaction>
+			<name>HeroGlowOnSelf</name>
+			<type>Modify</type>
+			<modifyselfonly>1</modifyselfonly>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\thundercharge_glow.xml</modelattachment>
+			<modelattachmentbone>Spine</modelattachmentbone>
+		</protoaction>		
+	</unit>
+	<unit name="Noah">
 		<displaynameid>STR_UNIT_NOAH_NAME</displaynameid>
 		<rollovertextid>STR_UNIT_NOAH_LR</rollovertextid>
 		<shortrollovertextid>STR_UNIT_NOAH_SR</shortrollovertextid>
@@ -33499,6 +33647,27 @@
 		<flag>NotKBTracked</flag>
 		<flag>NotDeathTracked</flag>
 	</unit>
+
+	<unit name="ProjectileTeaserLaser" orderhint="5">
+		<animfile>vfx\projectiles\chi_wen_laser\chi_wen_laser_bolster.xml</animfile>
+		<obstructionradiusx>0.2000</obstructionradiusx>
+		<obstructionradiusz>0.2000</obstructionradiusz>
+		<lifespan>6.0000</lifespan>
+		<decay delay="0.0000" duration="0.0100"></decay>
+		<movementtype>air</movementtype>
+		<unittype>Projectile</unittype>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>KillOnAnimLoop</flag>
+		<flag>DoNotYawDuringMovement</flag>
+		<flag>NonCollideable</flag>
+		<flag>GivesLOSToAll</flag>
+		<flag>NoHPBar</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NoIdleActions</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+	</unit>
 	
 	<!-- /// SPECIAL TRAIL UNITS /// -->
 	<unit name="TrailOfFire">
@@ -36113,6 +36282,42 @@
 			<throw>1</throw>
    		</protoaction>
   	</unit>	
+
+	<unit name="AreaDamageSandstorm">
+		<displaynameid>STR_VFX_NAPALM_CHARGE_NAME</displaynameid>
+		<animfile>vfx\glow\sandstorm_vfx.xml</animfile>
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<lifespan>4.0000</lifespan>
+		<decay delay="0.1000" duration="0.1000"></decay>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>air</movementtype>
+		<los>5.0000</los>
+		<unittype>Unit</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NoIdleActions</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>area_damage.tactics</tactics>
+		<protoaction>
+			<name stringid="STR_VFX_NAPALM_CHARGE_NAME">AreaDamage</name>
+			<modifyamount>-10</modifyamount>
+			<modifydamagetype>Divine</modifydamagetype>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<maxrange>4</maxrange>
+			<targetenemyincludenature>1</targetenemyincludenature>
+			<includeunbuilt>1</includeunbuilt>
+		</protoaction>
+	</unit>
 
 	<unit name="AreaDamageFirestorm">
 		<displaynameid>STR_VFX_NAPALM_CHARGE_NAME</displaynameid>
