@@ -1,7 +1,7 @@
 <animfile validation="strict">
     <attachment>Arrow<include>shared\units\attachments\arrow\arrow.xml</include></attachment>
-	<attachment>Helm<include>atlantean\units\archery\arcus\arcus_helm.xml</include></attachment>
-	<attachment>Shield<include>atlantean\units\attachments\shield\shield_a_b.xml</include></attachment>
+	<attachment>Helm<include>mcmt\armor\cretan_archer_helm.xml</include></attachment>
+	<attachment>Shield<include>mcmt\armor\cretan_archer_shield.xml</include></attachment>
 	<attachment>RangedWeapon<include>atlantean\units\attachments\bow\bow_a.xml</include></attachment>
 	<attachment>Weapon<include>atlantean\units\attachments\sword\sword_a_double.xml</include></attachment>
 
