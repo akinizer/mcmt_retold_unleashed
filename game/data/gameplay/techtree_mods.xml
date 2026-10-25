@@ -296,7 +296,7 @@
       <effects>      
         <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">CretanArcher</target></effect>    
-        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="CretanArcher" row="0" column="4" relativity="Assign" mergeMode="add">
+        <effect type="Data" amount="1.00" subtype="CommandAdd" proto="CretanArcher" row="0" column="4" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">MilitaryAcademy</target></effect>	 
       </effects>      
     </tech>
