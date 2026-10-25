@@ -267,7 +267,12 @@
         - AthenianAxeman: bash ability, slower rof, melee range
         - AthenianHalberdier: highest melee range, slower rof
 - Knights
-    - OlympicGames
+    - Prereq: HeroicAgeApollo
+        - CretanArcher:
+            - HandAttack
+            - RangedAttack: bonusdamage vs infantry
+            - ChargedRangedAttack: vfxbleed, bonusdamage vs humansoldier
+    - OlympicGames:
         - Temple of Solaris: infinite tech, train Templar x5
             - Templar: hero infantry, anti-economic, anti-healer, builder [temple, fortress]
 

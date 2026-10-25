@@ -22,7 +22,7 @@ Humanoid (myth, archery, economic, infantry, ninja, hero, siege, spc):
     - Throw: Slinger, ThrowingAxeman
 - Unarmed Elastic: Promethean
 - Armed Melee:
-    - 2W: Anubite, Theris, Einheri, Fanatic, Kastor
+    - 2W (weaponright): Anubite, Theris, Einheri, Fanatic, Kastor
     - 2H: Destroyer, Katapeltes, Axeman, Samurai, Berserk, HeroOfRagnarok, Hersir
         - HandAttack: YangJian, Akari
         - Chop: Villager

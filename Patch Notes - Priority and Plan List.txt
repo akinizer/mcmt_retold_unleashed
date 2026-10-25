@@ -3,14 +3,10 @@
 ==============================================================================
 
 === WEAPON MODELS
-Centaur + Sword /  Spear
-Chiron + Arbalest (ChuKoNu, Gastraphetoros)
-Arcus + Sword
 Nereid + Staff
 
 === GP MERGE
 EarthWall + TrojanWall
-Sentinel Stonesquinametzin
 
 === SPC REWORK / REPURPOSE
 <unit name="OldMan"></unit>

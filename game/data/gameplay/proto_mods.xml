@@ -31639,6 +31639,113 @@
 		</protoaction>
 	</unit>
 	<!-- Atlantean Special Units -->
+	<unit name="CretanArcher">
+		<displaynameid>STR_UNIT_CRETAN_ARCHER_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_CRETAN_ARCHER_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_CRETAN_ARCHER_SR</shortrollovertextid>
+		<icon>resources\atlantean\player_color\units\arcus_icon.png</icon>
+		<animfile>mcmt\units\knights\cretan_archer.xml</animfile>
+		<soundsetfile>atlantean\vo\arcus\arcus.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>165.0000</initialhitpoints>
+		<maxhitpoints>165.0000</maxhitpoints>
+		<trainpoints>6.5000</trainpoints>
+		<weightclass>5</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>4.5000</maxvelocity>
+		<los>16.0000</los>
+		<cost resourcetype="Food">65.0000</cost>
+		<cost resourcetype="Gold">40.0000</cost>
+		<armor type="Hack" value="0.4000"></armor>
+		<armor type="Pierce" value="0.1500"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>Unit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>AbstractInfantry</unittype>
+		<unittype>HumanSoldier</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidTraitorTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<unittype>LogicalTypeMeleeInfantry</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		
+		<tactics>mcmt_cretan_archer.tactics</tactics>
+		<flag>HasDefaultAttack</flag>
+		<rechargetime>12.0</rechargetime>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Pierce">5.000000</damage>
+			<damagebonus type="AbstractInfantry">1.250000</damagebonus>
+			<minrange>1.000000</minrange>
+			<maxrange>16.000000</maxrange>
+			<projectile>ProjectileArrowFlaming</projectile>
+			<defaultattack>1</defaultattack>
+		</protoaction>
+
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.400000</rof>
+			<damage type="Hack">11.000000</damage>
+			<maxrange>0.500000</maxrange>	
+		</protoaction>
+		<protoaction>
+			<name>ChargedRangedAttack</name>
+			<rof>0.800000</rof>
+			<damage type="Pierce">6.000000</damage>
+			<damagebonus type="HumanSoldier">3.000000</damagebonus>
+			<maxrange>16.000000</maxrange>
+			<projectile>ProjectileArrowFlaming</projectile>
+
+			<onhiteffect type="DamageOverTime" duration="3.000000">
+				<damage type="Divine">1.0000000</damage>
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+			<onhiteffect type="Attach" proto="VFXBLeed" attachbone="spine" duration="3.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+		</protoaction>
+	</unit>
 	 <!-- dismount units knights TODO
 	 <unit name="TurmaKnight" mergeMode="add"></unit>
 	 <unit name="TurmaKnightHero" mergeMode="add"></unit>

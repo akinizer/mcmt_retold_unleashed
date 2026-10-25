@@ -931,6 +931,11 @@ ID = "STR_UNIT_HIPPEUS_KNIGHT_NAME"   ;   Str = "Shining Knight"
 ID = "STR_UNIT_HIPPEUS_KNIGHT_SR"   ;   Str = "White Knight in a Shining Armor"
 ID = "STR_UNIT_HIPPEUS_KNIGHT_LR"   ;   Str = "After abandoning the loyal companion, the rest of battle leaves a winning a heart"
 
+// ATLANTEAN SPECIAL UNITS
+ID = "STR_UNIT_CRETAN_ARCHER_NAME"   ;   Str = "Cretan Archer"
+ID = "STR_UNIT_CRETAN_ARCHER_SR"   ;   Str = "Ranged Infantry with a sharp blade"
+ID = "STR_UNIT_CRETAN_ARCHER_LR"   ;   Str = "Cretan Archers can utilize both bow archer and swordsmanship in battlefield"
+
 // ATLANTEAN SPECIAL TECHS
 ID = "STR_TECH_SCHEMATICS_OF_ADEPTUSMECHANIKUS_NAME"   ;   Str = "Schematics of Adeptus Mechanikus"
 ID = "STR_TECH_SCHEMATICS_OF_ADEPTUSMECHANIKUS_LR"   ;   Str = "The brilliant techpriests join the research facility of Prof. Daedalus and improve capabilities of War Armory siege units."
