@@ -49,7 +49,9 @@
 		<maxspread>0</maxspread>
 		<trackrating>99.0</trackrating>
 		<impacteffect>effects\impacts\pierce</impacteffect>
-		<rate type="Unit">1.0</rate>
+		<rate type="HumanSoldier">1.0</rate>
+		<rate type="LogicalTypeVillagerNotHero">1.0</rate>
+		<rate type="LogicalTypeMythUnitNotTitan">1.0</rate>
 	</action>
 	<tactic>Default
 		<action priority="100">ChargedRangedAttack</action>

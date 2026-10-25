@@ -610,6 +610,8 @@ ID = "STR_BLD_SHRINE_SHINMEI_NAME" ;   Str = "Shinmei Shrine"
 
 ID = "STR_BLD_CAMP_ELVEN_NAME" ;   Str = "Elven Camp"
 ID = "STR_BLD_CAMP_AMAZONIAN_NAME" ;   Str = "Amazonian Camp"
+ID = "STR_BLD_CAMP_ELVEN_NAME" ;   Str = "Elven Camp"
+ID = "STR_BLD_CAMP_OGRE_NAME" ;   Str = "Ogre Camp"
 ID = "STR_BLD_CAMP_SPARTAN_NAME" ;   Str = "Spartan Encampment"
 ID = "STR_BLD_CAMP_ATHENIAN_NAME" ;   Str = "Athenian Encampment"
 ID = "STR_BLD_CAMP_NUBIAN_NAME" ;   Str = "Mercenary Campsite"
@@ -938,6 +940,14 @@ ID = "STR_TECH_TEMPLEOFSOLARIS_NAME"   ;   Str = "Temple of Solaris"
 ID = "STR_TECH_TEMPLEOFSOLARIS_LR"   ;   Str = "Beacon of the Knight Order that praises the sun"
 
 // NORSE SPECIAL UNITS
+ID = "STR_UNIT_OGRE_MINI_NAME"   ;   Str = "Mini Ogre"
+ID = "STR_UNIT_OGRE_MINI_SR"   ;   Str = "Builder Myth Unit"
+ID = "STR_UNIT_OGRE_MINI_LR"   ;   Str = "Mini Ogres have smaller sizes but larger hearts"
+
+ID = "STR_UNIT_OGRE_NAME"   ;   Str = "Ogre"
+ID = "STR_UNIT_OGRE_SR"   ;   Str = "Tanky Myth Unit"
+ID = "STR_UNIT_OGRE_LR"   ;   Str = "Ogres have been cousins to Trolls and known with bulky state and size"
+
 ID = "STR_UNIT_RANGER_ELF_NAME"   ;   Str = "Ranger Elf"
 ID = "STR_UNIT_RANGER_ELF_SR"   ;   Str = "Effective at both melee and range"
 ID = "STR_UNIT_RANGER_ELF_LR"   ;   Str = "Ranger Elves are survivalists as they grow in wilderness and embrace nature as their home"
@@ -1281,6 +1291,9 @@ ID = "STR_TECH_HUNTSOFARTEMIS_LR"   ;   Str = "Worshippers of Artemis excel thei
 
 ID = "STR_TECH_DIVINEARMAMENTS_NAME"   ;   Str = "Divine Armaments"
 ID = "STR_TECH_DIVINEARMAMENTS_LR"   ;   Str = "Improves Offensive Capabilities of Military Units, Heroes and Hunters with Divine Weaponry"
+
+ID = "STR_TECH_OGRETRAINING_NAME"   ;   Str = "Ogre Training"
+ID = "STR_TECH_OGRETRAINING_LR"   ;   Str = "Recruits Ogre wartribe for advanced warfare"
 
 ID = "STR_TECH_ELVENTRAINING_NAME"   ;   Str = "Elven Training"
 ID = "STR_TECH_ELVENTRAINING_LR"   ;   Str = "Recruits Elven specialists for advanced warfare"

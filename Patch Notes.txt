@@ -383,7 +383,15 @@
             - modelattachment: hero glow 
         - elventraining: enables elf units and elventent at greathall
         - elventraining I-II-III: improves maxrange and armor of elven units
-            - final upgrade improves enables direct damage for all, provides divine damage on rangedattack of royalelf and rangedattackflying of 
+            - final upgrade improves enables direct damage for all, provides divine damage on rangedattack of royalelf and rangedattackflying
+    - Ogre Encampment Specialists:
+        - Ogre:
+            - Tanky Myth Infantry
+            - HandAttack: Good vs Buildings
+        - MiniOgre:
+            - Builder Myth Infantry
+            - Build: military production buildings
+            - HandAttack: bonus damage vs wall
     - BrunnhildeMounted: Shieldmaiden Cavalry Hero
         - HandAttack: spear attack
         - RangedAttack: anti-naval lance throw

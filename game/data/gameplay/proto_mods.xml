@@ -10651,6 +10651,9 @@
 	<unit name="GreatHall">		
 		<tech row="0" column="5" mergeMode="add">MCMT_ElvenTraining</tech>
 		<train row="0" column="5" mergeMode="add">ElvenCamp</train>
+
+		<tech row="1" column="5" mergeMode="add">MCMT_OgreTraining</tech>
+		<train row="1" column="5" mergeMode="add">OgreCamp</train>
 	</unit>
 	<unit name="MachineWorkshop">		
 		<tech row="0" column="5" mergeMode="add">MCMT_ArtilleryTraining</tech>
@@ -26086,6 +26089,7 @@
 		<unittype>CountsTowardEconomicScore</unittype>
 		<unittype>LogicalTypeTartarianGateValidOverlapPlacement</unittype>
 		<unittype>LogicalTypeValidForestProtectionPlacement</unittype>
+		<unittype>DisplayQueue</unittype>
 		<flag>CollidesWithProjectiles</flag>
 		<flag>Immoveable</flag>
 		<flag>ObscuresUnits</flag>
@@ -26141,6 +26145,7 @@
 		<unittype>CountsTowardEconomicScore</unittype>
 		<unittype>LogicalTypeTartarianGateValidOverlapPlacement</unittype>
 		<unittype>LogicalTypeValidForestProtectionPlacement</unittype>
+		<unittype>DisplayQueue</unittype>
 		<flag>CollidesWithProjectiles</flag>
 		<flag>Immoveable</flag>
 		<flag>ObscuresUnits</flag>
@@ -26199,6 +26204,7 @@
 		<unittype>CountsTowardEconomicScore</unittype>
 		<unittype>LogicalTypeTartarianGateValidOverlapPlacement</unittype>
 		<unittype>LogicalTypeValidForestProtectionPlacement</unittype>
+		<unittype>DisplayQueue</unittype>
 		<flag>CollidesWithProjectiles</flag>
 		<flag>Immoveable</flag>
 		<flag>ObscuresUnits</flag>
@@ -26380,6 +26386,188 @@
 			<type>DropOff</type>
 			<maxrange>1</maxrange>
 			<rate type="AbstractTemple">1.00000</rate>
+		</protoaction>
+	</unit>
+
+	<unit name="MiniOgre">
+		<displaynameid>STR_UNIT_OGRE_MINI_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_OGRE_MINI_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_OGRE_MINI_SR</shortrollovertextid>
+		<icon>resources\tech\ogre_mini.png</icon>
+		<animfile>mcmt\units\viking\ogre\ogre.xml</animfile>
+		<soundsetfile>norse\vo\titan_ymir\titan_ymir.xml</soundsetfile>
+		<obstructionradiusx>2.9900</obstructionradiusx>
+		<obstructionradiusz>2.9900</obstructionradiusz>
+		<selectionradiusx>2.7500</selectionradiusx>
+		<selectionradiusz>2.7500</selectionradiusz>
+		<impacttype>Unarmoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<autoattackrange>25.0000</autoattackrange>
+		<movementtype>land</movementtype>
+		<turnrate>4.0000</turnrate>
+		<initialhitpoints>50.0000</initialhitpoints>
+		<maxhitpoints>50.0000</maxhitpoints>
+		<weightclass>6</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>5.0000</maxvelocity>
+
+		<cost resourcetype="Food">60.0000</cost>
+		<cost resourcetype="Wood">40.0000</cost>
+		<cost resourcetype="Favor">1.0000</cost>
+		<trainpoints>20.0000</trainpoints>
+		
+		<los>16.0000</los>
+		<armor type="Hack" value="0.6000"></armor>
+		<armor type="Pierce" value="0.4000"></armor>
+		<armor type="Crush" value="0.8000"></armor>
+		<culture>Norse</culture>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>MythUnit</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeMythUnitThatGeneratesFavor</unittype>
+		<unittype>LogicalTypeMythUnitNotFlying</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CannotSnare</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+
+		<hotkeycontext>BuildNorseAccel</hotkeycontext>
+		<train row="0" column="4">Temple</train>
+		<train row="0" column="5">Dock</train>
+		<train row="1" column="1">Longhouse</train>
+		<train row="1" column="2">GreatHall</train>
+		<train row="1" column="5">Armory</train>
+		<train row="1" column="5">DwarvenArmory</train>
+		<train row="2" column="3">HillFort</train>
+		<train>TitanGate</train>
+		<train>AsgardianHillFort</train>
+
+		<command row="3" column="0">Stop</command>
+		<command row="3" column="3">Patrol</command>
+		<command row="3" column="4">AttackMove</command>
+		<command row="3" column="5">Delete</command>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>2.500000</rof>
+			<damage type="Hack">12.000000</damage>
+			<damage type="Crush">2.000000</damage>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="AbstractWall">3.000000</damagebonus>
+			<maxrange>2.000000</maxrange>
+		</protoaction>
+			<protoaction>
+			<name>Build</name>
+			<type>Build</type>
+			<anim>HandAttack</anim>
+			<rate type="Building">1.000000</rate>
+			<maxrange>0.2</maxrange>
+			<typedmaxrange type="Dock">2.0</typedmaxrange>
+		</protoaction>
+		<protoaction>
+			<name>Repair</name>
+			<type>Repair</type>
+			<anim>Build</anim>
+			<maxrange>0.2</maxrange>
+			<rate type="Building">0.5000</rate>
+			<typedmaxrange type="Dock">2.0</typedmaxrange>
+		</protoaction>
+	</unit>
+	<unit name="Ogre">
+		<displaynameid>STR_UNIT_OGRE_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_OGRE_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_OGRE_SR</shortrollovertextid>
+		<icon>resources\tech\ogre.png</icon>
+		<animfile>mcmt\units\viking\ogre\ogre.xml</animfile>
+		<soundsetfile>norse\vo\titan_ymir\titan_ymir.xml</soundsetfile>
+		<obstructionradiusx>2.9900</obstructionradiusx>
+		<obstructionradiusz>2.9900</obstructionradiusz>
+		<selectionradiusx>2.7500</selectionradiusx>
+		<selectionradiusz>2.7500</selectionradiusz>
+		<impacttype>Unarmoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<autoattackrange>25.0000</autoattackrange>
+		<movementtype>land</movementtype>
+		<turnrate>4.0000</turnrate>
+		<initialhitpoints>650.0000</initialhitpoints>
+		<maxhitpoints>650.0000</maxhitpoints>
+		<weightclass>6</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>4.6000</maxvelocity>
+
+		<cost resourcetype="Food">200.0000</cost>
+		<cost resourcetype="Wood">80.0000</cost>
+		<cost resourcetype="Favor">22.0000</cost>
+		<trainpoints>40.0000</trainpoints>
+		
+		<los>25.0000</los>
+		<armor type="Hack" value="0.6000"></armor>
+		<armor type="Pierce" value="0.4000"></armor>
+		<armor type="Crush" value="0.8000"></armor>
+		<culture>Norse</culture>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>MythUnit</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeMythUnitThatGeneratesFavor</unittype>
+		<unittype>LogicalTypeMythUnitNotFlying</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CannotSnare</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<command row="3" column="0">Stop</command>
+		<command row="3" column="3">Patrol</command>
+		<command row="3" column="4">AttackMove</command>
+		<command row="3" column="5">Delete</command>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>3.500000</rof>
+			<damage type="Hack">60.000000</damage>
+			<damage type="Crush">20.000000</damage>
+			<damagearea>2.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<damagebonus type="MythUnit">3.000000</damagebonus>
+			<maxrange>2.000000</maxrange>
 		</protoaction>
 	</unit>
 
@@ -27726,11 +27914,11 @@
 	
 	<!-- Norse Special Buildings -->
 	<unit name="ElvenCamp">
-		<displaynameid>STR_BLD_CAMP_AMAZONIAN_NAME</displaynameid>
-		<shortrollovertextid>STR_BLD_CAMP_AMAZONIAN_NAME</shortrollovertextid>
+		<displaynameid>STR_BLD_CAMP_ELVEN_NAME</displaynameid>
+		<shortrollovertextid>STR_BLD_CAMP_ELVEN_NAME</shortrollovertextid>
 		<rollovertextid>STR_BLD_CAMP_ENCAMPENT_LR</rollovertextid>
 		<icon>resources\spc\static_color\buildings\tent_spc_greek_icon.png</icon>
-		<animfile culture="greek">shared\buildings\tent\tent_greek.xml</animfile>
+		<animfile culture="norse">shared\buildings\tent\tent_greek.xml</animfile>
 		<soundsetfile>shared\sfx\buildings\house.xml</soundsetfile>
 		<obstructionradiusx>2.0000</obstructionradiusx>
 		<obstructionradiusz>2.0000</obstructionradiusz>
@@ -27761,6 +27949,7 @@
 		<unittype>CountsTowardEconomicScore</unittype>
 		<unittype>LogicalTypeTartarianGateValidOverlapPlacement</unittype>
 		<unittype>LogicalTypeValidForestProtectionPlacement</unittype>
+		<unittype>DisplayQueue</unittype>
 		<flag>CollidesWithProjectiles</flag>
 		<flag>Immoveable</flag>
 		<flag>ObscuresUnits</flag>
@@ -27777,6 +27966,59 @@
 		<tech row="0" column="0" mergeMode="add">MCMT_ElvenTraining_I</tech>
 		<tech row="0" column="0" mergeMode="add">MCMT_ElvenTraining_II</tech>
 		<tech row="0" column="0" mergeMode="add">MCMT_ElvenTraining_III</tech>
+	</unit>
+
+	<unit name="OgreCamp">
+		<displaynameid>STR_BLD_CAMP_OGRE_NAME</displaynameid>
+		<shortrollovertextid>STR_BLD_CAMP_OGRE_NAME</shortrollovertextid>
+		<rollovertextid>STR_BLD_CAMP_ENCAMPENT_LR</rollovertextid>
+		<icon>resources\spc\static_color\buildings\tent_spc_greek_icon.png</icon>
+		<animfile culture="norse">shared\buildings\tent\tent_norse.xml</animfile>
+		<soundsetfile>shared\sfx\buildings\house.xml</soundsetfile>
+		<obstructionradiusx>2.0000</obstructionradiusx>
+		<obstructionradiusz>2.0000</obstructionradiusz>
+		<impacttype>Wood</impacttype>
+		<allowedheightvariance>4.0000</allowedheightvariance>
+		<movementtype>land</movementtype>
+		<initialhitpoints>250.0000</initialhitpoints>
+		<maxhitpoints>250.0000</maxhitpoints>
+		<trainpoints>1.0000</trainpoints>
+		<populationcapaddition>2</populationcapaddition>
+		<los>9.0000</los>
+		<cost resourcetype="Wood">125.0000</cost>
+		<armor type="Hack" value="0.3000"></armor>
+		<armor type="Pierce" value="0.4500"></armor>
+		<armor type="Crush" value="0.0500"></armor>
+		<unittype>LogicalTypeMinimapFilterEconomic</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeBuildingsNotWalls</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>Unit</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>CountsTowardEconomicScore</unittype>
+		<unittype>LogicalTypeTartarianGateValidOverlapPlacement</unittype>
+		<unittype>LogicalTypeValidForestProtectionPlacement</unittype>
+		<unittype>DisplayQueue</unittype>
+		
+		<flag>CollidesWithProjectiles</flag>
+		<flag>Immoveable</flag>
+		<flag>ObscuresUnits</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>Doppled</flag>
+		<flag>SelectWithObstruction</flag>
+		<flag>UseSharedBuildLimit</flag>
+		<flag>NoIdleActions</flag>
+		<flag>DynamicUpdate</flag>		
+		<autobuildrate>5.0000</autobuildrate>		
+		<bloodgroupoverride>noblood</bloodgroupoverride>		
+		<train row="0" column="0" mergeMode="add">MiniOgre</train>
+		<train row="0" column="2" mergeMode="add">Ogre</train>
 	</unit>
 
 	<!-- Egyptian Special Units -->
@@ -27857,7 +28099,6 @@
 			<rof>2.000000</rof>
 			<damage type="Divine">35.00000</damage>
 			<damagebonus type="HumanSoldier">3.000000</damagebonus>
-			<minrange>4.000000</minrange>
 			<maxrange>18.000000</maxrange>
 		</protoaction>
 		<protoaction>
@@ -29755,6 +29996,7 @@
 		<unittype>CountsTowardEconomicScore</unittype>
 		<unittype>LogicalTypeTartarianGateValidOverlapPlacement</unittype>
 		<unittype>LogicalTypeValidForestProtectionPlacement</unittype>
+		<unittype>DisplayQueue</unittype>
 		<flag>CollidesWithProjectiles</flag>
 		<flag>Immoveable</flag>
 		<flag>ObscuresUnits</flag>

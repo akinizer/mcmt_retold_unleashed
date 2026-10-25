@@ -1398,6 +1398,12 @@
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractConstruct" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">RockGiant</target></effect>
         <!--AbstractDemigod-->
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractDemigod" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AbstractGreekHero</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractDemigod" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">SonOfOsiris</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractDemigod" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Qebehsenuef</target></effect>
         <!--AbstractWolf-->
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractWolf" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">FenrisWolfBrood</target></effect>
@@ -1432,7 +1438,11 @@
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractGiant" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">MountainGiant</target></effect>
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractGiant" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">RockGiant</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractGiant" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">Quinametzin</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractGiant" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Stonesquinametzin</target></effect>
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractGiant" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">AbstractOni</target></effect>
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractGiant" relativity="Absolute" mergeMode="add">
@@ -1537,6 +1547,10 @@
           <target type="ProtoUnit">Draugr</target></effect>
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractFireVulnerable" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">FrostGiant</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractFireVulnerable" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Ogre</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractFireVulnerable" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">MiniOgre</target></effect>
         <!--AbstractLightningResistant-->   
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractLightningVulnerable" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">AbstractConstruct</target></effect> 
@@ -1707,6 +1721,10 @@
           <target type="ProtoUnit">Petsuchos</target></effect>
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">UnboundSoul</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Ogre</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractMythSoldier" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">MiniOgre</target></effect>
         
         <!--AbstractHuntress-->        
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractHuntress" relativity="Absolute" mergeMode="add">
@@ -2625,6 +2643,7 @@
         <effect type="TechStatus" status="obtainable">MCMT_ElvenTraining_I</effect>            
         <effect type="TechStatus" status="obtainable">MCMT_ElvenTraining_II</effect>            
         <effect type="TechStatus" status="obtainable">MCMT_ElvenTraining_III</effect>    
+        <effect type="TechStatus" status="obtainable">MCMT_OgreTraining</effect>    
         
         <effect type="TechStatus" status="obtainable">MCMT_DivineNatureSpirits</effect>
         <effect type="TechStatus" status="obtainable">MCMT_DivineNatureSpirits_I</effect>
@@ -5110,6 +5129,28 @@
 		</effects>		
 	</tech>
   
+  <tech name="MCMT_OgreTraining" mergeMode="add">
+		<flag>NeverAutoResearch</flag>
+		<displaynameid>STR_TECH_OGRETRAINING_NAME</displaynameid>
+		<rollovertextid>STR_TECH_OGRETRAINING_LR</rollovertextid>
+		<icon>resources\tech\hammer_norse.png</icon>
+		<status>UNOBTAINABLE</status>
+		<flag>CountsTowardMilitaryScore</flag>
+		<researchpoints>5.0000</researchpoints>
+		<cost resourcetype="Food">250</cost>
+		<cost resourcetype="Wood">150</cost>    
+		<effects>      
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">OgreCamp</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">MiniOgre</target></effect>
+        <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Ogre</target></effect>
+
+        <effect type="Data" amount="0.10" subtype="AdditionalScale" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">MiniOgre</target></effect>
+        <effect type="Data" amount="0.50" subtype="AdditionalScale" relativity="Absolute" mergeMode="add">
+            <target type="ProtoUnit">Ogre</target></effect>
+		</effects>		
+	</tech>
+
   <tech name="MCMT_ElvenTraining" mergeMode="add">
 		<flag>NeverAutoResearch</flag>
 		<displaynameid>STR_TECH_ELVENTRAINING_NAME</displaynameid>

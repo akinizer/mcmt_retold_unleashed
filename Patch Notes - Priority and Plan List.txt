@@ -2,9 +2,6 @@
 ==================== PRIORITY-PLANS ==========================================
 ==============================================================================
 
-=== UNIT MODELS
-Ogre / Orc: TitanYmir model
-
 === WEAPON MODELS
 Centaur + Sword /  Spear
 Chiron + Arbalest (ChuKoNu, Gastraphetoros)
