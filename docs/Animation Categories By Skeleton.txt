@@ -1,5 +1,6 @@
 Humanoid (myth, archery, economic, infantry, ninja, hero, siege, spc):
 - Hover: Caladria, Servant, HadesShade, ShadeSpc, Harpy, NeZhaGrownup, Icarus, Osiris, ServantOfKronos
+- Crouch: OldMan
 - Caster: 
     - Mage: Lampades, Caladria, Servant, Caladria, Circe, Azusa, Azusa Suzu, YukiOnna, HuangZhaowusWife, Osiris, Shiji
     - Monk: Sage, Oracle, OracleHero, CangJie

@@ -2,19 +2,28 @@
 ==================== PRIORITY-PLANS ==========================================
 ==============================================================================
 
+=== FACTION HEROES
+greek: 
+    wise trio: beam attack
+        oldman: lightning beam, bolster skult rof, healrate aura
+        skult: chaneque beam, bounce, infect wretch (failed experiment) spawn
+        theocrat: chiwen beam, bolster skult damage, armor aura
+    athena: disable field, ability spawn (champion of freyr x5)
+    arkantos uber: super soldier, reflect, aoeattack, teleportattack onhiteffect throw & stun
+atlantean: colossal titan (swordsman delayed transform, explosive birth attack, firegiant), kronny
+chinese: mulan (akari, stealth), azusa, ???
+japanese: oda nobunaga (harumoto, clan member), miyamoto musashi (kagemasa)
+
+champion of freyr
+
 === WEAPON MODELS
 Nereid + Staff
 
 === GP MERGE
-EarthWall + TrojanWall
+EarthWall + TrojanWall (walls of camelot)
+Sentinel self cast summon -> stonesquinametzin
 
-=== SPC REWORK / REPURPOSE
-<unit name="OldMan"></unit>
-<unit name="Theocrat"></unit>
-<unit name="Krios"></unit>
-...
-
-=== GP REWORK
+=== GP REWORK: reload time, free
 Carnivora
 Valor -> Area
 SpiderLair -> Spawn Arachne after pickup
