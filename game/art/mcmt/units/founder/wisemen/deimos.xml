@@ -9,13 +9,15 @@
             <attach name="Flaming" attachpoint="vfx_flame"></attach></component><anim>Idle<component>ModelComp</component>
         </anim>
     </attachment>	
-    <attachment>Helmet<include>spc\units\arkantos\arkantos_uber_helmet.xml</include></attachment>
+	<attachment>Helmet<component>ModelComp<logic type="Tech"><none><assetreference type="TMComposite"><file>mcmt\armor\deimos_helm</file><materialvariant index="3"></materialvariant></assetreference></none></logic></component><anim>Idle<component>ModelComp</component></anim></attachment>
+	
 	<attachment>HeroGlow<include>vfx\glow\hero_glow.xml</include></attachment>
 	<attachment>HeroGlowRing<include>vfx\glow\hero_glow_ring.xml</include></attachment>
 	<attachment>HeroBirth<include>vfx\glow\hero_birth.xml</include></attachment>
 	<attachment>HeroDeath<include>vfx\glow\hero_death.xml</include></attachment>
-	<attachment>VFX<component>Model<assetreference type="PopcornFx"><file>godpowers\blessing_of_zeus\arkantos_uber.pkfx</file></assetreference></component><anim>None<component>Model</component></anim></attachment>
-	<component>ModelComp<logic type="Cinematic"><normal><assetreference type="TMModel"><file>spc\units\arkantos\arkantos_uber_spc</file></assetreference><attach name="HeroGlow" attachpoint="hero_glow"></attach><attach name="HeroGlowRing" attachpoint="bonethatdoesntexist"></attach><attach name="VFX" attachpoint="Spine"></attach></normal><cinematic><assetreference type="TMModel"><file>spc\units\arkantos\arkantos_uber_spc</file></assetreference></cinematic></logic><attach name="Helmet" attachpoint="helmet"></attach><attach name="Weapon" attachpoint="weapon"></attach></component>
+	<attachment>VFX_Uber<component>Model<assetreference type="PopcornFx"><file>godpowers\blessing_of_zeus\arkantos_uber.pkfx</file></assetreference></component><anim>None<component>Model</component></anim></attachment>
+
+	<component>ModelComp<logic type="Cinematic"><normal><assetreference type="TMModel"><file>spc\units\arkantos\arkantos_uber_spc</file></assetreference><attach name="HeroGlow" attachpoint="hero_glow"></attach><attach name="HeroGlowRing" attachpoint="bonethatdoesntexist"></attach></normal><cinematic><assetreference type="TMModel"><file>spc\units\arkantos\arkantos_uber_spc</file></assetreference></cinematic></logic><attach name="Helmet" attachpoint="helmet"></attach><attach name="Weapon" attachpoint="weapon"></attach></component>
 	<anim>HandAttack<assetreference type="TMAnimation"><file>spc\units\arkantos\anim\arkantos_attack_a</file><tag type="Attack">0.5</tag><tag type="particles" popcornfxname="objects\weapon_fx\sword_swipe_hero.pkfx" bone="vfx_spear_tip" movewithbone="true" stopwithanim="false" adjustduration="false">0.35</tag></assetreference><component>ModelComp</component></anim>
 	<anim>Bored<assetreference type="TMAnimation"><file>spc\units\arkantos\anim\arkantos_bored_a</file></assetreference><component>ModelComp</component></anim>
 	<anim>Carry<assetreference type="TMAnimation"><file>spc\units\arkantos\anim\arkantos_carry_a</file></assetreference><component>ModelComp</component></anim>

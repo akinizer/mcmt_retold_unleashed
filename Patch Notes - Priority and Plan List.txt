@@ -4,13 +4,20 @@
 
 === FACTION HEROES
 greek: 
-    wisemen: 
+    wisemen - hades: 
         hippokrates, sokrates, herodotus: beam attack
             lightning beam, bolster skult rof, healrate aura
             skult: chaneque beam, bounce, infect wretch (failed experiment) spawn
             theocrat: chiwen beam, bolster skult damage, armor aura
         deimos: arkantosuber, super soldier, reflect, aoeattack, teleportattack onhiteffect throw & stun, flaming sword (achilles)
-    athena: disable field, ability spawn (champion of freyr x5)
+    athena - zeus: disable field, ability spawn (champion of freyr x5)
+    posiedon - euphumus
+        model: perseus (no helm)
+        weapon: kuafu rock
+        amphibious: faster on water
+        rangedattack: water blast (pillar of tlalocan), bonusdamage vs ship
+        chargedrangedattack: vfx_maelstrom, ship rof-
+        areaslow: ship
     
 atlantean: colossal titan (swordsman delayed transform, explosive birth attack, firegiant), kronny
 chinese: mulan (akari, stealth), azusa, ???
@@ -23,6 +30,9 @@ templeofprimordials
 
 wanyudo
     ayotochtli spin attack
+
+perseus: weapon model (fork)
+ufo: chargedrangedattack (banish)
 
 === WEAPON MODELS
 Nereid + Staff

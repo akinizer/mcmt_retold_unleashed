@@ -1,0 +1,38 @@
+{
+    "entities": [{
+            "type": "model",
+            "local_transform": [
+                X_scale (1.0),  Rotate/Skew,    Rotate/Skew,    X_Translate (0.0),
+                Rotate/Skew,    Y_scale (1.0),  Rotate/Skew,    Y_Translate (0.5),
+                Rotate/Skew,    Rotate/Skew,    Z_scale (1.0),  Z_Translate (0.0)                                                      
+            ],    
+            "probability": 1.0,
+            "seed": 0,
+            "passive_rotation": [0.0, 0.0, 0.0],
+            "enable_lod": false,
+            "maintain_terrain_height": false,
+            "maintain_terrain_orientation": false,
+            "is_ghost": false,                                                                      --> ghost = invisible
+            "deathbehaviour": "Default",
+            "destruction_customdestruction": false,
+            "destruction_dontusetemplate": false,
+            "destruction_manualtargetchoice": false,
+            "destruction_ignore": false,
+            "destruction_disabletargetlow": false,
+            "destruction_disabletargettitan": true,
+            "destruction_disabletargethigh": true,
+            "destruction_dontusephysicstemplate": false,
+            "destruction_destroymode": "default",
+            "destruction_hitstodestroy": 1,
+            "model_ref": "spc\\buildings\\props\\thor_hammer\\thor_hammer_standing"                --> tmm directory (building, unit, weapon, armor)
+        }],
+    "events": [],
+    "destructionsharedsettings": {
+        "ignorefordestruction": false
+    },
+    "globalsettings": {}
+}
+
+---
+
+<attachment>Helmet<component>ModelComp<logic type="Tech"><none><assetreference type="TMComposite"><file>mcmt\armor\deimos_helm</file></assetreference></none></logic></component><anim>Idle<component>ModelComp</component></anim></attachment>

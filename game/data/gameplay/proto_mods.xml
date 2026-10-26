@@ -23472,10 +23472,9 @@
 		</protoaction>
 	</unit>
 	<unit name="Deimos">
-		<displaynameid>STR_UNIT_ARKANTOS_UBER_NAME</displaynameid>
-		<rollovertextid>STR_UNIT_ARKANTOS_UBER_LR</rollovertextid>
-		<shortrollovertextid>STR_UNIT_ARKANTOS_UBER_SR</shortrollovertextid>
-		<editornameid>STR_UNIT_ARKANTOS_UBER_EDT_NAME</editornameid>
+		<displaynameid>STR_UNIT_WISEMAN_DEIMOS_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_WISEMAN_DEIMOS_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_WISEMAN_DEIMOS_SR</shortrollovertextid>
 		<icon>resources\spc\player_color\units\arkantos_uber_icon.png</icon>
 		<minimapicon>ui\minimap\minimap_hero_spc</minimapicon>
 		<animfile>mcmt\units\founder\wisemen\deimos.xml</animfile>

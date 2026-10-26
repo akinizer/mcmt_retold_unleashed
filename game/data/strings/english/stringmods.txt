@@ -915,11 +915,11 @@ ID = "STR_UNIT_WISEMAN_SOKRATES_LR"   ;   Str = "Sokrates has been famous for hi
 
 ID = "STR_UNIT_WISEMAN_HIPPOKRATES_NAME"   ;   Str = "Hippokrates"
 ID = "STR_UNIT_WISEMAN_HIPPOKRATES_SR"   ;   Str = "Father of Medical"
-ID = "STR_UNIT_WISEMAN_HIPPOKRATES_LR"   ;   Str = ""
+ID = "STR_UNIT_WISEMAN_HIPPOKRATES_LR"   ;   Str = "Hippokrates has been known with his contributions to medical. He has joined the Wisemen after a calling of his old friend Deimos"
 
-ID = "STR_UNIT_WISEMAN_HERODOTUS_NAME"   ;   Str = "Hippokrates"
+ID = "STR_UNIT_WISEMAN_HERODOTUS_NAME"   ;   Str = "Herodotus"
 ID = "STR_UNIT_WISEMAN_HERODOTUS_SR"   ;   Str = "Father of History"
-ID = "STR_UNIT_WISEMAN_HERODOTUS_LR"   ;   Str = ""
+ID = "STR_UNIT_WISEMAN_HERODOTUS_LR"   ;   Str = "Herodotus has became popular due to his contributions to geographical records. He has joined the Wisemen after a calling of his old friend Deimos"
 
 ID = "STR_UNIT_WISEMAN_DEIMOS_NAME"   ;   Str = "Deimos"
 ID = "STR_UNIT_WISEMAN_DEIMOS_SR"   ;   Str = "Champion of Hades"
