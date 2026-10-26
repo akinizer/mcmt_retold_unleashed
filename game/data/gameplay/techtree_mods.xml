@@ -4159,7 +4159,7 @@
     <flag>Persistent</flag>
     <flag>HideFromDialogs</flag>
     <prereqs>
-      <techstatus status="Active">ArchaicAgeZeus</techstatus>
+      <techstatus status="Active">ArchaicAgeHades</techstatus>
       <typecount unit="AbstractTownCenter" count="0.00" state="aliveState" operator="gt"></typecount>
       <typecount unit="Deimos" count="1.00" state="aliveState" operator="lt"></typecount>
     </prereqs>
