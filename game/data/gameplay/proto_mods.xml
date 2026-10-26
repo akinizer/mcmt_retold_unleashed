@@ -23215,6 +23215,362 @@
 	</unit>
 
 	<!-- Greek Special Units-->
+	<unit name="WiseMan_Sokrates">
+		<displaynameid>STR_UNIT_SKULT_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_SKULT_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_SKULT_SR</shortrollovertextid>
+		<icon>resources\spc\player_color\units\skult_icon.png</icon>
+		<animfile>mcmt\units\founder\wisemen\sokrates.xml</animfile>
+		<soundsetfile>spc\vo\arkantos_uber\arkantos_uber.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Unarmoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<formationorder>5</formationorder>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>200.0000</initialhitpoints>
+		<maxhitpoints>200.0000</maxhitpoints>
+		<unitregen>5.0000</unitregen>
+		<weightclass>5</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>3.3000</maxvelocity>
+		<los>16.0000</los>
+		<sharedselectionunittypes>
+			<unittype>LogicalTypeSharedHeroSelection</unittype>
+		</sharedselectionunittypes>
+		<armor type="Hack" value="0.3000"></armor>
+		<armor type="Pierce" value="0.3000"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>Hero</unittype>
+		<unittype>MajorHero</unittype>
+		<unittype>HeroShadowUpgraded</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>		
+		<unittype>LogicalTypeFindMilitaryHero</unittype>
+		<unittype>LogicalTypeDivineImmunity</unittype>
+		<unittype>LogicalTypeHealableHero</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>NoIdleActions</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>ExcludeFromMoveAllMilitary</flag>
+		<command row="3" column="0">Stop</command>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.500000</rof>
+			<damage type="Hack">10.000000</damage>
+			<damagebonus type="MythUnit">7.000000</damagebonus>
+			<maxrange>0.750000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>Pickup</name>
+			<type>Pickup</type>
+			<maxrange>1</maxrange>
+			<rate type="LogicalTypePickable">1.00000</rate>
+		</protoaction>
+	</unit>
+
+	<unit name="WiseMan_Herodotus">
+		<displaynameid>STR_UNIT_OLD_MAN_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_OLD_MAN_LR</rollovertextid>
+		<icon>resources\spc\player_color\units\old_man_icon.png</icon>
+		<animfile>mcmt\units\founder\wisemen\herodotus.xml</animfile>
+		<soundsetfile>spc\vo\arkantos_uber\arkantos_uber.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Unarmoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<autoattackrange>5.0000</autoattackrange>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>150.0000</initialhitpoints>
+		<maxhitpoints>150.0000</maxhitpoints>
+		<unitregen>5.0000</unitregen>
+
+		<weightclass>4</weightclass>
+		<populationcount>0</populationcount>
+		<maxvelocity>3.2000</maxvelocity>
+		<sharedselectionunittypes>
+			<unittype>LogicalTypeSharedHeroSelection</unittype>
+		</sharedselectionunittypes>
+		<los>5.0000</los>
+		<armor type="Hack" value="0.2000"></armor>
+		<armor type="Pierce" value="0.2000"></armor>
+		<armor type="Crush" value="0.2000"></armor>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>Hero</unittype>
+		<unittype>MajorHero</unittype>
+		<unittype>HeroShadowUpgraded</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeNotEconomicOrMilitaryUnit</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>NoIdleActions</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.500000</rof>
+			<damage type="Hack">10.000000</damage>
+			<damagebonus type="MythUnit">7.000000</damagebonus>
+			<maxrange>0.750000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>Pickup</name>
+			<type>Pickup</type>
+			<maxrange>1</maxrange>
+			<rate type="LogicalTypePickable">1.00000</rate>
+		</protoaction>
+	</unit>
+	<unit name="WiseMan_Hippokrates">
+		<displaynameid>STR_UNIT_THEOCRAT_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_THEOCRAT_LR</rollovertextid>
+		<icon>resources\spc\player_color\units\theocrat_icon.png</icon>
+		<minimapicon>ui\minimap\minimap_hero_spc</minimapicon>
+		<animfile>mcmt\units\founder\wisemen\hippokrates.xml</animfile>
+		<soundsetfile>spc\vo\arkantos_uber\arkantos_uber.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Unarmoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<autoattackrange>16.0000</autoattackrange>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>220.0000</initialhitpoints>
+		<maxhitpoints>220.0000</maxhitpoints>
+		<unitregen>5.0000</unitregen>
+
+		<weightclass>5</weightclass>
+		<maxcontained>1.0000</maxcontained>
+		<populationcount>0</populationcount>
+		<maxvelocity>4.2000</maxvelocity>
+		<los>15.0000</los>
+		<sharedselectionunittypes>
+			<unittype>LogicalTypeSharedHeroSelection</unittype>
+		</sharedselectionunittypes>
+		<armor type="Hack" value="0.2000"></armor>
+		<armor type="Pierce" value="0.1500"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeSharedHeroSelection</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>Hero</unittype>
+		<unittype>MajorHero</unittype>
+		<unittype>HeroShadowUpgraded</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeFindMilitaryHero</unittype>
+		<unittype>LogicalTypeHealableHero</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>HideGarrisonFlag</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<contain external="1">LogicalTypePickable</contain>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.500000</rof>
+			<damage type="Hack">10.000000</damage>
+			<damagebonus type="MythUnit">7.000000</damagebonus>
+			<maxrange>0.750000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>Pickup</name>
+			<type>Pickup</type>
+			<maxrange>1</maxrange>
+			<rate type="LogicalTypePickable">1.00000</rate>
+		</protoaction>
+		<protoaction>
+			<name>DropOff</name>
+			<type>DropOff</type>
+			<maxrange>1</maxrange>
+			<rate type="AbstractTemple">1.00000</rate>
+		</protoaction>
+	</unit>
+	<unit name="Deimos">
+		<displaynameid>STR_UNIT_ARKANTOS_UBER_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_ARKANTOS_UBER_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_ARKANTOS_UBER_SR</shortrollovertextid>
+		<editornameid>STR_UNIT_ARKANTOS_UBER_EDT_NAME</editornameid>
+		<icon>resources\spc\player_color\units\arkantos_uber_icon.png</icon>
+		<minimapicon>ui\minimap\minimap_hero_spc</minimapicon>
+		<animfile>mcmt\units\founder\wisemen\deimos.xml</animfile>
+		<soundsetfile>spc\vo\theocrat\theocrat.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<autoattackrange>16.0000</autoattackrange>
+		<movementtype>land</movementtype>
+		<turnrate>22.0000</turnrate>
+		<initialhitpoints>1500.0000</initialhitpoints>
+		<maxhitpoints>1500.0000</maxhitpoints>
+		<unitregen>5.0000</unitregen>
+		<weightclass>6</weightclass>
+		<maxcontained>1.0000</maxcontained>
+		<populationcount>2</populationcount>
+		<maxvelocity>5.3000</maxvelocity>
+		<rechargetime>22.0000</rechargetime>
+		<los>20.0000</los>
+		<sharedselectionunittypes>
+			<unittype>LogicalTypeSharedHeroSelection</unittype>
+		</sharedselectionunittypes>
+		<armor type="Hack" value="0.8000"></armor>
+		<armor type="Pierce" value="0.8000"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeSharedHeroSelection</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>Hero</unittype>
+		<unittype>MajorHero</unittype>
+		<unittype>HeroShadowUpgraded</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>		
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>		
+		<unittype>LogicalTypeFindMilitaryHero</unittype>
+		<unittype>LogicalTypeDivineImmunity</unittype>
+		<unittype>LogicalTypeHealableHero</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>HideGarrisonFlag</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<contain external="1">LogicalTypePickable</contain>
+		<tactics>arkantos_uber.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.500000</rof>
+			<damage type="Hack">60.000000</damage>
+			<damage type="Divine">1.000000</damage>
+			<damagebonus type="MythUnit">3.000000</damagebonus>
+			<maxrange>2.000000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>BuckAttack</name>
+			<rof>0.200000</rof>
+			<maxrange>2.000000</maxrange>
+			<shockstun>1</shockstun>
+			<stunduration>8.0</stunduration>
+			<workonfrozenunits>0</workonfrozenunits>
+		</protoaction>
+		<protoaction>
+			<name>Pickup</name>
+			<type>Pickup</type>
+			<maxrange>1</maxrange>
+			<rate type="LogicalTypePickable">1.00000</rate>
+		</protoaction>
+		<protoaction>
+			<name>DropOff</name>
+			<type>DropOff</type>
+			<maxrange>1</maxrange>
+			<rate type="AbstractTemple">1.00000</rate>
+		</protoaction>
+	</unit>
+
 	 <unit name="AchillesDismounted">	
 		<displaynameid>STR_UNIT_ACHILLES_NAME</displaynameid>
 		<rollovertextid>STR_UNIT_ACHILLES_LR</rollovertextid>

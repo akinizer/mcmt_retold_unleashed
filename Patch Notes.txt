@@ -244,37 +244,42 @@
     - Pentekonter: 
         - DirectionalArmor
         - ChargedRangedAttack: areadamage, crushdamage, throw humansoldier & villager
-
-- Spartans
-    - Prereq: ClassicAgeAres
-    - SpartanTraining: enables Spartan building, techs and units
-    - SpartanEncampment: hp, attack, armor, rof, bonusdamage, non-hero buildlimit 60, popcost 2
-        - SpartanCaptain: hero humansoldier, buildlimit, highest armor
-        - SpartanSpearman: handattack default, rangedattack for units in range, decent armor, melee range
-        - SpartanSwordsman: faster rof, decent armor
-        - SpartanBrute: bash ability, slowest rof, high hp
-        - SpartanAxeman: bash ability, slower rof, melee range
-        - SpartanHalberdier: highest melee range, slower rof
-- Athenians
-    - Prereq: ClassicAgeAthena
-    - AthenianTraining: enables Athenian building, techs and units
-    - AthenianEncampment: hp, attack, armor, rof, bonusdamage, non-hero buildlimit 60, popcost 2
-        - AthenianCaptain: hero humansoldier, buildlimit, highest armor
-        - AthenianSpearman: handattack default, rangedattack for units in range, decent armor, melee range
-        - AthenianSwordsman: faster rof, decent armor
-        - AthenianBrute: bash ability, slowest rof, high hp, dual-wield
-            - model: murmillo helm, fanatic body
-        - AthenianAxeman: bash ability, slower rof, melee range
-        - AthenianHalberdier: highest melee range, slower rof
-- Knights
-    - Prereq: HeroicAgeApollo
-        - CretanArcher:
-            - HandAttack
-            - RangedAttack: bonusdamage vs infantry
-            - ChargedRangedAttack: vfxbleed, bonusdamage vs humansoldier
-    - OlympicGames:
-        - Temple of Solaris: infinite tech, train Templar x5
-            - Templar: hero infantry, anti-economic, anti-healer, builder [temple, fortress]
+- Special Greek Units
+    - The Wise Men
+        - Sokrates
+        - Hippokrates
+        - Herodotus
+        - Deimos
+    - Spartans
+        - Prereq: ClassicAgeAres
+        - SpartanTraining: enables Spartan building, techs and units
+        - SpartanEncampment: hp, attack, armor, rof, bonusdamage, non-hero buildlimit 60, popcost 2
+            - SpartanCaptain: hero humansoldier, buildlimit, highest armor
+            - SpartanSpearman: handattack default, rangedattack for units in range, decent armor, melee range
+            - SpartanSwordsman: faster rof, decent armor
+            - SpartanBrute: bash ability, slowest rof, high hp
+            - SpartanAxeman: bash ability, slower rof, melee range
+            - SpartanHalberdier: highest melee range, slower rof
+    - Athenians
+        - Prereq: ClassicAgeAthena
+        - AthenianTraining: enables Athenian building, techs and units
+        - AthenianEncampment: hp, attack, armor, rof, bonusdamage, non-hero buildlimit 60, popcost 2
+            - AthenianCaptain: hero humansoldier, buildlimit, highest armor
+            - AthenianSpearman: handattack default, rangedattack for units in range, decent armor, melee range
+            - AthenianSwordsman: faster rof, decent armor
+            - AthenianBrute: bash ability, slowest rof, high hp, dual-wield
+                - model: murmillo helm, fanatic body
+            - AthenianAxeman: bash ability, slower rof, melee range
+            - AthenianHalberdier: highest melee range, slower rof
+    - Knights
+        - Prereq: HeroicAgeApollo
+            - CretanArcher:
+                - HandAttack
+                - RangedAttack: bonusdamage vs infantry
+                - ChargedRangedAttack: vfxbleed, bonusdamage vs humansoldier
+        - OlympicGames:
+            - Temple of Solaris: infinite tech, train Templar x5
+                - Templar: hero infantry, anti-economic, anti-healer, builder [temple, fortress]
 
 - Buildings:
     - Fortress:

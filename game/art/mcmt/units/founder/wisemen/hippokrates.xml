@@ -1,0 +1,18 @@
+<animfile>
+	<attachment>Weapon<component>ModelComp<assetreference type="TMModel"><file>spc\units\kastor\kastor_staff</file></assetreference></component><anim>Idle<component>ModelComp</component></anim></attachment>
+	<attachment>HeroGlow<include>vfx\glow\hero_glow.xml</include></attachment>
+	<attachment>HeroGlowRing<include>vfx\glow\hero_glow_ring.xml</include></attachment>
+	<attachment>HeroBirth<include>vfx\glow\hero_birth.xml</include></attachment>
+	<attachment>HeroDeath<include>vfx\glow\hero_death.xml</include></attachment>
+	<component>ModelComp<logic type="Cinematic"><normal><assetreference type="TMModel"><file>spc\units\theocrat\theocrat_spc</file></assetreference><attach name="HeroGlow" attachpoint="hero_glow"></attach><attach name="HeroGlowRing" attachpoint="bonethatdoesntexist"></attach></normal><cinematic><assetreference type="TMModel"><file>spc\units\theocrat\theocrat_spc</file></assetreference></cinematic></logic><attach name="Weapon" attachpoint="weapon"></attach></component>
+	<anim>HandAttack<assetreference type="TMAnimation"><file>spc\units\theocrat\anim\theocrat_attack_a</file><tag type="Attack">0.5</tag><tag type="particles" popcornfxname="objects\weapon_fx\hammer_swipe_hero.pkfx" bone="vfx_staff" movewithbone="true" stopwithanim="false" adjustduration="false">0.23</tag></assetreference><component>ModelComp</component></anim>
+	<anim>Bored<assetreference type="TMAnimation"><file>spc\units\theocrat\anim\theocrat_bored_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Carry<assetreference type="TMAnimation"><file>spc\units\theocrat\anim\theocrat_carry_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>CarryBored<assetreference type="TMAnimation"><file>spc\units\theocrat\anim\theocrat_carrybored_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>CarryIdle<assetreference type="TMAnimation"><file>spc\units\theocrat\anim\theocrat_carryidle_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Death<assetreference type="TMAnimation"><file>spc\units\theocrat\anim\theocrat_death_a</file></assetreference><component>ModelComp</component><attach name="HeroDeath" attachpoint="bonethatdoesntexist"></attach></anim>
+	<anim>Flail<assetreference type="TMAnimation"><file>spc\units\theocrat\anim\theocrat_flail_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Idle<assetreference type="TMAnimation"><file>spc\units\theocrat\anim\theocrat_idle_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Birth<assetreference type="TMAnimation"><file>spc\units\theocrat\anim\theocrat_idle_a</file></assetreference><component>ModelComp</component><attach name="HeroBirth" attachpoint="bonethatdoesntexist"></attach></anim>
+	<anim>Walk<assetreference type="TMAnimation"><file>spc\units\theocrat\anim\theocrat_walk_a</file></assetreference><component>ModelComp</component></anim>
+</animfile>

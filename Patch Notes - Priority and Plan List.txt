@@ -4,17 +4,25 @@
 
 === FACTION HEROES
 greek: 
-    wise trio: beam attack
-        oldman: lightning beam, bolster skult rof, healrate aura
-        skult: chaneque beam, bounce, infect wretch (failed experiment) spawn
-        theocrat: chiwen beam, bolster skult damage, armor aura
+    wisemen: 
+        hippokrates, sokrates, herodotus: beam attack
+            lightning beam, bolster skult rof, healrate aura
+            skult: chaneque beam, bounce, infect wretch (failed experiment) spawn
+            theocrat: chiwen beam, bolster skult damage, armor aura
+        deimos: arkantosuber, super soldier, reflect, aoeattack, teleportattack onhiteffect throw & stun, flaming sword (achilles)
     athena: disable field, ability spawn (champion of freyr x5)
-    arkantos uber: super soldier, reflect, aoeattack, teleportattack onhiteffect throw & stun
+    
 atlantean: colossal titan (swordsman delayed transform, explosive birth attack, firegiant), kronny
 chinese: mulan (akari, stealth), azusa, ???
 japanese: oda nobunaga (harumoto, clan member), miyamoto musashi (kagemasa)
 
 champion of freyr
+
+templeofprimordials
+    avatar of anubis: theris, osiris lightningattack / hover / onhiteffect explosion
+
+wanyudo
+    ayotochtli spin attack
 
 === WEAPON MODELS
 Nereid + Staff

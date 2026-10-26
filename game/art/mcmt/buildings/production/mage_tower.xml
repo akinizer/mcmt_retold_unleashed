@@ -3,7 +3,7 @@
 	<component>ModelComp
         <logic type="BuildingCompletion"><p0><assetreference type="TMComposite"><file>shared\buildings\construction\construction_xsmall_a</file></assetreference><attach name="ConstructionProps" attachpoint="bonethatdoesntexist"></attach></p0><p33><assetreference type="TMComposite"><file>shared\buildings\construction\construction_xsmall_b</file></assetreference><attach name="ConstructionProps" attachpoint="bonethatdoesntexist"></attach></p33><p66><assetreference type="TMComposite"><file>shared\buildings\construction\construction_tower</file></assetreference><attach name="ConstructionProps" attachpoint="bonethatdoesntexist"></attach></p66>
             <p100>
-                <assetreference type="TMComposite"><file>greek\buildings\tower\guard_tower\guard_tower_g_age4</file></assetreference>
+                <assetreference type="TMComposite"><file>mcmt\buildings\production\mage_tower</file></assetreference>
             </p100>
         </logic>
     </component>

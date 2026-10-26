@@ -1,0 +1,30 @@
+<animfile>
+    <attachment>Weapon
+        <attachment>Flaming
+            <component>VFXComp<assetreference type="TMComposite"><file>vfx\weapons\flaming_weapons\swords\sword_a_upgrade3_flame_vfx</file></assetreference></component>
+            <anim>Idle<component>VFXComp</component></anim>
+        </attachment>
+        <component>ModelComp
+            <assetreference type="TMModel"><file>norse\units\attachments\sword\sword_n_upgrade3</file></assetreference>
+            <attach name="Flaming" attachpoint="vfx_flame"></attach></component><anim>Idle<component>ModelComp</component>
+        </anim>
+    </attachment>	
+    <attachment>Helmet<include>spc\units\arkantos\arkantos_uber_helmet.xml</include></attachment>
+	<attachment>HeroGlow<include>vfx\glow\hero_glow.xml</include></attachment>
+	<attachment>HeroGlowRing<include>vfx\glow\hero_glow_ring.xml</include></attachment>
+	<attachment>HeroBirth<include>vfx\glow\hero_birth.xml</include></attachment>
+	<attachment>HeroDeath<include>vfx\glow\hero_death.xml</include></attachment>
+	<attachment>VFX<component>Model<assetreference type="PopcornFx"><file>godpowers\blessing_of_zeus\arkantos_uber.pkfx</file></assetreference></component><anim>None<component>Model</component></anim></attachment>
+	<component>ModelComp<logic type="Cinematic"><normal><assetreference type="TMModel"><file>spc\units\arkantos\arkantos_uber_spc</file></assetreference><attach name="HeroGlow" attachpoint="hero_glow"></attach><attach name="HeroGlowRing" attachpoint="bonethatdoesntexist"></attach><attach name="VFX" attachpoint="Spine"></attach></normal><cinematic><assetreference type="TMModel"><file>spc\units\arkantos\arkantos_uber_spc</file></assetreference></cinematic></logic><attach name="Helmet" attachpoint="helmet"></attach><attach name="Weapon" attachpoint="weapon"></attach></component>
+	<anim>HandAttack<assetreference type="TMAnimation"><file>spc\units\arkantos\anim\arkantos_attack_a</file><tag type="Attack">0.5</tag><tag type="particles" popcornfxname="objects\weapon_fx\sword_swipe_hero.pkfx" bone="vfx_spear_tip" movewithbone="true" stopwithanim="false" adjustduration="false">0.35</tag></assetreference><component>ModelComp</component></anim>
+	<anim>Bored<assetreference type="TMAnimation"><file>spc\units\arkantos\anim\arkantos_bored_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Carry<assetreference type="TMAnimation"><file>spc\units\arkantos\anim\arkantos_carry_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>CarryBored<assetreference type="TMAnimation"><file>spc\units\arkantos\anim\arkantos_carrybored_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>CarryIdle<assetreference type="TMAnimation"><file>spc\units\arkantos\anim\arkantos_carryidle_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Death<assetreference type="TMAnimation"><file>spc\units\arkantos\anim\arkantos_death_a</file><tag type="SpecificSoundSet" checkowner="1" set="DeathHeroSpc">0.10</tag></assetreference><component>ModelComp</component><attach name="HeroDeath" attachpoint="bonethatdoesntexist"></attach></anim>
+	<anim>Flail<assetreference type="TMAnimation"><file>spc\units\arkantos\anim\arkantos_flail_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Gore<assetreference type="TMAnimation"><file>spc\units\arkantos\anim\arkantos_specialattack_a</file><tag type="Attack">0.5</tag><tag type="SpecificSoundSet" checkvisible="1" set="LightningStrike">0.00</tag><tag type="SpecificSoundSet" checkvisible="1" set="SwooshSword">0.52</tag><tag type="particles" popcornfxname="objects\weapon_fx\sword_swipe_hero.pkfx" bone="vfx_spear_tip" movewithbone="true" stopwithanim="false" adjustduration="false">0.35</tag><tag type="particles" popcornfxname="objects\weapon_fx\sword_swipe_hero.pkfx" bone="vfx_spear_tip" movewithbone="true" stopwithanim="false" adjustduration="false">0.5</tag><tag type="particles" popcornfxname="impacts\hero_special_hit_ground.pkfx" bone="vfx_gore" movewithbone="false" stopwithanim="false" adjustduration="false">0.50</tag></assetreference><component>ModelComp</component></anim>
+	<anim>Idle<assetreference type="TMAnimation"><file>spc\units\arkantos\anim\arkantos_idle_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Birth<assetreference type="TMAnimation"><file>spc\units\arkantos\anim\arkantos_rally_a</file></assetreference><component>ModelComp</component><attach name="HeroBirth" attachpoint="bonethatdoesntexist"></attach></anim>
+	<anim>Walk<assetreference type="TMAnimation"><file>spc\units\arkantos\anim\arkantos_walk_a</file></assetreference><component>ModelComp</component></anim>
+</animfile>
