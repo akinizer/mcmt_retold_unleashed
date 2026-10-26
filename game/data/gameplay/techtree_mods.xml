@@ -2569,6 +2569,13 @@
       </effects>
     </tech>
 
+    <tech name="ArchaicAgeGreek">
+      <effects>
+        <!--TheWisemen-->
+        <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_The_Wisemen_Greek</effect>
+      </effects>
+    </tech>
+
     <tech name="ArchaicAgeNorse">
       <effects>
         <!--BrunnhildeMounted-->
@@ -4078,7 +4085,89 @@
         <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
     </effects>
   </tech>
+  <!---->
+  <tech name="MCMT_The_Wisemen_Greek">
+    <displaynameid>STR_TECH_THE_WISEMEN_NAME</displaynameid>
+    <rollovertextid>STR_TECH_THE_WISEMEN_LR</rollovertextid>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\tech\activate_tech.jpg</icon>
+    <researchpoints>1.0000</researchpoints>
+    <cost resourcetype="Favor">815.0000</cost>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <prereqs><techstatus status="Active">ArchaicAgeHades</techstatus></prereqs>
+    <effects>
+      <effect type="TechStatus" status="obtainable">TheWisemen_Respawn_Sokrates</effect>
+      <effect type="TechStatus" status="obtainable">TheWisemen_Respawn_Herodotus</effect>
+      <effect type="TechStatus" status="obtainable">TheWisemen_Respawn_Hippokrates</effect>
+      <effect type="TechStatus" status="obtainable">TheWisemen_Respawn_Deimos</effect>
+    </effects>
+  </tech>
 
+  <tech name="TheWisemen_Respawn_Sokrates">
+    <status>UNOBTAINABLE</status>
+    <delay>10.0000</delay>
+    <flag>Volatile</flag>
+    <flag>Persistent</flag>
+    <flag>HideFromDialogs</flag>
+    <prereqs>
+      <techstatus status="Active">ArchaicAgeHades</techstatus>
+      <typecount unit="AbstractTownCenter" count="0.00" state="aliveState" operator="gt"></typecount>
+      <typecount unit="WiseMan_Sokrates" count="1.00" state="aliveState" operator="lt"></typecount>
+    </prereqs>
+    <effects>
+      <effect type="CreateUnit" unit="WiseMan_Sokrates" generator="AbstractTownCenter">
+        <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
+    </effects>
+  </tech>
+  <tech name="TheWisemen_Respawn_Herodotus">
+    <status>UNOBTAINABLE</status>
+    <delay>10.0000</delay>
+    <flag>Volatile</flag>
+    <flag>Persistent</flag>
+    <flag>HideFromDialogs</flag>
+    <prereqs>
+      <techstatus status="Active">ArchaicAgeHades</techstatus>
+      <typecount unit="AbstractTownCenter" count="0.00" state="aliveState" operator="gt"></typecount>
+      <typecount unit="WiseMan_Herodotus" count="1.00" state="aliveState" operator="lt"></typecount>
+    </prereqs>
+    <effects>
+      <effect type="CreateUnit" unit="WiseMan_Herodotus" generator="AbstractTownCenter">
+        <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
+    </effects>
+  </tech>
+  <tech name="TheWisemen_Respawn_Hippokrates">
+    <status>UNOBTAINABLE</status>
+    <delay>10.0000</delay>
+    <flag>Volatile</flag>
+    <flag>Persistent</flag>
+    <flag>HideFromDialogs</flag>
+    <prereqs>
+      <techstatus status="Active">ArchaicAgeHades</techstatus>
+      <typecount unit="AbstractTownCenter" count="0.00" state="aliveState" operator="gt"></typecount>
+      <typecount unit="WiseMan_Hippokrates" count="1.00" state="aliveState" operator="lt"></typecount>
+    </prereqs>
+    <effects>
+      <effect type="CreateUnit" unit="WiseMan_Hippokrates" generator="AbstractTownCenter">
+        <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
+    </effects>
+  </tech>
+   <tech name="TheWisemen_Respawn_Deimos">
+    <status>UNOBTAINABLE</status>
+    <delay>10.0000</delay>
+    <flag>Volatile</flag>
+    <flag>Persistent</flag>
+    <flag>HideFromDialogs</flag>
+    <prereqs>
+      <techstatus status="Active">ArchaicAgeZeus</techstatus>
+      <typecount unit="AbstractTownCenter" count="0.00" state="aliveState" operator="gt"></typecount>
+      <typecount unit="Deimos" count="1.00" state="aliveState" operator="lt"></typecount>
+    </prereqs>
+    <effects>
+      <effect type="CreateUnit" unit="Deimos" generator="AbstractTownCenter">
+        <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
+    </effects>
+  </tech>
     <!-- TEMPLE OF PRIMORDIALS // PAGINATION TECHS -->
   <tech name="TempleOfPrimordials_ActivateTech_GodsBeasts" mergeMode="add">
     <displaynameid>STR_TECH_ACTIVATE_TECH_GODSBEASTS</displaynameid>

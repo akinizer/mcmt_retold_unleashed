@@ -10482,6 +10482,7 @@
 		<tech row="3" column="3">MCMT_Rise_of_Akhenaten</tech>
 		<tech row="3" column="3">MCMT_ShamanCouncil</tech>
 		<tech row="3" column="3">MCMT_BrunnhildesCalling</tech>
+		<tech row="3" column="3">MCMT_The_Wisemen_Greek</tech>
 	</unit>
 	<unit name="CitadelCenter">
 		<unittype>AbstractFortress</unittype>
@@ -23216,9 +23217,9 @@
 
 	<!-- Greek Special Units-->
 	<unit name="WiseMan_Sokrates">
-		<displaynameid>STR_UNIT_SKULT_NAME</displaynameid>
-		<rollovertextid>STR_UNIT_SKULT_LR</rollovertextid>
-		<shortrollovertextid>STR_UNIT_SKULT_SR</shortrollovertextid>
+		<displaynameid>STR_UNIT_WISEMAN_SOKRATES_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_WISEMAN_SOKRATES_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_WISEMAN_SOKRATES_SR</shortrollovertextid>
 		<icon>resources\spc\player_color\units\skult_icon.png</icon>
 		<animfile>mcmt\units\founder\wisemen\sokrates.xml</animfile>
 		<soundsetfile>spc\vo\arkantos_uber\arkantos_uber.xml</soundsetfile>
@@ -23229,8 +23230,8 @@
 		<formationorder>5</formationorder>
 		<movementtype>land</movementtype>
 		<turnrate>18.0000</turnrate>
-		<initialhitpoints>200.0000</initialhitpoints>
-		<maxhitpoints>200.0000</maxhitpoints>
+		<initialhitpoints>240.0000</initialhitpoints>
+		<maxhitpoints>240.0000</maxhitpoints>
 		<unitregen>5.0000</unitregen>
 		<weightclass>5</weightclass>
 		<populationcount>1</populationcount>
@@ -23287,7 +23288,7 @@
 			<name>HandAttack</name>
 			<rof>1.500000</rof>
 			<damage type="Hack">10.000000</damage>
-			<damagebonus type="MythUnit">7.000000</damagebonus>
+			<damagebonus type="MythUnit">3.000000</damagebonus>
 			<maxrange>0.750000</maxrange>
 		</protoaction>
 		<protoaction>
@@ -23299,8 +23300,9 @@
 	</unit>
 
 	<unit name="WiseMan_Herodotus">
-		<displaynameid>STR_UNIT_OLD_MAN_NAME</displaynameid>
-		<rollovertextid>STR_UNIT_OLD_MAN_LR</rollovertextid>
+		<displaynameid>STR_UNIT_WISEMAN_HERODOTUS_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_WISEMAN_HERODOTUS_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_WISEMAN_HERODOTUS_SR</shortrollovertextid>
 		<icon>resources\spc\player_color\units\old_man_icon.png</icon>
 		<animfile>mcmt\units\founder\wisemen\herodotus.xml</animfile>
 		<soundsetfile>spc\vo\arkantos_uber\arkantos_uber.xml</soundsetfile>
@@ -23311,12 +23313,12 @@
 		<autoattackrange>5.0000</autoattackrange>
 		<movementtype>land</movementtype>
 		<turnrate>18.0000</turnrate>
-		<initialhitpoints>150.0000</initialhitpoints>
-		<maxhitpoints>150.0000</maxhitpoints>
+		<initialhitpoints>220.0000</initialhitpoints>
+		<maxhitpoints>220.0000</maxhitpoints>
 		<unitregen>5.0000</unitregen>
 
 		<weightclass>4</weightclass>
-		<populationcount>0</populationcount>
+		<populationcount>1</populationcount>
 		<maxvelocity>3.2000</maxvelocity>
 		<sharedselectionunittypes>
 			<unittype>LogicalTypeSharedHeroSelection</unittype>
@@ -23365,7 +23367,7 @@
 			<name>HandAttack</name>
 			<rof>1.500000</rof>
 			<damage type="Hack">10.000000</damage>
-			<damagebonus type="MythUnit">7.000000</damagebonus>
+			<damagebonus type="MythUnit">3.000000</damagebonus>
 			<maxrange>0.750000</maxrange>
 		</protoaction>
 		<protoaction>
@@ -23376,8 +23378,9 @@
 		</protoaction>
 	</unit>
 	<unit name="WiseMan_Hippokrates">
-		<displaynameid>STR_UNIT_THEOCRAT_NAME</displaynameid>
-		<rollovertextid>STR_UNIT_THEOCRAT_LR</rollovertextid>
+		<displaynameid>STR_UNIT_WISEMAN_HIPPOKRATES_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_WISEMAN_HIPPOKRATES_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_WISEMAN_HIPPOKRATES_SR</shortrollovertextid>
 		<icon>resources\spc\player_color\units\theocrat_icon.png</icon>
 		<minimapicon>ui\minimap\minimap_hero_spc</minimapicon>
 		<animfile>mcmt\units\founder\wisemen\hippokrates.xml</animfile>
@@ -23395,7 +23398,7 @@
 
 		<weightclass>5</weightclass>
 		<maxcontained>1.0000</maxcontained>
-		<populationcount>0</populationcount>
+		<populationcount>1</populationcount>
 		<maxvelocity>4.2000</maxvelocity>
 		<los>15.0000</los>
 		<sharedselectionunittypes>
@@ -23452,7 +23455,7 @@
 			<name>HandAttack</name>
 			<rof>1.500000</rof>
 			<damage type="Hack">10.000000</damage>
-			<damagebonus type="MythUnit">7.000000</damagebonus>
+			<damagebonus type="MythUnit">3.000000</damagebonus>
 			<maxrange>0.750000</maxrange>
 		</protoaction>
 		<protoaction>
@@ -23496,8 +23499,8 @@
 		<sharedselectionunittypes>
 			<unittype>LogicalTypeSharedHeroSelection</unittype>
 		</sharedselectionunittypes>
-		<armor type="Hack" value="0.8000"></armor>
-		<armor type="Pierce" value="0.8000"></armor>
+		<armor type="Hack" value="0.6000"></armor>
+		<armor type="Pierce" value="0.5400"></armor>
 		<armor type="Crush" value="0.9900"></armor>
 		<unittype>LogicalTypeNeededForVictory</unittype>
 		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
@@ -23546,7 +23549,7 @@
 			<rof>1.500000</rof>
 			<damage type="Hack">60.000000</damage>
 			<damage type="Divine">1.000000</damage>
-			<damagebonus type="MythUnit">3.000000</damagebonus>
+			<damagebonus type="MythUnit">7.000000</damagebonus>
 			<maxrange>2.000000</maxrange>
 		</protoaction>
 		<protoaction>

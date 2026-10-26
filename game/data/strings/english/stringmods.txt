@@ -460,8 +460,12 @@ ID = "STR_MSG_SHAMAN_COUNCIL_SPAWN"   ;   Str = "A new Shaman Council has arrive
 
 // BRUNNHILDE
 ID = "STR_TECH_BRUNNHILDES_CALLING_NAME"   ;   Str = "Brunnhilde's Calling"
-ID = "STR_TECH_BRUNNHILDES_CALLING_LR"   ;   Str = "Warning: This overdriver activator will summon Brunnhilde CAvalry Hero and her aidee Valkyrie Warriors"
+ID = "STR_TECH_BRUNNHILDES_CALLING_LR"   ;   Str = "Warning: This overdriver activator will summon Brunnhilde Cavalry Hero and her aidee Valkyrie Warriors"
 ID = "STR_MSG_BRUNNHILDES_CALLING_SPAWN"   ;   Str = "Brunnhilde has descended from Valhalla!"
+
+// BRUNNHILDE
+ID = "STR_TECH_THE_WISEMEN_NAME"   ;   Str = "The Wisemen"
+ID = "STR_TECH_THE_WISEMEN_LR"   ;   Str = "Warning: This overdriver activator will summon The Wisemen of Greek World"
 
 // ORPHIC
 ID = "STR_UNIT_ORPHIC_EGG_NAME"   ;   Str = "Orphic Egg"
@@ -905,6 +909,22 @@ ID = "STR_UNIT_KUAFUWARRIOR_LR"   ;   Str = "Kuafu tribesfolk armed to defend th
 ID = "STR_UNIT_KUAFUWARRIOR_SR"   ;   Str = "Kuafu with a boulder stronger than a will"
 
 // GREEK SPECIAL UNITS
+ID = "STR_UNIT_WISEMAN_SOKRATES_NAME"   ;   Str = "Sokrates"
+ID = "STR_UNIT_WISEMAN_SOKRATES_SR"   ;   Str = "Father of Philosophy"
+ID = "STR_UNIT_WISEMAN_SOKRATES_LR"   ;   Str = "Sokrates has been famous for his contributions to deep thinking. He has joined the Wisemen after a calling of his old friend Deimos"
+
+ID = "STR_UNIT_WISEMAN_HIPPOKRATES_NAME"   ;   Str = "Hippokrates"
+ID = "STR_UNIT_WISEMAN_HIPPOKRATES_SR"   ;   Str = "Father of Medical"
+ID = "STR_UNIT_WISEMAN_HIPPOKRATES_LR"   ;   Str = ""
+
+ID = "STR_UNIT_WISEMAN_HERODOTUS_NAME"   ;   Str = "Hippokrates"
+ID = "STR_UNIT_WISEMAN_HERODOTUS_SR"   ;   Str = "Father of History"
+ID = "STR_UNIT_WISEMAN_HERODOTUS_LR"   ;   Str = ""
+
+ID = "STR_UNIT_WISEMAN_DEIMOS_NAME"   ;   Str = "Deimos"
+ID = "STR_UNIT_WISEMAN_DEIMOS_SR"   ;   Str = "Champion of Hades"
+ID = "STR_UNIT_WISEMAN_DEIMOS_LR"   ;   Str = "His presence was absent from eyes for a long time as a covert ops agent. His quest required him to travel around the Greek World and take down Cult of Kosmos. The fate has summoned him and he gathered his old wise friends for a new adventure"
+
 ID = "STR_UNIT_PALERIDER_NAME"   ;   Str = "Pale Rider"
 ID = "STR_UNIT_PALERIDER_SR"   ;   Str = "Death's Charger"
 ID = "STR_UNIT_PALERIDER_LR"   ;   Str = "As the royal servants of Hades, Pale Riders chase whoever flees from Underworld's domain or the Death's very self"
