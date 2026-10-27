@@ -2,6 +2,30 @@
 
 	<!-- special glows -->
 
+	<animxml file="vfx\glow\blessing_glow.xml">
+		<visuallogics>
+			<visualmap>
+				<visualnode>
+					<composite>vfx\glow\blessing_glow</composite>
+					<logic>
+						<cinematic>normal</cinematic>
+					</logic>
+				</visualnode>
+				<visualnode>
+					<null>NullVisual</null>
+					<logic>
+						<cinematic>cinematic</cinematic>
+					</logic>
+				</visualnode>
+			</visualmap>
+		</visuallogics>
+		<animations>
+			<animinfo>
+				<name>Idle</name>
+			</animinfo>
+		</animations>
+	</animxml>
+
 	<animxml file="vfx\glow\sandstorm_vfx.xml">
 		<visuallogics>
 			<visualmap>
@@ -633,6 +657,30 @@
 					<version>
 						<file>spc\units\arkantos\anim\arkantos_walk_a</file>
 						<duration>0.50000</duration>
+					</version>
+				</versions>
+			</animinfo>
+			<animinfo>
+				<name>ChannelAttack</name>
+				<versioncount>1</versioncount>
+				<versions>
+					<version>
+						<file>spc\units\arkantos\anim\arkantos_rally_a</file>
+						<duration>2.00000</duration>
+						<tags>
+							<tag>
+								<type>SpecificSoundSet</type>
+								<position>0.11000</position>
+								<properties>
+									<checkvisible>1</checkvisible>
+									<set>ArkantosBoost</set>
+								</properties>
+							</tag>
+							<tag>
+								<type>Attack</type>
+								<position>0.50000</position>
+							</tag>
+						</tags>
 					</version>
 				</versions>
 			</animinfo>

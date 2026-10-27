@@ -1788,6 +1788,16 @@
 		<rolloverid>STR_ABILITY_SPECIALATTACK_LR</rolloverid>
 		<icon>japanese\static_color\abilities\shogun_ability_icon.png</icon>
 	</power>
+	<power name="AbilityTaunt" type="UnitAction">
+		<displaynameid>STR_ABILITY_TAUNT</displaynameid>
+		<rolloverid>STR_ABILITY_TAUNT_LR</rolloverid>
+		<icon>norse_freyr\static_color\abilities\rock_giant_ability_jotunmodr_icon.png</icon>
+		<placement>Self</placement>
+		<abstractplacementtargettype>HumanSoldier</abstractplacementtargettype>
+		<abstractplacementtargettype>LogicalTypeMythUnitNotTitan</abstractplacementtargettype>
+		<rangeindicator range="6.0" speed="0.2">Circle</rangeindicator>
+		<unitaction>TauntAttack</unitaction>
+	</power>
 	<!--ChargedAbility Special-->
 	<power name="AbilityTrackerDevice" type="UnitAction">
 		<displaynameid>STR_ABILITY_TRACKERDEVICE_NAME</displaynameid>
@@ -1906,14 +1916,22 @@
 		<abstractplacementtargettype>AnimalOfSet</abstractplacementtargettype>
 		<unitaction>Enchant</unitaction>
 	</power>
-	<power name="AbilityTaunt" type="UnitAction">
-		<displaynameid>STR_ABILITY_TAUNT</displaynameid>
-		<rolloverid>STR_ABILITY_TAUNT_LR</rolloverid>
-		<icon>norse_freyr\static_color\abilities\rock_giant_ability_jotunmodr_icon.png</icon>
-		<placement>Self</placement>
+	<power name="AbilityExplosiveShout" type="UnitAction">
+		<displaynameid>STR_ABILITY_EXPLOSIVE_SHOUT</displaynameid>
+		<rolloverid>STR_ABILITY_EXPLOSIVE_SHOUT_LR</rolloverid>
+		<icon>tech\warrior_cry.png</icon>
+		<placement ally="">Unit</placement>
+		<abstractplacementtargettype>All</abstractplacementtargettype>
+		<unitaction>ExplosiveShout</unitaction>
+	</power>
+	<power name="AbilityFlameStrike" type="UnitAction">
+		<displaynameid>STR_ABILITY_FLAME_STRIKE</displaynameid>
+		<rolloverid>STR_ABILITY_FLAME_STRIKE_LR</rolloverid>
+		<icon>tech\flame_strike.png</icon>
+		<placement enemy="">Unit</placement>
 		<abstractplacementtargettype>HumanSoldier</abstractplacementtargettype>
+		<abstractplacementtargettype>AbstractVillager</abstractplacementtargettype>
 		<abstractplacementtargettype>LogicalTypeMythUnitNotTitan</abstractplacementtargettype>
-		<rangeindicator range="6.0" speed="0.2">Circle</rangeindicator>
-		<unitaction>TauntAttack</unitaction>
+		<unitaction>FlameStrlke</unitaction>
 	</power>
 </powersmod>

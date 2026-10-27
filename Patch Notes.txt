@@ -246,10 +246,23 @@
         - ChargedRangedAttack: areadamage, crushdamage, throw humansoldier & villager
 - Special Greek Units
     - The Wise Men
-        - Sokrates
-        - Hippokrates
-        - Herodotus
-        - Deimos
+        - Sokrates:
+            - Bolster: ROF on Deimos
+            - AreaDamageSupression: death boost on Deimos
+            - Respawn: 1 min
+        - Hippokrates:
+            - Bolster: Armor on Deimos
+            - AreaDamageSupression: death boost on Deimos
+            - Respawn: 1 min
+        - Herodotus:
+            - Bolster: Lifesteal on Deimos
+            - AreaDamageSupression: death boost on Deimos
+            - Respawn: 1 min    
+        - Deimos:
+            - FlameStrike: spin attack, shockstun, nodamage
+            - ExplosiveShout: autboost attaclk, onhiteffect areadamage burn
+            - AreaHeal: AbstractWisemen
+            - Respawn: 5 mins
     - Spartans
         - Prereq: ClassicAgeAres
         - SpartanTraining: enables Spartan building, techs and units

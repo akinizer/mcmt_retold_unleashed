@@ -911,19 +911,19 @@ ID = "STR_UNIT_KUAFUWARRIOR_SR"   ;   Str = "Kuafu with a boulder stronger than 
 // GREEK SPECIAL UNITS
 ID = "STR_UNIT_WISEMAN_SOKRATES_NAME"   ;   Str = "Sokrates"
 ID = "STR_UNIT_WISEMAN_SOKRATES_SR"   ;   Str = "Father of Philosophy"
-ID = "STR_UNIT_WISEMAN_SOKRATES_LR"   ;   Str = "Sokrates has been famous for his contributions to deep thinking. He has joined the Wisemen after a calling of his old friend Deimos"
+ID = "STR_UNIT_WISEMAN_SOKRATES_LR"   ;   Str = "Sokrates has been famous for his contributions to deep thinking. He has joined the Wisemen after a calling of his old friend Deimos. He can bolster Deimos"
 
 ID = "STR_UNIT_WISEMAN_HIPPOKRATES_NAME"   ;   Str = "Hippokrates"
 ID = "STR_UNIT_WISEMAN_HIPPOKRATES_SR"   ;   Str = "Father of Medical"
-ID = "STR_UNIT_WISEMAN_HIPPOKRATES_LR"   ;   Str = "Hippokrates has been known with his contributions to medical. He has joined the Wisemen after a calling of his old friend Deimos"
+ID = "STR_UNIT_WISEMAN_HIPPOKRATES_LR"   ;   Str = "Hippokrates has been known with his contributions to medical. He has joined the Wisemen after a calling of his old friend Deimos. He can bolster Deimos"
 
 ID = "STR_UNIT_WISEMAN_HERODOTUS_NAME"   ;   Str = "Herodotus"
 ID = "STR_UNIT_WISEMAN_HERODOTUS_SR"   ;   Str = "Father of History"
-ID = "STR_UNIT_WISEMAN_HERODOTUS_LR"   ;   Str = "Herodotus has became popular due to his contributions to geographical records. He has joined the Wisemen after a calling of his old friend Deimos"
+ID = "STR_UNIT_WISEMAN_HERODOTUS_LR"   ;   Str = "Herodotus has became popular due to his contributions to geographical records. He has joined the Wisemen after a calling of his old friend Deimos. He can bolster Deimos"
 
 ID = "STR_UNIT_WISEMAN_DEIMOS_NAME"   ;   Str = "Deimos"
 ID = "STR_UNIT_WISEMAN_DEIMOS_SR"   ;   Str = "Champion of Hades"
-ID = "STR_UNIT_WISEMAN_DEIMOS_LR"   ;   Str = "His presence was absent from eyes for a long time as a covert ops agent. His quest required him to travel around the Greek World and take down Cult of Kosmos. The fate has summoned him and he gathered his old wise friends for a new adventure"
+ID = "STR_UNIT_WISEMAN_DEIMOS_LR"   ;   Str = "His presence was absent from eyes for a long time as a covert ops agent. His quest required him to travel around the Greek World and take down Cult of Kosmos. The fate has summoned him and he gathered his old wise friends for a new adventure. The wisemen recovers health while near Deimos, and his hits grow stronfer when the companions fall in the battle"
 
 ID = "STR_UNIT_PALERIDER_NAME"   ;   Str = "Pale Rider"
 ID = "STR_UNIT_PALERIDER_SR"   ;   Str = "Death's Charger"
@@ -1640,6 +1640,12 @@ ID = "STR_ABILITY_SPECIAL_CHARGEDSPAWN_LR"   ;   Str = "This unit spawns units v
 
 ID = "STR_ABILITY_TAUNT"   ;   Str = "Taunt"
 ID = "STR_ABILITY_TAUNT_LR"   ;   Str = "Taunts nearby enemies with a move that is too brave or too cowardly"
+
+ID = "STR_ABILITY_EXPLOSIVE_SHOUT"   ;   Str = "Explosive Shout"
+ID = "STR_ABILITY_EXPLOSIVE_SHOUT_LR"   ;   Str = "Releases a combustion event that bursts sinful souls out and leaves them cauterized"
+
+ID = "STR_ABILITY_FLAME_STRIKE"   ;   Str = "Flame Strike"
+ID = "STR_ABILITY_FLAME_STRIKE_LR"   ;   Str = "Spins the flame sword that knocks the challengers away and leaves them in an awe"
 
 // COMMAND TECHS
 ID = "STR_BLD_FIREWALL_NAME"   ;   Str = "Fire Wall"

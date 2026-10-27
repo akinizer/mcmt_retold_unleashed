@@ -1,0 +1,20 @@
+{
+    "entities": [{
+            "type": "popcorn",
+            "local_transform": [1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0],
+            "probability": 1.0,
+            "seed": 0,
+            "passive_rotation": [0.0, 0.0, 0.0],
+            "enable_lod": false,
+            "maintain_terrain_height": false,
+            "maintain_terrain_orientation": false,
+            "is_ghost": false,
+            "deathbehaviour": "Default",
+            "pkfx": "godpowers\blessing_of_zeus\arkantos_uber.pkfx"
+        }],
+    "events": [],
+    "destructionsharedsettings": {
+        "ignorefordestruction": false
+    },
+    "globalsettings": {}
+}

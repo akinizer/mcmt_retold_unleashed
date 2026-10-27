@@ -4,12 +4,6 @@
 
 === FACTION HEROES
 greek: 
-    wisemen - hades: 
-        hippokrates, sokrates, herodotus: beam attack
-            lightning beam, bolster skult rof, healrate aura
-            skult: chaneque beam, bounce, infect wretch (failed experiment) spawn
-            theocrat: chiwen beam, bolster skult damage, armor aura
-        deimos: arkantosuber, super soldier, reflect, aoeattack, teleportattack onhiteffect throw & stun, flaming sword (achilles)
     athena - zeus: disable field, ability spawn (champion of freyr x5)
     posiedon - euphumus
         model: perseus (no helm)

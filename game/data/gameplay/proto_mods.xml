@@ -9050,38 +9050,27 @@
 			<autocastdistance>15.000000</autocastdistance>
 		</protoaction>
 	</unit>
-	<!-- TODO
-
-	<unit name="OldMan"></unit>
-	<unit name="Theocrat"></unit>
-	<unit name="Krios"></unit>
-	
-	
-	<unit name="AjaxBoar"></unit>
-
-	--><!-- repurpose into special trainable units
+	<!-- TODO repurpose into special trainable units
 
 	<unit name="Kamos"></unit>			-> egyptian camp, new weapon, no hero glow and ring
 	<unit name="Theris"></unit>			-> egyptian camp, new weapon, no hero glow and ring
 	<unit name="Gargarensis"></unit> 	-> greek camp, sword weapon, no hero glow and ring
 	<unit name="GeneralMelagius"></unit>-> greek camp, sword weapon, no hero glow and ring
 	<unit name="Athena"></unit>			-> greek camp, sword weapon, no hero glow and ring
-	<unit name="ArkantosUber"></unit>	-> greek camp, sword weapon, no hero glow and ring
 	<unit name="OsirisPieceCart"></unit>		
 	<unit name="Ornlu"></unit>			-> spawn on fight
 	<unit name="Polaris"></unit>		-> spawn on fight
 
 	<unit name="Circe"></unit>			-> magic tower
-	-->
 
-	<!-- Campaign Heroes - Pillars of God  TODO
+		Campaign Heroes - Pillars of God  TODO
 	 
-		<unit name="YanFeifengRider">
-		<unit name="CangJieRider">
-		<unit name="ChiYouSmall">
-		<unit name="ChiYouSPC">
-		<unit name="ShiJi">
-		<unit name="CangJieKnife">
+	<unit name="YanFeifengRider">
+	<unit name="CangJieRider">
+	<unit name="ChiYouSmall">
+	<unit name="ChiYouSPC">
+	<unit name="ShiJi">
+	<unit name="CangJieKnife">
 	-->
 	<unit name="Houyi">
 		<unittype>InfantryLineUpgraded</unittype>
@@ -23232,10 +23221,9 @@
 		<turnrate>18.0000</turnrate>
 		<initialhitpoints>240.0000</initialhitpoints>
 		<maxhitpoints>240.0000</maxhitpoints>
-		<unitregen>5.0000</unitregen>
 		<weightclass>5</weightclass>
 		<populationcount>1</populationcount>
-		<maxvelocity>3.3000</maxvelocity>
+		<maxvelocity>4.2000</maxvelocity>
 		<los>16.0000</los>
 		<sharedselectionunittypes>
 			<unittype>LogicalTypeSharedHeroSelection</unittype>
@@ -23292,6 +23280,30 @@
 			<maxrange>0.750000</maxrange>
 		</protoaction>
 		<protoaction>
+			<name>Bolster</name>
+			<type>Bolster</type>
+			<modifyamount>2.0</modifyamount>
+			<maxrange>8.0</maxrange>
+			<rate type="Deimos">1.0</rate>
+			<anim>HandAttack</anim>
+			<attackaction>1</attackaction>
+			<projectile>ProjectileChiwenLaser</projectile>
+			<modelattachment>vfx\water\chi_wen_bolster_target.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+			<charged>
+				<chargedmodify modifytype="ROF" applytype="Multiply">0.8</chargedmodify>
+			</charged>
+		</protoaction>
+		<protoaction>
+			<name>AreaDamageSupression</name>
+			<type>AutoRangedModify</type>
+			<persistent>1</persistent>
+			<maxrange>999.0</maxrange>
+			<modifyunittype>Deimos</modifyunittype>
+			<modifytype>Damage</modifytype>
+			<modifymultiplier>0.90</modifymultiplier>
+		</protoaction>
+		<protoaction>
 			<name>Pickup</name>
 			<type>Pickup</type>
 			<maxrange>1</maxrange>
@@ -23315,11 +23327,10 @@
 		<turnrate>18.0000</turnrate>
 		<initialhitpoints>220.0000</initialhitpoints>
 		<maxhitpoints>220.0000</maxhitpoints>
-		<unitregen>5.0000</unitregen>
 
 		<weightclass>4</weightclass>
 		<populationcount>1</populationcount>
-		<maxvelocity>3.2000</maxvelocity>
+		<maxvelocity>4.2000</maxvelocity>
 		<sharedselectionunittypes>
 			<unittype>LogicalTypeSharedHeroSelection</unittype>
 		</sharedselectionunittypes>
@@ -23369,6 +23380,30 @@
 			<damage type="Hack">10.000000</damage>
 			<damagebonus type="MythUnit">3.000000</damagebonus>
 			<maxrange>0.750000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>Bolster</name>
+			<type>Bolster</type>
+			<modifyamount>2.0</modifyamount>
+			<maxrange>8.0</maxrange>
+			<rate type="Deimos">1.0</rate>
+			<anim>HandAttack</anim>
+			<attackaction>1</attackaction>
+			<projectile>ProjectileChiwenLaser</projectile>
+			<modelattachment>vfx\water\chi_wen_bolster_target.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+			<charged>
+				<chargedmodify modifytype="LifeSteal" applytype="Set">0.8</chargedmodify>
+			</charged>
+		</protoaction>
+		<protoaction>
+			<name>AreaDamageSupression</name>
+			<type>AutoRangedModify</type>
+			<persistent>1</persistent>
+			<maxrange>999.0</maxrange>
+			<modifyunittype>Deimos</modifyunittype>
+			<modifytype>Damage</modifytype>
+			<modifymultiplier>0.90</modifymultiplier>
 		</protoaction>
 		<protoaction>
 			<name>Pickup</name>
@@ -23459,6 +23494,33 @@
 			<maxrange>0.750000</maxrange>
 		</protoaction>
 		<protoaction>
+			<name>Bolster</name>
+			<type>Bolster</type>
+			<modifyamount>2.0</modifyamount>
+			<maxrange>8.0</maxrange>
+			<rate type="Deimos">1.0</rate>
+			<anim>HandAttack</anim>
+			<attackaction>1</attackaction>
+			<projectile>ProjectileChiwenLaser</projectile>
+			<modelattachment>vfx\water\chi_wen_bolster_target.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+			<charged>
+				<chargedmodify modifytype="ArmorSpecific" param="Pierce" applytype="Add">0.2500</chargedmodify>
+			</charged>
+			<charged>
+				<chargedmodify modifytype="ArmorSpecific" param="Hack" applytype="Add">0.2500</chargedmodify>
+			</charged>
+		</protoaction>
+		<protoaction>
+			<name>AreaDamageSupression</name>
+			<type>AutoRangedModify</type>
+			<persistent>1</persistent>
+			<maxrange>999.0</maxrange>
+			<modifyunittype>Deimos</modifyunittype>
+			<modifytype>Damage</modifytype>
+			<modifymultiplier>0.90</modifymultiplier>
+		</protoaction>
+		<protoaction>
 			<name>Pickup</name>
 			<type>Pickup</type>
 			<maxrange>1</maxrange>
@@ -23475,7 +23537,7 @@
 		<displaynameid>STR_UNIT_WISEMAN_DEIMOS_NAME</displaynameid>
 		<rollovertextid>STR_UNIT_WISEMAN_DEIMOS_LR</rollovertextid>
 		<shortrollovertextid>STR_UNIT_WISEMAN_DEIMOS_SR</shortrollovertextid>
-		<icon>resources\spc\player_color\units\arkantos_uber_icon.png</icon>
+		<icon>resources\tech\deimos.png</icon>
 		<minimapicon>ui\minimap\minimap_hero_spc</minimapicon>
 		<animfile>mcmt\units\founder\wisemen\deimos.xml</animfile>
 		<soundsetfile>spc\vo\theocrat\theocrat.xml</soundsetfile>
@@ -23488,18 +23550,19 @@
 		<turnrate>22.0000</turnrate>
 		<initialhitpoints>1500.0000</initialhitpoints>
 		<maxhitpoints>1500.0000</maxhitpoints>
-		<unitregen>5.0000</unitregen>
 		<weightclass>6</weightclass>
 		<maxcontained>1.0000</maxcontained>
 		<populationcount>2</populationcount>
-		<maxvelocity>5.3000</maxvelocity>
+		<maxvelocity>4.2000</maxvelocity>
 		<rechargetime>22.0000</rechargetime>
+		<auxrechargetime>18.0000</auxrechargetime>
+
 		<los>20.0000</los>
 		<sharedselectionunittypes>
 			<unittype>LogicalTypeSharedHeroSelection</unittype>
 		</sharedselectionunittypes>
-		<armor type="Hack" value="0.6000"></armor>
-		<armor type="Pierce" value="0.5400"></armor>
+		<armor type="Hack" value="0.4400"></armor>
+		<armor type="Pierce" value="0.4400"></armor>
 		<armor type="Crush" value="0.9900"></armor>
 		<unittype>LogicalTypeNeededForVictory</unittype>
 		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
@@ -23542,22 +23605,46 @@
 		<flag>HideGarrisonFlag</flag>
 		<flag>CreateUnitGroupAutomatically</flag>
 		<contain external="1">LogicalTypePickable</contain>
-		<tactics>arkantos_uber.tactics</tactics>
+		<tactics>mcmt_deimos.tactics</tactics>
 		<protoaction>
 			<name>HandAttack</name>
 			<rof>1.500000</rof>
-			<damage type="Hack">60.000000</damage>
-			<damage type="Divine">1.000000</damage>
-			<damagebonus type="MythUnit">7.000000</damagebonus>
+			<damage type="Hack">120.000000</damage>
+			<damage type="Divine">5.000000</damage>
+			<damagebonus type="MythUnit">5.000000</damagebonus>
 			<maxrange>2.000000</maxrange>
+			<impacteffect>effects\impacts\fireball</impacteffect>
 		</protoaction>
 		<protoaction>
-			<name>BuckAttack</name>
-			<rof>0.200000</rof>
+			<name>FlameStrlke</name>
+			<rof>0.080000</rof>
 			<maxrange>2.000000</maxrange>
 			<shockstun>1</shockstun>
 			<stunduration>8.0</stunduration>
 			<workonfrozenunits>0</workonfrozenunits>
+		</protoaction>
+		<protoaction>
+			<name>ExplosiveShout</name>
+			<rof>1.0</rof>
+			<damagearea>14.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<maxrange>5.000000</maxrange>
+			<impacteffect>effects\impacts\crush</impacteffect>
+			<rate type="Unit">1.0</rate>	
+			<onhiteffect type="Spawn" proto="SelfDestructSpawnMinorDamageBurn" amount="1"></onhiteffect>		
+		</protoaction>
+		<protoaction>
+			<name>AreaHeal</name>
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>AbstractWisemen</modifyabstracttype>
+			<persistent>1</persistent>
+			<modifytype>HealRate</modifytype>
+			<modifyflyingunits>1</modifyflyingunits>
+			<includeally>1</includeally>
+			<modelattachment>vfx\glow\blessing_glow.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+			<modifyamount>5</modifyamount>			
+			<maxrange>12</maxrange>
 		</protoaction>
 		<protoaction>
 			<name>Pickup</name>
@@ -36674,7 +36761,7 @@
 			<anim>HandAttack</anim>
 			<rate type="All">1.0</rate>
 			<attackaction>1</attackaction>
-			<impacteffect>effects\impacts\</impacteffect>
+			<impacteffect>effects\impacts\crush</impacteffect>
 
 			<damage type="Divine">15.000000</damage>
 			<damagearea>9.000000</damagearea>
@@ -36771,6 +36858,56 @@
 			<damage type="Divine">5.000000</damage>
 			<damagearea>5.000000</damagearea>
 			<damageflags>Nature|Enemy</damageflags>
+   		</protoaction>
+  	</unit>	
+	<unit name="SelfDestructSpawnMinorDamageBurn" mergeMode="add">
+		<displaynameid>STR_VFX_DETONATORS_NAME</displaynameid>
+		<animfile>vfx\projectiles\asura\ball_of_fire_asura.xml</animfile>
+		<obstructionradiusx>0.4000</obstructionradiusx>
+		<obstructionradiusz>0.4000</obstructionradiusz>
+		<lifespan>0.1000</lifespan>
+		<decay delay="0.0000" duration="0.5000"></decay>
+		<movementtype>land</movementtype>
+		<unittype>Unit</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>NoIdleActions</flag>
+		<flag>AreaDamageConstant</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<flag>BallisticTrackSource</flag>
+		<selfdestructprotoaction>SelfDestructAttack</selfdestructprotoaction>
+		<tactics>area_damage.tactics</tactics>
+		<protoaction>
+			<name>SelfDestructAttack</name>
+			<type>Attack</type>
+			<anim>HandAttack</anim>
+			<rate type="All">1.0</rate>
+			<attackaction>1</attackaction>
+			<areasortmode>Radial</areasortmode>
+			<impacteffect>effects\impacts\pierce</impacteffect>
+
+			<damage type="Divine">5.000000</damage>
+			<damagearea>5.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+
+			<onhiteffect type="DamageOverTime" duration="10.000000">
+				<damage type="Divine">5.000000</damage>
+				<target attacktype="Unit"></target>
+			</onhiteffect>
+			<onhiteffect type="ShadingFade" shadingtype="burning" fadetime="1.0" factor="1.4" duration="10.0">
+				<target attacktype="Unit"></target>
+			</onhiteffect>
+			<onhiteffect type="Attach" proto="VFXFire" attachbone="spine" duration="10.000000">
+				<target attacktype="Unit"></target>
+			</onhiteffect>
    		</protoaction>
   	</unit>	
 	<unit name="SelfDestructSpawnMinorDamageThrow" mergeMode="add">

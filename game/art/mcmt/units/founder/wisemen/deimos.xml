@@ -29,4 +29,6 @@
 	<anim>Idle<assetreference type="TMAnimation"><file>spc\units\arkantos\anim\arkantos_idle_a</file></assetreference><component>ModelComp</component></anim>
 	<anim>Birth<assetreference type="TMAnimation"><file>spc\units\arkantos\anim\arkantos_rally_a</file></assetreference><component>ModelComp</component><attach name="HeroBirth" attachpoint="bonethatdoesntexist"></attach></anim>
 	<anim>Walk<assetreference type="TMAnimation"><file>spc\units\arkantos\anim\arkantos_walk_a</file></assetreference><component>ModelComp</component></anim>
+
+	<anim>ChannelAttack<assetreference type="TMAnimation"><file>spc\units\arkantos\anim\arkantos_rally_a</file><tag type="SpecificSoundSet" checkvisible="1" set="ArkantosBoost">0.11</tag><tag type="Attack">0.5</tag></assetreference><component>ModelComp</component></anim>
 </animfile>

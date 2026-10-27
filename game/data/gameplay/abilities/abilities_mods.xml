@@ -28,6 +28,11 @@
 		<ability>AbilityMummy<auxchargetimeasrof>1</auxchargetimeasrof></ability>
 	</Akhenaten>
 
+	<Deimos>
+		<ability>AbilityFlameStrike<chargetimeasrof>1</chargetimeasrof></ability>
+		<ability>AbilityExplosiveShout<auxchargetimeasrof>1</auxchargetimeasrof></ability>
+	</Deimos>
+
 		<!-- Bastion Units -->
 	<TravelerOxWagon>
 		<ability>Heal<actioncommand>true</actioncommand></ability>

@@ -1818,6 +1818,15 @@
           <target type="ProtoUnit">CoyoteWarrior</target></effect>
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractCoyotl" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">Popocatepetl</target></effect> 
+        <!-- AbstractWisemen-->
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractWisemen" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">Deimos</target></effect>
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractWisemen" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">WiseMan_Hippokrates</target></effect> 
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractWisemen" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">WiseMan_Herodotus</target></effect> 
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractWisemen" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">WiseMan_Sokrates</target></effect> 
 
         <!-- AbstractNavalTransport -->
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractNavalTransport" relativity="Absolute" mergeMode="add">
@@ -4106,7 +4115,7 @@
 
   <tech name="TheWisemen_Respawn_Sokrates">
     <status>UNOBTAINABLE</status>
-    <delay>10.0000</delay>
+    <delay>60.0000</delay>
     <flag>Volatile</flag>
     <flag>Persistent</flag>
     <flag>HideFromDialogs</flag>
@@ -4122,7 +4131,7 @@
   </tech>
   <tech name="TheWisemen_Respawn_Herodotus">
     <status>UNOBTAINABLE</status>
-    <delay>10.0000</delay>
+    <delay>60.0000</delay>
     <flag>Volatile</flag>
     <flag>Persistent</flag>
     <flag>HideFromDialogs</flag>
@@ -4138,7 +4147,7 @@
   </tech>
   <tech name="TheWisemen_Respawn_Hippokrates">
     <status>UNOBTAINABLE</status>
-    <delay>10.0000</delay>
+    <delay>60.0000</delay>
     <flag>Volatile</flag>
     <flag>Persistent</flag>
     <flag>HideFromDialogs</flag>
@@ -4154,7 +4163,7 @@
   </tech>
    <tech name="TheWisemen_Respawn_Deimos">
     <status>UNOBTAINABLE</status>
-    <delay>10.0000</delay>
+    <delay>300.0000</delay>
     <flag>Volatile</flag>
     <flag>Persistent</flag>
     <flag>HideFromDialogs</flag>
