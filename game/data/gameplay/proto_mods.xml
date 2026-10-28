@@ -23662,9 +23662,10 @@
 	</unit>
 
 	<unit name="PythiaTheAscended">
-		<displaynameid>STR_UNIT_ATHENA_NAME</displaynameid>
-		<rollovertextid>STR_UNIT_ATHENA_LR</rollovertextid>
-		<icon>resources\spc\player_color\units\athena_icon.png</icon>
+		<displaynameid>STR_UNIT_PYTHIA_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_PYTHIA_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_PYTHIA_SR</shortrollovertextid>
+		<icon>resources\tech\pythia.png</icon>
 		<minimapicon>ui\minimap\minimap_hero_spc</minimapicon>
 		<animfile>mcmt\units\divine\demigods\pythia.xml</animfile>
 		<soundsetfile>spc\vo\athena\athena.xml</soundsetfile>
@@ -23770,19 +23771,9 @@
 		</protoaction>
 		<protoaction>
 			<name>AreaRestrict</name>
-			<damagearea>20.00000</damagearea>
+			<damagearea>16.00000</damagearea>
 			<maxrange>23.00000</maxrange>
 			<modifyduration>10000</modifyduration>
-
-			<onhiteffect type="Throw" targetunittype="HumanSoldier"></onhiteffect>
-			<onhiteffect type="Throw" targetunittype="LogicalTypeVillagerNotHero"></onhiteffect>
-			<onhiteffect type="Throw" targetunittype="LogicalTypeMythUnitNotTitan"></onhiteffect>
-			<throw>1</throw>
-			<coneareaangle>360.000000</coneareaangle>
-			<outerdamageareadistance>1.500000</outerdamageareadistance>
-			<outerdamageareafactor>0.900000</outerdamageareafactor>
-			<fulldamagemaintarget>1</fulldamagemaintarget>
-			<maxsizeclass>7</maxsizeclass>
 		</protoaction>
 		<protoaction>
 			<name>LightningAttack</name>

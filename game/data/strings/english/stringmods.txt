@@ -448,10 +448,17 @@ ID = "STR_TECH_ENABLE_NOAHCONVERT_LR"   ;   Str = "Enables Noah to guide heretic
 
 ID = "STR_UNIT_NOAH_NAME"   ;   Str = "Noah"
 ID = "STR_UNIT_NOAH_SR"   ;   Str = "Noah the Oracle of Guidance"
-ID = "STR_UNIT_NOAH_LR"   ;   Str = "The Legendary Oracle that Visited Many Eras for Millenia in Many Forms; Widely Known as Moses and Pharaoh; Noah of Ark; King David;  "
+ID = "STR_UNIT_NOAH_LR"   ;   Str = "The Legendary Oracle that Visited Many Eras for Millenia in Many Forms; Widely Known as Moses and Pharaoh; Noah of Ark; King David"
 ID = "STR_MSG_NOAH_SPAWN"   ;   Str = "Noah has returned to teach Pharaoh a new lesson!"
 
-ID = "STR_UNIT_TUTANKHAMUN_NAME"   ;   Str = "Tutankhamun (Hero)"
+// PYTHIA
+ID = "STR_TECH_ORACLE_OF_ATHENS_NAME"   ;   Str = "Overdrive Mode: Oracle of Athens"
+ID = "STR_TECH_ORACLE_OF_ATHENS_LR"   ;   Str = "Warning: This overdriver activator will enable Pythia the Ascended. She has reached a demigodhood through blessings from offsprings of Zeus"
+ID = "STR_MSG_PYTHIA_SPAWN"   ;   Str = "Pythia the Ascended has reached demigodhood once more!"
+
+ID = "STR_UNIT_PYTHIA_NAME"   ;   Str = "Pythia the Ascended"
+ID = "STR_UNIT_PYTHIA_SR"   ;   Str = "Oracle of Great Athens"
+ID = "STR_UNIT_PYTHIA_LR"   ;   Str = "The Oracle of Athena has a great popularity in Greek World. She not only shares her blessings, prophecies and wisdom but also guides as an important figure in the society"
 
 // SHAMAN
 ID = "STR_TECH_SHAMAN_COUNCIL_NAME"   ;   Str = "Shaman Council"
@@ -998,6 +1005,8 @@ ID = "STR_UNIT_BRUNNHILDE_MOUNTED_SR"   ;   Str = "Shieldmaiden Cavalry Hero"
 ID = "STR_UNIT_BRUNNHILDE_MOUNTED_LR"   ;   Str = "Brunnhilde is a legendary hero that leads many valkyrie armies under the command of All-Father Odin into many heroic battles. She has various mighty abilities gained through fierce battles. Her spear can pierce through Myth and Naval Units. Her steed can fly onto many enemies. Her blessing can recover grave wounds. Her experience can call more valkyries into her battles"
 
 // EGYPTIAN SPECIAL UNITS
+ID = "STR_UNIT_TUTANKHAMUN_NAME"   ;   Str = "Tutankhamun (Hero)"
+
 ID = "STR_UNIT_NUBIANMERCENARY_NAME"   ;   Str = "Nubian Mercenary"
 ID = "STR_UNIT_NUBIANMERCENARY_SR"   ;   Str = "Nubian Mercenary"
 ID = "STR_UNIT_NUBIANMERCENARY_LR"   ;   Str = "Nubian Light Infantry that excels in fast attacks"
@@ -1646,6 +1655,9 @@ ID = "STR_ABILITY_EXPLOSIVE_SHOUT_LR"   ;   Str = "Releases a combustion event t
 
 ID = "STR_ABILITY_FLAME_STRIKE"   ;   Str = "Flame Strike"
 ID = "STR_ABILITY_FLAME_STRIKE_LR"   ;   Str = "Spins the flame sword that knocks the challengers away and leaves them in an awe"
+
+ID = "STR_ABILITY_AREA_RESTRICT"   ;   Str = "Area Restrict"
+ID = "STR_ABILITY_AREA_RESTRICT_LR"   ;   Str = "Summons a construct made from divine light and pounds it on the area"
 
 // COMMAND TECHS
 ID = "STR_BLD_FIREWALL_NAME"   ;   Str = "Fire Wall"

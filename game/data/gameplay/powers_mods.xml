@@ -1971,4 +1971,12 @@
 		<abstractplacementtargettype>LogicalTypeMythUnitNotTitan</abstractplacementtargettype>
 		<unitaction>FlameStrlke</unitaction>
 	</power>
+	<power name="AbilityAreaRestrict" type="UnitAction">
+		<displaynameid>STR_ABILITY_AREA_RESTRICT</displaynameid>
+		<rolloverid>STR_ABILITY_AREA_RESTRICT_LR</rolloverid>
+		<icon>chinese\static_color\abilities\lijing_ability_a_icon.png</icon>
+		<placement>Skip</placement>
+		<rangeindicator range="10.0" speed="0.2">Circle</rangeindicator>
+		<unitaction>AreaRestrict</unitaction>
+	</power>
 </powersmod>

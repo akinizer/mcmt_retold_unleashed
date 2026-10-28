@@ -4180,8 +4180,8 @@
   </tech>
   <!---->
   <tech name="MCMT_Oracle_of_Athens">
-    <displaynameid>STR_TECH_THE_WISEMEN_NAME</displaynameid>
-    <rollovertextid>STR_TECH_THE_WISEMEN_LR</rollovertextid>
+    <displaynameid>STR_TECH_ORACLE_OF_ATHENS_NAME</displaynameid>
+    <rollovertextid>STR_TECH_ORACLE_OF_ATHENS_LR</rollovertextid>
     <status>UNOBTAINABLE</status>
     <icon>resources\tech\activate_tech.jpg</icon>
     <researchpoints>1.0000</researchpoints>
@@ -4196,7 +4196,7 @@
 
   <tech name="Oracle_Respawn_PythiaTheAscended">
     <status>UNOBTAINABLE</status>
-    <delay>60.0000</delay>
+    <delay>300.0000</delay>
     <flag>Volatile</flag>
     <flag>Persistent</flag>
     <flag>HideFromDialogs</flag>
@@ -4208,6 +4208,7 @@
     <effects>
       <effect type="CreateUnit" unit="PythiaTheAscended" generator="AbstractTownCenter">
         <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
+      <effect type="TextOutput">STR_MSG_PYTHIA_SPAWN</effect>
     </effects>
   </tech>
     <!-- TEMPLE OF PRIMORDIALS // PAGINATION TECHS -->

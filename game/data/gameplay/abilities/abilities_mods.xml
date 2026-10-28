@@ -34,7 +34,8 @@
 	</Deimos>
 
 	<PythiaTheAscended>
-		<ability>AbilityChargedRangedAttack<auxchargetimeasrof>1</auxchargetimeasrof></ability>
+		<ability>AbilityChargedRangedAttack<chargetimeasrof>1</chargetimeasrof></ability>
+		<ability>AbilityAreaRestrict<auxchargetimeasrof>1</auxchargetimeasrof></ability>
 	</PythiaTheAscended>
 
 		<!-- Bastion Units -->
