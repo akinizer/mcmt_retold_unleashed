@@ -4,7 +4,6 @@
 
 === FACTION HEROES
 greek: 
-    athena - zeus: disable field, ability spawn (champion of freyr x5)
     posiedon - euphumus
         model: perseus (no helm)
         weapon: kuafu rock

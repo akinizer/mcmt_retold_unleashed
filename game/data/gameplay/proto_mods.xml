@@ -10472,6 +10472,7 @@
 		<tech row="3" column="3">MCMT_ShamanCouncil</tech>
 		<tech row="3" column="3">MCMT_BrunnhildesCalling</tech>
 		<tech row="3" column="3">MCMT_The_Wisemen_Greek</tech>
+		<tech row="3" column="3">MCMT_Oracle_of_Athens</tech>
 	</unit>
 	<unit name="CitadelCenter">
 		<unittype>AbstractFortress</unittype>
@@ -23660,6 +23661,149 @@
 		</protoaction>
 	</unit>
 
+	<unit name="PythiaTheAscended">
+		<displaynameid>STR_UNIT_ATHENA_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_ATHENA_LR</rollovertextid>
+		<icon>resources\spc\player_color\units\athena_icon.png</icon>
+		<minimapicon>ui\minimap\minimap_hero_spc</minimapicon>
+		<animfile>mcmt\units\divine\demigods\pythia.xml</animfile>
+		<soundsetfile>spc\vo\athena\athena.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<autoattackrange>16.0000</autoattackrange>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>758.0000</initialhitpoints>
+		<maxhitpoints>758.0000</maxhitpoints>
+		<weightclass>6</weightclass>
+		<maxcontained>1.0000</maxcontained>
+		<populationcount>1</populationcount>
+		<maxvelocity>3.8000</maxvelocity>
+		<los>30.0000</los>
+		<bloodgroupoverride>defaultmythblood</bloodgroupoverride>
+		<armor type="Hack" value="0.4900"></armor>
+		<armor type="Pierce" value="0.5900"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>Hero</unittype>
+		<unittype>MajorHero</unittype>
+		<unittype>HeroShadowUpgraded</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+		<unittype>Ranged</unittype>
+
+		<rechargetime>25.0</rechargetime>
+		<auxrechargetime>20.0</auxrechargetime>
+
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>		
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>		
+		<unittype>LogicalTypeFindMilitaryHero</unittype>
+		<unittype>LogicalTypeNotEconomicOrMilitaryUnit</unittype>
+		<unittype>LogicalTypeHealableHero</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>HideGarrisonFlag</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>HasDefaultAttack</flag>
+		<contain external="1">LogicalTypePickable</contain>
+		<tactics>mcmt_pythia.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>3.000000</rof>
+			<damage type="Hack">5.000000</damage>
+			<damage type="Divine">2.000000</damage>
+			<maxrange>23.000000</maxrange>
+			<projectile>ProjectileBallOfFire</projectile>
+			<impacteffect>effects\impacts\onmyoji</impacteffect>	
+			<displayednumberprojectiles>40</displayednumberprojectiles>		
+
+			<passthrough>1</passthrough>
+			<passthroughbuildings>1</passthroughbuildings>
+			<maxheight>0</maxheight>
+			<perfectaccuracy>1</perfectaccuracy>	
+			<defaultattack>1</defaultattack>
+		</protoaction>
+		<protoaction>
+			<name>RangedAttackBuilding</name>
+			<rof>3.000000</rof>
+			<damage type="Crush">63.000000</damage>
+			<damage type="Divine">12.000000</damage>
+			<maxrange>23.000000</maxrange>
+			<projectile>ProjectileOnmyojiAttack</projectile>
+			<impacteffect>effects\impacts\onmyoji</impacteffect>
+			<numberprojectiles>1</numberprojectiles>					
+		</protoaction>
+		<protoaction>
+			<name>ChargedRangedAttack</name>
+			<rof>5.000000</rof>
+			<damage type="Crush">1.000000</damage>
+			<maxrange>28.000000</maxrange>
+			<perfectaccuracy>1</perfectaccuracy>
+			<instantballistics>1</instantballistics>
+
+			<castpower>MCMT_OrbitalStrike_Light_of_Eskiss</castpower>
+			<castpowertargettype>Unit</castpowertargettype>		
+		</protoaction>
+		<protoaction>
+			<name>AreaRestrict</name>
+			<damagearea>20.00000</damagearea>
+			<maxrange>23.00000</maxrange>
+			<modifyduration>10000</modifyduration>
+
+			<onhiteffect type="Throw" targetunittype="HumanSoldier"></onhiteffect>
+			<onhiteffect type="Throw" targetunittype="LogicalTypeVillagerNotHero"></onhiteffect>
+			<onhiteffect type="Throw" targetunittype="LogicalTypeMythUnitNotTitan"></onhiteffect>
+			<throw>1</throw>
+			<coneareaangle>360.000000</coneareaangle>
+			<outerdamageareadistance>1.500000</outerdamageareadistance>
+			<outerdamageareafactor>0.900000</outerdamageareafactor>
+			<fulldamagemaintarget>1</fulldamagemaintarget>
+			<maxsizeclass>7</maxsizeclass>
+		</protoaction>
+		<protoaction>
+			<name>LightningAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Divine">105.00000</damage>
+			<maxrange>23.000000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>Pickup</name>
+			<type>Pickup</type>
+			<maxrange>1</maxrange>
+			<rate type="LogicalTypePickable">1.00000</rate>
+		</protoaction>
+		<protoaction>
+			<name>DropOff</name>
+			<type>DropOff</type>
+			<maxrange>1</maxrange>
+			<rate type="AbstractTemple">1.00000</rate>
+		</protoaction>
+	</unit>
+
 	 <unit name="AchillesDismounted">	
 		<displaynameid>STR_UNIT_ACHILLES_NAME</displaynameid>
 		<rollovertextid>STR_UNIT_ACHILLES_LR</rollovertextid>
@@ -27890,7 +28034,6 @@
 		<flag>MilitaryCommands</flag>
 		<flag>ForceSecondPage</flag>
 		<flag>CreateUnitGroupAutomatically</flag>
-		<flag>ForceSecondPage</flag>
 		<contain external="1">LogicalTypePickable</contain>
 
 		<rechargetime>25.0</rechargetime>
@@ -36064,24 +36207,36 @@
 		<flag>NotPlayerPlaceable</flag>
 		<flag>NotKBTracked</flag>
 		<flag>NotDeathTracked</flag>
-		<tactics>container.tactics</tactics>
+
+		<rechargetime>5.0</rechargetime>
+		<tactics>global_default_attack_ranged.tactics</tactics>
 		<protoaction>
 			<name stringid="STR_ABILITY_LIJING_PAGODA">Pagoda</name>
 			<type>AreaRestrict</type>
-			<anim>Pagoda</anim>
-			<damagearea>10.00000</damagearea>
-			<maxrange>20.00000</maxrange>
-			<modifyduration>2000</modifyduration>
 			<attackaction>1</attackaction>
 			<rangedlogic>1</rangedlogic>
 			<chargeaction>1</chargeaction>
 			<charged>
 				<chargedmodifyvfx>VFXPagoda</chargedmodifyvfx>
 			</charged>
+
 			<rate type="HumanSoldier">1.0</rate>
 			<rate type="LogicalTypeMythUnitNotTitan">1.0</rate>
 			<rate type="Hero">1.0</rate>
-			<rate type="EconomicUnit">1.0</rate>			
+			<rate type="EconomicUnit">1.0</rate>
+			
+			<damagearea>12.00000</damagearea>
+			<maxrange>12.00000</maxrange>
+			<modifyduration>2000</modifyduration>
+			<forceareaattackcenter>1</forceareaattackcenter>
+			<damageflags>Enemy</damageflags>
+		
+			<rate type="AbstractTitan">0.0</rate>
+			<rate type="MilitaryUnit">1.0</rate>
+			<rate type="EconomicUnit">1.0</rate>	
+
+			<modelattachment>vfx\glow\shengxian_unit_convert_activate.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>		
 		</protoaction>
 	</unit>
 	<unit name="HarvestOfHuntsContainer" mergeMode="add">
@@ -38841,6 +38996,65 @@
 			<maxrange>0.300000</maxrange>
 		</protoaction>
 	</unit>
+	<unit name="MCMT_MeteorStrikeMinor">
+		<animfile>egyptian\godpowers\meteor\meteor.xml</animfile>
+		<obstructionradiusx>6.0000</obstructionradiusx>
+		<obstructionradiusz>6.0000</obstructionradiusz>
+		<lifespan>15.0000</lifespan>
+		<decay delay="15.0000" duration="1.0000"></decay>
+		<movementtype>land</movementtype>
+		<los>20.0000</los>
+		<unittype>EmbellishmentClass</unittype>
+		<flag>NonCollideable</flag>
+		<flag>AreaDamageConstant</flag>
+		<flag>NoIdleActions</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>GivesLOSToAll</flag>
+		<flag>NoHPBar</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>HasContinuousParticles</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.0</rof>
+			<onhiteffect type="Spawn" proto="TaoTieFireArea" amount="1"></onhiteffect>
+		</protoaction>
+	</unit>
+	<unit name="Light_of_Eskiss">
+        <animfile>norse\godpowers\forest_fire\forest_fire.xml</animfile>
+        <obstructionradiusx>0.1000</obstructionradiusx>
+        <obstructionradiusz>0.1000</obstructionradiusz>
+        <lifespan>3.0000</lifespan>
+        <decay delay="0.0000" duration="0.0100"></decay>
+        <movementtype>air</movementtype>
+        <flag>NotSelectable</flag>
+        <flag>KillOnAnimLoop</flag>
+        <flag>NotSearchable</flag>
+        <flag>DoNotYawDuringMovement</flag>
+        <flag>NonCollideable</flag>
+        <flag>GivesLOSToAll</flag>
+        <flag>NoHPBar</flag>
+        <flag>NotPlayerPlaceable</flag>
+        <flag>DoNotShowOnMiniMap</flag>
+        <flag>HasContinuousParticles</flag>
+        <flag>NoIdleActions</flag>
+        <flag>NotKBTracked</flag>
+        <flag>NotDeathTracked</flag>
+        <flag>AreaDamageConstant</flag>
+        <tactics>handattack.tactics</tactics>
+        <protoaction>
+            <name>HandAttack</name>
+            <rof>1.0</rof>
+            <damage type="Divine">125.000000</damage>
+            <maxrange>0.300000</maxrange>
+            <onhiteffect type="ShadingFade" shadingtype="burning" factor="2.0" fadetime="5.0" targetunittype="Unit"></onhiteffect>
+        </protoaction>
+    </unit>
 	<unit name="MCMT_Earthquake">
 		<animfile>greek\godpowers\earthquake\earthquake.xml</animfile>
 		<obstructionradiusx>0.1000</obstructionradiusx>

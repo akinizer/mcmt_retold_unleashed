@@ -1,0 +1,82 @@
+<tactics>
+	<action>
+		<name stringid="STR_ACTION_RANGED">RangedAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttack</anim>
+		<accuracy>0.8</accuracy>
+		<maxspread>5.0</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>1.0</trackrating>
+		<impacteffect>effects\impacts\hack</impacteffect>
+		<rate type="Unit">1.0</rate>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_RANGED">RangedAttackBuilding</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedHeavyAttack</anim>
+		<accuracy>0.8</accuracy>
+		<maxspread>5.0</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>1.0</trackrating>
+		<impacteffect>effects\impacts\crush</impacteffect>
+		<rate type="Building">1.0</rate>
+	</action>
+    <action>
+		<name stringid="STR_ACTION_RANGED">LightningAttack</name>
+		<type>ChainAttack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>Charging</anim>
+		<projectile>ProjectileChainLightning</projectile>
+		<accuracy>1.0</accuracy>
+		<impacteffect>effects\impacts\hack</impacteffect>
+		<rate type="Hero">1.0</rate>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_RANGED">ChargedRangedAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedHeavyAttack</anim>
+		<chargeaction>1</chargeaction>
+		<accuracy>0.8</accuracy>
+		<maxspread>5.0</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>1.0</trackrating>
+		<impacteffect>effects\impacts\crush</impacteffect>
+		<rate type="Building">1.0</rate>
+	</action>
+	<action>
+		<name>AreaRestrict</name>
+		<type>AreaRestrict</type>
+		<anim>RangedHeavyAttack</anim>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<auxchargeaction>1</auxchargeaction>
+	
+		<rate type="AbstractTitan">0.0</rate>
+		<rate type="MilitaryUnit">1.0</rate>
+		<rate type="EconomicUnit">1.0</rate>
+
+		<charged>
+			<chargedmodifyvfx>VFXPagoda</chargedmodifyvfx>
+		</charged>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_DEVOTE">DevoteMajor</name>
+		<type>DevoteMajor</type>
+		<maxrange>0.2</maxrange>
+	</action>
+	<tactic>Default
+        <action priority="100">LightningAttack</action>
+        <action priority="90">AreaRestrict</action>
+        <action priority="80">ChargedRangedAttack</action>
+        <action priority="70">RangedAttackBuilding</action>
+        <action priority="60">RangedAttack</action>
+        <action>DevoteMajor</action>
+		<attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype></tactic>
+</tactics>

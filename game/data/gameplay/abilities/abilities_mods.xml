@@ -33,6 +33,10 @@
 		<ability>AbilityExplosiveShout<auxchargetimeasrof>1</auxchargetimeasrof></ability>
 	</Deimos>
 
+	<PythiaTheAscended>
+		<ability>AbilityChargedRangedAttack<auxchargetimeasrof>1</auxchargetimeasrof></ability>
+	</PythiaTheAscended>
+
 		<!-- Bastion Units -->
 	<TravelerOxWagon>
 		<ability>Heal<actioncommand>true</actioncommand></ability>

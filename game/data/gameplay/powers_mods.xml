@@ -1312,6 +1312,35 @@
 		<treesearchradius>6.0</treesearchradius>
 		<damagesearchradius>6.0</damagesearchradius>
 	</power>
+	<power name="MCMT_OrbitalStrike_Light_of_Eskiss" type="ForestFire" godpower="" mergeMode="add">
+		<displaynameid>STR_POWER_FOREST_FIRE</displaynameid>
+		<rolloverid>STR_POWER_FOREST_FIRE_LR</rolloverid>
+		<icon>norse\static_color\god_powers\forest_fire_icon.png</icon>
+		<placement allowdeadtarget="" allownature="" enemy="">Unit</placement>
+		<abstractplacementtargettype>MilitaryUnit</abstractplacementtargettype>
+		<abstractplacementtargettype>Building</abstractplacementtargettype>
+		<abstractplacementtargettype>Tree</abstractplacementtargettype>
+		<abstractplacementtargettype>Unit</abstractplacementtargettype>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">ForestFireBirth</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll" loop="1" positional="1">ForestFireExists</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>30.0</activetime>
+		<fasteststriketime>0.5</fasteststriketime>
+		<sloweststriketime>0.5</sloweststriketime>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<abstractattacktargettype>Unit</abstractattacktargettype>
+		<abstractattacktargettype>Building</abstractattacktargettype>
+		<attackproto>Light_of_Eskiss</attackproto>
+		<vfxproto>VFXForestFire</vfxproto>
+		<embersproto>ForestFireEmbers</embersproto>
+		<burnlength>30.0</burnlength>
+		<burnfadelength>20.0</burnfadelength>
+		<treedestructionseconds>1.0</treedestructionseconds>
+		<emberlifespan>16.0</emberlifespan>
+		<treesearchradius>6.0</treesearchradius>
+		<damagesearchradius>6.0</damagesearchradius>
+	</power>
 	<power name="MCMT_VillagerTurnBerserk" type="UnitAction" mergeMode="add">
 		<displaynameid>STR_MCMT_TRANSFORM_TO_BERSERK</displaynameid>
 		<rolloverid>STR_MCMT_TRANSFORM_TO_BERSERK_LR</rolloverid>
@@ -1797,6 +1826,14 @@
 		<abstractplacementtargettype>LogicalTypeMythUnitNotTitan</abstractplacementtargettype>
 		<rangeindicator range="6.0" speed="0.2">Circle</rangeindicator>
 		<unitaction>TauntAttack</unitaction>
+	</power>
+	<power name="AbilityChargedChainAttack" type="UnitAction" orderhint="5">
+		<displaynameid>STR_ABILITY_SOUL_GUIDE_CHAIN_OF_CORRUPTION</displaynameid>
+		<rolloverid>STR_ABILITY_SOUL_GUIDE_CHAIN_OF_CORRUPTION_LR</rolloverid>
+		<icon>aztec\static_color\abilities\soul_master_chain_of_corruption_ability_icon.png</icon>
+		<placement enemy="">Unit</placement>
+		<abstractplacementtargettype>Unit</abstractplacementtargettype>
+		<unitaction>LightningAttack</unitaction>
 	</power>
 	<!--ChargedAbility Special-->
 	<power name="AbilityTrackerDevice" type="UnitAction">

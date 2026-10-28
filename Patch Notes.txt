@@ -245,6 +245,7 @@
         - DirectionalArmor
         - ChargedRangedAttack: areadamage, crushdamage, throw humansoldier & villager
 - Special Greek Units
+    - Prereq: Hades
     - The Wise Men
         - Sokrates:
             - Bolster: ROF on Deimos
@@ -263,6 +264,13 @@
             - ExplosiveShout: autboost attaclk, onhiteffect areadamage burn
             - AreaHeal: AbstractWisemen
             - Respawn: 5 mins
+    - PythiaTheAscended:
+        - Prereq: Zeus
+        - RangedAttack: flamethrower
+        - LightningAttack: hero-killer attack
+        - RangedAttackBuilding: heavy fireball, anti-building
+        - ChargedRangedAttack: orbital strike, anti-building, splash
+        - AreaRestrict: area disable, anti-unit
     - Spartans
         - Prereq: ClassicAgeAres
         - SpartanTraining: enables Spartan building, techs and units

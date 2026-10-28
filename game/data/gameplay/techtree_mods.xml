@@ -2582,6 +2582,7 @@
       <effects>
         <!--TheWisemen-->
         <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_The_Wisemen_Greek</effect>
+        <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_Oracle_of_Athens</effect>
       </effects>
     </tech>
 
@@ -4174,6 +4175,38 @@
     </prereqs>
     <effects>
       <effect type="CreateUnit" unit="Deimos" generator="AbstractTownCenter">
+        <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
+    </effects>
+  </tech>
+  <!---->
+  <tech name="MCMT_Oracle_of_Athens">
+    <displaynameid>STR_TECH_THE_WISEMEN_NAME</displaynameid>
+    <rollovertextid>STR_TECH_THE_WISEMEN_LR</rollovertextid>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\tech\activate_tech.jpg</icon>
+    <researchpoints>1.0000</researchpoints>
+    <cost resourcetype="Favor">815.0000</cost>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <prereqs><techstatus status="Active">ArchaicAgeZeus</techstatus></prereqs>
+    <effects>
+      <effect type="TechStatus" status="obtainable">Oracle_Respawn_PythiaTheAscended</effect>
+    </effects>
+  </tech>
+
+  <tech name="Oracle_Respawn_PythiaTheAscended">
+    <status>UNOBTAINABLE</status>
+    <delay>60.0000</delay>
+    <flag>Volatile</flag>
+    <flag>Persistent</flag>
+    <flag>HideFromDialogs</flag>
+    <prereqs>
+      <techstatus status="Active">ArchaicAgeZeus</techstatus>
+      <typecount unit="AbstractTownCenter" count="0.00" state="aliveState" operator="gt"></typecount>
+      <typecount unit="PythiaTheAscended" count="1.00" state="aliveState" operator="lt"></typecount>
+    </prereqs>
+    <effects>
+      <effect type="CreateUnit" unit="PythiaTheAscended" generator="AbstractTownCenter">
         <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
     </effects>
   </tech>
