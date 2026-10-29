@@ -4191,6 +4191,9 @@
     <prereqs><techstatus status="Active">ArchaicAgeZeus</techstatus></prereqs>
     <effects>
       <effect type="TechStatus" status="obtainable">Oracle_Respawn_PythiaTheAscended</effect>
+      <effect type="TechStatus" status="obtainable">MCMT_Guardians_of_Oracle</effect>
+      <effect type="Data" amount="1.00" subtype="CommandAdd" tech="MCMT_Guardians_of_Oracle" row="0" column="5" relativity="Assign">
+        <target type="ProtoUnit">PythiaTheAscended</target></effect>
     </effects>
   </tech>
 
@@ -4211,6 +4214,23 @@
       <effect type="TextOutput">STR_MSG_PYTHIA_SPAWN</effect>
     </effects>
   </tech>
+
+  <tech name="MCMT_Guardians_of_Oracle">
+    <displaynameid>STR_TECH_GUARDIANS_OF_ORACLE_NAME</displaynameid>
+    <rollovertextid>STR_TECH_GUARDIANS_OF_ORACLE_LR</rollovertextid>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\greek\static_color\technologies\aegis_shield_icon.png</icon>
+    <researchpoints>10.0000</researchpoints>
+    <cost resourcetype="Gold">200.0000</cost>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <effects>
+      <effect type="CreateUnit" unit="GuardiansOfOracle" generator="PythiaTheAscended">
+        <pattern type="Leaving" speed="0.00" radius="10.00" quantity="5.00" minradius="0.00">
+          <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
+    </effects>
+  </tech>
+
     <!-- TEMPLE OF PRIMORDIALS // PAGINATION TECHS -->
   <tech name="TempleOfPrimordials_ActivateTech_GodsBeasts" mergeMode="add">
     <displaynameid>STR_TECH_ACTIVATE_TECH_GODSBEASTS</displaynameid>

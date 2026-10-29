@@ -23795,6 +23795,135 @@
 		</protoaction>
 	</unit>
 
+	<unit name="GuardiansOfOracle">
+		<displaynameid>STR_UNIT_GUARDIAN_OF_ORACLE_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_GUARDIAN_OF_ORACLE_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_GUARDIAN_OF_ORACLE_SR</shortrollovertextid>
+		<icon>resources\aotg\player_color\units\champion_of_freyr_icon.png</icon>
+		<animfile>spc\units\champion_of_freyr\champion_of_freyr.xml</animfile>
+		<soundsetfile>greek\vo\polyphemus\polyphemus.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<autoattackrange>16.0000</autoattackrange>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>600.0000</initialhitpoints>
+		<maxhitpoints>600.0000</maxhitpoints>
+		<unitregen>5.0000</unitregen>
+
+		<weightclass>5</weightclass>
+		<maxcontained>1</maxcontained>
+		<populationcount>1</populationcount>
+		<maxvelocity>4.3000</maxvelocity>
+		<los>16.0000</los>
+		<cost resourcetype="Food">80.0000</cost>
+		<cost resourcetype="Gold">40.0000</cost>
+		<armor type="Hack" value="0.5500"></armor>
+		<armor type="Pierce" value="0.1500"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<culture>Greek</culture>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>Hero</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+		<unittype>MajorHero</unittype>
+		<unittype>HeroShadowUpgraded</unittype>
+
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeNorseSoldierThatBuilds</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeHealableHero</unittype>
+	
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>RotateInPlace</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CommonCommands</flag>
+		<flag>HideGarrisonFlag</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<contain external="1">LogicalTypePickable</contain>
+		
+		<rechargetime>10.0000</rechargetime>
+		<flag>DisplayRange</flag>
+		<flag>AlwaysShowAbilities</flag>		
+		<flag>AbilitiesOnBothPages</flag>
+
+		<tactics>mcmt_handattack_tauntattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.500000</rof>
+			<damage type="Hack">9.000000</damage>
+			<damage type="Crush">1.000000</damage>
+			<damagebonus type="MythUnit">5.500000</damagebonus>
+			<maxrange>0.750000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>TauntAttack</name>
+			<anim>HandAttack</anim>
+			<rof>3.000000</rof>
+			<damagearea>6.000000</damagearea>
+			<damageflags>Enemy</damageflags>
+			<maxrange>3.000000</maxrange>
+			<forceareaattackcenter>1</forceareaattackcenter>
+			<onhiteffect type="StatModify" targetunittype="HumanSoldier" duration="5.000000">
+				<modify type="ForcedTarget">1.000000</modify>
+			</onhiteffect>
+			<onhiteffect type="StatModify" targetunittype="LogicalTypeMythUnitNotTitan" duration="5.000000">
+				<modify type="ForcedTarget">1.000000</modify>
+			</onhiteffect>
+			<onhiteffect type="SelfModify" duration="8.000000">
+				<modify type="ArmorSpecific" dmgtype="Pierce">1.500000</modify>
+				<modify type="ArmorSpecific" dmgtype="Hack">1.500000</modify>
+				<modify type="ArmorSpecific" dmgtype="Crush">1.500000</modify>
+			</onhiteffect>
+
+			<modelattachment>vfx\projectiles\yan_fei_feng\blessing_protect.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+			
+			<onhiteffect type="Attach" targetunittype="HumanSoldier" proto="VFXChaos" attachbone="vfx_top" duration="5.000000"></onhiteffect>
+			<onhiteffect type="Attach" targetunittype="LogicalTypeMythUnitNotTitan" proto="VFXChaos" attachbone="vfx_top" duration="5.000000"></onhiteffect>
+		</protoaction>
+		<protoaction>
+			<name>Pickup</name>
+			<type>Pickup</type>
+			<rate type="LogicalTypePickable">1.00000</rate>
+			<maxrange>1</maxrange>
+			<active>0</active>
+		</protoaction>
+		<protoaction>
+			<name>DropOff</name>
+			<type>DropOff</type>
+			<rate type="AbstractTemple">1.00000</rate>
+			<maxrange>1</maxrange>
+		</protoaction>
+	</unit>
+
 	 <unit name="AchillesDismounted">	
 		<displaynameid>STR_UNIT_ACHILLES_NAME</displaynameid>
 		<rollovertextid>STR_UNIT_ACHILLES_LR</rollovertextid>

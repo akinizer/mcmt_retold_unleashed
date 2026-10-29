@@ -4,7 +4,7 @@
 
 === FACTION HEROES
 greek: 
-    posiedon - euphumus
+    poseidon - euphumus
         model: perseus (no helm)
         weapon: kuafu rock
         amphibious: faster on water

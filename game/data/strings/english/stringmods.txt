@@ -460,6 +460,10 @@ ID = "STR_UNIT_PYTHIA_NAME"   ;   Str = "Pythia the Ascended"
 ID = "STR_UNIT_PYTHIA_SR"   ;   Str = "Oracle of Great Athens"
 ID = "STR_UNIT_PYTHIA_LR"   ;   Str = "The Oracle of Athena has a great popularity in Greek World. She not only shares her blessings, prophecies and wisdom but also guides as an important figure in the society"
 
+ID = "STR_UNIT_GUARDIAN_OF_ORACLE_NAME"   ;   Str = "Guardian of Oracle"
+ID = "STR_UNIT_GUARDIAN_OF_ORACLE_SR"   ;   Str = "Heavy Duty Unit"
+ID = "STR_UNIT_GUARDIAN_OF_ORACLE_LR"   ;   Str = "Oracle's Guardians are known with their unmatched loyality and durability in the fierce battles"
+
 // SHAMAN
 ID = "STR_TECH_SHAMAN_COUNCIL_NAME"   ;   Str = "Shaman Council"
 ID = "STR_TECH_SHAMAN_COUNCIL_LR"   ;   Str = "Warning: This overdriver activator will summon Shaman Council of Eagle Warriors and the Shaman Hero with supreme transformation abilities"
@@ -970,6 +974,9 @@ ID = "STR_TECH_SCHEMATICS_OF_ADEPTUSMECHANIKUS_LR"   ;   Str = "The brilliant te
 // GREEK SPECIAL TECHS
 ID = "STR_TECH_TEMPLEOFSOLARIS_NAME"   ;   Str = "Temple of Solaris"
 ID = "STR_TECH_TEMPLEOFSOLARIS_LR"   ;   Str = "Beacon of the Knight Order that praises the sun"
+
+ID = "STR_TECH_GUARDIANS_OF_ORACLE_NAME"   ;   Str = "Emergent Summon: Guardians of Oracle"
+ID = "STR_TECH_GUARDIANS_OF_ORACLE_LR"   ;   Str = "A group of elite warriors provide their assitance to the Oracle of Athens"
 
 // NORSE SPECIAL UNITS
 ID = "STR_UNIT_OGRE_MINI_NAME"   ;   Str = "Mini Ogre"

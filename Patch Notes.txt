@@ -271,6 +271,9 @@
         - RangedAttackBuilding: heavy fireball, anti-building
         - ChargedRangedAttack: orbital strike, anti-building, splash
         - AreaRestrict: area disable, anti-unit
+        - GuardiansOfOracle: Summon 5 x Guardian of Oracle
+            - Health Regen, high hack armor, low pierce armor
+            - TauntAttack: armor, taunt, vfx barrier
     - Spartans
         - Prereq: ClassicAgeAres
         - SpartanTraining: enables Spartan building, techs and units
