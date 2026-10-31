@@ -464,14 +464,14 @@ ID = "STR_UNIT_GUARDIAN_OF_ORACLE_NAME"   ;   Str = "Guardian of Oracle"
 ID = "STR_UNIT_GUARDIAN_OF_ORACLE_SR"   ;   Str = "Heavy Duty Unit"
 ID = "STR_UNIT_GUARDIAN_OF_ORACLE_LR"   ;   Str = "Oracle's Guardians are known with their unmatched loyality and durability in the fierce battles"
 
-// EUPHUMUS
+// EUPHEMUS
 ID = "STR_TECH_SON_OF_SEVEN_SEAS_NAME"   ;   Str = "Overdrive Mode: Son of Seven Seas"
 ID = "STR_TECH_SON_OF_SEVEN_SEAS_LR"   ;   Str = "Warning: This overdriver activator will enable Euphemus. He unleashes abilities inherited from Poseidon and Argonauts"
 ID = "STR_MSG_EUPHEMUS_SPAWN"   ;   Str = "Son of Lord Poseidon has joined Argonauts!"
 
 ID = "STR_UNIT_EUPHEMUS_NAME"   ;   Str = "Euphemus"
 ID = "STR_UNIT_EUPHEMUS_SR"   ;   Str = "Son of Seven Seas"
-ID = "STR_UNIT_EUPHEMUS_LR"   ;   Str = "Euphumus is a son of Lord Poseidon and a member of Argonauts. He has been granted with authority over water which aded to sail the Argo, protection from sea monsters and mobility over water as the helmsmen and naval scout"
+ID = "STR_UNIT_EUPHEMUS_LR"   ;   Str = "Euphemus is a son of Lord Poseidon and a member of Argonauts. He has been granted with authority over water which aded to sail the Argo, protection from sea monsters and mobility over water as the helmsmen and naval scout"
 
 // SHAMAN
 ID = "STR_TECH_SHAMAN_COUNCIL_NAME"   ;   Str = "Shaman Council"
@@ -1170,11 +1170,16 @@ ID = "STR_TECH_SHRINEOFFERINGS_WOOD_LR"   ;   Str = "Local Shrines now accept va
 ID = "STR_TECH_SHRINEOFFERINGS_GOLD_NAME"   ;   Str = "Shrine Offerings (Gold)"
 ID = "STR_TECH_SHRINEOFFERINGS_GOLD_LR"   ;   Str = "Local Shrines now accept currencies and treasures offered to their kami"
 
-// AZTEC SPECIAL UNITS
+// AZTEC SPECIAL BUILDINGS
+ID = "STR_BLD_MONOLITH_OF_TLALOC_LESSER_NAME"   ;   Str = "Airstrike Pillar"
+ID = "STR_BLD_MONOLITH_OF_TLALOC_LESSER_SR"   ;   Str = "Aid from Sea God from Stranger Lands"
+ID = "STR_BLD_MONOLITH_OF_TLALOC_LESSER_LR"   ;   Str = "Son of Seven Seas calls aid from other sea gods in a pinch. One hears the call and launcher his pillars from anothe continent with excellent ballistic skills and enhanced muscles"
+
 ID = "STR_BLD_AGAVE_DOOMBLOOM_NAME"   ;   Str = "Doom Bloom"
 ID = "STR_BLD_AGAVE_DOOMBLOOM_SR"   ;   Str = "Nature's Vengeance"
 ID = "STR_BLD_AGAVE_DOOMBLOOM_LR"   ;   Str = "Nature gifts Agave Bloom as a gift to heal people. If they get greedy and deplete it, it turns into Doom Bloom and burns the sinners"
 
+// AZTEC SPECIAL UNITS
 ID = "STR_BLD_BATTLEMASTER_NAME"   ;   Str = "Battlemaster"
 ID = "STR_BLD_BATTLEMASTER_SR"   ;   Str = "Champions of Flower Wars"
 ID = "STR_BLD_BATTLEMASTER_LR"   ;   Str = "Durable unit that is resilient to Myth Units and effective against Heroes"

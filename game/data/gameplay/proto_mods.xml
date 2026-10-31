@@ -23925,16 +23925,16 @@
 		</protoaction>
 	</unit>
 	
-	<unit name="Euphumus">
+	<unit name="Euphemus">
 		<displaynameid>STR_UNIT_EUPHEMUS_NAME</displaynameid>
 		<rollovertextid>STR_UNIT_EUPHEMUS_LR</rollovertextid>
 		<shortrollovertextid>STR_UNIT_EUPHEMUS_SR</shortrollovertextid>
 		<icon>resources\greek\player_color\units\perseus_icon.png</icon>
-		<animfile>mcmt\units\divine\demigods\euphumus.xml</animfile>
+		<animfile>mcmt\units\divine\demigods\euphemus.xml</animfile>
 		<soundsetfile>spc\vo\gargarensis\gargarensis.xml</soundsetfile>
 		<obstructionradiusx>0.4900</obstructionradiusx>
 		<obstructionradiusz>0.4900</obstructionradiusz>
-		<impacttype>Unrmoured</impacttype>
+		<impacttype>Armoured</impacttype>
 		<unitaitype>RangedCombative</unitaitype>
 		<autoattackrange>16.0000</autoattackrange>
 		<movementtype>Amphibious</movementtype>
@@ -23948,7 +23948,9 @@
 		<maxcontained>1</maxcontained>
 		<populationcount>1</populationcount>
 		<maxvelocity>4.3000</maxvelocity>
-		<rechargetime>12.0000</rechargetime>
+		
+		<rechargetime>22.0000</rechargetime>
+		<auxrechargetime>18.0000</auxrechargetime>
 		<los>16.0000</los>
 		<sharedselectionunittypes>
 			<unittype>LogicalTypeSharedHeroSelection</unittype>
@@ -24011,7 +24013,7 @@
 
 		<flag>TieToWaterSurface</flag>
 		<contain external="1">LogicalTypePickable</contain>
-		<tactics>mcmt_euphumus.tactics</tactics>
+		<tactics>mcmt_euphemus.tactics</tactics>
 		<protoaction>
 			<name>HandAttack</name>
 			<rof>1.500000</rof>
@@ -24039,6 +24041,7 @@
 			<damagebonus type="MythUnit">5.000000</damagebonus>
 			<damagebonus type="NavalUnit">2.000000</damagebonus>
 			<damagearea>5.0</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
 			<maxrange>16.000000</maxrange>
 
 			<onhiteffect type="StatModify" duration="8.000000">
@@ -24046,8 +24049,25 @@
 				<modify type="ArmorSpecific" dmgtype="Hack">0.900000</modify>
 				<modify type="ArmorSpecific" dmgtype="Crush">0.700000</modify>
 			</onhiteffect>
+			<onhiteffect type="StatModify" duration="8.000000">
+				<modify type="ROF">3.000000</modify>
+				<modify type="Speed">0.670000</modify>
+			</onhiteffect>
 			<onhiteffect type="Snare" duration="8.00" rate="0.30"></onhiteffect>
 			
+			<impacteffect>effects\impacts\tlaloccrush</impacteffect>
+		</protoaction>
+		<protoaction>
+			<name>ChargedRangedAttackLand</name>
+			<rof>2.000000</rof>
+			<maxrange>16.000000</maxrange>			
+			<impacteffect>effects\impacts\tlaloccrush</impacteffect>
+		</protoaction>
+		<protoaction>
+			<name>ChargedRangedAttackDistant</name>
+			<rof>2.000000</rof>
+			<minrange>16.000000</minrange>
+			<maxrange>32.000000</maxrange>			
 			<impacteffect>effects\impacts\tlaloccrush</impacteffect>
 		</protoaction>
 		<protoaction>
@@ -24060,7 +24080,7 @@
 				<settactic>Water</settactic>
 				<duration>1.0</duration>
 				<cooldown>0.01</cooldown>
-				<chargedmodify modifytype="RegenRate" applytype="Multiply">1.15</chargedmodify>
+				<chargedmodify modifytype="HealRate" applytype="Multiply">1.1</chargedmodify>
 			</charged>
 			<charged>
 				<activationtype>TerrainType</activationtype>
@@ -24069,6 +24089,17 @@
 				<duration>1.0</duration>
 				<cooldown>0.01</cooldown>
 			</charged>
+		</protoaction>
+		<protoaction>
+			<name>AreaSlow</name>
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>Ship</modifyabstracttype>
+			<maxrange>10</maxrange>
+			<persistent>1</persistent>
+			<modifytype>Speed</modifytype>
+			<modifymultiplier>0.70</modifymultiplier>
+			<targetenemyincludenature>1</targetenemyincludenature>
+			<nostack>1</nostack>
 		</protoaction>
 		<protoaction>
 			<name>Pickup</name>
@@ -34885,7 +34916,37 @@
 		<flag>NotKBTracked</flag>
 		<flag>NotDeathTracked</flag>
 	</unit>
-	
+	<unit name="ProjectileMaquizcoatlAcidPool">
+		<animfile>vfx\projectiles\wadjet_spit\wadjet_spit.xml</animfile>
+		<obstructionradiusx>0.2000</obstructionradiusx>
+		<obstructionradiusz>0.2000</obstructionradiusz>
+		<spawn type="hit" count="1">ArgusAcidBlobDamage</spawn>
+		<lifespan>2.0000</lifespan>
+		<decay delay="4.0000" duration="0.1000"></decay>
+		<movementtype>air</movementtype>
+		<maxvelocity>30.0000</maxvelocity>
+		<unittype>Projectile</unittype>
+		<unittype>LogicalTypeSunRayProjectile</unittype>
+		<flag>Invulnerable</flag>
+		<flag>NoUnitAI</flag>
+		<flag>NoIdleActions</flag>
+		<flag>NonCollideable</flag>
+		<flag>NotSearchable</flag>
+		<flag>Projectile</flag>
+		<flag>NoTieToGround</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>NotSelectable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>NoHPBar</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>AdjustPositionOnTerrainCollision</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>HasContinuousParticles</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+	</unit>
+		
 	<!-- /// SPECIAL TRAIL UNITS /// -->
 	<unit name="TrailOfFire">
 		<displaynameid>STR_VFX_NEZHA_FIRE_AREA_NAME</displaynameid>
@@ -39303,6 +39364,104 @@
 			<name>HandAttack</name>
 			<rof>1.0</rof>
 			<onhiteffect type="Spawn" proto="TaoTieFireArea" amount="1"></onhiteffect>
+		</protoaction>
+	</unit>
+	<unit name="MCMT_VolcanoMeteor3" orderhint="5">
+		<animfile>aztec\godpowers\volcano\volcano_rock.xml</animfile>
+		<obstructionradiusx>6.0000</obstructionradiusx>
+		<obstructionradiusz>6.0000</obstructionradiusz>
+		<lifespan>10.0000</lifespan>
+		<decay delay="10.0000" duration="1.0000"></decay>
+		<movementtype>land</movementtype>
+		<los>20.0000</los>
+		<unittype>EmbellishmentClass</unittype>
+		<flag>NonCollideable</flag>
+		<flag>AreaDamageConstant</flag>
+		<flag>NoIdleActions</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>GivesLOSToAll</flag>
+		<flag>NoHPBar</flag>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotDieAtZeroHitpoints</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>HasContinuousParticles</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<tactics>handattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.0</rof>
+			<damage type="Hack">40</damage>
+			<damage type="Divine">20</damage>
+			<damagearea>7.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<damagebonus type="MythUnit">5.0</damagebonus>
+			<maxrange>0.300000</maxrange>
+		</protoaction>
+	</unit>
+	<unit name="MCMT_MonolithOfTlaloc_Lesser" orderhint="5">
+		<displaynameid>STR_BLD_MONOLITH_OF_TLALOC_LESSER_NAME</displaynameid>
+		<rollovertextid>STR_BLD_MONOLITH_OF_TLALOC_LESSER_LR</rollovertextid>
+		<shortrollovertextid>STR_BLD_MONOLITH_OF_TLALOC_LESSER_SR</shortrollovertextid>
+		<icon>resources\aztec\static_color\god_powers\pillar_of_tlalocan_icon.png</icon>
+		<animfile>aztec\buildings\pillar_of_tlalocan\pillar_of_tlalocan.xml</animfile>
+		<soundsetfile>aztec\sfx\god_powers\pillar_of_tlalocan.xml</soundsetfile>
+		<lifespan>5.0000</lifespan>
+		<obstructionradiusx>2.0000</obstructionradiusx>
+		<obstructionradiusz>2.0000</obstructionradiusz>
+		<selectionradiusx>3.0000</selectionradiusx>
+		<selectionradiusz>3.0000</selectionradiusz>
+		<impacttype>Stone</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<initialhitpoints>2400.0000</initialhitpoints>
+		<maxhitpoints>2400.0000</maxhitpoints>
+		<los>25.0000</los>
+		<armor type="Hack" value="0.2000"></armor>
+		<armor type="Pierce" value="0.6000"></armor>
+		<armor type="Crush" value="0.2000"></armor>
+		<culture>Aztec</culture>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeBuildingsNotWalls</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>Building</unittype>
+		<unittype>BuildingClass</unittype>
+		<unittype>SiegeLineUpgraded</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeBuildingNotWonderOrTitan</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>Immoveable</flag>
+		<flag>ObscuresUnits</flag>
+		<flag>NonAutoFormedUnit</flag>
+		<flag>Doppled</flag>
+		<flag>SelectWithObstruction</flag>
+		<flag>NotRepairable</flag>
+		<flag>AreaDamageConstant</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<birthprotoaction>BirthAttack</birthprotoaction>
+		<tactics>monolith_of_tlaloc.tactics</tactics>
+		<protoaction>
+			<name notactics="">BirthAttack</name>
+			<type>Attack</type>
+			<damage type="Divine">25.000000</damage>
+			<damagearea>7.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<attackaction>1</attackaction>
+			<rate type="Unit">1.0</rate>
+			<rate type="Building">1.0</rate>
+			<onhiteffect type="Throw" targetunittype="Unit"></onhiteffect>
+		</protoaction>
+		<protoaction>
+			<name>MonolithStrike</name>
+			<active>0</active>
 		</protoaction>
 	</unit>
 	<unit name="Light_of_Eskiss">

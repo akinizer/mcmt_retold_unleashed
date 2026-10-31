@@ -1696,7 +1696,7 @@
 		</animations>
 	</animxml>
 	
-	<animxml file="mcmt\units\divine\demigods\euphumus.xml">
+	<animxml file="mcmt\units\divine\demigods\euphemus.xml">
 		<visuallogics>
 			<visualmap>
 				<visualnode>

@@ -4244,12 +4244,12 @@
     <flag>MythTech</flag>
     <prereqs><techstatus status="Active">ArchaicAgePoseidon</techstatus></prereqs>
     <effects>
-      <effect type="TechStatus" status="obtainable">MCMT_Euphumus_Respawn</effect>
-      <effect type="TechStatus" status="obtainable">Euphumus</effect>
+      <effect type="TechStatus" status="obtainable">MCMT_Euphemus_Respawn</effect>
+      <effect type="TechStatus" status="obtainable">Euphemus</effect>
     </effects>
   </tech>
 
-   <tech name="MCMT_Euphumus_Respawn">
+   <tech name="MCMT_Euphemus_Respawn">
     <status>UNOBTAINABLE</status>
     <delay>300.0000</delay>
     <flag>Volatile</flag>
@@ -4258,10 +4258,10 @@
     <prereqs>
       <techstatus status="Active">ArchaicAgePoseidon</techstatus>
       <typecount unit="AbstractTownCenter" count="0.00" state="aliveState" operator="gt"></typecount>
-      <typecount unit="Euphumus" count="1.00" state="aliveState" operator="lt"></typecount>
+      <typecount unit="Euphemus" count="1.00" state="aliveState" operator="lt"></typecount>
     </prereqs>
     <effects>
-      <effect type="CreateUnit" unit="Euphumus" generator="AbstractTownCenter">
+      <effect type="CreateUnit" unit="Euphemus" generator="AbstractTownCenter">
         <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
       <effect type="TextOutput">STR_MSG_EUPHEMUS_SPAWN</effect>
     </effects>
@@ -12585,6 +12585,16 @@
     <effects>
       <effect type="Data" amount="3.00" subtype="ModifySpawn" spawntype="Dead" proto="Maquizcoatl" relativity="Absolute" mergeMode="add">
         <target type="ProtoUnit">InfestedDen</target></effect>
+
+      <effect type="Data" action="ScorchingBreath" amount="1.0" subtype="Projectile" unittype="ProjectileBallOfFireTaotie" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Maquizcoatl</target></effect>
+      <effect type="Data" action="PoisonousBreath" amount="1.0" subtype="Projectile" unittype="ProjectileMaquizcoatlAcidPool" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Maquizcoatl</target></effect>
+
+      <effect type="Data" amount="1.00" subtype="OnHitEffect" action="HandAttack" effecttype="Attach" duration="6.00" targettype="Unit" proto="VFXNeZhaFire" relativity="Assign">
+				<target type="ProtoUnit">Maquizcoatl</target></effect>
+      <effect type="Data" amount="1.0" subtype="OnHitEffect" action="HandAttack" effecttype="DamageOverTime" duration="5  .00" targettype="Unit" relativity="Assign">
+        <target type="ProtoUnit">Maquizcoatl</target></effect>
     </effects>
   </tech>
   

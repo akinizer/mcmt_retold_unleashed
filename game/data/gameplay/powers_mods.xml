@@ -481,6 +481,52 @@
 		<minthrowvelocity>10.0</minthrowvelocity>
 		<maxthrowvelocity>20.0</maxthrowvelocity>
 	</power>
+	<power name="MCMT_AbilityVolcanoMeteor3" type="Meteor" orderhint="5">
+		<displaynameid>STR_POWER_METEOR</displaynameid>
+		<rolloverid>STR_POWER_METEOR_LR</rolloverid>
+		<icon>aztec\static_color\god_powers\volcano_icon.png</icon>
+		<placement>Full</placement>
+		<camerashake duration="0.50" strength="0.25"></camerashake>
+		<playsbattlemusic></playsbattlemusic>
+		<builduptime>1.5</builduptime>
+		<activetime>5.0</activetime>
+		<radius>5.0</radius>
+		<powerblocker>25.0</powerblocker>
+		<hideonactivegplist></hideonactivegplist>
+		<accuracy>0.5</accuracy>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<abstractattacktargettype>Unit</abstractattacktargettype>
+		<explicitlyrestrictedattacktargettype>Herdable</explicitlyrestrictedattacktargettype>
+		<fasteststriketime>-0.5</fasteststriketime>
+		<sloweststriketime>0.5</sloweststriketime>
+		<meteorprotounit>MCMT_VolcanoMeteor3</meteorprotounit>
+		<numberofstrikes>3</numberofstrikes>
+		<numberofprioritystrikes>3</numberofprioritystrikes>
+		<minimumgroupsize>5</minimumgroupsize>
+		<groupsearchradius>6.0</groupsearchradius>
+		<secondaryaccuracy>0.0</secondaryaccuracy>
+		<uselargestgroupbelowminsize>1</uselargestgroupbelowminsize>
+		<firststrikesoundset>MeteorBigHit</firststrikesoundset>
+		<strikesoundset>MeteorSmallHit</strikesoundset>
+		<firstapproachsound>MeteorApproach</firstapproachsound>
+		<approachsound>MeteorWhoosh</approachsound>
+		<minmeteordistance>4.0</minmeteordistance>
+		<firstmeteoroffcenter>true</firstmeteoroffcenter>
+		<minthrowdistance>6.0</minthrowdistance>
+		<maxthrowdistance>10.0</maxthrowdistance>
+		<minthrowheight>1.0</minthrowheight>
+		<maxthrowheight>2.0</maxthrowheight>
+		<minthrowvelocity>10.0</minthrowvelocity>
+		<maxthrowvelocity>20.0</maxthrowvelocity>
+	</power>
+	<power name="MCMT_AbilityMonolithStrike" type="UnitAction" orderhint="5">
+		<displaynameid>STR_POWER_MONOLITH_STRIKE</displaynameid>
+		<rolloverid>STR_POWER_MONOLITH_STRIKE_LR</rolloverid>
+		<icon>aztec\static_color\god_powers\pillar_of_tlalocan_icon.png</icon>
+		<placement enemy="">Unit</placement>
+		<abstractplacementtargettype>Unit</abstractplacementtargettype>
+		<unitaction>MonolithStrike</unitaction>
+	</power>
 	<power name="MCMT_Vision" type="TempUnit" godpower="" mergeMode="add">
 		<displaynameid>STR_POWER_MCMT_VISION</displaynameid>
 		<rolloverid>STR_POWER_MCMT_VISION_LR</rolloverid>
@@ -1652,6 +1698,24 @@
 			<target type="Tech">EclipseActive</target></effect>
 	</power>
 	<!-- New Sentinel God Powers -->
+	<power name="MCMT_AbilityMonolithOfTlaloc_Lesser" type="TempUnit" godpower="" orderhint="5">
+		<displaynameid>STR_POWER_PILLAR_OF_TLALOCAN</displaynameid>
+		<rolloverid>STR_POWER_PILLAR_OF_TLALOCAN_LR</rolloverid>
+		<icon>aztec\static_color\god_powers\pillar_of_tlalocan_icon.png</icon>
+		<placement disallowwatercast="" overlaptype="LogicalTypeTartarianGateValidOverlapPlacement" losprotounit="MCMT_MonolithOfTlaloc_Lesser" notoverlapselforally="">Overlap</placement>
+		<camerashake duration="1.0" strength="0.20" range="40.0"></camerashake>
+		<hideonactivegplist></hideonactivegplist>
+		<soundset type="StartSound" listenertype="AllExceptCaster">GodPowerStart</soundset>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">PillarofTlalocanBirth</soundset>
+		<soundset type="EndSound" listenertype="All">GodPowerEnd</soundset>
+		<activetime>-1</activetime>
+		<radius>4.0</radius>
+		<rangeindicator range="4.0" speed="0.2">Circle</rangeindicator>
+		<forceuseplacementorientation></forceuseplacementorientation>
+		<powerplayerrelation>All</powerplayerrelation>
+		<terrainrumbling height="0.03" width="1.0" speed="25.0" fadetime="0.5"></terrainrumbling>
+		<createunit quantity="1" radius="0.0" delay="1.0" norandomrotate="" permanent="" destroyunderneath="" donotdestroyfriendliesunderneath="" createunitsoundset="PillarofTlalocanImpact">MCMT_MonolithOfTlaloc_Lesser</createunit>
+	</power>
 	<power name="MCMT_Sentinel_Aztec" type="TempUnit" godpower="">
 		<displaynameid>STR_POWER_SENTINEL</displaynameid>
 		<rolloverid>STR_POWER_SENTINEL</rolloverid>

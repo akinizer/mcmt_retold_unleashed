@@ -18,4 +18,7 @@
 	<anim>CarryIdle<assetreference type="TMAnimation"><file>greek\units\hero\perseus\anim\perseus_carryidle_a</file></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach></anim>
 	<anim>Flail<assetreference type="TMAnimation"><file>greek\units\hero\perseus\anim\perseus_flail_a</file></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach><attach name="Shield" attachpoint="medusahead"></attach></anim>
 	<anim animlengthoverride="2.0">ChargedRangedAttack<assetreference type="TMAnimation"><file>greek\units\hero\jason\anim\jason_attack_a</file><tag type="Attack">0.35</tag></assetreference><component>ModelComp</component></anim>
+	
+	<component>ModelComp_Active<assetreference type="TMModel"><file>aztec\buildings\pillar_of_tlalocan\pillar_of_tlalocan</file><materialvariant index="1"></materialvariant></assetreference></component>
+	<anim>MonolithStrike<assetreference type="TMAnimation"><file>aztec\buildings\pillar_of_tlalocan\anim\pillar_of_tlalocan_idle_a</file><tag type="Attack">0.5</tag><tag type="particles" popcornfxname="godpowers\pillar_of_tlalocan\pillar_of_tlalocan_active.pkfx" bone="bonethatdoesntexist" movewithbone="false" stopwithanim="false" adjustduration="false">0.02</tag></assetreference><component>ModelComp_Active</component></anim>
 </animfile>

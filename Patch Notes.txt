@@ -274,6 +274,16 @@
         - GuardiansOfOracle: Summon 5 x Guardian of Oracle
             - Health Regen, high hack armor, low pierce armor
             - TauntAttack: armor, taunt, vfx barrier
+    - Euphemus:
+        - Prereq: Poseidon
+        - amphibious, shield attachment, clod of triton weapon
+        - HandAttack: clod swing attack
+        - RangedAttack: yukionnasnowball projectile, multiple, bonus vs naval
+        - ChargedRangedAttack: castpower monolithstrike, water blast anim, bonus vs myth, effective vs building & ship, statmodify armor- & snare
+        - ChargedRangedAttackLand: castpower monolithstrike, pillar of tlalocan birthattack lifespan
+        - ChargedRangedAttackDistant: castpower volcano meteor 3 small spawn area, long range attack
+        - ChargedModify: activates regen after entering water
+        - AreaSlow: ship movement speed
     - Spartans
         - Prereq: ClassicAgeAres
         - SpartanTraining: enables Spartan building, techs and units
@@ -1445,6 +1455,12 @@
         - ChargedHandAttack (TelpochcalliTraining): lifesteal, selfmodify rof
     - OcelotlWarrior:
         - ChargedHandAttack (TelpochcalliTraining): lifesteal, selfmodify damage
+- Aztec Myth Reworks:
+    - Maquizcoatl (OmenOfMalinaco):
+        - HandAttack: vfx nezha fire
+        - ScorchingBreath: taotie fire
+        - PoisonousBreath: wadjetspit + argus blob pool
+
 - Naval:
     - FishingShipAztec: GatherBonus aura for other FishingShipAztec
 - Trade:

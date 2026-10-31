@@ -2,16 +2,7 @@
 ==================== PRIORITY-PLANS ==========================================
 ==============================================================================
 
-=== FACTION HEROES
-greek: 
-    poseidon - euphumus
-        model: perseus (no helm)
-        weapon: kuafu rock
-        amphibious: faster on water
-        rangedattack: water blast (pillar of tlalocan), bonusdamage vs ship
-        chargedrangedattack: vfx_maelstrom, ship rof-
-        areaslow: ship
-    
+=== FACTION HEROES    
 atlantean: colossal titan (swordsman delayed transform, explosive birth attack, firegiant), kronny
 chinese: mulan (akari, stealth), azusa, ???
 japanese: oda nobunaga (harumoto, clan member), miyamoto musashi (kagemasa)

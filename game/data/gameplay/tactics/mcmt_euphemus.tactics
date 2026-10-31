@@ -38,6 +38,36 @@
 		<castpower>AbilityMonolithStrikeBurst</castpower>
 		<castpowertargettype>Unit</castpowertargettype>
 	</action>
+    <action>
+		<name stringid="STR_ACTION_CHARGE_RANGED">ChargedRangedAttackLand</name>
+		<type>Attack</type>
+		<rate type="All">1.0</rate>
+		<attackaction>1</attackaction>
+		<chargeaction>1</chargeaction>
+		<handlogic>1</handlogic>
+		<anim>ChargedRangedAttack</anim>
+		<impacteffect>effects\impacts\crush</impacteffect>
+		<projectile>ProjectileBallOfFireInvisible</projectile>		  
+		<trackrating>99</trackrating>
+		<instantballistics>1</instantballistics>
+		<castpower>MCMT_AbilityMonolithOfTlaloc_Lesser</castpower>
+		<castpowertargettype>Unit</castpowertargettype>
+	</action>
+    <action>
+		<name stringid="STR_ACTION_CHARGE_RANGED">ChargedRangedAttackDistant</name>
+		<type>Attack</type>
+		<rate type="All">1.0</rate>
+		<attackaction>1</attackaction>
+		<auxchargeaction>1</auxchargeaction>
+		<handlogic>1</handlogic>
+		<anim>ChargedRangedAttack</anim>
+		<impacteffect>effects\impacts\crush</impacteffect>
+		<projectile>ProjectileBallOfFireInvisible</projectile>		  
+		<trackrating>99</trackrating>
+		<instantballistics>1</instantballistics>
+		<castpower>MCMT_AbilityVolcanoMeteor3</castpower>
+		<castpowertargettype>Unit</castpowertargettype>
+	</action>
 	<action>
 		<name stringid="STR_ACTION_DEVOTE">DevoteMinor</name>
 		<active>0</active>
@@ -49,10 +79,18 @@
 		<type>DevoteMajor</type>
 		<maxrange>0.2</maxrange>
 	</action>
-	<tactic>Default
-        <action priority="100">ChargedRangedAttack</action>
-        <action priority="90">RangedAttack</action>
-        <action priority="80">HandAttack</action>
+	<tactic>Water
+        <action priority="100">ChargedRangedAttackDistant</action>
+        <action priority="90">ChargedRangedAttack</action>
+        <action priority="80">RangedAttack</action>
+        <action priority="70">HandAttack</action>
+        <attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype>
+    </tactic>
+	<tactic>Ground
+        <action priority="100">ChargedRangedAttackDistant</action>
+        <action priority="90">ChargedRangedAttackLand</action>
+        <action priority="80">RangedAttack</action>
+        <action priority="70">HandAttack</action>
         <attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype>
     </tactic>
 </tactics>
