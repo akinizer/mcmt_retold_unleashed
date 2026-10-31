@@ -464,6 +464,15 @@ ID = "STR_UNIT_GUARDIAN_OF_ORACLE_NAME"   ;   Str = "Guardian of Oracle"
 ID = "STR_UNIT_GUARDIAN_OF_ORACLE_SR"   ;   Str = "Heavy Duty Unit"
 ID = "STR_UNIT_GUARDIAN_OF_ORACLE_LR"   ;   Str = "Oracle's Guardians are known with their unmatched loyality and durability in the fierce battles"
 
+// EUPHUMUS
+ID = "STR_TECH_SON_OF_SEVEN_SEAS_NAME"   ;   Str = "Overdrive Mode: Son of Seven Seas"
+ID = "STR_TECH_SON_OF_SEVEN_SEAS_LR"   ;   Str = "Warning: This overdriver activator will enable Euphemus. He unleashes abilities inherited from Poseidon and Argonauts"
+ID = "STR_MSG_EUPHEMUS_SPAWN"   ;   Str = "Son of Lord Poseidon has joined Argonauts!"
+
+ID = "STR_UNIT_EUPHEMUS_NAME"   ;   Str = "Euphemus"
+ID = "STR_UNIT_EUPHEMUS_SR"   ;   Str = "Son of Seven Seas"
+ID = "STR_UNIT_EUPHEMUS_LR"   ;   Str = "Euphumus is a son of Lord Poseidon and a member of Argonauts. He has been granted with authority over water which aded to sail the Argo, protection from sea monsters and mobility over water as the helmsmen and naval scout"
+
 // SHAMAN
 ID = "STR_TECH_SHAMAN_COUNCIL_NAME"   ;   Str = "Shaman Council"
 ID = "STR_TECH_SHAMAN_COUNCIL_LR"   ;   Str = "Warning: This overdriver activator will summon Shaman Council of Eagle Warriors and the Shaman Hero with supreme transformation abilities"

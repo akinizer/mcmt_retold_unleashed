@@ -10473,6 +10473,7 @@
 		<tech row="3" column="3">MCMT_BrunnhildesCalling</tech>
 		<tech row="3" column="3">MCMT_The_Wisemen_Greek</tech>
 		<tech row="3" column="3">MCMT_Oracle_of_Athens</tech>
+		<tech row="3" column="3">MCMT_Son_of_Seven_Seas</tech>
 	</unit>
 	<unit name="CitadelCenter">
 		<unittype>AbstractFortress</unittype>
@@ -23921,6 +23922,165 @@
 			<type>DropOff</type>
 			<rate type="AbstractTemple">1.00000</rate>
 			<maxrange>1</maxrange>
+		</protoaction>
+	</unit>
+	
+	<unit name="Euphumus">
+		<displaynameid>STR_UNIT_EUPHEMUS_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_EUPHEMUS_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_EUPHEMUS_SR</shortrollovertextid>
+		<icon>resources\greek\player_color\units\perseus_icon.png</icon>
+		<animfile>mcmt\units\divine\demigods\euphumus.xml</animfile>
+		<soundsetfile>spc\vo\gargarensis\gargarensis.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Unrmoured</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<autoattackrange>16.0000</autoattackrange>
+		<movementtype>Amphibious</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>480.0000</initialhitpoints>
+		<maxhitpoints>480.0000</maxhitpoints>
+		<trainpoints>30.0000</trainpoints>
+		<buildlimit>1</buildlimit>
+		<weightclass>8</weightclass>
+		<sizeclass>7</sizeclass>
+		<maxcontained>1</maxcontained>
+		<populationcount>1</populationcount>
+		<maxvelocity>4.3000</maxvelocity>
+		<rechargetime>12.0000</rechargetime>
+		<los>16.0000</los>
+		<sharedselectionunittypes>
+			<unittype>LogicalTypeSharedHeroSelection</unittype>
+		</sharedselectionunittypes>
+		<cost resourcetype="Gold">400.0000</cost>
+		<cost resourcetype="Favor">6.0000</cost>
+		<armor type="Hack" value="0.4800"></armor>
+		<armor type="Pierce" value="0.4000"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeSharedHeroSelection</unittype>
+		<unittype>Hero</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+		<unittype>HeroShadowUpgraded</unittype>
+		<unittype>MajorHero</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>AbstractScout</unittype>
+
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		
+		<unittype>LogicalTypeFindMilitaryHero</unittype>
+		<unittype>LogicalTypeAffectedBySunRay</unittype>
+		<unittype>LogicalTypeHealableHero</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>HideGarrisonFlag</flag>
+		<flag>HasDefaultAttack</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>SplitQueue</flag>
+
+		<flag>TieToWaterSurface</flag>
+		<contain external="1">LogicalTypePickable</contain>
+		<tactics>mcmt_euphumus.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.500000</rof>
+			<damage type="Hack">18.000000</damage>
+			<damage type="Divine">9.000000</damage>
+			<damagebonus type="MythUnit">7.000000</damagebonus>
+			<maxrange>0.750000</maxrange>
+			<defaultattack>1</defaultattack>
+		</protoaction>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.500000</rof>
+			<damage type="Pierce">12.000000</damage>
+			<damagebonus type="MythUnit">5.000000</damagebonus>
+			<damagebonus type="NavalUnit">2.000000</damagebonus>
+			<minrange>4.000000</minrange>
+			<maxrange>16.000000</maxrange>
+			<projectile>ProjectileYukiOnnaBall</projectile>
+		</protoaction>
+		<protoaction>
+			<name>ChargedRangedAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Crush">40.000000</damage>
+			<damage type="Divine">10.000000</damage>
+			<damagebonus type="MythUnit">5.000000</damagebonus>
+			<damagebonus type="NavalUnit">2.000000</damagebonus>
+			<damagearea>5.0</damagearea>
+			<maxrange>16.000000</maxrange>
+
+			<onhiteffect type="StatModify" duration="8.000000">
+				<modify type="ArmorSpecific" dmgtype="Pierce">0.900000</modify>
+				<modify type="ArmorSpecific" dmgtype="Hack">0.900000</modify>
+				<modify type="ArmorSpecific" dmgtype="Crush">0.700000</modify>
+			</onhiteffect>
+			<onhiteffect type="Snare" duration="8.00" rate="0.30"></onhiteffect>
+			
+			<impacteffect>effects\impacts\tlaloccrush</impacteffect>
+		</protoaction>
+		<protoaction>
+			<name>ChargedModify</name>
+			<type>ChargedModify</type>
+			<persistent>1</persistent>
+			<charged>
+				<activationtype>TerrainType</activationtype>
+				<terraintype>Water</terraintype>
+				<settactic>Water</settactic>
+				<duration>1.0</duration>
+				<cooldown>0.01</cooldown>
+				<chargedmodify modifytype="RegenRate" applytype="Multiply">1.15</chargedmodify>
+			</charged>
+			<charged>
+				<activationtype>TerrainType</activationtype>
+				<terraintype>Land</terraintype>
+				<settactic>Ground</settactic>
+				<duration>1.0</duration>
+				<cooldown>0.01</cooldown>
+			</charged>
+		</protoaction>
+		<protoaction>
+			<name>Pickup</name>
+			<type>Pickup</type>
+			<maxrange>1</maxrange>
+			<rate type="LogicalTypePickable">1.00000</rate>
+		</protoaction>
+		<protoaction>
+			<name>DropOff</name>
+			<type>DropOff</type>
+			<maxrange>1</maxrange>
+			<rate type="AbstractTemple">1.00000</rate>
 		</protoaction>
 	</unit>
 

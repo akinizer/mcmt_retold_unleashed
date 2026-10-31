@@ -27,6 +27,13 @@ wanyudo
 perseus: weapon model (fork)
 ufo: chargedrangedattack (banish)
 
+=== SPECIAL UNITS
+saboteur: disguise as tree / stealth, onigami self-sacrifice attack, infantrylineupgrade
+photonman: chukonu, laser attack
+allison the alligator: large crocodile, bonusdamage vs buildings
+kickball: ball model, default taowu charge
+laserbear: chainattack, handattack (laser bear attack a), rangedattack (laser bear attack b)
+
 === WEAPON MODELS
 Nereid + Staff
 

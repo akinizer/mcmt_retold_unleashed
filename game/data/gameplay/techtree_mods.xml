@@ -2583,6 +2583,7 @@
         <!--TheWisemen-->
         <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_The_Wisemen_Greek</effect>
         <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_Oracle_of_Athens</effect>
+        <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_Son_of_Seven_Seas</effect>
       </effects>
     </tech>
 
@@ -4228,6 +4229,41 @@
       <effect type="CreateUnit" unit="GuardiansOfOracle" generator="PythiaTheAscended">
         <pattern type="Leaving" speed="0.00" radius="10.00" quantity="5.00" minradius="0.00">
           <offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
+    </effects>
+  </tech>
+  
+  <!---->
+  <tech name="MCMT_Son_of_Seven_Seas">
+    <displaynameid>STR_TECH_SON_OF_SEVEN_SEAS_NAME</displaynameid>
+    <rollovertextid>STR_TECH_SON_OF_SEVEN_SEAS_LR</rollovertextid>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\tech\activate_tech.jpg</icon>
+    <researchpoints>1.0000</researchpoints>
+    <cost resourcetype="Favor">815.0000</cost>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <prereqs><techstatus status="Active">ArchaicAgePoseidon</techstatus></prereqs>
+    <effects>
+      <effect type="TechStatus" status="obtainable">MCMT_Euphumus_Respawn</effect>
+      <effect type="TechStatus" status="obtainable">Euphumus</effect>
+    </effects>
+  </tech>
+
+   <tech name="MCMT_Euphumus_Respawn">
+    <status>UNOBTAINABLE</status>
+    <delay>300.0000</delay>
+    <flag>Volatile</flag>
+    <flag>Persistent</flag>
+    <flag>HideFromDialogs</flag>
+    <prereqs>
+      <techstatus status="Active">ArchaicAgePoseidon</techstatus>
+      <typecount unit="AbstractTownCenter" count="0.00" state="aliveState" operator="gt"></typecount>
+      <typecount unit="Euphumus" count="1.00" state="aliveState" operator="lt"></typecount>
+    </prereqs>
+    <effects>
+      <effect type="CreateUnit" unit="Euphumus" generator="AbstractTownCenter">
+        <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
+      <effect type="TextOutput">STR_MSG_EUPHEMUS_SPAWN</effect>
     </effects>
   </tech>
 
