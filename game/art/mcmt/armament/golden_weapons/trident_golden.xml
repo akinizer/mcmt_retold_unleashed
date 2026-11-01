@@ -1,0 +1,11 @@
+<animfile validation="strict">
+	<attachment>Flaming<component>VFXComp<logic type="Tech"><none><nullvisual></nullvisual></none><flamingweaponsactive><logic type="Tech"><none><assetreference type="TMComposite"><file>vfx\weapons\flaming_weapons\tridents\trident_flame_vfx</file></assetreference></none><copperweapons><assetreference type="TMComposite"><file>vfx\weapons\flaming_weapons\tridents\trident_flame_vfx</file></assetreference></copperweapons><bronzeweapons><assetreference type="TMComposite"><file>vfx\weapons\flaming_weapons\tridents\trident_flame_large_vfx</file></assetreference></bronzeweapons><ironweapons><assetreference type="TMComposite"><file>vfx\weapons\flaming_weapons\tridents\trident_flame_large_vfx</file></assetreference></ironweapons></logic></flamingweaponsactive></logic></component><anim>Idle<component>VFXComp</component></anim></attachment>
+	<component>ModelComp
+        <logic type="Tech">
+            <none><logic type="Tech">
+                <none><assetreference type="TMModel"><file>atlantean\units\attachments\trident\trident_upgrade3</file><materialvariant index="3"></materialvariant></assetreference></none>
+            </logic></none>
+        </logic>
+        <attach name="Flaming" attachpoint="vfx_flame"></attach></component>
+	<anim>Idle<component>ModelComp</component></anim>
+</animfile>

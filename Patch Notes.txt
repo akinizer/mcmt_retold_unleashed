@@ -205,9 +205,11 @@
     - Jason+, Heracles+ Odysseus+, Bellerophon+
     - Ajax+, Chiron+, 
         - Perseus+:
+            - weapon model: trident / fork
             - Stealth (OlympianWeapons): tech-enabled
             - GorgonsGazeAttack (BeastSlayer): tech-enabled
-            - HandAttack OnhitEffectActive (OlympianWeapons): ProgFreeze StoneDamage on HumanSoldier & MythUnit
+            - HandAttack: additional hit
+                - OnhitEffectActive (OlympianWeapons): ProgFreeze StoneDamage on HumanSoldier & MythUnit
     - Achilles+, 
         - JumpAttack: perfectaccuracy, homingballistics, onhiteffect firestorm
         - Weapon Model: Flaming Sword
