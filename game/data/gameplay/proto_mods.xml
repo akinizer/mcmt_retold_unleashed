@@ -1730,6 +1730,38 @@
 	<unit name="Wanyudo">
 		<movementtype>amphibious</movementtype>
 		<flag>TieToWaterSurface</flag>
+		<flag>AreaDamageConstant</flag>
+
+		<rechargetime>22.0000</rechargetime>
+		<tactics>mcmt_wanyudo.tactics</tactics>
+		<protoaction>
+			<name>WreckingWheelAttack</name>
+			<rof>5.000000</rof>
+			<damage type="Hack">20.000000</damage>
+			<damage type="Crush">10.000000</damage>
+			<damagearea>6.000000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<modifyamount>20.000000</modifyamount>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<maxrange>25.000000</maxrange>
+			<minrate type="Unit">30.0</minrate>
+
+			<onhiteffect type="DamageOverTime" duration="5.000000">
+				<damage type="Divine">4.00000</damage></onhiteffect>
+			<onhiteffect type="Attach" targetunittype="Unit" proto="VFXFire" attachbone="spine" duration="5.000000"></onhiteffect>
+			
+			<onhiteffect type="Throw" targetunittype="HumanSoldier"></onhiteffect>
+			<onhiteffect type="Throw" targetunittype="LogicalTypeVillagerNotHero"></onhiteffect>
+			<onhiteffect type="Throw" targetunittype="LogicalTypeMythUnitNotTitan"></onhiteffect>
+			<onhiteffect type="Throw" targetunittype="TradeUnit"></onhiteffect>
+			<throwdistancemin>10.0</throwdistancemin>
+			<throwdistancemax>12.0</throwdistancemax>
+			<throwmaxheight>15.0</throwmaxheight>
+			<throwvelocity>20.0</throwvelocity>
+			<maxsizeclass>7</maxsizeclass>
+			<numberbounces>3</numberbounces>
+		</protoaction>
 	</unit>
 	<unit name="Tengu">		
 		<unittype>AbstractSamurai</unittype>

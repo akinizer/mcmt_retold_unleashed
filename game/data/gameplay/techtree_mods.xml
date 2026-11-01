@@ -12051,6 +12051,9 @@
 	</tech>
   <tech name="CondemnedSoul">
 		<effects>
+      <effect type="Data" action="WreckingWheelAttack" amount="1.00" subtype="ActionEnable" relativity="Assign" mergeMode="add">
+        <target type="ProtoUnit">Wanyudo</target></effect>
+    
 			<effect type="Data" action="LightningAttack" amount="2.00" subtype="DamageArea" relativity="Absolute" mergeMode="add">
 				<target type="ProtoUnit">Shinigami</target></effect>
 			<effect type="Data" action="LightningAttack" amount="1.25" subtype="Damage" relativity="BasePercent" mergeMode="add">

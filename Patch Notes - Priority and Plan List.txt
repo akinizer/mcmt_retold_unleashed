@@ -12,9 +12,6 @@ champion of freyr
 templeofprimordials
     avatar of anubis: theris, osiris lightningattack / hover / onhiteffect explosion
 
-wanyudo
-    ayotochtli spin attack
-
 perseus: weapon model (fork)
 ufo: chargedrangedattack (banish)
 

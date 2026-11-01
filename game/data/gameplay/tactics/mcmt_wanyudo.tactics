@@ -1,0 +1,42 @@
+<tactics>
+	<action>
+		<name stringid="STR_ACTION_RANGED">RangedAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttack</anim>
+		<accuracy>0.8</accuracy>
+		<maxspread>5.0</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>1.0</trackrating>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+		<rate type="All">1.0</rate>
+	</action>
+    <action>
+		<name stringid="STR_ACTION_WRECKING_BALL">WreckingWheelAttack</name>
+		<type>LinearAreaAttack</type>
+		<rate type="Building">1.0</rate>
+		<maxheight>12.0</maxheight>
+		<nomodifyheight>1</nomodifyheight>
+		<walkanim>FlyDown</walkanim>
+		<attackaction>1</attackaction>
+		<chargeaction>1</chargeaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>FlyDown</anim>
+		<impacteffect>effects\impacts\crush</impacteffect>
+		<forceareaattackcenter>1</forceareaattackcenter>
+		<throw>1</throw>
+		<rollingsmash>1</rollingsmash>
+		<rollingdamagefactor>1.0</rollingdamagefactor>
+        <active>0</active>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_DEVOTE">DevoteMajor</name>
+		<type>DevoteMajor</type>
+		<maxrange>0.2</maxrange>
+	</action>
+	<tactic>Default
+        <action priority="100">WreckingWheelAttack</action>
+        <action priority="90">RangedAttack</action>
+        <action>DevoteMajor</action><attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype></tactic>
+</tactics>

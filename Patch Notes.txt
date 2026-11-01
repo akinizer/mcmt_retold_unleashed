@@ -1047,7 +1047,9 @@
 - Tengu: AbstractSamurai, AbstractInfantry, InfantryLineUpgraded
 - Kitsune: amphibious
     - FieryFireAttack: tech-enabled, ranged attack, divine damage, projectile (fireball), impact (asuraballoffire)
-- Wanyudo: amphibious
+- Wanyudo: 
+    - amphibious
+    - wreckngwheelattack (condemnedsoul): ayotochtli wreckingball attack, throw, vfxfire, hack damage, anti-building
 - Umibozu: 
     - TeleportAttack: throws FishingShip, restictowater, attackaction
     - CosmicShimmer: manual teleport, land-sea
