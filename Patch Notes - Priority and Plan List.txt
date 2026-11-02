@@ -7,13 +7,8 @@ atlantean: colossal titan (swordsman delayed transform, explosive birth attack, 
 chinese: mulan (akari, stealth), azusa, ???
 japanese: oda nobunaga (harumoto, clan member), miyamoto musashi (kagemasa)
 
-champion of freyr
-
 templeofprimordials
     avatar of anubis: theris, osiris lightningattack / hover / onhiteffect explosion
-
-perseus: weapon model (fork)
-ufo: chargedrangedattack (banish)
 
 === SPECIAL UNITS
 saboteur: disguise as tree / stealth, onigami self-sacrifice attack, infantrylineupgrade

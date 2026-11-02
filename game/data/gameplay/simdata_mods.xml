@@ -2,6 +2,30 @@
 
 	<!-- special glows -->
 
+	<animxml file="vfx\glow\therisfire_glow.xml">
+		<visuallogics>
+			<visualmap>
+				<visualnode>
+					<composite>vfx\glow\blessing_glow</composite>
+					<logic>
+						<cinematic>normal</cinematic>
+					</logic>
+				</visualnode>
+				<visualnode>
+					<null>NullVisual</null>
+					<logic>
+						<cinematic>cinematic</cinematic>
+					</logic>
+				</visualnode>
+			</visualmap>
+		</visuallogics>
+		<animations>
+			<animinfo>
+				<name>Idle</name>
+			</animinfo>
+		</animations>
+	</animxml>
+
 	<animxml file="vfx\glow\blessing_glow.xml">
 		<visuallogics>
 			<visualmap>

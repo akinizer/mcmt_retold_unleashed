@@ -1680,6 +1680,9 @@ ID = "STR_ABILITY_FLAME_STRIKE_LR"   ;   Str = "Spins the flame sword that knock
 ID = "STR_ABILITY_AREA_RESTRICT"   ;   Str = "Area Restrict"
 ID = "STR_ABILITY_AREA_RESTRICT_LR"   ;   Str = "Summons a construct made from divine light and pounds it on the area"
 
+ID = "STR_ABILITY_UFO_ABDUCT"   ;   Str = "UFO Abduct"
+ID = "STR_ABILITY_UFO_ABDUCT_LR"   ;   Str = "Flying Saucers can abduct units for a duration"
+
 // COMMAND TECHS
 ID = "STR_BLD_FIREWALL_NAME"   ;   Str = "Fire Wall"
 

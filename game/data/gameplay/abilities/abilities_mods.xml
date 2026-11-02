@@ -1,5 +1,10 @@
 <abilitiesmods>	
     <!-- Unit Reworks -->
+		<!-- Cheat Units -->
+	<UFO>
+		<ability>AbilityUFOAbduct<chargetimeasrof>1</chargetimeasrof></ability>
+	</UFO>
+
 		<!-- Campaign Protagonist Heroes -->
 	<FolstagFlagBearer>
 		<ability>AbilityTaunt<castonself>1</castonself><chargetimeasrof>1</chargetimeasrof></ability>

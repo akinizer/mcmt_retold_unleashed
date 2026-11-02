@@ -2043,4 +2043,23 @@
 		<rangeindicator range="10.0" speed="0.2">Circle</rangeindicator>
 		<unitaction>AreaRestrict</unitaction>
 	</power>
+	<power name="AbilityUFOAbduct" type="UnitAction">
+		<displaynameid>STR_ABILITY_UFO_ABDUCT</displaynameid>
+		<rolloverid>STR_ABILITY_UFO_ABDUCT_LR</rolloverid>
+		<icon>atlantean\static_color\god_powers\valor_icon.png</icon>
+		<placement enemy="">Unit</placement>
+		<abstractplacementtargettype>HumanSoldier</abstractplacementtargettype>
+		<abstractplacementtargettype>TradeUnit</abstractplacementtargettype>
+		<abstractplacementtargettype>LogicalTypeMythUnitNotTitan</abstractplacementtargettype>
+		<abstractplacementtargettype>LogicalTypeVillagerNotHero</abstractplacementtargettype>
+		<unitaction>BeamAttackAbduct</unitaction>
+	</power>
+	<power name="AbilityUFOAbductCow" type="UnitAction">
+		<displaynameid>STR_ABILITY_UFO_ABDUCT</displaynameid>
+		<rolloverid>STR_ABILITY_UFO_ABDUCT_LR</rolloverid>
+		<icon>atlantean\static_color\god_powers\valor_icon.png</icon>
+		<placement ally="">Unit</placement>
+		<abstractplacementtargettype>Herdable</abstractplacementtargettype>
+		<unitaction>BeamAttackAbductCow</unitaction>
+	</power>
 </powersmod>

@@ -246,46 +246,7 @@
     - Pentekonter: 
         - DirectionalArmor
         - ChargedRangedAttack: areadamage, crushdamage, throw humansoldier & villager
-- Special Greek Units
-    - Prereq: Hades
-    - The Wise Men
-        - Sokrates:
-            - Bolster: ROF on Deimos
-            - AreaDamageSupression: death boost on Deimos
-            - Respawn: 1 min
-        - Hippokrates:
-            - Bolster: Armor on Deimos
-            - AreaDamageSupression: death boost on Deimos
-            - Respawn: 1 min
-        - Herodotus:
-            - Bolster: Lifesteal on Deimos
-            - AreaDamageSupression: death boost on Deimos
-            - Respawn: 1 min    
-        - Deimos:
-            - FlameStrike: spin attack, shockstun, nodamage
-            - ExplosiveShout: autboost attaclk, onhiteffect areadamage burn
-            - AreaHeal: AbstractWisemen
-            - Respawn: 5 mins
-    - PythiaTheAscended:
-        - Prereq: Zeus
-        - RangedAttack: flamethrower
-        - LightningAttack: hero-killer attack
-        - RangedAttackBuilding: heavy fireball, anti-building
-        - ChargedRangedAttack: orbital strike, anti-building, splash
-        - AreaRestrict: area disable, anti-unit
-        - GuardiansOfOracle: Summon 5 x Guardian of Oracle
-            - Health Regen, high hack armor, low pierce armor
-            - TauntAttack: armor, taunt, vfx barrier
-    - Euphemus:
-        - Prereq: Poseidon
-        - amphibious, shield attachment, clod of triton weapon
-        - HandAttack: clod swing attack
-        - RangedAttack: yukionnasnowball projectile, multiple, bonus vs naval
-        - ChargedRangedAttack: castpower monolithstrike, water blast anim, bonus vs myth, effective vs building & ship, statmodify armor- & snare
-        - ChargedRangedAttackLand: castpower monolithstrike, pillar of tlalocan birthattack lifespan
-        - ChargedRangedAttackDistant: castpower volcano meteor 3 small spawn area, long range attack
-        - ChargedModify: activates regen after entering water
-        - AreaSlow: ship movement speed
+- Special Greek Units and Encampments:
     - Spartans
         - Prereq: ClassicAgeAres
         - SpartanTraining: enables Spartan building, techs and units
@@ -438,13 +399,6 @@
             - Builder Myth Infantry
             - Build: military production buildings
             - HandAttack: bonus damage vs wall
-    - BrunnhildeMounted: Shieldmaiden Cavalry Hero
-        - HandAttack: spear attack
-        - RangedAttack: anti-naval lance throw
-        - RangedAttackMyth: anti-myth lance throw
-        - JumpAttack: pegasus jumpfly
-        - Heal: valkyrie heal
-        - ChargedSpawn: ValkyrieWarrior, duration
 
 6. Egyptian reworks from mcmt mod and additional reworks
 - myth unit:
@@ -519,8 +473,8 @@
         - Build (BookOfThoth): Monuments
 - SiegeWorks:
     - MechanizedMammothUnit+
-- Nubians:
 
+- Nubians:
     - Nubian Mercenary: blade unit, light shield, high rof, axemen techs
     - Nubian Charger: spear unit, light shield, high maxvelocity, spearmen techs
         - IdleSpeedBonus (tech-enabled): this fast unit releases muscle power for a start dash
@@ -719,27 +673,7 @@
 - Manor
 - SiegeWorks
 - TownCenter:
-    - Noah (Ra)
-        - Respawn: 5 minutes
-        - StellarGateway (A.R.K): mobile armored transport, mobilizes when Noah is garrisoned
-        - Heal
-        - Empower
-        - Convert (Divine Teaching: Convert): limited units & structures
-    - Qebehsenuef (Isis)
-        - Respawn: 5 minutes
-        - LightningAttack: default ranged, ProjectileTeaserLaser
-        - DischargedAttack: default close range, forceareaattackcenter, VFX Energy Barrier Appear
-        - ChargedLightningAttack: bounce, ProjectileSoulGuideLightning, onhiteffect spawn Bolt Strike
-        - ChargedRangedAttack: areadamage, onhiteffect spawn Sand Storm        
-    - Akhenaten (Set)
-        - Respawn: 5 minutes
-        - ReincarnationAttack: high damage, spawn UnboundSoul, lifesteal
-            - UnboundSoul: basic shade variant
-        - HandAttack: vfxpoison
-        - ChargedSpawn: recharge on kills, spawn minion x5 after 5 kills
-        - LikeBonus: gains armor for friendly mythunits nearby
-        - DamageBonusVsHumanSoldier: abstractspectral damagebonus vs humansoldier
-
+    - Civilization Founder Heroes
     - WarriorTribe
         - replaces kuafu with kuafuwarrior in towncenter accel and on the field
         - KuafuWarrior: stronger variant of kuafu, mythunit, melee and ranged attacks, charges at towers head on, effective vs cavalry and flyingunit
@@ -1520,14 +1454,6 @@
 - BattleMaster: Elite HumanSoldier, Enabled in MythicAge, Trained at NoblesHut, Available to MythicAgeHuitzi
     - Counter-Hero, Counter-HumanSoldier, Lifesteal, HarvestOfSouls, Buildlimit 3
     - HireBuddyMakina: Makina, AoE Stun, Gore, Lifespan 5s
-- ShamanHero (ShamanCouncil):
-    - HandAttack: unarmed
-    - ChargedHandAttack: anti-unit, lion transform attack, vfx bleed, cone aoe angle 30
-    - ChargedHandAttackBuilding: anti-building, elephant transform attack, bonus vs wall
-    - Charging: anti-flying, projectile lightning
-    - ChargedModify: Shark Form, shark attack
-    - ShamanBirdHero (DelayedTransform): Hawk Form, hover, scout
-        - DelayedTransform: ShamanHero
 
 * special buildings
 - WallConnectorArcher,WallConnectorCrusher,WallConnectorCharger:
@@ -1619,3 +1545,91 @@
     - villageregypt: knife -> kopesh
     - villageratlantean: knife -> murmillo sword
     - villageratlanteanhero: knife -> fork
+
+30. Founder Civilization & Cheat Units Patch and Additions
+- Greek
+    - The Wise Men (Hades):
+        - Sokrates:
+            - Bolster: ROF on Deimos
+            - AreaDamageSupression: death boost on Deimos
+            - Respawn: short
+        - Hippokrates:
+            - Bolster: Armor on Deimos
+            - AreaDamageSupression: death boost on Deimos
+            - Respawn: short
+        - Herodotus:
+            - Bolster: Lifesteal on Deimos
+            - AreaDamageSupression: death boost on Deimos
+            - Respawn: short  
+        - Deimos:
+            - FlameStrike: spin attack, shockstun, nodamage
+            - ExplosiveShout: autboost attaclk, onhiteffect areadamage burn
+            - AreaHeal: AbstractWisemen
+            - Respawn: default
+    - PythiaTheAscended (Zeus):
+        - RangedAttack: flamethrower
+        - LightningAttack: hero-killer attack
+        - RangedAttackBuilding: heavy fireball, anti-building
+        - ChargedRangedAttack: orbital strike, anti-building, splash
+        - AreaRestrict: area disable, anti-unit
+        - GuardiansOfOracle: Summon 5 x Guardian of Oracle
+            - Health Regen, high hack armor, low pierce armor
+            - TauntAttack: armor, taunt, vfx barrier
+    - Euphemus (Poseidon):
+        - amphibious, shield attachment, clod of triton weapon
+        - HandAttack: clod swing attack
+        - RangedAttack: yukionnasnowball projectile, multiple, bonus vs naval
+        - ChargedRangedAttack: castpower monolithstrike, water blast anim, bonus vs myth, effective vs building & ship, statmodify armor- & snare
+        - ChargedRangedAttackLand: castpower monolithstrike, pillar of tlalocan birthattack lifespan
+        - ChargedRangedAttackDistant: castpower volcano meteor 3 small spawn area, long range attack
+        - ChargedModify: activates regen after entering water
+        - AreaSlow: ship movement speed
+        - Respawn: default
+- Atlantean
+- Norse
+    - BrunnhildeMounted (All): Shieldmaiden Cavalry Hero
+        - HandAttack: spear attack
+        - RangedAttack: anti-naval lance throw
+        - RangedAttackMyth: anti-myth lance throw
+        - JumpAttack: pegasus jumpfly
+        - Heal: valkyrie heal
+        - ChargedSpawn: ValkyrieWarrior, duration
+        - Respawn: default
+- Egyptian
+    - Noah (Ra):
+        - StellarGateway (A.R.K): mobile armored transport, mobilizes when Noah is garrisoned
+        - Heal
+        - Empower
+        - Convert (Divine Teaching: Convert): limited units & structures
+        - Respawn: default
+    - Qebehsenuef (Isis):
+        - LightningAttack: default ranged, ProjectileTeaserLaser
+        - DischargedAttack: default close range, forceareaattackcenter, VFX Energy Barrier Appear
+        - ChargedLightningAttack: bounce, ProjectileSoulGuideLightning, onhiteffect spawn Bolt Strike
+        - ChargedRangedAttack: areadamage, onhiteffect spawn Sand Storm        
+        - Respawn: default
+    - Akhenaten (Set):
+        - ReincarnationAttack: high damage, spawn UnboundSoul, lifesteal
+            - UnboundSoul: basic shade variant
+        - HandAttack: vfxpoison
+        - ChargedSpawn: recharge on kills, spawn minion x5 after 5 kills
+        - LikeBonus: gains armor for friendly mythunits nearby
+        - DamageBonusVsHumanSoldier: abstractspectral damagebonus vs humansoldier
+        - Respawn: default
+- Chinese
+- Japanese
+- Aztec
+    - ShamanHero (All):
+        - HandAttack: unarmed
+        - ChargedHandAttack: anti-unit, lion transform attack, vfx bleed, cone aoe angle 30
+        - ChargedHandAttackBuilding: anti-building, elephant transform attack, bonus vs wall
+        - Charging: anti-flying, projectile lightning
+        - ChargedModify: Shark Form, shark attack
+        - Respawn: default
+        - ShamanBirdHero (DelayedTransform): Hawk Form, hover, scout
+            - DelayedTransform: ShamanHero
+
+- Cheat Unit Reworks
+    - UFO:
+        - BeamAttack: rof adjustment, onhiteffect chaos
+        - BeamAttackAbduct: onhiteffect exile, aoe

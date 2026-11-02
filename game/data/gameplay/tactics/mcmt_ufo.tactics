@@ -1,0 +1,31 @@
+<tactics>
+	<action>
+		<name stringid="STR_ACTION_RANGED">BeamAttack</name>
+		<type>ChainAttack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>Charging</anim>
+		<accuracy>1.0</accuracy>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+		<rate type="All">1.0</rate>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_ABDUCT">BeamAttackAbduct</name>
+		<type>ChainAttack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>Charging</anim>
+		<accuracy>1.0</accuracy>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+		<rate type="HumanSoldier">1.0</rate>
+		<rate type="TradeUnit">1.0</rate>
+		<rate type="LogicalTypeMythUnitNotTitan">1.0</rate>
+		<rate type="LogicalTypeVillagerNotHero">1.0</rate>
+		<rate type="Huntable">1.0</rate>
+        <chargeaction>1.0</chargeaction>
+	</action>
+	<tactic>Default
+        <action priority="100">BeamAttackAbduct</action>
+        <action priority="90">BeamAttack</action>
+        <attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype></tactic>
+</tactics>

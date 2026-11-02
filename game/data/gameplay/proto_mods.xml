@@ -8402,6 +8402,40 @@
 	</unit>
 	<!-- Aztec Special Buildings -->
 	
+	<!-- CHEAT UNITS REWORK -->
+
+	<unit name="UFO">
+		<rechargetime>20.0000</rechargetime>
+		<tactics>mcmt_ufo.tactics</tactics>
+		<protoaction>
+			<name>BeamAttack</name>
+			<rof>3.00000</rof>
+			<damage type="Divine">66.000000</damage>
+			<onhiteffect type="StatModify" duration="10.000000">
+				<modify type="Chaos">1.000000</modify>
+			</onhiteffect>
+			<onhiteffect type="Attach" targetunittype="Unit" proto="VFXChaos" attachbone="vfx_top" duration="10.000000"></onhiteffect>
+		</protoaction>
+		<protoaction>
+			<name>BeamAttackAbduct</name>
+			<rof>1.50000</rof>
+			<damagearea>3.500000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<maxrange>8.000000</maxrange>
+			<projectile>ProjectileUFOLazer</projectile>
+			<impacteffect>effects\impacts\crush</impacteffect>
+			<autoretarget>1</autoretarget>
+			<canattackground>1</canattackground>
+			
+			<onhiteffect type="Exile" duration="10.0">
+				<target attacktype="Unit"></target>
+			</onhiteffect>
+			<onhiteffect type="Attach" proto="HunDunExistentialDoubt" duration="10.0">
+				<target attacktype="Unit"></target>
+			</onhiteffect>
+		</protoaction>
+	</unit>
+
 	<!-- CAMPAIGN HEROES REWORK -->
 
 	<!-- Campaign Heroes Fall of Trident -->
@@ -36870,6 +36904,28 @@
 			<name>VFXThunderchargeAura</name>
 			<type>AutoRangedModify</type>
 			<modelattachment>vfx\glow\thundercharge_glow.xml</modelattachment>
+			<modelattachmentbone>spine</modelattachmentbone>
+			<modifyabstracttype>Unit</modifyabstracttype>
+			<modifyself>1</modifyself>
+			<maxrange>0.1</maxrange>
+			<persistent>1</persistent>
+			<nostack>1</nostack>
+		</protoaction>
+		<protoaction>
+			<name>VFXThunderBlastAura</name>
+			<type>AutoRangedModify</type>
+			<modelattachment>vfx\glow\thundercharge_glow.xml</modelattachment>
+			<modelattachmentbone>spine</modelattachmentbone>
+			<modifyabstracttype>Unit</modifyabstracttype>
+			<modifyself>1</modifyself>
+			<maxrange>0.1</maxrange>
+			<persistent>1</persistent>
+			<nostack>1</nostack>
+		</protoaction>
+		<protoaction>
+			<name>VFXTherisFireAura</name>
+			<type>AutoRangedModify</type>
+			<modelattachment>vfx\glow\therisfire_glow.xml</modelattachment>
 			<modelattachmentbone>spine</modelattachmentbone>
 			<modifyabstracttype>Unit</modifyabstracttype>
 			<modifyself>1</modifyself>
