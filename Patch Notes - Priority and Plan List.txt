@@ -1,10 +1,16 @@
 ==============================================================================
 ==================== PRIORITY-PLANS ==========================================
 ==============================================================================
+armory
+- build: arsenal depot
+    - dismount tactics
+    - spawn tactics
+    - detonators
+    - warrior tribe
 
 === FACTION HEROES    
+chinese: mulanhu (azusa, stealth, dash, throw sword, lightning sword), Master Confucius / Kong Qui (cavalry hero, paragon of sages)
 atlantean: colossal titan (swordsman delayed transform, explosive birth attack, firegiant), kronny
-chinese: mulan (akari, stealth), azusa, ???
 japanese: oda nobunaga (harumoto, clan member), miyamoto musashi (kagemasa)
 
 templeofprimordials
@@ -16,6 +22,8 @@ photonman: chukonu, laser attack
 allison the alligator: large crocodile, bonusdamage vs buildings
 kickball: ball model, default taowu charge
 laserbear: chainattack, handattack (laser bear attack a), rangedattack (laser bear attack b)
+
+shepherdsdog: bonusdamage vs hunted, aoe gather rate+ herdable
 
 === WEAPON MODELS
 Nereid + Staff

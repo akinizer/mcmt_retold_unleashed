@@ -10540,6 +10540,7 @@
 		<tech row="3" column="3">MCMT_The_Wisemen_Greek</tech>
 		<tech row="3" column="3">MCMT_Oracle_of_Athens</tech>
 		<tech row="3" column="3">MCMT_Son_of_Seven_Seas</tech>
+		<tech row="3" column="3">MCMT_Rising_of_Marquis_ZhenSu</tech>
 	</unit>
 	<unit name="CitadelCenter">
 		<unittype>AbstractFortress</unittype>
@@ -32803,6 +32804,153 @@
 	</unit>
 
 	<!-- Chinese Special Units -->
+	<unit name="ZhenSu">
+		<displaynameid>STR_UNIT_ZHENSU_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_ZHENSU_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_ZHENSU_SR</shortrollovertextid>
+		<icon>resources\spc\player_color\units\akari_icon.png</icon>
+		<minimapicon>ui\minimap\minimap_hero_spc</minimapicon>
+		<animfile>japanese\spc\units\akari\akari.xml</animfile>
+		<soundsetfile>chinese\vo\shi_ji\shi_ji.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<autoattackrange>16.0000</autoattackrange>
+		<movementtype>land</movementtype>
+		<turnrate>20.0000</turnrate>
+		<initialhitpoints>280.0000</initialhitpoints>
+		<maxhitpoints>280.0000</maxhitpoints>
+		<unitregen>1.5000</unitregen>
+		<weightclass>6</weightclass>
+		<maxcontained>1.0000</maxcontained>
+		<populationcount>2</populationcount>
+		<maxvelocity>4.3000</maxvelocity>
+
+		<los>17.0000</los>
+		<sharedselectionunittypes>
+			<unittype>LogicalTypeSharedHeroSelection</unittype>
+		</sharedselectionunittypes>
+		<armor type="Hack" value="0.1500"></armor>
+		<armor type="Pierce" value="0.3000"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeSharedHeroSelection</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>Hero</unittype>
+		<unittype>HeroShadowUpgraded</unittype>
+		<unittype>MajorHero</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+	
+		<unittype>LogicalTypeFindMilitaryHero</unittype>
+		<unittype>LogicalTypeHealableHero</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>HideGarrisonFlag</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<contain external="1">LogicalTypePickable</contain>
+
+		<rechargetime>22.0</rechargetime>
+		<tactics>mcmt_zhensu.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>0.900000</rof>	
+			<damage type="Hack">24.000000</damage>
+			<damagebonus type="MythUnit">7.000000</damagebonus>
+			<maxrange>0.900000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>ChargedRangedAttack</name>
+			<rof>5.000000</rof>
+			<maxrange>28.000000</maxrange>
+			<perfectaccuracy>1</perfectaccuracy>
+			<instantballistics>1</instantballistics>
+
+			<castpower>MCMT_BlazingPrairie_Medium</castpower>
+			<castpowertargettype>Unit</castpowertargettype>		
+		</protoaction>
+		<protoaction>
+			<name>PresenceBoostROF</name>
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>HumanSoldier</modifyabstracttype>
+			<maxrange>99</maxrange>
+			<persistent>1</persistent>
+			<modifytype>ROF</modifytype>
+			<modifymultiplier>0.9</modifymultiplier>
+			<modelattachment>vfx\glow\therisfire_glow.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		</protoaction>
+		<protoaction>
+			<name>PresenceBoostSpeed</name>
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>HumanSoldier</modifyabstracttype>
+			<maxrange>99</maxrange>
+			<persistent>1</persistent>
+			<modifytype>Speed</modifytype>
+			<modifymultiplier>1.1</modifymultiplier>
+		</protoaction>
+		<protoaction>
+			<name>PresenceBoostMilitaryTrainingRate</name>
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>LogicalTypeMilitaryProductionBuilding</modifyabstracttype>
+			<maxrange>99</maxrange>
+			<persistent>1</persistent>
+			<modifytype>MilitaryTrainingRate</modifytype>
+			<modifymultiplier>3.0</modifymultiplier>
+			<modelattachment>vfx\glow\temporal_scaffolding_large.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		</protoaction>
+		<protoaction>
+			<name>PresenceBoostDoubleTrainChance</name>
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>LogicalTypeMilitaryProductionBuilding</modifyabstracttype>
+			<maxrange>99</maxrange>
+			<persistent>1</persistent>
+			<modifytype>DoubleTrainChance</modifytype>
+			<modifymultiplier>5.0</modifymultiplier>
+		</protoaction>
+		<protoaction>
+			<name>Pickup</name>
+			<type>Pickup</type>
+			<maxrange>1</maxrange>
+			<rate type="LogicalTypePickable">1.00000</rate>
+		</protoaction>
+		<protoaction>
+			<name>DropOff</name>
+			<type>DropOff</type>
+			<maxrange>1</maxrange>
+			<rate type="AbstractTemple">1.00000</rate>
+		</protoaction>
+	</unit>
+
 	<unit name="FireArcherSandbag">
 		<displaynameid>STR_UNIT_FIRE_ARCHER_SANDBAG_NAME</displaynameid>
 		<rollovertextid>STR_UNIT_FIRE_ARCHER_LR</rollovertextid>
@@ -39637,6 +39785,72 @@
 			<damage type="Divine">100.000000</damage>
 			<damagebonus type="Hero">2.000000</damagebonus>
 			<maxrange>0.300000</maxrange>
+		</protoaction>
+	</unit>
+	<unit name="MCMT_BlazingPrairieStrike_Medium">
+		<animfile>chinese\godpowers\blazing_prairie\blazing_prairie_strike_vfx.xml</animfile>
+		<obstructionradiusx>0.1000</obstructionradiusx>
+		<obstructionradiusz>0.1000</obstructionradiusz>
+		<lifespan>2.0000</lifespan>
+		<decay delay="0.0000" duration="0.0100"></decay>
+		<movementtype>air</movementtype>
+		<maxvelocity>30.0000</maxvelocity>
+		<flag>NotSelectable</flag>
+		<flag>NotSearchable</flag>
+		<flag>DoNotYawDuringMovement</flag>
+		<flag>NonCollideable</flag>
+		<flag>GivesLOSToAll</flag>
+		<flag>NoHPBar</flag>
+		<flag>NotPlayerPlaceable</flag>
+		<flag>DoNotShowOnMiniMap</flag>
+		<flag>HasContinuousParticles</flag>
+		<flag>NoIdleActions</flag>
+		<flag>NotKBTracked</flag>
+		<flag>NotDeathTracked</flag>
+		<tactics>blazing_prairie_strike.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.0</rof>
+			<damage type="Divine">5.000000</damage>
+			<damageflags>Nature|Enemy</damageflags>
+			<damagebonus type="Tree">0.0000</damagebonus>
+			<damagebonus type="Building">3.0000</damagebonus>
+			<damagebonus type="Farm">0.1000</damagebonus>
+			<maxrange>0.300000</maxrange>
+			<rate type="ArcadianMeadowDamageReceiver">1.0</rate>
+			<impacteffect>effects\impacts\fireball</impacteffect>
+			<onhiteffect type="ShadingFade" shadingtype="burning" factor="1.1" fadetime="1.0" targetunittype="Tree"></onhiteffect>
+			<onhiteffect type="AnimOverride" anim="Burning" targetunittype="Tree" duration="17.0"></onhiteffect>
+			<onhiteffect type="Attach" proto="VFXFenirTreeFire" targetunittype="Tree" duration="8.0"></onhiteffect>
+			<onhiteffect type="ShadingFade" shadingtype="burning" fadetime="1.0" factor="1.6" duration="5.0" targetunittype="Unit"></onhiteffect>
+			<onhiteffect type="DamageOverTime" targetunittype="Unit" duration="7.000000">
+				<damage type="Divine">4.00000</damage>
+			</onhiteffect>
+			<onhiteffect type="Attach" targetunittype="Unit" proto="VFXBlazingPrairieUnitFire" attachbone="spine" duration="7.000000"></onhiteffect>
+		</protoaction>
+		<protoaction>
+			<name>AreaAttack</name>
+			<rof>1.0</rof>
+			<damage type="Divine">5.000000</damage>
+			<damagearea>0.500000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<damagebonus type="Tree">0.0000</damagebonus>
+			<damagebonus type="Building">3.0000</damagebonus>
+			<damagebonus type="Farm">0.1000</damagebonus>
+			<maxrange>0.300000</maxrange>
+			<rate type="ArcadianMeadowDamageReceiver">1.0</rate>
+			<rate type="All">1.0</rate>
+			<attackaction>1</attackaction>
+			<handlogic>1</handlogic>
+			<impacteffect>effects\impacts\fireball</impacteffect>
+			<onhiteffect type="ShadingFade" shadingtype="burning" factor="1.1" fadetime="1.0" targetunittype="Tree"></onhiteffect>
+			<onhiteffect type="AnimOverride" anim="Burning" targetunittype="Tree" duration="17.0"></onhiteffect>
+			<onhiteffect type="Attach" proto="VFXFenirTreeFire" targetunittype="Tree" duration="8.0"></onhiteffect>
+			<onhiteffect type="ShadingFade" shadingtype="burning" fadetime="1.0" factor="1.6" duration="5.0" targetunittype="Unit"></onhiteffect>
+			<onhiteffect type="DamageOverTime" targetunittype="Unit" duration="7.000000">
+				<damage type="Divine">4.00000</damage>
+			</onhiteffect>
+			<onhiteffect type="Attach" targetunittype="Unit" proto="VFXBlazingPrairieUnitFire" attachbone="spine" duration="7.000000"></onhiteffect>
 		</protoaction>
 	</unit>
 	<unit name="MCMT_Maelstrom">

@@ -2643,6 +2643,12 @@
       </effects>
     </tech>
 
+    <tech name="ArchaicAgeChinese">		
+	  	<effects>
+        <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_Rising_of_Marquis_ZhenSu</effect>
+      </effects>
+    </tech>
+
     <tech name="ArchaicAgeAztec">		
 	  	<effects>
         <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_ShamanCouncil</effect>
@@ -4264,6 +4270,40 @@
       <effect type="CreateUnit" unit="Euphemus" generator="AbstractTownCenter">
         <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
       <effect type="TextOutput">STR_MSG_EUPHEMUS_SPAWN</effect>
+    </effects>
+  </tech>
+  <!---->
+  <tech name="MCMT_Rising_of_Marquis_ZhenSu">
+    <displaynameid>STR_TECH_ZHENSU_NAME</displaynameid>
+    <rollovertextid>STR_TECH_ZHENSU_LR</rollovertextid>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\tech\activate_tech.jpg</icon>
+    <researchpoints>1.0000</researchpoints>
+    <cost resourcetype="Favor">815.0000</cost>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <prereqs><techstatus status="Active">ArchaicAgeChinese</techstatus></prereqs>
+    <effects>
+      <effect type="TechStatus" status="obtainable">MCMT_ZhenSu_Respawn</effect>
+      <effect type="TechStatus" status="obtainable">ZhenSu</effect>
+    </effects>
+  </tech>
+
+   <tech name="MCMT_ZhenSu_Respawn">
+    <status>UNOBTAINABLE</status>
+    <delay>300.0000</delay>
+    <flag>Volatile</flag>
+    <flag>Persistent</flag>
+    <flag>HideFromDialogs</flag>
+    <prereqs>
+      <techstatus status="Active">ArchaicAgeChinese</techstatus>
+      <typecount unit="AbstractTownCenter" count="0.00" state="aliveState" operator="gt"></typecount>
+      <typecount unit="ZhenSu" count="1.00" state="aliveState" operator="lt"></typecount>
+    </prereqs>
+    <effects>
+      <effect type="CreateUnit" unit="ZhenSu" generator="AbstractTownCenter">
+        <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
+      <effect type="TextOutput">STR_MSG_ZHENSU_SPAWN</effect>
     </effects>
   </tech>
 

@@ -43,6 +43,10 @@
 		<ability>AbilityAreaRestrict<auxchargetimeasrof>1</auxchargetimeasrof></ability>
 	</PythiaTheAscended>
 
+	<ZhenSu>
+		<ability>AbilityChargedRangedAttack<chargetimeasrof>1</chargetimeasrof></ability>
+	</ZhenSu>
+
 		<!-- Bastion Units -->
 	<TravelerOxWagon>
 		<ability>Heal<actioncommand>true</actioncommand></ability>

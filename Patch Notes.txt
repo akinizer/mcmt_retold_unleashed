@@ -1617,6 +1617,14 @@
         - DamageBonusVsHumanSoldier: abstractspectral damagebonus vs humansoldier
         - Respawn: default
 - Chinese
+    - ZhenSu:
+        - Chinese Commander Hero
+        - HandAttack: strong vs mythunit
+        - ChargedRangedAttack: castpower MCMT_BlazingPrairie
+        - PresenceBoostROF: humansoldier
+        - PresenceBoostSpeed: humansoldier
+        - PresenceBoostMilitaryTrainingRate: militarybuilding
+        - PresenceBoostDoubleTrainChance: militarybuilding
 - Japanese
 - Aztec
     - ShamanHero (All):

@@ -1387,6 +1387,46 @@
 		<treesearchradius>6.0</treesearchradius>
 		<damagesearchradius>6.0</damagesearchradius>
 	</power>
+	<power name="MCMT_BlazingPrairie_Medium" type="Tempest" godpower="">
+		<displaynameid>STR_POWER_BLAZING_PRAIRIE</displaynameid>
+		<rolloverid>STR_POWER_BLAZING_PRAIRIE_LR</rolloverid>
+		<icon>chinese\static_color\god_powers\blazing_prairie.png</icon>
+		<placement>Full</placement>
+		<minimapeventtime sendalertto="All">10.0</minimapeventtime>
+		<reveallos radius="25.0">Revealer</reveallos>
+		<rangeindicator range="25.0" speed="0.2">Circle</rangeindicator>
+		<camerashake duration="0.05" strength="0.05"></camerashake>
+		<soundset type="StartSound" listenertype="IfOnScreenAll">BlazingPrairieBirth</soundset>
+		<soundset type="ExistSound" listenertype="IfOnScreenAll">BlazingPrairieActive</soundset>
+		<strikesoundset>BlazingPrairieStrike</strikesoundset>
+		<builduptime>1.3</builduptime>
+		<playsbattlemusic></playsbattlemusic>
+		<activetime>4.0</activetime>
+		<shutdowntime>7.0</shutdowntime>
+		<shutdownfadetime>1.5</shutdownfadetime>
+		<abstractattacktargettype>Unit</abstractattacktargettype>
+		<abstractplacementtargettype>Tree</abstractplacementtargettype>
+		<explicitlyrestrictedattacktargettype>AbstractFlyingUnit</explicitlyrestrictedattacktargettype>
+		<accuracy>0.25</accuracy>
+		<radius>25.0</radius>
+		<powerplayerrelation>Enemy</powerplayerrelation>
+		<fasteststriketime>0.01</fasteststriketime>
+		<sloweststriketime>0.1</sloweststriketime>
+		<strikeproto>MCMT_BlazingPrairieStrike_Medium</strikeproto>
+		<areaattackaction>AreaAttack</areaattackaction>
+		<effectproto>VFXPrairieDust</effectproto>
+		<groundvfxproto>VFXBlazingPrairieFireGround</groundvfxproto>
+		<groundimpactvfxproto>BlazingPrairieFireArea</groundimpactvfxproto>
+		<strikeheight>25.0</strikeheight>
+		<strikeminoffset>0.0</strikeminoffset>
+		<strikemaxoffset>0.1</strikemaxoffset>
+		<cloudbuildupstarttime>0.0</cloudbuildupstarttime>
+		<cloudbuildupendtime>3.0</cloudbuildupendtime>
+		<cloudfadeoutstarttime>37.0</cloudfadeoutstarttime>
+		<cloudfadeoutendtime>40.0</cloudfadeoutendtime>
+		<radialtargeting></radialtargeting>
+		<hideonactivegplist></hideonactivegplist>
+	</power>
 	<power name="MCMT_VillagerTurnBerserk" type="UnitAction" mergeMode="add">
 		<displaynameid>STR_MCMT_TRANSFORM_TO_BERSERK</displaynameid>
 		<rolloverid>STR_MCMT_TRANSFORM_TO_BERSERK_LR</rolloverid>

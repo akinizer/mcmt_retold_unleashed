@@ -10,7 +10,7 @@
             "maintain_terrain_orientation": false,
             "is_ghost": false,
             "deathbehaviour": "Default",
-            "pkfx": "fire\fire_generic_small_2.pkfx"
+            "pkfx": "fire/fire_generic_small_2.pkfx"
         }],
     "events": [],
     "destructionsharedsettings": {

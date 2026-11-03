@@ -417,7 +417,7 @@ ID = "STR_UNIT_LOKI_JOTNAR_NAME"   ;   Str = "Loki Odinson (God)"
 ID = "STR_UNIT_LOKI_JOTNAR_SR"   ;   Str = "Loki in True Form"
 ID = "STR_UNIT_LOKI_JOTNAR_LR"   ;   Str = "God of Mischief. Has Never Been This Serious"
 
-// AKHENATEN
+// QEBEHSENUEF
 ID = "STR_TECH_FALCON_GUARDIAN_NAME"   ;   Str = "Overdrive Mode: Falon Guardian"
 ID = "STR_TECH_FALCON_GUARDIAN_LR"   ;   Str = "Warning: This overdriver activator will enable Qebehsenuef, a son of Horus, associated with protection and mummification"
 
@@ -478,14 +478,44 @@ ID = "STR_TECH_SHAMAN_COUNCIL_NAME"   ;   Str = "Shaman Council"
 ID = "STR_TECH_SHAMAN_COUNCIL_LR"   ;   Str = "Warning: This overdriver activator will summon Shaman Council of Eagle Warriors and the Shaman Hero with supreme transformation abilities"
 ID = "STR_MSG_SHAMAN_COUNCIL_SPAWN"   ;   Str = "A new Shaman Council has arrived from distant lands!"
 
+ID = "STR_UNIT_SHAMAN_HERO_NAME"   ;   Str = "Shaman (Hero)"
+ID = "STR_UNIT_SHAMAN_HERO_SR"   ;   Str = "Hero from Distant Lands"
+ID = "STR_UNIT_SHAMAN_HERO_LR"   ;   Str = "Ancient spiritual leader with powerful abilities"
+
 // BRUNNHILDE
 ID = "STR_TECH_BRUNNHILDES_CALLING_NAME"   ;   Str = "Brunnhilde's Calling"
 ID = "STR_TECH_BRUNNHILDES_CALLING_LR"   ;   Str = "Warning: This overdriver activator will summon Brunnhilde Cavalry Hero and her aidee Valkyrie Warriors"
 ID = "STR_MSG_BRUNNHILDES_CALLING_SPAWN"   ;   Str = "Brunnhilde has descended from Valhalla!"
 
-// BRUNNHILDE
+// THE WISEMEN
 ID = "STR_TECH_THE_WISEMEN_NAME"   ;   Str = "The Wisemen"
 ID = "STR_TECH_THE_WISEMEN_LR"   ;   Str = "Warning: This overdriver activator will summon The Wisemen of Greek World"
+
+ID = "STR_UNIT_WISEMAN_SOKRATES_NAME"   ;   Str = "Sokrates"
+ID = "STR_UNIT_WISEMAN_SOKRATES_SR"   ;   Str = "Father of Philosophy"
+ID = "STR_UNIT_WISEMAN_SOKRATES_LR"   ;   Str = "Sokrates has been famous for his contributions to deep thinking. He has joined the Wisemen after a calling of his old friend Deimos. He can bolster Deimos"
+
+ID = "STR_UNIT_WISEMAN_HIPPOKRATES_NAME"   ;   Str = "Hippokrates"
+ID = "STR_UNIT_WISEMAN_HIPPOKRATES_SR"   ;   Str = "Father of Medical"
+ID = "STR_UNIT_WISEMAN_HIPPOKRATES_LR"   ;   Str = "Hippokrates has been known with his contributions to medical. He has joined the Wisemen after a calling of his old friend Deimos. He can bolster Deimos"
+
+ID = "STR_UNIT_WISEMAN_HERODOTUS_NAME"   ;   Str = "Herodotus"
+ID = "STR_UNIT_WISEMAN_HERODOTUS_SR"   ;   Str = "Father of History"
+ID = "STR_UNIT_WISEMAN_HERODOTUS_LR"   ;   Str = "Herodotus has became popular due to his contributions to geographical records. He has joined the Wisemen after a calling of his old friend Deimos. He can bolster Deimos"
+
+ID = "STR_UNIT_WISEMAN_DEIMOS_NAME"   ;   Str = "Deimos"
+ID = "STR_UNIT_WISEMAN_DEIMOS_SR"   ;   Str = "Champion of Hades"
+ID = "STR_UNIT_WISEMAN_DEIMOS_LR"   ;   Str = "His presence was absent from eyes for a long time as a covert ops agent. His quest required him to travel around the Greek World and take down Cult of Kosmos. The fate has summoned him and he gathered his old wise friends for a new adventure. The wisemen recovers health while near Deimos, and his hits grow stronfer when the companions fall in the battle"
+
+// ZHEN SU
+ID = "STR_TECH_ZHENSU_NAME"   ;   Str = "Rising of Marquis Zhongzhen"
+ID = "STR_TECH_ZHENSU_LR"   ;   Str = "Warning: This overdriver activator will summon Marquis Zhongzhen of Ming Dynasty"
+
+ID = "STR_UNIT_ZHENSU_NAME"   ;   Str = "Zhen Su"
+ID = "STR_UNIT_ZHENSU_SR"   ;   Str = "Commander Hero"
+ID = "STR_UNIT_ZHENSU_LR"   ;   Str = "Zhen Su is a legendary warrior from ancient China. She is a female general who has served as a hero and the guardian for Crown Prince of Chongzhen Emperor. She can call air strike occcasionally and her presence boost provides various  military effects: Human Soldiers gains boost on attack and movement speeds. Military Production Buildings train double units and faster"
+
+ID = "STR_MSG_ZHENSU_SPAWN"   ;   Str = "Zhen Su has arrived to the battlefield!"
 
 // ORPHIC
 ID = "STR_UNIT_ORPHIC_EGG_NAME"   ;   Str = "Orphic Egg"
@@ -929,22 +959,6 @@ ID = "STR_UNIT_KUAFUWARRIOR_LR"   ;   Str = "Kuafu tribesfolk armed to defend th
 ID = "STR_UNIT_KUAFUWARRIOR_SR"   ;   Str = "Kuafu with a boulder stronger than a will"
 
 // GREEK SPECIAL UNITS
-ID = "STR_UNIT_WISEMAN_SOKRATES_NAME"   ;   Str = "Sokrates"
-ID = "STR_UNIT_WISEMAN_SOKRATES_SR"   ;   Str = "Father of Philosophy"
-ID = "STR_UNIT_WISEMAN_SOKRATES_LR"   ;   Str = "Sokrates has been famous for his contributions to deep thinking. He has joined the Wisemen after a calling of his old friend Deimos. He can bolster Deimos"
-
-ID = "STR_UNIT_WISEMAN_HIPPOKRATES_NAME"   ;   Str = "Hippokrates"
-ID = "STR_UNIT_WISEMAN_HIPPOKRATES_SR"   ;   Str = "Father of Medical"
-ID = "STR_UNIT_WISEMAN_HIPPOKRATES_LR"   ;   Str = "Hippokrates has been known with his contributions to medical. He has joined the Wisemen after a calling of his old friend Deimos. He can bolster Deimos"
-
-ID = "STR_UNIT_WISEMAN_HERODOTUS_NAME"   ;   Str = "Herodotus"
-ID = "STR_UNIT_WISEMAN_HERODOTUS_SR"   ;   Str = "Father of History"
-ID = "STR_UNIT_WISEMAN_HERODOTUS_LR"   ;   Str = "Herodotus has became popular due to his contributions to geographical records. He has joined the Wisemen after a calling of his old friend Deimos. He can bolster Deimos"
-
-ID = "STR_UNIT_WISEMAN_DEIMOS_NAME"   ;   Str = "Deimos"
-ID = "STR_UNIT_WISEMAN_DEIMOS_SR"   ;   Str = "Champion of Hades"
-ID = "STR_UNIT_WISEMAN_DEIMOS_LR"   ;   Str = "His presence was absent from eyes for a long time as a covert ops agent. His quest required him to travel around the Greek World and take down Cult of Kosmos. The fate has summoned him and he gathered his old wise friends for a new adventure. The wisemen recovers health while near Deimos, and his hits grow stronfer when the companions fall in the battle"
-
 ID = "STR_UNIT_PALERIDER_NAME"   ;   Str = "Pale Rider"
 ID = "STR_UNIT_PALERIDER_SR"   ;   Str = "Death's Charger"
 ID = "STR_UNIT_PALERIDER_LR"   ;   Str = "As the royal servants of Hades, Pale Riders chase whoever flees from Underworld's domain or the Death's very self"
@@ -1188,10 +1202,6 @@ ID = "STR_BLD_BATTLEMASTER_ABILITY"   ;   Str = "Hire Buddy: Makina"
 ID = "STR_UNIT_MAKINA_NAME"   ;   Str = "Makina (Hero)"
 ID = "STR_UNIT_MAKINA_SR"   ;   Str = "Adventurer from Distant Lands"
 ID = "STR_UNIT_MAKINA_LR"   ;   Str = "Battlemaster's fate crosses path with a traveler and hires it for stun and gore attacks in a short duration"
-
-ID = "STR_UNIT_SHAMAN_HERO_NAME"   ;   Str = "Shaman (Hero)"
-ID = "STR_UNIT_SHAMAN_HERO_SR"   ;   Str = "Hero from Distant Lands"
-ID = "STR_UNIT_SHAMAN_HERO_LR"   ;   Str = "Ancient spiritual leader with powerful abilities"
 
 // CHINESE SPECIAL TECHS
 ID = "STR_TECH_LEVY_TERRACOTTASOLDIERS_NAME"   ;   Str = "Levy Terracotta Soldiers"
