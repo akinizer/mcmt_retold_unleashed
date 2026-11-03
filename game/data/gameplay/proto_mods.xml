@@ -10541,6 +10541,7 @@
 		<tech row="3" column="3">MCMT_Oracle_of_Athens</tech>
 		<tech row="3" column="3">MCMT_Son_of_Seven_Seas</tech>
 		<tech row="3" column="3">MCMT_Rising_of_Marquis_ZhenSu</tech>
+		<tech row="3" column="3">MCMT_Rising_of_Mulan_Hu</tech>
 	</unit>
 	<unit name="CitadelCenter">
 		<unittype>AbstractFortress</unittype>
@@ -29387,7 +29388,7 @@
 		<rollovertextid>STR_UNIT_AKHENATEN_LR</rollovertextid>
 		<shortrollovertextid>STR_UNIT_AKHENATEN_SR</shortrollovertextid>
 		<icon>resources\egyptian\player_color\units\mummy_icon.png</icon>
-		<animfile>egyptian\units\myth\mummy\mummy.xml</animfile>
+		<animfile>mcmt\units\priest\akhenaten.xml</animfile>
 		<soundsetfile>egyptian\vo\son_of_osiris\son_of_osiris.xml</soundsetfile>
 		<obstructionradiusx>0.7400</obstructionradiusx>
 		<obstructionradiusz>0.7400</obstructionradiusz>
@@ -32804,6 +32805,175 @@
 	</unit>
 
 	<!-- Chinese Special Units -->
+	<unit name="MulanHu">
+		<displaynameid>STR_UNIT_MULAN_HU_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_MULAN_HU_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_MULAN_HU_SR</shortrollovertextid>
+
+		<icon>resources\japanese\player_color\units\miko_icon.png</icon>
+		<animfile>mcmt\units\imperial\mulan_hu.xml</animfile>
+		<soundsetfile>chinese\vo\shi_ji\shi_ji.xml</soundsetfile>
+		<obstructionradiusx>0.4900</obstructionradiusx>
+		<obstructionradiusz>0.4900</obstructionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<autoattackrange>16.0000</autoattackrange>
+		<movementtype>land</movementtype>
+		<turnrate>20.0000</turnrate>
+		<initialhitpoints>480.0000</initialhitpoints>
+		<maxhitpoints>480.0000</maxhitpoints>
+		<unitregen>1.5000</unitregen>
+		<weightclass>6</weightclass>
+		<maxcontained>1.0000</maxcontained>
+		<populationcount>1</populationcount>
+		<maxvelocity>4.3000</maxvelocity>
+
+		<stealthrevealselfradius>2.0000</stealthrevealselfradius>
+		<stealthshowsilhouetteradius>11.0</stealthshowsilhouetteradius>
+
+		<los>17.0000</los>
+		<sharedselectionunittypes>
+			<unittype>LogicalTypeSharedHeroSelection</unittype>
+		</sharedselectionunittypes>
+		<armor type="Hack" value="0.4700"></armor>
+		<armor type="Pierce" value="0.4400"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeSharedHeroSelection</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>Hero</unittype>
+		<unittype>HeroShadowUpgraded</unittype>
+		<unittype>MajorHero</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+		<unittype>Ranged</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+	
+		<unittype>LogicalTypeFindMilitaryHero</unittype>
+		<unittype>LogicalTypeHealableHero</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>HideGarrisonFlag</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<contain external="1">LogicalTypePickable</contain>
+
+		<rechargetime>16.0</rechargetime>
+		<auxrechargetime>18.0</auxrechargetime>
+
+		<tactics>mcmt_mulanhu.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>0.900000</rof>	
+			<damage type="Hack">16.000000</damage>
+			<damagebonus type="MythUnit">5.000000</damagebonus>
+			<maxrange>0.900000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>ChargedRangedAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Hack">16.000000</damage>
+			<damage type="Divine">3.000000</damage>
+			<damagebonus type="MythUnit">5.000000</damagebonus>
+			<maxrange>12.000000</maxrange>
+			<projectile>ProjectileLiJingAttack</projectile>
+			
+			<onhiteffect type="DamageOverTime" duration="5.000000">
+				<damage type="Divine">2.0000000</damage>
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+			<onhiteffect type="Attach" proto="VFXBLeed" attachbone="spine" duration="5.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+			<onhiteffect type="Stun" duration="5.00"></onhiteffect>
+		</protoaction>
+		<protoaction>
+			<name>DashAttack</name>
+			<rof>0.500000</rof>
+			<damage type="Hack">40.000000</damage>
+			<damagebonus type="MythUnit">7.000000</damagebonus>
+			<damageflags>Nature|Enemy</damageflags>
+			<damagearea>2.000000</damagearea>
+
+			<onhiteffect type="Flee" duration="5.000000"></onhiteffect>
+			<modelattachment>vfx\glow\hun_dun\hun_dun_taunt_target_vfx.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+
+			<maxrange>8.000000</maxrange>
+			<modifyduration>500</modifyduration>
+			<projectile>ProjectileYaZiDash</projectile>
+		</protoaction>
+		<protoaction>
+			<name stringid="STR_VFX_HACKARMOR_INVERSEAURA_CONTAINER">HackArmorInverseAura</name>
+			<type>LikeBonus</type>
+			<modifydamagetype>Hack</modifydamagetype>
+			<modifyratecap>1.300000</modifyratecap>
+			<modifybase>1.000000</modifybase>
+			<maxrange>6</maxrange>
+			<modifyratebytype>1</modifyratebytype>
+			<modifyabstracttype>MilitaryUnit</modifyabstracttype>
+			<rate type="HumanSoldier">0.02</rate>
+			<targetenemy>1</targetenemy>
+			<persistent>1</persistent>
+			<modifytype>ArmorSpecific</modifytype>
+			<modelattachment>vfx\projectiles\yan_fei_feng\blessing_protect.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		</protoaction>
+		<protoaction>
+			<name stringid="STR_ACTION_STEALTH">Stealth</name>
+			<type>Stealth</type>
+			<maxrange>25.0</maxrange>
+			<autocastbyself>1</autocastbyself>
+			<autocastdistance>2.250000</autocastdistance>
+			<persistent>1</persistent>
+			<activevfxproto>VFXStealthEye</activevfxproto>
+			<revealarearadius>2.0</revealarearadius>
+			<revealareachain>1.0</revealareachain>
+			<soundsetenter>StealthBirth</soundsetenter>
+			<soundsetupdate>StealthAcknowledge</soundsetupdate>
+			<soundsetexit>StealthExists</soundsetexit>
+		</protoaction>
+		<protoaction>
+			<name>Pickup</name>
+			<type>Pickup</type>
+			<maxrange>1</maxrange>
+			<rate type="LogicalTypePickable">1.00000</rate>
+		</protoaction>
+		<protoaction>
+			<name>DropOff</name>
+			<type>DropOff</type>
+			<maxrange>1</maxrange>
+			<rate type="AbstractTemple">1.00000</rate>
+		</protoaction>
+	</unit>
+
 	<unit name="ZhenSu">
 		<displaynameid>STR_UNIT_ZHENSU_NAME</displaynameid>
 		<rollovertextid>STR_UNIT_ZHENSU_LR</rollovertextid>

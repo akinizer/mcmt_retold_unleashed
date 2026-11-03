@@ -1617,7 +1617,7 @@
         - DamageBonusVsHumanSoldier: abstractspectral damagebonus vs humansoldier
         - Respawn: default
 - Chinese
-    - ZhenSu:
+    - ZhenSu (NuWa):
         - Chinese Commander Hero
         - HandAttack: strong vs mythunit
         - ChargedRangedAttack: castpower MCMT_BlazingPrairie
@@ -1625,6 +1625,13 @@
         - PresenceBoostSpeed: humansoldier
         - PresenceBoostMilitaryTrainingRate: militarybuilding
         - PresenceBoostDoubleTrainChance: militarybuilding
+    - MulanHu (Shennong):
+       - Weapon: Lightning Sword
+        - HandAttack
+        - ChargedRangedAttack: vfxbleed & stun, projectile lijing Li Jing Sword
+        - DashAttack: akari dash, onhiteffect flee, aoe
+        - Stealth
+        - HackArmorInverseAura
 - Japanese
 - Aztec
     - ShamanHero (All):

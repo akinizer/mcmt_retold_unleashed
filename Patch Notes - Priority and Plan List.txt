@@ -9,9 +9,9 @@ armory
     - warrior tribe
 
 === FACTION HEROES    
-chinese: mulanhu (azusa, stealth, dash, throw sword, lightning sword), Master Confucius / Kong Qui (cavalry hero, paragon of sages)
+chinese: Master Confucius / Kong Qui (cavalry hero, paragon of sages)
 atlantean: colossal titan (swordsman delayed transform, explosive birth attack, firegiant), kronny
-japanese: oda nobunaga (harumoto, clan member), miyamoto musashi (kagemasa)
+japanese: oda nobunaga (harumoto, clan member), miyamoto musashi (kagemasa), drunkenfist (mummy walk anim, old man model, staff weapon, shinobi fist stun, punt aoe, arkantos shout taunt, high hack armor, medium pierce armor, low hp, dashattack caladria walk anim)
 
 templeofprimordials
     avatar of anubis: theris, osiris lightningattack / hover / onhiteffect explosion

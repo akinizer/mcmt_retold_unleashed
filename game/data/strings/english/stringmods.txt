@@ -517,6 +517,16 @@ ID = "STR_UNIT_ZHENSU_LR"   ;   Str = "Zhen Su is a legendary warrior from ancie
 
 ID = "STR_MSG_ZHENSU_SPAWN"   ;   Str = "Zhen Su has arrived to the battlefield!"
 
+// MULAN HU
+ID = "STR_TECH_MULAN_HU_NAME"   ;   Str = "Rising of Mulan Hu"
+ID = "STR_TECH_MULAN_HU_LR"   ;   Str = "Warning: This overdriver activator will summon Legendary Mulan Hu"
+
+ID = "STR_UNIT_MULAN_HU_NAME"   ;   Str = "Mulan Hu"
+ID = "STR_UNIT_MULAN_HU_SR"   ;   Str = "Commander Hero"
+ID = "STR_UNIT_MULAN_HU_LR"   ;   Str = "Mulan Hu is a legendary warrior from ancient China. She is not only a master of disguise but also a brave warrior who has been honored by the Emperor"
+
+ID = "STR_MSG_MULAN_HU_SPAWN"   ;   Str = "Mulan Hu has arrived to the battlefield!"
+
 // ORPHIC
 ID = "STR_UNIT_ORPHIC_EGG_NAME"   ;   Str = "Orphic Egg"
 ID = "STR_UNIT_ORPHIC_EGG_SR"   ;   Str = "Cosmic Egg of Cosmos"

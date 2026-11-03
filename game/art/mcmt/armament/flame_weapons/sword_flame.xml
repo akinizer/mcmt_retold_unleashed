@@ -1,0 +1,12 @@
+
+<animfile validation="strict">
+    <attachment>Flaming
+        <component>VFXComp<assetreference type="TMComposite"><file>vfx\weapons\flaming_weapons\swords\sword_a_upgrade3_flame_vfx</file></assetreference></component>
+        <anim>Idle<component>VFXComp</component></anim>
+    </attachment>
+    <component>ModelComp
+        <assetreference type="TMModel"><file>norse\units\attachments\sword\sword_n_upgrade3</file></assetreference>
+        <attach name="Flaming" attachpoint="vfx_flame"></attach></component><anim>Idle<component>ModelComp</component>
+    </anim>
+</animfile>
+ 

@@ -717,24 +717,6 @@
     </tech>
 
       <!-- Egyptian -->
-    <tech name="ArchaicAgeRa">
-      <effects>
-        <!--Noah-->
-        <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_EgyptianRenovation</effect>
-      </effects>
-    </tech>
-    <tech name="ArchaicAgeIsis">
-      <effects>
-        <!--Qebehsenuef-->
-        <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_Falcon_Guardian</effect>
-      </effects>
-    </tech>
-    <tech name="ArchaicAgeSet">
-      <effects>
-        <!--Akhenaten-->
-        <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_Rise_of_Akhenaten</effect>
-      </effects>
-    </tech>
       
     <tech name="MythicAgeIsis">
       <effects>
@@ -2564,7 +2546,7 @@
     </tech> 
 
      <!-- MCMT SECTION FOR KINGDOM TECH CIVILIZATION SPECIAL UNITS -->
-    <tech name="ArchaicAgeGeneral" mergeMode="add">
+    <tech name="ArchaicAgeGeneral">
       <status>ACTIVE</status>
       <delay>0.5000</delay>
       <flag>Volatile</flag>
@@ -2572,8 +2554,8 @@
       <flag>HideAllNotifications</flag>
       <flag>HideFromDialogs</flag>
       <effects>
-        <effect type="TechStatus" status="obtainable">HouseSpecialUnitsActivator_Shared</effect>
-        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="HouseSpecialUnitsActivator_Shared" row="3" column="4" relativity="Assign">
+        <effect type="TechStatus" status="obtainable" mergeMode="add">HouseSpecialUnitsActivator_Shared</effect>
+        <effect type="Data" amount="1.00" subtype="CommandAdd" tech="HouseSpecialUnitsActivator_Shared" row="3" column="4" relativity="Assign" mergeMode="add">
           <target type="ProtoUnit">House</target></effect>	
       </effects>
     </tech>
@@ -2640,12 +2622,20 @@
           <target type="ProtoUnit">SonOfOsiris</target></effect>
         
         <effect type="SetName" proto="SonOfOsiris" newname="STR_UNIT_SON_OF_HORUS_NAME" mergeMode="add"></effect>
+
+         <!--Noah-->
+        <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_EgyptianRenovation</effect>
+        <!--Qebehsenuef-->
+        <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_Falcon_Guardian</effect>
+        <!--Akhenaten-->
+        <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_Rise_of_Akhenaten</effect>
       </effects>
     </tech>
 
     <tech name="ArchaicAgeChinese">		
 	  	<effects>
         <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_Rising_of_Marquis_ZhenSu</effect>
+        <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_Rising_of_Mulan_Hu</effect>
       </effects>
     </tech>
 
@@ -3920,7 +3910,7 @@
     <cost resourcetype="Favor">815.0000</cost>
     <flag>CountsTowardMilitaryScore</flag>
     <flag>MythTech</flag>
-    <prereqs><techstatus status="Active">ArchaicAgeEgyptian</techstatus></prereqs>
+    <prereqs><techstatus status="Active">ArchaicAgeIsis</techstatus></prereqs>
     <effects>
       <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Qebehsenuef</target></effect>
       <effect type="TechStatus" status="obtainable">MCMT_Qebehsenuef_Respawn</effect>
@@ -3954,7 +3944,7 @@
     <cost resourcetype="Favor">815.0000</cost>
     <flag>CountsTowardMilitaryScore</flag>
     <flag>MythTech</flag>
-    <prereqs><techstatus status="Active">ArchaicAgeEgyptian</techstatus></prereqs>
+    <prereqs><techstatus status="Active">ArchaicAgeSet</techstatus></prereqs>
     <effects>
       <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Akhenaten</target></effect>
       <effect type="Data" protoaction="DamageBonusVsHumanSoldier" amount="1.00" subtype="ProtoActionAdd" unittype="HumanSoldierBonusContainer" relativity="Assign">
@@ -3992,7 +3982,7 @@
     <cost resourcetype="Favor">815.0000</cost>
     <flag>CountsTowardMilitaryScore</flag>
     <flag>MythTech</flag>
-    <prereqs><techstatus status="Active">ArchaicAgeEgyptian</techstatus></prereqs>
+    <prereqs><techstatus status="Active">ArchaicAgeRa</techstatus></prereqs>
     <effects>
       <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute"><target type="ProtoUnit">Noah</target></effect>
       <effect type="TechStatus" status="obtainable">MCMT_Noah_Respawn</effect>
@@ -4282,7 +4272,7 @@
     <cost resourcetype="Favor">815.0000</cost>
     <flag>CountsTowardMilitaryScore</flag>
     <flag>MythTech</flag>
-    <prereqs><techstatus status="Active">ArchaicAgeChinese</techstatus></prereqs>
+    <prereqs><techstatus status="Active">ArchaicAgeNuwa</techstatus></prereqs>
     <effects>
       <effect type="TechStatus" status="obtainable">MCMT_ZhenSu_Respawn</effect>
       <effect type="TechStatus" status="obtainable">ZhenSu</effect>
@@ -4296,7 +4286,7 @@
     <flag>Persistent</flag>
     <flag>HideFromDialogs</flag>
     <prereqs>
-      <techstatus status="Active">ArchaicAgeChinese</techstatus>
+      <techstatus status="Active">ArchaicAgeNuwa</techstatus>
       <typecount unit="AbstractTownCenter" count="0.00" state="aliveState" operator="gt"></typecount>
       <typecount unit="ZhenSu" count="1.00" state="aliveState" operator="lt"></typecount>
     </prereqs>
@@ -4304,6 +4294,41 @@
       <effect type="CreateUnit" unit="ZhenSu" generator="AbstractTownCenter">
         <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
       <effect type="TextOutput">STR_MSG_ZHENSU_SPAWN</effect>
+    </effects>
+  </tech>
+
+  <!---->
+  <tech name="MCMT_Rising_of_Mulan_Hu">
+    <displaynameid>STR_TECH_MULAN_HU_NAME</displaynameid>
+    <rollovertextid>STR_TECH_MULAN_HU_LR</rollovertextid>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\tech\activate_tech.jpg</icon>
+    <researchpoints>1.0000</researchpoints>
+    <cost resourcetype="Favor">815.0000</cost>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <prereqs><techstatus status="Active">ArchaicAgeShennong</techstatus></prereqs>
+    <effects>
+      <effect type="TechStatus" status="obtainable">MCMT_Mulan_Hu_Respawn</effect>
+      <effect type="TechStatus" status="obtainable">MulanHu</effect>
+    </effects>
+  </tech>
+
+   <tech name="MCMT_Mulan_Hu_Respawn">
+    <status>UNOBTAINABLE</status>
+    <delay>300.0000</delay>
+    <flag>Volatile</flag>
+    <flag>Persistent</flag>
+    <flag>HideFromDialogs</flag>
+    <prereqs>
+      <techstatus status="Active">ArchaicAgeShennong</techstatus>
+      <typecount unit="AbstractTownCenter" count="0.00" state="aliveState" operator="gt"></typecount>
+      <typecount unit="MulanHu" count="1.00" state="aliveState" operator="lt"></typecount>
+    </prereqs>
+    <effects>
+      <effect type="CreateUnit" unit="MulanHu" generator="AbstractTownCenter">
+        <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
+      <effect type="TextOutput">STR_MSG_MULAN_HU_SPAWN</effect>
     </effects>
   </tech>
 

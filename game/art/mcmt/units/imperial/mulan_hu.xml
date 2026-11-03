@@ -1,0 +1,24 @@
+<animfile validation="strict">
+	<attachment>Weapon<include>mcmt\armament\lightning_weapons\sword_lightning.xml</include></attachment>
+	<attachment>HeroGlow<include>vfx\glow\hero_glow.xml</include></attachment>
+	<attachment>HeroGlowRing<include>vfx\glow\hero_glow_ring.xml</include></attachment>
+	<attachment>HeroBirth<include>vfx\glow\hero_birth.xml</include></attachment>
+	<attachment>HeroDeath<include>vfx\glow\hero_death.xml</include></attachment>
+	<attachment>Hammer<include>shared\units\attachments\tool\tool_hammer.xml</include></attachment>	<component>ModelComp<assetreference type="TMModel"><file>japanese\spc\units\azusa\azusa</file></assetreference><attach name="HeroGlow" attachpoint="hero_glow"></attach><attach name="HeroGlowRing" attachpoint="bonethatdoesntexist"></attach></component>
+	<anim>Idle<assetreference type="TMAnimation"><file>japanese\spc\units\azusa\anim\azusa_idle_a</file></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach></anim>
+	<anim>Death<assetreference type="TMAnimation"><file>japanese\spc\units\azusa\anim\azusa_death_a</file><tag type="SpecificSoundSet" checkvisible="1" set="HeavyFall">0.55</tag></assetreference><component>ModelComp</component><attach name="HeroDeath" attachpoint="bonethatdoesntexist"></attach><attach name="Weapon" attachpoint="weapon"></attach></anim>
+	<anim>Birth<assetreference type="TMAnimation"><file>japanese\spc\units\azusa\anim\azusa_birth_a</file></assetreference><component>ModelComp</component><attach name="HeroBirth" attachpoint="bonethatdoesntexist"></attach><attach name="Weapon" attachpoint="weapon"></attach></anim>
+	<anim>Bored<assetreference type="TMAnimation"><file>japanese\spc\units\azusa\anim\azusa_bored_a</file></assetreference><assetreference type="TMAnimation"><file>japanese\spc\units\azusa\anim\azusa_bored_b</file></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach></anim>
+	<anim>Walk<assetreference type="TMAnimation"><file>japanese\spc\units\azusa\anim\azusa_walk_a</file></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach></anim>
+	<anim>Flail<assetreference type="TMAnimation"><file>japanese\spc\units\azusa\anim\azusa_flail_a</file></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach></anim>
+	<anim>Carry<assetreference type="TMAnimation"><file>japanese\spc\units\azusa\anim\azusa_carry_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>CarryBored<assetreference type="TMAnimation"><file>japanese\spc\units\azusa\anim\azusa_carrybored_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>CarryIdle<assetreference type="TMAnimation"><file>japanese\spc\units\azusa\anim\azusa_carryidle_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Build<assetreference type="TMAnimation"><file>japanese\spc\units\azusa\anim\azusa_build_a</file><tag type="SpecificSoundSet" checkvisible="1" set="Build">0.99</tag></assetreference><component>ModelComp</component><attach name="Hammer" attachpoint="hammer"></attach></anim>
+
+	<anim>DashStart<assetreference type="TMAnimation"><file>japanese\spc\units\akari\anim\akari_leapstart_a</file><tag type="Throw">0.94</tag></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach></anim>
+	<anim>DashEnd<assetreference type="TMAnimation"><file>japanese\spc\units\akari\anim\akari_leapend_a</file><tag type="Attack">0.14</tag></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach></anim>
+
+    <anim>HandAttack<assetreference type="TMAnimation"><file>japanese\units\hero\miko\anim\miko_attack_a</file><tag type="Attack">0.50</tag></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon"></attach></anim>
+    <anim>RangedAttack<assetreference type="TMAnimation"><file>chinese\units\hero\li_jing\anim\li_jing_attack_a</file><tag type="Attack">0.37</tag><tag type="SpecificSoundSet" checkvisible="1" set="LiJingReleaseA">0.32</tag></assetreference><assetreference type="TMAnimation"><file>chinese\units\hero\li_jing\anim\li_jing_attack_b</file><tag type="Attack">0.6</tag><tag type="SpecificSoundSet" checkvisible="1" set="LiJingReleaseB">0.46</tag></assetreference><component>ModelComp</component><attach name="Weapon" attachpoint="weapon" syncanims="1"></attach></anim>
+</animfile>

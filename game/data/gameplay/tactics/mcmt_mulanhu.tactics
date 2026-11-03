@@ -1,0 +1,47 @@
+<tactics>
+	<action>
+		<name stringid="STR_ACTION_HAND">HandAttack</name>
+		<type>Attack</type>
+		<rate type="All">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<forceareaattacktarget>1</forceareaattacktarget>
+		<anim>HandAttack</anim>
+		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+		<impacteffect>effects\impacts\hack</impacteffect>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_CHARGE_RANGED">ChargedRangedAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttack</anim>
+		<accuracy>1.0</accuracy>
+		<perfectaccuracy>1.0</perfectaccuracy>
+		<maxspread>0</maxspread>
+		<trackrating>99.0</trackrating>
+		<chargeaction>1</chargeaction>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+		<rate type="Unit">1.0</rate>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_DASH">DashAttack</name>
+		<type>TeleportAttack</type>
+		<targetground>1</targetground>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<facetoafterteleport>1</facetoafterteleport>
+		<anim>DashStart</anim>
+		<reloadanim>DashEnd</reloadanim>
+		<accuracy>1.0</accuracy>
+		<auxchargeaction>1</auxchargeaction>
+		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+		<rate type="Unit">1.0</rate>
+	</action>
+	<tactic>Default
+		<action priority="100">ChargedRangedAttack</action>
+		<action priority="90">DashAttack</action>
+		<action priority="80">HandAttack</action>
+		<attacktype>LogicalTypeHandUnitsAttack</attacktype><autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype><attackmovetype>AbstractWall</attackmovetype></tactic>
+</tactics>
