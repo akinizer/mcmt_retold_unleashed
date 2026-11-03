@@ -527,6 +527,16 @@ ID = "STR_UNIT_MULAN_HU_LR"   ;   Str = "Mulan Hu is a legendary warrior from an
 
 ID = "STR_MSG_MULAN_HU_SPAWN"   ;   Str = "Mulan Hu has arrived to the battlefield!"
 
+// CONFUCIUS KONG QUI
+ID = "STR_TECH_MASTER_CONFUCIUS_NAME"   ;   Str = "Teachings of Master Confucius"
+ID = "STR_TECH_MASTER_CONFUCIUS_LR"   ;   Str = "Warning: This overdriver activator will summon Master Sage Kong Qui"
+
+ID = "STR_UNIT_MASTER_CONFUCIUS_NAME"   ;   Str = "Master Confucius"
+ID = "STR_UNIT_MASTER_CONFUCIUS_SR"   ;   Str = "Paragon of Sages"
+ID = "STR_UNIT_MASTER_CONFUCIUS_LR"   ;   Str = "Master Confucius is a legendary philosopher from ancient China. He is known for his wisdom and teachings, which have influenced generations of scholars and leaders. He uses his ways to accelerate all military tech researches and strategical combat in the battlefield"
+
+ID = "STR_MSG_MASTER_CONFUCIUS_SPAWN"   ;   Str = "Master Confucius has arrived to the battlefield!"
+
 // ORPHIC
 ID = "STR_UNIT_ORPHIC_EGG_NAME"   ;   Str = "Orphic Egg"
 ID = "STR_UNIT_ORPHIC_EGG_SR"   ;   Str = "Cosmic Egg of Cosmos"

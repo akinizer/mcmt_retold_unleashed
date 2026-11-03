@@ -10542,6 +10542,7 @@
 		<tech row="3" column="3">MCMT_Son_of_Seven_Seas</tech>
 		<tech row="3" column="3">MCMT_Rising_of_Marquis_ZhenSu</tech>
 		<tech row="3" column="3">MCMT_Rising_of_Mulan_Hu</tech>
+		<tech row="3" column="3">MCMT_Teachings_of_Master_Confucius</tech>
 	</unit>
 	<unit name="CitadelCenter">
 		<unittype>AbstractFortress</unittype>
@@ -32805,6 +32806,161 @@
 	</unit>
 
 	<!-- Chinese Special Units -->
+	<unit name="MasterConfucius">
+		<displaynameid>STR_UNIT_MASTER_CONFUCIUS_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_MASTER_CONFUCIUS_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_MASTER_CONFUCIUS_SR</shortrollovertextid>
+
+		<icon>resources\chinese\player_color\units\sage_icon.png</icon>
+		<animfile>mcmt\units\founder\wisemen\imperial\confucius.xml</animfile>
+		<soundsetfile>chinese\vo\white_horse_cavalry\white_horse_cavalry.xml</soundsetfile>
+		<obstructionradiusx>0.7400</obstructionradiusx>
+		<obstructionradiusz>0.7400</obstructionradiusz>
+		<selectionradiusx>0.7500</selectionradiusx>
+		<selectionradiusz>1.1500</selectionradiusz>
+		<impacttype>Wood</impacttype>
+		<unitaitype>RangedCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>455.0000</initialhitpoints>
+		<maxhitpoints>455.0000</maxhitpoints>
+		<trainpoints>16.0000</trainpoints>
+		<weightclass>6</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>5.5000</maxvelocity>
+		<los>12.0000</los>
+		<bloodgroupoverride>defaultbloodhorse</bloodgroupoverride>
+
+		<initialshieldpoints>342.0000</initialshieldpoints>
+		<maxshieldpoints>342.0000</maxshieldpoints>
+		<unitshieldregen>2.0000</unitshieldregen>
+
+		<cost resourcetype="Food">40.0000</cost>
+		<cost resourcetype="Gold">80.0000</cost>
+		<armor type="Hack" value="0.3800"></armor>
+		<armor type="Pierce" value="0.5500"></armor>
+		<armor type="Crush" value="0.9900"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>Unit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>Hero</unittype>
+		<unittype>MajorHero</unittype>
+		<unittype>HeroShadowUpgraded</unittype>
+		<unittype>CavalryLineUpgraded</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeParticipatesInBattlecries</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeValidEidolon</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<unittype>LogicalTypeMeleeCavalry</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>HasDefaultAttack</flag>
+		<maxcontained>1.0</maxcontained>
+		<contain external="1">LogicalTypePickable</contain>
+
+		<rechargetime>18</rechargetime>
+		<tactics>mcmt_confucius.tactics</tactics>
+		
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.500000</rof>
+			<damage type="Hack">14.000000</damage>
+			<damagebonus type="MythUnit">7.500000</damagebonus>
+			<maxrange>1.500000</maxrange>
+			<defaultattack>1.0</defaultattack>
+		</protoaction>
+		<protoaction>
+			<name>RangedAttackFlying</name>
+			<rof>1.000000</rof>
+			<damage type="Divine">6.000000</damage>
+			<damagebonus type="MythUnit">9.000000</damagebonus>
+			<maxrange>24.000000</maxrange>
+
+			<projectile>ProjectileOnmyojiAttack</projectile>
+			<impacteffect>effects\impacts\asura_fire_ball</impacteffect>
+		</protoaction>
+		<protoaction>
+			<name>ChargedHandAttack</name>
+			<rof>1.500000</rof>
+			<damage type="Hack">14.000000</damage>
+			<damage type="Divine">6.000000</damage>
+			<damagebonus type="MythUnit">7.500000</damagebonus>
+			<maxrange>1.500000</maxrange>
+			<damageflags>Nature|Enemy</damageflags>
+			<damagearea>2.000000</damagearea>
+
+			<onhiteffect type="StatModify" duration="5.000000">
+				<modify type="ROF">3.000000</modify>
+				<modify type="Speed">0.670000</modify>
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+			<onhiteffect type="Attach" proto="VFXCaladriaPacify" attachbone="spine" duration="5.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+			<exclusive>1</exclusive>
+		</protoaction>
+		<protoaction>
+			<name stringid="STR_ACTION_REFLECT_ATTACK">ThornedWallsAttack</name>
+			<type>ReflectAttack</type>
+			<damage type="Divine">5.000000</damage>
+			<reflecthandattacks>1</reflecthandattacks>
+			<attackaction>1</attackaction>
+			<impacteffect>effects\impacts\hack</impacteffect>
+		</protoaction>
+			<protoaction>
+			<name>PresenceBoostResearchRate</name>
+			<type>AutoRangedModify</type>
+			<modifyabstracttype>LogicalTypeMilitaryProductionBuilding</modifyabstracttype>
+			<maxrange>99</maxrange>
+			<persistent>1</persistent>
+			<modifytype>ResearchRate</modifytype>
+			<modifymultiplier>2.5</modifymultiplier>
+			<modelattachment>vfx\glow\temporal_scaffolding_large.xml</modelattachment>
+			<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		</protoaction>
+			<protoaction>
+			<name>Pickup</name>
+			<type>Pickup</type>
+			<maxrange>1</maxrange>
+			<rate type="LogicalTypePickable">1.00000</rate>
+		</protoaction>
+		<protoaction>
+			<name>DropOff</name>
+			<type>DropOff</type>
+			<maxrange>1</maxrange>
+			<rate type="AbstractTemple">1.00000</rate>
+		</protoaction>
+	</unit>
+
 	<unit name="MulanHu">
 		<displaynameid>STR_UNIT_MULAN_HU_NAME</displaynameid>
 		<rollovertextid>STR_UNIT_MULAN_HU_LR</rollovertextid>

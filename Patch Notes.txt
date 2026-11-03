@@ -1632,6 +1632,13 @@
         - DashAttack: akari dash, onhiteffect flee, aoe
         - Stealth
         - HackArmorInverseAura
+    - MasterConfucius (FuXi):
+        - Weapons: Lightning Guan Dao, Umbrella
+        - HandAttack: strong vs mythunit
+        - RangedAttackFlying: projectile onmyoji, impact asurafireball, explosive fireball
+        - ChargedHandAttack: strong vs mythunit, aoe, onhiteffect pacify
+        - ReflectHandAttacks
+        - PresenceBoostResearchRate: militarybuilding techs
 - Japanese
 - Aztec
     - ShamanHero (All):

@@ -1,0 +1,12 @@
+
+<animfile validation="strict">
+    <attachment>WeaponEffect
+        <component>VFXComp<assetreference type="TMComposite"><file>vfx\weapons\lightning_weapons\sword_c\sword_c_lightning_large_vfx</file></assetreference></component>
+        <anim>Idle<component>VFXComp</component></anim>
+    </attachment>
+    <component>ModelComp
+        <assetreference type="TMModel"><file>chinese\units\attachments\guan_dao\guan_dao_c_upgrade3</file><materialvariant index="3"></materialvariant></assetreference>
+        <attach name="WeaponEffect" attachpoint="vfx_flame"></attach></component><anim>Idle<component>ModelComp</component>
+    </anim>
+</animfile>
+ 

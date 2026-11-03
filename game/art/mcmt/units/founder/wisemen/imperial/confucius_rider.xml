@@ -1,0 +1,17 @@
+<animfile validation="strict">
+	<attachment>WeaponLeft<component>ModelComp<assetreference type="TMModel"><file>japanese\spc\units\yuki_onna\yuki_onna_weapon</file></assetreference></component><anim>Idle<component>ModelComp</component></anim></attachment>
+	<attachment>WeaponRight<include>mcmt\armament\lightning_weapons\guandao_lightning.xml</include></attachment>
+	<attachment>HeroGlow<include>vfx\glow\hero_glow.xml</include></attachment>
+	<component>ModelComp<assetreference type="TMModel"><file>chinese\units\hero\jiang_zi_ya\jiang_zi_ya</file></assetreference><attach name="HeroGlow" attachpoint="hero_glow"></attach><attach name="WeaponLeft" attachpoint="weaponleft"></attach><attach name="WeaponRight" attachpoint="weaponright"></attach><attach name="Lightning" attachpoint="vfx_lightningweapon"></attach></component>
+	<anim>RangedAttack<assetreference type="TMAnimation"><file>chinese\units\hero\jiang_zi_ya\anim\jiang_zi_ya_unit_attack_a</file><tag type="Attack">0.6</tag></assetreference><assetreference type="TMAnimation"><file>chinese\units\hero\jiang_zi_ya\anim\jiang_zi_ya_unit_attack_b</file><tag type="Attack">0.52</tag></assetreference><component>ModelComp</component></anim>
+	<anim>Bored<assetreference type="TMAnimation"><file>chinese\units\hero\jiang_zi_ya\anim\jiang_zi_ya_unit_bored_a</file></assetreference><assetreference type="TMAnimation"><file>chinese\units\hero\jiang_zi_ya\anim\jiang_zi_ya_unit_bored_b</file></assetreference><component>ModelComp</component></anim>
+	<anim>Death<assetreference type="TMAnimation"><file>chinese\units\hero\jiang_zi_ya\anim\jiang_zi_ya_unit_death_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Flail<assetreference type="TMAnimation"><file>chinese\units\hero\jiang_zi_ya\anim\jiang_zi_ya_unit_flail_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Idle<assetreference type="TMAnimation"><file>chinese\units\hero\jiang_zi_ya\anim\jiang_zi_ya_unit_idle_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Birth<assetreference type="TMAnimation"><file>chinese\units\hero\jiang_zi_ya\anim\jiang_zi_ya_unit_birth_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Walk<assetreference type="TMAnimation"><file>chinese\units\hero\jiang_zi_ya\anim\jiang_zi_ya_unit_walk_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Carry<assetreference type="TMAnimation"><file>chinese\units\hero\jiang_zi_ya\anim\jiang_zi_ya_unit_carry_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>CarryIdle<assetreference type="TMAnimation"><file>chinese\units\hero\jiang_zi_ya\anim\jiang_zi_ya_unit_carryidle_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Ability<assetreference type="TMAnimation"><file>chinese\units\hero\jiang_zi_ya\anim\jiang_zi_ya_unit_ability_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>CarryBored<assetreference type="TMAnimation"><file>chinese\units\hero\jiang_zi_ya\anim\jiang_zi_ya_unit_carrybored_a</file></assetreference><component>ModelComp</component></anim>
+</animfile>

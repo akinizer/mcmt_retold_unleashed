@@ -2636,6 +2636,7 @@
 	  	<effects>
         <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_Rising_of_Marquis_ZhenSu</effect>
         <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_Rising_of_Mulan_Hu</effect>
+        <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_Teachings_of_Master_Confucius</effect>
       </effects>
     </tech>
 
@@ -4329,6 +4330,40 @@
       <effect type="CreateUnit" unit="MulanHu" generator="AbstractTownCenter">
         <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
       <effect type="TextOutput">STR_MSG_MULAN_HU_SPAWN</effect>
+    </effects>
+  </tech>
+  <!---->
+  <tech name="MCMT_Teachings_of_Master_Confucius">
+    <displaynameid>STR_TECH_MASTER_CONFUCIUS_NAME</displaynameid>
+    <rollovertextid>STR_TECH_MASTER_CONFUCIUS_LR</rollovertextid>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\tech\activate_tech.jpg</icon>
+    <researchpoints>1.0000</researchpoints>
+    <cost resourcetype="Favor">815.0000</cost>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <prereqs><techstatus status="Active">ArchaicAgeFuxi</techstatus></prereqs>
+    <effects>
+      <effect type="TechStatus" status="obtainable">MCMT_Master_Confucius_Respawn</effect>
+      <effect type="TechStatus" status="obtainable">MasterConfucius</effect>
+    </effects>
+  </tech>
+
+   <tech name="MCMT_Master_Confucius_Respawn">
+    <status>UNOBTAINABLE</status>
+    <delay>300.0000</delay>
+    <flag>Volatile</flag>
+    <flag>Persistent</flag>
+    <flag>HideFromDialogs</flag>
+    <prereqs>
+      <techstatus status="Active">ArchaicAgeFuxi</techstatus>
+      <typecount unit="AbstractTownCenter" count="0.00" state="aliveState" operator="gt"></typecount>
+      <typecount unit="MasterConfucius" count="1.00" state="aliveState" operator="lt"></typecount>
+    </prereqs>
+    <effects>
+      <effect type="CreateUnit" unit="MasterConfucius" generator="AbstractTownCenter">
+        <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
+      <effect type="TextOutput">STR_MSG_MASTER_CONFUCIUS_SPAWN</effect>
     </effects>
   </tech>
 
