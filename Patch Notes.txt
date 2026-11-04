@@ -1586,6 +1586,18 @@
         - AreaSlow: ship movement speed
         - Respawn: default
 - Atlantean
+    - AcherusVile (Gaia):
+        - HandAttack: vfxbleed, bnous vs mythunit, titan, hero
+        - DashAttack: unit
+        - DashAttackMyth: mythunit, very high rof
+        - ChargedRangedAttack: ballistic explosibe spears
+        - Trail: TlacanexquimilliTrail
+        - OnDeathSpawn: AcherusVileGiant
+
+    - AcherusVileGiant (Gaia):
+        - BirthAttack
+        - RangedAttack: fireballs, medium rof, anti-buildng & myth
+        - ChargedRangedAttack: blue fireballs, volley, anti-buildng & myth
 - Norse
     - BrunnhildeMounted (All): Shieldmaiden Cavalry Hero
         - HandAttack: spear attack

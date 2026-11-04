@@ -537,6 +537,20 @@ ID = "STR_UNIT_MASTER_CONFUCIUS_LR"   ;   Str = "Master Confucius is a legendary
 
 ID = "STR_MSG_MASTER_CONFUCIUS_SPAWN"   ;   Str = "Master Confucius has arrived to the battlefield!"
 
+// ACHERUS VILE
+ID = "STR_TECH_ACHERUS_VILE_NAME"   ;   Str = "Rage of the Underworld"
+ID = "STR_TECH_ACHERUS_VILE_LR"   ;   Str = "Warning: This overdriver activator will unleash Acherus Vile!"
+
+ID = "STR_UNIT_ACHERUS_VILE_NAME"   ;   Str = "Acherus Vile"
+ID = "STR_UNIT_ACHERUS_VILE_SR"   ;   Str = "Vengeful Slayer"
+ID = "STR_UNIT_ACHERUS_VILE_LR"   ;   Str = "Acherus Vile is a fearsome warrior from the underworld. He is known for his relentless pursuit of justice and his ability to strike fear into the hearts of his enemies"
+
+ID = "STR_UNIT_ACHERUS_VILE_GIANT_NAME"   ;   Str = "Acherus Vile Giant"
+ID = "STR_UNIT_ACHERUS_VILE_GIANT_SR"   ;   Str = "Vengeful Slayer"
+ID = "STR_UNIT_ACHERUS_VILE_GIANT_LR"   ;   Str = "Acherus Vile is a fearsome warrior from the underworld. He is known for his relentless pursuit of justice and his ability to strike fear into the hearts of his enemies"
+
+ID = "STR_MSG_ACHERUS_VILE_SPAWN"   ;   Str = "Acherus Vile has returned for a slaugher and a laughter!"
+
 // ORPHIC
 ID = "STR_UNIT_ORPHIC_EGG_NAME"   ;   Str = "Orphic Egg"
 ID = "STR_UNIT_ORPHIC_EGG_SR"   ;   Str = "Cosmic Egg of Cosmos"
