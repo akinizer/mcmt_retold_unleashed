@@ -52,6 +52,8 @@
     <abstractunittype>AbstractJaguar</abstractunittype>
     <abstractunittype>AbstractCoyotl</abstractunittype>   
     <abstractunittype>AbstractWisemen</abstractunittype>   
+    <abstractunittype>AbstractShamanHero</abstractunittype>   
+    <abstractunittype>AbstractAcherusVile</abstractunittype>   
     <!--Structure Specific-->     
     <abstractunittype>AbstractFortification</abstractunittype>   
     <abstractunittype>AbstractTypeWallOrTower</abstractunittype>   

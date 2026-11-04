@@ -1,0 +1,127 @@
+<tactics>
+	<action>
+		<name stringid="STR_ACTION_RANGED">RangedAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttack</anim>
+		<accuracy>0.8</accuracy>
+		<maxspread>5.0</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>1.0</trackrating>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+		<rate type="All">1.0</rate>
+	</action>
+    <action>
+		<name stringid="STR_ACTION_HAND">BuildingAttack</name>
+		<type>Attack</type>
+		<rate type="Building">1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<forceareaattacktarget>1</forceareaattacktarget>
+		<anim>HandAttackBehemoth</anim>
+		<onhiteffect type="Snare" duration="2" rate="0.85"></onhiteffect>
+		<impacteffect>effects\impacts\hack</impacteffect>
+	</action>
+    <action>
+		<name stringid="STR_ACTION_RANGED_FLYING">RangedAttackFlying</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttackFlying</anim>
+		<accuracy>0.8</accuracy>
+		<maxspread>5.0</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>1.0</trackrating>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+		<rate type="AbstractFlyingUnit">1.0</rate>
+	</action>
+    <action>
+		<name stringid="STR_ACTION_SHOCKWAVE">ShockwaveAttack</name>
+		<type>BuckAttack</type>
+		<rate type="LogicalTypeVillagerNotHero">1.0</rate>
+		<rate type="HumanSoldier">1.0</rate>
+		<rate type="LogicalTypeMythUnitNotTitan">1.0</rate>
+		<rate type="TradeUnit">1.0</rate>
+		<attackaction>1</attackaction>
+		<chargeaction>1</chargeaction>
+		<linearshockwave>1</linearshockwave>
+		<handlogic>1</handlogic>
+		<anim>Gore</anim>
+		<impacteffect>effects\impacts\hack</impacteffect>
+	</action>
+    <action>
+		<name stringid="STR_ACTION_RANGED">ChaosAttack</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<anim>ChaosAttack</anim>
+		<auxchargeaction>1</auxchargeaction>
+		<workonchaosunits>0</workonchaosunits>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+		<rate type="HumanSoldier">1.0</rate>
+		<rate type="LogicalTypeMythUnitNotTitan">1.0</rate>
+		<rate type="LogicalTypeVillagerNotHero">1.0</rate>
+		<rate type="TradeUnit">1.0</rate>
+		<rate type="Ship">1.0</rate>
+	</action>
+
+	<action>
+		<name stringid="STR_ACTION_RANGED">RangedAttackWater</name>
+		<type>Attack</type>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>RangedAttackWater</anim>
+		<accuracy>0.8</accuracy>
+		<maxspread>5.0</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>1.0</trackrating>
+		<impacteffect>effects\impacts\pierce</impacteffect>
+		<rate type="All">1.0</rate>
+	</action>
+    <action>
+		<name stringid="STR_ACTION_HEAL">BurstHeal</name>
+		<type>BurstHeal</type>
+		<anim>BurstHealWater</anim>
+		<auxchargeaction>1</auxchargeaction>
+		<modelattachment>vfx\glow\caladria_burst_heal.xml</modelattachment>
+		<modelattachmentbone>bonethatdoesntexist</modelattachmentbone>
+		<modelattachmenttimer>2222</modelattachmenttimer>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_PACIFY">Pacify</name>
+		<type>Attack</type>
+		<anim>PacifyWater</anim>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<chargeaction>1</chargeaction>
+		<workonfrozenunits>0</workonfrozenunits>
+		<rate type="HumanSoldier">1.0</rate>
+		<rate type="LogicalTypeMythUnitNotTitan">1.0</rate>
+		<rate type="AnimalOfSet">1.0</rate>
+		<rate type="Ship">1.0</rate>
+	</action>
+	<action>
+		<name stringid="STR_ACTION_DEVOTE">DevoteMajor</name>
+		<type>DevoteMajor</type>
+		<maxrange>0.2</maxrange>
+	</action>
+	<tactic>Ground<abilityonly>1</abilityonly>
+        <action priority="100">RangedAttackFlying</action>
+        <action priority="90">ShockwaveAttack</action>
+        <action priority="80">ChaosAttack</action>
+        <action priority="70">BuildingAttack</action>
+        <action priority="60">RangedAttack</action>
+        <action>DevoteMajor</action>
+        <attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype>
+        <walkanim>Walk</walkanim><idleanim>Idle</idleanim><boredanim>Bored</boredanim><deathanim>Death</deathanim>
+    </tactic>
+	<tactic>Water<abilityonly>1</abilityonly>
+        <action priority="100">ChaosAttack</action>
+        <action priority="90">Pacify</action>
+        <action priority="80">BurstHeal</action>
+        <action priority="70">RangedAttackWater</action>
+        <action>DevoteMajor</action>
+        <attacktype>LogicalTypeRangedUnitsAttack</attacktype><autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype><attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype>
+        <walkanim>WalkWater</walkanim><idleanim>IdleWater</idleanim><boredanim>IdleWater</boredanim><deathanim>Death</deathanim></tactic>
+</tactics>

@@ -9,11 +9,7 @@ armory
     - warrior tribe
 
 === FACTION HEROES    
-atlantean: kronny (shapeshift chargedattack, butterfly walk idle)
 japanese: oda nobunaga (harumoto, clan member), miyamoto musashi (kagemasa), drunkenfist (mummy walk anim, old man model, staff weapon, shinobi fist stun, punt aoe, arkantos shout taunt, high hack armor, medium pierce armor, low hp, dashattack caladria walk anim)
-
-templeofprimordials
-    avatar of anubis: theris, osiris lightningattack / hover / onhiteffect explosion
 
 === SPECIAL UNITS
 saboteur: disguise as tree / stealth, onigami self-sacrifice attack, infantrylineupgrade
@@ -21,8 +17,11 @@ photonman: chukonu, laser attack
 allison the alligator: large crocodile, bonusdamage vs buildings
 kickball: ball model, default taowu charge
 laserbear: chainattack, handattack (laser bear attack a), rangedattack (laser bear attack b)
-
+nessy: scylla, 1 head model, shading bronze, laser breath, godzilla dive attack, idle armor
 shepherdsdog: bonusdamage vs hunted, aoe gather rate+ herdable
+
+templeofprimordials
+    avatar of anubis: theris, osiris lightningattack / hover / onhiteffect explosion
 
 === WEAPON MODELS
 Nereid + Staff

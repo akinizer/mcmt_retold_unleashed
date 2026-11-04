@@ -551,6 +551,26 @@ ID = "STR_UNIT_ACHERUS_VILE_GIANT_LR"   ;   Str = "Acherus Vile is a fearsome wa
 
 ID = "STR_MSG_ACHERUS_VILE_SPAWN"   ;   Str = "Acherus Vile has returned for a slaugher and a laughter!"
 
+// KHRONE
+ID = "STR_TECH_KHRONE_NAME"   ;   Str = "Avatar of Time"
+ID = "STR_TECH_KHRONE_LR"   ;   Str = "Warning: This overdriver activator will unleash Khrone!"
+
+ID = "STR_UNIT_KHRONE_NAME"   ;   Str = "Khrone"
+ID = "STR_UNIT_KHRONE_SR"   ;   Str = "Avatar of Time"
+ID = "STR_UNIT_KHRONE_LR"   ;   Str = "Khrone is a loyal servant that can bring chaos and order into the realm of mortals with his cosmic abilities"
+
+ID = "STR_MSG_KHRONE_SPAWN"   ;   Str = "Khrone has ascended to serve!"
+
+// ARGOS THE UNMAKER
+ID = "STR_TECH_ARGOS_THE_UNMAKER_NAME"   ;   Str = "Will of The Unmaker"
+ID = "STR_TECH_ARGOS_THE_UNMAKER_LR"   ;   Str = "Warning: This overdriver activator will unleash Argos the Unmaker!"
+
+ID = "STR_UNIT_ARGOS_THE_UNMAKER_NAME"   ;   Str = "Argos the Unmaker"
+ID = "STR_UNIT_ARGOS_THE_UNMAKER_SR"   ;   Str = "The Balancer of Reality"
+ID = "STR_UNIT_ARGOS_THE_UNMAKER_LR"   ;   Str = "Argos is the anti-creation that emerged as an element of balance from Chaos. It wipes anything that disturbs the reality"
+
+ID = "STR_MSG_ARGOS_THE_UNMAKER_SPAWN"   ;   Str = "Khrone has ascended to serve!"
+
 // ORPHIC
 ID = "STR_UNIT_ORPHIC_EGG_NAME"   ;   Str = "Orphic Egg"
 ID = "STR_UNIT_ORPHIC_EGG_SR"   ;   Str = "Cosmic Egg of Cosmos"

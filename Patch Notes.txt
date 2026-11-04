@@ -1598,6 +1598,19 @@
         - BirthAttack: BlazingPairieSPC
         - RangedAttack: fireballs, medium rof, anti-buildng & myth
         - ChargedRangedAttack: blue fireballs, volley, anti-building & myth, onhit spawn Fireling
+
+    - Khrone (Kronos):
+        - ChargedModify: Ground
+            - RangedAttack: projectilepriestpharaoh, infect spawn wretch, vfxbleed
+            - RangedAttackFlying: satyr
+            - BuildingAttack: behemoth
+            - ChaosAttack: lampades
+            - ShockwaveAttack: centimanus
+        - ChargedModify: Water
+            - RangedAttackWater: projectilepriestpharaoh, vfxbleed
+            - ChaosAttack: lampades
+            - Pacify: caladria
+            - BurstHeal: caladria
 - Norse
     - BrunnhildeMounted (All): Shieldmaiden Cavalry Hero
         - HandAttack: spear attack

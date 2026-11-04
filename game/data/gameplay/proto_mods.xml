@@ -10544,6 +10544,8 @@
 		<tech row="3" column="3">MCMT_Rising_of_Mulan_Hu</tech>
 		<tech row="3" column="3">MCMT_Teachings_of_Master_Confucius</tech>
 		<tech row="3" column="3">MCMT_Rage_of_the_Underworld</tech>
+		<tech row="3" column="3">MCMT_Avatar_of_Time</tech>
+		<tech row="3" column="3">MCMT_Will_Of_The_Unmaker</tech>
 	</unit>
 	<unit name="CitadelCenter">
 		<unittype>AbstractFortress</unittype>
@@ -32608,6 +32610,300 @@
 		</protoaction>
 	</unit>
 	<!-- Atlantean Special Units -->
+	<unit name="ArgosTheUnmaker">
+		<displaynameid>STR_UNIT_ARGOS_THE_UNMAKER_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_ARGOS_THE_UNMAKER_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_ARGOS_THE_UNMAKER_SR</shortrollovertextid>
+		
+		<icon>resources\atlantean\player_color\units\argus_icon.png</icon>
+		<animfile>atlantean\units\myth\argus\argus.xml</animfile>
+		<soundsetfile>atlantean\vo\centimanus\centimanus.xml</soundsetfile>
+		<obstructionradiusx>1.2400</obstructionradiusx>
+		<obstructionradiusz>1.2400</obstructionradiusz>
+		<selectionradiusx>1.5000</selectionradiusx>
+		<selectionradiusz>1.7500</selectionradiusz>
+		<impacttype>Stone</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<movementtype>land</movementtype>
+		<turnrate>18.0000</turnrate>
+		<heighthitpointbaroffset>1.50</heighthitpointbaroffset>
+		<initialhitpoints>1840.0000</initialhitpoints>
+		<maxhitpoints>1840.0000</maxhitpoints>
+		<trainpoints>20.0000</trainpoints>
+		<weightclass>9</weightclass>
+		<populationcount>4</populationcount>
+		<maxvelocity>3.3000</maxvelocity>
+		<rechargetime>25.0000</rechargetime>
+		<los>30.0000</los>
+		<cost resourcetype="Gold">250.0000</cost>
+		<cost resourcetype="Favor">25.0000</cost>
+		<armor type="Hack" value="0.6000"></armor>
+		<armor type="Pierce" value="0.7000"></armor>
+		<armor type="Crush" value="0.8000"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>LogicalTypeMythicMythUnit</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unitshieldregen>3.0000</unitshieldregen>
+
+		<unittype>Hero</unittype>
+		<unittype>MajorHero</unittype>
+		<unittype>HeroShadowUpgraded</unittype>
+
+		<unittype>CountsTowardMilitaryScore</unittype>
+		<unittype>LogicalTypeValidBoltTarget</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidMeteorTarget</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidShiftingSandsTarget</unittype>
+		<unittype>LogicalTypeValidSpyTarget</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<unittype>LogicalTypeValidShockwaveTarget</unittype>
+		<unittype>LogicalTypeValidBloodPactTarget</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>CommonCommands</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<flag>PreferSkeletonAsBonePile</flag>
+		<tactics>handattack_chargedrangedattack.tactics</tactics>
+		<protoaction>
+			<name>HandAttack</name>
+			<rof>1.500000</rof>
+			<damage type="Divine">50.000000</damage>
+			<damagebonus type="MythUnit">3.000000</damagebonus>
+			<maxrange>0.500000</maxrange>
+		</protoaction>
+		<protoaction>
+			<name>ChargedRangedAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Divine">50.000000</damage>
+			<damagearea>3.500000</damagearea>
+			<damageflags>Nature|Enemy</damageflags>
+			<damagebonus type="MythUnit">3.000000</damagebonus>
+			<maxrange>16.000000</maxrange>
+			<projectile>ProjectileAcidBlobInvisible</projectile>
+			<numberprojectiles>1</numberprojectiles>
+		</protoaction>
+	</unit>
+	<unit name="Khrone">
+		<displaynameid>STR_UNIT_KHRONE_NAME</displaynameid>
+		<rollovertextid>STR_UNIT_KHRONE_LR</rollovertextid>
+		<shortrollovertextid>STR_UNIT_KHRONE_SR</shortrollovertextid>
+
+		<icon>resources\spc\player_color\units\servant_of_kronos_icon.png</icon>
+		<animfile>mcmt\units\divine\avatars\khrone.xml</animfile>
+		<soundsetfile>spc\vo\titan_kronos\titan_kronos.xml</soundsetfile>
+		<obstructionradiusx>0.9900</obstructionradiusx>
+		<obstructionradiusz>0.9900</obstructionradiusz>
+		<impacttype>Armoured</impacttype>
+		<unitaitype>HandCombative</unitaitype>
+		<autoattackrange>22.0000</autoattackrange>
+		<movementtype>amphibious</movementtype>
+		<flag>TieToWaterSurface</flag>
+
+		<turnrate>18.0000</turnrate>
+		<initialhitpoints>875.0000</initialhitpoints>
+		<maxhitpoints>875.0000</maxhitpoints>
+		<weightclass>7</weightclass>
+		<populationcount>1</populationcount>
+		<maxvelocity>3.3000</maxvelocity>
+		<los>16.0000</los>
+		<bloodgroupoverride>mythbloodhorserainbow</bloodgroupoverride>
+		<armor type="Hack" value="0.5500"></armor>
+		<armor type="Pierce" value="0.4000"></armor>
+		<armor type="Crush" value="0.8000"></armor>
+		<unittype>LogicalTypeNeededForVictory</unittype>
+		<unittype>LogicalTypeHandUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeLandMilitary</unittype>
+		<unittype>LogicalTypeValidSPCUnitsDeadCondition</unittype>
+		<unittype>LogicalTypeGarrisonInShips</unittype>
+		<unittype>LogicalTypeRangedUnitsAutoAttack</unittype>
+		<unittype>LogicalTypeVillagersAttack</unittype>
+		<unittype>LogicalTypeHandUnitsAttack</unittype>
+		<unittype>LogicalTypeRangedUnitsAttack</unittype>
+		<unittype>LogicalTypeMinimapFilterMilitary</unittype>
+		<unittype>MilitaryUnit</unittype>
+		<unittype>UnitClass</unittype>
+		<unittype>Unit</unittype>
+		<unittype>Hero</unittype>
+		<unittype>HeroShadowUpgraded</unittype>
+		<unittype>InfantryLineUpgraded</unittype>
+		<unittype>LogicalTypeConvertsHerds</unittype>
+		<unittype>LogicalTypeEarthquakeAttack</unittype>
+		<unittype>LogicalTypeAffectedByRestoration</unittype>
+		<unittype>LogicalTypeValidTornadoAttack</unittype>
+		<unittype>LogicalTypeValidFrostTarget</unittype>
+		<unittype>LogicalTypeHealed</unittype>
+		<flag>CollidesWithProjectiles</flag>
+		<flag>CorpseDecays</flag>
+		<flag>ShowGarrisonButton</flag>
+		<flag>DontRotateObstruction</flag>
+		<flag>ObscuredByUnits</flag>
+		<flag>MilitaryCommands</flag>
+		<flag>CreateUnitGroupAutomatically</flag>
+		<command row="3" column="0">Stop</command>
+		<rechargetime>16.0</rechargetime>
+		<auxrechargetime>16.0</auxrechargetime>
+
+		<flag>HasDefaultAttack</flag>
+		<tactics>mcmt_khorne.tactics</tactics>
+		<protoaction>
+			<name>RangedAttack</name>
+			<rof>1.000000</rof>
+			<damage type="Pierce">14.000000</damage>
+			<damagebonus type="AbstractInfantry">2.50000</damagebonus>
+			<maxrange>18.000000</maxrange>
+			<projectile>ProjectilePriestPharaoh</projectile>
+			
+			<perfectaccuracy>1</perfectaccuracy>
+			<homingballistics>1</homingballistics>
+			<maxheight>2</maxheight>
+
+			<onhiteffect type="DamageOverTime" duration="5.000000">
+				<damage type="Divine">4.000000</damage>
+				<target attacktype="HumanSoldier"></target>
+				<target attacktype="AbstractVillager"></target>
+			</onhiteffect>
+			<onhiteffect type="Attach" proto="VFXBleed" attachbone="spine" duration="5.000000">
+				<target attacktype="HumanSoldier"></target>
+				<target attacktype="AbstractVillager"></target>
+			</onhiteffect>
+			<onhiteffect type="Reincarnation" proto="Wretch" duration="5.000000">
+				<target attacktype="Unit"></target>
+				<target ignoretype="AbstractSiegeWeapon"></target>
+			</onhiteffect>
+			<defaultattack>1</defaultattack>
+		</protoaction>
+		<protoaction>
+			<name>RangedAttackWater</name>
+			<rof>1.000000</rof>
+			<damage type="Pierce">14.000000</damage>
+			<damagebonus type="AbstractInfantry">2.50000</damagebonus>
+			<maxrange>18.000000</maxrange>
+			<projectile>ProjectilePriestPharaoh</projectile>
+			
+			<perfectaccuracy>1</perfectaccuracy>
+			<homingballistics>1</homingballistics>
+			<maxheight>2</maxheight>
+
+			<onhiteffect type="DamageOverTime" duration="5.000000">
+				<damage type="Divine">4.000000</damage>
+				<target attacktype="HumanSoldier"></target>
+				<target attacktype="AbstractVillager"></target>
+			</onhiteffect>
+			<onhiteffect type="Attach" proto="VFXBleed" attachbone="spine" duration="5.000000">
+				<target attacktype="HumanSoldier"></target>
+				<target attacktype="AbstractVillager"></target>
+			</onhiteffect>
+		</protoaction>
+		<protoaction>
+			<name>BuildingAttack</name>
+			<rof>1.500000</rof>
+			<damage type="Hack">20.000000</damage>
+			<damage type="Crush">110.000000</damage>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">0.500000</damagebonus>
+			<maxrange>2.500000</maxrange>
+			<impacteffect>effects\impacts\crush</impacteffect>
+		</protoaction>
+		<protoaction>
+			<name>RangedAttackFlying</name>
+			<rof>1.000000</rof>
+			<damage type="Pierce">20.000000</damage>
+			<damagebonus type="MythUnit">3.000000</damagebonus>
+			<damagebonus type="Hero">0.250000</damagebonus>
+			<maxrange>18.000000</maxrange>
+			<projectile>ProjectileSatyrSpear</projectile>
+		</protoaction>
+		<protoaction>
+			<name>ShockwaveAttack</name>
+			<rof>2.000000</rof>
+			<damage type="Hack">40.000000</damage>
+			<damage type="Crush">50.000000</damage>
+			<damagebonus type="MythUnit">2.000000</damagebonus>
+			<damagebonus type="Hero">0.250000</damagebonus>
+			<maxrange>18.000000</maxrange>
+			<workonfrozenunits>0</workonfrozenunits>
+			<maxsizeclass>6</maxsizeclass>
+		</protoaction>	
+		<protoaction>
+			<name>ChaosAttack</name>
+			<rof>2.000000</rof>
+			<maxrange>18.000000</maxrange>
+			<onhiteffect type="StatModify" duration="30.000000">
+				<modify type="Chaos">1.000000</modify>
+			</onhiteffect>
+			<onhiteffect type="Attach" targetunittype="Unit" proto="VFXChaos" attachbone="vfx_top" duration="30.000000"></onhiteffect>
+		</protoaction>	
+		<protoaction>
+			<name>BurstHeal</name>
+			<rof>4.0</rof>
+			<maxrange>18.000000</maxrange>
+			<rate type="LogicalTypeHealed">60.0</rate>
+		</protoaction>
+		<protoaction>
+			<name>Pacify</name>
+			<rof>3.5</rof>
+			<maxrange>18.000000</maxrange>
+			<onhiteffect type="StatModify" duration="5.000000">
+				<modify type="ROF">3.000000</modify>
+				<modify type="Speed">0.670000</modify>
+			</onhiteffect>
+			<onhiteffect type="Attach" proto="VFXCaladriaPacify" attachbone="spine" duration="5.000000"></onhiteffect>
+			<exclusive>1</exclusive>
+		</protoaction>
+		<protoaction>
+			<name>ChargedModify</name>
+			<type>ChargedModify</type>
+			<persistent>1</persistent>
+			<charged>
+				<activationtype>TerrainType</activationtype>
+				<terraintype>Water</terraintype>
+				<settactic>Water</settactic>
+				<duration>1.0</duration>
+				<cooldown>0.01</cooldown>
+			</charged>
+			<charged>
+				<activationtype>TerrainType</activationtype>
+				<terraintype>Land</terraintype>
+				<settactic>Ground</settactic>
+				<duration>1.0</duration>
+				<cooldown>0.01</cooldown>
+			</charged>
+		</protoaction>
+		<protoaction>
+			<name>HeroGlowOnSelf</name>
+			<type>Modify</type>
+			<modifyselfonly>1</modifyselfonly>
+			<persistent>1</persistent>
+			<modelattachment>aztec\godpowers\corrupted_ground\corrupted_ground_corruption_spread.xml</modelattachment>
+			<modelattachmentbone>Spine</modelattachmentbone>
+		</protoaction>
+		<protoaction>
+			<name>HeroRingOnSelf</name>
+			<type>Modify</type>
+			<persistent>1</persistent>
+			<modelattachment>vfx\glow\hero_glow_ring.xml</modelattachment>
+		</protoaction>
+	</unit>
+
 	<unit name="AcherusVile">
 		<displaynameid>STR_UNIT_ACHERUS_VILE_NAME</displaynameid>
 		<rollovertextid>STR_UNIT_ACHERUS_VILE_LR</rollovertextid>

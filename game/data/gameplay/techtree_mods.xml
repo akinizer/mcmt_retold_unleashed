@@ -1809,7 +1809,16 @@
           <target type="ProtoUnit">WiseMan_Herodotus</target></effect> 
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractWisemen" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">WiseMan_Sokrates</target></effect> 
-
+        <!-- AbstractShamanHero-->
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractShamanHero" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">ShamanHero</target></effect> 
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractShamanHero" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">ShamanBirdHero</target></effect> 
+        <!-- AbstractAcherusVile-->
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractAcherusVile" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AcherusVile</target></effect> 
+        <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractAcherusVile" relativity="Absolute" mergeMode="add">
+          <target type="ProtoUnit">AcherusVileGiant</target></effect> 
         <!-- AbstractNavalTransport -->
         <effect type="Data" amount="1.00" subtype="SetUnitType" unittype="AbstractNavalTransport" relativity="Absolute" mergeMode="add">
           <target type="ProtoUnit">AbstractTransportShip</target></effect> 
@@ -2590,6 +2599,8 @@
           <target type="ProtoUnit">Dock</target></effect>
 
         <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_Rage_of_the_Underworld</effect>
+        <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_Avatar_of_Time</effect>
+        <effect type="TechStatus" status="obtainable" mergeMode="add">MCMT_Will_Of_The_Unmaker</effect>
       </effects>
     </tech>
 
@@ -4052,7 +4063,7 @@
     <prereqs>
       <techstatus status="Active">MCMT_ShamanCouncil</techstatus>
       <typecount unit="AbstractTownCenter" count="0.00" state="aliveState" operator="gt"></typecount>
-      <typecount unit="ShamanHero" count="1.00" state="aliveState" operator="lt"></typecount>
+      <typecount unit="AbstractShamanHero" count="1.00" state="aliveState" operator="lt"></typecount>
     </prereqs>
     <effects>
       <effect type="CreateUnit" unit="ShamanHero" generator="AbstractTownCenter">
@@ -4396,12 +4407,82 @@
     <prereqs>
       <techstatus status="Active">ArchaicAgeGaia</techstatus>
       <typecount unit="AbstractTownCenter" count="0.00" state="aliveState" operator="gt"></typecount>
-      <typecount unit="AcherusVile" count="1.00" state="aliveState" operator="lt"></typecount>
+      <typecount unit="AbstractAcherusVile" count="1.00" state="aliveState" operator="lt"></typecount>
     </prereqs>
     <effects>
       <effect type="CreateUnit" unit="AcherusVile" generator="AbstractTownCenter">
         <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
       <effect type="TextOutput">STR_MSG_ACHERUS_VILE_SPAWN</effect>
+    </effects>
+  </tech>
+
+  <!---->
+  <tech name="MCMT_Avatar_of_Time">
+    <displaynameid>STR_TECH_KHRONE_NAME</displaynameid>
+    <rollovertextid>STR_TECH_KHRONE_LR</rollovertextid>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\tech\activate_tech.jpg</icon>
+    <researchpoints>1.0000</researchpoints>
+    <cost resourcetype="Favor">815.0000</cost>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <prereqs><techstatus status="Active">ArchaicAgeKronos</techstatus></prereqs>
+    <effects>
+      <effect type="TechStatus" status="obtainable">MCMT_Khrone_Respawn</effect>
+      <effect type="TechStatus" status="obtainable">Khrone</effect>
+    </effects>
+  </tech>
+
+   <tech name="MCMT_Khrone_Respawn">
+    <status>UNOBTAINABLE</status>
+    <delay>300.0000</delay>
+    <flag>Volatile</flag>
+    <flag>Persistent</flag>
+    <flag>HideFromDialogs</flag>
+    <prereqs>
+      <techstatus status="Active">ArchaicAgeKronos</techstatus>
+      <typecount unit="AbstractTownCenter" count="0.00" state="aliveState" operator="gt"></typecount>
+      <typecount unit="Khrone" count="1.00" state="aliveState" operator="lt"></typecount>
+    </prereqs>
+    <effects>
+      <effect type="CreateUnit" unit="Khrone" generator="AbstractTownCenter">
+        <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
+      <effect type="TextOutput">STR_MSG_KHRONE_SPAWN</effect>
+    </effects>
+  </tech>
+
+  <!---->
+  <tech name="MCMT_Will_Of_The_Unmaker">
+    <displaynameid>STR_TECH_ARGOS_THE_UNMAKER_NAME</displaynameid>
+    <rollovertextid>STR_TECH_ARGOS_THE_UNMAKER_LR</rollovertextid>
+    <status>UNOBTAINABLE</status>
+    <icon>resources\tech\activate_tech.jpg</icon>
+    <researchpoints>1.0000</researchpoints>
+    <cost resourcetype="Favor">815.0000</cost>
+    <flag>CountsTowardMilitaryScore</flag>
+    <flag>MythTech</flag>
+    <prereqs><techstatus status="Active">ArchaicAgeOranos</techstatus></prereqs>
+    <effects>
+      <effect type="TechStatus" status="obtainable">MCMT_ArgosTheUnmaker_Respawn</effect>
+      <effect type="TechStatus" status="obtainable">ArgosTheUnmaker</effect>
+    </effects>
+  </tech>
+
+   <tech name="MCMT_ArgosTheUnmaker_Respawn">
+    <status>UNOBTAINABLE</status>
+    <delay>300.0000</delay>
+    <flag>Volatile</flag>
+    <flag>Persistent</flag>
+    <flag>HideFromDialogs</flag>
+    <prereqs>
+      <techstatus status="Active">ArchaicAgeOranos</techstatus>
+      <typecount unit="AbstractTownCenter" count="0.00" state="aliveState" operator="gt"></typecount>
+      <typecount unit="ArgosTheUnmaker" count="1.00" state="aliveState" operator="lt"></typecount>
+    </prereqs>
+    <effects>
+      <effect type="CreateUnit" unit="ArgosTheUnmaker" generator="AbstractTownCenter">
+        <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00"><offset x="0.00" y="0.00" z="0.00"></offset></pattern></effect>
+      <effect type="TextOutput">STR_MSG_ARGOS_THE_UNMAKER_SPAWN</effect>
     </effects>
   </tech>
 
