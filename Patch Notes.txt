@@ -1592,12 +1592,12 @@
         - DashAttackMyth: mythunit, very high rof
         - ChargedRangedAttack: ballistic explosibe spears
         - Trail: TlacanexquimilliTrail
-        - OnDeathSpawn: AcherusVileGiant
+        - OnDeathSpawn: Inferno Explosion, AcherusVileGiant
 
     - AcherusVileGiant (Gaia):
-        - BirthAttack
+        - BirthAttack: BlazingPairieSPC
         - RangedAttack: fireballs, medium rof, anti-buildng & myth
-        - ChargedRangedAttack: blue fireballs, volley, anti-buildng & myth
+        - ChargedRangedAttack: blue fireballs, volley, anti-building & myth, onhit spawn Fireling
 - Norse
     - BrunnhildeMounted (All): Shieldmaiden Cavalry Hero
         - HandAttack: spear attack
