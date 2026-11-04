@@ -27,18 +27,17 @@
 		<rate type="Building">1.0</rate>
 	</action>
     <action>
-		<name stringid="STR_ACTION_RANGED">ChargedRangedAttackBanish</name>
+		<name stringid="STR_ACTION_ATLANTIS_SINKER_BEAM">ChargedRangedAttackBanish</name>
 		<type>ChainAttack</type>
 		<attackaction>1</attackaction>
 		<rangedlogic>1</rangedlogic>
-		<anim>HandAttack</anim>
-		<auxchargeaction>1</auxchargeaction>
-		<accuracy>0.8</accuracy>
-		<maxspread>5.0</maxspread>
-		<spreadfactor>0.25</spreadfactor>
-		<trackrating>1.0</trackrating>
+		<anim>Charging</anim>
+		<accuracy>1.0</accuracy>
 		<impacteffect>effects\impacts\crush</impacteffect>
-		<rate type="Unit">1.0</rate>
+		<rate type="AbstractFlyingUnit">0.0</rate>
+		<rate type="LogicalTypeMythUnitNotTitan">1.0</rate>
+		<rate type="HumanSoldier">1.0</rate>
+		<rate type="Huntable">1.0</rate>
 	</action>
 	<tactic>Default
 		<action priority="100">ChargedRangedAttack</action>

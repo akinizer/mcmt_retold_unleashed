@@ -1,0 +1,12 @@
+<animfile validation="strict">
+	<component>ModelComp<logic type="Tech"><none><assetreference type="TMModel"><file>atlantean\units\myth\argus\argus</file></assetreference></none><guardianofio><assetreference type="TMModel"><file>atlantean\units\myth\argus\argus_upgrade</file></assetreference></guardianofio></logic></component>
+	<anim>Death<assetreference type="TMAnimation"><file>atlantean\units\myth\argus\anim\argus_death_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>HandAttack<assetreference type="TMAnimation"><file>atlantean\units\myth\argus\anim\argus_attack_a</file><tag type="Attack">0.4</tag></assetreference><component>ModelComp</component></anim>
+	<anim>ChargedRangedAttack<assetreference type="TMAnimation"><file>atlantean\units\myth\argus\anim\argus_specialattack_a</file><tag type="Attack">0.3</tag><tag type="SpecificSoundSet" checkvisible="1" set="ArgusFeezeAttack">0.27</tag><tag type="particles" popcornfxname="objects\argus\argus_acid_ball.pkfx" bone="vfx_acid" movewithbone="true" stopwithanim="false" adjustduration="false">0.3</tag></assetreference><component>ModelComp</component></anim>
+	<anim>Idle<assetreference type="TMAnimation"><file>atlantean\units\myth\argus\anim\argus_idle_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Birth<assetreference type="TMAnimation"><file>atlantean\units\myth\argus\anim\argus_birth_a</file><tag type="particles" popcornfxname="glow\myth_unit_birth_atlantean_large.pkfx" bone="vfx_birth" movewithbone="false" stopwithanim="false" adjustduration="false">0.0</tag></assetreference><component>ModelComp</component></anim>
+	<anim>Bored<assetreference type="TMAnimation"><file>atlantean\units\myth\argus\anim\argus_bored_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Walk<assetreference type="TMAnimation"><file>atlantean\units\myth\argus\anim\argus_walk_a</file></assetreference><component>ModelComp</component></anim>
+	<anim>Flail<assetreference type="TMAnimation"><file>atlantean\units\myth\argus\anim\argus_flail_a</file></assetreference><component>ModelComp</component></anim>
+    <anim>Charging<assetreference type="TMAnimation"><file>misc\dummy\dummy_animation</file><tag type="Attack">0.2</tag><tag type="SpecificSoundSet" checkvisible="1" set="SonOfOsirisBolt">0.2</tag></assetreference><component>ModelComp</component></anim>
+</animfile>

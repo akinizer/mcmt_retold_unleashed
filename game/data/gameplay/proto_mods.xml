@@ -32616,14 +32616,14 @@
 		<shortrollovertextid>STR_UNIT_ARGOS_THE_UNMAKER_SR</shortrollovertextid>
 		
 		<icon>resources\atlantean\player_color\units\argus_icon.png</icon>
-		<animfile>atlantean\units\myth\argus\argus.xml</animfile>
+		<animfile>mcmt\units\divine\avatars\argos_theunmaker.xml</animfile>
 		<soundsetfile>atlantean\vo\centimanus\centimanus.xml</soundsetfile>
 		<obstructionradiusx>1.2400</obstructionradiusx>
 		<obstructionradiusz>1.2400</obstructionradiusz>
 		<selectionradiusx>1.5000</selectionradiusx>
 		<selectionradiusz>1.7500</selectionradiusz>
 		<impacttype>Stone</impacttype>
-		<unitaitype>HandCombative</unitaitype>
+		<unitaitype>RangedCombative</unitaitype>
 		<movementtype>land</movementtype>
 		<turnrate>18.0000</turnrate>
 		<heighthitpointbaroffset>1.50</heighthitpointbaroffset>
@@ -32631,7 +32631,7 @@
 		<maxhitpoints>1840.0000</maxhitpoints>
 		<trainpoints>20.0000</trainpoints>
 		<weightclass>9</weightclass>
-		<populationcount>4</populationcount>
+		<populationcount>1</populationcount>
 		<maxvelocity>3.3000</maxvelocity>
 		<rechargetime>25.0000</rechargetime>
 		<auxrechargetime>22.0000</auxrechargetime>
@@ -32684,6 +32684,7 @@
 		<flag>MilitaryCommands</flag>
 		<flag>CreateUnitGroupAutomatically</flag>
 		<flag>PreferSkeletonAsBonePile</flag>
+		<flag>HasDefaultAttack</flag>
 		<tactics>mcmt_argostheunmaker.tactics</tactics>
 		<protoaction>
 			<name>RangedAttack</name>
@@ -32694,6 +32695,7 @@
 			<maxrange>12.000000</maxrange>
 			<projectile>ProjectileBallOfFire</projectile>
 			<homingballistics>1</homingballistics>
+			<defaultattack>1.0</defaultattack>
 		</protoaction>
 		<protoaction>
 			<name>ChargedRangedAttack</name>

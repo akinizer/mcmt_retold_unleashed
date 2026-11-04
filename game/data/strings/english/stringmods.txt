@@ -567,7 +567,7 @@ ID = "STR_TECH_ARGOS_THE_UNMAKER_LR"   ;   Str = "Warning: This overdriver activ
 
 ID = "STR_UNIT_ARGOS_THE_UNMAKER_NAME"   ;   Str = "Argos the Unmaker"
 ID = "STR_UNIT_ARGOS_THE_UNMAKER_SR"   ;   Str = "The Balancer of Reality"
-ID = "STR_UNIT_ARGOS_THE_UNMAKER_LR"   ;   Str = "Argos is the anti-creation that emerged as an element of balance from Chaos. It wipes anything that disturbs the reality"
+ID = "STR_UNIT_ARGOS_THE_UNMAKER_LR"   ;   Str = "Argos is the anti-creation that emerged as an element of balance from Chaos. It wipes anything that disturbs the reality. There has been sighting of Argos in Atlantic Ocean and Bermuda Triangle"
 
 ID = "STR_MSG_ARGOS_THE_UNMAKER_SPAWN"   ;   Str = "Khrone has ascended to serve!"
 
@@ -1746,6 +1746,8 @@ ID = "STR_ABILITY_AREA_RESTRICT_LR"   ;   Str = "Summons a construct made from d
 
 ID = "STR_ABILITY_UFO_ABDUCT"   ;   Str = "UFO Abduct"
 ID = "STR_ABILITY_UFO_ABDUCT_LR"   ;   Str = "Flying Saucers can abduct units for a duration"
+
+ID = "STR_ACTION_ATLANTIS_SINKER_BEAM"   ;   Str = "Atlantis Sinker Beam"
 
 // COMMAND TECHS
 ID = "STR_BLD_FIREWALL_NAME"   ;   Str = "Fire Wall"
