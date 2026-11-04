@@ -1611,6 +1611,11 @@
             - ChaosAttack: lampades
             - Pacify: caladria
             - BurstHeal: caladria
+
+    - ArgosTheUnmaker:
+        - RangedAttack: fireball, instakill villagers, strong vs myth
+        - ChargedRangedAttack: castpower deconstruction
+        - ChargedRangedAttackBanish: onhiteffect exile units
 - Norse
     - BrunnhildeMounted (All): Shieldmaiden Cavalry Hero
         - HandAttack: spear attack
