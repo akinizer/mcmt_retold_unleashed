@@ -8,6 +8,12 @@ armory
     - detonators
     - warrior tribe
 
+orpheus
+- ares: ???
+- aphrodite: area heal
+- hera: ???
+- persephone: necromancer   
+
 === FACTION HEROES    
 japanese: oda nobunaga (harumoto, clan member), miyamoto musashi (kagemasa), drunkenfist (mummy walk anim, old man model, staff weapon, shinobi fist stun, punt aoe, arkantos shout taunt, high hack armor, medium pierce armor, low hp, dashattack caladria walk anim)
 
