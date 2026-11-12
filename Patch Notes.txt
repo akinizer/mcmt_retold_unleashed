@@ -1606,7 +1606,7 @@
             - BuildingAttack: behemoth
             - ChaosAttack: lampades
             - ShockwaveAttack: centimanus
-        - ChargedModify: Water
+        - ChargedModify: Water 
             - RangedAttackWater: projectilepriestpharaoh, vfxbleed
             - ChaosAttack: lampades
             - Pacify: caladria
